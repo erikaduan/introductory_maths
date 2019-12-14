@@ -279,7 +279,7 @@ m[0:1+1, 1:2+1]
 #> array([[4, 5],
 #>        [8, 9]])
 
-# remember slicing happens from a to b is written as [a:b+1]  
+# remember slicing from a to b is written in Python as [a:b+1]  
 ```
 
 # Coding resources
