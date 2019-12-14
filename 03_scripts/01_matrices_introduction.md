@@ -1,21 +1,15 @@
 Introduction to matrices in R and Python
 ================
 
-  - [Matrix structure](#matrix-structure)
-      - [Subsetting matrices in R](#subsetting-matrices-in-r)
-      - [Subsetting matrices in Python](#subsetting-matrices-in-python)
-      - [Creating matrices in R](#creating-matrices-in-r)
-      - [Creating matrices in Python](#creating-matrices-in-python)
-  - [Coding resources](#coding-resources)
-
 # Matrix structure
 
-<img src="C:/Users/user/Desktop/Introductory-maths-in-R-and-Python/02_figures/01_matrices-general-structure.jpg" width="50%" style="display: block; margin: auto;" />
+<img src="../02_figures/01_matrices-general-structure.jpg" width="50%" style="display: block; margin: auto;" />
 
 Different types of matrices exist. Each type has a specific structure
-and form of symmetry.
+and form of
+symmetry.
 
-<img src="C:/Users/user/Desktop/Introductory-maths-in-R-and-Python/02_figures/01_matrices-all-structures.jpg" width="75%" style="display: block; margin: auto;" />
+<img src="../02_figures/01_matrices-all-structures.jpg" width="75%" style="display: block; margin: auto;" />
 
 ## Subsetting matrices in R
 
@@ -62,9 +56,9 @@ array (via the `NumPy` package).
 **Notes:**
 
   - Subsetting a matrix-list in Python requires a sequence of square
-    brackets i.e. \[outer list - row position\]\[inner list - column
+    brackets i.e. \[outer list - row position\]\[inner list - column
     position\].
-  - Subsetting a matrix in R requires a single square bracket i.e. \[row
+  - Subsetting a matrix in R requires a single square bracket i.e. \[row
     position: column position\].
 
 <!-- end list -->
