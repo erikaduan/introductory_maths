@@ -1,44 +1,30 @@
----
-title: Introduction to matrices in R and Python
-output: 
-  github_document:
-    toc: TRUE
----  
+Introduction to matrices in R and Python
+================
 
-```{r, include = FALSE, message = FALSE}
-#-----load required R packages-----
-if (!require("pacman")) install.packages("pacman") 
+  - [Matrix structure](#matrix-structure)
+      - [Subsetting matrices in R](#subsetting-matrices-in-r)
+      - [Subsetting matrices in Python](#subsetting-matrices-in-python)
+      - [Creating matrices in R](#creating-matrices-in-r)
+      - [Creating matrices in Python](#creating-matrices-in-python)
+  - [Coding resources](#coding-resources)
 
-p_load(here,
-       tidyverse,
-       compare,
-       reticulate) 
+# Matrix structure
 
-#-----configuring reticulate for python/anaconda-----
-py_discover_config() #discover python version 
+<img src="C:/Users/user/Desktop/Introductory-maths-in-R-and-Python/02_figures/01_matrices-general-structure.jpg" width="50%" style="display: block; margin: auto;" />
 
-use_python(python = "C:/Users/user/ANACON~1",
-           required = T)
-```
+Different types of matrices exist. Each type has a specific structure
+and form of symmetry.
 
-# Matrix structure   
+<img src="C:/Users/user/Desktop/Introductory-maths-in-R-and-Python/02_figures/01_matrices-all-structures.jpg" width="75%" style="display: block; margin: auto;" />
 
-```{r, echo = FALSE, fig.align = 'center', fig.show = 'hold', out.width = '50%'} 
-knitr::include_graphics(here("02_figures", "01_matrices-general-structure.jpg"))  
-```
+## Subsetting matrices in R
 
-Different types of matrices exist. Each type has a specific structure and form of symmetry.      
+We can create matrices using `matrix` or `as.matrix` and subset
+individual elements based on position \[ij\].  
+Subsetting matrix elements will return a numeric vector or another
+matrix, depending on how many rows or columns are selected.
 
-```{r, echo = FALSE, fig.align = 'center', fig.show = 'hold', out.width = '75%'}
-knitr::include_graphics(here("02_figures", "01_matrices-all-structures.jpg"))
-```
-
-## Subsetting matrices in R  
-
-We can create matrices using `matrix` or `as.matrix` and subset individual elements based on position [ij].   
-Subsetting matrix elements will return a numeric vector or another matrix, depending on how many rows or columns are selected.   
-
-```{r, eval = FALSE}
+``` r
 #-----creating a matrix from a vector-----  
 m <- matrix(data = c(0, 2, 4, 8,
                      -3, 1, 3, 5,
@@ -68,16 +54,22 @@ m[, c(1, 3)]
 # returns a matrix
 ```
 
-## Subsetting matrices in Python   
+## Subsetting matrices in Python
 
-In Python, matrices can be stored simply as nested lists or as a numpy array (via the `NumPy` package).  
+In Python, matrices can be stored simply as nested lists or as a numpy
+array (via the `NumPy` package).
 
-**Notes:** 
+**Notes:**
 
-+ Subsetting a matrix-list in Python requires a sequence of square brackets i.e. [outer list - row position][inner list - column position].
-+ Subsetting a matrix in R requires a single square bracket i.e. [row position: column position].  
+  - Subsetting a matrix-list in Python requires a sequence of square
+    brackets i.e. \[outer list - row position\]\[inner list - column
+    position\].
+  - Subsetting a matrix in R requires a single square bracket i.e. \[row
+    position: column position\].
 
-```{python, eval = FALSE} 
+<!-- end list -->
+
+``` python
 #-----subsetting matrices stored as lists-----  
 import numpy as np 
 
@@ -100,17 +92,24 @@ m[-1]
 #> [-5, 8, 9]] 
 ```
 
-## Creating matrices in R  
+## Creating matrices in R
 
-The function `matrix` requires a vector input and arguments specifying how that vector will be reshaped into a matrix (using `nrow`, `ncol` and `byrow` arguments).   
+The function `matrix` requires a vector input and arguments specifying
+how that vector will be reshaped into a matrix (using `nrow`, `ncol` and
+`byrow` arguments).
 
-**Notes:**   
+**Notes:**
 
-+ The argument `byrow` is set to `TRUE` by default but it is best to explicitly call this argument.
-+ Vector names are not carried over `matrix` conversions. 
-+ You can store matrix row and column names using the `dimnames` attribute. Alternatively, it may be easier to store the matrix as a `list` with 3 objects - the data, row names and column names.  
+  - The argument `byrow` is set to `TRUE` by default but it is best to
+    explicitly call this argument.
+  - Vector names are not carried over `matrix` conversions.
+  - You can store matrix row and column names using the `dimnames`
+    attribute. Alternatively, it may be easier to store the matrix as a
+    `list` with 3 objects - the data, row names and column names.
 
-```{r, eval = FALSE}
+<!-- end list -->
+
+``` r
 #-----creating a matrix from a vector-----  
 vector_1 <- c(0, 2, 4, 5,
               -3, 1, 3, 5,
@@ -145,9 +144,10 @@ matrix(vector_1,
 # vector names are not stored 
 ```
 
-The function `as.matrix` works on data frames and the dimensions of the data frame override `nrow`, `ncol` and `byrow` arguments.  
+The function `as.matrix` works on data frames and the dimensions of the
+data frame override `nrow`, `ncol` and `byrow` arguments.
 
-```{r, eval = FALSE}
+``` r
 #-----converting a data frame into a matrix-----  
 df_1 <- data.frame("apple_sales" = c(1, 3, 5, 6), # 1st column  
                    "banana_sales" = c(4, 9, 3, 5), # 2nd column  
@@ -201,17 +201,22 @@ names(matrix_2)
 #> "data"      "row_names" "col_names"
 ```
 
-## Creating matrices in Python  
+## Creating matrices in Python
 
-In python, it is more efficient to create and store matrices as numpy arrays.  
+In python, it is more efficient to create and store matrices as numpy
+arrays.
 
-**Notes:**  
+**Notes:**
 
-+ To create matrices, the easiest way is to create a `np.array` from a nested list.  
-+ Matrices can also be created using the `.reshape()` method.  
-+ Functions like `np.zeros', `np.ones` and `np.identity` allow you to create special matrix structures.  
+  - To create matrices, the easiest way is to create a `np.array` from a
+    nested list.  
+  - Matrices can also be created using the `.reshape()` method.  
+  - Functions like `np.zeros',`np.ones`and`np.identity\` allow you to
+    create special matrix structures.
 
-```{python, eval = FALSE}  
+<!-- end list -->
+
+``` python
 #-----creating a numpy array matrix-----   
 import numpy as np  
 
@@ -252,9 +257,10 @@ print(matrix_identity)
 #> [0. 0. 1.]]
 ```
 
-Subsetting and slicing matrices is much easier when they are stored as numpy arrays. The resulting product is also stored as a numpy array.  
+Subsetting and slicing matrices is much easier when they are stored as
+numpy arrays. The resulting product is also stored as a numpy array.
 
-```{python, eval = FALSE}
+``` python
 #-----subsetting matrices - numpy arrays-----  
 m = np.array([[1, 4, 5], [-5, 8, 9], [0, 1, -1]]) 
 print(m)
@@ -276,8 +282,10 @@ m[0:1+1, 1:2+1]
 # remember slicing happens from a to b is written as [a:b+1]  
 ```
 
-# Coding resources  
+# Coding resources
 
-**Online articles:**  
+**Online articles:**
 
-+ [Matrix operations in Python](https://www.programiz.com/python-programming/matrix) - a handy guide to navigating matrices in Python.  
+  - [Matrix operations in
+    Python](https://www.programiz.com/python-programming/matrix) - a
+    handy guide to navigating matrices in Python.

@@ -22,5 +22,5 @@ Dr Erika Duan
 ## Tutorials:   
 
 1. Matrices  
-1.1 [Introduction to matrices]()  
-1.2 [Simple matrix algebra]()
+1.1 [Introduction to matrices](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/01_matrices_introduction.md)  
+
