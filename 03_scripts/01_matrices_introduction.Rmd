@@ -9,8 +9,7 @@ output:
 #-----load required R packages-----
 if (!require("pacman")) install.packages("pacman") 
 
-p_load(here,
-       tidyverse,
+p_load(tidyverse,
        compare,
        reticulate,
        knitr) 
@@ -18,20 +17,23 @@ p_load(here,
 #-----configuring reticulate for python/anaconda-----
 py_discover_config() #discover python version 
 
-use_python(python = "C:/Users/user/ANACON~1",
-           required = T)
+#-----specify the python path-----
+# use_python(python = "C:/Users/user/ANACON~1",
+#            required = T)
+
+use_condaenv("Erika", conda = "~/softwares/miniconda/bin/conda")
 ```
 
 # Matrix structure   
 
 ```{r, echo = FALSE, fig.align = 'center', fig.show = 'hold', out.width = '50%'} 
-knitr::include_graphics(here("02_figures", "01_matrices-general-structure.jpg"))   
+knitr::include_graphics("../02_figures/01_matrices-general-structure.jpg")
 ```
 
 Different types of matrices exist. Each type has a specific structure and form of symmetry.      
 
 ```{r, echo = FALSE, fig.align = 'center', fig.show = 'hold', out.width = '75%'}
-knitr::include_graphics(here("02_figures", "01_matrices-all-structures.jpg"))  
+knitr::include_graphics("../02_figures/01_matrices-all-structures.jpg")
 ```
 
 ## Subsetting matrices in R  
