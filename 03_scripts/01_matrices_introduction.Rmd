@@ -24,13 +24,13 @@ use_python(python = "C:/Users/user/ANACON~1",
 # Matrix structure   
 
 ```{r, echo = FALSE, fig.align = 'center', fig.show = 'hold', out.width = '50%'} 
-knitr::include_graphics(here("02_figures", "01_matrices-general-structure.jpg"))  
+knitr::include_graphics(here("02_figures", "01_matrices-general-structure.png"))   
 ```
 
 Different types of matrices exist. Each type has a specific structure and form of symmetry.      
 
 ```{r, echo = FALSE, fig.align = 'center', fig.show = 'hold', out.width = '75%'}
-knitr::include_graphics(here("02_figures", "01_matrices-all-structures.jpg"))
+knitr::include_graphics(here("02_figures", "01_matrices-all-structures.jpg"))  
 ```
 
 ## Subsetting matrices in R  

@@ -10,7 +10,7 @@ Introduction to matrices in R and Python
 
 # Matrix structure
 
-<img src="C:/Users/user/Desktop/Introductory-maths-in-R-and-Python/02_figures/01_matrices-general-structure.jpg" width="50%" style="display: block; margin: auto;" />
+<img src="C:/Users/user/Desktop/Introductory-maths-in-R-and-Python/02_figures/01_matrices-general-structure.png" width="50%" style="display: block; margin: auto;" />
 
 Different types of matrices exist. Each type has a specific structure
 and form of symmetry.
