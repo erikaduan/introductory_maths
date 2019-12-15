@@ -18,10 +18,8 @@ p_load(tidyverse,
 py_discover_config() #discover python version 
 
 #-----specify the python path-----
-# use_python(python = "C:/Users/user/ANACON~1",
-#            required = T)
-
-use_condaenv("Erika", conda = "~/softwares/miniconda/bin/conda")
+use_python(python = "C:/Users/user/ANACON~1",
+           required = T)
 ```
 
 # Matrix structure   
@@ -77,10 +75,10 @@ In Python, matrices can be stored simply as nested lists or as a numpy array (vi
 
 **Notes:** 
 
-+ Subsetting a matrix-list in Python requires a sequence of square brackets i.e. [outer list - row position][inner list - column position].
++ Subsetting a matrix (via a listed nest) in Python requires a sequence of square brackets i.e. [outer list - row position][inner list - column position].
 + Subsetting a matrix in R requires a single square bracket i.e. [row position: column position].  
 
-```{python, eval = FALSE} 
+```{python} 
 #-----subsetting matrices stored as lists-----  
 import numpy as np 
 
@@ -101,6 +99,8 @@ m[0][1]
 
 m[-1] 
 #> [-5, 8, 9]] 
+
+# no direct way to subset a column from a nested list  
 ```
 
 ## Creating matrices in R  
@@ -206,13 +206,13 @@ names(matrix_2)
 
 ## Creating matrices in Python  
 
-In python, it is more efficient to create and store matrices as numpy arrays.  
+In python, it is more efficient to create and store matrices as numpy arrays. This makes the matrix easier to subset and/or transform.    
 
 **Notes:**  
 
 + To create matrices, the easiest way is to create a `np.array` from a nested list.  
 + Matrices can also be created using the `.reshape()` method.  
-+ Functions like `np.zeros', `np.ones` and `np.identity` allow you to create special matrix structures.  
++ Functions like `np.zeros`, `np.ones` and `np.identity` allow you to create special matrix structures.  
 
 ```{python, eval = FALSE}  
 #-----creating a numpy array matrix-----   
@@ -255,7 +255,7 @@ print(matrix_identity)
 #> [0. 0. 1.]]
 ```
 
-Subsetting and slicing matrices is much easier when they are stored as numpy arrays. The resulting product is also stored as a numpy array.  
+Subsetting and slicing matrices is much simpler when they are stored as numpy arrays. The resulting product is also stored as a numpy array.  
 
 ```{python, eval = FALSE}
 #-----subsetting matrices - numpy arrays-----  
@@ -283,4 +283,5 @@ m[0:1+1, 1:2+1]
 
 **Online articles:**  
 
-+ [Matrix operations in Python](https://www.programiz.com/python-programming/matrix) - a handy guide to navigating matrices in Python.  
++ [Matrix operations in Python](https://www.programiz.com/python-programming/matrix)  
++ [Subsetting a column from a nested list in Python](https://stackoverflow.com/questions/44360162/how-to-access-a-column-in-a-list-of-lists-in-python)  

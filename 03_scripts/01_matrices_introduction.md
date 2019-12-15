@@ -1,13 +1,19 @@
 Introduction to matrices in R and Python
 ================
 
+  - [Matrix structure](#matrix-structure)
+      - [Subsetting matrices in R](#subsetting-matrices-in-r)
+      - [Subsetting matrices in Python](#subsetting-matrices-in-python)
+      - [Creating matrices in R](#creating-matrices-in-r)
+      - [Creating matrices in Python](#creating-matrices-in-python)
+  - [Coding resources](#coding-resources)
+
 # Matrix structure
 
 <img src="../02_figures/01_matrices-general-structure.jpg" width="50%" style="display: block; margin: auto;" />
 
 Different types of matrices exist. Each type has a specific structure
-and form of
-symmetry.
+and form of symmetry.
 
 <img src="../02_figures/01_matrices-all-structures.jpg" width="75%" style="display: block; margin: auto;" />
 
@@ -55,10 +61,10 @@ array (via the `NumPy` package).
 
 **Notes:**
 
-  - Subsetting a matrix-list in Python requires a sequence of square
-    brackets i.e. \[outer list - row position\]\[inner list - column
-    position\].
-  - Subsetting a matrix in R requires a single square bracket i.e. \[row
+  - Subsetting a matrix (via a listed nest) in Python requires a
+    sequence of square brackets i.e. \[outer list - row
+    position\]\[inner list - column position\].
+  - Subsetting a matrix in R requires a single square bracket i.e. \[row
     position: column position\].
 
 <!-- end list -->
@@ -72,19 +78,39 @@ m = [[1, 4, 5],
     
 print(m)
 #> [[1, 4, 5], [-5, 8, 9]]
+```
 
+    ## [[1, 4, 5], [-5, 8, 9]]
+
+``` python
 type(m) 
 #> <class 'list'>  
+```
 
+    ## <class 'list'>
+
+``` python
 m[0]
 #> [1, 4, 5]  
+```
 
+    ## [1, 4, 5]
+
+``` python
 m[0][1]
 #> [4]  
+```
 
+    ## 4
+
+``` python
 m[-1] 
 #> [-5, 8, 9]] 
+
+# no direct way to subset a column from a nested list  
 ```
+
+    ## [-5, 8, 9]
 
 ## Creating matrices in R
 
@@ -198,14 +224,14 @@ names(matrix_2)
 ## Creating matrices in Python
 
 In python, it is more efficient to create and store matrices as numpy
-arrays.
+arrays. This makes the matrix easier to subset and/or transform.
 
 **Notes:**
 
   - To create matrices, the easiest way is to create a `np.array` from a
     nested list.  
   - Matrices can also be created using the `.reshape()` method.  
-  - Functions like `np.zeros',`np.ones`and`np.identity\` allow you to
+  - Functions like `np.zeros`, `np.ones` and `np.identity` allow you to
     create special matrix structures.
 
 <!-- end list -->
@@ -251,7 +277,7 @@ print(matrix_identity)
 #> [0. 0. 1.]]
 ```
 
-Subsetting and slicing matrices is much easier when they are stored as
+Subsetting and slicing matrices is much simpler when they are stored as
 numpy arrays. The resulting product is also stored as a numpy array.
 
 ``` python
@@ -281,5 +307,6 @@ m[0:1+1, 1:2+1]
 **Online articles:**
 
   - [Matrix operations in
-    Python](https://www.programiz.com/python-programming/matrix) - a
-    handy guide to navigating matrices in Python.
+    Python](https://www.programiz.com/python-programming/matrix)  
+  - [Subsetting a column from a nested list in
+    Python](https://stackoverflow.com/questions/44360162/how-to-access-a-column-in-a-list-of-lists-in-python)

@@ -8,8 +8,9 @@ The **aim** of this repository is to provide resources to help R users who are i
 
 This repository also has a **secondary aim** of promoting code agnostic practices, by highlighting how the same functions can be performed in both R and Python.  
 
-## Author:  
-Dr Erika Duan  
+## Authors:  
+Dr Erika Duan (all code and notes)  
+Dr Chuanxin Liu (for fixing my occasional coding bugs)  
 
 ## Course references:  
 
