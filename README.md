@@ -24,5 +24,5 @@ Dr Chuanxin Liu (for fixing my occasional coding bugs)
 
 1. Matrices  
 1.1 [Introduction to matrices](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/01_matrices_introduction.md)  
-1.2 [Basic matrix algebra]()
+1.2 [Basic matrix algebra](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/02_matrices_basic-algebra.md)  
 
