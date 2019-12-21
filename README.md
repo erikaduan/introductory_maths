@@ -15,13 +15,14 @@ Dr Chuanxin Liu (for fixing my occasional coding bugs)
 ## Course references:  
 
 + [Writing mathematical operations in LaTex/R](https://en.wikibooks.org/wiki/LaTeX/Mathematics#Fractions_and_Binomials)  
-+ [Understanding basic calculus](www.math.nagoya-u.ac.jp/~richard/teaching/f2016/BasicCalculus.pdf) by S.K.Chung  
++ [Understanding basic calculus](www.math.nagoya-u.ac.jp/~richard/teaching/f2016/BasicCalculus.pdf) by S K Chung  
 + [A brief introduction to calculus](https://www.ms.uky.edu/~lee/amspcalc/calcmolzon.pdf) by Robert Molzon  
 + [Introduction to matrices](http://web.mit.edu/2.14/www/Handouts/Matrices.pdf) by D Rowell and available from web.mit.edu  
-+ [Introduction to matrices](http://www.statpower.net/Content/312/Handout/Matrix.pdf) available from www.statpower.net   
++ [Introduction to matrices](http://www.statpower.net/Content/312/Handout/Matrix.pdf) available from statpower.net   
 
 ## Tutorials:   
 
 1. Matrices  
 1.1 [Introduction to matrices](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/01_matrices_introduction.md)  
+1.2 [Basic matrix algebra]()
 
