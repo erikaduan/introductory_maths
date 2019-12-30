@@ -11,10 +11,15 @@ Basic matrix algebra in R and Python
       - [Scalar multiplication in
         Python](#scalar-multiplication-in-python)
   - [Addition of 2 matrices](#addition-of-2-matrices)
-      - [Adding matrices in R](#adding-matrices-in-r)
-      - [Adding matrices in Python](#adding-matrices-in-python)
+      - [Adding and subtracting matrices in
+        R](#adding-and-subtracting-matrices-in-r)
+      - [Adding and subtracting matrices in
+        Python](#adding-and-subtracting-matrices-in-python)
   - [Multiplication of two matrices](#multiplication-of-two-matrices)
-      - [Integral power of matrices](#integral-power-of-matrices)
+      - [Multiplying matrices in R](#multiplying-matrices-in-r)
+      - [Multiplying matrices in
+        Python](#multiplying-matrices-in-python)
+  - [Integral power of matrices](#integral-power-of-matrices)
   - [Coding resources](#coding-resources)
 
 # Equality of 2 matrices
@@ -24,8 +29,8 @@ corresponding elements are equal.
 
 ## Checking matrices equality in R
 
-In R, this can be checked using logical comparison (i.e. using `==`) or
-the `compare` package.
+In R, this can be checked using a logical comparison (i.e. using `==`)
+or the `compare` package.
 
 ``` r
 #-----matrix equality test-----
@@ -106,7 +111,9 @@ np.array_equiv(matrix_1, matrix_2)  # test if broadcastable shape, same elements
 matrix_3 = np.array([[1, 2, 3],
                      [4, -5, 9]])  
                     
-np.array_equal(matrix_1, matrix_3) 
+np.array_equal(matrix_1, matrix_3)
+
+#> False
 ```
 
 # Scalar multiplication
@@ -187,7 +194,7 @@ are the same).
 
 <img src="../02_figures/02_matrices-addition.jpg" width="70%" style="display: block; margin: auto;" />
 
-## Adding matrices in R
+## Adding and subtracting matrices in R
 
 ``` r
 #-----addition or subtraction of 2 matrices-----  
@@ -218,7 +225,33 @@ b <- matrix(data = c(0, 2, 4, 3,
 #> Error in a + b : non-conformable arrays  
 ```
 
-## Adding matrices in Python
+## Adding and subtracting matrices in Python
+
+``` python
+#-----addition of 2 matrices-----
+import numpy as np  
+
+matrix_1 = np.array([[1, 2, 3],
+                    [4, -5, 6]]) 
+
+matrix_2 = np.arange(start = 3, stop = 8 + 1, step = 1).reshape(2, 3)
+print(matrix_2)  
+
+#> [[3 4 5]
+#>  [6 7 8]]
+
+print(matrix_1 + matrix_2)
+
+#> [[ 4  6  8]
+#>  [10  2 14]]  
+
+#-----when two matrices do not have the same order-----  
+matrix_3 = np.arange(start = 3, stop = 6 + 1, step = 1).reshape(2, 2)
+
+print(matrix_2 + matrix_3)  
+
+#> ValueError: operands could not be broadcast together with shapes (2,3) (2,2) 
+```
 
 # Multiplication of two matrices
 
@@ -227,52 +260,153 @@ of matrix A is equivalent to the number of columns of matrix B.
 
 <img src="../02_figures/02_matrices-multiplication.jpg" width="70%" style="display: block; margin: auto;" />
 
+## Multiplying matrices in R
+
 ``` r
 #-----when matrices can be multiplied-----
-a <- matrix(data = c(0, 2, 4, 5
-                     -1, -3 , -5, -4),
+a <- matrix(data = c(1, 1, 1, 1,
+                     1, 1, 1, 1),
             nrow = 2,
             ncol = 4,
             byrow = T)
-```
 
-    ## Warning in matrix(data = c(0, 2, 4, 5 - 1, -3, -5, -4), nrow = 2, ncol =
-    ## 4, : data length [7] is not a sub-multiple or multiple of the number of
-    ## rows [2]
-
-``` r
-b <- matrix(data = c(0, 2,
-                     4, 3, 
-                     -1, -3,
-                     2, 1),
+b <- matrix(data = c(2, 2,
+                     2, 2, 
+                     2, 2,
+                     2, 2),
             nrow = 4,
             ncol = 2, 
             byrow = T) 
 
-a %*% b # matrix multiplication symbol  
-```
+nrow(a) == ncol(b) # must be true
 
-    ##      [,1] [,2]
-    ## [1,]   12   -2
-    ## [2,]  -16   -9
+#> TRUE
+
+a %*% b # %*% is the matrix multiplication symbol    
+
+#>      [,1] [,2]
+#> [1,]    8    8
+#> [2,]    8    8
+```
 
 <img src="../02_figures/02_matrices-multiplication-reverse-order.jpg" width="70%" style="display: block; margin: auto;" />
 
 ``` r
-b %*% a # different matrix product 
+#-----in matrices A * B does not equal to B * A-----
+b %*% a   
+
+#>      [,1] [,2] [,3] [,4]
+#> [1,]    4    4    4    4
+#> [2,]    4    4    4    4
+#> [3,]    4    4    4    4
+#> [4,]    4    4    4    4
 ```
 
-    ##      [,1] [,2] [,3] [,4]
-    ## [1,]   -6  -10   -8    0
-    ## [2,]   -9   -7    4   16
-    ## [3,]    9   13    8   -4
-    ## [4,]   -3   -1    4    8
+## Multiplying matrices in Python
 
-## Integral power of matrices
+The numpy function `np.dot()` returns the dot product of two arrays.
+When a and b are two dimensional vectors, the dot product is equivalent
+to matrix multiplication. For n-dimensional arrays, the dot product is a
+sum product over the last axis of a and the second-last axis of b.
+
+``` python
+import numpy as np  
+
+matrix_1 = np.array([[3, 3, 3],
+                     [3, 3, 3]])  
+                     
+matrix_2 = np.ones(shape = (3, 2)) 
+print(matrix_2)   
+
+#> [[1. 1.]
+#>  [1. 1.]
+#>  [1. 1.]]  
+
+matrix_3 = np.dot(matrix_1, matrix_2)  
+print(matrix_3)
+
+#> [[9. 9.]
+#>  [9. 9.]]
+```
+
+As a proof of principle, we can also perform matrix multiplication in
+Python using a `for loop` and nested lists.
+
+``` python
+#-----write matrices as nested lists----- 
+a = [[3, 3, 3], 
+     [3, 3, 3]] 
+
+b = [[1, 1],
+     [1, 1], 
+     [1, 1]] 
+     
+len(a) # defines matrix row  
+```
+
+    ## 2
+
+``` python
+len(a[0]) # defines matrix column  
+
+#> 2 
+#> 3
+```
+
+    ## 3
+
+``` python
+len(a[0]) == len(b)  # matrix multiplication requires this to be true 
+
+#> True  
+
+#-----matrix multiplication for loop construction-----  
+
+# pre-specify matrix multiplication product dimensions 
+```
+
+    ## True
+
+``` python
+result = [[0, 0],
+          [0, 0]]
+
+# iterate through rows of a
+for i in range(len(a)):
+   # iterate through columns of b
+   for j in range(len(b[0])):
+       # iterate through rows of b
+       for k in range(len(b)):
+           result[i][j] += a[i][k] * b[k][j]
+
+for r in result:
+   print(r)
+
+#-----deconstructing += usage in Python-----  
+
+# a += b is the shorthand for a = a + b    
+```
+
+    ## [9, 9]
+    ## [9, 9]
+
+``` python
+c = [1, 2, 3]
+d = [-1, -1, -1]
+
+d += c
+print(d)
+
+#> [-1, -1, -1, 1, 2, 3]
+```
+
+    ## [-1, -1, -1, 1, 2, 3]
+
+# Integral power of matrices
 
 # Coding resources
 
 **Online articles:**
 
-\+[Broadcasting in
-Python](https://www.geeksforgeeks.org/python-broadcasting-with-numpy-arrays/)
+  - [Nested loop for matrix multiplication in
+    Python](https://www.programiz.com/python-programming/examples/multiply-matrix)

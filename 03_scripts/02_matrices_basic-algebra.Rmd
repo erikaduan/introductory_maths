@@ -393,6 +393,17 @@ print(d)
 
 # Integral power of matrices   
 
+The integral power of matrices is a simple definition.  
+
+
+
+```{r}
+
+```
+
+
+# Matrix transpose   
+
 ```{r}
 
 ```
