@@ -20,6 +20,11 @@ Basic matrix algebra in R and Python
       - [Multiplying matrices in
         Python](#multiplying-matrices-in-python)
   - [Integral power of matrices](#integral-power-of-matrices)
+      - [Performing matrix integrals in
+        R](#performing-matrix-integrals-in-r)
+      - [Performing matrix integrals in
+        Python](#performing-matrix-integrals-in-python)
+  - [Matrix transpose](#matrix-transpose)
   - [Coding resources](#coding-resources)
 
 # Equality of 2 matrices
@@ -228,7 +233,7 @@ b <- matrix(data = c(0, 2, 4, 3,
 ## Adding and subtracting matrices in Python
 
 ``` python
-#-----addition of 2 matrices-----
+#-----addition or subtraction of 2 matrices-----
 import numpy as np  
 
 matrix_1 = np.array([[1, 2, 3],
@@ -310,6 +315,7 @@ to matrix multiplication. For n-dimensional arrays, the dot product is a
 sum product over the last axis of a and the second-last axis of b.
 
 ``` python
+#-----when matrices can be multiplied-----  
 import numpy as np  
 
 matrix_1 = np.array([[3, 3, 3],
@@ -324,6 +330,12 @@ print(matrix_2)
 
 matrix_3 = np.dot(matrix_1, matrix_2)  
 print(matrix_3)
+
+#> [[9. 9.]
+#>  [9. 9.]] 
+
+# Since python 3.5, the operator @ can be used to substitute np.dot()  
+print(matrix_1 @ matrix_2)  
 
 #> [[9. 9.]
 #>  [9. 9.]]
@@ -342,20 +354,11 @@ b = [[1, 1],
      [1, 1]] 
      
 len(a) # defines matrix row  
-```
-
-    ## 2
-
-``` python
 len(a[0]) # defines matrix column  
 
 #> 2 
 #> 3
-```
 
-    ## 3
-
-``` python
 len(a[0]) == len(b)  # matrix multiplication requires this to be true 
 
 #> True  
@@ -363,11 +366,6 @@ len(a[0]) == len(b)  # matrix multiplication requires this to be true
 #-----matrix multiplication for loop construction-----  
 
 # pre-specify matrix multiplication product dimensions 
-```
-
-    ## True
-
-``` python
 result = [[0, 0],
           [0, 0]]
 
@@ -385,12 +383,7 @@ for r in result:
 #-----deconstructing += usage in Python-----  
 
 # a += b is the shorthand for a = a + b    
-```
 
-    ## [9, 9]
-    ## [9, 9]
-
-``` python
 c = [1, 2, 3]
 d = [-1, -1, -1]
 
@@ -400,9 +393,70 @@ print(d)
 #> [-1, -1, -1, 1, 2, 3]
 ```
 
-    ## [-1, -1, -1, 1, 2, 3]
-
 # Integral power of matrices
+
+The integral power of matrices is a simple definition. By definition,
+only integrals of square matrices exist as m (the number of rows) has to
+be equal to n (the number of columns).
+
+<img src="../02_figures/02_matrices-integral-power.jpg" width="70%" style="display: block; margin: auto;" />
+
+## Performing matrix integrals in R
+
+Matrix integrals cannot be easily implemented in base R. However, the
+`expm` package contains functions which allow such convenient matrix
+calculations. It also contains `sqrtm` for performing matrix square
+roots and `expm` for performing matrix exponentials.
+
+``` r
+#-----matrix integrals in base R-----
+a <- matrix(data = c(1, 1, 1,
+                     1, 2, 1,
+                     1, 1, 1),
+            nrow = 3,
+            ncol = 3,
+            byrow = T)    
+
+
+matrix_1 <- (a) ^ 4 
+# this only performs a power operation for all elements inside the matrix
+
+matrix_2 <- a %*% a %*% a %*% a  
+
+#-----matrix integrals using the expm package-----  
+library(expm)  
+
+matrix_3 <- a %^% 4 
+
+summary(matrix_3 == matrix_2)    
+
+#>     V1             V2             V3         
+#>  Mode:logical   Mode:logical   Mode:logical  
+#>  TRUE:3         TRUE:3         TRUE:3 
+```
+
+## Performing matrix integrals in Python
+
+``` python
+#-----matrix integrals using numpy-----  
+import numpy as np    
+
+matrix_1 = np.array([[1, 1, 1],
+                     [1, 3, 1],
+                     [1, 1, 1]]) 
+
+matrix_2 = matrix_1 ** 3  
+# this only performs a power operation for all elements inside the matrix  
+
+matrix_3 = np.linalg.matrix_power(matrix_1, 3)
+print(matrix_3)  
+
+#> [[11 21 11]
+#>  [21 43 21]
+#>  [11 21 11]]  
+```
+
+# Matrix transpose
 
 # Coding resources
 

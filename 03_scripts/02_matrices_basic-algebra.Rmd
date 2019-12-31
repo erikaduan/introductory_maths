@@ -13,6 +13,7 @@ if (!require("pacman")) install.packages("pacman")
 p_load(tidyverse,
        compare,
        reticulate,
+       expm,
        knitr) 
 
 #-----configuring reticulate for python/anaconda-----
@@ -234,7 +235,7 @@ b <- matrix(data = c(0, 2, 4, 3,
 ## Adding and subtracting matrices in Python   
 
 ```{python, eval = FALSE}    
-#-----addition of 2 matrices-----
+#-----addition or subtraction of 2 matrices-----
 import numpy as np  
 
 matrix_1 = np.array([[1, 2, 3],
@@ -319,7 +320,8 @@ b %*% a
 
 The numpy function `np.dot()` returns the dot product of two arrays. When a and b are two dimensional vectors, the dot product is equivalent to matrix multiplication. For n-dimensional arrays, the dot product is a sum product over the last axis of a and the second-last axis of b.   
 
-```{python, eval = FALSE}  
+```{python, eval = FALSE}   
+#-----when matrices can be multiplied-----  
 import numpy as np  
 
 matrix_1 = np.array([[3, 3, 3],
@@ -336,12 +338,18 @@ matrix_3 = np.dot(matrix_1, matrix_2)
 print(matrix_3)
 
 #> [[9. 9.]
+#>  [9. 9.]] 
+
+# Since python 3.5, the operator @ can be used to substitute np.dot()  
+print(matrix_1 @ matrix_2)  
+
+#> [[9. 9.]
 #>  [9. 9.]]
 ```
 
 As a proof of principle, we can also perform matrix multiplication in Python using a `for loop` and nested lists.  
 
-```{python}  
+```{python, eval = FALSE}  
 #-----write matrices as nested lists----- 
 a = [[3, 3, 3], 
      [3, 3, 3]] 
@@ -393,12 +401,64 @@ print(d)
 
 # Integral power of matrices   
 
-The integral power of matrices is a simple definition.  
+The integral power of matrices is a simple definition. By definition, only integrals of square matrices exist as m (the number of rows) has to be equal to n (the number of columns).       
+
+```{r, echo = FALSE, fig.align = 'center', fig.show = 'hold', out.width = '70%'}
+knitr::include_graphics("../02_figures/02_matrices-integral-power.jpg")  
+```
 
 
+## Performing matrix integrals in R    
 
-```{r}
+Matrix integrals cannot be easily implemented in base R. However, the `expm` package contains functions which allow such convenient matrix calculations. It also contains `sqrtm` for performing matrix square roots and `expm` for performing matrix exponentials.        
 
+```{r, eval = FALSE} 
+#-----matrix integrals in base R-----
+a <- matrix(data = c(1, 1, 1,
+                     1, 2, 1,
+                     1, 1, 1),
+            nrow = 3,
+            ncol = 3,
+            byrow = T)    
+
+
+matrix_1 <- (a) ^ 4 
+# this only performs a power operation for all elements inside the matrix
+
+matrix_2 <- a %*% a %*% a %*% a  
+
+#-----matrix integrals using the expm package-----  
+library(expm)  
+
+matrix_3 <- a %^% 4 
+
+summary(matrix_3 == matrix_2)    
+
+#>     V1             V2             V3         
+#>  Mode:logical   Mode:logical   Mode:logical  
+#>  TRUE:3         TRUE:3         TRUE:3 
+```
+
+
+## Performing matrix integrals in Python    
+
+```{python, eval = FALSE}  
+#-----matrix integrals using numpy-----  
+import numpy as np    
+
+matrix_1 = np.array([[1, 1, 1],
+                     [1, 3, 1],
+                     [1, 1, 1]]) 
+
+matrix_2 = matrix_1 ** 3  
+# this only performs a power operation for all elements inside the matrix  
+
+matrix_3 = np.linalg.matrix_power(matrix_1, 3)
+print(matrix_3)  
+
+#> [[11 21 11]
+#>  [21 43 21]
+#>  [11 21 11]]  
 ```
 
 
