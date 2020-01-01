@@ -1,0 +1,28 @@
+---
+title: Determinant, minor and adjoint matrices  
+
+output: 
+  github_document:
+    toc: TRUE
+    pandoc_args: --webtex 
+---
+
+```{r, echo = FALSE, message = FALSE, results = 'hide'}
+#-----load required R packages-----
+if (!require("pacman")) install.packages("pacman") 
+
+p_load(tidyverse,
+       compare,
+       reticulate,
+       expm,
+       knitr,
+       DT) 
+
+#-----configuring reticulate for python/anaconda-----
+py_discover_config() #discover python version 
+
+#-----specify the python path-----
+use_python(python = "C:/Users/user/ANACON~1",
+           required = T)
+```
+

@@ -25,6 +25,10 @@ Basic matrix algebra in R and Python
       - [Performing matrix integrals in
         Python](#performing-matrix-integrals-in-python)
   - [Matrix transpose](#matrix-transpose)
+      - [Calculating the matrix transpose in
+        R](#calculating-the-matrix-transpose-in-r)
+      - [Calculating the matrix transpose in
+        Python](#calculating-the-matrix-transpose-in-python)
   - [Coding resources](#coding-resources)
 
 # Equality of 2 matrices
@@ -334,7 +338,7 @@ print(matrix_3)
 #> [[9. 9.]
 #>  [9. 9.]] 
 
-# Since python 3.5, the operator @ can be used to substitute np.dot()  
+# since python 3.5, the operator @ can be used to substitute np.dot()  
 print(matrix_1 @ matrix_2)  
 
 #> [[9. 9.]
@@ -458,9 +462,96 @@ print(matrix_3)
 
 # Matrix transpose
 
+The transpose of matrix A, written as
+![A^T](https://latex.codecogs.com/png.latex?A%5ET "A^T") or
+![A^t](https://latex.codecogs.com/png.latex?A%5Et "A^t"), is defined
+below.
+
+<img src="../02_figures/02_matrices-integral-power.jpg" width="70%" style="display: block; margin: auto;" />
+
+## Calculating the matrix transpose in R
+
+Matices and data frames can both be transposed in R using the function
+`t()`.
+
+``` r
+#-----calculating the matrix transpose in R-----  
+a <- matrix(data = c(1, 2, 3, 4, 5, 6, 7, 8),
+            nrow = 4,
+            ncol = 2,
+            byrow = T) 
+(a)
+
+#>      [,1] [,2]
+#> [1,]    1    2
+#> [2,]    3    4
+#> [3,]    5    6
+#> [4,]    7    8
+
+transpose_a <- t(a)
+(transpose_a)  
+
+#>      [,1] [,2] [,3] [,4]
+#> [1,]    1    3    5    7
+#> [2,]    2    4    6    8
+```
+
+``` r
+#-----example data frame in R-----  
+iris <- datasets::iris %>%
+  slice(c(5, 25, 75, 100, 150)) %>%
+  select(ncol(iris), everything()) 
+
+kable(iris)
+```
+
+| Species    | Sepal.Length | Sepal.Width | Petal.Length | Petal.Width |
+| :--------- | -----------: | ----------: | -----------: | ----------: |
+| setosa     |          5.0 |         3.6 |          1.4 |         0.2 |
+| setosa     |          4.8 |         3.4 |          1.9 |         0.2 |
+| versicolor |          6.4 |         2.9 |          4.3 |         1.3 |
+| versicolor |          5.7 |         2.8 |          4.1 |         1.3 |
+| virginica  |          5.9 |         3.0 |          5.1 |         1.8 |
+
+``` r
+#-----transposing a data frame in R----- 
+iris_transpose <- t(iris) 
+
+kable(iris_transpose)
+```
+
+|              |        |        |            |            |           |
+| :----------- | :----- | :----- | :--------- | :--------- | :-------- |
+| Species      | setosa | setosa | versicolor | versicolor | virginica |
+| Sepal.Length | 5.0    | 4.8    | 6.4        | 5.7        | 5.9       |
+| Sepal.Width  | 3.6    | 3.4    | 2.9        | 2.8        | 3.0       |
+| Petal.Length | 1.4    | 1.9    | 4.3        | 4.1        | 5.1       |
+| Petal.Width  | 0.2    | 0.2    | 1.3        | 1.3        | 1.8       |
+
+## Calculating the matrix transpose in Python
+
+The method `transpose` can be used to create a matrix transpose in
+Python. Numpy arrays and nested lists can both be manipulated using this
+method.
+
+``` python
+import numpy as np
+
+matrix_1 = np.array([[1, 2, 3, 4], 
+                     [5, 6, 7, 8]]) 
+                     
+matrix_2 = matrix_1.transpose()
+print(matrix_2)  
+
+#> [[1 5]
+#>  [2 6]
+#>  [3 7]
+#>  [4 8]]
+```
+
 # Coding resources
 
 **Online articles:**
 
-  - [Nested loop for matrix multiplication in
+  - [How to write a nested loop for matrix multiplication in
     Python](https://www.programiz.com/python-programming/examples/multiply-matrix)

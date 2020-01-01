@@ -295,18 +295,18 @@ m[0]
 m[:, 0]
 #> array([ 1, -5,  0])
 
-m[0:1+1, 1:2+1] 
+m[0: 1 + 1, 1: 2 + 1] 
 #> array([[4, 5],
 #>        [8, 9]])
 
-# remember slicing from a to b is written in Python as [a:b+1]  
+# remember slicing from a to b is written in Python as [a: b + 1]  
 ```
 
 # Coding resources
 
 **Online articles:**
 
-  - [Matrix operations in
+  - [Performing matrix operations in
     Python](https://www.programiz.com/python-programming/matrix)  
   - [Subsetting a column from a nested list in
     Python](https://stackoverflow.com/questions/44360162/how-to-access-a-column-in-a-list-of-lists-in-python)
