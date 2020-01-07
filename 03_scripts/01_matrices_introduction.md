@@ -19,9 +19,9 @@ and form of symmetry.
 
 ## Subsetting matrices in R
 
-We can create matrices using `matrix` or `as.matrix` and subset
-individual elements based on position \[ij\].  
-Subsetting matrix elements will return a numeric vector or another
+In R, we can create matrices using `matrix` or `as.matrix` and subset
+individual elements based on position \[i, j\].  
+Subsetting matrix elements will return a numerical vector or another
 matrix, depending on how many rows or columns are selected.
 
 ``` r
@@ -45,7 +45,6 @@ m[, 3]
 # returns a numerical vector
 
 m[, c(1, 3)] 
-
 #>    [,1] [,2]
 #> [1,]    0    4
 #> [2,]   -3    3
@@ -56,71 +55,52 @@ m[, c(1, 3)]
 
 ## Subsetting matrices in Python
 
-In Python, matrices can be stored simply as nested lists or as a numpy
-array (via the `NumPy` package).
+In Python, matrices can be stored as nested lists (not advisable for
+matrix subsetting purposes) or as a numpy array using the `NumPy`
+package (advised format).
 
 **Notes:**
 
-  - Subsetting a matrix (via a listed nest) in Python requires a
-    sequence of square brackets i.e. \[outer list - row
-    position\]\[inner list - column position\].
-  - Subsetting a matrix in R requires a single square bracket i.e. \[row
-    position: column position\].
+  - Subsetting a matrix element from a nested list in Python requires a
+    sequence of square brackets i.e. \[row number\]\[position of a value
+    in that row\].  
+  - In contrast, subsetting a matrix in R requires a single square
+    bracket i.e. \[row position:column position\].
 
 <!-- end list -->
 
 ``` python
-#-----subsetting matrices stored as lists-----  
-import numpy as np 
-
+#-----subsetting matrices stored as a nested list-----  
 m = [[1, 4, 5], 
     [-5, 8, 9]] 
     
 print(m)
 #> [[1, 4, 5], [-5, 8, 9]]
-```
 
-    ## [[1, 4, 5], [-5, 8, 9]]
-
-``` python
 type(m) 
 #> <class 'list'>  
-```
 
-    ## <class 'list'>
-
-``` python
 m[0]
 #> [1, 4, 5]  
-```
 
-    ## [1, 4, 5]
-
-``` python
 m[0][1]
 #> [4]  
-```
 
-    ## 4
-
-``` python
 m[-1] 
 #> [-5, 8, 9]] 
 
 # no direct way to subset a column from a nested list  
 ```
 
-    ## [-5, 8, 9]
-
 ## Creating matrices in R
 
-The function `matrix` requires a vector input and arguments specifying
-how that vector will be reshaped into a matrix (using `nrow`, `ncol` and
-`byrow` arguments).
+In R, the function `matrix` requires a vector input and arguments
+specifying how that vector will be reshaped into a matrix (using `nrow`,
+`ncol` and `byrow` arguments).
 
 **Notes:**
 
-  - The argument `byrow` is set to `TRUE` by default but it is best to
+  - The argument `byrow` is set to `TRUE` by default but it is safest to
     explicitly call this argument.
   - Vector names are not carried over `matrix` conversions.
   - You can store matrix row and column names using the `dimnames`
@@ -139,15 +119,14 @@ matrix(vector_1,
        nrow = 3,
        ncol = 4, 
        byrow = T) 
-
 #>      [,1] [,2] [,3] [,4]
 #> [1,]    0    2    4    5
 #> [2,]   -3    1    3    5
 #> [3,]   -4    7   26   -1
 
-names(vector_1) <- c(LETTERS[1: length(vector_1)]) 
-(vector_1)
+names(vector_1) <- c(LETTERS[1:length(vector_1)]) 
 
+(vector_1)
 #> A  B  C  D  E  F  G  H  I  J  K  L 
 #> 0  2  4  5 -3  1  3  5 -4  7 26 -1 
 
@@ -155,7 +134,6 @@ matrix(vector_1,
        nrow = 3,
        ncol = 4, 
        byrow = T) 
-
 #>      [,1] [,2] [,3] [,4]
 #> [1,]    0    2    4    5
 #> [2,]   -3    1    3    5
@@ -175,8 +153,8 @@ df_1 <- data.frame("apple_sales" = c(1, 3, 5, 6), # 1st column
                    "daikon_sales" = c(0, 1, 0, 1)) # 4th column    
 
 matrix_1 <- as.matrix(df_1)  
-(matrix_1)  
 
+(matrix_1)  
 #>      apple_sales banana_sales carrot_sales daikon_sales
 #> [1,]           1            4            2            0
 #> [2,]           3            9            2            1
@@ -194,7 +172,6 @@ dimnames(matrix_1) <- list(row_names = c("1st_Qr",
                                          "daikons"))  
 
 (matrix_1) 
-
 #>          col_names
 #> row_names apples bananas carrots daikons
 #>    1st_Qr      1       4       2       0
@@ -203,7 +180,9 @@ dimnames(matrix_1) <- list(row_names = c("1st_Qr",
 #>    4th_Qr      6       5       1       1  
 
 # it may be easier to create a list to store row and column names
+
 colnames(matrix_1) <- NULL
+
 rownames(matrix_1) <- NULL
 
 matrix_2 <- list(data = matrix_1,
@@ -217,7 +196,6 @@ matrix_2 <- list(data = matrix_1,
                                "daikons"))  
 
 names(matrix_2) 
-
 #> "data"      "row_names" "col_names"
 ```
 
@@ -241,20 +219,18 @@ arrays. This makes the matrix easier to subset and/or transform.
 import numpy as np  
 
 matrix_1 = np.array([[1, 2, 3],
-                    [4, -5, 6]])
+                     [4, -5, 6]])
                     
 print(matrix_1) 
-
 #> [[ 1  2  3]
-#> [ 4 -5  6]]
+#>  [ 4 -5  6]]
 
 print(type(matrix_1))   
-
 #> <class 'numpy.ndarray'>    
 
 matrix_2 = np.arange(start = -2, stop = 16, step = 2).reshape(3,3)
-print(matrix_2)
 
+print(matrix_2)
 #> [[-2  0  2]
 #>  [ 4  6  8]
 #>  [10 12 14]]
@@ -262,29 +238,34 @@ print(matrix_2)
 #-----creating a zero matrix-----
 zeros_matrix = np.zeros(shape = (2, 3),
                         dtype = float)
+
 print(zeros_matrix)
+#> [[0. 0. 0.]
+#>  [0. 0. 0.]]
 
+#-----creating a matrix of ones-----
+ones_array = np.ones((1, 5))
 
-# ones_array = np.ones( (1, 5), dtype=np.int32 ) // specifying dtype
-# print(ones_array)  
+print(ones_array)
+#> [[1. 1. 1. 1. 1.]]
 
 #-----creating an identity matrix-----  
 matrix_identity = np.identity(n = 3) 
-print(matrix_identity)
 
+print(matrix_identity)
 #> [[1. 0. 0.]
-#> [0. 1. 0.]
-#> [0. 0. 1.]]
+#>  [0. 1. 0.]
+#>  [0. 0. 1.]]
 ```
 
-Subsetting and slicing matrices is much simpler when they are stored as
+Subsetting and slicing matrices can be performed when they are stored as
 numpy arrays. The resulting product is also stored as a numpy array.
 
 ``` python
-#-----subsetting matrices - numpy arrays-----  
+#-----subsetting matrices stored as numpy arrays-----  
 m = np.array([[1, 4, 5], [-5, 8, 9], [0, 1, -1]]) 
-print(m)
 
+print(m)
 #> [[ 1  4  5]
 #>  [-5  8  9]
 #>  [ 0  1 -1]]
@@ -295,11 +276,11 @@ m[0]
 m[:, 0]
 #> array([ 1, -5,  0])
 
-m[0: 1 + 1, 1: 2 + 1] 
+m[0:(1 + 1), 1:(2 + 1)] 
 #> array([[4, 5],
 #>        [8, 9]])
 
-# remember slicing from a to b is written in Python as [a: b + 1]  
+# remember slicing from a to b is written in Python as [a:(b + 1)]  
 ```
 
 # Coding resources
