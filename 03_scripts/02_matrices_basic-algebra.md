@@ -38,8 +38,9 @@ corresponding elements are equal.
 
 ## Checking matrices equality in R
 
-In R, this can be checked using a logical comparison (i.e. using `==`)
-or the `compare` package.
+In R, this can be checked using a Boolean expression (i.e. using `==`)
+or the `compare` package. Both methods will produce logical statements
+that are either TRUE or FALSE.
 
 ``` r
 #-----matrix equality test-----
@@ -51,24 +52,27 @@ a <- matrix(data = c(4, -2, 7,
 
 b <- a   
 
-a == b # prints a logical matrix
-
+a == b 
 #>      [,1] [,2] [,3]
 #> [1,] TRUE TRUE TRUE
 #> [2,] TRUE TRUE TRUE
 
-summary(a == b) # logical results summed by matrix column  
+# prints a Boolean matrix
 
+summary(a == b) 
 #>     V1             V2             V3         
 #>  Mode:logical   Mode:logical   Mode:logical  
 #>  TRUE:2         TRUE:2         TRUE:2   
- 
-colSums(a == b) # column sums of all TRUEs (i.e. TRUE == 1)  
 
+# logical outputs are summed by matrix column  
+ 
+colSums(a == b)  
 #> [1] 2 2 2
 
-compare(a, b, equal = T) # from the compare package
+# displays sums by column of all TRUE values (i.e. TRUE == 1) 
 
+compare::compare(a, b,
+                 equal = T) 
 #> TRUE
 
 #-----unequal matrices-----  
@@ -78,23 +82,20 @@ c <- matrix(data = c(4, -2, 8,
             ncol = 3,
             byrow = T)
 
-summary(a == c) # logical results summed by matrix column 
-
+summary(a == c) 
 #>     V1             V2              V3         
 #>  Mode:logical   Mode:logical   Mode :logical  
 #>  TRUE:2         TRUE:2         FALSE:1        
 #>                                TRUE :1  
 
 colSums(a == c)  
-
 #> [1] 2 2 1
 ```
 
 ## Checking matrices equality in Python
 
 In Python, this can be checked using logical comparison (i.e. using
-`==`) or the R `compare` package equivalent `np.array_equal` or
-`np.array_equiv`.
+`==`) or by using the method `np.array_equal` or `np.array_equiv`.
 
 ``` python
 #-----matrix equality test-----
@@ -106,14 +107,13 @@ matrix_1 = np.array([[1, 2, 3],
 matrix_2 = np.copy(matrix_1)  
 
 matrix_1 == matrix_2
-
 #> array([[ True,  True,  True],
 #>        [ True,  True,  True]])
 
 np.array_equal(matrix_1, matrix_2) # test if same shape, same elements values
-np.array_equiv(matrix_1, matrix_2)  # test if broadcastable shape, same elements values
+#> True 
 
-#> True  
+np.array_equiv(matrix_1, matrix_2)  # test if broadcastable shape, same elements values
 #> True
 
 #-----unequal matrices-----  
@@ -121,7 +121,6 @@ matrix_3 = np.array([[1, 2, 3],
                      [4, -5, 9]])  
                     
 np.array_equal(matrix_1, matrix_3)
-
 #> False
 ```
 
@@ -146,22 +145,21 @@ a <- matrix(data = c(3, 4, 5, -2,
             byrow = T)
 
 (a)
-
 #>      [,1] [,2] [,3] [,4]
 #> [1,]    3    4    5   -2
 #> [2,]    1    0   -3    2
 
 ((1/2) * a)  
-
 #>      [,1] [,2] [,3] [,4]
 #> [1,]  1.5    2  2.5   -1
 #> [2,]  0.5    0 -1.5    1
 
-(a / 2) # same as the scalar multiple (1/2) * a  
-
+(a/2)
 #>      [,1] [,2] [,3] [,4]
 #> [1,]  1.5    2  2.5   -1
 #> [2,]  0.5    0 -1.5    1
+
+# a/2 is the same as the scalar multiple (1/2) * a  
 ```
 
 ## Scalar multiplication in Python
@@ -174,25 +172,22 @@ matrix_1 = np.array([[1, 2, 3],
                     [4, -5, 6]])
                     
 print(matrix_1) 
-
 #> [[ 1  2  3]
 #>  [ 4 -5  6]]
 
 matrix_2 = matrix_1 * 3
 
 print(matrix_2)
-
 #> [[  3   6   9]
 #>  [ 12 -15  18]]  
 
 matrix_3 = matrix_1 / (1/3)
-print(matrix_3)
 
+print(matrix_3)
 #> [[  3.   6.   9.]
 #>  [ 12. -15.  18.]] 
 
 np.array_equal(matrix_2, matrix_3) 
-
 #> True
 ```
 
