@@ -143,7 +143,7 @@ g.map_dataframe(sns.lineplot,
 plt.show()
 ```
 
-<img src="10_algebra_introduction_files/figure-gfm/unnamed-chunk-6-1.png" width="75%" style="display: block; margin: auto;" />
+<img src="10_algebra_introduction_files/figure-gfm/unnamed-chunk-6-1.png" width="60%" style="display: block; margin: auto;" />
 
 ## Algebraic identities
 

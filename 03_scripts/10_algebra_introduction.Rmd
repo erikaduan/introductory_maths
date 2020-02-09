@@ -120,7 +120,7 @@ power_table %>%
 #> True
 ```
 
-```{python, message = FALSE, results = 'hide', fig.align = 'center', out.width = "75%"}
+```{python, message = FALSE, results = 'hide', fig.align = 'center', out.width = "60%"}
 #-----visualising relationship between base number and power in Python-----
 import numpy as np
 import pandas as pd
