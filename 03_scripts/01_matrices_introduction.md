@@ -1,4 +1,4 @@
-Introduction to matrices in R and Python
+Introduction to matrices
 ================
 
   - [Matrix structure](#matrix-structure)

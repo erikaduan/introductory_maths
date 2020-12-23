@@ -1,5 +1,5 @@
 ---
-title: Introduction to matrices in R and Python
+title: Introduction to matrices   
 output: 
   github_document:
     toc: TRUE
