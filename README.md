@@ -21,18 +21,20 @@ This repository also has a **secondary aim** of promoting code agnostic practice
     1.1 [Introduction to sets](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/01_sets-introduction.md)  
 
 2. Vectors  
-   2.1 [Introduction to vectors]()  
+   2.1 [Introduction to vectors](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/02_vectors-introduction.md)  
 
-3. Matrices  
-    3.1 [Introduction to matrices](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/01_matrices_introduction.md)  
-    3.2 [Basic matrix algebra](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/02_matrices_basic-algebra.md)  
+3. Algebra  
+    3.1 [Introduction to algebra]()  
+    3.2 [Introductin to exponents]()  
 
-4. Algebra  
-    4.1 [Introduction to exponents and algebra](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/10_algebra_introduction.md)  
+4. Matrices  
+    4.1 [Introduction to matrices]()  
+    4.2 [Basic matrix algebra]()  
 
 ## References  
 
-+ A fantastic guide to [linear algebra](https://pabloinsente.github.io/intro-linear-algebra) for applied machine learning by Pablo Caceres  
++ A great guide to [linear algebra](https://pabloinsente.github.io/intro-linear-algebra) for applied machine learning by Pablo Caceres  
++ The [Mathematics for Machine Learning](https://mml-book.github.io/book/mml-book.pdf) textbook by Marc Peter Deisenroth, A Aldo Faisal and Cheng Soon Ong - Cambridge University Press  
 + A reference for writing [mathematical operations in LaTex/R](https://en.wikibooks.org/wiki/LaTeX/Mathematics#Fractions_and_Binomials) - Wikibooks  
 + A guide to [basic calculus](www.math.nagoya-u.ac.jp/~richard/teaching/f2016/BasicCalculus.pdf) by S K Chung - University of Hong Kong  
 + A guide to [basic calculus](https://www.ms.uky.edu/~lee/amspcalc/calcmolzon.pdf) by Robert Molzon - University of Kentucky  
