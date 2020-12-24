@@ -43,10 +43,9 @@ set_1
 ## Set notation
 
 Set notation is used to describe object belonging.  
-We can also use set notation to define subsets by asserting new subset
-properties i.e. a condition
-![S(x)](https://latex.codecogs.com/png.latex?S%28x%29 "S(x)") only holds
-true for a subset of elements within a set.
+We can also use set notation to create subsets by asserting new subset
+properties i.e. by specifying a condition which only holds true for a
+subset of elements within a larger set.
 
 ![](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/02_figures/01_sets-notation.jpg)
 
@@ -109,7 +108,7 @@ f1 <- tibble(x = c(seq(1, 20)),
 f1 %>%
   ggplot(aes(x, fx)) +
   geom_point() +
-  geom_smooth(formula = y ~ x^2) + # plot a line of best fit according to a formula  
+  geom_smooth(formula = y ~ x^2, color = "salmon") + # plot a line of best fit according to a formula  
   scale_x_continuous(breaks = seq(min(f1$x), max(f1$x))) +
   labs(y = "f(x)") + 
   theme_minimal() +
@@ -133,6 +132,10 @@ f2 = pd.DataFrame({'x_values' : x, 'fx_values' : fx})
 
 #-----plot function-----
 sns.scatterplot(data = f2, x = 'x_values', y = 'fx_values')
+sns.lineplot(data = f2, x = 'x_values', y = 'fx_values', color = 'salmon')
+```
+
+``` python
 plt.xlabel('x')
 plt.ylabel('f(x)')
 plt.show()  
