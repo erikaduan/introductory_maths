@@ -18,14 +18,17 @@ This repository also has a **secondary aim** of promoting code agnostic practice
 ## Tutorials   
 
 1. Sets  
-    1.1 [Introduction to sets]()
+    1.1 [Introduction to sets](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/01_sets-introduction.md)  
 
-2. Matrices  
-    2.1 [Introduction to matrices](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/01_matrices_introduction.md)  
-    2.2 [Basic matrix algebra](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/02_matrices_basic-algebra.md)  
+2. Vectors  
+   2.1 [Introduction to vectors]()  
 
-3. Algebra  
-    3.1 [Introduction to exponents and algebra](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/10_algebra_introduction.md)  
+3. Matrices  
+    3.1 [Introduction to matrices](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/01_matrices_introduction.md)  
+    3.2 [Basic matrix algebra](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/02_matrices_basic-algebra.md)  
+
+4. Algebra  
+    4.1 [Introduction to exponents and algebra](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/10_algebra_introduction.md)  
 
 ## References  
 
