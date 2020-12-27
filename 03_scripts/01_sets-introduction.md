@@ -1,7 +1,7 @@
 Introduction to sets
 ================
 Erika Duan
-2020-12-24
+2020-12-27
 
   - [Resources](#resources)
   - [What is a mathematical set?](#what-is-a-mathematical-set)
@@ -131,6 +131,8 @@ fx = x.apply(lambda x: x ** 2)
 f2 = pd.DataFrame({'x_values' : x, 'fx_values' : fx})
 
 #-----plot function-----
+sns.set_style("white") 
+
 sns.scatterplot(data = f2, x = 'x_values', y = 'fx_values')
 sns.lineplot(data = f2, x = 'x_values', y = 'fx_values', color = 'salmon')
 ```
