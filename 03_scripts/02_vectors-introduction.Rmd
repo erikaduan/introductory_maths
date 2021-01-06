@@ -230,7 +230,7 @@ Vector-scalar multiplication has the following properties:
 
  
 ```{python}
-#-----vector scalar multiplication in Python via Numpy-----
+#-----vector-scalar multiplication in Python via Numpy-----
 alpha = 4 
 
 x = np.array([[1, 1],
@@ -244,7 +244,7 @@ alpha * x
 ```
 
 ```{r}
-#-----vector scalar multiplication in R-----  
+#-----vector-scalar multiplication in R-----  
 alpha <- 4
 x <- array(c(1, 1,
              2, 2,
@@ -304,4 +304,61 @@ str(a*x + b*y)
 
 
 ## Vector-vector multiplication (the dot-product)  
+
+Vector-vector multiplication involves taking the transpose of the first vector and then calculating the sum of the product of each vector dimension.      
+$$x\times y = \begin{bmatrix}
+ x_1\\
+ x_2\\
+\end{bmatrix}^T \times
+\begin{bmatrix}
+ y_1\\
+ y_2\\
+\end{bmatrix} = 
+\begin{bmatrix}
+ x_1, x_2\\
+\end{bmatrix} \times
+\begin{bmatrix}
+ y_1\\
+ y_2\\
+\end{bmatrix} = 
+\begin{bmatrix}
+(x_1\times y_1) + (x_2\times y_2)
+\end{bmatrix}$$  
+
+**Note:** Vector-vector multiplication will always return a single value. 
+
+```{python}
+#-----vector-vector multiplication in Python via Numpy-----  
+x = np.array([[-2],
+              [2]])  
+
+y = np.array([[4],
+              [-3]])  
+
+np.transpose(x) # can also be written as x.T
+#> array([[-2,  2]])    
+
+np.transpose(x) @ y
+#> array([[-14]])   
+```
+
+```{r}
+#-----vector-vector multiplication in R-----  
+# t() only works on matrices so we need to create x and y as matrices rather than arrays    
+
+x <- matrix(c(-2, 2), nrow = 2)
+
+y <- matrix(c(4, -3), nrow = 2)
+
+t(x) 
+#>      [,1] [,2]
+#> [1,]   -2    2  
+
+t(x) %*% y
+#>      [,1]
+#> [1,]  -14
+```
+
+
+# Vector space, span and subspace       
 

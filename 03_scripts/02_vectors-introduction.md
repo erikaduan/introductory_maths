@@ -11,7 +11,10 @@ Erika Duan
   - [Basic vector operations](#basic-vector-operations)
       - [Vector-vector addition](#vector-vector-addition)
       - [Vector-scalar multiplication](#vector-scalar-multiplication)
-  - [Linear combinations of vectors](#linear-combinations-of-vectors)
+      - [Vector linear combination](#vector-linear-combination)
+      - [Vector-vector multiplication (the
+        dot-product)](#vector-vector-multiplication-the-dot-product)
+  - [Vector space, span and subspace](#vector-space-span-and-subspace)
 
 # Resources
 
@@ -53,7 +56,7 @@ Different types of vectors exist:
 ![](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/02_figures/02_vectors-types.jpg)
 
 ``` python
-#-----create 1 dimensional vector in Python-----
+#-----create 1 dimensional vector in Python via Numpy-----
 import numpy as np 
 
 x = np.array([np.arange(1, 10+1)])
@@ -62,7 +65,7 @@ x.shape
 ```
 
 ``` python
-#-----create 3-dimensional vector via Numpy array-----
+#-----create 3-dimensional vector in Python via Numpy-----
 # note the placement of double square brackets [[y1],[y2],[y3]]
 
 y = np.array([[1, 2, 3],
@@ -152,7 +155,7 @@ Vector-vector addition has the following properties:
 <!-- end list -->
 
 ``` python
-#-----create and add two vectors via NumPy arrays----  
+#-----create and add two vectors in Python via Numpy----  
 x = np.array([[1, 1],
               [2, 2],
               [3, 3]])  
@@ -182,6 +185,7 @@ np.add(x, y)
 ``` r
 #-----create and add two vectors in R-----  
 # vectors of n dimensions can be stored inside arrays   
+# arrays are not typically used for analysis in R i.e. its 2D array matrix form is used instead       
 
 x <- array(c(1, 1,
              2, 2,
@@ -229,7 +233,7 @@ Vector-scalar multiplication has the following properties:
 <!-- end list -->
 
 ``` python
-#-----vector scalar multiplication via NumPy arrays-----
+#-----vector-scalar multiplication in Python via Numpy-----
 alpha = 4 
 
 x = np.array([[1, 1],
@@ -243,7 +247,7 @@ alpha * x
 ```
 
 ``` r
-#-----vector scalar multiplication in R-----  
+#-----vector-scalar multiplication in R-----  
 alpha <- 4
 x <- array(c(1, 1,
              2, 2,
@@ -254,7 +258,7 @@ str(alpha * x)
 #>  num [1, 1:2, 1:3] 4 4 8 8 12 12    
 ```
 
-# Linear combinations of vectors
+## Vector linear combination
 
 A linear combination utilises the both rules of vector-vector addition
 and vector-scalar multiplication.
@@ -274,7 +278,7 @@ Another way to express linear combinations is with summation notation as
 "\\displaystyle\\sum_{i=1}^{k}\\beta_{i}x_{i}").
 
 ``` python
-#-----linear combination via NumPy arrays-----  
+#-----linear combination in Python via Numpy-----  
 a, b = -2, 3 # input scalar values  
 
 x = np.array([[2],
@@ -290,3 +294,100 @@ a*x + b*y
 #> [[-4 + 12],
 #>  [-6 + 15]]  
 ```
+
+``` r
+#-----linear combinations in R----- 
+a <- -2
+b <- 3
+
+x <- array(c(2, 3), 
+           dim = c(1, 2, 1))
+
+y <- array(c(4, 5), 
+           dim = c(1, 2, 1))
+
+str(a*x + b*y)
+#>  num [1, 1:2, 1] 8 9   
+```
+
+## Vector-vector multiplication (the dot-product)
+
+Vector-vector multiplication involves taking the transpose of the first
+vector and then calculating the sum of the product of each vector
+dimension.  
+  
+![x\\times y = \\begin{bmatrix}
+x\_1\\\\
+x\_2\\\\
+\\end{bmatrix}^T \\times
+\\begin{bmatrix}
+y\_1\\\\
+y\_2\\\\
+\\end{bmatrix} = 
+\\begin{bmatrix}
+x\_1, x\_2\\\\
+\\end{bmatrix} \\times
+\\begin{bmatrix}
+y\_1\\\\
+y\_2\\\\
+\\end{bmatrix} = 
+\\begin{bmatrix}
+(x\_1\\times y\_1) + (x\_2\\times y\_2)
+\\end{bmatrix}](https://latex.codecogs.com/png.latex?x%5Ctimes%20y%20%3D%20%5Cbegin%7Bbmatrix%7D%0A%20x_1%5C%5C%0A%20x_2%5C%5C%0A%5Cend%7Bbmatrix%7D%5ET%20%5Ctimes%0A%5Cbegin%7Bbmatrix%7D%0A%20y_1%5C%5C%0A%20y_2%5C%5C%0A%5Cend%7Bbmatrix%7D%20%3D%20%0A%5Cbegin%7Bbmatrix%7D%0A%20x_1%2C%20x_2%5C%5C%0A%5Cend%7Bbmatrix%7D%20%5Ctimes%0A%5Cbegin%7Bbmatrix%7D%0A%20y_1%5C%5C%0A%20y_2%5C%5C%0A%5Cend%7Bbmatrix%7D%20%3D%20%0A%5Cbegin%7Bbmatrix%7D%0A%28x_1%5Ctimes%20y_1%29%20%2B%20%28x_2%5Ctimes%20y_2%29%0A%5Cend%7Bbmatrix%7D
+"x\\times y = \\begin{bmatrix}
+ x_1\\\\
+ x_2\\\\
+\\end{bmatrix}^T \\times
+\\begin{bmatrix}
+ y_1\\\\
+ y_2\\\\
+\\end{bmatrix} = 
+\\begin{bmatrix}
+ x_1, x_2\\\\
+\\end{bmatrix} \\times
+\\begin{bmatrix}
+ y_1\\\\
+ y_2\\\\
+\\end{bmatrix} = 
+\\begin{bmatrix}
+(x_1\\times y_1) + (x_2\\times y_2)
+\\end{bmatrix}")  
+
+**Note:** Vector-vector multiplication will always return a single
+value.
+
+``` python
+#-----vector-vector multiplication in Python via Numpy-----  
+x = np.array([[-2],
+              [2]])  
+
+y = np.array([[4],
+              [-3]])  
+
+np.transpose(x) # can also be written as x.T
+#> array([[-2,  2]])    
+```
+
+``` python
+np.transpose(x) @ y
+#> array([[-14]])   
+```
+
+``` r
+#-----vector-vector multiplication in R-----  
+# t() only works on matrices so we need to create x and y as matrices rather than arrays    
+
+x <- matrix(c(-2, 2), nrow = 2)
+
+y <- matrix(c(4, -3), nrow = 2)
+
+t(x) 
+#>      [,1] [,2]
+#> [1,]   -2    2  
+
+t(x) %*% y
+#>      [,1]
+#> [1,]  -14
+```
+
+# Vector space, span and subspace
