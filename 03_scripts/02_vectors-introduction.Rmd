@@ -30,7 +30,7 @@ py_run_string("os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = 'C:/Users/user/Anacon
 
 # Resources   
 
-This section on mathematical sets is taken from [Introduction to Linear Algebra for Applied Machine Learning with Python](https://pabloinsente.github.io/intro-linear-algebra#vectors) by Pablo Caceres. All credit should be attributed to Pablo Caceres.   
+This section on vectors is taken from [Introduction to Linear Algebra for Applied Machine Learning with Python](https://pabloinsente.github.io/intro-linear-algebra#vectors) by Pablo Caceres, [Linear combinations and span](https://www.youtube.com/watch?v=Qm_OS-8COwU) by Khan Academy and [Linear combinations, span and basis vectors](https://www.youtube.com/watch?v=k7RM-ot2NWY) by 3Blue1Brown. All credit should be attributed to these sources.     
 
 
 # What is a vector?  
@@ -51,10 +51,10 @@ $x =
  \end{bmatrix}
  \in {\rm I\!R}^{3}$
 
-![](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/02_figures/02_vector-types.jpg)    
+![](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/02_figures/02_vectors-types.jpg)    
 
 ```{python}
-#-----create 1 dimensional vector via Numpy array-----
+#-----create 1 dimensional vector in Python via Numpy-----
 import numpy as np 
 
 x = np.array([np.arange(1, 10+1)])
@@ -63,7 +63,7 @@ x.shape
 ```
 
 ```{python}
-#-----create 3-dimensional vector via Numpy array-----
+#-----create 3-dimensional vector in Python via Numpy-----
 # note the placement of double square brackets [[y1],[y2],[y3]]
 
 y = np.array([[1, 2, 3],
@@ -163,7 +163,7 @@ Vector-vector addition has the following properties:
 + Subtracting the vector from itself returns the zero vector. $x - x = 0$       
 
 ```{python}
-#-----create and add two vectors via NumPy arrays----  
+#-----create and add two vectors in Python via Numpy----  
 x = np.array([[1, 1],
               [2, 2],
               [3, 3]])  
@@ -189,6 +189,7 @@ np.add(x, y)
 ```{r}
 #-----create and add two vectors in R-----  
 # vectors of n dimensions can be stored inside arrays   
+# arrays are not typically used for analysis in R i.e. its 2D array matrix form is used instead       
 
 x <- array(c(1, 1,
              2, 2,
@@ -225,11 +226,11 @@ Vector-scalar multiplication has the following properties:
 + It is associative. $(\alpha \times \beta )\times x = \alpha \times ( \beta \times x)$        
 + It is left-distributive. $(\alpha + \beta )x = \alpha x + \beta x$       
 + It is right-distributive. $x(\alpha + \beta ) = x\alpha + x\beta$     
-+ It is right-distributive for vector addition. $\alpha (x + y) = \alpha x + \alpha y$     
++ It is right-distributive for vector addition. $\alpha (x+y)=\alpha x+ \alpha y$     
 
  
 ```{python}
-#-----vector scalar multiplication via NumPy arrays-----
+#-----vector scalar multiplication in Python via Numpy-----
 alpha = 4 
 
 x = np.array([[1, 1],
@@ -255,9 +256,52 @@ str(alpha * x)
 ```
 
 
-# Linear combinations of vectors       
+## Vector linear combination        
+
+A linear combination utilises the both rules of vector-vector addition and vector-scalar multiplication. 
+
+There are a few different ways of thinking about linear combinations:  
+
++ Graphically as the addition of two vectors to form a new vector (which can also be visualised as a point in space) in the Cartesian plane.   
++ Mathmatically as the proof that any new vector can be created by a scalar combination of two existing basis vectors.      
+
+![](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/02_figures/02_vectors-linear-combination.jpg)    
+
+Another way to express linear combinations is with summation notation as $\displaystyle\sum_{i=1}^{k}\beta_{i}x_{i}$.     
+
+```{python}
+#-----linear combination in Python via Numpy-----  
+a, b = -2, 3 # input scalar values  
+
+x = np.array([[2],
+              [3]])
+
+y = np.array([[4],
+              [5]])  
+
+a*x + b*y
+#> array([[8],
+#>        [9]]) 
+
+#> [[-4 + 12],
+#>  [-6 + 15]]  
+```
 
 ```{r}
+#-----linear combinations in R----- 
+a <- -2
+b <- 3
 
+x <- array(c(2, 3), 
+           dim = c(1, 2, 1))
+
+y <- array(c(4, 5), 
+           dim = c(1, 2, 1))
+
+str(a*x + b*y)
+#>  num [1, 1:2, 1] 8 9   
 ```
+
+
+## Vector-vector multiplication (the dot-product)  
 

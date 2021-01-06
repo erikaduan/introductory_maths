@@ -1,7 +1,7 @@
 Introduction to vectors
 ================
 Erika Duan
-2021-01-03
+2021-01-06
 
   - [Resources](#resources)
   - [What is a vector?](#what-is-a-vector)
@@ -15,10 +15,14 @@ Erika Duan
 
 # Resources
 
-This section on mathematical sets is taken from [Introduction to Linear
-Algebra for Applied Machine Learning with
+This section on vectors is taken from [Introduction to Linear Algebra
+for Applied Machine Learning with
 Python](https://pabloinsente.github.io/intro-linear-algebra#vectors) by
-Pablo Caceres. All credit should be attributed to Pablo Caceres.
+Pablo Caceres, [Linear combinations and
+span](https://www.youtube.com/watch?v=Qm_OS-8COwU) by Khan Academy and
+[Linear combinations, span and basis
+vectors](https://www.youtube.com/watch?v=k7RM-ot2NWY) by 3Blue1Brown.
+All credit should be attributed to these sources.
 
 # What is a vector?
 
@@ -46,10 +50,10 @@ Different types of vectors exist:
     I\\\!R}^{3}](https://latex.codecogs.com/png.latex?x%20%3D%20%20%5Cbegin%7Bbmatrix%7D%20x_1%20%5C%5C%20x_2%20%5C%5C%20x_3%20%20%5Cend%7Bbmatrix%7D%20%20%5Cin%20%7B%5Crm%20I%5C%21R%7D%5E%7B3%7D
     "x =  \\begin{bmatrix} x_1 \\\\ x_2 \\\\ x_3  \\end{bmatrix}  \\in {\\rm I\\!R}^{3}")
 
-![](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/02_figures/02_vector-types.jpg)
+![](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/02_figures/02_vectors-types.jpg)
 
 ``` python
-#-----create 1 dimensional vector via Numpy array-----
+#-----create 1 dimensional vector in Python-----
 import numpy as np 
 
 x = np.array([np.arange(1, 10+1)])
@@ -217,10 +221,10 @@ Vector-scalar multiplication has the following properties:
   - It is right-distributive. ![x(\\alpha + \\beta ) = x\\alpha +
     x\\beta](https://latex.codecogs.com/png.latex?x%28%5Calpha%20%2B%20%5Cbeta%20%29%20%3D%20x%5Calpha%20%2B%20x%5Cbeta
     "x(\\alpha + \\beta ) = x\\alpha + x\\beta")  
-  - It is right-distributive for vector addition. ![\\alpha (x + y) =
-    \\alpha x + \\alpha
-    y](https://latex.codecogs.com/png.latex?%5Calpha%20%28x%20%2B%20y%29%20%3D%20%5Calpha%20x%20%2B%20%5Calpha%20y
-    "\\alpha (x + y) = \\alpha x + \\alpha y")
+  - It is right-distributive for vector addition. ![\\alpha
+    (x+y)=\\alpha x+ \\alpha
+    y](https://latex.codecogs.com/png.latex?%5Calpha%20%28x%2By%29%3D%5Calpha%20x%2B%20%5Calpha%20y
+    "\\alpha (x+y)=\\alpha x+ \\alpha y")
 
 <!-- end list -->
 
@@ -251,3 +255,38 @@ str(alpha * x)
 ```
 
 # Linear combinations of vectors
+
+A linear combination utilises the both rules of vector-vector addition
+and vector-scalar multiplication.
+
+There are a few different ways of thinking about linear combinations:
+
+  - Graphically as the addition of two vectors to form a new vector
+    (which can also be visualised as a point in space) in the Cartesian
+    plane.  
+  - Mathmatically as the proof that any new vector can be created by a
+    scalar combination of two existing basis vectors.
+
+![](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/02_figures/02_vectors-linear-combination.jpg)
+
+Another way to express linear combinations is with summation notation as
+![\\displaystyle\\sum\_{i=1}^{k}\\beta\_{i}x\_{i}](https://latex.codecogs.com/png.latex?%5Cdisplaystyle%5Csum_%7Bi%3D1%7D%5E%7Bk%7D%5Cbeta_%7Bi%7Dx_%7Bi%7D
+"\\displaystyle\\sum_{i=1}^{k}\\beta_{i}x_{i}").
+
+``` python
+#-----linear combination via NumPy arrays-----  
+a, b = -2, 3 # input scalar values  
+
+x = np.array([[2],
+              [3]])
+
+y = np.array([[4],
+              [5]])  
+
+a*x + b*y
+#> array([[8],
+#>        [9]]) 
+
+#> [[-4 + 12],
+#>  [-6 + 15]]  
+```
