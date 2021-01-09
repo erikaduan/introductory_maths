@@ -1,7 +1,7 @@
 Introduction to vectors
 ================
 Erika Duan
-2021-01-06
+2021-01-09
 
   - [Resources](#resources)
   - [What is a vector?](#what-is-a-vector)
@@ -15,6 +15,11 @@ Erika Duan
       - [Vector-vector multiplication (the
         dot-product)](#vector-vector-multiplication-the-dot-product)
   - [Vector space, span and subspace](#vector-space-span-and-subspace)
+      - [Vector span](#vector-span)
+      - [Vector subspace](#vector-subspace)
+  - [Linear dependence and linear
+    independence](#linear-dependence-and-linear-independence)
+  - [Vector null space](#vector-null-space)
 
 # Resources
 
@@ -23,9 +28,9 @@ for Applied Machine Learning with
 Python](https://pabloinsente.github.io/intro-linear-algebra#vectors) by
 Pablo Caceres, [Linear combinations and
 span](https://www.youtube.com/watch?v=Qm_OS-8COwU) by Khan Academy and
-[Linear combinations, span and basis
-vectors](https://www.youtube.com/watch?v=k7RM-ot2NWY) by 3Blue1Brown.
-All credit should be attributed to these sources.
+[Essence of linear
+algebra](https://www.3blue1brown.com/essence-of-linear-algebra-page) by
+3Blue1Brown. All credit should be attributed to these sources.
 
 # What is a vector?
 
@@ -53,7 +58,7 @@ Different types of vectors exist:
     I\\\!R}^{3}](https://latex.codecogs.com/png.latex?x%20%3D%20%20%5Cbegin%7Bbmatrix%7D%20x_1%20%5C%5C%20x_2%20%5C%5C%20x_3%20%20%5Cend%7Bbmatrix%7D%20%20%5Cin%20%7B%5Crm%20I%5C%21R%7D%5E%7B3%7D
     "x =  \\begin{bmatrix} x_1 \\\\ x_2 \\\\ x_3  \\end{bmatrix}  \\in {\\rm I\\!R}^{3}")
 
-![](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/02_figures/02_vectors-types.jpg)
+<img src="../02_figures/02_vectors-types.jpg" width="100%" style="display: block; margin: auto;" />
 
 ``` python
 #-----create 1 dimensional vector in Python via Numpy-----
@@ -142,7 +147,7 @@ Vector-vector addition has the following properties:
   - It is commutative. ![x + y = y +
     x](https://latex.codecogs.com/png.latex?x%20%2B%20y%20%3D%20y%20%2B%20x
     "x + y = y + x")  
-  - It is associative ![(x + y) + z = x + (y +
+  - It is associative. ![(x + y) + z = x + (y +
     z)](https://latex.codecogs.com/png.latex?%28x%20%2B%20y%29%20%2B%20z%20%3D%20x%20%2B%20%28y%20%2B%20z%29
     "(x + y) + z = x + (y + z)")  
   - Addition of the zero vector has no effect. ![x + 0 =
@@ -216,9 +221,9 @@ Vector-scalar multiplication is also an element-wise operation.
 Vector-scalar multiplication has the following properties:
 
   - It is associative. ![(\\alpha \\times \\beta )\\times x = \\alpha
-    \\times ( \\beta \\times
-    x)](https://latex.codecogs.com/png.latex?%28%5Calpha%20%5Ctimes%20%5Cbeta%20%29%5Ctimes%20x%20%3D%20%5Calpha%20%5Ctimes%20%28%20%5Cbeta%20%5Ctimes%20x%29
-    "(\\alpha \\times \\beta )\\times x = \\alpha \\times ( \\beta \\times x)")  
+    \\times (\\beta \\times
+    x)](https://latex.codecogs.com/png.latex?%28%5Calpha%20%5Ctimes%20%5Cbeta%20%29%5Ctimes%20x%20%3D%20%5Calpha%20%5Ctimes%20%28%5Cbeta%20%5Ctimes%20x%29
+    "(\\alpha \\times \\beta )\\times x = \\alpha \\times (\\beta \\times x)")  
   - It is left-distributive. ![(\\alpha + \\beta )x = \\alpha x + \\beta
     x](https://latex.codecogs.com/png.latex?%28%5Calpha%20%2B%20%5Cbeta%20%29x%20%3D%20%5Calpha%20x%20%2B%20%5Cbeta%20x
     "(\\alpha + \\beta )x = \\alpha x + \\beta x")  
@@ -271,11 +276,15 @@ There are a few different ways of thinking about linear combinations:
   - Mathmatically as the proof that any new vector can be created by a
     scalar combination of two existing basis vectors.
 
-![](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/02_figures/02_vectors-linear-combination.jpg)
+<img src="../02_figures/02_vectors-linear-combination.jpg" width="100%" style="display: block; margin: auto;" />
 
 Another way to express linear combinations is with summation notation as
 ![\\displaystyle\\sum\_{i=1}^{k}\\beta\_{i}x\_{i}](https://latex.codecogs.com/png.latex?%5Cdisplaystyle%5Csum_%7Bi%3D1%7D%5E%7Bk%7D%5Cbeta_%7Bi%7Dx_%7Bi%7D
-"\\displaystyle\\sum_{i=1}^{k}\\beta_{i}x_{i}").
+"\\displaystyle\\sum_{i=1}^{k}\\beta_{i}x_{i}"). Note that two linearly
+independent vectors do not need to be orthogonal to each other for the
+span of their linear combinations to be ![{\\rm
+I\\\!R}^3](https://latex.codecogs.com/png.latex?%7B%5Crm%20I%5C%21R%7D%5E3
+"{\\rm I\\!R}^3").
 
 ``` python
 #-----linear combination in Python via Numpy-----  
@@ -391,3 +400,132 @@ t(x) %*% y
 ```
 
 # Vector space, span and subspace
+
+A vector space is the set of proper vectors (objects which follow the
+rules defined for vector behaviour) and all possible linear combinations
+of the vector set.
+
+## Vector span
+
+If we take the vectors x and y and the scalars
+![\\alpha](https://latex.codecogs.com/png.latex?%5Calpha "\\alpha") and
+![\\beta](https://latex.codecogs.com/png.latex?%5Cbeta "\\beta"), the
+vector span is defined as the set of all possible linear combinations of
+![\\alpha x + \\beta
+y](https://latex.codecogs.com/png.latex?%5Calpha%20x%20%2B%20%5Cbeta%20y
+"\\alpha x + \\beta y").
+
+<img src="../02_figures/02_vectors-span.jpg" width="100%" style="display: block; margin: auto;" />
+
+## Vector subspace
+
+A vector subspace is a vector space that lies within a larger vector
+space.
+
+For a vector subspace S to be valid, it has to meet three conditions:
+
+  - Contains the zero vector. ![0\\in
+    S](https://latex.codecogs.com/png.latex?0%5Cin%20S "0\\in S")  
+  - Exhibits closure under multiplication i.e. ![for\\; all\\; \\alpha
+    \\in {\\rm I\\\!R} \\to \\alpha \\times s\_i \\in
+    S](https://latex.codecogs.com/png.latex?for%5C%3B%20all%5C%3B%20%5Calpha%20%5Cin%20%7B%5Crm%20I%5C%21R%7D%20%5Cto%20%5Calpha%20%5Ctimes%20s_i%20%5Cin%20S
+    "for\\; all\\; \\alpha \\in {\\rm I\\!R} \\to \\alpha \\times s_i \\in S")  
+  - Exhibits closure under addition i.e. ![for\\; all\\; s\_i \\in S
+    \\to s\_1 + s\_2 \\in
+    S](https://latex.codecogs.com/png.latex?for%5C%3B%20all%5C%3B%20s_i%20%5Cin%20S%20%5Cto%20s_1%20%2B%20s_2%20%5Cin%20S
+    "for\\; all\\; s_i \\in S \\to s_1 + s_2 \\in S")
+
+[Closure](https://www.mathsisfun.com/sets/closure.html) can be thought
+of as the inability to jump out from one space into another. For
+example, in the set of odd numbers, odd numbers exhibit closure under
+multiplication.
+
+<img src="../02_figures/02_vectors-subspace.jpg" width="100%" style="display: block; margin: auto;" />
+
+There are two ways to think about vector subspaces:
+
+**Geometrically for 2D or 3D vectors**
+
+You can think about closure under multiplication or addition as the
+addition of two vectors in the Cartesian plane. This is slightly harder
+to visualise in 3D and impossible for vectors of higher dimensions.
+
+**Mathematically evaluating individual vectors**
+
+You can ask whether the vector ![x= \\begin{bmatrix} 1\\\\ 2\\\\
+\\end{bmatrix}](https://latex.codecogs.com/png.latex?x%3D%20%5Cbegin%7Bbmatrix%7D%20%201%5C%5C%20%202%5C%5C%20%5Cend%7Bbmatrix%7D
+"x= \\begin{bmatrix}  1\\\\  2\\\\ \\end{bmatrix}") is a valid subpace
+of ![{\\rm
+I\\\!R}^2](https://latex.codecogs.com/png.latex?%7B%5Crm%20I%5C%21R%7D%5E2
+"{\\rm I\\!R}^2").
+
+  - Because the span of a vector is the set of all its linear
+    combinations, the span of ![x= \\begin{bmatrix} 1\\\\ 1\\\\
+    \\end{bmatrix}](https://latex.codecogs.com/png.latex?x%3D%20%5Cbegin%7Bbmatrix%7D%20%201%5C%5C%20%201%5C%5C%20%5Cend%7Bbmatrix%7D
+    "x= \\begin{bmatrix}  1\\\\  1\\\\ \\end{bmatrix}") does contain
+    zero i.e. ![0\\times x= 0 \\times \\begin{bmatrix} 1\\\\ 1\\\\
+    \\end{bmatrix} = \\begin{bmatrix} 0\\\\ 0\\\\
+    \\end{bmatrix}](https://latex.codecogs.com/png.latex?0%5Ctimes%20x%3D%200%20%5Ctimes%20%5Cbegin%7Bbmatrix%7D%20%201%5C%5C%20%201%5C%5C%20%5Cend%7Bbmatrix%7D%20%3D%20%5Cbegin%7Bbmatrix%7D%20%200%5C%5C%20%200%5C%5C%20%5Cend%7Bbmatrix%7D
+    "0\\times x= 0 \\times \\begin{bmatrix}  1\\\\  1\\\\ \\end{bmatrix} = \\begin{bmatrix}  0\\\\  0\\\\ \\end{bmatrix}")  
+  - Closure by multiplication implies that if we take the vector x and
+    multiply it by any real scalar, the resulting vector will stay in
+    the span of x. This is also true as ![\\alpha \\times
+    x](https://latex.codecogs.com/png.latex?%5Calpha%20%5Ctimes%20x
+    "\\alpha \\times x") will only stretch the length and or change the
+    direction of x, so the resulting vector remains in the span of
+    ![{\\rm
+    I\\\!R}^2](https://latex.codecogs.com/png.latex?%7B%5Crm%20I%5C%21R%7D%5E2
+    "{\\rm I\\!R}^2").  
+  - Closure by addition implies that if we add together any vectors
+    beloning to x, the resulting vector remains in the span of ![{\\rm
+    I\\\!R}^2](https://latex.codecogs.com/png.latex?%7B%5Crm%20I%5C%21R%7D%5E2
+    "{\\rm I\\!R}^2"). If we add ![x +
+    x](https://latex.codecogs.com/png.latex?x%20%2B%20x "x + x"), the
+    vector does not gain any new dimensions and remains in the span of
+    ![{\\rm
+    I\\\!R}^2](https://latex.codecogs.com/png.latex?%7B%5Crm%20I%5C%21R%7D%5E2
+    "{\\rm I\\!R}^2").
+
+# Linear dependence and linear independence
+
+A set of vectors is linearly dependent if at least one vector can be
+obtained as a linear combination of other vectors in the set. Another
+way to define linear dependence is to consider a set of vectors ![x\_1,
+..., x\_k](https://latex.codecogs.com/png.latex?x_1%2C%20...%2C%20x_k
+"x_1, ..., x_k") and scalars ![\\beta \\in {\\rm
+I\\\!R}](https://latex.codecogs.com/png.latex?%5Cbeta%20%5Cin%20%7B%5Crm%20I%5C%21R%7D
+"\\beta \\in {\\rm I\\!R}"). Linearly dependent vectors exist if we can
+obtain ![0 = \\displaystyle\\sum\_{i=1}^{k}
+\\beta\_{i}x\_{i}](https://latex.codecogs.com/png.latex?0%20%3D%20%5Cdisplaystyle%5Csum_%7Bi%3D1%7D%5E%7Bk%7D%20%5Cbeta_%7Bi%7Dx_%7Bi%7D
+"0 = \\displaystyle\\sum_{i=1}^{k} \\beta_{i}x_{i}") using at least one
+vector where ![\\beta
+\\neq 0](https://latex.codecogs.com/png.latex?%5Cbeta%20%5Cneq%200
+"\\beta \\neq 0"). (This implies that there is a vector in the same
+direction as a linear combination of other vectors, and we can therefore
+choose a scalar value that is equal in length but in the opposite
+direction to the linear combination of those other vectors to obtain ![0
+= \\displaystyle\\sum\_{i=1}^{k}
+\\beta\_{i}x\_{i}](https://latex.codecogs.com/png.latex?0%20%3D%20%5Cdisplaystyle%5Csum_%7Bi%3D1%7D%5E%7Bk%7D%20%5Cbeta_%7Bi%7Dx_%7Bi%7D
+"0 = \\displaystyle\\sum_{i=1}^{k} \\beta_{i}x_{i}") ).
+
+A set of vectors is linearly independent if no vector can be obtained as
+a linear combination of other vectors in the set.
+
+<img src="../02_figures/02_vectors-independence.jpg" width="100%" style="display: block; margin: auto;" />
+
+To summarise, linearly dependent vectors contain redundant information
+and the span of linearly dependent vectors cannot cover the whole set of
+values in ![{\\rm
+I\\\!R}^n](https://latex.codecogs.com/png.latex?%7B%5Crm%20I%5C%21R%7D%5En
+"{\\rm I\\!R}^n"). In contrast, linearly independent vectors do not
+contain redundant information.
+
+# Vector null space
+
+The null space of a set of vectors are all the linear combinations that
+map back into the zero vector.
+
+<img src="../02_figures/02_vectors-null-space.jpg" width="100%" style="display: block; margin: auto;" />
+
+In the example above, we can form the following two combinations of
+vectors that will map into the zero vector (0,0).

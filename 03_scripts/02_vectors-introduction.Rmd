@@ -30,7 +30,7 @@ py_run_string("os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = 'C:/Users/user/Anacon
 
 # Resources   
 
-This section on vectors is taken from [Introduction to Linear Algebra for Applied Machine Learning with Python](https://pabloinsente.github.io/intro-linear-algebra#vectors) by Pablo Caceres, [Linear combinations and span](https://www.youtube.com/watch?v=Qm_OS-8COwU) by Khan Academy and [Linear combinations, span and basis vectors](https://www.youtube.com/watch?v=k7RM-ot2NWY) by 3Blue1Brown. All credit should be attributed to these sources.     
+This section on vectors is taken from [Introduction to Linear Algebra for Applied Machine Learning with Python](https://pabloinsente.github.io/intro-linear-algebra#vectors) by Pablo Caceres, [Linear combinations and span](https://www.youtube.com/watch?v=Qm_OS-8COwU) by Khan Academy and [Essence of linear algebra](https://www.3blue1brown.com/essence-of-linear-algebra-page) by 3Blue1Brown. All credit should be attributed to these sources.      
 
 
 # What is a vector?  
@@ -51,7 +51,9 @@ $x =
  \end{bmatrix}
  \in {\rm I\!R}^{3}$
 
-![](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/02_figures/02_vectors-types.jpg)    
+```{r, echo = FALSE, results = 'markup', fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("../02_figures/02_vectors-types.jpg")
+```
 
 ```{python}
 #-----create 1 dimensional vector in Python via Numpy-----
@@ -158,7 +160,7 @@ $x + y =
 Vector-vector addition has the following properties:  
 
 + It is commutative. $x + y = y + x$      
-+ It is associative $(x + y) + z = x + (y + z)$       
++ It is associative. $(x + y) + z = x + (y + z)$       
 + Addition of the zero vector has no effect. $x + 0 = x$      
 + Subtracting the vector from itself returns the zero vector. $x - x = 0$       
 
@@ -223,7 +225,7 @@ $\alpha x =
 
 Vector-scalar multiplication has the following properties:   
 
-+ It is associative. $(\alpha \times \beta )\times x = \alpha \times ( \beta \times x)$        
++ It is associative. $(\alpha \times \beta )\times x = \alpha \times (\beta \times x)$        
 + It is left-distributive. $(\alpha + \beta )x = \alpha x + \beta x$       
 + It is right-distributive. $x(\alpha + \beta ) = x\alpha + x\beta$     
 + It is right-distributive for vector addition. $\alpha (x+y)=\alpha x+ \alpha y$     
@@ -265,9 +267,11 @@ There are a few different ways of thinking about linear combinations:
 + Graphically as the addition of two vectors to form a new vector (which can also be visualised as a point in space) in the Cartesian plane.   
 + Mathmatically as the proof that any new vector can be created by a scalar combination of two existing basis vectors.      
 
-![](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/02_figures/02_vectors-linear-combination.jpg)    
+```{r, echo = FALSE, results = 'markup', fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("../02_figures/02_vectors-linear-combination.jpg")
+```
 
-Another way to express linear combinations is with summation notation as $\displaystyle\sum_{i=1}^{k}\beta_{i}x_{i}$.     
+Another way to express linear combinations is with summation notation as $\displaystyle\sum_{i=1}^{k}\beta_{i}x_{i}$. Note that two linearly independent vectors do not need to be orthogonal to each other for the span of their linear combinations to be ${\rm I\!R}^3$.         
 
 ```{python}
 #-----linear combination in Python via Numpy-----  
@@ -360,5 +364,87 @@ t(x) %*% y
 ```
 
 
-# Vector space, span and subspace       
+# Vector space, span and subspace     
 
+A vector space is the set of proper vectors (objects which follow the rules defined for vector behaviour) and all possible linear combinations of the vector set.  
+
+
+## Vector span  
+
+If we take the vectors x and y and the scalars $\alpha$ and $\beta$, the vector span is defined as the set of all possible linear combinations of $\alpha x + \beta y$.    
+
+```{r, echo = FALSE, results = 'markup', fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("../02_figures/02_vectors-span.jpg")
+```
+
+
+## Vector subspace  
+
+A vector subspace is a vector space that lies within a larger vector space.   
+
+For a vector subspace S to be valid, it has to meet three conditions:  
+
++ Contains the zero vector.  $0\in S$     
++ Exhibits closure under multiplication i.e. $for\; all\; \alpha \in {\rm I\!R} \to \alpha \times s_i \in S$   
++ Exhibits closure under addition i.e. $for\; all\; s_i \in S \to s_1 + s_2 \in S$  
+
+[Closure](https://www.mathsisfun.com/sets/closure.html) can be thought of as the inability to jump out from one space into another. For example, in the set of odd numbers, odd numbers exhibit closure under multiplication.  
+
+```{r, echo = FALSE, results = 'markup', fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("../02_figures/02_vectors-subspace.jpg")
+```
+
+There are two ways to think about vector subspaces:  
+
+**Geometrically for 2D or 3D vectors**       
+
+You can think about closure under multiplication or addition as the addition of two vectors in the Cartesian plane. This is slightly harder to visualise in 3D and impossible for vectors of higher dimensions.  
+
+**Mathematically evaluating individual vectors**     
+
+You can ask whether the vector $x=
+\begin{bmatrix}
+ 1\\
+ 2\\
+\end{bmatrix}$ is a valid subpace of ${\rm I\!R}^2$.     
+
++ Because the span of a vector is the set of all its linear combinations, the span of $x=
+\begin{bmatrix}
+ 1\\
+ 1\\
+\end{bmatrix}$ does contain zero i.e. $0\times x=
+0 \times 
+\begin{bmatrix}
+ 1\\
+ 1\\
+\end{bmatrix} = 
+\begin{bmatrix}
+ 0\\
+ 0\\
+\end{bmatrix}$   
++ Closure by multiplication implies that if we take the vector x and multiply it by any real scalar, the resulting vector will stay in the span of x. This is also true as $\alpha \times x$ will only stretch the length and or change the direction of x, so the resulting vector remains in the span of ${\rm I\!R}^2$.        
++ Closure by addition implies that if we add together any vectors beloning to x, the resulting vector remains in the span of ${\rm I\!R}^2$. If we add $x + x$, the vector does not gain any new dimensions and remains in the span of ${\rm I\!R}^2$.        
+
+
+# Linear dependence and linear independence    
+
+A set of vectors is linearly dependent if at least one vector can be obtained as a linear combination of other vectors in the set. Another way to define linear dependence is to consider a set of vectors $x_1, ..., x_k$ and scalars $\beta \in {\rm I\!R}$. Linearly dependent vectors exist if we can obtain $0 = \displaystyle\sum_{i=1}^{k} \beta_{i}x_{i}$ using at least one vector where $\beta \neq 0$. (This implies that there is a vector in the same direction as a linear combination of other vectors, and we can therefore choose a scalar value that is equal in length but in the opposite direction to the linear combination of those other vectors to obtain $0 = \displaystyle\sum_{i=1}^{k} \beta_{i}x_{i}$ ).            
+
+A set of vectors is linearly independent if no vector can be obtained as a linear combination of other vectors in the set.    
+
+```{r, echo = FALSE, results = 'markup', fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("../02_figures/02_vectors-independence.jpg")   
+```
+
+To summarise, linearly dependent vectors contain redundant information and the span of linearly dependent vectors cannot cover the whole set of values in ${\rm I\!R}^n$. In contrast, linearly independent vectors do not contain redundant information.      
+
+
+# Vector null space    
+
+The null space of a set of vectors are all the linear combinations that map back into the zero vector.  
+
+```{r, echo = FALSE, results = 'markup', fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("../02_figures/02_vectors-null-space.jpg")   
+```
+
+In the example above, we can form the following two combinations of vectors that will map into the zero vector (0,0).    
