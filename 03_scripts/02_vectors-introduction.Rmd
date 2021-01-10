@@ -310,17 +310,17 @@ str(a*x + b*y)
 ## Vector-vector multiplication (the dot-product)  
 
 Vector-vector multiplication involves taking the transpose of the first vector and then calculating the sum of the product of each vector dimension.      
-$$x\times y = \begin{bmatrix}
+$$x\cdot y = \begin{bmatrix}
  x_1\\
  x_2\\
-\end{bmatrix}^T \times
+\end{bmatrix}^T \cdot
 \begin{bmatrix}
  y_1\\
  y_2\\
 \end{bmatrix} = 
 \begin{bmatrix}
  x_1, x_2\\
-\end{bmatrix} \times
+\end{bmatrix} \cdot  
 \begin{bmatrix}
  y_1\\
  y_2\\
@@ -371,7 +371,7 @@ A vector space is the set of proper vectors (objects which follow the rules defi
 
 ## Vector span  
 
-If we take the vectors x and y and the scalars $\alpha$ and $\beta$, the vector span is defined as the set of all possible linear combinations of $\alpha x + \beta y$.    
+If we take the vectors x and y and the scalars $\alpha$ and $\beta$, the vector span is defined as the set of all possible linear combinations of $\alpha x + \beta y$.      
 
 ```{r, echo = FALSE, results = 'markup', fig.align = 'center', out.width = '100%'}
 knitr::include_graphics("../02_figures/02_vectors-span.jpg")

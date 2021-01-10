@@ -1,7 +1,7 @@
 Introduction to vectors
 ================
 Erika Duan
-2021-01-09
+2021-01-10
 
   - [Resources](#resources)
   - [What is a vector?](#what-is-a-vector)
@@ -325,35 +325,35 @@ Vector-vector multiplication involves taking the transpose of the first
 vector and then calculating the sum of the product of each vector
 dimension.  
   
-![x\\times y = \\begin{bmatrix}
+![x\\cdot y = \\begin{bmatrix}
 x\_1\\\\
 x\_2\\\\
-\\end{bmatrix}^T \\times
+\\end{bmatrix}^T \\cdot
 \\begin{bmatrix}
 y\_1\\\\
 y\_2\\\\
 \\end{bmatrix} = 
 \\begin{bmatrix}
 x\_1, x\_2\\\\
-\\end{bmatrix} \\times
+\\end{bmatrix} \\cdot 
 \\begin{bmatrix}
 y\_1\\\\
 y\_2\\\\
 \\end{bmatrix} = 
 \\begin{bmatrix}
 (x\_1\\times y\_1) + (x\_2\\times y\_2)
-\\end{bmatrix}](https://latex.codecogs.com/png.latex?x%5Ctimes%20y%20%3D%20%5Cbegin%7Bbmatrix%7D%0A%20x_1%5C%5C%0A%20x_2%5C%5C%0A%5Cend%7Bbmatrix%7D%5ET%20%5Ctimes%0A%5Cbegin%7Bbmatrix%7D%0A%20y_1%5C%5C%0A%20y_2%5C%5C%0A%5Cend%7Bbmatrix%7D%20%3D%20%0A%5Cbegin%7Bbmatrix%7D%0A%20x_1%2C%20x_2%5C%5C%0A%5Cend%7Bbmatrix%7D%20%5Ctimes%0A%5Cbegin%7Bbmatrix%7D%0A%20y_1%5C%5C%0A%20y_2%5C%5C%0A%5Cend%7Bbmatrix%7D%20%3D%20%0A%5Cbegin%7Bbmatrix%7D%0A%28x_1%5Ctimes%20y_1%29%20%2B%20%28x_2%5Ctimes%20y_2%29%0A%5Cend%7Bbmatrix%7D
-"x\\times y = \\begin{bmatrix}
+\\end{bmatrix}](https://latex.codecogs.com/png.latex?x%5Ccdot%20y%20%3D%20%5Cbegin%7Bbmatrix%7D%0A%20x_1%5C%5C%0A%20x_2%5C%5C%0A%5Cend%7Bbmatrix%7D%5ET%20%5Ccdot%0A%5Cbegin%7Bbmatrix%7D%0A%20y_1%5C%5C%0A%20y_2%5C%5C%0A%5Cend%7Bbmatrix%7D%20%3D%20%0A%5Cbegin%7Bbmatrix%7D%0A%20x_1%2C%20x_2%5C%5C%0A%5Cend%7Bbmatrix%7D%20%5Ccdot%20%20%0A%5Cbegin%7Bbmatrix%7D%0A%20y_1%5C%5C%0A%20y_2%5C%5C%0A%5Cend%7Bbmatrix%7D%20%3D%20%0A%5Cbegin%7Bbmatrix%7D%0A%28x_1%5Ctimes%20y_1%29%20%2B%20%28x_2%5Ctimes%20y_2%29%0A%5Cend%7Bbmatrix%7D
+"x\\cdot y = \\begin{bmatrix}
  x_1\\\\
  x_2\\\\
-\\end{bmatrix}^T \\times
+\\end{bmatrix}^T \\cdot
 \\begin{bmatrix}
  y_1\\\\
  y_2\\\\
 \\end{bmatrix} = 
 \\begin{bmatrix}
  x_1, x_2\\\\
-\\end{bmatrix} \\times
+\\end{bmatrix} \\cdot  
 \\begin{bmatrix}
  y_1\\\\
  y_2\\\\
