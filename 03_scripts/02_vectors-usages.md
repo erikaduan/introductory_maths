@@ -1,7 +1,7 @@
 Working with vectors
 ================
 Erika Duan
-2021-01-10
+2021-01-16
 
   - [Resources](#resources)
   - [Vector norms](#vector-norms)
@@ -90,8 +90,15 @@ x = np.array([[3],
               [-4]])  
               
 np.linalg.norm(x, 2) 
-
 #> 5.0  
+```
+
+``` r
+#-----calculate L2 norm in R-----  
+x <- matrix(c(3, -4), nrow = 2)
+
+norm(x, type = "2")
+#> [1] 5 
 ```
 
 ## Manhattan norm
@@ -114,10 +121,17 @@ x = np.array([[3],
               [-4]])  
               
 np.linalg.norm(x, 1) 
-
 #> 7.0 
 
 # |3| + |-4| = 7  
+```
+
+``` r
+#-----calculate L1 norm in R-----  
+x <- matrix(c(3, -4), nrow = 2)
+
+norm(x, type = "O")
+#> [1] 7   
 ```
 
 ## Max norm
@@ -145,6 +159,14 @@ x = np.array([[3],
 np.linalg.norm(x, np.inf) 
 
 #> 4.0 
+```
+
+``` r
+#-----calculate max norm in R-----
+x <- matrix(c(3, -4), nrow = 2)
+
+norm(x, type = "O")
+#> [1] 4  
 ```
 
 # Vector inner product, length and distance
@@ -216,8 +238,9 @@ x = np.array([[3],
 y = np.array([[-2],
               [2]])
 
-np.transpose(x) @ y 
-#> array([[-14]])  
+x - y 
+#> array([[ 5],
+#>        [-6]])
 ```
 
 ``` python
@@ -227,15 +250,21 @@ print("L2 distance between x and y: {}".format(distance))
 #> L2 distance between x and y: 7.810249675906654  
 ```
 
+``` r
+#-----calculate L2 distance between two vectors in R-----
+x <- matrix(c(3, -4), nrow = 2)
+
+y <- matrix(c(-2, 2), nrow = 2)   
+
+x - y
+#>      [,1]
+#> [1,]    5
+#> [2,]   -6  
+
+norm(x - y, type = "2")
+#> [1] 7.81025  
+```
+
 # Vector angles and orthogonality
-
-A brief revision of angles is shown below.
-
-<img src="../02_figures/02_vectors-angles-revision-1.jpg" width="100%" style="display: block; margin: auto;" />
-
-In particular, the **Cosine rule** is particularly useful for
-calculating vector similarity.
-
-<img src="../02_figures/02_vectors-angles-revision-2.jpg" width="100%" style="display: block; margin: auto;" />
 
 # Systems of linear equations

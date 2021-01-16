@@ -1,7 +1,7 @@
 Introduction to vectors
 ================
 Erika Duan
-2021-01-10
+2021-01-16
 
   - [Resources](#resources)
   - [What is a vector?](#what-is-a-vector)
@@ -477,7 +477,7 @@ I\\\!R}^2](https://latex.codecogs.com/png.latex?%7B%5Crm%20I%5C%21R%7D%5E2
     I\\\!R}^2](https://latex.codecogs.com/png.latex?%7B%5Crm%20I%5C%21R%7D%5E2
     "{\\rm I\\!R}^2").  
   - Closure by addition implies that if we add together any vectors
-    beloning to x, the resulting vector remains in the span of ![{\\rm
+    belonging to x, the resulting vector remains in the span of ![{\\rm
     I\\\!R}^2](https://latex.codecogs.com/png.latex?%7B%5Crm%20I%5C%21R%7D%5E2
     "{\\rm I\\!R}^2"). If we add ![x +
     x](https://latex.codecogs.com/png.latex?x%20%2B%20x "x + x"), the

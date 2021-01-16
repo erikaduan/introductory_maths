@@ -23,6 +23,7 @@ This repository also has a **secondary aim** of promoting code agnostic practice
 2. Vectors  
    2.1 [Introduction to vectors](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/02_vectors-introduction.md)  
    2.2 [Working with vectors](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/02_vectors-usages.md)  
+   2.3 [Geometry revision]()  
 
 3. Algebra  
     3.1 [Introduction to algebra]()  

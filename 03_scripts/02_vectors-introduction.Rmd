@@ -423,7 +423,7 @@ You can ask whether the vector $x=
  0\\
 \end{bmatrix}$   
 + Closure by multiplication implies that if we take the vector x and multiply it by any real scalar, the resulting vector will stay in the span of x. This is also true as $\alpha \times x$ will only stretch the length and or change the direction of x, so the resulting vector remains in the span of ${\rm I\!R}^2$.        
-+ Closure by addition implies that if we add together any vectors beloning to x, the resulting vector remains in the span of ${\rm I\!R}^2$. If we add $x + x$, the vector does not gain any new dimensions and remains in the span of ${\rm I\!R}^2$.        
++ Closure by addition implies that if we add together any vectors belonging to x, the resulting vector remains in the span of ${\rm I\!R}^2$. If we add $x + x$, the vector does not gain any new dimensions and remains in the span of ${\rm I\!R}^2$.        
 
 
 # Linear dependence and linear independence    
