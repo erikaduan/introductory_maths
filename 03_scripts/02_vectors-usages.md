@@ -1,7 +1,7 @@
 Working with vectors
 ================
 Erika Duan
-2021-01-16
+2021-01-18
 
   - [Resources](#resources)
   - [Vector norms](#vector-norms)
@@ -10,8 +10,10 @@ Erika Duan
       - [Max norm](#max-norm)
   - [Vector inner product, length and
     distance](#vector-inner-product-length-and-distance)
-  - [Vector angles and orthogonality](#vector-angles-and-orthogonality)
+  - [Vector angles](#vector-angles)
+  - [Vector orthogonality](#vector-orthogonality)
   - [Systems of linear equations](#systems-of-linear-equations)
+  - [Further reading](#further-reading)
 
 # Resources
 
@@ -35,27 +37,31 @@ x\_2^2+...+x\_n^2}](https://latex.codecogs.com/png.latex?%5ClVert%20x%20%5CrVert
 Norms are functions that map vectors to non-negative values. They are
 used to assign ![length\\; \\lVert x\\rVert \\in {\\rm
 I\\\!R}^n](https://latex.codecogs.com/png.latex?length%5C%3B%20%5ClVert%20x%5CrVert%20%5Cin%20%7B%5Crm%20I%5C%21R%7D%5En
-"length\\; \\lVert x\\rVert \\in {\\rm I\\!R}^n") to a vector x.
+"length\\; \\lVert x\\rVert \\in {\\rm I\\!R}^n") to a vector
+![x](https://latex.codecogs.com/png.latex?x "x").
 
 A norm has to satisfy the following three properties:
 
   - It is absolutely homogenous. For all scalars that are real values,
     the length scales proportionally with the value of the scalar.
     ![\\forall \\alpha \\in {\\rm I\\\!R}, \\; \\lVert \\alpha x \\rVert
-    = \\lVert \\alpha \\rVert \\cdot \\lVert x
-    \\rVert](https://latex.codecogs.com/png.latex?%5Cforall%20%5Calpha%20%5Cin%20%7B%5Crm%20I%5C%21R%7D%2C%20%5C%3B%20%5ClVert%20%5Calpha%20x%20%5CrVert%20%3D%20%5ClVert%20%5Calpha%20%5CrVert%20%5Ccdot%20%5ClVert%20x%20%5CrVert
-    "\\forall \\alpha \\in {\\rm I\\!R}, \\; \\lVert \\alpha x \\rVert = \\lVert \\alpha \\rVert \\cdot \\lVert x \\rVert")  
+    = \\lVert \\alpha \\rVert \\times \\lVert x
+    \\rVert](https://latex.codecogs.com/png.latex?%5Cforall%20%5Calpha%20%5Cin%20%7B%5Crm%20I%5C%21R%7D%2C%20%5C%3B%20%5ClVert%20%5Calpha%20x%20%5CrVert%20%3D%20%5ClVert%20%5Calpha%20%5CrVert%20%5Ctimes%20%5ClVert%20x%20%5CrVert
+    "\\forall \\alpha \\in {\\rm I\\!R}, \\; \\lVert \\alpha x \\rVert = \\lVert \\alpha \\rVert \\times \\lVert x \\rVert")  
   - It exhibits triangular inequality. In geometric terms, the sum of
-    the lengths of any two sides must be greater or equal to the length
-    of the third side. ![\\lVert x+y \\rVert \\leq \\lVert x \\rVert +
-    \\lVert y
+    the lengths of any two sides must be greater or at least equal to
+    the length of the third side. ![\\lVert x+y \\rVert \\leq \\lVert x
+    \\rVert + \\lVert y
     \\rVert](https://latex.codecogs.com/png.latex?%5ClVert%20x%2By%20%5CrVert%20%5Cleq%20%5ClVert%20x%20%5CrVert%20%2B%20%5ClVert%20y%20%5CrVert
     "\\lVert x+y \\rVert \\leq \\lVert x \\rVert + \\lVert y \\rVert").  
   - It is positively defined. The length of x has to be a positive value
-    and a length of zero only occurs if x = 0. ![\\lVert x \\rVert
-    \\geq 0 \\; and \\; \\lVert x \\rVert = 0 \\iff x
-    = 0](https://latex.codecogs.com/png.latex?%5ClVert%20x%20%5CrVert%20%5Cgeq%200%20%5C%3B%20and%20%5C%3B%20%5ClVert%20x%20%5CrVert%20%3D%200%20%5Ciff%20x%20%3D%200
-    "\\lVert x \\rVert \\geq 0 \\; and \\; \\lVert x \\rVert = 0 \\iff x = 0").
+    and a length of zero only occurs if x = 0.  
+    ![\\lVert x \\rVert
+    \\geq 0](https://latex.codecogs.com/png.latex?%5ClVert%20x%20%5CrVert%20%5Cgeq%200
+    "\\lVert x \\rVert \\geq 0")  
+    ![\\lVert x \\rVert = 0 \\iff x
+    = 0](https://latex.codecogs.com/png.latex?%5ClVert%20x%20%5CrVert%20%3D%200%20%5Ciff%20x%20%3D%200
+    "\\lVert x \\rVert = 0 \\iff x = 0")
 
 The three main types of vector norms are illustrated below.
 
@@ -73,8 +79,8 @@ norm is defined below.
 The euclidean norm can also be thought of as the square root of the dot
 product of a vector by itself.
 
-In 2D, the Eucliean norm is ![\\lVert x\\rVert\_2 \\in {\\rm I\\\!R}^2 =
-\\sqrt{x\_1^2 +
+In 2D, the Euclidean norm is ![\\lVert x\\rVert\_2 \\in {\\rm I\\\!R}^2
+= \\sqrt{x\_1^2 +
 x\_2^2}](https://latex.codecogs.com/png.latex?%5ClVert%20x%5CrVert_2%20%5Cin%20%7B%5Crm%20I%5C%21R%7D%5E2%20%3D%20%5Csqrt%7Bx_1%5E2%20%2B%20x_2%5E2%7D
 "\\lVert x\\rVert_2 \\in {\\rm I\\!R}^2 = \\sqrt{x_1^2 + x_2^2}").  
 This is equivalent to the Pythagoras theorem for calculating the
@@ -112,8 +118,9 @@ and horizontal lines. It is defined below.
 "\\lVert x\\rVert_1 := \\displaystyle\\sum_{i=1}^{n}|x_i|")  
 
 The manhattan norm is preferred for discriminating between elements that
-are exactly zero and elements that are small but not zero (or for
-calculating a distance matrix between categorical data points).
+are exactly zero and elements that are small but not zero (or in machine
+learning, for calculating a distance matrix between categorical data
+points).
 
 ``` python
 #-----calculate L1 norm in Python via NumPy-----  
@@ -217,9 +224,10 @@ I\\\!R}^n](https://latex.codecogs.com/png.latex?%7B%5Crm%20I%5C%21R%7D%5En
 
 Distance is therefore a relational concept, as it refers to the length
 (or norm) of the difference between two vectors. For example, consider
-the vectors x and y. We define the distance ![d(x,
-y)](https://latex.codecogs.com/png.latex?d%28x%2C%20y%29 "d(x, y)") as
-below.  
+the vectors ![x](https://latex.codecogs.com/png.latex?x "x") and
+![y](https://latex.codecogs.com/png.latex?y "y"). We define the distance
+![d(x, y)](https://latex.codecogs.com/png.latex?d%28x%2C%20y%29
+"d(x, y)") as below.  
   
 ![d(x, y) := \\lVert x - y \\rVert = \\sqrt{\\langle x-y, x -y
 \\rangle}](https://latex.codecogs.com/png.latex?d%28x%2C%20y%29%20%3A%3D%20%5ClVert%20x%20-%20y%20%5CrVert%20%3D%20%5Csqrt%7B%5Clangle%20x-y%2C%20x%20-y%20%5Crangle%7D
@@ -233,38 +241,295 @@ distance.
 ``` python
 #-----calculate L2 distance between two vectors in Python via NumPy-----  
 x = np.array([[3],
-              [-4]])   
+[2]])   
 
 y = np.array([[-2],
-              [2]])
+[2]])
 
 x - y 
-#> array([[ 5],
-#>        [-6]])
+#> array([[5],
+#>        [0]])
 ```
 
 ``` python
-distance = np.linalg.norm(x-y, 2)
+distance = np.linalg.norm(x - y, 2)
 
 print("L2 distance between x and y: {}".format(distance))
-#> L2 distance between x and y: 7.810249675906654  
+#> L2 distance between x and y: 5.0   
 ```
 
 ``` r
 #-----calculate L2 distance between two vectors in R-----
-x <- matrix(c(3, -4), nrow = 2)
+x <- matrix(c(3, 2), nrow = 2)
 
 y <- matrix(c(-2, 2), nrow = 2)   
 
 x - y
 #>      [,1]
 #> [1,]    5
-#> [2,]   -6  
+#> [2,]    0 
 
 norm(x - y, type = "2")
-#> [1] 7.81025  
+#> [1] 5    
 ```
 
-# Vector angles and orthogonality
+# Vector angles
+
+The Cauchy–Schwarz inequality is used to define the behaviour of angles
+between a pair of vectors, and is stated below.  
+![|\\langle x - y \\rangle| \\leq \\lVert x \\rVert \\lVert y
+\\rVert](https://latex.codecogs.com/png.latex?%7C%5Clangle%20x%20-%20y%20%5Crangle%7C%20%5Cleq%20%5ClVert%20x%20%5CrVert%20%5ClVert%20y%20%5CrVert
+"|\\langle x - y \\rangle| \\leq \\lVert x \\rVert \\lVert y \\rVert")
+
+It describes an important behaviour of vectors, namely that the dot
+product of two vectors is always smaller than or equal to the product of
+their lengths.
+
+When two vectors are co-linear (i.e. lie on the same line), ![|\\langle
+x - y \\rangle| = \\lVert x \\rVert \\lVert y
+\\rVert](https://latex.codecogs.com/png.latex?%7C%5Clangle%20x%20-%20y%20%5Crangle%7C%20%3D%20%5ClVert%20x%20%5CrVert%20%5ClVert%20y%20%5CrVert
+"|\\langle x - y \\rangle| = \\lVert x \\rVert \\lVert y \\rVert").
+
+<img src="../02_figures/02_vectors-cauchy-schwarz.jpg" width="80%" style="display: block; margin: auto;" />
+
+We can think of the definition of the angle between two vectors as a
+generalisation of the Cosine rule.  
+<img src="../02_figures/02_vectors-cosine.jpg" width="90%" style="display: block; margin: auto;" />
+
+Because ![|\\langle x - y \\rangle| \\leq \\lVert x \\rVert \\lVert y
+\\rVert](https://latex.codecogs.com/png.latex?%7C%5Clangle%20x%20-%20y%20%5Crangle%7C%20%5Cleq%20%5ClVert%20x%20%5CrVert%20%5ClVert%20y%20%5CrVert
+"|\\langle x - y \\rangle| \\leq \\lVert x \\rVert \\lVert y \\rVert"),
+we can further define the range of values for which
+![\\cos\\theta](https://latex.codecogs.com/png.latex?%5Ccos%5Ctheta
+"\\cos\\theta") is valid.
+
+  
+![-1 \\leq \\frac{\\langle x, y\\rangle}{\\lVert x\\rVert \\lVert y
+\\rVert}
+\\leq 1](https://latex.codecogs.com/png.latex?-1%20%5Cleq%20%5Cfrac%7B%5Clangle%20x%2C%20y%5Crangle%7D%7B%5ClVert%20x%5CrVert%20%5ClVert%20y%20%5CrVert%7D%20%5Cleq%201
+"-1 \\leq \\frac{\\langle x, y\\rangle}{\\lVert x\\rVert \\lVert y \\rVert} \\leq 1")  
+
+A maximum of 1 represents a co-linear scenario where the vector dot
+product is positive. A minimum of -1 also represents a situation where
+the vector dot product is in the oppositive direction (but equal in
+magnitude). All other values fall in between this range and a value of 0
+represents an orthogonal vector pair.
+
+**Note:** The distance between two vectors can be a negative number
+(this simply denotes vector direction).
+
+``` python
+#-----calculate cos(theta) of two vectors in Python via NumPy-----  
+import math
+
+x = np.array([[1],
+              [5]]) 
+
+y = np.array([[8],
+              [2]])
+
+cos_theta = (np.transpose(x) @ y)/ (np.linalg.norm(x, 2) * np.linalg.norm(y, 2))  
+
+print("cos(theta) of vectors x and y: {}".format(cos_theta))
+#> cos(theta) of vectors x and y: [[0.42808634]]  
+
+#-----calculate radians and convert to degrees-----   
+```
+
+``` python
+math.acos(cos_theta) # returns theta in radians   
+#> 1.1284221038181517
+```
+
+``` python
+math.acos(cos_theta) * ((180)/np.pi) # convert theta to angle  
+#> 64.6538240580533  
+
+# 1 radians = 180/np.pi degrees
+```
+
+``` r
+#-----calculate cos(theta) of two vectors in R-----    
+x <- matrix(c(1, 5), nrow = 2)  
+
+y <- matrix(c(8, 2), nrow = 2)
+  
+cos_theta <- (t(x) %*% y) / (norm(x, type = "2") * norm(y, type = "2")) 
+
+#-----calculate radians and convert to degrees-----    
+radians <- acos(cos_theta)
+
+degrees <- radians * 180/pi
+degrees
+#>          [,1]
+#> [1,] 64.65382
+```
+
+# Vector orthogonality
+
+Vector orthoganality is used to describe vector perpendicularity to
+vectors in any number of dimensions. Mathematically, a pair of vectors
+![x](https://latex.codecogs.com/png.latex?x "x") and
+![y](https://latex.codecogs.com/png.latex?y "y") are orthogonal
+(![x\\perp y](https://latex.codecogs.com/png.latex?x%5Cperp%20y
+"x\\perp y")) if:
+
+  - ![\\langle x, y\\rangle \\; or \\; x\\cdot y
+    = 0](https://latex.codecogs.com/png.latex?%5Clangle%20x%2C%20y%5Crangle%20%5C%3B%20or%20%5C%3B%20x%5Ccdot%20y%20%3D%200
+    "\\langle x, y\\rangle \\; or \\; x\\cdot y = 0")  
+  - In a 2D plane, this also means that the angle between
+    ![x](https://latex.codecogs.com/png.latex?x "x") and
+    ![y](https://latex.codecogs.com/png.latex?y "y") is 90 degrees as
+    ![\\langle x, y\\rangle = \\cos \\theta \\lVert x\\rVert \\lVert
+    y\\rVert](https://latex.codecogs.com/png.latex?%5Clangle%20x%2C%20y%5Crangle%20%3D%20%5Ccos%20%5Ctheta%20%5ClVert%20x%5CrVert%20%5ClVert%20y%5CrVert
+    "\\langle x, y\\rangle = \\cos \\theta \\lVert x\\rVert \\lVert y\\rVert")
+    and ![\\cos 90
+    = 0](https://latex.codecogs.com/png.latex?%5Ccos%2090%20%3D%200
+    "\\cos 90 = 0").
+
+<!-- end list -->
+
+``` python
+#-----create function to assess vector orthogonality in Python-----  
+# 90 degrees is 90 * np.pi/180 radians
+
+def is_orthogonal(x, y):
+  assert(type(x).__module__ == np.__name__), "Vector x is not a NumPy array"   
+  assert(type(y).__module__ == np.__name__), "Vector y is not a NumPy array"   
+  assert(x.ndim == 2), "Vector x should be 2D"    
+  assert(y.ndim == 2), "Vector y should be 2D"   
+
+  cos_theta = (np.transpose(x) @ y) / (np.linalg.norm(x, 2) * np.linalg.norm(y, 2))
+  radians = math.acos(cos_theta)
+  
+  if radians == 90 * np.pi/180:
+    return(True)
+  else: 
+    return(False)
+  
+x = np.array([[2],
+              [0]]) 
+              
+y = np.array([[0],
+              [2]])
+
+is_orthogonal(x, y)
+#> True
+```
+
+``` r
+#-----create function to assess vector orthogonality in R-----  
+is_orthogonal <- function(x, y) {
+  stopifnot(class(x)=="matrix")
+  stopifnot(class(y)=="matrix")
+  
+  cos_theta <- (t(x) %*% y) / (norm(x, type = "2") * norm(y, type = "2"))
+  radians <- acos(cos_theta)
+  
+  return(if_else(radians == 90 * pi/180, TRUE, FALSE))
+}
+
+x <- matrix(c(2, 0), nrow = 2)
+y <- matrix(c(0, 2), nrow = 2)
+
+is_orthogonal(x, y)
+#> [1] TRUE  
+```
 
 # Systems of linear equations
+
+Linear algebra is used to solve systems of linear equations, or to work
+out the right combination (i.e. weights) of linear segments to obtain an
+outcome.
+
+For example, the question of what ingredient proportions are acceptable
+for making pancakes can be reconstructed as a linear equation.
+
+<img src="../02_figures/02_vectors-pancake.jpg" width="70%" style="display: block; margin: auto;" />
+
+A system of linear equations involve multiple equations that need to be
+solved simultaneously.  
+![x + 2y
+= 8](https://latex.codecogs.com/png.latex?x%20%2B%202y%20%3D%208
+"x + 2y = 8")  
+![5x - 3y
+= 1](https://latex.codecogs.com/png.latex?5x%20-%203y%20%3D%201
+"5x - 3y = 1")
+
+In the example above, we have a linear algebra system with two unknowns,
+![x](https://latex.codecogs.com/png.latex?x "x") and
+![y](https://latex.codecogs.com/png.latex?y "y"). Geometrically, both
+equations can be re-written to produce a straight line in the 2D
+plane.  
+![y=-\\frac{1}{2}x+4](https://latex.codecogs.com/png.latex?y%3D-%5Cfrac%7B1%7D%7B2%7Dx%2B4
+"y=-\\frac{1}{2}x+4")  
+![y=\\frac{5}{3}x-\\frac{1}{3}](https://latex.codecogs.com/png.latex?y%3D%5Cfrac%7B5%7D%7B3%7Dx-%5Cfrac%7B1%7D%7B3%7D
+"y=\\frac{5}{3}x-\\frac{1}{3}")
+
+The point where two both linears equations intersect is the solution to
+the linear system.
+
+``` python
+#-----plot system of linear equations in Python-----    
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns    
+
+x = np.arange(-10, 10, 1)
+y_1 = (-1/2 * x) + 4  
+y_2 = (5/3 * x) - (1/3)    
+
+# Python allows you to directly plot NumPy array values  
+
+sns.set_style('whitegrid', {
+              'grid.linestyle': '--'})
+
+sns.lineplot(x, y_1, label = "x + 2y = 8", lw = 2)    
+sns.lineplot(x, y_2, label = "5x - 3y = 1", lw = 2)   
+```
+
+``` python
+plt.xlabel("x")  
+plt.ylabel("y1, y2")
+plt.legend(loc = "upper right")
+plt.show()
+```
+
+<img src="02_vectors-usages_files/figure-gfm/unnamed-chunk-19-1.png" style="display: block; margin: auto;" />
+
+``` r
+#-----plot system of linear equations in R-----  
+x = seq(-10, 10, 1)
+y_1 = (-1/2 * x) + 4  
+y_2 = (5/3 * x) - (1/3) # brackets for readability   
+
+linalg_plot <- tibble(x,
+                      y_1,
+                      y_2)   
+
+ggplot(linalg_plot, aes(x, y_1)) +
+  geom_line(colour = "steelblue") +
+  geom_line(aes(x, y_2), colour = "firebrick") + 
+  labs(y = "y1, y2") +   
+  theme_bw() + 
+  theme(panel.grid.minor = element_blank(),
+        panel.grid.major = element_line(linetype = "dotted")) +
+  annotate("text", x = -8, y = 11, label = "x + 2y = 8", colour = "steelblue") +
+  annotate("text", x = -8, y = -10, label = "5x - 3y = 1", colour = "firebrick")
+```
+
+<img src="02_vectors-usages_files/figure-gfm/unnamed-chunk-20-1.png" style="display: block; margin: auto;" />
+
+``` r
+intersect = approxfun(y_1, y_2)
+intersect(0)
+```
+
+# Further reading
+
+  - The Khan academy
+    [topic](https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces/dot-cross-products/v/vector-dot-product-and-vector-length)
+    on vector dot and cross products.  
+  - The Khan academy
+    [topic](https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:trig/x2ec2f6f830c9fb89:radians/v/introduction-to-radians)
+    on radians.

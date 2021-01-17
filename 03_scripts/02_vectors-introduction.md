@@ -1,7 +1,7 @@
 Introduction to vectors
 ================
 Erika Duan
-2021-01-16
+2021-01-17
 
   - [Resources](#resources)
   - [What is a vector?](#what-is-a-vector)
@@ -20,6 +20,7 @@ Erika Duan
   - [Linear dependence and linear
     independence](#linear-dependence-and-linear-independence)
   - [Vector null space](#vector-null-space)
+  - [Further reading](#further-reading)
 
 # Resources
 
@@ -34,9 +35,13 @@ algebra](https://www.3blue1brown.com/essence-of-linear-algebra-page) by
 
 # What is a vector?
 
-A vector is a ordered and finite list of numbers (i.e. not character
+A vector is an ordered and finite list of numbers (i.e. not character
 elements) and can be viewed as the most basic object in machine
-learning.  
+learning. You can think of simple machine learning methods as
+mathematical approaches to simplifying information about many vectors
+co-existing within one space defined by
+![n](https://latex.codecogs.com/png.latex?n "n") dimensions.
+
 Vectors can have any number of dimensions and are mathematical objects
 that can be added or multipled i.e. transformed into another vector.
 
@@ -195,18 +200,18 @@ np.add(x, y)
 x <- array(c(1, 1,
              2, 2,
              3, 3), 
-           dim = c(1, 2, 3))
+           dim = c(2, 1, 3))
 
 str(x)  
-#>  num [1, 1:2, 1:3] 1 1 2 2 3 3  
+#>  num [1:2, 1, 1:3] 1 1 2 2 3 3  
 
 y <- array(c(1, 0,
              0, 1,
              1, 1), 
-           dim = c(1, 2, 3))  
+           dim = c(2, 1, 3))  
 
 str(x + y) 
-#>  num [1, 1:2, 1:3] 2 1 2 3 4 4 
+#>  num [1:2, 1, 1:3] 2 1 2 3 4 4    
 ```
 
 ## Vector-scalar multiplication
@@ -257,10 +262,10 @@ alpha <- 4
 x <- array(c(1, 1,
              2, 2,
              3, 3), 
-           dim = c(1, 2, 3))
+           dim = c(2, 1, 3))
 
 str(alpha * x)  
-#>  num [1, 1:2, 1:3] 4 4 8 8 12 12    
+#>  num [1:2, 1, 1:3] 4 4 8 8 12 12    
 ```
 
 ## Vector linear combination
@@ -310,20 +315,22 @@ a <- -2
 b <- 3
 
 x <- array(c(2, 3), 
-           dim = c(1, 2, 1))
+           dim = c(2, 1, 1))
 
 y <- array(c(4, 5), 
-           dim = c(1, 2, 1))
+           dim = c(2, 1, 1))
 
 str(a*x + b*y)
-#>  num [1, 1:2, 1] 8 9   
+#>  num [1:2, 1, 1] 8 9     
 ```
 
 ## Vector-vector multiplication (the dot-product)
 
-Vector-vector multiplication involves taking the transpose of the first
+Finding the dot product involves taking the transpose of the first
 vector and then calculating the sum of the product of each vector
-dimension.  
+dimension. Later in this chapter, we will explore why the dot-product
+can be described as the projection of one vector onto another vector.
+
   
 ![x\\cdot y = \\begin{bmatrix}
 x\_1\\\\
@@ -362,8 +369,8 @@ y\_2\\\\
 (x_1\\times y_1) + (x_2\\times y_2)
 \\end{bmatrix}")  
 
-**Note:** Vector-vector multiplication will always return a single
-value.
+**Note:** The dot product of two vectors will always return a scalar
+(i.e. a single value).
 
 ``` python
 #-----vector-vector multiplication in Python via Numpy-----  
@@ -387,7 +394,6 @@ np.transpose(x) @ y
 # t() only works on matrices so we need to create x and y as matrices rather than arrays    
 
 x <- matrix(c(-2, 2), nrow = 2)
-
 y <- matrix(c(4, -3), nrow = 2)
 
 t(x) 
@@ -502,9 +508,9 @@ vector where ![\\beta
 \\neq 0](https://latex.codecogs.com/png.latex?%5Cbeta%20%5Cneq%200
 "\\beta \\neq 0"). (This implies that there is a vector in the same
 direction as a linear combination of other vectors, and we can therefore
-choose a scalar value that is equal in length but in the opposite
-direction to the linear combination of those other vectors to obtain ![0
-= \\displaystyle\\sum\_{i=1}^{k}
+choose a vector that is equal in length but opposite in direction to the
+linear combination of those other vectors to obtain ![0 =
+\\displaystyle\\sum\_{i=1}^{k}
 \\beta\_{i}x\_{i}](https://latex.codecogs.com/png.latex?0%20%3D%20%5Cdisplaystyle%5Csum_%7Bi%3D1%7D%5E%7Bk%7D%20%5Cbeta_%7Bi%7Dx_%7Bi%7D
 "0 = \\displaystyle\\sum_{i=1}^{k} \\beta_{i}x_{i}") ).
 
@@ -529,3 +535,14 @@ map back into the zero vector.
 
 In the example above, we can form the following two combinations of
 vectors that will map into the zero vector (0,0).
+
+# Further reading
+
+  - A great [post](https://physics.info/vector-multiplication/) on
+    vector multiplication from the Physics perspective.  
+  - The Khan academy
+    [topic](https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces/dot-cross-products/v/vector-dot-product-and-vector-length)
+    on vector dot and cross products.  
+  - A great [in-depth
+    explanation](https://mathinsight.org/dot_product#:~:text=This%20leads%20to%20the%20definition,%E2%88%A5b%E2%88%A5cos%CE%B8.)
+    of the purpose and definition of the dot product.

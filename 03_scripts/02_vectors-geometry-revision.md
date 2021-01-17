@@ -1,10 +1,11 @@
 Geometry revision
 ================
 Erika Duan
-2021-01-16
+2021-01-17
 
   - [Resources](#resources)
   - [Introduction to triangles](#introduction-to-triangles)
+  - [Triangle inequality theorem](#triangle-inequality-theorem)
   - [Sine, Cosine and Tangent](#sine-cosine-and-tangent)
   - [The Sine rule](#the-sine-rule)
   - [The Cosine rule](#the-cosine-rule)
@@ -32,7 +33,7 @@ i.e. ![||x||](https://latex.codecogs.com/png.latex?%7C%7Cx%7C%7C
 "||x||") and how they behave is also derived from insights from
 trigonometry.
 
-**Triangle inequality theorem**
+# Triangle inequality theorem
 
 Any side of a triangle must be shorter than the other two sides added
 together. If the side is equal to the other two sides, the length of one
@@ -145,7 +146,3 @@ similarity](https://en.wikipedia.org/wiki/Cosine_similarity)
     [post](https://blog.christianperone.com/2013/09/machine-learning-cosine-similarity-for-vector-space-models-part-iii/)
     explaining the maths behind vector dot products and cosine
     similarity.
-
-  - The Khan academy
-    [video](https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces/dot-cross-products/v/dot-and-cross-product-comparison-intuition)
-    on dot and cross products.

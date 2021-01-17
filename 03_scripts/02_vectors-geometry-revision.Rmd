@@ -45,7 +45,7 @@ knitr::include_graphics("../02_figures/02_vectors-angles-revision-1.jpg")
 Triangles and angles are an important mathematical concept to revise, as vector similarity is calculated based on concepts from geometry and trigonometry. The definition of vector norms i.e. $||x||$ and how they behave is also derived from insights from trigonometry.     
 
 
-**Triangle inequality theorem**   
+# Triangle inequality theorem      
 
 Any side of a triangle must be shorter than the other two sides added together. If the side is equal to the other two sides, the length of one side is 0 and the object is a line.   
 
@@ -148,6 +148,4 @@ In machine learning, [cosine similarity](https://en.wikipedia.org/wiki/Cosine_si
 # Further reading  
 
 + A great [post](https://blog.christianperone.com/2013/09/machine-learning-cosine-similarity-for-vector-space-models-part-iii/    
-) explaining the maths behind vector dot products and cosine similarity.  
-
-+ The Khan academy [video](https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces/dot-cross-products/v/dot-and-cross-product-comparison-intuition) on dot and cross products.      
+) explaining the maths behind vector dot products and cosine similarity.    
