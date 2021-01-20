@@ -30,9 +30,9 @@ This repository also has a **secondary aim** of promoting code agnostic practice
     3.2 [Basic matrix algebra]()  
 
 4. Algebra  
-    4.1 [Introduction to algebra]()  
-    4.2 [Introduction to exponents]()  
-    4.3 [Introduction to logarithms]()  
+    4.1 Introduction to algebra  
+    4.2 Introduction to exponents  
+    4.3 Introduction to logarithms  
 
 ## References  
 

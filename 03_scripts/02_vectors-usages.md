@@ -1,7 +1,7 @@
 Working with vectors
 ================
 Erika Duan
-2021-01-18
+2021-01-19
 
   - [Resources](#resources)
   - [Vector norms](#vector-norms)
@@ -241,10 +241,10 @@ distance.
 ``` python
 #-----calculate L2 distance between two vectors in Python via NumPy-----  
 x = np.array([[3],
-[2]])   
+              [2]])   
 
 y = np.array([[-2],
-[2]])
+              [2]])
 
 x - y 
 #> array([[5],
@@ -367,7 +367,7 @@ degrees
 
 # Vector orthogonality
 
-Vector orthoganality is used to describe vector perpendicularity to
+Vector orthogonality is used to describe vector perpendicularity to
 vectors in any number of dimensions. Mathematically, a pair of vectors
 ![x](https://latex.codecogs.com/png.latex?x "x") and
 ![y](https://latex.codecogs.com/png.latex?y "y") are orthogonal
@@ -426,7 +426,7 @@ is_orthogonal <- function(x, y) {
   cos_theta <- (t(x) %*% y) / (norm(x, type = "2") * norm(y, type = "2"))
   radians <- acos(cos_theta)
   
-  return(if_else(radians == 90 * pi/180, TRUE, FALSE))
+  if_else(radians == 90 * pi/180, return(TRUE), return(FALSE))
 }
 
 x <- matrix(c(2, 0), nrow = 2)
@@ -519,11 +519,6 @@ ggplot(linalg_plot, aes(x, y_1)) +
 ```
 
 <img src="02_vectors-usages_files/figure-gfm/unnamed-chunk-20-1.png" style="display: block; margin: auto;" />
-
-``` r
-intersect = approxfun(y_1, y_2)
-intersect(0)
-```
 
 # Further reading
 

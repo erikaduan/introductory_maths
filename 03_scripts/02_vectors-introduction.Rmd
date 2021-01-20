@@ -310,7 +310,7 @@ str(a*x + b*y)
 
 ## Vector-vector multiplication (the dot-product)  
 
-Finding the dot product involves taking the transpose of the first vector and then calculating the sum of the product of each vector dimension. Later in this chapter, we will explore why the dot-product can be described as the projection of one vector onto another vector.   
+Finding the dot product involves taking the transpose of the first vector and then calculating the sum of the product of each vector dimension. Later in this section on vectors, we will explore why the dot-product can be described as the projection of one vector onto another vector.   
 
 $$x\cdot y = \begin{bmatrix}
  x_1\\

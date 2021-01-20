@@ -174,10 +174,10 @@ knitr::include_graphics("../02_figures/02_vectors-distance.jpg")
 ```{python}
 #-----calculate L2 distance between two vectors in Python via NumPy-----  
 x = np.array([[3],
-[2]])   
+              [2]])   
 
 y = np.array([[-2],
-[2]])
+              [2]])
 
 x - y 
 #> array([[5],
@@ -274,9 +274,9 @@ degrees
 ```
 
 
-# Vector orthogonality  
+# Vector orthogonality    
 
-Vector orthoganality is used to describe vector perpendicularity to vectors in any number of dimensions. Mathematically, a pair of vectors $x$ and $y$ are orthogonal ($x\perp y$) if:   
+Vector orthogonality is used to describe vector perpendicularity to vectors in any number of dimensions. Mathematically, a pair of vectors $x$ and $y$ are orthogonal ($x\perp y$) if:   
 
 + $\langle x, y\rangle \; or \; x\cdot y = 0$  
 + In a 2D plane, this also means that the angle between $x$ and $y$ is 90 degrees as $\langle x, y\rangle = \cos \theta \lVert x\rVert \lVert y\rVert$ and $\cos 90 = 0$.        
@@ -318,7 +318,7 @@ is_orthogonal <- function(x, y) {
   cos_theta <- (t(x) %*% y) / (norm(x, type = "2") * norm(y, type = "2"))
   radians <- acos(cos_theta)
   
-  return(if_else(radians == 90 * pi/180, TRUE, FALSE))
+  if_else(radians == 90 * pi/180, return(TRUE), return(FALSE))
 }
 
 x <- matrix(c(2, 0), nrow = 2)
@@ -392,9 +392,6 @@ ggplot(linalg_plot, aes(x, y_1)) +
         panel.grid.major = element_line(linetype = "dotted")) +
   annotate("text", x = -8, y = 11, label = "x + 2y = 8", colour = "steelblue") +
   annotate("text", x = -8, y = -10, label = "5x - 3y = 1", colour = "firebrick")
-
-intersect = approxfun(y_1, y_2)
-intersect(0)
 ```
 
 

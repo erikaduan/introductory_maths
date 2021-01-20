@@ -1,7 +1,7 @@
 Introduction to vectors
 ================
 Erika Duan
-2021-01-17
+2021-01-19
 
   - [Resources](#resources)
   - [What is a vector?](#what-is-a-vector)
@@ -328,8 +328,9 @@ str(a*x + b*y)
 
 Finding the dot product involves taking the transpose of the first
 vector and then calculating the sum of the product of each vector
-dimension. Later in this chapter, we will explore why the dot-product
-can be described as the projection of one vector onto another vector.
+dimension. Later in this section on vectors, we will explore why the
+dot-product can be described as the projection of one vector onto
+another vector.
 
   
 ![x\\cdot y = \\begin{bmatrix}
