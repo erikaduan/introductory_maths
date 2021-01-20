@@ -57,7 +57,9 @@ set_1
 Set notation is used to describe object belonging.    
 We can also use set notation to create subsets by asserting new subset properties i.e. by specifying a condition which only holds true for a subset of elements within a larger set.  
 
-![](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/02_figures/01_sets-notation.jpg)
+```{r, echo = FALSE, results = 'markup', fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("../02_figures/01_sets-notation.jpg")
+```
 
 
 ## Relations  

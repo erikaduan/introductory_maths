@@ -1,7 +1,7 @@
 Introduction to sets
 ================
 Erika Duan
-2020-12-27
+2021-01-20
 
   - [Resources](#resources)
   - [What is a mathematical set?](#what-is-a-mathematical-set)
@@ -47,7 +47,7 @@ We can also use set notation to create subsets by asserting new subset
 properties i.e. by specifying a condition which only holds true for a
 subset of elements within a larger set.
 
-![](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/02_figures/01_sets-notation.jpg)
+<img src="../02_figures/01_sets-notation.jpg" width="100%" style="display: block; margin: auto;" />
 
 ## Relations
 
@@ -116,7 +116,7 @@ f1 %>%
         panel.grid = element_blank())
 ```
 
-<img src="01_sets-introduction_files/figure-gfm/unnamed-chunk-3-1.png" width="75%" style="display: block; margin: auto;" />
+<img src="01_sets-introduction_files/figure-gfm/unnamed-chunk-4-1.png" width="75%" style="display: block; margin: auto;" />
 
 ``` python
 #-----create a simple function in Python-----  
@@ -143,4 +143,4 @@ plt.ylabel('f(x)')
 plt.show()  
 ```
 
-<img src="01_sets-introduction_files/figure-gfm/unnamed-chunk-4-1.png" style="display: block; margin: auto;" />
+<img src="01_sets-introduction_files/figure-gfm/unnamed-chunk-5-1.png" style="display: block; margin: auto;" />
