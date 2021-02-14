@@ -9,7 +9,7 @@ output:
 ---
 
 ```{r setup, include = FALSE}
-knitr::opts_chunk$set(echo = TRUE, results = 'hide', fig.show = 'hold', fig.align = 'center')
+knitr::opts_chunk$set(echo = TRUE, results = 'hide', fig.align = 'center')
 knitr::knit_engines$set(python = reticulate::eng_python)
 ```
 
@@ -21,10 +21,13 @@ p_load(tidyverse,
        knitr) 
 
 conda_list() # list all available conda environments
-use_condaenv("Anaconda3")
+use_condaenv("r-reticulate") 
+```
 
+```{r, echo = FALSE}
+#-----set plugin to knit Python code chunks-----
 py_run_string("import os as os")
-py_run_string("os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = 'C:/Users/user/Anaconda3/Library/plugins/platforms'")
+py_run_string("os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = 'C:/Users/user/Anaconda3/envs/r-reticulate/Library/plugins/platforms'")    
 ```
 
 
@@ -69,19 +72,19 @@ Pairs of sets can be unordered or ordered:
 + For an unordered set pair, $x, y = y, x$.     
 + For an ordered set pair with binary relationships, $(x, y) \neq (y,x)$.      
 
-Sets of ordered pairs can be denoted using the concept of relations. Relations have a domain and range.  
+Relations are defined as sets of ordered pairs and denoted using $R$. Relations have a domain and range.  
 
-**Domain:** the values of x such that at least one element of y has an (x, y) ordered relationship.      
+**Domain:** the values of $x$ such that at least one element of $y$ has an $(x, y)$ ordered relationship.      
 $domain\;R = \{x: for\;some\;y(x\:R\:y)\}$     
 
 **Range:** the values of y such that at least one element of x has an (x, y) ordered relationship.    
-$range\;R = \{y: for\;some\;x(x\:R\:y)\}$   
+$range\;R = \{y: for\;some\;x(x\:R\:y)\}$    
 
-   
+
 ## Functions   
 
 We can also consider functions as a relationship between ordered set pairs.  
-A function transforms an element x to a corresponding value of y, i.e. for each $x\in X$, $y\in Y$ exists such that $(x,y)\in f$.    
+A function transforms an element $x$ to a corresponding value of $y$, i.e. for each $x\in X$, $y\in Y$ exists such that $(x,y)\in f$.    
 
 This can also be denoted as a relation between ordered set pairs such that:   
 
@@ -90,7 +93,7 @@ This can also be denoted as a relation between ordered set pairs such that:
 
 In machine learning, we are interested in learning functional relationships from data, where the domain is a vector of variables that is transformed onto a vector of target values.     
  
-```{r, message = FALSE, out.width = '75%'}
+```{r, message = FALSE, out.width = '70%'}
 #-----create a simple function in R-----  
 f1 <- tibble(x = c(seq(1, 20)),
              fx = x^2)  
@@ -107,7 +110,7 @@ f1 %>%
         panel.grid = element_blank())
 ```
 
-```{python}
+```{python, out.width = '70%'}
 #-----create a simple function in Python-----  
 import numpy as np  
 import pandas as pd  
@@ -124,8 +127,8 @@ sns.set_style("white")
 
 sns.scatterplot(data = f2, x = 'x_values', y = 'fx_values')
 sns.lineplot(data = f2, x = 'x_values', y = 'fx_values', color = 'salmon')
+plt.xticks(np.arange(1, 20 ,1))
 plt.xlabel('x')
 plt.ylabel('f(x)')
 plt.show()  
 ```
-

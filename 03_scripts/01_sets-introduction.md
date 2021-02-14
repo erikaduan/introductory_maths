@@ -1,13 +1,13 @@
 Introduction to sets
 ================
 Erika Duan
-2021-01-20
+2021-02-07
 
-  - [Resources](#resources)
-  - [What is a mathematical set?](#what-is-a-mathematical-set)
-      - [Set notation](#set-notation)
-      - [Relations](#relations)
-      - [Functions](#functions)
+-   [Resources](#resources)
+-   [What is a mathematical set?](#what-is-a-mathematical-set)
+    -   [Set notation](#set-notation)
+    -   [Relations](#relations)
+    -   [Functions](#functions)
 
 # Resources
 
@@ -18,16 +18,16 @@ Pablo Caceres. All credit should be attributed to Pablo Caceres.
 
 # What is a mathematical set?
 
-A [set](https://en.wikipedia.org/wiki/Set_\(mathematics\)) is a
-collection of **distinct** mathematical objects.  
+A [set](https://en.wikipedia.org/wiki/Set_(mathematics)) is a collection
+of **distinct** mathematical objects.  
 It is helpful for denoting:
 
-  - Belonging i.e. ![a \\in
-    A](https://latex.codecogs.com/png.latex?a%20%5Cin%20A "a \\in A") or
-    element a is an object within set A.  
-  - Inclusion i.e. ![A \\subset
-    B](https://latex.codecogs.com/png.latex?A%20%5Csubset%20B
-    "A \\subset B") or set A is a smaller subset within set B.
+-   Belonging
+    i.e. ![a \\in A](https://latex.codecogs.com/png.latex?a%20%5Cin%20A "a \in A")
+    or element a is an object within set A.  
+-   Inclusion
+    i.e. ![A \\subset B](https://latex.codecogs.com/png.latex?A%20%5Csubset%20B "A \subset B")
+    or set A is a smaller subset within set B.
 
 Sets do not need to be ordered and are contained within `{}`. This
 nonemclature is preserved in Python.  
@@ -53,47 +53,44 @@ subset of elements within a larger set.
 
 Pairs of sets can be unordered or ordered:
 
-  - For an unordered set pair, ![x, y = y,
-    x](https://latex.codecogs.com/png.latex?x%2C%20y%20%3D%20y%2C%20x
-    "x, y = y, x").  
-  - For an ordered set pair with binary relationships, ![(x, y) \\neq
-    (y,x)](https://latex.codecogs.com/png.latex?%28x%2C%20y%29%20%5Cneq%20%28y%2Cx%29
-    "(x, y) \\neq (y,x)").
+-   For an unordered set pair,
+    ![x, y = y, x](https://latex.codecogs.com/png.latex?x%2C%20y%20%3D%20y%2C%20x "x, y = y, x").  
+-   For an ordered set pair with binary relationships,
+    ![(x, y) \\neq (y,x)](https://latex.codecogs.com/png.latex?%28x%2C%20y%29%20%5Cneq%20%28y%2Cx%29 "(x, y) \neq (y,x)").
 
-Sets of ordered pairs can be denoted using the concept of relations.
-Relations have a domain and range.
+Relations are defined as sets of ordered pairs and denoted using
+![R](https://latex.codecogs.com/png.latex?R "R"). Relations have a
+domain and range.
 
-**Domain:** the values of x such that at least one element of y has an
-(x, y) ordered relationship.  
-![domain\\;R = \\{x:
-for\\;some\\;y(x\\:R\\:y)\\}](https://latex.codecogs.com/png.latex?domain%5C%3BR%20%3D%20%5C%7Bx%3A%20for%5C%3Bsome%5C%3By%28x%5C%3AR%5C%3Ay%29%5C%7D
-"domain\\;R = \\{x: for\\;some\\;y(x\\:R\\:y)\\}")
+**Domain:** the values of
+![x](https://latex.codecogs.com/png.latex?x "x") such that at least one
+element of ![y](https://latex.codecogs.com/png.latex?y "y") has an
+![(x, y)](https://latex.codecogs.com/png.latex?%28x%2C%20y%29 "(x, y)")
+ordered relationship.  
+![domain\\;R = \\{x: for\\;some\\;y(x\\:R\\:y)\\}](https://latex.codecogs.com/png.latex?domain%5C%3BR%20%3D%20%5C%7Bx%3A%20for%5C%3Bsome%5C%3By%28x%5C%3AR%5C%3Ay%29%5C%7D "domain\;R = \{x: for\;some\;y(x\:R\:y)\}")
 
 **Range:** the values of y such that at least one element of x has an
 (x, y) ordered relationship.  
-![range\\;R = \\{y:
-for\\;some\\;x(x\\:R\\:y)\\}](https://latex.codecogs.com/png.latex?range%5C%3BR%20%3D%20%5C%7By%3A%20for%5C%3Bsome%5C%3Bx%28x%5C%3AR%5C%3Ay%29%5C%7D
-"range\\;R = \\{y: for\\;some\\;x(x\\:R\\:y)\\}")
+![range\\;R = \\{y: for\\;some\\;x(x\\:R\\:y)\\}](https://latex.codecogs.com/png.latex?range%5C%3BR%20%3D%20%5C%7By%3A%20for%5C%3Bsome%5C%3Bx%28x%5C%3AR%5C%3Ay%29%5C%7D "range\;R = \{y: for\;some\;x(x\:R\:y)\}")
 
 ## Functions
 
 We can also consider functions as a relationship between ordered set
 pairs.  
-A function transforms an element x to a corresponding value of y,
-i.e. for each ![x\\in
-X](https://latex.codecogs.com/png.latex?x%5Cin%20X "x\\in X"), ![y\\in
-Y](https://latex.codecogs.com/png.latex?y%5Cin%20Y "y\\in Y") exists
-such that ![(x,y)\\in
-f](https://latex.codecogs.com/png.latex?%28x%2Cy%29%5Cin%20f
-"(x,y)\\in f").
+A function transforms an element
+![x](https://latex.codecogs.com/png.latex?x "x") to a corresponding
+value of ![y](https://latex.codecogs.com/png.latex?y "y"), i.e. for each
+![x\\in X](https://latex.codecogs.com/png.latex?x%5Cin%20X "x\in X"),
+![y\\in Y](https://latex.codecogs.com/png.latex?y%5Cin%20Y "y\in Y")
+exists such that
+![(x,y)\\in f](https://latex.codecogs.com/png.latex?%28x%2Cy%29%5Cin%20f "(x,y)\in f").
 
 This can also be denoted as a relation between ordered set pairs such
 that:
 
-  - ![f:X\\to Y](https://latex.codecogs.com/png.latex?f%3AX%5Cto%20Y
-    "f:X\\to Y") or
-  - ![f(x) = y](https://latex.codecogs.com/png.latex?f%28x%29%20%3D%20y
-    "f(x) = y")
+-   ![f:X\\to Y](https://latex.codecogs.com/png.latex?f%3AX%5Cto%20Y "f:X\to Y")
+    or
+-   ![f(x) = y](https://latex.codecogs.com/png.latex?f%28x%29%20%3D%20y "f(x) = y")
 
 In machine learning, we are interested in learning functional
 relationships from data, where the domain is a vector of variables that
@@ -116,7 +113,7 @@ f1 %>%
         panel.grid = element_blank())
 ```
 
-<img src="01_sets-introduction_files/figure-gfm/unnamed-chunk-4-1.png" width="75%" style="display: block; margin: auto;" />
+<img src="01_sets-introduction_files/figure-gfm/unnamed-chunk-5-1.png" width="70%" style="display: block; margin: auto;" />
 
 ``` python
 #-----create a simple function in Python-----  
@@ -138,9 +135,13 @@ sns.lineplot(data = f2, x = 'x_values', y = 'fx_values', color = 'salmon')
 ```
 
 ``` python
+plt.xticks(np.arange(1, 20 ,1))
+```
+
+``` python
 plt.xlabel('x')
 plt.ylabel('f(x)')
 plt.show()  
 ```
 
-<img src="01_sets-introduction_files/figure-gfm/unnamed-chunk-5-1.png" style="display: block; margin: auto;" />
+<img src="01_sets-introduction_files/figure-gfm/unnamed-chunk-6-1.png" width="70%" style="display: block; margin: auto;" />

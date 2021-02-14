@@ -1,17 +1,17 @@
 Geometry revision
 ================
 Erika Duan
-2021-01-20
+2021-02-07
 
-  - [Resources](#resources)
-  - [Introduction to triangles](#introduction-to-triangles)
-  - [Triangle inequality theorem](#triangle-inequality-theorem)
-  - [Sine, Cosine and Tangent](#sine-cosine-and-tangent)
-  - [The Sine rule](#the-sine-rule)
-  - [The Cosine rule](#the-cosine-rule)
-  - [Cosine similarity](#cosine-similarity)
-  - [Soft cosine similarity](#soft-cosine-similarity)
-  - [Further reading](#further-reading)
+-   [Resources](#resources)
+-   [Introduction to triangles](#introduction-to-triangles)
+-   [Triangle inequality theorem](#triangle-inequality-theorem)
+-   [Sine, Cosine and Tangent](#sine-cosine-and-tangent)
+-   [The Sine rule](#the-sine-rule)
+-   [The Cosine rule](#the-cosine-rule)
+-   [Cosine similarity](#cosine-similarity)
+-   [Soft cosine similarity](#soft-cosine-similarity)
+-   [Further reading](#further-reading)
 
 # Resources
 
@@ -30,9 +30,8 @@ A brief revision of triangles is shown below.
 Triangles and angles are an important mathematical concept to revise, as
 vector similarity is calculated based on concepts from geometry and
 trigonometry. The definition of vector norms
-i.e. ![||x||](https://latex.codecogs.com/png.latex?%7C%7Cx%7C%7C
-"||x||") and how they behave is also derived from insights from
-trigonometry.
+i.e. ![\|\|x\|\|](https://latex.codecogs.com/png.latex?%7C%7Cx%7C%7C "||x||")
+and how they behave is also derived from insights from trigonometry.
 
 # Triangle inequality theorem
 
@@ -49,11 +48,11 @@ right angled triangle.
 
 <img src="../02_figures/02_vectors-angles-revision-3.jpg" width="80%" style="display: block; margin: auto;" />
 
-We are therefore only interested in values ![0\\leq \\measuredangle
-\\leq 90](https://latex.codecogs.com/png.latex?0%5Cleq%20%5Cmeasuredangle%20%5Cleq%2090
-"0\\leq \\measuredangle \\leq 90") and the values for Sine and Cosine
-will always be between 0 and 1 (as the hypotenus is always equal to or
-larger than the opposite and the adjacent).
+Let us examine the values
+![0\\leq \\measuredangle \\leq 90](https://latex.codecogs.com/png.latex?0%5Cleq%20%5Cmeasuredangle%20%5Cleq%2090 "0\leq \measuredangle \leq 90").
+The values for Sine and Cosine will always be between 0 and 1 (as the
+hypotenus is always equal to or larger than the opposite and the
+adjacent).
 
 <img src="../02_figures/02_vectors-angles-revision-4.jpg" width="70%" style="display: block; margin: auto;" />
 
@@ -83,7 +82,7 @@ plt.legend(loc = "upper right")
 plt.show()
 ```
 
-<img src="02_vectors-geometry-revision_files/figure-gfm/unnamed-chunk-6-1.png" style="display: block; margin: auto;" />
+<img src="02_vectors-geometry-revision_files/figure-gfm/unnamed-chunk-7-1.png" width="672" style="display: block; margin: auto;" />
 
 ``` r
 #-----draw sine and cosine function in R-----
@@ -111,23 +110,23 @@ ggplot(trig_plot, aes(x, sine)) +
   annotate("text", x = 4, y = 0.9, label = "Cosine wave", colour = "firebrick")
 ```
 
-<img src="02_vectors-geometry-revision_files/figure-gfm/unnamed-chunk-7-1.png" width="60%" style="display: block; margin: auto;" />
+<img src="02_vectors-geometry-revision_files/figure-gfm/unnamed-chunk-8-1.png" width="60%" style="display: block; margin: auto;" />
 
 # The Sine rule
 
 The [Sine rule](https://www.mathsisfun.com/algebra/trig-sine-law.html)
-is useful for solving triangle angles and lengths, but does not have any
-direct application to machine learning algorithms.
+applies to all similar triangle types and is useful for solving triangle
+angles and lengths. It does not have any direct application to machine
+learning algorithms.
 
 <img src="../02_figures/02_vectors-angles-revision-5.jpg" width="80%" style="display: block; margin: auto;" />
 
 # The Cosine rule
 
 In contrast, the [Cosine
-rule](https://www.mathsisfun.com/algebra/trig-cosine-law.html) is
-particularly useful for calculating object similarity in machine
-learning, as it can be applied to calculate the angle between two
-lengths, given that all lengths are known.
+rule](https://www.mathsisfun.com/algebra/trig-cosine-law.html) applies
+to all triangle types (i.e. not just right-angled triangles) and is
+useful for calculating object similarity in machine learning.
 
 In trigonometry, the Cosine rule can be derived to find either an
 unknown length given that two sides and the angle between them are
@@ -145,12 +144,7 @@ cosine of the angle between them. This is the same as calculating the
 inner product of two vectors normalised to have norms of 1 (i.e. cosine
 similarity only cares about vector direction and not magnitude).
 
-![similarity = \\cos\\theta=\\frac{\\langle x, y\\rangle}{\\lVert
-x\\rVert \\lVert y \\rVert} =
-\\frac{\\displaystyle\\sum\_{i=1}^nA\_iB\_i}{\\sqrt{\\displaystyle\\sum\_{i=1}^nA^2\_i}
-\\times
-\\sqrt{\\displaystyle\\sum\_{i=1}^nB^2\_i}}](https://latex.codecogs.com/png.latex?similarity%20%3D%20%5Ccos%5Ctheta%3D%5Cfrac%7B%5Clangle%20x%2C%20y%5Crangle%7D%7B%5ClVert%20x%5CrVert%20%5ClVert%20y%20%5CrVert%7D%20%3D%20%5Cfrac%7B%5Cdisplaystyle%5Csum_%7Bi%3D1%7D%5EnA_iB_i%7D%7B%5Csqrt%7B%5Cdisplaystyle%5Csum_%7Bi%3D1%7D%5EnA%5E2_i%7D%20%5Ctimes%20%5Csqrt%7B%5Cdisplaystyle%5Csum_%7Bi%3D1%7D%5EnB%5E2_i%7D%7D
-"similarity = \\cos\\theta=\\frac{\\langle x, y\\rangle}{\\lVert x\\rVert \\lVert y \\rVert} = \\frac{\\displaystyle\\sum_{i=1}^nA_iB_i}{\\sqrt{\\displaystyle\\sum_{i=1}^nA^2_i} \\times \\sqrt{\\displaystyle\\sum_{i=1}^nB^2_i}}")
+![similarity = \\cos\\theta=\\frac{\\langle x, y\\rangle}{\\lVert x\\rVert \\lVert y \\rVert} = \\frac{\\displaystyle\\sum\_{i=1}^nA\_iB\_i}{\\sqrt{\\displaystyle\\sum\_{i=1}^nA^2\_i} \\times \\sqrt{\\displaystyle\\sum\_{i=1}^nB^2\_i}}](https://latex.codecogs.com/png.latex?similarity%20%3D%20%5Ccos%5Ctheta%3D%5Cfrac%7B%5Clangle%20x%2C%20y%5Crangle%7D%7B%5ClVert%20x%5CrVert%20%5ClVert%20y%20%5CrVert%7D%20%3D%20%5Cfrac%7B%5Cdisplaystyle%5Csum_%7Bi%3D1%7D%5EnA_iB_i%7D%7B%5Csqrt%7B%5Cdisplaystyle%5Csum_%7Bi%3D1%7D%5EnA%5E2_i%7D%20%5Ctimes%20%5Csqrt%7B%5Cdisplaystyle%5Csum_%7Bi%3D1%7D%5EnB%5E2_i%7D%7D "similarity = \cos\theta=\frac{\langle x, y\rangle}{\lVert x\rVert \lVert y \rVert} = \frac{\displaystyle\sum_{i=1}^nA_iB_i}{\sqrt{\displaystyle\sum_{i=1}^nA^2_i} \times \sqrt{\displaystyle\sum_{i=1}^nB^2_i}}")
 
 In text mining, each unique term is assigned a different dimension, so
 cosine similarity calculations tend to be applied to very high
@@ -199,12 +193,12 @@ cosine_similarity(tfidf_matrix, tfidf_matrix)
 
 An obvious weakness of the cosine similarity matrix is that
 ![n](https://latex.codecogs.com/png.latex?n "n") terms are arbitarily
-assigned a dimension in ![{\\rm
-I\\\!R}^n](https://latex.codecogs.com/png.latex?%7B%5Crm%20I%5C%21R%7D%5En
-"{\\rm I\\!R}^n"), regardless of similarities or differences in their
-semantics. Soft cosine similarity first implements word to vector
-embeddings, which allows terms with similar meanings be more closely
-localised together within the vector space.
+assigned a dimension in
+![{\\rm I\\!R}^n](https://latex.codecogs.com/png.latex?%7B%5Crm%20I%5C%21R%7D%5En "{\rm I\!R}^n"),
+regardless of similarities or differences in their semantics. Soft
+cosine similarity first implements word to vector embeddings, which
+allows terms with similar meanings be more closely localised together
+within the vector space.
 
 According to
 [Wikipedia](https://en.wikipedia.org/wiki/Cosine_similarity#Soft_cosine_measure),
@@ -220,15 +214,15 @@ text data.
 
 # Further reading
 
-  - A great
+-   A great
     [post](https://blog.christianperone.com/2013/09/machine-learning-cosine-similarity-for-vector-space-models-part-iii/)
     explaining the maths behind vector dot products and cosine
     similarity.
 
-  - A [post](https://www.machinelearningplus.com/nlp/cosine-similarity/)
+-   A [post](https://www.machinelearningplus.com/nlp/cosine-similarity/)
     explaining the different between cosine similarity and soft cosine
     similarity.
 
-  - A [guide](https://www.machinelearningplus.com/nlp/gensim-tutorial/)
+-   A [guide](https://www.machinelearningplus.com/nlp/gensim-tutorial/)
     to the Python Gensim package, which is useful for creating word to
     vector embeddings.

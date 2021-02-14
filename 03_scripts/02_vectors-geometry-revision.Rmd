@@ -9,8 +9,8 @@ output:
 ---
 
 ```{r setup, include = FALSE}
-knitr::opts_chunk$set(echo = TRUE, results = 'hide', fig.align = 'center')
-knitr::knit_engines$set(python = reticulate::eng_python)
+knitr::opts_chunk$set(echo = TRUE, results = 'hide', fig.align = 'center')   
+knitr::knit_engines$set(python = reticulate::eng_python)   
 ```
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}  
@@ -21,11 +21,14 @@ p_load(tidyverse,
        reticulate,
        knitr) 
 
-conda_list() # list all available conda environments
-use_condaenv("Anaconda3")
+conda_list() # list all available conda environments    
+use_condaenv("r-reticulate")
+```
 
+```{r, echo = FALSE}
+#-----set plugin to knit Python code chunks-----
 py_run_string("import os as os")
-py_run_string("os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = 'C:/Users/user/Anaconda3/Library/plugins/platforms'")
+py_run_string("os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = 'C:/Users/user/Anaconda3/envs/r-reticulate/Library/plugins/platforms'")    
 ```
 
 
@@ -62,7 +65,7 @@ Sine, Cosine and Tangent are just a ratio of two specific sides of a right angle
 knitr::include_graphics("../02_figures/02_vectors-angles-revision-3.jpg")   
 ```
 
-We are therefore only interested in values $0\leq \measuredangle \leq 90$ and the values for Sine and Cosine will always be between 0 and 1 (as the hypotenus is always equal to or larger than the opposite and the adjacent).  
+Let us examine the values $0\leq \measuredangle \leq 90$. The values for Sine and Cosine will always be between 0 and 1 (as the hypotenus is always equal to or larger than the opposite and the adjacent).  
 
 ```{r, echo = FALSE, results = 'markup', fig.align = 'center', out.width = '70%'}
 knitr::include_graphics("../02_figures/02_vectors-angles-revision-4.jpg")   
@@ -122,7 +125,7 @@ ggplot(trig_plot, aes(x, sine)) +
 
 # The Sine rule  
 
-The [Sine rule](https://www.mathsisfun.com/algebra/trig-sine-law.html) is useful for solving triangle angles and lengths, but does not have any direct application to machine learning algorithms.  
+The [Sine rule](https://www.mathsisfun.com/algebra/trig-sine-law.html) applies to all similar triangle types and is useful for solving triangle angles and lengths. It does not have any direct application to machine learning algorithms.   
 
 ```{r, echo = FALSE, results = 'markup', fig.align = 'center', out.width = '80%'}
 knitr::include_graphics("../02_figures/02_vectors-angles-revision-5.jpg")   
@@ -131,7 +134,7 @@ knitr::include_graphics("../02_figures/02_vectors-angles-revision-5.jpg")
 
 # The Cosine rule  
 
-In contrast, the [Cosine rule](https://www.mathsisfun.com/algebra/trig-cosine-law.html) is particularly useful for calculating object similarity in machine learning, as it can be applied to calculate the angle between two lengths, given that all lengths are known.   
+In contrast, the [Cosine rule](https://www.mathsisfun.com/algebra/trig-cosine-law.html) applies to all triangle types (i.e. not just right-angled triangles) and is useful for calculating object similarity in machine learning.       
 
 In trigonometry, the Cosine rule can be derived to find either an unknown length given that two sides and the angle between them are known, or an unknown angle given that all sides of the triangle are known.     
 

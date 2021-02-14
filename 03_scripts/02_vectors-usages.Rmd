@@ -20,17 +20,27 @@ p_load(tidyverse,
        reticulate,
        knitr) 
 
-conda_list() # list all available conda environments
-use_condaenv("Anaconda3")
+conda_list() # list all available conda environments    
+use_condaenv("r-reticulate")
+```
 
+```{r, echo = FALSE}
+#-----set plugin to knit Python code chunks-----
 py_run_string("import os as os")
-py_run_string("os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = 'C:/Users/user/Anaconda3/Library/plugins/platforms'")
+py_run_string("os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = 'C:/Users/user/Anaconda3/envs/r-reticulate/Library/plugins/platforms'")    
 ```
 
 
 # Resources   
 
 This section on vectors is taken from [Introduction to Linear Algebra for Applied Machine Learning with Python](https://pabloinsente.github.io/intro-linear-algebra#vector-norms) by Pablo Caceres and [Lecture 8 - Norms of Vectors and Matrices](https://www.youtube.com/watch?v=NcPUI7aPFhA) from  Matrix Methods in Data Analysis, Signal Processing, and Machine Learning, MIT OpenCourseWare. All credit should be attributed to these sources.        
+
+
+# Summary of vector properties  
+
+```{r, echo = FALSE, results = 'markup', fig.align = 'center', out.width = '80%'}
+knitr::include_graphics("../02_figures/02_vectors-properties-summaries.jpg")   
+```
 
 
 # Vector norms  
