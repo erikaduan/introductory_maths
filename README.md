@@ -26,13 +26,12 @@ This repository also has a **secondary aim** of promoting code agnostic practice
    2.3 [Geometry revision and Cosine similarity](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/02_vectors-geometry-revision.md)  
 
 3. Matrices  
-    3.1 [Introduction to matrices]()  
-    3.2 [Basic matrix algebra]()  
+    3.1 [Introduction to matrices](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/03_matrices-introduction.md)  
 
 4. Algebra  
     4.1 Introduction to algebra  
-    4.2 Introduction to exponents  
-    4.3 Introduction to logarithms  
+    4.2 Exponents revision  
+    4.3 Logarithms revision  
 
 ## References  
 

@@ -43,7 +43,7 @@ co-existing within one space defined by
 ![n](https://latex.codecogs.com/png.latex?n "n") dimensions.
 
 Vectors can have any number of dimensions and are mathematical objects
-that can be added or multipled i.e. transformed into another vector.
+that can be added or multiplied i.e. transformed into another vector.
 
 Different types of vectors exist:
 

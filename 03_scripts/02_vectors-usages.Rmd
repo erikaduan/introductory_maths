@@ -39,7 +39,7 @@ This section on vectors is taken from [Introduction to Linear Algebra for Applie
 # Summary of vector properties  
 
 ```{r, echo = FALSE, results = 'markup', fig.align = 'center', out.width = '80%'}
-knitr::include_graphics("../02_figures/02_vectors-properties-summaries.jpg")   
+knitr::include_graphics("../02_figures/02_vectors-properties-summary.jpg")   
 ```
 
 
@@ -49,13 +49,13 @@ To measure vectors, you can think about the norm (i.e. length) of the vector as 
 
 $\lVert x \rVert = \sqrt{x_1^2 + x_2^2+...+x_n^2}$   
 
-Norms are functions that map vectors to non-negative values. They are used to assign $length\; \lVert x\rVert \in {\rm I\!R}^n$ to a vector $x$.        
+Norms are functions that map vectors to non-negative values. They are used to assign $length\; \lVert x\rVert \in {\rm I\!R}$ to a vector $x$.        
 
 A norm has to satisfy the following three properties:  
 
-+ It is absolutely homogenous. For all scalars that are real values, the length scales proportionally with the value of the scalar. $\forall \alpha \in {\rm I\!R}, \; \lVert \alpha x \rVert = \lVert \alpha \rVert \times \lVert x \rVert$           
++ It is absolutely homogeneous. For all scalars that are real values, the length scales proportionally with the value of the scalar. $\forall \alpha \in {\rm I\!R}, \; \lVert \alpha x \rVert = \lVert \alpha \rVert \times \lVert x \rVert$           
 + It exhibits triangular inequality. In geometric terms, the sum of the lengths of any two sides must be greater or at least equal to the length of the third side. $\lVert x+y \rVert \leq \lVert x \rVert + \lVert y \rVert$.            
-+ It is positively defined. The length of x has to be a positive value and a length of zero only occurs if x = 0.    
++ It is positively defined. The length of $x$ has to be a positive value and a length of zero only occurs if $x = 0$.      
 $\lVert x \rVert \geq 0$   
 $\lVert x \rVert = 0 \iff x = 0$           
 
@@ -69,7 +69,7 @@ knitr::include_graphics("../02_figures/02_vectors-norm-types.jpg")
 ## Euclidean norm    
 
 The Euclidean or $L_2$ norm is defined below. 
-$$\lVert x\rVert_2 := \sqrt{\displaystyle\sum_{i=1}^{n} x_i^2} = \sqrt{x^T\times x} $$
+$$\lVert x\rVert_2 := \sqrt{\displaystyle\sum_{i=1}^{n} x_i^2} = \sqrt{x^T\times x}$$  
 
 The euclidean norm can also be thought of as the square root of the dot product of a vector by itself.  
 
@@ -153,11 +153,7 @@ norm(x, type = "O")
 
 # Vector inner product, length and distance    
 
-For practicality, you can conside the vector inner product and vector length as equivalent to the vector dot product and vector norm.    
-Every dot product is an inner product. The scalar inner product is defined below.  
-$$\langle x, y\rangle := x \cdot y$$  
-
-In ${\rm I\!R}^n$, the inner product is a dot product defined below.  
+For practicality, you can consider the vector inner product and the vector dot product as the same thing. Every dot product is an inner product. In ${\rm I\!R}^n$, the inner product is a dot product defined below.    
 $$\langle 
 \begin{bmatrix}
   x_1 \\
@@ -173,7 +169,7 @@ $$\langle
 
 Because length is a concept from geometry, you can say that geometric vectors have lengths and that vectors in ${\rm I\!R}^n$ have norms.   
 
-Distance is therefore a relational concept, as it refers to the length (or norm) of the difference between two vectors. For example, consider the vectors $x$ and $y$. We define the distance $d(x, y)$ as below.    
+Distance is a relational concept, as it refers to the length of the difference between two vectors. For example, consider the vectors $x$ and $y$. We define the distance $d(x, y)$ as below.    
 $$d(x, y) := \lVert x - y \rVert = \sqrt{\langle x-y, x -y \rangle}$$     
 
 This definition for distance is flexible. When the inner product is specifically the dot product, the distance equals to the Euclidean distance.   
@@ -218,11 +214,11 @@ norm(x - y, type = "2")
 # Vector angles  
 
 The Cauchy–Schwarz inequality is used to define the behaviour of angles between a pair of vectors, and is stated below.    
-$|\langle x - y \rangle| \leq \lVert x \rVert \lVert y \rVert$    
+$|\langle x,y \rangle| \leq \lVert x \rVert \lVert y \rVert$    
 
 It describes an important behaviour of vectors, namely that the dot product of two vectors is always smaller than or equal to the product of their lengths.  
 
-When two vectors are co-linear (i.e. lie on the same line), $|\langle x - y \rangle| = \lVert x \rVert \lVert y \rVert$.    
+When two vectors are co-linear (i.e. lie on the same line), $|\langle x,y \rangle| = \lVert x \rVert \lVert y \rVert$.    
 
 ```{r, echo = FALSE, results = 'markup', fig.align = 'center', out.width = '80%'}
 knitr::include_graphics("../02_figures/02_vectors-cauchy-schwarz.jpg")     
@@ -233,13 +229,13 @@ We can think of the definition of the angle between two vectors as a generalisat
 knitr::include_graphics("../02_figures/02_vectors-cosine.jpg")     
 ```
 
-Because $|\langle x - y \rangle| \leq \lVert x \rVert \lVert y \rVert$, we can further define the range of values for which $\cos\theta$ is valid.     
+Because $|\langle x,y \rangle| \leq \lVert x \rVert \lVert y \rVert$, we can further define the range of values for which $\cos\theta$ is valid.     
 
 $$-1 \leq \frac{\langle x, y\rangle}{\lVert x\rVert \lVert y \rVert} \leq 1$$ 
 
-A maximum of 1 represents a co-linear scenario where the vector dot product is positive. A minimum of -1 also represents a situation where the vector dot product is in the oppositive direction (but equal in magnitude). All other values fall in between this range and a value of 0 represents an orthogonal vector pair. 
+A maximum of 1 represents a co-linear scenario where two vectors point in the same direction. A minimum of -1 also represents a situation where one vector points in the opposite direction (but both vectors are still co-linear). All other values fall in between this range and a value of 0 represents an orthogonal vector pair. 
 
-**Note:** The distance between two vectors can be a negative number (this simply denotes vector direction).  
+**Note:** The dot product of two vectors can be a negative number (this simply reflects relational vector direction).    
 
 ```{python}
 #-----calculate cos(theta) of two vectors in Python via NumPy-----  
@@ -289,7 +285,7 @@ degrees
 Vector orthogonality is used to describe vector perpendicularity to vectors in any number of dimensions. Mathematically, a pair of vectors $x$ and $y$ are orthogonal ($x\perp y$) if:   
 
 + $\langle x, y\rangle \; or \; x\cdot y = 0$  
-+ In a 2D plane, this also means that the angle between $x$ and $y$ is 90 degrees as $\langle x, y\rangle = \cos \theta \lVert x\rVert \lVert y\rVert$ and $\cos 90 = 0$.        
++ In a 2D plane, this also means that the angle between $x$ and $y$ is 90 degrees as $\langle x, y\rangle = \cos \theta \times \lVert x\rVert \lVert y\rVert$ and $\cos 90 = 0$.        
 
 ```{python}
 #-----create function to assess vector orthogonality in Python-----  
@@ -300,7 +296,7 @@ def is_orthogonal(x, y):
   assert(type(y).__module__ == np.__name__), "Vector y is not a NumPy array"   
   assert(x.ndim == 2), "Vector x should be 2D"    
   assert(y.ndim == 2), "Vector y should be 2D"   
-
+  
   cos_theta = (np.transpose(x) @ y) / (np.linalg.norm(x, 2) * np.linalg.norm(y, 2))
   radians = math.acos(cos_theta)
   
@@ -322,8 +318,8 @@ is_orthogonal(x, y)
 ```{r}
 #-----create function to assess vector orthogonality in R-----  
 is_orthogonal <- function(x, y) {
-  stopifnot(class(x)=="matrix")
-  stopifnot(class(y)=="matrix")
+  stopifnot(class(x)[1]=="matrix")
+  stopifnot(class(y)[1]=="matrix")
   
   cos_theta <- (t(x) %*% y) / (norm(x, type = "2") * norm(y, type = "2"))
   radians <- acos(cos_theta)
@@ -359,7 +355,7 @@ $y=\frac{5}{3}x-\frac{1}{3}$
     
 The point where two both linears equations intersect is the solution to the linear system.     
 
-```{python}
+```{python, out.width = '60%'}
 #-----plot system of linear equations in Python-----    
 import numpy as np
 import matplotlib.pyplot as plt
@@ -383,7 +379,7 @@ plt.legend(loc = "upper right")
 plt.show()
 ```
 
-```{r}
+```{r, out.width = '60%'}
 #-----plot system of linear equations in R-----  
 x = seq(-10, 10, 1)
 y_1 = (-1/2 * x) + 4  

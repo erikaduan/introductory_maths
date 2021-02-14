@@ -40,7 +40,7 @@ This section on vectors is taken from [Introduction to Linear Algebra for Applie
 
 A vector is an ordered and finite list of numbers (i.e. not character elements) and can be viewed as the most basic object in machine learning. You can think of simple machine learning methods as mathematical approaches to extracting information about many vectors co-existing within one space defined by $n$ dimensions.       
 
-Vectors can have any number of dimensions and are mathematical objects that can be added or multipled i.e. transformed into another vector.     
+Vectors can have any number of dimensions and are mathematical objects that can be added or multiplied i.e. transformed into another vector.     
 
 Different types of vectors exist:  
 

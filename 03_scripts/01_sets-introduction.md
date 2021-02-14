@@ -1,7 +1,7 @@
 Introduction to sets
 ================
 Erika Duan
-2021-02-07
+2021-02-14
 
 -   [Resources](#resources)
 -   [What is a mathematical set?](#what-is-a-mathematical-set)
@@ -13,7 +13,7 @@ Erika Duan
 
 This section on mathematical sets is taken from [Introduction to Linear
 Algebra for Applied Machine Learning with
-Python](https://pabloinsente.github.io/intro-linear-algebra#sets) by
+Python](https://pabloinsente.github.io/intro-linear-algebra#vectors) by
 Pablo Caceres. All credit should be attributed to Pablo Caceres.
 
 # What is a mathematical set?
@@ -30,7 +30,7 @@ It is helpful for denoting:
     or set A is a smaller subset within set B.
 
 Sets do not need to be ordered and are contained within `{}`. This
-nonemclature is preserved in Python.  
+nomenclature is preserved in Python.  
 Two sets are equal if and only if they contain the same elements.
 
 ``` python

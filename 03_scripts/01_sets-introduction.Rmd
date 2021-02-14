@@ -33,7 +33,7 @@ py_run_string("os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = 'C:/Users/user/Anacon
 
 # Resources   
 
-This section on mathematical sets is taken from [Introduction to Linear Algebra for Applied Machine Learning with Python](https://pabloinsente.github.io/intro-linear-algebra#sets) by Pablo Caceres. All credit should be attributed to Pablo Caceres.   
+This section on mathematical sets is taken from [Introduction to Linear Algebra for Applied Machine Learning with Python](https://pabloinsente.github.io/intro-linear-algebra#vectors) by Pablo Caceres. All credit should be attributed to Pablo Caceres.   
 
 
 # What is a mathematical set?  
@@ -44,7 +44,7 @@ It is helpful for denoting:
 + Belonging i.e. $a \in A$ or element a is an object within set A.     
 + Inclusion i.e. $A \subset B$ or set A is a smaller subset within set B.           
 
-Sets do not need to be ordered and are contained within `{}`. This nonemclature is preserved in Python.     
+Sets do not need to be ordered and are contained within `{}`. This nomenclature is preserved in Python.     
 Two sets are equal if and only if they contain the same elements.  
 
 ```{python}
