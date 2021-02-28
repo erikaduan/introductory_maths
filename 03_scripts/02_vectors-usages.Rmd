@@ -5,7 +5,7 @@ date: "`r Sys.Date()`"
 output: 
   github_document:
     toc: TRUE
-    pandoc_args: --webtex  
+    pandoc_args: --webtex
 ---
 
 ```{r setup, include = FALSE}

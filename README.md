@@ -33,6 +33,9 @@ This repository also has a **secondary aim** of promoting code agnostic practice
     4.2 Exponents revision  
     4.3 Logarithms revision  
 
+5. Calculus  
+    5.1 [Derivatives](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/05_calculus-derivatives.md)  
+    
 ## References  
 
 + A great guide to [linear algebra](https://pabloinsente.github.io/intro-linear-algebra) for applied machine learning by Pablo Caceres  

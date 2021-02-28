@@ -1,7 +1,7 @@
 Working with vectors
 ================
 Erika Duan
-2021-02-14
+2021-02-27
 
 -   [Resources](#resources)
 -   [Summary of vector properties](#summary-of-vector-properties)

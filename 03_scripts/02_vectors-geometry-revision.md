@@ -1,7 +1,7 @@
 Geometry revision
 ================
 Erika Duan
-2021-02-07
+2021-02-27
 
 -   [Resources](#resources)
 -   [Introduction to triangles](#introduction-to-triangles)
