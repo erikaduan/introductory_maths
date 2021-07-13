@@ -14,18 +14,18 @@ knitr::knit_engines$set(python = reticulate::eng_python)
 ```
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}  
-#-----load required R packages-----
+# Load required R packages -----------------------------------------------------
 if (!require("pacman")) install.packages("pacman") 
 p_load(tidyverse,
        reticulate,
        knitr) 
 
-conda_list() # list all available conda environments    
+conda_list() # List all available conda environments    
 use_condaenv("r-reticulate")
 ```
 
 ```{r, echo = FALSE}
-#-----set plugin to knit Python code chunks-----
+# Set plugin to knit Python code chunks ----------------------------------------
 py_run_string("import os as os")
 py_run_string("os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = 'C:/Users/user/Anaconda3/envs/r-reticulate/Library/plugins/platforms'")    
 ```
@@ -38,9 +38,11 @@ This section on vectors is taken from [Introduction to Linear Algebra for Applie
 
 # What is a vector?  
 
-A vector is an ordered and finite list of numbers (i.e. not character elements) and can be viewed as the most basic object in machine learning. You can think of simple machine learning methods as mathematical approaches to extracting information about many vectors co-existing within one space defined by $n$ dimensions.       
+A single vector can be thought of as an ordered and finite list of numbers. `[2, 1]` represents a vector which which is `+2` rightwards and `+1` above `[0, 0]` in the Cartesian plane.     
 
-Vectors can have any number of dimensions and are mathematical objects that can be added or multiplied i.e. transformed into another vector.     
+Vectors can have any number of dimensions and are mathematical objects that can be added or multiplied i.e. transformed into another vector. The vector `[2, 1, 1]` has three dimensions and points to a single location in 3D space.    
+
+Individual vectors represent single observations and can be viewed as the fundamental unit of data in machine learning. You can think of simple machine learning methods as mathematical approaches for inferring patterns regarding how vectors co-exist within a space defined by $n$ dimensions. 
 
 Different types of vectors exist:  
 

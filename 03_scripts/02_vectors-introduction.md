@@ -1,7 +1,7 @@
 Introduction to vectors
 ================
 Erika Duan
-2021-02-14
+2021-07-13
 
 -   [Resources](#resources)
 -   [What is a vector?](#what-is-a-vector)
@@ -35,15 +35,20 @@ algebra](https://www.3blue1brown.com/essence-of-linear-algebra-page) by
 
 # What is a vector?
 
-A vector is an ordered and finite list of numbers (i.e. not character
-elements) and can be viewed as the most basic object in machine
-learning. You can think of simple machine learning methods as
-mathematical approaches to extracting information about many vectors
-co-existing within one space defined by
-![n](https://latex.codecogs.com/png.latex?n "n") dimensions.
+A single vector can be thought of as an ordered and finite list of
+numbers. `[2, 1]` represents a vector which which is `+2` rightwards and
+`+1` above `[0, 0]` in the Cartesian plane.
 
 Vectors can have any number of dimensions and are mathematical objects
 that can be added or multiplied i.e. transformed into another vector.
+The vector `[2, 1, 1]` has three dimensions and points to a single
+location in 3D space.
+
+Individual vectors represent single observations and can be viewed as
+the fundamental unit of data in machine learning. You can think of
+simple machine learning methods as mathematical approaches for inferring
+patterns regarding how vectors co-exist within a space defined by
+![n](https://latex.codecogs.com/png.latex?n "n") dimensions.
 
 Different types of vectors exist:
 
