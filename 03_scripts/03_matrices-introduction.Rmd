@@ -8,24 +8,24 @@ output:
     pandoc_args: --webtex  
 ---
 
-```{r setup, include = FALSE}
+```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, results = 'hide', fig.align = 'center')
 knitr::knit_engines$set(python = reticulate::eng_python)
 ```
 
-```{r, echo = FALSE, message = FALSE, warning = FALSE}  
-#-----load required R packages-----
+```{r, echo=FALSE, message=FALSE, warning=FALSE}  
+# Load required R packages -----------------------------------------------------
 if (!require("pacman")) install.packages("pacman") 
 p_load(tidyverse,
        reticulate,
        knitr) 
 
-conda_list() # list all available conda environments    
+conda_list() # List all available conda environments    
 use_condaenv("r-reticulate")
 ```
 
 ```{r, echo = FALSE}
-#-----set plugin to knit Python code chunks-----
+# Set plugin to knit Python code chunks ----------------------------------------
 py_run_string("import os as os")
 py_run_string("os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = 'C:/Users/user/Anaconda3/envs/r-reticulate/Library/plugins/platforms'")    
 ```
@@ -38,7 +38,7 @@ This section on matrices is taken from [Introduction to Linear Algebra for Appli
 
 # What is a matrix?  
 
-A matrix can be thought of as a two dimensional container which stores a set of vectors (i.e. an ordered collection of column vectors). A matrix $A \in {\rm I\!R} ^{m\times n}$ is defined below.    
+A matrix can be thought of as a two dimensional container which stores a set of vectors (i.e. an ordered collection of column vectors). A matrix $A \in {\rm I\!R} ^{m\times n}$ is defined below, where $m$ represents the number of rows and $n$ represents the number of columns.      
 
 ```{r, echo = FALSE, results = 'markup', fig.align = 'center', out.width = '70%'}
 knitr::include_graphics("../02_figures/03_matrices-structure.jpg")     
@@ -51,6 +51,18 @@ knitr::include_graphics("../02_figures/03_matrices-structure.jpg")
 knitr::include_graphics("../02_figures/03_matrices-multiplication-concept.jpg")     
 ```
 
+Sparse vectors - sparse vectors predominantly contain elements of zero. To maximise computational efficiency, we can represent sparse matrices by storing only its non-zero elements in a `[[row], [column], [value]]` triplet array.   
+$y = 
+ \begin{bmatrix}
+  0, 0, 3, 0, 0, 0 \\
+  0, 0, 0, 0, 0, 0 \\
+  0, 0, 0, 0, 1, 0
+ \end{bmatrix}   
+ y_{sparse} = 
+ \begin{bmatrix}
+  0, 2, 3 \\
+  2, 4, 1 
+ \end{bmatrix}$   
 
 
 ```{r}
