@@ -17,25 +17,25 @@ This repository also has a **secondary aim** of promoting code agnostic practice
 
 ## Tutorials   
 
-1. Sets  
-    1.1 [Introduction to sets](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/01_sets-introduction.md)  
+1. **Basic concepts**  
+   1.1 [Trigonometry basics](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/01_geometry-revision.md)  
+   1.2 [Algebra basics]()  
+   1.3 [Exponents and logarithms]()  
+   1.4 [Summations]()  
 
-2. Vectors  
-   2.1 [Introduction to vectors](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/02_vectors-introduction.md)  
-   2.2 [Working with vectors](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/02_vectors-usages.md)  
-   2.3 [Geometry revision and Cosine similarity](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/02_vectors-geometry-revision.md)  
+2. **Sets**  
+    2.1 [Introduction to sets](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/02_sets-introduction.md)  
 
-3. Matrices  
-    3.1 [Introduction to matrices](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/03_matrices-introduction.md)  
+3. **Vectors**  
+   3.1 [Introduction to vectors](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/03_vectors-introduction.md)  
+   3.2 [Working with vectors](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/03_vectors-usages.md)  
 
-4. Algebra  
-    4.1 Introduction to algebra  
-    4.2 Exponents revision  
-    4.3 Logarithms revision  
+4. **Matrices**  
+    3.1 [Introduction to matrices](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/04_matrices-introduction.md)  
 
-5. Calculus  
-    5.1 [Derivatives](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/05_calculus-derivatives.md)  
-    
+5. **Calculus**  
+    5.1 [Derivatives](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/05_calculus-derivatives.md)   
+
 ## References  
 
 + A great guide to [linear algebra](https://pabloinsente.github.io/intro-linear-algebra) for applied machine learning by Pablo Caceres  

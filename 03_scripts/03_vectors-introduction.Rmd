@@ -8,12 +8,12 @@ output:
     pandoc_args: --webtex  
 ---
 
-```{r setup, include = FALSE}
+```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, results = 'hide', fig.align = 'center')   
 knitr::knit_engines$set(python = reticulate::eng_python)   
 ```
 
-```{r, echo = FALSE, message = FALSE, warning = FALSE}  
+```{r, echo=FALSE, message=FALSE, warning=FALSE}  
 # Load required R packages -----------------------------------------------------
 if (!require("pacman")) install.packages("pacman") 
 p_load(tidyverse,
@@ -24,7 +24,7 @@ conda_list() # List all available conda environments
 use_condaenv("r-reticulate")
 ```
 
-```{r, echo = FALSE}
+```{r, echo=FALSE}
 # Set plugin to knit Python code chunks ----------------------------------------
 py_run_string("import os as os")
 py_run_string("os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = 'C:/Users/user/Anaconda3/envs/r-reticulate/Library/plugins/platforms'")    
@@ -59,11 +59,11 @@ $x =
  \end{bmatrix}
  \in {\rm I\!R}^{3}$
 
-```{r, echo = FALSE, results = 'markup', fig.align = 'center', out.width = '100%'}
-knitr::include_graphics("../02_figures/02_vectors-types.jpg")
+```{r, echo=FALSE, results='markup', fig.align='center', out.width='100%'}
+knitr::include_graphics("../02_figures/03_vectors-types.jpg")
 ```
 
-```{python}
+```{python, eval=FALSE}
 # Create a 3-dimensional vector in Python via Numpy ----------------------------
 # Note the placement of double square brackets [[d1],[d2],[d3]]
 import numpy as np
@@ -120,9 +120,10 @@ $x =
  \end{bmatrix} \in {\rm I\!R}^{3}$ can therefore also be described as a position within a 3-dimensional coordinate system i.e. starting at `(0, 0, 0)`, move `+1` units in the 1st axis, move `+2` units in the 2nd perpendicular axis and then move `+3` units in the 3rd perpendicular axis.    
  
  
-# Basic vector operations  
+# Basic vector operations   
 
-## Vector-vector addition  
+
+## Vector-vector addition   
 
 Vector-vector addition is performed element-wise and it only applies for vectors of the same size.    
  
@@ -154,7 +155,7 @@ Vector-vector addition has the following properties:
 + Addition of the zero vector has no effect. $x + 0 = x$      
 + Subtracting the vector from itself returns the zero vector. $x - x = 0$       
 
-```{python}
+```{python, eval=FALSE}
 # Create and add two vectors in Python via Numpy -------------------------------  
 x = np.array([[1],
               [2],
@@ -220,8 +221,7 @@ Vector-scalar multiplication has the following properties:
 + It is right-distributive. $x(\alpha + \beta ) = x\alpha + x\beta$     
 + It is right-distributive for vector addition. $\alpha (x+y)=\alpha x+ \alpha y$     
 
- 
-```{python}
+```{python, eval=FALSE}
 # Vector-scalar multiplication in Python via Numpy -----------------------------
 alpha = 4 
 
@@ -257,13 +257,13 @@ There are a few different ways of thinking about linear combinations:
 + Graphically as the addition of two vectors to form a new vector in the Cartesian plane. The linear combination of the basis vectors $\hat{i}$ and $\hat{j}$ can be used to create any point in the 2D Cartesian plane.      
 + Mathematically as the proof that any new vector can be created by a scalar combination of two existing basis vectors.      
 
-```{r, echo = FALSE, results = 'markup', fig.align = 'center', out.width = '100%'}
-knitr::include_graphics("../02_figures/02_vectors-linear-combination.jpg")
+```{r, echo=FALSE, results='markup', fig.align='center', out.width='100%'}
+knitr::include_graphics("../02_figures/03_vectors-linear-combination.jpg")
 ```
 
 Another way to express linear combinations is with summation notation as $\displaystyle\sum_{i=1}^{k}\beta_{i}x_{i}$ where $i$ represents the total number of distinct scalars and vectors. Note that two linearly independent vectors do not need to be orthogonal to each other for the span of their linear combinations to be ${\rm I\!R}^2$.         
 
-```{python}
+```{python, eval=FALSE}
 # Linear combination in Python via Numpy ---------------------------------------  
 a, b = -2, 3 # Input scalar values  
 
@@ -320,13 +320,13 @@ $$x\cdot y = \begin{bmatrix}
 (x_1\times y_1) + (x_2\times y_2)
 \end{bmatrix}$$  
 
-```{r, echo = FALSE, results = 'markup', fig.align = 'center', out.width = '85%'}
-knitr::include_graphics("../02_figures/02_vectors-dot-product.jpg")
+```{r, echo=FALSE, results='markup', fig.align='center', out.width='85%'}
+knitr::include_graphics("../02_figures/03_vectors-dot-product.jpg")
 ```
 
 **Note:** The dot product of two vectors will always return a  scalar (i.e. a single value). In machine learning, the dot product is a useful tool for understanding projections and testing whether two vectors point in the same direction.      
 
-```{python}
+```{python, eval=FALSE}
 # Vector-vector multiplication in Python via Numpy -----------------------------  
 x = np.array([[-2],
               [2]])  
@@ -367,8 +367,8 @@ A vector space is the set of proper vectors (objects which follow the rules defi
 
 If we take the basis vectors $\hat{i}$ and $\hat{j}$ and the scalars $\alpha$ and $\beta$, the vector span is defined as the set of all possible linear combinations of $\alpha \hat{i} + \beta \hat{j}$.        
 
-```{r, echo = FALSE, results = 'markup', fig.align = 'center', out.width = '100%'}
-knitr::include_graphics("../02_figures/02_vectors-span.jpg")
+```{r, echo=FALSE, results='markup', fig.align='center', out.width='100%'}
+knitr::include_graphics("../02_figures/03_vectors-span.jpg")
 ```
 
 
@@ -384,8 +384,8 @@ For a vector subspace $S$ to be valid, it has to meet three conditions:
 
 [Closure](https://www.mathsisfun.com/sets/closure.html) can be thought of as the inability to jump out from one space into another. For example, in the set of odd numbers, odd numbers exhibit closure under multiplication but not addition (multiplying odd numbers by odd numbers will always produce odd numbers).    
 
-```{r, echo = FALSE, results = 'markup', fig.align = 'center', out.width = '100%'}
-knitr::include_graphics("../02_figures/02_vectors-subspace.jpg")
+```{r, echo=FALSE, results='markup', fig.align='center', out.width='100%'}
+knitr::include_graphics("../02_figures/03_vectors-subspace.jpg")
 ```
 
 There are two ways to think about vector subspaces:  
@@ -426,8 +426,8 @@ This implies that there is a vector in the same direction as a linear combinatio
 
 A set of vectors is linearly independent if no vector can be obtained from a linear combination of other vectors in the set.     
 
-```{r, echo = FALSE, results = 'markup', fig.align = 'center', out.width = '100%'}
-knitr::include_graphics("../02_figures/02_vectors-independence.jpg")   
+```{r, echo=FALSE, results='markup', fig.align='center', out.width='100%'}
+knitr::include_graphics("../02_figures/03_vectors-independence.jpg")   
 ```
 
 To summarise, linearly dependent vectors contain redundant information and the span of linearly dependent vectors cannot cover the whole set of values in ${\rm I\!R}^n$. In contrast, linearly independent vectors do not contain redundant information.      
@@ -437,8 +437,8 @@ To summarise, linearly dependent vectors contain redundant information and the s
 
 The null space of a set of vectors are all the linear combinations that map back into the zero vector.  
 
-```{r, echo = FALSE, results = 'markup', fig.align = 'center', out.width = '100%'}
-knitr::include_graphics("../02_figures/02_vectors-null-space.jpg")   
+```{r, echo=FALSE, results='markup', fig.align='center', out.width='100%'}
+knitr::include_graphics("../02_figures/03_vectors-null-space.jpg")   
 ```
 
 In the example above, we can form the following two combinations of vectors that will map into the zero vector (0,0).      

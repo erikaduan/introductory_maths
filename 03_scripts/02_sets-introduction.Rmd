@@ -63,7 +63,7 @@ Set notation is used to describe object belonging within a group.
 We also use set notation to create subsets (or subgroups) by specifying conditions which only hold true for a subset of elements within a larger group. For example, $S = \{ d \in D \; | \; d \; is \; pupper \}$ generates a new subset S from the set of all dogs D, where all dogs in S are puppers.   
 
 ```{r, echo=FALSE, results='markup', fig.align='center', out.width='100%'}
-knitr::include_graphics("../02_figures/01_sets-notation.jpg")
+knitr::include_graphics("../02_figures/02_sets-notation.jpg")
 ```
 
 
@@ -105,7 +105,7 @@ set.seed(111)
 y1 <- simulate_y(x1)
 
 df1 <- tibble(x = x1, 
-               y = y1)
+              y = y1)
 
 # Plot function using ggplot ---------------------------------------------------
 df1 %>%

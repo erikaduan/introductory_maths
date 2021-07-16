@@ -1,7 +1,7 @@
 Introduction to sets
 ================
 Erika Duan
-2021-07-13
+2021-07-14
 
 -   [Resources](#resources)
 -   [What is a mathematical set?](#what-is-a-mathematical-set)
@@ -52,7 +52,7 @@ group. For example,
 generates a new subset S from the set of all dogs D, where all dogs in S
 are puppers.
 
-<img src="../02_figures/01_sets-notation.jpg" width="100%" style="display: block; margin: auto;" />
+<img src="../02_figures/02_sets-notation.jpg" width="100%" style="display: block; margin: auto;" />
 
 ## Relations
 
@@ -112,7 +112,7 @@ set.seed(111)
 y1 <- simulate_y(x1)
 
 df1 <- tibble(x = x1, 
-               y = y1)
+              y = y1)
 
 # Plot function using ggplot ---------------------------------------------------
 df1 %>%
@@ -129,7 +129,7 @@ df1 %>%
         panel.grid = element_blank())
 ```
 
-<img src="01_sets-introduction_files/figure-gfm/unnamed-chunk-5-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="02_sets-introduction_files/figure-gfm/unnamed-chunk-5-1.png" width="70%" style="display: block; margin: auto;" />
 
 ``` python
 # Simulate a simple functional relationship in Python --------------------------  
@@ -159,7 +159,7 @@ plt.title('Plotting in Python requires hardcoding of the true function.')
 plt.show()  
 ```
 
-<img src="01_sets-introduction_files/figure-gfm/unnamed-chunk-3-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="02_sets-introduction_files/figure-gfm/unnamed-chunk-3-1.png" width="70%" style="display: block; margin: auto;" />
 
 # Further reading
 

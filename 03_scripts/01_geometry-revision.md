@@ -1,7 +1,7 @@
 Geometry revision
 ================
 Erika Duan
-2021-07-13
+2021-07-14
 
 -   [Resources](#resources)
 -   [Introduction to triangles](#introduction-to-triangles)
@@ -23,7 +23,7 @@ from MathsisFun.com. All credit should be attributed to these sources.
 
 A brief revision of triangles is shown below.
 
-<img src="../02_figures/02_vectors-angles-revision-1.jpg" width="90%" style="display: block; margin: auto;" />
+<img src="../02_figures/01_angles-revision-1.jpg" width="90%" style="display: block; margin: auto;" />
 
 Triangles and angles are an important mathematical concept to revise, as
 vector similarity is calculated based on concepts from geometry and
@@ -37,14 +37,14 @@ Any side of a triangle must be shorter than the other two sides added
 together. If the side is equal to the other two sides, the length of one
 side is 0 and the object is a line.
 
-<img src="../02_figures/02_vectors-angles-revision-2.jpg" width="80%" style="display: block; margin: auto;" />
+<img src="../02_figures/01_angles-revision-2.jpg" width="80%" style="display: block; margin: auto;" />
 
 # Sine, Cosine and Tangent
 
 Sine, Cosine and Tangent are just a ratio of two specific sides of a
 right angled triangle.
 
-<img src="../02_figures/02_vectors-angles-revision-3.jpg" width="80%" style="display: block; margin: auto;" />
+<img src="../02_figures/01_angles-revision-3.jpg" width="80%" style="display: block; margin: auto;" />
 
 Let us examine the values
 ![0\\leq \\measuredangle \\leq 90](https://latex.codecogs.com/png.latex?0%5Cleq%20%5Cmeasuredangle%20%5Cleq%2090 "0\leq \measuredangle \leq 90").
@@ -52,7 +52,7 @@ The values for Sine and Cosine will always be between 0 and 1 (as the
 hypotenus is always equal to or larger than the opposite and the
 adjacent sides).
 
-<img src="../02_figures/02_vectors-angles-revision-4.jpg" width="70%" style="display: block; margin: auto;" />
+<img src="../02_figures/01_angles-revision-4.jpg" width="70%" style="display: block; margin: auto;" />
 
 ``` r
 # Draw sine and cosine function in R -------------------------------------------
@@ -80,7 +80,7 @@ ggplot(trig_plot, aes(x, sine)) +
   annotate("text", x = 4, y = 0.9, label = "Cosine wave", colour = "firebrick")
 ```
 
-<img src="02_vectors-geometry-revision_files/figure-gfm/unnamed-chunk-7-1.png" width="60%" style="display: block; margin: auto;" />
+<img src="01_geometry-revision_files/figure-gfm/unnamed-chunk-7-1.png" width="60%" style="display: block; margin: auto;" />
 
 ``` python
 # Draw sine and cosine function in Python --------------------------------------   
@@ -106,7 +106,7 @@ plt.legend(loc = "upper right")
 plt.show()
 ```
 
-<img src="02_vectors-geometry-revision_files/figure-gfm/unnamed-chunk-9-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="01_geometry-revision_files/figure-gfm/unnamed-chunk-9-1.png" width="70%" style="display: block; margin: auto;" />
 
 # The Sine rule
 
@@ -115,7 +115,7 @@ applies to all similar triangle types and is useful for solving triangle
 angles and lengths. It does not have any direct application to machine
 learning algorithms.
 
-<img src="../02_figures/02_vectors-angles-revision-5.jpg" width="80%" style="display: block; margin: auto;" />
+<img src="../02_figures/01_angles-revision-5.jpg" width="80%" style="display: block; margin: auto;" />
 
 # The Cosine rule
 
@@ -129,7 +129,7 @@ unknown length given that two sides and the angle between them are
 known, or an unknown angle given that all sides of the triangle are
 known.
 
-<img src="../02_figures/02_vectors-angles-revision-6.jpg" width="80%" style="display: block; margin: auto;" />
+<img src="../02_figures/01_angles-revision-6.jpg" width="80%" style="display: block; margin: auto;" />
 
 # Further reading
 

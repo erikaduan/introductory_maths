@@ -42,7 +42,7 @@ This geometry revision section is taken from the unit on [triangles](https://www
 A brief revision of triangles is shown below. 
 
 ```{r, echo=FALSE, results='markup', fig.align='center', out.width='90%'}
-knitr::include_graphics("../02_figures/02_vectors-angles-revision-1.jpg")   
+knitr::include_graphics("../02_figures/01_angles-revision-1.jpg")   
 ```
 
 Triangles and angles are an important mathematical concept to revise, as vector similarity is calculated based on concepts from geometry and trigonometry. The definition of vector norms (the distance of a vector from its origin) and how they behave is also derived from trigonometry insights.    
@@ -53,7 +53,7 @@ Triangles and angles are an important mathematical concept to revise, as vector 
 Any side of a triangle must be shorter than the other two sides added together. If the side is equal to the other two sides, the length of one side is 0 and the object is a line.   
 
 ```{r, echo=FALSE, results='markup', fig.align='center', out.width='80%'}
-knitr::include_graphics("../02_figures/02_vectors-angles-revision-2.jpg")   
+knitr::include_graphics("../02_figures/01_angles-revision-2.jpg")   
 ```
 
 
@@ -62,13 +62,13 @@ knitr::include_graphics("../02_figures/02_vectors-angles-revision-2.jpg")
 Sine, Cosine and Tangent are just a ratio of two specific sides of a right angled triangle. 
 
 ```{r, echo=FALSE, results='markup', fig.align='center', out.width='80%'}
-knitr::include_graphics("../02_figures/02_vectors-angles-revision-3.jpg")   
+knitr::include_graphics("../02_figures/01_angles-revision-3.jpg")   
 ```
 
 Let us examine the values $0\leq \measuredangle \leq 90$. The values for Sine and Cosine will always be between 0 and 1 (as the hypotenus is always equal to or larger than the opposite and the adjacent sides).  
 
 ```{r, echo=FALSE, results='markup', fig.align='center', out.width='70%'}
-knitr::include_graphics("../02_figures/02_vectors-angles-revision-4.jpg")   
+knitr::include_graphics("../02_figures/01_angles-revision-4.jpg")   
 ```
 
 
@@ -151,7 +151,7 @@ plt.show()
 The [Sine rule](https://www.mathsisfun.com/algebra/trig-sine-law.html) applies to all similar triangle types and is useful for solving triangle angles and lengths. It does not have any direct application to machine learning algorithms.   
 
 ```{r, echo = FALSE, results = 'markup', fig.align = 'center', out.width = '80%'}
-knitr::include_graphics("../02_figures/02_vectors-angles-revision-5.jpg")   
+knitr::include_graphics("../02_figures/01_angles-revision-5.jpg")   
 ```
 
 
@@ -162,7 +162,7 @@ In contrast, the [Cosine rule](https://www.mathsisfun.com/algebra/trig-cosine-la
 In trigonometry, the Cosine rule can be derived to find either an unknown length given that two sides and the angle between them are known, or an unknown angle given that all sides of the triangle are known.     
 
 ```{r, echo = FALSE, results = 'markup', fig.align = 'center', out.width = '80%'}
-knitr::include_graphics("../02_figures/02_vectors-angles-revision-6.jpg")   
+knitr::include_graphics("../02_figures/01_angles-revision-6.jpg")   
 ```
 
 

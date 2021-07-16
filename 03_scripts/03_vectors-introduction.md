@@ -1,7 +1,7 @@
 Introduction to vectors
 ================
 Erika Duan
-2021-07-14
+2021-07-15
 
 -   [Resources](#resources)
 -   [What is a vector?](#what-is-a-vector)
@@ -68,7 +68,7 @@ Different types of vectors exist:
     has the shape below.  
     ![x =  \\begin{bmatrix} x\_1 \\\\ x\_2 \\\\ x\_3  \\end{bmatrix}  \\in {\\rm I\\!R}^{3}](https://latex.codecogs.com/png.latex?x%20%3D%20%20%5Cbegin%7Bbmatrix%7D%20x_1%20%5C%5C%20x_2%20%5C%5C%20x_3%20%20%5Cend%7Bbmatrix%7D%20%20%5Cin%20%7B%5Crm%20I%5C%21R%7D%5E%7B3%7D "x =  \begin{bmatrix} x_1 \\ x_2 \\ x_3  \end{bmatrix}  \in {\rm I\!R}^{3}")
 
-<img src="../02_figures/02_vectors-types.jpg" width="100%" style="display: block; margin: auto;" />
+<img src="../02_figures/03_vectors-types.jpg" width="100%" style="display: block; margin: auto;" />
 
 ``` python
 # Create a 3-dimensional vector in Python via Numpy ----------------------------
@@ -148,9 +148,7 @@ x = np.array([[1],
 
 x.shape # 3-dimensional NumPy array  
 #> (3, 1)
-```
 
-``` python
 y = np.array([[1],
               [0],
               [-1]])
@@ -159,9 +157,7 @@ x + y
 #> array([[2],
 #>        [2],
 #>        [2]])
-```
 
-``` python
 np.add(x, y)
 #> array([[2],
 #>        [2],
@@ -249,7 +245,7 @@ There are a few different ways of thinking about linear combinations:
 -   Mathematically as the proof that any new vector can be created by a
     scalar combination of two existing basis vectors.
 
-<img src="../02_figures/02_vectors-linear-combination.jpg" width="100%" style="display: block; margin: auto;" />
+<img src="../02_figures/03_vectors-linear-combination.jpg" width="100%" style="display: block; margin: auto;" />
 
 Another way to express linear combinations is with summation notation as
 ![\\displaystyle\\sum\_{i=1}^{k}\\beta\_{i}x\_{i}](https://latex.codecogs.com/png.latex?%5Cdisplaystyle%5Csum_%7Bi%3D1%7D%5E%7Bk%7D%5Cbeta_%7Bi%7Dx_%7Bi%7D "\displaystyle\sum_{i=1}^{k}\beta_{i}x_{i}")
@@ -336,7 +332,7 @@ second vector multiplied by the length of the second vector.
 (x_1\times y_1) + (x_2\times y_2)
 \end{bmatrix}")
 
-<img src="../02_figures/02_vectors-dot-product.jpg" width="85%" style="display: block; margin: auto;" />
+<img src="../02_figures/03_vectors-dot-product.jpg" width="85%" style="display: block; margin: auto;" />
 
 **Note:** The dot product of two vectors will always return a scalar
 (i.e. a single value). In machine learning, the dot product is a useful
@@ -353,9 +349,7 @@ y = np.array([[4],
 
 np.transpose(x) # np.transpose(x) can also be written as x.T
 #> array([[-2,  2]])    
-```
 
-``` python
 np.transpose(x) @ y
 #> array([[-14]])   
 ```
@@ -394,7 +388,7 @@ and the scalars
 vector span is defined as the set of all possible linear combinations of
 ![\\alpha \\hat{i} + \\beta \\hat{j}](https://latex.codecogs.com/png.latex?%5Calpha%20%5Chat%7Bi%7D%20%2B%20%5Cbeta%20%5Chat%7Bj%7D "\alpha \hat{i} + \beta \hat{j}").
 
-<img src="../02_figures/02_vectors-span.jpg" width="100%" style="display: block; margin: auto;" />
+<img src="../02_figures/03_vectors-span.jpg" width="100%" style="display: block; margin: auto;" />
 
 ## Vector subspace
 
@@ -417,7 +411,7 @@ example, in the set of odd numbers, odd numbers exhibit closure under
 multiplication but not addition (multiplying odd numbers by odd numbers
 will always produce odd numbers).
 
-<img src="../02_figures/02_vectors-subspace.jpg" width="100%" style="display: block; margin: auto;" />
+<img src="../02_figures/03_vectors-subspace.jpg" width="100%" style="display: block; margin: auto;" />
 
 There are two ways to think about vector subspaces:
 
@@ -484,7 +478,7 @@ equal in magnitude) to the linearly dependent vector to obtain a sum of
 A set of vectors is linearly independent if no vector can be obtained
 from a linear combination of other vectors in the set.
 
-<img src="../02_figures/02_vectors-independence.jpg" width="100%" style="display: block; margin: auto;" />
+<img src="../02_figures/03_vectors-independence.jpg" width="100%" style="display: block; margin: auto;" />
 
 To summarise, linearly dependent vectors contain redundant information
 and the span of linearly dependent vectors cannot cover the whole set of
@@ -498,7 +492,7 @@ information.
 The null space of a set of vectors are all the linear combinations that
 map back into the zero vector.
 
-<img src="../02_figures/02_vectors-null-space.jpg" width="100%" style="display: block; margin: auto;" />
+<img src="../02_figures/03_vectors-null-space.jpg" width="100%" style="display: block; margin: auto;" />
 
 In the example above, we can form the following two combinations of
 vectors that will map into the zero vector (0,0).
