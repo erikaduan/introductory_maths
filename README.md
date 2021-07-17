@@ -19,19 +19,22 @@ This repository also has a **secondary aim** of promoting code agnostic practice
 
 1. **Basic concepts**  
    1.1 [Trigonometry basics](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/01_geometry-revision.md)  
-   1.2 [Algebra basics]()  
-   1.3 [Exponents and logarithms]()  
-   1.4 [Summations]()  
+   1.2 Algebra basics  
+   1.3 Exponents and logarithms  
+   1.4 Summations  
+   1.5 Expectations and variance   
+   1.6 Probability theory  
 
 2. **Sets**  
     2.1 [Introduction to sets](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/02_sets-introduction.md)  
 
 3. **Vectors**  
    3.1 [Introduction to vectors](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/03_vectors-introduction.md)  
-   3.2 [Working with vectors](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/03_vectors-usages.md)  
+   3.2 [Working with vectors](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/03_vectors-properties.md)  
+   3.3 Cosine similarity and vector embeddings  
 
 4. **Matrices**  
-    3.1 [Introduction to matrices](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/04_matrices-introduction.md)  
+    4.1 [Introduction to matrices](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/04_matrices-introduction.md)  
 
 5. **Calculus**  
     5.1 [Derivatives](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/05_calculus-derivatives.md)   
