@@ -17,6 +17,7 @@ knitr::knit_engines$set(python=reticulate::eng_python)
 # Load required R packages -----------------------------------------------------
 if (!require("pacman")) install.packages("pacman") 
 p_load(tidyverse,
+       matlib,
        reticulate,
        knitr) 
 
@@ -430,7 +431,7 @@ D %*% (A + B) == D %*% A + D %*% B
 
 ## Matrix transpose   
 
-The transpose of a matrix $A \in {\rm I\!R} ^{n\times p}$ is $A^\mathsf{T} \in {\rm I\!R} ^{p\times n}$. 
+The transpose of a matrix $A \in {\rm I\!R} ^{n\times p}$ is $A^\mathsf{T} \in {\rm I\!R} ^{p\times n}$.   
 We obtain the transpose of a matrix by switching row-wise elements into new column-wise elements.    
 
 $A = 
@@ -495,17 +496,101 @@ t(A %*% B) == t(B) %*% t(A)
 
 # Solving systems of equations using the inverse matrix   
 
+Solving a system of linear equations can be viewed as the identification of a vector $\overrightarrow{x}$ which produces the output vector $\overrightarrow{v}$ when a transformation  described by $A$ is applied to it. Geometrically, finding $\overrightarrow{x}$ can be viewed as applying a reversal of the transformation $A$ onto $\overrightarrow{v}$.   
 
-## Matrix determinant 
+$$2x + 5y + 2z = 7$$  
+$$x - 4y = 2$$     
+$$3x + y - 2z = 25$$   
+
+The following equation can be written in its corresponding matrix form below.  
+
+$\begin{bmatrix} 
+ 2 & 5 & 2 \\  
+ 1 & -4 & 0 \\
+ 3 & 1 & -2  
+\end{bmatrix}   
+\begin{bmatrix} 
+ x \\  
+ y \\
+ z    
+\end{bmatrix} = 
+\begin{bmatrix} 
+ 7 \\  
+ 2 \\
+ 25   
+\end{bmatrix}$
 
 
-## Matrix rank  
+
+## Matrix determinant   
+
+The matrix determinant represents the scaling factor by which any dimensional space is linearly transformed. The determinant represents the area of a rectangle or parallelogram in the 2D plane and the volume of a cuboid or parallelpiped in 3D space.    
+
+```{r, echo=FALSE, results='markup', fig.align='center', out.width='100%'}
+knitr::include_graphics("../02_figures/04_matrices-determinant.jpg")     
+```
+
+**Note:** When the determinant is 0, it indicates the presence of linearly dependent column vectors and the reduction of the vector span by at least one dimension i.e. from the whole of 3D space to a 2D plane or 1D line within 3D space.       
+
+```{python, eval=FALSE}
+# Calculate the matrix determinant in Python via NumPy -------------------------
+A = np.array([[1, 0],
+              [0, 1]]) # 2D Cartesian plane where i_hat = [1, 0] and j_hat = [0, 1]
+
+np.linalg.det(A)  
+#> 1.0  
+
+B = np.array([[2, 0],
+              [0, 2]]) # Doubling of basis vectors 
+
+np.linalg.det(B)
+#> 4.0  
+
+C = np.array([[1, 1],
+              [0, 1]]) # Orientation of space is a rhomus rather a square   
+
+np.linalg.det(C)
+#> 1.0  
+
+D = np.array([[0 , 1],
+              [1 , 0]]) # Orientation of space is inverted so i_hat = [0, 1] and j_hat = [1, 0]
+
+np.linalg.det(D)
+#> -1.0  
+
+E = np.array([[4, 2],
+              [2, 1]]) # i_hat and j_hat are linearly dependent   
+              
+np.linalg.det(E)
+#> 0.0  
+```
+
+```{r}
+# Calculate the matrix determinant in R ----------------------------------------
+# Fill matrix by column where i_hat = [0, 2] and j_hat = [1, 1]  
+A <- matrix(c(2, 0,
+              1, 1),
+            nrow = 2,
+            byrow = F)   
+
+det(A)
+#> [1] 2  
+```
 
 
-## Applying the matrix inverse   
+## Matrix rank   
 
-The inverse of a matrix $A \in {\rm I\!R} ^{n\times n}$ is another matrix $A^{-1} \in {\rm I\!R} ^{n\times n}$ where $AA^{-1} = A^{-1}A = I$.  
-The inverse matrix is useful for solving linear equations and is equivalent to $x^{-1}$ where $x \times x^{-1} = x^0 = 1$.  
+The concept of rank is used to order the likelihood of a solution existing when the determinant is 0. In 3D space, a determinant of 0 can refer to a transformation that reduces the vector span to a 2D plane or 1D line. These two scenarios are not equivalent as an algebraic solution is still more likely to exist when the vector span is 2D than 1D.    
+
+The full rank of a matrix refers to the maximum number of linearly independent columns in a matrix i.e. for a $3 \times 3 $ matrix, the full rank is 3.   
+
+If matrix $A \in {\rm I\!R} ^{n\times p}$ is non-square (i.e. we have more observations than dimensions or more dimensions than observations), the full rank cannot exceed $min(n, p)$.  
+
+
+## Matrix inverse   
+
+The inverse of a matrix $A \in {\rm I\!R} ^{n\times n}$ is therefore another matrix $A^{-1} \in {\rm I\!R} ^{n\times n}$ where $AA^{-1} = A^{-1}A = I$.  
+The inverse matrix is equivalent to the algebraic form of $x^{-1}$ where $x \times x^{-1} = x^0 = 1$.   
 
 ```{r, echo=FALSE, results='markup', fig.align='center', out.width='70%'}
 knitr::include_graphics("../02_figures/04_matrices-inverse-matrix.jpg")     
@@ -524,25 +609,62 @@ $A^{-1} = \frac{1}{\bigtriangleup}
  -c & a 
 \end{bmatrix}$   
 
-```{r, echo=FALSE, results='markup', fig.align='center', out.width='100%'}
-knitr::include_graphics("../02_figures/04_matrices-determinant.jpg")     
-```
 
-**Note:** A matrix only has an inverse form if it contains linearly independent column vectors. If matrix $A$ contains linearly dependent column vectors, its determinant would be 0 and $A^{-1}$ would not exist.     
+**Note:** A square matrix only has an inverse form if it contains linearly independent column vectors i.e. the matrix has full rank. If matrix $A$ contains linearly dependent column vectors, its determinant would be 0 and $A^{-1}$ would not exist.     
 
 ```{python, eval=FALSE}
+# Find the inverse matrix in Python via NumPy ----------------------------------
+A = np.array([[1, 2],
+              [3, -4]])
 
+np.linalg.inv(A)
+#> array([[ 0.4,  0.2],
+#>        [ 0.3, -0.1]])
+
+B = np.array([[1, 2],
+              [3, 6]]) 
+              
+# Matrix B has rank = 1 and therefore no solution for the inverse of B exists      
+              
+np.linalg.inv(B)
+#> array([[-1.80143985e+16,  6.00479950e+15],
+#>        [ 9.00719925e+15, -3.00239975e+15]]) 
 ```
 
 ```{r}
+# Find the inverse matrix in R -------------------------------------------------
+A <- matrix(c(0, 1,
+              -1, 0),
+            nrow = 2,
+            byrow = F) 
 
+# Check that the determinant of A is non-zero     
+
+det(A)
+#> [1] 1  
+
+# Transformation A represents a 90 degree flip leftwards  
+
+solve(A)
+#>      [,1] [,2]
+#> [1,]    0    1
+#> [2,]   -1    0 
+
+matlib::inv(A)
+#>      [,1] [,2]
+#> [1,]    0    1
+#> [2,]   -1    0
+
+# The reversal of transformation A is a 90 degree flip rightwards 
 ```
 
 
-# Constructing a design matrix for statistics or machine learning problems      
+# Constructing a design matrix      
 
-A design matrix is a matrix-based construct for describing all predictor variable observations.
-For example, in multiple linear regression where $Y = X\beta + \mathcal{E}$, X represents the design matrix.   
+A design matrix is a matrix-based construct for describing all predictor variable observations. It is useful for the efficient computation of statistical calculations.   
+For example, in multiple linear regression where $Y = X\beta + \mathcal{E}$, $X$ represents the design matrix.   
+
+According to the least squares estimation, $\beta$ can be solved as $X^\mathsf{T}Xb = X^\mathsf{T}Y$. Therefore, $b = (X^\mathsf{T}Xb)^{-1}X^\mathsf{T}Y$.      
 
 $Y = 
 \begin{bmatrix}
@@ -566,9 +688,8 @@ $X =
  \beta_2 \\  
  \vdots \\  
  \beta_{p-1} \\   
-\end{bmatrix}$   
-
-$\mathcal{E} = 
+\end{bmatrix}
+\mathcal{E} = 
 \begin{bmatrix}
  \epsilon_0 \\  
  \epsilon_1 \\
@@ -579,4 +700,5 @@ $\mathcal{E} =
 
 # Further reading   
 
-+ The 3Blue1Brown [YouTube video](https://www.youtube.com/watch?time_continue=6&v=kYB8IZa5AuE&feature=emb_logo) on linear transformations and matrices.     
++ The 3Blue1Brown [YouTube video](https://www.youtube.com/watch?time_continue=6&v=kYB8IZa5AuE&feature=emb_logo) on linear transformations and matrices.    
++ A stack overflow [post](https://stackoverflow.com/questions/32114054/matrix-inversion-without-numpy) on how to compute the inverse matrix without using `NumPy`.  

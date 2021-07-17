@@ -1,7 +1,7 @@
 Introduction to matrices
 ================
 Erika Duan
-2021-07-16
+2021-07-17
 
 -   [Resources](#resources)
 -   [What is a matrix?](#what-is-a-matrix)
@@ -16,9 +16,8 @@ Erika Duan
     matrix](#solving-systems-of-equations-using-the-inverse-matrix)
     -   [Matrix determinant](#matrix-determinant)
     -   [Matrix rank](#matrix-rank)
-    -   [Applying the matrix inverse](#applying-the-matrix-inverse)
--   [Constructing a design matrix for statistics or machine learning
-    problems](#constructing-a-design-matrix-for-statistics-or-machine-learning-problems)
+    -   [Matrix inverse](#matrix-inverse)
+-   [Constructing a design matrix](#constructing-a-design-matrix)
 -   [Further reading](#further-reading)
 
 # Resources
@@ -396,7 +395,7 @@ D %*% (A + B) == D %*% A + D %*% B
 The transpose of a matrix
 ![A \\in {\\rm I\\!R} ^{n\\times p}](https://latex.codecogs.com/png.latex?A%20%5Cin%20%7B%5Crm%20I%5C%21R%7D%20%5E%7Bn%5Ctimes%20p%7D "A \in {\rm I\!R} ^{n\times p}")
 is
-![A^\\mathsf{T} \\in {\\rm I\\!R} ^{p\\times n}](https://latex.codecogs.com/png.latex?A%5E%5Cmathsf%7BT%7D%20%5Cin%20%7B%5Crm%20I%5C%21R%7D%20%5E%7Bp%5Ctimes%20n%7D "A^\mathsf{T} \in {\rm I\!R} ^{p\times n}").
+![A^\\mathsf{T} \\in {\\rm I\\!R} ^{p\\times n}](https://latex.codecogs.com/png.latex?A%5E%5Cmathsf%7BT%7D%20%5Cin%20%7B%5Crm%20I%5C%21R%7D%20%5E%7Bp%5Ctimes%20n%7D "A^\mathsf{T} \in {\rm I\!R} ^{p\times n}").  
 We obtain the transpose of a matrix by switching row-wise elements into
 new column-wise elements.
 
@@ -450,20 +449,120 @@ t(A %*% B) == t(B) %*% t(A)
 
 # Solving systems of equations using the inverse matrix
 
+Solving a system of linear equations can be viewed as the identification
+of a vector
+![\\overrightarrow{x}](https://latex.codecogs.com/png.latex?%5Coverrightarrow%7Bx%7D "\overrightarrow{x}")
+which produces the output vector
+![\\overrightarrow{v}](https://latex.codecogs.com/png.latex?%5Coverrightarrow%7Bv%7D "\overrightarrow{v}")
+when a transformation described by
+![A](https://latex.codecogs.com/png.latex?A "A") is applied to it.
+Geometrically, finding
+![\\overrightarrow{x}](https://latex.codecogs.com/png.latex?%5Coverrightarrow%7Bx%7D "\overrightarrow{x}")
+can be viewed as applying a reversal of the transformation
+![A](https://latex.codecogs.com/png.latex?A "A") onto
+![\\overrightarrow{v}](https://latex.codecogs.com/png.latex?%5Coverrightarrow%7Bv%7D "\overrightarrow{v}").
+
+![2x + 5y + 2z = 7](https://latex.codecogs.com/png.latex?2x%20%2B%205y%20%2B%202z%20%3D%207 "2x + 5y + 2z = 7")
+
+  
+
+![x - 4y = 2](https://latex.codecogs.com/png.latex?x%20-%204y%20%3D%202 "x - 4y = 2")
+
+  
+
+![3x + y - 2z = 25](https://latex.codecogs.com/png.latex?3x%20%2B%20y%20-%202z%20%3D%2025 "3x + y - 2z = 25")
+
+The following equation can be written in its corresponding matrix form
+below.
+
+![\\begin{bmatrix}  2 & 5 & 2 \\\\  1 & -4 & 0 \\\\  3 & 1 & -2 \\end{bmatrix} \\begin{bmatrix}  x \\\\  y \\\\  z \\end{bmatrix} = \\begin{bmatrix}  7 \\\\  2 \\\\  25 \\end{bmatrix}](https://latex.codecogs.com/png.latex?%5Cbegin%7Bbmatrix%7D%20%202%20%26%205%20%26%202%20%5C%5C%20%201%20%26%20-4%20%26%200%20%5C%5C%20%203%20%26%201%20%26%20-2%20%5Cend%7Bbmatrix%7D%20%5Cbegin%7Bbmatrix%7D%20%20x%20%5C%5C%20%20y%20%5C%5C%20%20z%20%5Cend%7Bbmatrix%7D%20%3D%20%5Cbegin%7Bbmatrix%7D%20%207%20%5C%5C%20%202%20%5C%5C%20%2025%20%5Cend%7Bbmatrix%7D "\begin{bmatrix}  2 & 5 & 2 \\  1 & -4 & 0 \\  3 & 1 & -2 \end{bmatrix} \begin{bmatrix}  x \\  y \\  z \end{bmatrix} = \begin{bmatrix}  7 \\  2 \\  25 \end{bmatrix}")
+
 ## Matrix determinant
+
+The matrix determinant represents the scaling factor by which any
+dimensional space is linearly transformed. The determinant represents
+the area of a rectangle or parallelogram in the 2D plane and the volume
+of a cuboid or parallelpiped in 3D space.
+
+<img src="../02_figures/04_matrices-determinant.jpg" width="100%" style="display: block; margin: auto;" />
+
+**Note:** When the determinant is 0, it indicates the presence of
+linearly dependent column vectors and the reduction of the vector span
+by at least one dimension i.e. from the whole of 3D space to a 2D plane
+or 1D line within 3D space.
+
+``` python
+# Calculate the matrix determinant in Python via NumPy -------------------------
+A = np.array([[1, 0],
+              [0, 1]]) # 2D Cartesian plane where i_hat = [1, 0] and j_hat = [0, 1]
+
+np.linalg.det(A)  
+#> 1.0  
+
+B = np.array([[2, 0],
+              [0, 2]]) # Doubling of basis vectors 
+
+np.linalg.det(B)
+#> 4.0  
+
+C = np.array([[1, 1],
+              [0, 1]]) # Orientation of space is a rhomus rather a square   
+
+np.linalg.det(C)
+#> 1.0  
+
+D = np.array([[0 , 1],
+              [1 , 0]]) # Orientation of space is inverted so i_hat = [0, 1] and j_hat = [1, 0]
+
+np.linalg.det(D)
+#> -1.0  
+
+E = np.array([[4, 2],
+              [2, 1]]) # i_hat and j_hat are linearly dependent   
+              
+np.linalg.det(E)
+#> 0.0  
+```
+
+``` r
+# Calculate the matrix determinant in R ----------------------------------------
+# Fill matrix by column where i_hat = [0, 2] and j_hat = [1, 1]  
+A <- matrix(c(2, 0,
+              1, 1),
+            nrow = 2,
+            byrow = F)   
+
+det(A)
+#> [1] 2  
+```
 
 ## Matrix rank
 
-## Applying the matrix inverse
+The concept of rank is used to order the likelihood of a solution
+existing when the determinant is 0. In 3D space, a determinant of 0 can
+refer to a transformation that reduces the vector span to a 2D plane or
+1D line. These two scenarios are not equivalent as an algebraic solution
+is still more likely to exist when the vector span is 2D than 1D.
+
+The full rank of a matrix refers to the maximum number of linearly
+independent columns in a matrix i.e. for a $3 $ matrix, the full rank is
+3.
+
+If matrix
+![A \\in {\\rm I\\!R} ^{n\\times p}](https://latex.codecogs.com/png.latex?A%20%5Cin%20%7B%5Crm%20I%5C%21R%7D%20%5E%7Bn%5Ctimes%20p%7D "A \in {\rm I\!R} ^{n\times p}")
+is non-square (i.e. we have more observations than dimensions or more
+dimensions than observations), the full rank cannot exceed
+![min(n, p)](https://latex.codecogs.com/png.latex?min%28n%2C%20p%29 "min(n, p)").
+
+## Matrix inverse
 
 The inverse of a matrix
 ![A \\in {\\rm I\\!R} ^{n\\times n}](https://latex.codecogs.com/png.latex?A%20%5Cin%20%7B%5Crm%20I%5C%21R%7D%20%5E%7Bn%5Ctimes%20n%7D "A \in {\rm I\!R} ^{n\times n}")
-is another matrix
+is therefore another matrix
 ![A^{-1} \\in {\\rm I\\!R} ^{n\\times n}](https://latex.codecogs.com/png.latex?A%5E%7B-1%7D%20%5Cin%20%7B%5Crm%20I%5C%21R%7D%20%5E%7Bn%5Ctimes%20n%7D "A^{-1} \in {\rm I\!R} ^{n\times n}")
 where
 ![AA^{-1} = A^{-1}A = I](https://latex.codecogs.com/png.latex?AA%5E%7B-1%7D%20%3D%20A%5E%7B-1%7DA%20%3D%20I "AA^{-1} = A^{-1}A = I").  
-The inverse matrix is useful for solving linear equations and is
-equivalent to
+The inverse matrix is equivalent to the algebraic form of
 ![x^{-1}](https://latex.codecogs.com/png.latex?x%5E%7B-1%7D "x^{-1}")
 where
 ![x \\times x^{-1} = x^0 = 1](https://latex.codecogs.com/png.latex?x%20%5Ctimes%20x%5E%7B-1%7D%20%3D%20x%5E0%20%3D%201 "x \times x^{-1} = x^0 = 1").
@@ -476,30 +575,85 @@ The inverse matrix can be calculated using the determinant
 
 ![A^{-1} = \\frac{1}{\\bigtriangleup} \\begin{bmatrix}  d & -b \\\\  -c & a \\end{bmatrix}](https://latex.codecogs.com/png.latex?A%5E%7B-1%7D%20%3D%20%5Cfrac%7B1%7D%7B%5Cbigtriangleup%7D%20%5Cbegin%7Bbmatrix%7D%20%20d%20%26%20-b%20%5C%5C%20%20-c%20%26%20a%20%5Cend%7Bbmatrix%7D "A^{-1} = \frac{1}{\bigtriangleup} \begin{bmatrix}  d & -b \\  -c & a \end{bmatrix}")
 
-<img src="../02_figures/04_matrices-determinant.jpg" width="100%" style="display: block; margin: auto;" />
-
-**Note:** A matrix only has an inverse form if it contains linearly
-independent column vectors. If matrix
-![A](https://latex.codecogs.com/png.latex?A "A") contains linearly
-dependent column vectors, its determinant would be 0 and
+**Note:** A square matrix only has an inverse form if it contains
+linearly independent column vectors i.e. the matrix has full rank. If
+matrix ![A](https://latex.codecogs.com/png.latex?A "A") contains
+linearly dependent column vectors, its determinant would be 0 and
 ![A^{-1}](https://latex.codecogs.com/png.latex?A%5E%7B-1%7D "A^{-1}")
 would not exist.
 
-# Constructing a design matrix for statistics or machine learning problems
+``` python
+# Find the inverse matrix in Python via NumPy ----------------------------------
+A = np.array([[1, 2],
+              [3, -4]])
+
+np.linalg.inv(A)
+#> array([[ 0.4,  0.2],
+#>        [ 0.3, -0.1]])
+
+B = np.array([[1, 2],
+              [3, 6]]) 
+              
+# Matrix B has rank = 1 and therefore no solution for the inverse of B exists      
+              
+np.linalg.inv(B)
+#> array([[-1.80143985e+16,  6.00479950e+15],
+#>        [ 9.00719925e+15, -3.00239975e+15]]) 
+```
+
+``` r
+# Find the inverse matrix in R -------------------------------------------------
+A <- matrix(c(0, 1,
+              -1, 0),
+            nrow = 2,
+            byrow = F) 
+
+# Check that the determinant of A is non-zero     
+
+det(A)
+#> [1] 1  
+
+# Transformation A represents a 90 degree flip leftwards  
+
+solve(A)
+#>      [,1] [,2]
+#> [1,]    0    1
+#> [2,]   -1    0 
+
+matlib::inv(A)
+#>      [,1] [,2]
+#> [1,]    0    1
+#> [2,]   -1    0
+
+# The reversal of transformation A is a 90 degree flip rightwards 
+```
+
+# Constructing a design matrix
 
 A design matrix is a matrix-based construct for describing all predictor
-variable observations. For example, in multiple linear regression where
+variable observations. It is useful for the efficient computation of
+statistical calculations.  
+For example, in multiple linear regression where
 ![Y = X\\beta + \\mathcal{E}](https://latex.codecogs.com/png.latex?Y%20%3D%20X%5Cbeta%20%2B%20%5Cmathcal%7BE%7D "Y = X\beta + \mathcal{E}"),
-X represents the design matrix.
+![X](https://latex.codecogs.com/png.latex?X "X") represents the design
+matrix.
+
+According to the least squares estimation,
+![\\beta](https://latex.codecogs.com/png.latex?%5Cbeta "\beta") can be
+solved as
+![X^\\mathsf{T}Xb = X^\\mathsf{T}Y](https://latex.codecogs.com/png.latex?X%5E%5Cmathsf%7BT%7DXb%20%3D%20X%5E%5Cmathsf%7BT%7DY "X^\mathsf{T}Xb = X^\mathsf{T}Y").
+Therefore,
+![b = (X^\\mathsf{T}Xb)^{-1}X^\\mathsf{T}Y](https://latex.codecogs.com/png.latex?b%20%3D%20%28X%5E%5Cmathsf%7BT%7DXb%29%5E%7B-1%7DX%5E%5Cmathsf%7BT%7DY "b = (X^\mathsf{T}Xb)^{-1}X^\mathsf{T}Y").
 
 ![Y = \\begin{bmatrix}  Y\_1 \\\\  Y\_2 \\\\  \\vdots \\\\  Y\_n \\\\ \\end{bmatrix}](https://latex.codecogs.com/png.latex?Y%20%3D%20%5Cbegin%7Bbmatrix%7D%20%20Y_1%20%5C%5C%20%20Y_2%20%5C%5C%20%20%5Cvdots%20%5C%5C%20%20Y_n%20%5C%5C%20%5Cend%7Bbmatrix%7D "Y = \begin{bmatrix}  Y_1 \\  Y_2 \\  \vdots \\  Y_n \\ \end{bmatrix}")
 
-![X = \\begin{bmatrix}  1 & X\_{11} & X\_{12} & \\cdots & X\_{1,p-1} \\\\  1 & X\_{21} & X\_{22} & \\cdots & X\_{2, p-1} \\\\  \\vdots & \\vdots & \\vdots & \\vdots & \\vdots \\\\  1 & X\_{n1} & X\_{n21} & \\cdots & X\_{n, p-1} \\\\ \\end{bmatrix} \\beta = \\begin{bmatrix}  \\beta\_0 \\\\  \\beta\_1 \\\\  \\beta\_2 \\\\  \\vdots \\\\  \\beta\_{p-1} \\\\ \\end{bmatrix}](https://latex.codecogs.com/png.latex?X%20%3D%20%5Cbegin%7Bbmatrix%7D%20%201%20%26%20X_%7B11%7D%20%26%20X_%7B12%7D%20%26%20%5Ccdots%20%26%20X_%7B1%2Cp-1%7D%20%5C%5C%20%201%20%26%20X_%7B21%7D%20%26%20X_%7B22%7D%20%26%20%5Ccdots%20%26%20X_%7B2%2C%20p-1%7D%20%5C%5C%20%20%5Cvdots%20%26%20%5Cvdots%20%26%20%5Cvdots%20%26%20%5Cvdots%20%26%20%5Cvdots%20%5C%5C%20%201%20%26%20X_%7Bn1%7D%20%26%20X_%7Bn21%7D%20%26%20%5Ccdots%20%26%20X_%7Bn%2C%20p-1%7D%20%5C%5C%20%5Cend%7Bbmatrix%7D%20%5Cbeta%20%3D%20%5Cbegin%7Bbmatrix%7D%20%20%5Cbeta_0%20%5C%5C%20%20%5Cbeta_1%20%5C%5C%20%20%5Cbeta_2%20%5C%5C%20%20%5Cvdots%20%5C%5C%20%20%5Cbeta_%7Bp-1%7D%20%5C%5C%20%5Cend%7Bbmatrix%7D "X = \begin{bmatrix}  1 & X_{11} & X_{12} & \cdots & X_{1,p-1} \\  1 & X_{21} & X_{22} & \cdots & X_{2, p-1} \\  \vdots & \vdots & \vdots & \vdots & \vdots \\  1 & X_{n1} & X_{n21} & \cdots & X_{n, p-1} \\ \end{bmatrix} \beta = \begin{bmatrix}  \beta_0 \\  \beta_1 \\  \beta_2 \\  \vdots \\  \beta_{p-1} \\ \end{bmatrix}")
-
-![\\mathcal{E} = \\begin{bmatrix}  \\epsilon\_0 \\\\  \\epsilon\_1 \\\\  \\vdots \\\\  \\epsilon\_{n} \\\\ \\end{bmatrix}](https://latex.codecogs.com/png.latex?%5Cmathcal%7BE%7D%20%3D%20%5Cbegin%7Bbmatrix%7D%20%20%5Cepsilon_0%20%5C%5C%20%20%5Cepsilon_1%20%5C%5C%20%20%5Cvdots%20%5C%5C%20%20%5Cepsilon_%7Bn%7D%20%5C%5C%20%5Cend%7Bbmatrix%7D "\mathcal{E} = \begin{bmatrix}  \epsilon_0 \\  \epsilon_1 \\  \vdots \\  \epsilon_{n} \\ \end{bmatrix}")
+![X = \\begin{bmatrix}  1 & X\_{11} & X\_{12} & \\cdots & X\_{1,p-1} \\\\  1 & X\_{21} & X\_{22} & \\cdots & X\_{2, p-1} \\\\  \\vdots & \\vdots & \\vdots & \\vdots & \\vdots \\\\  1 & X\_{n1} & X\_{n21} & \\cdots & X\_{n, p-1} \\\\ \\end{bmatrix} \\beta = \\begin{bmatrix}  \\beta\_0 \\\\  \\beta\_1 \\\\  \\beta\_2 \\\\  \\vdots \\\\  \\beta\_{p-1} \\\\ \\end{bmatrix} \\mathcal{E} = \\begin{bmatrix}  \\epsilon\_0 \\\\  \\epsilon\_1 \\\\  \\vdots \\\\  \\epsilon\_{n} \\\\ \\end{bmatrix}](https://latex.codecogs.com/png.latex?X%20%3D%20%5Cbegin%7Bbmatrix%7D%20%201%20%26%20X_%7B11%7D%20%26%20X_%7B12%7D%20%26%20%5Ccdots%20%26%20X_%7B1%2Cp-1%7D%20%5C%5C%20%201%20%26%20X_%7B21%7D%20%26%20X_%7B22%7D%20%26%20%5Ccdots%20%26%20X_%7B2%2C%20p-1%7D%20%5C%5C%20%20%5Cvdots%20%26%20%5Cvdots%20%26%20%5Cvdots%20%26%20%5Cvdots%20%26%20%5Cvdots%20%5C%5C%20%201%20%26%20X_%7Bn1%7D%20%26%20X_%7Bn21%7D%20%26%20%5Ccdots%20%26%20X_%7Bn%2C%20p-1%7D%20%5C%5C%20%5Cend%7Bbmatrix%7D%20%5Cbeta%20%3D%20%5Cbegin%7Bbmatrix%7D%20%20%5Cbeta_0%20%5C%5C%20%20%5Cbeta_1%20%5C%5C%20%20%5Cbeta_2%20%5C%5C%20%20%5Cvdots%20%5C%5C%20%20%5Cbeta_%7Bp-1%7D%20%5C%5C%20%5Cend%7Bbmatrix%7D%20%5Cmathcal%7BE%7D%20%3D%20%5Cbegin%7Bbmatrix%7D%20%20%5Cepsilon_0%20%5C%5C%20%20%5Cepsilon_1%20%5C%5C%20%20%5Cvdots%20%5C%5C%20%20%5Cepsilon_%7Bn%7D%20%5C%5C%20%5Cend%7Bbmatrix%7D "X = \begin{bmatrix}  1 & X_{11} & X_{12} & \cdots & X_{1,p-1} \\  1 & X_{21} & X_{22} & \cdots & X_{2, p-1} \\  \vdots & \vdots & \vdots & \vdots & \vdots \\  1 & X_{n1} & X_{n21} & \cdots & X_{n, p-1} \\ \end{bmatrix} \beta = \begin{bmatrix}  \beta_0 \\  \beta_1 \\  \beta_2 \\  \vdots \\  \beta_{p-1} \\ \end{bmatrix} \mathcal{E} = \begin{bmatrix}  \epsilon_0 \\  \epsilon_1 \\  \vdots \\  \epsilon_{n} \\ \end{bmatrix}")
 
 # Further reading
 
 -   The 3Blue1Brown [YouTube
     video](https://www.youtube.com/watch?time_continue=6&v=kYB8IZa5AuE&feature=emb_logo)
-    on linear transformations and matrices.
+    on linear transformations and matrices.  
+-   A stack overflow
+    [post](https://stackoverflow.com/questions/32114054/matrix-inversion-without-numpy)
+    on how to compute the inverse matrix without using `NumPy`.
