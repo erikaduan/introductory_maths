@@ -97,6 +97,15 @@ $\begin{bmatrix}
   0 & 4 & 0 \\
   0 & 0 & 7 
  \end{bmatrix}$
+ 
+```{python, eval=FALSE} 
+# Construct diagonal matrix in Python via NumPy --------------------------------
+np.diag([1, 2, 3, 4])
+#> array([[1, 0, 0, 0],
+#>        [0, 2, 0, 0],
+#>        [0, 0, 3, 0],
+#>        [0, 0, 0, 4]])
+```
 
 + Identity matrix - the matrix equivalent of 1 i.e. $x \times 1 = x$ versus $AI= IA = A$.  
 $\begin{bmatrix}
@@ -104,6 +113,28 @@ $\begin{bmatrix}
   0 & 1 & 0 \\
   0 & 0 & 1 
  \end{bmatrix}$  
+ 
+```{python, eval=FALSE} 
+# Construct diagonal matrix in Python via NumPy --------------------------------
+np.identity(3)
+#> array([[1., 0., 0.],
+#>        [0., 1., 0.],
+#>        [0., 0., 1.]]) 
+
+# Demonstrate identity matrix behaviour ----------------------------------------  
+I = np.identity(3)  
+A = np.diag([1, 2, 3])
+
+A @ I  
+#> array([[1., 0., 0.],
+#>        [0., 2., 0.],
+#>        [0., 0., 3.]])  
+
+A @ I == I @ A
+#> array([[ True,  True,  True],
+#>        [ True,  True,  True],
+#>        [ True,  True,  True]])
+```
 
 + Sparse vectors - sparse vectors predominantly contain elements of zero. To maximise computational efficiency, we can represent sparse matrices by storing only its non-zero elements in a `[[row], [column], [value]]` triplet array.   
 $y = 
@@ -276,13 +307,13 @@ A %*% x
 
 Matrix-vector multiplication can also be thought of in terms of linear transformations. Linear transformations (or linear algebra itself) involves transforming lines in space into another form of lines in space (where the point of origin does not move and all lines remain parallel and evenly spaced with respect to each other).     
 
-```{r, echo = FALSE, results = 'markup', fig.align = 'center', out.width = '80%'}
+```{r, echo=FALSE, results='markup', fig.align='center', out.width='80%'}
 knitr::include_graphics("../02_figures/04_matrices-linear-transformation-1.jpg")     
 ```
 
 Matrix-vector multiplication can be viewed as the transformation of one point in space (represented by the original vector) into another point in space (represented by the output vector), where the transformation involves scaling the original vector by the coordinates representing each basis vector in the transformed space.  
 
-```{r, echo = FALSE, results = 'markup', fig.align = 'center', out.width = '80%'}
+```{r, echo=FALSE, results='markup', fig.align='center', out.width='80%'}
 knitr::include_graphics("../02_figures/04_matrices-linear-transformation-2.jpg")     
 ```
 
@@ -292,6 +323,10 @@ In this context, a matrix can be thought of as a contained set of instructions t
 ## Matrix-matrix multiplication   
 
 Matrix-matrix multiplication can be viewed as a series of dot products between matrices $A \in {\rm I\!R} ^{n\times p}$ and $B \in {\rm I\!R} ^{p\times m}$, with the 1st row of A times the 1st column of B as the first dot product and etc.   
+
+```{r, echo=FALSE, results='markup', fig.align='center', out.width='90%'}
+knitr::include_graphics("../02_figures/04_matrices-composition.jpg")     
+```
 
 $A \cdot B := 
 \begin{bmatrix}
@@ -388,32 +423,160 @@ D %*% (A + B) == D %*% A + D %*% B
 #> [1,] TRUE TRUE  
 
 # Addition describes a change in the position of points in space 
-# Addition scales consistently for linear transformations  
+# Addition scales consistently for linear systems  
 # Multiplication is a linear and consistent transformation of dimensional form   
 ```
 
 
-## Matrix transpose  
+## Matrix transpose   
+
+The transpose of a matrix $A \in {\rm I\!R} ^{n\times p}$ is $A^\mathsf{T} \in {\rm I\!R} ^{p\times n}$. 
+We obtain the transpose of a matrix by switching row-wise elements into new column-wise elements.    
+
+$A = 
+\begin{bmatrix} 
+ 1 & 2 & 3\\  
+ 4 & 5 & 6  
+\end{bmatrix} 
+A^\mathsf{T} =
+\begin{bmatrix}
+ 1 & 4 \\  
+ 2 & 5 \\
+ 3 & 6 
+\end{bmatrix}$    
+
+
+```{python, eval=FALSE}
+# Obtain the matrix transpose in Python via NumPy ------------------------------
+A = np.array([[1, 2, 3],
+              [4, 5, 6]])
+              
+A.T
+#> array([[1, 4],
+#>        [2, 5],
+#>        [3, 6]])
+
+A.T == np.transpose(A)
+#> array([[ True,  True],
+#>        [ True,  True],
+#>        [ True,  True]])
+```
+
+```{r}
+# Obtain the matrix transpose in R ---------------------------------------------
+A <- matrix(seq(1, 6, 1),
+           nrow = 3)
+
+t(A)
+#>      [,1] [,2] [,3]
+#> [1,]    1    2    3
+#> [2,]    4    5    6
+
+B <- matrix(seq(1, 4, 1),
+            nrow = 2,
+            byrow = T)
+
+t(B)
+#>      [,1] [,2]
+#> [1,]    1    3
+#> [2,]    2    4
+
+t(A %*% B)
+#>      [,1] [,2] [,3]
+#> [1,]   13   17   21
+#> [2,]   18   24   30 
+
+t(A %*% B) == t(B) %*% t(A)
+#>      [,1] [,2] [,3]
+#> [1,] TRUE TRUE TRUE
+#> [2,] TRUE TRUE TRUE
+```
+
+
+# Solving systems of equations using the inverse matrix   
+
+
+## Matrix determinant 
+
+
+## Matrix rank  
+
+
+## Applying the matrix inverse   
+
+The inverse of a matrix $A \in {\rm I\!R} ^{n\times n}$ is another matrix $A^{-1} \in {\rm I\!R} ^{n\times n}$ where $AA^{-1} = A^{-1}A = I$.  
+The inverse matrix is useful for solving linear equations and is equivalent to $x^{-1}$ where $x \times x^{-1} = x^0 = 1$.  
+
+```{r, echo=FALSE, results='markup', fig.align='center', out.width='70%'}
+knitr::include_graphics("../02_figures/04_matrices-inverse-matrix.jpg")     
+```
+
+The inverse matrix can be calculated using the determinant $\bigtriangleup$.  
+$\bigtriangleup = ad - bc \; where \; A = 
+\begin{bmatrix}
+ a & b \\  
+ c & d   
+\end{bmatrix}$  
+
+$A^{-1} = \frac{1}{\bigtriangleup}  
+\begin{bmatrix}
+ d & -b \\  
+ -c & a 
+\end{bmatrix}$   
+
+```{r, echo=FALSE, results='markup', fig.align='center', out.width='100%'}
+knitr::include_graphics("../02_figures/04_matrices-determinant.jpg")     
+```
+
+**Note:** A matrix only has an inverse form if it contains linearly independent column vectors. If matrix $A$ contains linearly dependent column vectors, its determinant would be 0 and $A^{-1}$ would not exist.     
+
+```{python, eval=FALSE}
+
+```
 
 ```{r}
 
 ```
 
 
-## Matrix identity  
+# Constructing a design matrix for statistics or machine learning problems      
 
-```{r}
+A design matrix is a matrix-based construct for describing all predictor variable observations.
+For example, in multiple linear regression where $Y = X\beta + \mathcal{E}$, X represents the design matrix.   
 
-```
+$Y = 
+\begin{bmatrix}
+ Y_1 \\  
+ Y_2 \\
+ \vdots \\
+ Y_n \\
+\end{bmatrix}$
 
+$X = 
+\begin{bmatrix}
+ 1 & X_{11} & X_{12} & \cdots & X_{1,p-1} \\  
+ 1 & X_{21} & X_{22} & \cdots & X_{2, p-1} \\
+ \vdots & \vdots & \vdots & \vdots & \vdots \\
+ 1 & X_{n1} & X_{n21} & \cdots & X_{n, p-1} \\
+\end{bmatrix}   
+\beta = 
+\begin{bmatrix}
+ \beta_0 \\   
+ \beta_1 \\  
+ \beta_2 \\  
+ \vdots \\  
+ \beta_{p-1} \\   
+\end{bmatrix}$   
 
-## Matrix inverse 
-
-```{r}
-
-```
+$\mathcal{E} = 
+\begin{bmatrix}
+ \epsilon_0 \\  
+ \epsilon_1 \\
+ \vdots \\
+ \epsilon_{n} \\
+\end{bmatrix}$      
 
 
 # Further reading   
 
-+ The 3Blue1Brown [YouTube video](https://www.youtube.com/watch?time_continue=6&v=kYB8IZa5AuE&feature=emb_logo) on linear transformations and matrices.         
++ The 3Blue1Brown [YouTube video](https://www.youtube.com/watch?time_continue=6&v=kYB8IZa5AuE&feature=emb_logo) on linear transformations and matrices.     
