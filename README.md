@@ -17,35 +17,32 @@ This repository also has a **secondary aim** of promoting code agnostic practice
 
 ## Tutorials
 
-1. Introduction to probability theory  
-   1.1 Independence  
-   1.2 Conditional probability  
-   1.3 Bayes theorem  
+1. Representation of numbers  
 
-2. [Trigonometry basics](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/01_geometry-revision.md)  
-   
-3. Algebra basics  
+2. [Introduction to probability theory](https://github.com/erikaduan/maths_in_r_and_python/blob/master/tutorials/probability-introduction_to_probability.md)  
+   2.1 Independence  
+   2.2 Conditional probability  
+   2.3 Bayes theorem  
 
-4. Mathematical functions  
+3. Introduction to trigonometry  
+
+4. Algebra basics  
+
+5. Mathematical functions  
 4.1. Exponents and logarithms  
 
 5. Summations  
 5.1 Weighting
 
-6. Counting objects
-
-7. **Sets**  
-    2.1 [Introduction to sets](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/02_sets-introduction.md)  
-
-7. **Vectors**  
+1. **Vectors**  
    3.1 [Introduction to vectors](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/03_vectors-introduction.md)  
    3.2 [Working with vectors](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/03_vectors-properties.md)  
    3.3 Cosine similarity and vector embeddings  
 
-8. **Matrices**  
+2. **Matrices**  
     4.1 [Introduction to matrices](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/04_matrices-introduction.md)  
 
-9. **Calculus**  
+3. **Calculus**  
     5.1 [Derivatives](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/03_scripts/05_calculus-derivatives.md)   
 
 ## References  
