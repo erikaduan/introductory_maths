@@ -77,7 +77,7 @@ elements ![x](https://latex.codecogs.com/svg.format?x "x") in the space
 holds” is represented by the notation
 ![S = \\{x \\in X \\vert f(x) \> 0\\}](https://latex.codecogs.com/svg.format?S%20%3D%20%5C%7Bx%20%5Cin%20X%20%5Cvert%20f%28x%29%20%3E%200%5C%7D "S = \{x \in X \vert f(x) > 0\}").
 
-<img src="../figures/probability-introduction_to_probability-set_notations.svg" width="50%" style="display: block; margin: auto;" />
+<img src="../figures/probability-introduction_to_probability-set_notations.svg" width="70%" style="display: block; margin: auto;" />
 
 Examples of sets include:
 

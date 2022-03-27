@@ -68,7 +68,7 @@ knitr::include_graphics("../figures/probability-introduction_to_probability-scen
 
 Sets are used to denote object belonging. The statement "the set of elements $x$ in the space $X$ such that condition $f(x) > 0$ holds" is represented by the notation $S = \{x \in X \vert f(x) > 0\}$.  
 
-```{r, echo=FALSE, results='markup', out.width="50%"}
+```{r, echo=FALSE, results='markup', out.width="70%"}
 knitr::include_graphics("../figures/probability-introduction_to_probability-set_notations.svg")
 ```
 
