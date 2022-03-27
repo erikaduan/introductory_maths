@@ -1,0 +1,42 @@
+---
+title: "Untitled"
+output: html_document
+date: '2022-03-20'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r, results='markup', out.width="50"}
+# Exercise 1: R ----------------------------------------------------------------
+# Draw a representation of the set A = {f:R->R | f(x)=ax+b, a,b in [-2, 2]]}
+
+# Obtain random values of a and b
+set.seed(111)
+a <- sample(seq(-2, 2, 0.5), size = 12, replace = TRUE)
+b <- sample(seq(-2, 2, 0.5), size = 12, replace = TRUE)
+
+# Obtain a vector of RBrewer colour palettes
+col <- brewer.pal(brewer.pal.info["Set3", "maxcolors"], "Set3")
+
+# Construct the geom_function to be iterated over
+plot_fun_x <- function(a, b, col) {
+  geom_function(fun = function(x) {a * x + b}, colour=col)
+}
+
+# Plot functions for range of values from -1 to 1
+x <- seq(-1, 1, 1) %>% enframe(name=NULL, value="x")
+
+x %>%
+  ggplot(aes(x)) +
+  unlist(pmap(list(a, b, col), plot_fun_x)) +
+  labs(y = "f(x)") +
+  theme_classic() +
+  theme(panel.border = element_rect(colour = "black", fill = NA))
+```
+
+```{r}
+# Exercise 2: Python -----------------------------------------------------------
+```
