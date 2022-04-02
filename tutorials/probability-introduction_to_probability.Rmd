@@ -36,13 +36,14 @@ use_condaenv("python_3_9")
 
 Probability is an abstract concept. The frequentist approach considers probability as the relative frequency of a specific outcome, observed from a sample of the true population. The Bayesian approach considers probability as a subjective possibility space dependent on the prior hypothesis and the observed evidence.  
 
-Probability can be best thought of as the size of a mathematical set (which can also be represented in 2D as a proportion of the total area depicted).  
+Overall, probability can be best thought of as the size of a mathematical set (which can also be represented in 2D as a proportion of total area).  
 
 ## Scenario 1  
 
-Imagine that we simultaneously roll two fair dice. What is the probability that the sum of two dice equals 5?   
+Imagine that we simultaneously rolled two fair dice. What is the probability that the sum of two dice equals 5?   
 
-+ We would first need to calculate all possible combinations of the dice rolls. The total number of possible combinations is the **sample space** i.e. the set of all possible outcomes. As there are 6 faces on one dice and we are rolling two dice, the sample space is $6\times6$ or $6^2$ possible outcomes.    
++ We know that the outcome of one dice throw is independent of another.  
++ We need to calculate all possible combinations of two independent dice rolls. The total number of possible combinations is the **sample space** i.e. the set of all possible outcomes. As there are 6 faces on one dice and we are rolling two dice, the sample space is $6\times6$ or $6^2$ possible outcomes.    
 + We would then calculate all possible combinations of dice rolls which sum to 5. This is the **event**, which is a smaller subset of the sample space.  
 + The **probability** of the event occurring is therefore the ratio of the event relative to the sample space.  
 + In this scenario, the probability that the sum of two dice equals 5 is $\frac{4}{36}$ or approximately 0.11.  
@@ -53,10 +54,10 @@ knitr::include_graphics("../figures/probability-introduction_to_probability-scen
 
 ## Scenario 2  
 
-Imagine that we simultaneously roll two fair dice. What is the probability that the sum of two dice is less than 5 and an odd number?
+Imagine that we simultaneously rolled two fair dice. What is the probability that the sum of two dice is less than 5 and an odd number?
 
 + The sample space is still the same, as the total number of possible dice roll combinations is fixed.  
-+ The event subset has changed as we are interested in the intersection of $E_1 \subset \{2, 3, 4\}$ and $E_2 \subset \{2, 4\}$ or $E= E_1 \cap E_2 = \{2, 4\}$.  
++ The event subset has changed as we are interested in the intersection of $E_1\subset\{2, 3, 4\}$ and $E_2\subset\{2, 4, 6\}$ or $E=E_1\cap E_2=\{2, 4\}$.  
 + In this scenario, the probability that the sum of two dice is less than 5 and an odd number is $\frac{4}{36}$ or approximately 0.11.  
 
 ```{r, echo=FALSE, results='markup', out.width="70%"}
@@ -66,17 +67,17 @@ knitr::include_graphics("../figures/probability-introduction_to_probability-scen
 
 # Set notations  
 
-Sets are used to denote object belonging. The statement "the set of elements $x$ in the space $X$ such that condition $f(x) > 0$ holds" is represented by the notation $S = \{x \in X \vert f(x) > 0\}$.  
+Sets are used to denote object belonging. The statement "the set of elements $x$ in the space $X$ such that condition $f(x)>0$ holds" is represented by the notation $S = \{x\in X\vert f(x)>0\}$.  
 
-```{r, echo=FALSE, results='markup', out.width="70%"}
+```{r, echo=FALSE, results='markup', out.width="60%"}
 knitr::include_graphics("../figures/probability-introduction_to_probability-set_notations.svg")
 ```
 
 Examples of sets include:   
 
-+ The set $A_1 = \{x \in \mathbb{N} \vert 1 \leq x \leq 5 \}$ is a finite set with a finite closed interval on the set of all natural numbers.  
-+ The set $A_2 = \{x \in \mathbb{R} \vert -5 \leq x \leq 1 \}$ is an infinite set with a finite closed interval on the set of all real numbers.  
-+ The set $F = \{f: \mathbb{R} \to \mathbb{R} \vert f(x) = ax + b, \; a,b \in \mathbb{R} \}$ is an infinite set of all straight lines in 2D as $f$ takes the specific form $f(x) = ax+b$.  
++ The set $A_1 = \{x\in\mathbb{N}\vert 1\leq x\leq 5\}$ is a finite set with a finite closed interval on the set of all natural numbers.  
++ The set $A_2 = \{x\in\mathbb{R}\vert -5\leq x\leq 1\}$ is an infinite set with a finite closed interval on the set of all real numbers.  
++ The set $F = \{f:\mathbb{R}\to\mathbb{R}\vert f(x)=ax+b,\;a,b\in\mathbb{R}\}$ is an infinite set of all straight lines in 2D as $f$ takes the specific form $f(x)=ax+b$.  
 
 In probability theory, the event can be viewed as a subset within the set of the sample space, where the total number of possible events is represented by the power set of the sample space and the probability of the sample space is 1.  
 
@@ -89,7 +90,7 @@ Set operations are methods for manipulating sets and are useful tools for descri
 + The **union** of two sets is defined as the set of elements that are included in either set. The union of two sets can be used to describe the probability of either event A or event B occurring.  
 + The **intersection** of two sets is defined as the set of elements that are included in both sets. The intersection of two sets can be used to describe the probability that event A and event B both occurs.   
 
-```{r, echo=FALSE, results='markup', out.width="70%"}
+```{r, echo=FALSE, results='markup', out.width="80%"}
 knitr::include_graphics("../figures/probability-introduction_to_probability-set_operations.svg")
 ```
 
@@ -122,8 +123,8 @@ b = set(r.b)
 a.union(b) # Can also be evaluated as a | b
 #> {1.0, 2.0, 3.0, 4.0} 
 
-a.intersection(b)
-#> {2.0} # Can also be evaluated as a & b
+a.intersection(b) # Can also be evaluated as a & b
+#> {2.0} 
 
 a.difference(b)
 #> {1.0, 3.0}
@@ -132,14 +133,35 @@ a.symmetric_difference(b) # Can also be evaluated as a ^ b
 #> {1.0, 3.0, 4.0}
 ```
 
-Revisiting scenario 2, 
+Revisiting [scenario 2](#Scenario 2), the probability that the sum of two dice is less than 5 **and** an odd number is the intersection of $E_1\subset\{2,3,4\}$ and $E_2\subset\{2,4,6\}$ or $E=E_1\cap E_2=\{2,4\}$.  
+
+If we were asked to find the probability that the sum of two dice is less than 5 **or** an odd number, this would be  $E=E_1\cup E_2=\{2,3,4,6\}$, which is a very different subset of the sample space.  
 
 
 # General rules of probability  
 
+We can think of a function as a relation that associates a set of elements in the input space (subset A in X) to a set of elements in the output space (subset B in Y). A function induces this mapping of $A\to B$ by applying itself to each individual element in the input space. This implies that an inverse function also exists, which maps the set of elements in the output space back to the set of elements in the input space i.e. $A = f^{-1}(B)$.   
 
-# Resources  
+A probability distribution can be thought of as the function which maps a set of events to their set of probabilities. In other words, probability distributions are the types of functions that can map this transformation.  
+
+```{r, echo=FALSE, results='markup', out.width="80%"}
+knitr::include_graphics("../figures/probability-introduction_to_probability-set_mappings.svg")
+```
+
+Consider the set of events $x_1$ as a subset of the sample space X, where $P_\pi(x_1)$ is the probability assigned to $x_1$ by the probability distribution $\pi$:  
++ The probability of the sample space X is the total probability available i.e. $P_{\pi}(X)=1$.  
++ Its complement is the probability of an impossible event i.e. $P_{\pi}(X^C)=0$.  
++ The range of possible probabilities for $x_1$ is therefore $0\leq P_{\pi}(x_1)\leq1$ and $P_{\pi}(x_1)=1-P_{\pi}(x_1^C)$.  
+
+Consider the set of events $x_2$ as another subset of the sample space X:    
++ If $x_1$ and $x_2$ are mutually exclusive (the set of elements in $x_1$ and $x_2$ do not overlap), the intersection of $x_1$ and $x_2$ is 0 i.e. $P_\pi(x_1\cap x_2) = 0$ and the probability of $x_1$ or $x_2$ occurring is $P_\pi(x_1\cup x_2) = P_\pi(x_1) + P_\pi(x_2)$.   
++ If $x_1$ and $x_2$ are not mutually exclusive (the set of elements in $x_1$ and $x_2$ overlap), the probability of $x_1$ or $x_2$ occurring is $P_\pi(x_1\cup x_2) = P_\pi(x_1) + P_\pi(x_2) - P_\pi(x_1\cap x_2)$.  
+
+
+# Acknowledgements  
+
+The source materials for this tutorial are:   
+
 + The [Probability for Data Science textbook](https://probability4datascience.com/) by Stanley H Chan, specifically [Chapter 2](https://drive.google.com/file/d/1v9jLsbwG5Tl5d7XfLCfmhHuOkZZUOVNa/view) on probability     
 + Introduction to probability theory [GitHub resource](https://betanalpha.github.io/assets/case_studies/probability_theory.html) by Michael Betancourt   
 + Introduction to probability theory [Youtube series](https://www.youtube.com/playlist?list=PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6) from MIT   
-  

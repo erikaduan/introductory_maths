@@ -1,15 +1,16 @@
 Probability theory - introduction
 ================
 Erika Duan
-2022-03-27
+2022-04-02
 
--   [Introduction to probability](#introduction-to-probability)
-    -   [Scenario 1](#scenario-1)
-    -   [Scenario 2](#scenario-2)
--   [Set notations](#set-notations)
--   [Set operations](#set-operations)
--   [General rules of probability](#general-rules-of-probability)
--   [Resources](#resources)
+- [Probability theory - introduction](#probability-theory---introduction)
+- [Introduction to probability](#introduction-to-probability)
+  - [Scenario 1](#scenario-1)
+  - [Scenario 2](#scenario-2)
+- [Set notations](#set-notations)
+- [Set operations](#set-operations)
+- [General rules of probability](#general-rules-of-probability)
+- [Acknowledgements](#acknowledgements)
 
 # Introduction to probability
 
@@ -19,16 +20,18 @@ from a sample of the true population. The Bayesian approach considers
 probability as a subjective possibility space dependent on the prior
 hypothesis and the observed evidence.
 
-Probability can be best thought of as the size of a mathematical set
-(which can also be represented in 2D as a proportion of the total area
-depicted).
+Overall, probability can be best thought of as the size of a
+mathematical set (which can also be represented in 2D as a proportion of
+total area).
 
 ## Scenario 1
 
-Imagine that we simultaneously roll two fair dice. What is the
+Imagine that we simultaneously rolled two fair dice. What is the
 probability that the sum of two dice equals 5?
 
--   We would first need to calculate all possible combinations of the
+-   We know that the outcome of one dice throw is independent of
+    another.  
+-   We need to calculate all possible combinations of two independent
     dice rolls. The total number of possible combinations is the
     **sample space** i.e. the set of all possible outcomes. As there are
     6 faces on one dice and we are rolling two dice, the sample space is
@@ -49,18 +52,18 @@ probability that the sum of two dice equals 5?
 
 ## Scenario 2
 
-Imagine that we simultaneously roll two fair dice. What is the
+Imagine that we simultaneously rolled two fair dice. What is the
 probability that the sum of two dice is less than 5 and an odd number?
 
 -   The sample space is still the same, as the total number of possible
     dice roll combinations is fixed.  
 -   The event subset has changed as we are interested in the
     intersection of
-    ![E_1 \\subset \\{2, 3, 4\\}](https://latex.codecogs.com/svg.format?E_1%20%5Csubset%20%5C%7B2%2C%203%2C%204%5C%7D "E_1 \subset \{2, 3, 4\}")
+    ![E_1\\subset\\{2, 3, 4\\}](https://latex.codecogs.com/svg.format?E_1%5Csubset%5C%7B2%2C%203%2C%204%5C%7D "E_1\subset\{2, 3, 4\}")
     and
-    ![E_2 \\subset \\{2, 4\\}](https://latex.codecogs.com/svg.format?E_2%20%5Csubset%20%5C%7B2%2C%204%5C%7D "E_2 \subset \{2, 4\}")
+    ![E_2\\subset\\{2, 4, 6\\}](https://latex.codecogs.com/svg.format?E_2%5Csubset%5C%7B2%2C%204%2C%206%5C%7D "E_2\subset\{2, 4, 6\}")
     or
-    ![E= E_1 \\cap E_2 = \\{2, 4\\}](https://latex.codecogs.com/svg.format?E%3D%20E_1%20%5Ccap%20E_2%20%3D%20%5C%7B2%2C%204%5C%7D "E= E_1 \cap E_2 = \{2, 4\}").  
+    ![E=E_1\\cap E_2=\\{2, 4\\}](https://latex.codecogs.com/svg.format?E%3DE_1%5Ccap%20E_2%3D%5C%7B2%2C%204%5C%7D "E=E_1\cap E_2=\{2, 4\}").  
 -   In this scenario, the probability that the sum of two dice is less
     than 5 and an odd number is
     ![\\frac{4}{36}](https://latex.codecogs.com/svg.format?%5Cfrac%7B4%7D%7B36%7D "\frac{4}{36}")
@@ -73,28 +76,28 @@ probability that the sum of two dice is less than 5 and an odd number?
 Sets are used to denote object belonging. The statement “the set of
 elements ![x](https://latex.codecogs.com/svg.format?x "x") in the space
 ![X](https://latex.codecogs.com/svg.format?X "X") such that condition
-![f(x) \> 0](https://latex.codecogs.com/svg.format?f%28x%29%20%3E%200 "f(x) > 0")
+![f(x)\>0](https://latex.codecogs.com/svg.format?f%28x%29%3E0 "f(x)>0")
 holds” is represented by the notation
-![S = \\{x \\in X \\vert f(x) \> 0\\}](https://latex.codecogs.com/svg.format?S%20%3D%20%5C%7Bx%20%5Cin%20X%20%5Cvert%20f%28x%29%20%3E%200%5C%7D "S = \{x \in X \vert f(x) > 0\}").
+![S = \\{x\\in X\\vert f(x)\>0\\}](https://latex.codecogs.com/svg.format?S%20%3D%20%5C%7Bx%5Cin%20X%5Cvert%20f%28x%29%3E0%5C%7D "S = \{x\in X\vert f(x)>0\}").
 
-<img src="../figures/probability-introduction_to_probability-set_notations.svg" width="70%" style="display: block; margin: auto;" />
+<img src="../figures/probability-introduction_to_probability-set_notations.svg" width="60%" style="display: block; margin: auto;" />
 
 Examples of sets include:
 
 -   The set
-    ![A_1 = \\{x \\in \\mathbb{N} \\vert 1 \\leq x \\leq 5 \\}](https://latex.codecogs.com/svg.format?A_1%20%3D%20%5C%7Bx%20%5Cin%20%5Cmathbb%7BN%7D%20%5Cvert%201%20%5Cleq%20x%20%5Cleq%205%20%5C%7D "A_1 = \{x \in \mathbb{N} \vert 1 \leq x \leq 5 \}")
+    ![A_1 = \\{x\\in\\mathbb{N}\\vert 1\\leq x\\leq 5\\}](https://latex.codecogs.com/svg.format?A_1%20%3D%20%5C%7Bx%5Cin%5Cmathbb%7BN%7D%5Cvert%201%5Cleq%20x%5Cleq%205%5C%7D "A_1 = \{x\in\mathbb{N}\vert 1\leq x\leq 5\}")
     is a finite set with a finite closed interval on the set of all
     natural numbers.  
 -   The set
-    ![A_2 = \\{x \\in \\mathbb{R} \\vert -5 \\leq x \\leq 1 \\}](https://latex.codecogs.com/svg.format?A_2%20%3D%20%5C%7Bx%20%5Cin%20%5Cmathbb%7BR%7D%20%5Cvert%20-5%20%5Cleq%20x%20%5Cleq%201%20%5C%7D "A_2 = \{x \in \mathbb{R} \vert -5 \leq x \leq 1 \}")
+    ![A_2 = \\{x\\in\\mathbb{R}\\vert -5\\leq x\\leq 1\\}](https://latex.codecogs.com/svg.format?A_2%20%3D%20%5C%7Bx%5Cin%5Cmathbb%7BR%7D%5Cvert%20-5%5Cleq%20x%5Cleq%201%5C%7D "A_2 = \{x\in\mathbb{R}\vert -5\leq x\leq 1\}")
     is an infinite set with a finite closed interval on the set of all
     real numbers.  
 -   The set
-    ![F = \\{f: \\mathbb{R} \\to \\mathbb{R} \\vert f(x) = ax + b, \\; a,b \\in \\mathbb{R} \\}](https://latex.codecogs.com/svg.format?F%20%3D%20%5C%7Bf%3A%20%5Cmathbb%7BR%7D%20%5Cto%20%5Cmathbb%7BR%7D%20%5Cvert%20f%28x%29%20%3D%20ax%20%2B%20b%2C%20%5C%3B%20a%2Cb%20%5Cin%20%5Cmathbb%7BR%7D%20%5C%7D "F = \{f: \mathbb{R} \to \mathbb{R} \vert f(x) = ax + b, \; a,b \in \mathbb{R} \}")
+    ![F = \\{f:\\mathbb{R}\\to\\mathbb{R}\\vert f(x)=ax+b,\\;a,b\\in\\mathbb{R}\\}](https://latex.codecogs.com/svg.format?F%20%3D%20%5C%7Bf%3A%5Cmathbb%7BR%7D%5Cto%5Cmathbb%7BR%7D%5Cvert%20f%28x%29%3Dax%2Bb%2C%5C%3Ba%2Cb%5Cin%5Cmathbb%7BR%7D%5C%7D "F = \{f:\mathbb{R}\to\mathbb{R}\vert f(x)=ax+b,\;a,b\in\mathbb{R}\}")
     is an infinite set of all straight lines in 2D as
     ![f](https://latex.codecogs.com/svg.format?f "f") takes the specific
     form
-    ![f(x) = ax+b](https://latex.codecogs.com/svg.format?f%28x%29%20%3D%20ax%2Bb "f(x) = ax+b").
+    ![f(x)=ax+b](https://latex.codecogs.com/svg.format?f%28x%29%3Dax%2Bb "f(x)=ax+b").
 
 In probability theory, the event can be viewed as a subset within the
 set of the sample space, where the total number of possible events is
@@ -117,7 +120,7 @@ for describing the properties of the probability space.
     used to describe the probability that event A and event B both
     occurs.
 
-<img src="../figures/probability-introduction_to_probability-set_operations.svg" width="70%" style="display: block; margin: auto;" />
+<img src="../figures/probability-introduction_to_probability-set_operations.svg" width="80%" style="display: block; margin: auto;" />
 
 ``` r
 # Perform set operations in R --------------------------------------------------
@@ -147,28 +150,96 @@ b = set(r.b)
 
 a.union(b) # Can also be evaluated as a | b
 #> {1.0, 2.0, 3.0, 4.0} 
-```
 
-``` python
-a.intersection(b)
-#> {2.0} # Can also be evaluated as a & b
-```
+a.intersection(b) # Can also be evaluated as a & b
+#> {2.0} 
 
-``` python
 a.difference(b)
 #> {1.0, 3.0}
-```
 
-``` python
 a.symmetric_difference(b) # Can also be evaluated as a ^ b
 #> {1.0, 3.0, 4.0}
 ```
 
-Revisiting scenario 2,
+Revisiting [scenario 2](#Scenario%202), the probability that the sum of
+two dice is less than 5 **and** an odd number is the intersection of
+![E_1\\subset\\{2,3,4\\}](https://latex.codecogs.com/svg.format?E_1%5Csubset%5C%7B2%2C3%2C4%5C%7D "E_1\subset\{2,3,4\}")
+and
+![E_2\\subset\\{2,4,6\\}](https://latex.codecogs.com/svg.format?E_2%5Csubset%5C%7B2%2C4%2C6%5C%7D "E_2\subset\{2,4,6\}")
+or
+![E=E_1\\cap E_2=\\{2,4\\}](https://latex.codecogs.com/svg.format?E%3DE_1%5Ccap%20E_2%3D%5C%7B2%2C4%5C%7D "E=E_1\cap E_2=\{2,4\}").
+
+If we were asked to find the probability that the sum of two dice is
+less than 5 **or** an odd number, this would be
+![E=E_1\\cup E_2=\\{2,3,4,6\\}](https://latex.codecogs.com/svg.format?E%3DE_1%5Ccup%20E_2%3D%5C%7B2%2C3%2C4%2C6%5C%7D "E=E_1\cup E_2=\{2,3,4,6\}"),
+which is a very different subset of the sample space.
 
 # General rules of probability
 
-# Resources
+We can think of a function as a relation that associates a set of
+elements in the input space (subset A in X) to a set of elements in the
+output space (subset B in Y). A function induces this mapping of
+![A\\to B](https://latex.codecogs.com/svg.format?A%5Cto%20B "A\to B") by
+applying itself to each individual element in the input space. This
+implies that an inverse function also exists, which maps the set of
+elements in the output space back to the set of elements in the input
+space
+i.e. ![A = f^{-1}(B)](https://latex.codecogs.com/svg.format?A%20%3D%20f%5E%7B-1%7D%28B%29 "A = f^{-1}(B)").
+
+A probability distribution can be thought of as the function which maps
+a set of events to their set of probabilities. In other words,
+probability distributions are the types of functions that can map this
+transformation.
+
+<img src="../figures/probability-introduction_to_probability-set_mappings.svg" width="80%" style="display: block; margin: auto;" />
+
+Consider the set of events
+![x_1](https://latex.codecogs.com/svg.format?x_1 "x_1") as a subset of
+the sample space X, where
+![P\_\\pi(x_1)](https://latex.codecogs.com/svg.format?P_%5Cpi%28x_1%29 "P_\pi(x_1)")
+is the probability assigned to
+![x_1](https://latex.codecogs.com/svg.format?x_1 "x_1") by the
+probability distribution
+![\\pi](https://latex.codecogs.com/svg.format?%5Cpi "\pi"):  
++ The probability of the sample space X is the total probability
+available
+i.e. ![P\_{\\pi}(X)=1](https://latex.codecogs.com/svg.format?P_%7B%5Cpi%7D%28X%29%3D1 "P_{\pi}(X)=1").  
++ Its complement is the probability of an impossible event
+i.e. ![P\_{\\pi}(X^C)=0](https://latex.codecogs.com/svg.format?P_%7B%5Cpi%7D%28X%5EC%29%3D0 "P_{\pi}(X^C)=0").  
++ The range of possible probabilities for
+![x_1](https://latex.codecogs.com/svg.format?x_1 "x_1") is therefore
+![0\\leq P\_{\\pi}(x_1)\\leq1](https://latex.codecogs.com/svg.format?0%5Cleq%20P_%7B%5Cpi%7D%28x_1%29%5Cleq1 "0\leq P_{\pi}(x_1)\leq1")
+and
+![P\_{\\pi}(x_1)=1-P\_{\\pi}(x_1^C)](https://latex.codecogs.com/svg.format?P_%7B%5Cpi%7D%28x_1%29%3D1-P_%7B%5Cpi%7D%28x_1%5EC%29 "P_{\pi}(x_1)=1-P_{\pi}(x_1^C)").
+
+Consider the set of events
+![x_2](https://latex.codecogs.com/svg.format?x_2 "x_2") as another
+subset of the sample space X:  
++ If ![x_1](https://latex.codecogs.com/svg.format?x_1 "x_1") and
+![x_2](https://latex.codecogs.com/svg.format?x_2 "x_2") are mutually
+exclusive (the set of elements in
+![x_1](https://latex.codecogs.com/svg.format?x_1 "x_1") and
+![x_2](https://latex.codecogs.com/svg.format?x_2 "x_2") do not overlap),
+the intersection of
+![x_1](https://latex.codecogs.com/svg.format?x_1 "x_1") and
+![x_2](https://latex.codecogs.com/svg.format?x_2 "x_2") is 0
+i.e. ![P\_\\pi(x_1\\cap x_2) = 0](https://latex.codecogs.com/svg.format?P_%5Cpi%28x_1%5Ccap%20x_2%29%20%3D%200 "P_\pi(x_1\cap x_2) = 0")
+and the probability of
+![x_1](https://latex.codecogs.com/svg.format?x_1 "x_1") or
+![x_2](https://latex.codecogs.com/svg.format?x_2 "x_2") occurring is
+![P\_\\pi(x_1\\cup x_2) = P\_\\pi(x_1) + P\_\\pi(x_2)](https://latex.codecogs.com/svg.format?P_%5Cpi%28x_1%5Ccup%20x_2%29%20%3D%20P_%5Cpi%28x_1%29%20%2B%20P_%5Cpi%28x_2%29 "P_\pi(x_1\cup x_2) = P_\pi(x_1) + P_\pi(x_2)").  
++ If ![x_1](https://latex.codecogs.com/svg.format?x_1 "x_1") and
+![x_2](https://latex.codecogs.com/svg.format?x_2 "x_2") are not mutually
+exclusive (the set of elements in
+![x_1](https://latex.codecogs.com/svg.format?x_1 "x_1") and
+![x_2](https://latex.codecogs.com/svg.format?x_2 "x_2") overlap), the
+probability of ![x_1](https://latex.codecogs.com/svg.format?x_1 "x_1")
+or ![x_2](https://latex.codecogs.com/svg.format?x_2 "x_2") occurring is
+![P\_\\pi(x_1\\cup x_2) = P\_\\pi(x_1) + P\_\\pi(x_2) - P\_\\pi(x_1\\cap x_2)](https://latex.codecogs.com/svg.format?P_%5Cpi%28x_1%5Ccup%20x_2%29%20%3D%20P_%5Cpi%28x_1%29%20%2B%20P_%5Cpi%28x_2%29%20-%20P_%5Cpi%28x_1%5Ccap%20x_2%29 "P_\pi(x_1\cup x_2) = P_\pi(x_1) + P_\pi(x_2) - P_\pi(x_1\cap x_2)").
+
+# Acknowledgements
+
+The source materials for this tutorial are:
 
 -   The [Probability for Data Science
     textbook](https://probability4datascience.com/) by Stanley H Chan,
