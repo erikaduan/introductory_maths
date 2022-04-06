@@ -1,6 +1,6 @@
 # Introductory mathematics in R and Python
 
-This repository contains tutorials on introductory mathematical concepts required for studying statistics and machine learning.
+This repository contains tutorials on the introductory mathematical concepts required for studying statistics and machine learning.
 
 ## Aim
 
@@ -12,27 +12,28 @@ This repository also has a **secondary aim** of promoting code agnostic practice
 
 ## Tutorials
 
-1.1 Introduction to numbers  
+:one: Introduction to numbers  
 
-2.1 Introduction to algebra  
-2.2 Exponents and logarithms  
+:two: Introduction to algebra  
+:two: Exponents and logarithms  
+:two: Logarithms and information theory  
 
-3.1 Introduction to trigonometry  
+:three: Introduction to trigonometry  
 
-4.1 [Introduction to probability theory](https://github.com/erikaduan/maths_in_r_and_python/blob/master/tutorials/probability-introduction_to_probability.md)  
-4.2 Conditional probability  
-4.3 Bayes theorem  
+:four: [Introduction to probability theory](https://github.com/erikaduan/maths_in_r_and_python/blob/master/tutorials/probability-introduction_to_probability.md)  
+:four: Conditional probability  
+:four: Bayes theorem  
 
-5.1 Summation mathematics  
+:five: Summation mathematics  
 
-6.1 Vectors  
-6.2 Introduction to vectors  
-6.3 Working with vectors  
-6.4 Cosine similarity and vector embeddings  
+:six: Vectors  
+:six: Introduction to vectors  
+:six: Working with vectors  
+:six: Cosine similarity and vector embeddings  
 
-7.1 Introduction to matrices  
+:seven: Introduction to matrices  
 
-8.1 Introduction to derivatives  
+:eight: Introduction to derivatives  
 
 ## Contributors
 
@@ -42,5 +43,7 @@ This repository also has a **secondary aim** of promoting code agnostic practice
 ## References
 
 + A guide to [linear algebra](https://pabloinsente.github.io/intro-linear-algebra) for applied machine learning by Pablo Caceres
-+ The [Mathematics for Machine Learning](https://mml-book.github.io/book/mml-book.pdf) textbook by Marc Peter Deisenroth, A Aldo Faisal and Cheng Soon Ong - Cambridge University Press
++ The [Mathematics for Machine Learning textbook](https://mml-book.github.io/book/mml-book.pdf) by Marc Peter Deisenroth, A Aldo Faisal and Cheng Soon Ong - Cambridge University Press
++ The [Probability for Data Science textbook](https://probability4datascience.com/) by Stanley H Chan - Michigan Publishing
++ The [Probabilistic modelling tutorials](https://betanalpha.github.io/writing/) by Michael Betancourt - GitHub
 + Writing [mathematical operations in LaTex/R](https://en.wikibooks.org/wiki/LaTeX/Mathematics#Fractions_and_Binomials) - Wikibooks
