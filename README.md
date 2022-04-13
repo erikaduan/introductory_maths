@@ -12,28 +12,28 @@ This repository also has a **secondary aim** of promoting code agnostic practice
 
 ## Tutorials
 
-:one: Introduction to numbers  
+:red_circle: Introduction to numbers  
 
-:two: Introduction to algebra  
-:two: Exponents and logarithms  
-:two: Logarithms and information theory  
+:red_circle: Introduction to algebra  
+:red_circle: Exponents and logarithms  
+:red_circle: Logarithms and information theory  
 
-:three: Introduction to trigonometry  
+:large_blue_circle: [Introduction to probability theory](https://github.com/erikaduan/maths_in_r_and_python/blob/master/tutorials/probability-introduction_to_probability.md)  
+:large_blue_circle: Conditional probability  
+:large_blue_circle: Bayes theorem  
 
-:four: [Introduction to probability theory](https://github.com/erikaduan/maths_in_r_and_python/blob/master/tutorials/probability-introduction_to_probability.md)  
-:four: Conditional probability  
-:four: Bayes theorem  
+:red_circle: Summation mathematics  
 
-:five: Summation mathematics  
+:yellow_circle: Introduction to trigonometry  
+:yellow_circle:	Distance metrics  
 
-:six: Vectors  
-:six: Introduction to vectors  
-:six: Working with vectors  
-:six: Cosine similarity and vector embeddings  
+:yellow_circle: Introduction to vectors  
+:yellow_circle: Working with vectors  
+:yellow_circle: Cosine similarity and vector embeddings  
 
-:seven: Introduction to matrices  
+:yellow_circle: Introduction to matrices  
 
-:eight: Introduction to derivatives  
+:purple_circle: Introduction to derivatives  
 
 ## Contributors
 

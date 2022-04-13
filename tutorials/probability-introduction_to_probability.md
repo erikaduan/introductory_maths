@@ -1,16 +1,17 @@
 Probability theory - introduction
 ================
 Erika Duan
-2022-04-02
+2022-04-13
 
-- [Probability theory - introduction](#probability-theory---introduction)
-- [Introduction to probability](#introduction-to-probability)
-  - [Scenario 1](#scenario-1)
-  - [Scenario 2](#scenario-2)
-- [Set notations](#set-notations)
-- [Set operations](#set-operations)
-- [General rules of probability](#general-rules-of-probability)
-- [Acknowledgements](#acknowledgements)
+-   [Introduction to probability](#introduction-to-probability)
+    -   [Scenario 1](#scenario-1)
+    -   [Scenario 2](#scenario-2)
+-   [Set notations](#set-notations)
+    -   [The sum of all discrete possibilities and the power
+        set](#the-sum-of-all-discrete-possibilities-and-the-power-set)
+-   [Set operations](#set-operations)
+-   [General rules of probability](#general-rules-of-probability)
+-   [Acknowledgements](#acknowledgements)
 
 # Introduction to probability
 
@@ -39,8 +40,9 @@ probability that the sum of two dice equals 5?
     or ![6^2](https://latex.codecogs.com/svg.format?6%5E2 "6^2")
     possible outcomes.  
 -   We would then calculate all possible combinations of dice rolls
-    which sum to 5. This is the **event**, which is a smaller subset of
-    the sample space.  
+    which sum to 5. This is the **event**
+    (![E](https://latex.codecogs.com/svg.format?E "E")), which is a
+    smaller subset of the sample space.  
 -   The **probability** of the event occurring is therefore the ratio of
     the event relative to the sample space.  
 -   In this scenario, the probability that the sum of two dice equals 5
@@ -48,7 +50,7 @@ probability that the sum of two dice equals 5?
     ![\\frac{4}{36}](https://latex.codecogs.com/svg.format?%5Cfrac%7B4%7D%7B36%7D "\frac{4}{36}")
     or approximately 0.11.
 
-<img src="../figures/probability-introduction_to_probability-scenario_1.svg" width="60%" style="display: block; margin: auto;" />
+<img src="../figures/probability-introduction_to_probability-scenario_1.svg" width="65%" style="display: block; margin: auto;" />
 
 ## Scenario 2
 
@@ -62,10 +64,9 @@ probability that the sum of two dice is less than 5 and an odd number?
     ![E_1\\subset\\{2, 3, 4\\}](https://latex.codecogs.com/svg.format?E_1%5Csubset%5C%7B2%2C%203%2C%204%5C%7D "E_1\subset\{2, 3, 4\}")
     and
     ![E_2\\subset\\{2, 4, 6\\}](https://latex.codecogs.com/svg.format?E_2%5Csubset%5C%7B2%2C%204%2C%206%5C%7D "E_2\subset\{2, 4, 6\}")
-    or
-    ![E=E_1\\cap E_2=\\{2, 4\\}](https://latex.codecogs.com/svg.format?E%3DE_1%5Ccap%20E_2%3D%5C%7B2%2C%204%5C%7D "E=E_1\cap E_2=\{2, 4\}").  
+    i.e. ![E=E_1\\cap E_2=\\{2, 4\\}](https://latex.codecogs.com/svg.format?E%3DE_1%5Ccap%20E_2%3D%5C%7B2%2C%204%5C%7D "E=E_1\cap E_2=\{2, 4\}").  
 -   In this scenario, the probability that the sum of two dice is less
-    than 5 and an odd number is
+    than 5 **and** an odd number is
     ![\\frac{4}{36}](https://latex.codecogs.com/svg.format?%5Cfrac%7B4%7D%7B36%7D "\frac{4}{36}")
     or approximately 0.11.
 
@@ -73,14 +74,15 @@ probability that the sum of two dice is less than 5 and an odd number?
 
 # Set notations
 
-Sets are used to denote object belonging. The statement “the set of
-elements ![x](https://latex.codecogs.com/svg.format?x "x") in the space
+Sets are used to denote object belonging under a specific condition. The
+statement “the set of elements
+![x](https://latex.codecogs.com/svg.format?x "x") in the space
 ![X](https://latex.codecogs.com/svg.format?X "X") such that condition
 ![f(x)\>0](https://latex.codecogs.com/svg.format?f%28x%29%3E0 "f(x)>0")
 holds” is represented by the notation
 ![S = \\{x\\in X\\vert f(x)\>0\\}](https://latex.codecogs.com/svg.format?S%20%3D%20%5C%7Bx%5Cin%20X%5Cvert%20f%28x%29%3E0%5C%7D "S = \{x\in X\vert f(x)>0\}").
 
-<img src="../figures/probability-introduction_to_probability-set_notations.svg" width="60%" style="display: block; margin: auto;" />
+<img src="../figures/probability-introduction_to_probability-set_notations.svg" width="70%" style="display: block; margin: auto;" />
 
 Examples of sets include:
 
@@ -100,9 +102,21 @@ Examples of sets include:
     ![f(x)=ax+b](https://latex.codecogs.com/svg.format?f%28x%29%3Dax%2Bb "f(x)=ax+b").
 
 In probability theory, the event can be viewed as a subset within the
-set of the sample space, where the total number of possible events is
-represented by the power set of the sample space and the probability of
-the sample space is 1.
+set of the sample space, where the total number of possible event types
+is represented by the power set of the sample space.
+
+## The sum of all discrete possibilities and the power set
+
+When the elements inside a set are finite and countable, we can
+calculate the total number of possible events in two elegant ways.
+Consider the graphical approach below. We can map the event combinations
+for every possible set size. This allows us to identify interesting
+properties like graphical symmetry (the smallest and largest event size
+will have the same number of possibilities i.e. 1) and the exponential
+increase in possible event combinations when the set size increases by 1
+for each symmetrical half.
+
+<img src="../figures/probability-introduction_to_probability-power_set_graphs.svg" width="70%" style="display: block; margin: auto;" />
 
 # Set operations
 
@@ -150,13 +164,19 @@ b = set(r.b)
 
 a.union(b) # Can also be evaluated as a | b
 #> {1.0, 2.0, 3.0, 4.0} 
+```
 
+``` python
 a.intersection(b) # Can also be evaluated as a & b
 #> {2.0} 
+```
 
+``` python
 a.difference(b)
 #> {1.0, 3.0}
+```
 
+``` python
 a.symmetric_difference(b) # Can also be evaluated as a ^ b
 #> {1.0, 3.0, 4.0}
 ```

@@ -44,11 +44,11 @@ Imagine that we simultaneously rolled two fair dice. What is the probability tha
 
 + We know that the outcome of one dice throw is independent of another.  
 + We need to calculate all possible combinations of two independent dice rolls. The total number of possible combinations is the **sample space** i.e. the set of all possible outcomes. As there are 6 faces on one dice and we are rolling two dice, the sample space is $6\times6$ or $6^2$ possible outcomes.    
-+ We would then calculate all possible combinations of dice rolls which sum to 5. This is the **event**, which is a smaller subset of the sample space.  
++ We would then calculate all possible combinations of dice rolls which sum to 5. This is the **event** ($E$), which is a smaller subset of the sample space.  
 + The **probability** of the event occurring is therefore the ratio of the event relative to the sample space.  
 + In this scenario, the probability that the sum of two dice equals 5 is $\frac{4}{36}$ or approximately 0.11.  
 
-```{r, echo=FALSE, results='markup', out.width="60%"}
+```{r, echo=FALSE, results='markup', out.width="65%"}
 knitr::include_graphics("../figures/probability-introduction_to_probability-scenario_1.svg")
 ```
 
@@ -57,8 +57,8 @@ knitr::include_graphics("../figures/probability-introduction_to_probability-scen
 Imagine that we simultaneously rolled two fair dice. What is the probability that the sum of two dice is less than 5 and an odd number?
 
 + The sample space is still the same, as the total number of possible dice roll combinations is fixed.  
-+ The event subset has changed as we are interested in the intersection of $E_1\subset\{2, 3, 4\}$ and $E_2\subset\{2, 4, 6\}$ or $E=E_1\cap E_2=\{2, 4\}$.  
-+ In this scenario, the probability that the sum of two dice is less than 5 and an odd number is $\frac{4}{36}$ or approximately 0.11.  
++ The event subset has changed as we are interested in the intersection of $E_1\subset\{2, 3, 4\}$ and $E_2\subset\{2, 4, 6\}$ i.e. $E=E_1\cap E_2=\{2, 4\}$.  
++ In this scenario, the probability that the sum of two dice is less than 5 **and** an odd number is $\frac{4}{36}$ or approximately 0.11.  
 
 ```{r, echo=FALSE, results='markup', out.width="70%"}
 knitr::include_graphics("../figures/probability-introduction_to_probability-scenario_2.svg")
@@ -67,9 +67,9 @@ knitr::include_graphics("../figures/probability-introduction_to_probability-scen
 
 # Set notations  
 
-Sets are used to denote object belonging. The statement "the set of elements $x$ in the space $X$ such that condition $f(x)>0$ holds" is represented by the notation $S = \{x\in X\vert f(x)>0\}$.  
+Sets are used to denote object belonging under a specific condition. The statement "the set of elements $x$ in the space $X$ such that condition $f(x)>0$ holds" is represented by the notation $S = \{x\in X\vert f(x)>0\}$.  
 
-```{r, echo=FALSE, results='markup', out.width="60%"}
+```{r, echo=FALSE, results='markup', out.width="70%"}
 knitr::include_graphics("../figures/probability-introduction_to_probability-set_notations.svg")
 ```
 
@@ -79,7 +79,17 @@ Examples of sets include:
 + The set $A_2 = \{x\in\mathbb{R}\vert -5\leq x\leq 1\}$ is an infinite set with a finite closed interval on the set of all real numbers.  
 + The set $F = \{f:\mathbb{R}\to\mathbb{R}\vert f(x)=ax+b,\;a,b\in\mathbb{R}\}$ is an infinite set of all straight lines in 2D as $f$ takes the specific form $f(x)=ax+b$.  
 
-In probability theory, the event can be viewed as a subset within the set of the sample space, where the total number of possible events is represented by the power set of the sample space and the probability of the sample space is 1.  
+In probability theory, the event can be viewed as a subset within the set of the sample space, where the total number of possible event types is represented by the power set of the sample space.  
+
+
+## The sum of all discrete possibilities and the power set  
+
+When the elements inside a set are finite and countable, we can calculate the total number of possible events in two elegant ways. Consider the graphical approach below. We can map the event combinations for every possible set size. This allows us to identify interesting properties like graphical symmetry (the smallest and largest event size will have the same number of possibilities i.e. 1) and the exponential increase in possible event combinations when the set size increases by 1 for each symmetrical half.     
+
+```{r, echo=FALSE, results='markup', out.width="70%"}
+knitr::include_graphics("../figures/probability-introduction_to_probability-power_set_graphs.svg")
+```
+
 
 
 # Set operations  
