@@ -3,15 +3,14 @@ Probability theory - introduction
 Erika Duan
 2022-04-18
 
-- [Probability theory - introduction](#probability-theory---introduction)
-- [Introduction to probability](#introduction-to-probability)
-  - [Scenario 1](#scenario-1)
-  - [Scenario 2](#scenario-2)
-- [Set notations](#set-notations)
-  - [The power set](#the-power-set)
-- [Set operations](#set-operations)
-- [General rules of probability](#general-rules-of-probability)
-- [Acknowledgements](#acknowledgements)
+-   [Introduction to probability](#introduction-to-probability)
+    -   [Scenario 1](#scenario-1)
+    -   [Scenario 2](#scenario-2)
+-   [Set notations](#set-notations)
+    -   [The power set](#the-power-set)
+-   [Set operations](#set-operations)
+-   [General rules of probability](#general-rules-of-probability)
+-   [Acknowledgements](#acknowledgements)
 
 # Introduction to probability
 
@@ -124,18 +123,20 @@ We can then consider the numerical approach. For each subset size, we
 must calculate how many unique element combinations exist. We do not
 care about element order and element repetition also cannot occur.
 
-When a set has 3 elements, the combinations for a subset containing 2
-elements is represented as
+When a set has 3 elements, the combinations of a subset containing 2
+elements is
 ![\\frac{3!}{(3-2)!\\times 2!}](https://latex.codecogs.com/svg.format?%5Cfrac%7B3%21%7D%7B%283-2%29%21%5Ctimes%202%21%7D "\frac{3!}{(3-2)!\times 2!}")
 or
 ![{3\\choose2}](https://latex.codecogs.com/svg.format?%7B3%5Cchoose2%7D "{3\choose2}").  
-For the same set, the combinations for a subset containing 1 element is
-represented as
-![\\frac{3!}{(3-1)!\\times 1!}](https://latex.codecogs.com/svg.format?%5Cfrac%7B3%21%7D%7B%283-1%29%21%5Ctimes%201%21%7D "\frac{3!}{(3-1)!\times 1!}").
+For the same set of 3 elements, the combinations of a subset containing
+1 element is
+![\\frac{3!}{(3-1)!\\times 1!}](https://latex.codecogs.com/svg.format?%5Cfrac%7B3%21%7D%7B%283-1%29%21%5Ctimes%201%21%7D "\frac{3!}{(3-1)!\times 1!}")
+or
+![{3\\choose1}](https://latex.codecogs.com/svg.format?%7B3%5Cchoose1%7D "{3\choose1}").
 
-**Note:**
+**Note:** The graph symmetry of a power set can be explained by the
+observation that
 ![\\frac{3!}{(3-2)!\\times 2!}= \\frac{3!}{(3-1)!\\times 1!} = \\frac{3!}{2!}](https://latex.codecogs.com/svg.format?%5Cfrac%7B3%21%7D%7B%283-2%29%21%5Ctimes%202%21%7D%3D%20%5Cfrac%7B3%21%7D%7B%283-1%29%21%5Ctimes%201%21%7D%20%3D%20%5Cfrac%7B3%21%7D%7B2%21%7D "\frac{3!}{(3-2)!\times 2!}= \frac{3!}{(3-1)!\times 1!} = \frac{3!}{2!}").
-This explains the graph symmetry of power sets.
 
 <img src="../figures/probability-introduction_to_probability-power_set_combinations.svg" width="80%" style="display: block; margin: auto;" />
 
@@ -192,13 +193,19 @@ b = set(r.b)
 
 a.union(b) # Can also be evaluated as a | b
 #> {1.0, 2.0, 3.0, 4.0} 
+```
 
+``` python
 a.intersection(b) # Can also be evaluated as a & b
 #> {2.0} 
+```
 
+``` python
 a.difference(b)
 #> {1.0, 3.0}
+```
 
+``` python
 a.symmetric_difference(b) # Can also be evaluated as a ^ b
 #> {1.0, 3.0, 4.0}
 ```
