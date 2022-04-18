@@ -3,14 +3,15 @@ Probability theory - introduction
 Erika Duan
 2022-04-18
 
--   [Introduction to probability](#introduction-to-probability)
-    -   [Scenario 1](#scenario-1)
-    -   [Scenario 2](#scenario-2)
--   [Set notations](#set-notations)
-    -   [The power set](#the-power-set)
--   [Set operations](#set-operations)
--   [General rules of probability](#general-rules-of-probability)
--   [Acknowledgements](#acknowledgements)
+- [Probability theory - introduction](#probability-theory---introduction)
+- [Introduction to probability](#introduction-to-probability)
+  - [Scenario 1](#scenario-1)
+  - [Scenario 2](#scenario-2)
+- [Set notations](#set-notations)
+  - [The power set](#the-power-set)
+- [Set operations](#set-operations)
+- [General rules of probability](#general-rules-of-probability)
+- [Acknowledgements](#acknowledgements)
 
 # Introduction to probability
 
@@ -186,27 +187,21 @@ setequal(a, b)
 ``` python
 # Perform set operations in Python ---------------------------------------------
 # Variables in the R environment can be accessed in Python via R.variable
-# Atomic vectors in R are automatically converted into Python lists
+# Atomic vectors in R are automatically converted into Python lists  
+ 
+a = set(r.a) 
+b = set(r.b) 
 
-a = set(r.a)
-b = set(r.b)
-
-a.union(b) # Can also be evaluated as a | b
+a.union(b) # Can also be evaluated as a | b 
 #> {1.0, 2.0, 3.0, 4.0} 
-```
 
-``` python
-a.intersection(b) # Can also be evaluated as a & b
+a.intersection(b) # Can also be evaluated as a & b 
 #> {2.0} 
-```
 
-``` python
 a.difference(b)
-#> {1.0, 3.0}
-```
+#> {1.0, 3.0} 
 
-``` python
-a.symmetric_difference(b) # Can also be evaluated as a ^ b
+a.symmetric_difference(b) # Can also be evaluated as a ^ b 
 #> {1.0, 3.0, 4.0}
 ```
 
