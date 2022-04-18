@@ -21,10 +21,7 @@ knitr::knit_engines$set(python = reticulate::eng_python)
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 # Load required R packages -----------------------------------------------------
 if (!require("pacman")) install.packages("pacman")
-p_load(tidyverse,
-       RColorBrewer,
-       scales,
-       reticulate,
+p_load(reticulate,
        knitr)
 
 # Load Anaconda environment with Python 3.9 ------------------------------------
@@ -36,29 +33,29 @@ use_condaenv("python_3_9")
 
 Probability is an abstract concept. The frequentist approach considers probability as the relative frequency of a specific outcome, observed from a sample of the true population. The Bayesian approach considers probability as a subjective possibility space dependent on the prior hypothesis and the observed evidence.  
 
-Overall, probability can be best thought of as the size of a mathematical set (which can also be represented in 2D as a proportion of total area).  
+Probability can be best thought of as the size of a mathematical set (which can be represented in 2D as a proportion of the total area).  
 
 ## Scenario 1  
 
 Imagine that we simultaneously rolled two fair dice. What is the probability that the sum of two dice equals 5?   
 
-+ We know that the outcome of one dice throw is independent of another.  
++ From our understanding of the properties of fair dice, we know that the outcome of one dice throw is independent of another.  
 + We need to calculate all possible combinations of two independent dice rolls. The total number of possible combinations is the **sample space** i.e. the set of all possible outcomes. As there are 6 faces on one dice and we are rolling two dice, the sample space is $6\times6$ or $6^2$ possible outcomes.    
 + We would then calculate all possible combinations of dice rolls which sum to 5. This is the **event** ($E$), which is a smaller subset of the sample space.  
 + The **probability** of the event occurring is therefore the ratio of the event relative to the sample space.  
 + In this scenario, the probability that the sum of two dice equals 5 is $\frac{4}{36}$ or approximately 0.11.  
 
-```{r, echo=FALSE, results='markup', out.width="65%"}
+```{r, echo=FALSE, results='markup', out.width="70%"}
 knitr::include_graphics("../figures/probability-introduction_to_probability-scenario_1.svg")
 ```
 
 ## Scenario 2  
 
-Imagine that we simultaneously rolled two fair dice. What is the probability that the sum of two dice is less than 5 and an odd number?
+Imagine that we simultaneously rolled two fair dice. What is the probability that the sum of two dice is less than 5 **and** an odd number?
 
 + The sample space is still the same, as the total number of possible dice roll combinations is fixed.  
 + The event subset has changed as we are interested in the intersection of $E_1\subset\{2, 3, 4\}$ and $E_2\subset\{2, 4, 6\}$ i.e. $E=E_1\cap E_2=\{2, 4\}$.  
-+ In this scenario, the probability that the sum of two dice is less than 5 **and** an odd number is $\frac{4}{36}$ or approximately 0.11.  
++ In this scenario, the probability that the sum of two dice is $\{2,4\}$ is $\frac{4}{36}$ or approximately 0.11.   
 
 ```{r, echo=FALSE, results='markup', out.width="70%"}
 knitr::include_graphics("../figures/probability-introduction_to_probability-scenario_2.svg")
@@ -79,17 +76,30 @@ Examples of sets include:
 + The set $A_2 = \{x\in\mathbb{R}\vert -5\leq x\leq 1\}$ is an infinite set with a finite closed interval on the set of all real numbers.  
 + The set $F = \{f:\mathbb{R}\to\mathbb{R}\vert f(x)=ax+b,\;a,b\in\mathbb{R}\}$ is an infinite set of all straight lines in 2D as $f$ takes the specific form $f(x)=ax+b$.  
 
-In probability theory, the event can be viewed as a subset within the set of the sample space, where the total number of possible event types is represented by the power set of the sample space.  
+In probability theory, the event can be viewed as a subset within the set of the sample space, where the total number of possible event types (or total possible event combinations) is represented by the power set of the sample space.  
 
 
-## The sum of all discrete possibilities and the power set  
+## The power set  
 
-When the elements inside a set are finite and countable, we can calculate the total number of possible events in two elegant ways. Consider the graphical approach below. We can map the event combinations for every possible set size. This allows us to identify interesting properties like graphical symmetry (the smallest and largest event size will have the same number of possibilities i.e. 1) and the exponential increase in possible event combinations when the set size increases by 1 for each symmetrical half.     
+When the elements inside a set are finite and countable, we can calculate the total number of possible event types in two elegant ways.  
 
-```{r, echo=FALSE, results='markup', out.width="70%"}
+Consider the graphical approach drawn below. We can map all possible element combinations for every possible subset size. Doing so highlights the existence of graph symmetry where, for example, the smallest and largest subsets contain the same number of element combinations i.e. 1. The graphical approach, however, is cumbersome for large sets.    
+
+```{r, echo=FALSE, results='markup', out.width="80%"}
 knitr::include_graphics("../figures/probability-introduction_to_probability-power_set_graphs.svg")
 ```
 
+We can then consider the numerical approach. For each subset size, we must calculate how many unique element combinations exist. We do not care about element order and element repetition also cannot occur. For example, when a set has 3 elements, the total unique combinations for a subset containing 2 elements is represented as $\frac{3!}{(3-2)!\times 2!}$ or ${3\choose2}$.   
+
+For the same set, the total unique combinations for a subset containing 1 element is represented as $\frac{3!}{(3-1)!\times 1!}$.   
+
+Note that $\frac{3!}{(3-2)!\times 2!}= \frac{3!}{2!}$ and $\frac{3!}{(3-1)!\times 1!} = \frac{3!}{2!}$. This explains the graph symmetry property of power sets.    
+
+```{r, echo=FALSE, results='markup', out.width="80%"}
+knitr::include_graphics("../figures/probability-introduction_to_probability-power_set_combinations.svg")
+```
+
+The power set, or total number of possible event types, is therefore the sum of all possible subset combinations. A [quick mathematical proof](https://www.youtube.com/watch?v=wM9T--A1gQA) using the binomial theorem shows how the power set can be calculated as $2^n$, where n is the size of the set.    
 
 
 # Set operations  
@@ -150,22 +160,22 @@ If we were asked to find the probability that the sum of two dice is less than 5
 
 # General rules of probability  
 
-We can think of a function as a relation that associates a set of elements in the input space (subset A in X) to a set of elements in the output space (subset B in Y). A function induces this mapping of $A\to B$ by applying itself to each individual element in the input space. This implies that an inverse function also exists, which maps the set of elements in the output space back to the set of elements in the input space i.e. $A = f^{-1}(B)$.   
+We can think of a function as a relation that associates a set of elements in the input space (subset A in X) to a set of elements in the output space (subset B in Y). A function induces this mapping of $A\to B$ by applying itself to each individual element in the input space. The act of being a relation implies that an inverse function also exists, which maps the set of elements in the output space back to the set of elements in the input space i.e. $A = f^{-1}(B)$.   
 
-A probability distribution can be thought of as the function which maps a set of events to their set of probabilities. In other words, probability distributions are the types of functions that can map this transformation.  
+A probability distribution can be thought of as the function which maps a set of events to their set of probabilities.  
 
 ```{r, echo=FALSE, results='markup', out.width="80%"}
 knitr::include_graphics("../figures/probability-introduction_to_probability-set_mappings.svg")
 ```
 
-Consider the set of events $x_1$ as a subset of the sample space X, where $P_\pi(x_1)$ is the probability assigned to $x_1$ by the probability distribution $\pi$:  
-+ The probability of the sample space X is the total probability available i.e. $P_{\pi}(X)=1$.  
-+ Its complement is the probability of an impossible event i.e. $P_{\pi}(X^C)=0$.  
-+ The range of possible probabilities for $x_1$ is therefore $0\leq P_{\pi}(x_1)\leq1$ and $P_{\pi}(x_1)=1-P_{\pi}(x_1^C)$.  
+Consider the set $A_1$ as a subset of the sample space X, where $P_\pi(A_1)$ is the probability assigned to $A_1$ by the probability distribution $\pi$:  
++ The probability of X is the probability of all events (or all possible subsets) occurring i.e. $P_{\pi}(X)=1$. Since probability is the ratio of the event to the sample space, we can define $P_{\pi}(X)=1$ for simplicity.      
++ The complement of $P_{\pi}(X)=1$ is the probability of an impossible event i.e. $P_{\pi}(X^C)=0$.  
++ The range of possible probabilities for $A_1$ is therefore $0\leq P_{\pi}(A_1)\leq1$ and $P_{\pi}(A_1)=1-P_{\pi}(A_1^C)$.  
 
-Consider the set of events $x_2$ as another subset of the sample space X:    
-+ If $x_1$ and $x_2$ are mutually exclusive (the set of elements in $x_1$ and $x_2$ do not overlap), the intersection of $x_1$ and $x_2$ is 0 i.e. $P_\pi(x_1\cap x_2) = 0$ and the probability of $x_1$ or $x_2$ occurring is $P_\pi(x_1\cup x_2) = P_\pi(x_1) + P_\pi(x_2)$.   
-+ If $x_1$ and $x_2$ are not mutually exclusive (the set of elements in $x_1$ and $x_2$ overlap), the probability of $x_1$ or $x_2$ occurring is $P_\pi(x_1\cup x_2) = P_\pi(x_1) + P_\pi(x_2) - P_\pi(x_1\cap x_2)$.  
+Consider the set $A_2$ as a different subset of the sample space X:    
++ If $A_1$ and $A_2$ are mutually exclusive (elements in $A_1$ and $A_2$ do not overlap), the intersection of $A_1$ and $A_2$ is 0 i.e. $P_\pi(A_1\cap A_2) = 0$ and the probability of $A_1$ or $A_2$ occurring is $P_\pi(A_1\cup A_2) = P_\pi(A_1) + P_\pi(A_2)$.   
++ If $A_1$ and $A_2$ are not mutually exclusive (elements in $A_1$ and $A_2$ overlap), the probability of $A_1$ or $A_2$ occurring is $P_\pi(A_1\cup A_2) = P_\pi(A_1) + P_\pi(A_2) - P_\pi(A_1\cap A_2)$.  
 
 
 # Acknowledgements  
@@ -175,3 +185,4 @@ The source materials for this tutorial are:
 + The [Probability for Data Science textbook](https://probability4datascience.com/) by Stanley H Chan, specifically [Chapter 2](https://drive.google.com/file/d/1v9jLsbwG5Tl5d7XfLCfmhHuOkZZUOVNa/view) on probability     
 + Introduction to probability theory [GitHub resource](https://betanalpha.github.io/assets/case_studies/probability_theory.html) by Michael Betancourt   
 + Introduction to probability theory [Youtube series](https://www.youtube.com/playlist?list=PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6) from MIT   
++ [General probability rules from STAT800](https://online.stat.psu.edu/stat800/lesson/general-probability-rules) from Penn State Eberly College of Science  

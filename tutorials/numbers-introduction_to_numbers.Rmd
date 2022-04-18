@@ -1,0 +1,36 @@
+---
+title: Numbers - introduction
+author: Erika Duan
+date: "`r Sys.Date()`"
+output:
+  github_document:
+    html_preview: FALSE
+    toc: true
+    toc_depth: 2
+    math_method:
+      engine: webtex
+      url: https://latex.codecogs.com/svg.format?
+---  
+
+```{r setup, include=FALSE}
+# Set up global environment configuration --------------------------------------
+knitr::opts_chunk$set(echo=TRUE, results='hide', fig.align='center')
+knitr::knit_engines$set(python = reticulate::eng_python)
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+# Load required R packages -----------------------------------------------------
+if (!require("pacman")) install.packages("pacman")
+p_load(reticulate,
+       knitr)
+
+# Load Anaconda environment with Python 3.9 ------------------------------------
+use_condaenv("python_3_9")
+```
+
+
+# Acknowledgements  
+
+The source materials for this tutorial are:   
+
++ https://www.mathsisfun.com/combinatorics/combinations-permutations.html  

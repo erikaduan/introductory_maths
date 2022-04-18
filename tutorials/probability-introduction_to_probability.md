@@ -1,17 +1,17 @@
 Probability theory - introduction
 ================
 Erika Duan
-2022-04-13
+2022-04-18
 
--   [Introduction to probability](#introduction-to-probability)
-    -   [Scenario 1](#scenario-1)
-    -   [Scenario 2](#scenario-2)
--   [Set notations](#set-notations)
-    -   [The sum of all discrete possibilities and the power
-        set](#the-sum-of-all-discrete-possibilities-and-the-power-set)
--   [Set operations](#set-operations)
--   [General rules of probability](#general-rules-of-probability)
--   [Acknowledgements](#acknowledgements)
+- [Probability theory - introduction](#probability-theory---introduction)
+- [Introduction to probability](#introduction-to-probability)
+  - [Scenario 1](#scenario-1)
+  - [Scenario 2](#scenario-2)
+- [Set notations](#set-notations)
+  - [The power set](#the-power-set)
+- [Set operations](#set-operations)
+- [General rules of probability](#general-rules-of-probability)
+- [Acknowledgements](#acknowledgements)
 
 # Introduction to probability
 
@@ -21,17 +21,16 @@ from a sample of the true population. The Bayesian approach considers
 probability as a subjective possibility space dependent on the prior
 hypothesis and the observed evidence.
 
-Overall, probability can be best thought of as the size of a
-mathematical set (which can also be represented in 2D as a proportion of
-total area).
+Probability can be best thought of as the size of a mathematical set
+(which can be represented in 2D as a proportion of the total area).
 
 ## Scenario 1
 
 Imagine that we simultaneously rolled two fair dice. What is the
 probability that the sum of two dice equals 5?
 
--   We know that the outcome of one dice throw is independent of
-    another.  
+-   From our understanding of the properties of fair dice, we know that
+    the outcome of one dice throw is independent of another.  
 -   We need to calculate all possible combinations of two independent
     dice rolls. The total number of possible combinations is the
     **sample space** i.e. the set of all possible outcomes. As there are
@@ -50,12 +49,13 @@ probability that the sum of two dice equals 5?
     ![\\frac{4}{36}](https://latex.codecogs.com/svg.format?%5Cfrac%7B4%7D%7B36%7D "\frac{4}{36}")
     or approximately 0.11.
 
-<img src="../figures/probability-introduction_to_probability-scenario_1.svg" width="65%" style="display: block; margin: auto;" />
+<img src="../figures/probability-introduction_to_probability-scenario_1.svg" width="70%" style="display: block; margin: auto;" />
 
 ## Scenario 2
 
 Imagine that we simultaneously rolled two fair dice. What is the
-probability that the sum of two dice is less than 5 and an odd number?
+probability that the sum of two dice is less than 5 **and** an odd
+number?
 
 -   The sample space is still the same, as the total number of possible
     dice roll combinations is fixed.  
@@ -65,8 +65,9 @@ probability that the sum of two dice is less than 5 and an odd number?
     and
     ![E_2\\subset\\{2, 4, 6\\}](https://latex.codecogs.com/svg.format?E_2%5Csubset%5C%7B2%2C%204%2C%206%5C%7D "E_2\subset\{2, 4, 6\}")
     i.e. ![E=E_1\\cap E_2=\\{2, 4\\}](https://latex.codecogs.com/svg.format?E%3DE_1%5Ccap%20E_2%3D%5C%7B2%2C%204%5C%7D "E=E_1\cap E_2=\{2, 4\}").  
--   In this scenario, the probability that the sum of two dice is less
-    than 5 **and** an odd number is
+-   In this scenario, the probability that the sum of two dice is
+    ![\\{2,4\\}](https://latex.codecogs.com/svg.format?%5C%7B2%2C4%5C%7D "\{2,4\}")
+    is
     ![\\frac{4}{36}](https://latex.codecogs.com/svg.format?%5Cfrac%7B4%7D%7B36%7D "\frac{4}{36}")
     or approximately 0.11.
 
@@ -103,20 +104,49 @@ Examples of sets include:
 
 In probability theory, the event can be viewed as a subset within the
 set of the sample space, where the total number of possible event types
-is represented by the power set of the sample space.
+(or total possible event combinations) is represented by the power set
+of the sample space.
 
-## The sum of all discrete possibilities and the power set
+## The power set
 
 When the elements inside a set are finite and countable, we can
-calculate the total number of possible events in two elegant ways.
-Consider the graphical approach below. We can map the event combinations
-for every possible set size. This allows us to identify interesting
-properties like graphical symmetry (the smallest and largest event size
-will have the same number of possibilities i.e. 1) and the exponential
-increase in possible event combinations when the set size increases by 1
-for each symmetrical half.
+calculate the total number of possible event types in two elegant ways.
 
-<img src="../figures/probability-introduction_to_probability-power_set_graphs.svg" width="70%" style="display: block; margin: auto;" />
+Consider the graphical approach drawn below. We can map all possible
+element combinations for every possible subset size. Doing so highlights
+the existence of graph symmetry where, for example, the smallest and
+largest subsets contain the same number of element combinations i.e. 1.
+The graphical approach, however, is cumbersome for large sets.
+
+<img src="../figures/probability-introduction_to_probability-power_set_graphs.svg" width="80%" style="display: block; margin: auto;" />
+
+We can then consider the numerical approach. For each subset size, we
+must calculate how many unique element combinations exist. We do not
+care about element order and element repetition also cannot occur. For
+example, when a set has 3 elements, the total unique combinations for a
+subset containing 2 elements is represented as
+![\\frac{3!}{(3-2)!\\times 2!}](https://latex.codecogs.com/svg.format?%5Cfrac%7B3%21%7D%7B%283-2%29%21%5Ctimes%202%21%7D "\frac{3!}{(3-2)!\times 2!}")
+or
+![{3\\choose2}](https://latex.codecogs.com/svg.format?%7B3%5Cchoose2%7D "{3\choose2}").
+
+For the same set, the total unique combinations for a subset containing
+1 element is represented as
+![\\frac{3!}{(3-1)!\\times 1!}](https://latex.codecogs.com/svg.format?%5Cfrac%7B3%21%7D%7B%283-1%29%21%5Ctimes%201%21%7D "\frac{3!}{(3-1)!\times 1!}").
+
+Note that
+![\\frac{3!}{(3-2)!\\times 2!}= \\frac{3!}{2!}](https://latex.codecogs.com/svg.format?%5Cfrac%7B3%21%7D%7B%283-2%29%21%5Ctimes%202%21%7D%3D%20%5Cfrac%7B3%21%7D%7B2%21%7D "\frac{3!}{(3-2)!\times 2!}= \frac{3!}{2!}")
+and
+![\\frac{3!}{(3-1)!\\times 1!} = \\frac{3!}{2!}](https://latex.codecogs.com/svg.format?%5Cfrac%7B3%21%7D%7B%283-1%29%21%5Ctimes%201%21%7D%20%3D%20%5Cfrac%7B3%21%7D%7B2%21%7D "\frac{3!}{(3-1)!\times 1!} = \frac{3!}{2!}").
+This explains the graph symmetry property of power sets.
+
+<img src="../figures/probability-introduction_to_probability-power_set_combinations.svg" width="80%" style="display: block; margin: auto;" />
+
+The power set, or total number of possible event types, is therefore the
+sum of all possible subset combinations. A [quick mathematical
+proof](https://www.youtube.com/watch?v=wM9T--A1gQA) using the binomial
+theorem shows how the power set can be calculated as
+![2^n](https://latex.codecogs.com/svg.format?2%5En "2^n"), where n is
+the size of the set.
 
 # Set operations
 
@@ -164,19 +194,13 @@ b = set(r.b)
 
 a.union(b) # Can also be evaluated as a | b
 #> {1.0, 2.0, 3.0, 4.0} 
-```
 
-``` python
 a.intersection(b) # Can also be evaluated as a & b
 #> {2.0} 
-```
 
-``` python
 a.difference(b)
 #> {1.0, 3.0}
-```
 
-``` python
 a.symmetric_difference(b) # Can also be evaluated as a ^ b
 #> {1.0, 3.0, 4.0}
 ```
@@ -200,62 +224,64 @@ We can think of a function as a relation that associates a set of
 elements in the input space (subset A in X) to a set of elements in the
 output space (subset B in Y). A function induces this mapping of
 ![A\\to B](https://latex.codecogs.com/svg.format?A%5Cto%20B "A\to B") by
-applying itself to each individual element in the input space. This
-implies that an inverse function also exists, which maps the set of
-elements in the output space back to the set of elements in the input
-space
+applying itself to each individual element in the input space. The act
+of being a relation implies that an inverse function also exists, which
+maps the set of elements in the output space back to the set of elements
+in the input space
 i.e. ![A = f^{-1}(B)](https://latex.codecogs.com/svg.format?A%20%3D%20f%5E%7B-1%7D%28B%29 "A = f^{-1}(B)").
 
 A probability distribution can be thought of as the function which maps
-a set of events to their set of probabilities. In other words,
-probability distributions are the types of functions that can map this
-transformation.
+a set of events to their set of probabilities.
 
 <img src="../figures/probability-introduction_to_probability-set_mappings.svg" width="80%" style="display: block; margin: auto;" />
 
-Consider the set of events
-![x_1](https://latex.codecogs.com/svg.format?x_1 "x_1") as a subset of
-the sample space X, where
-![P\_\\pi(x_1)](https://latex.codecogs.com/svg.format?P_%5Cpi%28x_1%29 "P_\pi(x_1)")
+Consider the set ![A_1](https://latex.codecogs.com/svg.format?A_1 "A_1")
+as a subset of the sample space X, where
+![P\_\\pi(A_1)](https://latex.codecogs.com/svg.format?P_%5Cpi%28A_1%29 "P_\pi(A_1)")
 is the probability assigned to
-![x_1](https://latex.codecogs.com/svg.format?x_1 "x_1") by the
+![A_1](https://latex.codecogs.com/svg.format?A_1 "A_1") by the
 probability distribution
 ![\\pi](https://latex.codecogs.com/svg.format?%5Cpi "\pi"):  
-+ The probability of the sample space X is the total probability
-available
-i.e. ![P\_{\\pi}(X)=1](https://latex.codecogs.com/svg.format?P_%7B%5Cpi%7D%28X%29%3D1 "P_{\pi}(X)=1").  
-+ Its complement is the probability of an impossible event
++ The probability of X is the probability of all events (or all possible
+subsets) occurring
+i.e. ![P\_{\\pi}(X)=1](https://latex.codecogs.com/svg.format?P_%7B%5Cpi%7D%28X%29%3D1 "P_{\pi}(X)=1").
+Since probability is the ratio of the event to the sample space, we can
+define
+![P\_{\\pi}(X)=1](https://latex.codecogs.com/svg.format?P_%7B%5Cpi%7D%28X%29%3D1 "P_{\pi}(X)=1")
+for simplicity.  
++ The complement of
+![P\_{\\pi}(X)=1](https://latex.codecogs.com/svg.format?P_%7B%5Cpi%7D%28X%29%3D1 "P_{\pi}(X)=1")
+is the probability of an impossible event
 i.e. ![P\_{\\pi}(X^C)=0](https://latex.codecogs.com/svg.format?P_%7B%5Cpi%7D%28X%5EC%29%3D0 "P_{\pi}(X^C)=0").  
 + The range of possible probabilities for
-![x_1](https://latex.codecogs.com/svg.format?x_1 "x_1") is therefore
-![0\\leq P\_{\\pi}(x_1)\\leq1](https://latex.codecogs.com/svg.format?0%5Cleq%20P_%7B%5Cpi%7D%28x_1%29%5Cleq1 "0\leq P_{\pi}(x_1)\leq1")
+![A_1](https://latex.codecogs.com/svg.format?A_1 "A_1") is therefore
+![0\\leq P\_{\\pi}(A_1)\\leq1](https://latex.codecogs.com/svg.format?0%5Cleq%20P_%7B%5Cpi%7D%28A_1%29%5Cleq1 "0\leq P_{\pi}(A_1)\leq1")
 and
-![P\_{\\pi}(x_1)=1-P\_{\\pi}(x_1^C)](https://latex.codecogs.com/svg.format?P_%7B%5Cpi%7D%28x_1%29%3D1-P_%7B%5Cpi%7D%28x_1%5EC%29 "P_{\pi}(x_1)=1-P_{\pi}(x_1^C)").
+![P\_{\\pi}(A_1)=1-P\_{\\pi}(A_1^C)](https://latex.codecogs.com/svg.format?P_%7B%5Cpi%7D%28A_1%29%3D1-P_%7B%5Cpi%7D%28A_1%5EC%29 "P_{\pi}(A_1)=1-P_{\pi}(A_1^C)").
 
-Consider the set of events
-![x_2](https://latex.codecogs.com/svg.format?x_2 "x_2") as another
-subset of the sample space X:  
-+ If ![x_1](https://latex.codecogs.com/svg.format?x_1 "x_1") and
-![x_2](https://latex.codecogs.com/svg.format?x_2 "x_2") are mutually
-exclusive (the set of elements in
-![x_1](https://latex.codecogs.com/svg.format?x_1 "x_1") and
-![x_2](https://latex.codecogs.com/svg.format?x_2 "x_2") do not overlap),
+Consider the set ![A_2](https://latex.codecogs.com/svg.format?A_2 "A_2")
+as a different subset of the sample space X:  
++ If ![A_1](https://latex.codecogs.com/svg.format?A_1 "A_1") and
+![A_2](https://latex.codecogs.com/svg.format?A_2 "A_2") are mutually
+exclusive (elements in
+![A_1](https://latex.codecogs.com/svg.format?A_1 "A_1") and
+![A_2](https://latex.codecogs.com/svg.format?A_2 "A_2") do not overlap),
 the intersection of
-![x_1](https://latex.codecogs.com/svg.format?x_1 "x_1") and
-![x_2](https://latex.codecogs.com/svg.format?x_2 "x_2") is 0
-i.e. ![P\_\\pi(x_1\\cap x_2) = 0](https://latex.codecogs.com/svg.format?P_%5Cpi%28x_1%5Ccap%20x_2%29%20%3D%200 "P_\pi(x_1\cap x_2) = 0")
+![A_1](https://latex.codecogs.com/svg.format?A_1 "A_1") and
+![A_2](https://latex.codecogs.com/svg.format?A_2 "A_2") is 0
+i.e. ![P\_\\pi(A_1\\cap A_2) = 0](https://latex.codecogs.com/svg.format?P_%5Cpi%28A_1%5Ccap%20A_2%29%20%3D%200 "P_\pi(A_1\cap A_2) = 0")
 and the probability of
-![x_1](https://latex.codecogs.com/svg.format?x_1 "x_1") or
-![x_2](https://latex.codecogs.com/svg.format?x_2 "x_2") occurring is
-![P\_\\pi(x_1\\cup x_2) = P\_\\pi(x_1) + P\_\\pi(x_2)](https://latex.codecogs.com/svg.format?P_%5Cpi%28x_1%5Ccup%20x_2%29%20%3D%20P_%5Cpi%28x_1%29%20%2B%20P_%5Cpi%28x_2%29 "P_\pi(x_1\cup x_2) = P_\pi(x_1) + P_\pi(x_2)").  
-+ If ![x_1](https://latex.codecogs.com/svg.format?x_1 "x_1") and
-![x_2](https://latex.codecogs.com/svg.format?x_2 "x_2") are not mutually
-exclusive (the set of elements in
-![x_1](https://latex.codecogs.com/svg.format?x_1 "x_1") and
-![x_2](https://latex.codecogs.com/svg.format?x_2 "x_2") overlap), the
-probability of ![x_1](https://latex.codecogs.com/svg.format?x_1 "x_1")
-or ![x_2](https://latex.codecogs.com/svg.format?x_2 "x_2") occurring is
-![P\_\\pi(x_1\\cup x_2) = P\_\\pi(x_1) + P\_\\pi(x_2) - P\_\\pi(x_1\\cap x_2)](https://latex.codecogs.com/svg.format?P_%5Cpi%28x_1%5Ccup%20x_2%29%20%3D%20P_%5Cpi%28x_1%29%20%2B%20P_%5Cpi%28x_2%29%20-%20P_%5Cpi%28x_1%5Ccap%20x_2%29 "P_\pi(x_1\cup x_2) = P_\pi(x_1) + P_\pi(x_2) - P_\pi(x_1\cap x_2)").
+![A_1](https://latex.codecogs.com/svg.format?A_1 "A_1") or
+![A_2](https://latex.codecogs.com/svg.format?A_2 "A_2") occurring is
+![P\_\\pi(A_1\\cup A_2) = P\_\\pi(A_1) + P\_\\pi(A_2)](https://latex.codecogs.com/svg.format?P_%5Cpi%28A_1%5Ccup%20A_2%29%20%3D%20P_%5Cpi%28A_1%29%20%2B%20P_%5Cpi%28A_2%29 "P_\pi(A_1\cup A_2) = P_\pi(A_1) + P_\pi(A_2)").  
++ If ![A_1](https://latex.codecogs.com/svg.format?A_1 "A_1") and
+![A_2](https://latex.codecogs.com/svg.format?A_2 "A_2") are not mutually
+exclusive (elements in
+![A_1](https://latex.codecogs.com/svg.format?A_1 "A_1") and
+![A_2](https://latex.codecogs.com/svg.format?A_2 "A_2") overlap), the
+probability of ![A_1](https://latex.codecogs.com/svg.format?A_1 "A_1")
+or ![A_2](https://latex.codecogs.com/svg.format?A_2 "A_2") occurring is
+![P\_\\pi(A_1\\cup A_2) = P\_\\pi(A_1) + P\_\\pi(A_2) - P\_\\pi(A_1\\cap A_2)](https://latex.codecogs.com/svg.format?P_%5Cpi%28A_1%5Ccup%20A_2%29%20%3D%20P_%5Cpi%28A_1%29%20%2B%20P_%5Cpi%28A_2%29%20-%20P_%5Cpi%28A_1%5Ccap%20A_2%29 "P_\pi(A_1\cup A_2) = P_\pi(A_1) + P_\pi(A_2) - P_\pi(A_1\cap A_2)").
 
 # Acknowledgements
 
@@ -271,4 +297,7 @@ The source materials for this tutorial are:
     by Michael Betancourt  
 -   Introduction to probability theory [Youtube
     series](https://www.youtube.com/playlist?list=PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6)
-    from MIT
+    from MIT  
+-   [General probability rules from
+    STAT800](https://online.stat.psu.edu/stat800/lesson/general-probability-rules)
+    from Penn State Eberly College of Science
