@@ -19,7 +19,6 @@ This repository also has a **secondary aim** of promoting code agnostic practice
 |:1234:|Introduction to algebra|
 |:1234:|Exponents and logarithms|
 |:1234:|Logarithms and information theory|
-
 |:black_joker:|[Introduction to probability theory](https://github.com/erikaduan/maths_in_r_and_python/blob/master/tutorials/probability-introduction_to_probability.md)|
 |:black_joker:|[Conditional probability](https://github.com/erikaduan/maths_in_r_and_python/blob/master/tutorials/probability-conditional_probability.md)|
 |:black_joker:|Bayes theorem|
