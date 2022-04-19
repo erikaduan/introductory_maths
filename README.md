@@ -12,28 +12,26 @@ This repository also has a **secondary aim** of promoting code agnostic practice
 
 ## Tutorials
 
-:red_circle: Introduction to numbers  
 
-:red_circle: Introduction to algebra  
-:red_circle: Exponents and logarithms  
-:red_circle: Logarithms and information theory  
+|Topics|Tutorials|
+|:-----|:--------|
+|:1234:|[Introduction to numbers](https://github.com/erikaduan/maths_in_r_and_python/blob/master/tutorials/numbers-introduction_to_numbers.md)|
+|:1234:|Introduction to algebra|
+|:1234:|Exponents and logarithms|
+|:1234:|Logarithms and information theory|
 
-:large_blue_circle: [Introduction to probability theory](https://github.com/erikaduan/maths_in_r_and_python/blob/master/tutorials/probability-introduction_to_probability.md)  
-:large_blue_circle: Conditional probability  
-:large_blue_circle: Bayes theorem  
-
-:red_circle: Summation mathematics  
-
-:yellow_circle: Introduction to trigonometry  
-:yellow_circle:	Distance metrics  
-
-:yellow_circle: Introduction to vectors  
-:yellow_circle: Working with vectors  
-:yellow_circle: Cosine similarity and vector embeddings  
-
-:yellow_circle: Introduction to matrices  
-
-:purple_circle: Introduction to derivatives  
+|:black_joker:|[Introduction to probability theory](https://github.com/erikaduan/maths_in_r_and_python/blob/master/tutorials/probability-introduction_to_probability.md)|
+|:black_joker:|[Conditional probability](https://github.com/erikaduan/maths_in_r_and_python/blob/master/tutorials/probability-conditional_probability.md)|
+|:black_joker:|Bayes theorem|
+|:cookie:|Introduction to summations|
+|:compass:|Introduction to trigonometry|
+|:compass:|Distance metrics|
+|:compass:|Cosine similarity|
+|:chopsticks:|Introduction to vectors|
+|:chopsticks:|Vector transformations|
+|:chopsticks:|Vector embeddings|
+|:department_store:|Introduction to matrices|
+|:roller_coaster:|Introduction to derivatives|
 
 ## Contributors
 

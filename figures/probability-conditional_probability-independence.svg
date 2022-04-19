@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1280"
+   height="640"
+   overflow="hidden"
+   version="1.1"
+   id="svg206"
+   sodipodi:docname="probability-conditional_probability-independence.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <metadata
+     id="metadata210">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1010"
+     id="namedview208"
+     showgrid="false"
+     inkscape:pagecheckerboard="true"
+     borderlayer="true"
+     inkscape:zoom="0.66944444"
+     inkscape:cx="640"
+     inkscape:cy="360"
+     inkscape:window-x="3834"
+     inkscape:window-y="-6"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg206" />
+  <defs
+     id="defs32">
+    <clipPath
+       id="clip0">
+      <rect
+         x="0"
+         y="0"
+         width="1280"
+         height="720"
+         id="rect2" />
+    </clipPath>
+    <clipPath
+       id="clip1">
+      <rect
+         x="90"
+         y="234"
+         width="96"
+         height="96"
+         id="rect5" />
+    </clipPath>
+    <clipPath
+       id="clip2">
+      <rect
+         x="90"
+         y="234"
+         width="96"
+         height="96"
+         id="rect8" />
+    </clipPath>
+    <clipPath
+       id="clip3">
+      <rect
+         x="90"
+         y="234"
+         width="96"
+         height="96"
+         id="rect11" />
+    </clipPath>
+    <clipPath
+       id="clip4">
+      <rect
+         x="657"
+         y="235"
+         width="96"
+         height="96"
+         id="rect14" />
+    </clipPath>
+    <clipPath
+       id="clip5">
+      <rect
+         x="657"
+         y="235"
+         width="96"
+         height="96"
+         id="rect17" />
+    </clipPath>
+    <clipPath
+       id="clip6">
+      <rect
+         x="657"
+         y="235"
+         width="96"
+         height="96"
+         id="rect20" />
+    </clipPath>
+    <clipPath
+       id="clip7">
+      <rect
+         x="657"
+         y="408"
+         width="96"
+         height="96"
+         id="rect23" />
+    </clipPath>
+    <clipPath
+       id="clip8">
+      <rect
+         x="657"
+         y="408"
+         width="96"
+         height="96"
+         id="rect26" />
+    </clipPath>
+    <clipPath
+       id="clip9">
+      <rect
+         x="657"
+         y="408"
+         width="96"
+         height="96"
+         id="rect29" />
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#clip0)"
+     id="g204"
+     transform="translate(0,-47.80083)">
+    <rect
+       x="0"
+       y="0"
+       width="1280"
+       height="720"
+       fill="#ffffff"
+       id="rect34" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="43px"
+       transform="translate(800.798,155)"
+       id="text36">Independence</text>
+    <rect
+       x="215.5"
+       y="188.5"
+       width="287"
+       height="142"
+       stroke="#000000"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect38" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="43px"
+       transform="translate(202.02,156)"
+       id="text40">Mutually exclusive</text>
+    <rect
+       x="215.5"
+       y="188.5"
+       width="144"
+       height="142"
+       stroke="#000000"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="#d6dce5"
+       id="rect42" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="43px"
+       transform="translate(271.572,273)"
+       id="text44">H</text>
+    <rect
+       x="359.5"
+       y="187.5"
+       width="143"
+       height="143"
+       stroke="#000000"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="#d6dce5"
+       id="rect46" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="43px"
+       transform="translate(415.21,273)"
+       id="text68">T<tspan
+   font-size="37px"
+   x="-160.27"
+   y="104"
+   id="tspan48">P</tspan><tspan
+   font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+   font-size="25px"
+   x="-140.937"
+   y="112"
+   id="tspan50">𝜋</tspan><tspan
+   font-size="37px"
+   x="-125.304"
+   y="104"
+   id="tspan52">(</tspan><tspan
+   font-size="37px"
+   x="-113.97"
+   y="104"
+   id="tspan54">H</tspan><tspan
+   font-size="25px"
+   x="-90.6371"
+   y="112"
+   id="tspan56">1</tspan><tspan
+   font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+   font-size="37px"
+   x="-77.970398"
+   y="104"
+   id="tspan58" /><tspan
+   font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+   font-size="37px"
+   x="-69.803802"
+   y="104"
+   id="tspan60">∩</tspan><tspan
+   font-size="37px"
+   x="-35.803799"
+   y="104"
+   id="tspan62">T</tspan><tspan
+   font-size="25px"
+   x="-17.6371"
+   y="112"
+   id="tspan64">1</tspan><tspan
+   font-size="37px"
+   x="-4.9704299"
+   y="104"
+   id="tspan66">) = 0</tspan></text>
+    <g
+       clip-path="url(#clip1)"
+       id="g76">
+      <g
+         clip-path="url(#clip2)"
+         id="g74">
+        <g
+           clip-path="url(#clip3)"
+           id="g72">
+          <path
+             d="m 175.4,292.7 v -7.1 c 0,-4.8 -7.7,-8 -17,-9.3 v -5.7 c 0,-1.6 -0.9,-3.8 -5,-5.9 v -7.1 c 0,-6.5 -13.9,-10 -27,-10 -13.1,0 -27,3.5 -27,10 v 8 c 0,2.4 1.9,4.4 5,6 v 7 c 0,0 0,0 0,0.1 -4.1,2.1 -5,4.4 -5,5.9 v 8 c 0,6.5 13.9,10 27,10 v 4 c 0,6.5 13.9,10 27,10 13.1,0 27,-3.5 27,-10 v -8 c 0,-1.5 -0.9,-3.8 -5,-5.9 z m 3,6 c 0,3.8 -10.3,8 -25,8 -11.7,0 -20.6,-2.7 -23.8,-5.7 0,0 0,0 0,0 6.1,1.9 12.4,2.8 18.7,2.7 12.2,0 25.2,-3.1 26.8,-8.7 2.2,1.1 3.3,2.4 3.3,3.7 z m -17,9.5 v 6 c -1.3,0.1 -2.6,0.3 -4,0.3 v -6 c 1.4,0 2.7,-0.1 4,-0.3 z m 2,-0.2 c 1.4,-0.2 2.7,-0.4 4,-0.7 v 5.9 c -1.2,0.3 -2.6,0.5 -4,0.7 z m 6,-1.2 c 1.4,-0.3 2.7,-0.8 4,-1.3 v 5.8 c -1.3,0.6 -2.6,1 -4,1.4 z m -32,5.9 c -1.4,-0.4 -2.7,-0.8 -4,-1.4 v -5.8 c 1.3,0.5 2.6,0.9 4,1.3 z m 2,-5.4 c 1.3,0.3 2.6,0.5 4,0.7 v 6 c -1.4,-0.2 -2.8,-0.5 -4,-0.7 z m 6,0.9 c 1.3,0.1 2.7,0.3 4,0.3 v 6 c -1.4,-0.1 -2.7,-0.2 -4,-0.3 z m -24,-22.5 v 0.3 c -1.4,-0.2 -2.8,-0.5 -4,-0.7 v -5.9 c 1.3,0.3 2.6,0.5 4,0.7 z m 2,8 v -4 c 0.9,0.8 1.9,1.5 3,2 v 5.7 c -1.9,-1.3 -3,-2.5 -3,-3.7 z m 50,0 c 0,1.2 -1.1,2.5 -3,3.6 v -5.7 c 1.1,-0.5 2.1,-1.2 3,-2 z m -5,4.6 c -1.3,0.6 -2.6,1 -4,1.4 v -5.9 c 1.4,-0.3 2.7,-0.8 4,-1.3 z m -6,1.9 c -1.2,0.3 -2.6,0.5 -4,0.7 v -6 c 1.4,-0.2 2.7,-0.4 4,-0.7 z m -6,1 c -1.3,0.1 -2.6,0.3 -4,0.3 v -6 c 1.3,-0.1 2.7,-0.2 4,-0.3 z m -6,0.4 c -0.7,0 -1.3,0 -2,0 -0.7,0 -1.3,0 -2,0 v -6 c 0.7,0 1.3,0 2,0 0.7,0 1.3,0 2,0 z m -6,0 c -1.4,-0.1 -2.7,-0.2 -4,-0.3 v -6 c 1.3,0.1 2.7,0.3 4,0.3 z m -6,-0.6 c -1.4,-0.2 -2.8,-0.5 -4,-0.7 v -5.9 c 1.3,0.3 2.6,0.5 4,0.7 z m -6,-1.3 c -1.4,-0.4 -2.7,-0.8 -4,-1.4 v -5.8 c 1.3,0.5 2.6,0.9 4,1.3 z m 41,-14 c 0,3.8 -10.3,8 -25,8 -14.7,0 -25,-4.2 -25,-8 0,-3.8 10.3,-8 25,-8 14.7,0 25,4.2 25,8 z m -50,-4 v -1.5 c 0.6,0.1 1.2,0.1 1.8,0.2 -0.6,0.4 -1.2,0.8 -1.8,1.3 z m 31.3,-5.8 c 0.6,-0.4 1.2,-0.8 1.8,-1.3 v 1.5 c -0.7,-0.1 -1.2,-0.1 -1.8,-0.2 z m -1.5,-9 c 2.1,1.2 3.2,2.5 3.2,3.7 0,1.7 -2.2,3.6 -5.9,5 -0.7,0 -1.4,0 -2.1,0 -7,0 -14.3,1 -19.5,3 -10.5,-0.3 -18.3,-2.8 -21.2,-5.6 0,0 0,0 0,0 6.1,1.9 12.4,2.8 18.7,2.7 12.2,0 25.2,-3.1 26.8,-8.8 z m -37.8,11.9 v 5.9 c -1.4,-0.4 -2.7,-0.8 -4,-1.4 v -5.8 c 1.3,0.5 2.7,1 4,1.3 z m -6,-2.2 v 5.7 c -1.9,-1.2 -3,-2.4 -3,-3.6 v -4 c 0.9,0.7 1.9,1.4 3,1.9 z m -3,-6.3 v -5.8 c 1.3,0.5 2.6,0.9 4,1.3 v 5.9 c -1.3,-0.4 -2.7,-0.8 -4,-1.4 z m 6,1.9 v -5.9 c 1.3,0.3 2.6,0.5 4,0.7 v 6 c -1.4,-0.2 -2.7,-0.5 -4,-0.8 z m 6,1 v -6 c 1.3,0.1 2.7,0.3 4,0.3 v 6 c -1.4,0 -2.7,-0.1 -4,-0.3 z m 6,0.4 v -6 c 0.7,0 1.3,0 2,0 0.7,0 1.3,0 2,0 v 6 c -0.7,0 -1.3,0 -2,0 -0.7,0 -1.3,0.1 -2,0 z m 6,0 v -6 c 1.3,-0.1 2.7,-0.2 4,-0.3 v 6 c -1.3,0.1 -2.6,0.2 -4,0.3 z m 6,-0.6 v -6 c 1.4,-0.2 2.7,-0.4 4,-0.7 v 5.9 c -1.2,0.3 -2.6,0.6 -4,0.8 z m 6,-1.3 v -5.9 c 1.4,-0.3 2.7,-0.8 4,-1.3 v 5.8 c -1.3,0.6 -2.6,1 -4,1.4 z m 6,-2.4 v -5.7 c 1.1,-0.5 2.1,-1.2 3,-2 v 4 c 0,1.3 -1,2.5 -3,3.7 z m -44,0 c -1.9,-1.2 -3,-2.4 -3,-3.6 v -4 c 0.9,0.8 1.9,1.5 3,2 z m -3,-11.6 c 0,-3.8 10.3,-8 25,-8 14.7,0 25,4.2 25,8 0,3.8 -10.3,8 -25,8 -14.7,0 -25,-4.3 -25,-8 z m 3.5,23 c 1.8,3.7 8.6,6.1 16.5,7.2 v 4.5 c -12,-0.8 -20,-4.5 -20,-7.8 0,-1.3 1.3,-2.6 3.5,-3.9 z m -0.5,15.6 c -1.9,-1.2 -3,-2.4 -3,-3.6 v -4 c 0.9,0.8 1.9,1.5 3,2 z m 6,2.4 c -1.4,-0.4 -2.7,-0.8 -4,-1.4 v -5.8 c 1.3,0.5 2.6,0.9 4,1.3 z m 6,1.3 c -1.4,-0.2 -2.8,-0.5 -4,-0.7 v -5.9 c 1.3,0.3 2.6,0.5 4,0.7 z m 2,-5.8 c 1,0.1 2,0.2 3.1,0.3 0.1,0.7 0.5,1.4 0.9,2.1 v 4 c -1.4,-0.1 -2.7,-0.2 -4,-0.3 z m 6,4.2 c 0.6,0.4 1.3,0.8 2,1.2 v 1 c -0.7,0 -1.3,0 -2,0 z m 4,8.3 v -4 c 0.9,0.8 1.9,1.5 3,2 v 5.7 c -1.9,-1.3 -3,-2.5 -3,-3.7 z m 23,1.9 c 0.7,0 1.3,0 2,0 0.7,0 1.3,0 2,0 v 6 c -0.7,0 -1.3,0 -2,0 -0.7,0 -1.3,0 -2,0 z m 24,-4 c 1.1,-0.5 2.1,-1.2 3,-2 v 4 c 0,1.2 -1.1,2.5 -3,3.6 z"
+             id="path70" />
+        </g>
+      </g>
+    </g>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(100.381,237)"
+       id="text78">1 toss</text>
+    <rect
+       x="782.5"
+       y="188.5"
+       width="287"
+       height="143"
+       stroke="#000000"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect80" />
+    <rect
+       x="782.5"
+       y="188.5"
+       width="144"
+       height="143"
+       stroke="#000000"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="#d6dce5"
+       id="rect82" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="43px"
+       transform="translate(838.564,274)"
+       id="text84">H</text>
+    <rect
+       x="926.5"
+       y="188.5"
+       width="143"
+       height="143"
+       stroke="#000000"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="#d6dce5"
+       id="rect86" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="43px"
+       transform="translate(982.202,273)"
+       id="text88">T</text>
+    <g
+       clip-path="url(#clip4)"
+       id="g96">
+      <g
+         clip-path="url(#clip5)"
+         id="g94">
+        <g
+           clip-path="url(#clip6)"
+           id="g92">
+          <path
+             d="m 742.4,293.7 v -7.1 c 0,-4.8 -7.7,-8 -17,-9.3 v -5.7 c 0,-1.6 -0.9,-3.8 -5,-5.9 v -7.1 c 0,-6.5 -13.9,-10 -27,-10 -13.1,0 -27,3.5 -27,10 v 8 c 0,2.4 1.9,4.4 5,6 v 7 c 0,0 0,0 0,0.1 -4.1,2.1 -5,4.4 -5,5.9 v 8 c 0,6.5 13.9,10 27,10 v 4 c 0,6.5 13.9,10 27,10 13.1,0 27,-3.5 27,-10 v -8 c 0,-1.5 -0.9,-3.8 -5,-5.9 z m 3,6 c 0,3.8 -10.3,8 -25,8 -11.7,0 -20.6,-2.7 -23.8,-5.7 0,0 0,0 0,0 6.1,1.9 12.4,2.8 18.7,2.7 12.2,0 25.2,-3.1 26.8,-8.7 2.2,1.1 3.3,2.4 3.3,3.7 z m -17,9.5 v 6 c -1.3,0.1 -2.6,0.3 -4,0.3 v -6 c 1.4,0 2.7,-0.1 4,-0.3 z m 2,-0.2 c 1.4,-0.2 2.7,-0.4 4,-0.7 v 5.9 c -1.2,0.3 -2.6,0.5 -4,0.7 z m 6,-1.2 c 1.4,-0.3 2.7,-0.8 4,-1.3 v 5.8 c -1.3,0.6 -2.6,1 -4,1.4 z m -32,5.9 c -1.4,-0.4 -2.7,-0.8 -4,-1.4 v -5.8 c 1.3,0.5 2.6,0.9 4,1.3 z m 2,-5.4 c 1.3,0.3 2.6,0.5 4,0.7 v 6 c -1.4,-0.2 -2.8,-0.5 -4,-0.7 z m 6,0.9 c 1.3,0.1 2.7,0.3 4,0.3 v 6 c -1.4,-0.1 -2.7,-0.2 -4,-0.3 z m -24,-22.5 v 0.3 c -1.4,-0.2 -2.8,-0.5 -4,-0.7 v -5.9 c 1.3,0.3 2.6,0.5 4,0.7 z m 2,8 v -4 c 0.9,0.8 1.9,1.5 3,2 v 5.7 c -1.9,-1.3 -3,-2.5 -3,-3.7 z m 50,0 c 0,1.2 -1.1,2.5 -3,3.6 v -5.7 c 1.1,-0.5 2.1,-1.2 3,-2 z m -5,4.6 c -1.3,0.6 -2.6,1 -4,1.4 v -5.9 c 1.4,-0.3 2.7,-0.8 4,-1.3 z m -6,1.9 c -1.2,0.3 -2.6,0.5 -4,0.7 v -6 c 1.4,-0.2 2.7,-0.4 4,-0.7 z m -6,1 c -1.3,0.1 -2.6,0.3 -4,0.3 v -6 c 1.3,-0.1 2.7,-0.2 4,-0.3 z m -6,0.4 c -0.7,0 -1.3,0 -2,0 -0.7,0 -1.3,0 -2,0 v -6 c 0.7,0 1.3,0 2,0 0.7,0 1.3,0 2,0 z m -6,0 c -1.4,-0.1 -2.7,-0.2 -4,-0.3 v -6 c 1.3,0.1 2.7,0.3 4,0.3 z m -6,-0.6 c -1.4,-0.2 -2.8,-0.5 -4,-0.7 v -5.9 c 1.3,0.3 2.6,0.5 4,0.7 z m -6,-1.3 c -1.4,-0.4 -2.7,-0.8 -4,-1.4 v -5.8 c 1.3,0.5 2.6,0.9 4,1.3 z m 41,-14 c 0,3.8 -10.3,8 -25,8 -14.7,0 -25,-4.2 -25,-8 0,-3.8 10.3,-8 25,-8 14.7,0 25,4.2 25,8 z m -50,-4 v -1.5 c 0.6,0.1 1.2,0.1 1.8,0.2 -0.6,0.4 -1.2,0.8 -1.8,1.3 z m 31.3,-5.8 c 0.6,-0.4 1.2,-0.8 1.8,-1.3 v 1.5 c -0.7,-0.1 -1.2,-0.1 -1.8,-0.2 z m -1.5,-9 c 2.1,1.2 3.2,2.5 3.2,3.7 0,1.7 -2.2,3.6 -5.9,5 -0.7,0 -1.4,0 -2.1,0 -7,0 -14.3,1 -19.5,3 -10.5,-0.3 -18.3,-2.8 -21.2,-5.6 0,0 0,0 0,0 6.1,1.9 12.4,2.8 18.7,2.7 12.2,0 25.2,-3.1 26.8,-8.8 z m -37.8,11.9 v 5.9 c -1.4,-0.4 -2.7,-0.8 -4,-1.4 v -5.8 c 1.3,0.5 2.7,1 4,1.3 z m -6,-2.2 v 5.7 c -1.9,-1.2 -3,-2.4 -3,-3.6 v -4 c 0.9,0.7 1.9,1.4 3,1.9 z m -3,-6.3 v -5.8 c 1.3,0.5 2.6,0.9 4,1.3 v 5.9 c -1.3,-0.4 -2.7,-0.8 -4,-1.4 z m 6,1.9 v -5.9 c 1.3,0.3 2.6,0.5 4,0.7 v 6 c -1.4,-0.2 -2.7,-0.5 -4,-0.8 z m 6,1 v -6 c 1.3,0.1 2.7,0.3 4,0.3 v 6 c -1.4,0 -2.7,-0.1 -4,-0.3 z m 6,0.4 v -6 c 0.7,0 1.3,0 2,0 0.7,0 1.3,0 2,0 v 6 c -0.7,0 -1.3,0 -2,0 -0.7,0 -1.3,0.1 -2,0 z m 6,0 v -6 c 1.3,-0.1 2.7,-0.2 4,-0.3 v 6 c -1.3,0.1 -2.6,0.2 -4,0.3 z m 6,-0.6 v -6 c 1.4,-0.2 2.7,-0.4 4,-0.7 v 5.9 c -1.2,0.3 -2.6,0.6 -4,0.8 z m 6,-1.3 v -5.9 c 1.4,-0.3 2.7,-0.8 4,-1.3 v 5.8 c -1.3,0.6 -2.6,1 -4,1.4 z m 6,-2.4 v -5.7 c 1.1,-0.5 2.1,-1.2 3,-2 v 4 c 0,1.3 -1,2.5 -3,3.7 z m -44,0 c -1.9,-1.2 -3,-2.4 -3,-3.6 v -4 c 0.9,0.8 1.9,1.5 3,2 z m -3,-11.6 c 0,-3.8 10.3,-8 25,-8 14.7,0 25,4.2 25,8 0,3.8 -10.3,8 -25,8 -14.7,0 -25,-4.3 -25,-8 z m 3.5,23 c 1.8,3.7 8.6,6.1 16.5,7.2 v 4.5 c -12,-0.8 -20,-4.5 -20,-7.8 0,-1.3 1.3,-2.6 3.5,-3.9 z m -0.5,15.6 c -1.9,-1.2 -3,-2.4 -3,-3.6 v -4 c 0.9,0.8 1.9,1.5 3,2 z m 6,2.4 c -1.4,-0.4 -2.7,-0.8 -4,-1.4 v -5.8 c 1.3,0.5 2.6,0.9 4,1.3 z m 6,1.3 c -1.4,-0.2 -2.8,-0.5 -4,-0.7 v -5.9 c 1.3,0.3 2.6,0.5 4,0.7 z m 2,-5.8 c 1,0.1 2,0.2 3.1,0.3 0.1,0.7 0.5,1.4 0.9,2.1 v 4 c -1.4,-0.1 -2.7,-0.2 -4,-0.3 z m 6,4.2 c 0.6,0.4 1.3,0.8 2,1.2 v 1 c -0.7,0 -1.3,0 -2,0 z m 4,8.3 v -4 c 0.9,0.8 1.9,1.5 3,2 v 5.7 c -1.9,-1.3 -3,-2.5 -3,-3.7 z m 23,1.9 c 0.7,0 1.3,0 2,0 0.7,0 1.3,0 2,0 v 6 c -0.7,0 -1.3,0 -2,0 -0.7,0 -1.3,0 -2,0 z m 24,-4 c 1.1,-0.5 2.1,-1.2 3,-2 v 4 c 0,1.2 -1.1,2.5 -3,3.6 z"
+             id="path90" />
+        </g>
+      </g>
+    </g>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(667.373,237)"
+       id="text98">1 toss</text>
+    <rect
+       x="782.5"
+       y="362.5"
+       width="287"
+       height="142"
+       stroke="#000000"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect100" />
+    <rect
+       x="782.5"
+       y="362.5"
+       width="144"
+       height="142"
+       stroke="#000000"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="#d6dce5"
+       id="rect102" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="43px"
+       transform="translate(838.564,447)"
+       id="text104">H</text>
+    <rect
+       x="926.5"
+       y="361.5"
+       width="143"
+       height="143"
+       stroke="#000000"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="#d6dce5"
+       id="rect106" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="43px"
+       transform="translate(982.202,447)"
+       id="text108">T</text>
+    <g
+       clip-path="url(#clip7)"
+       id="g116">
+      <g
+         clip-path="url(#clip8)"
+         id="g114">
+        <g
+           clip-path="url(#clip9)"
+           id="g112">
+          <path
+             d="m 742.4,466.7 v -7.1 c 0,-4.8 -7.7,-8 -17,-9.3 v -5.7 c 0,-1.6 -0.9,-3.8 -5,-5.9 v -7.1 c 0,-6.5 -13.9,-10 -27,-10 -13.1,0 -27,3.5 -27,10 v 8 c 0,2.4 1.9,4.4 5,6 v 7 c 0,0 0,0 0,0.1 -4.1,2.1 -5,4.4 -5,5.9 v 8 c 0,6.5 13.9,10 27,10 v 4 c 0,6.5 13.9,10 27,10 13.1,0 27,-3.5 27,-10 v -8 c 0,-1.5 -0.9,-3.8 -5,-5.9 z m 3,6 c 0,3.8 -10.3,8 -25,8 -11.7,0 -20.6,-2.7 -23.8,-5.7 0,0 0,0 0,0 6.1,1.9 12.4,2.8 18.7,2.7 12.2,0 25.2,-3.1 26.8,-8.7 2.2,1.1 3.3,2.4 3.3,3.7 z m -17,9.5 v 6 c -1.3,0.1 -2.6,0.3 -4,0.3 v -6 c 1.4,0 2.7,-0.1 4,-0.3 z m 2,-0.2 c 1.4,-0.2 2.7,-0.4 4,-0.7 v 5.9 c -1.2,0.3 -2.6,0.5 -4,0.7 z m 6,-1.2 c 1.4,-0.3 2.7,-0.8 4,-1.3 v 5.8 c -1.3,0.6 -2.6,1 -4,1.4 z m -32,5.9 c -1.4,-0.4 -2.7,-0.8 -4,-1.4 v -5.8 c 1.3,0.5 2.6,0.9 4,1.3 z m 2,-5.4 c 1.3,0.3 2.6,0.5 4,0.7 v 6 c -1.4,-0.2 -2.8,-0.5 -4,-0.7 z m 6,0.9 c 1.3,0.1 2.7,0.3 4,0.3 v 6 c -1.4,-0.1 -2.7,-0.2 -4,-0.3 z m -24,-22.5 v 0.3 c -1.4,-0.2 -2.8,-0.5 -4,-0.7 v -5.9 c 1.3,0.3 2.6,0.5 4,0.7 z m 2,8 v -4 c 0.9,0.8 1.9,1.5 3,2 v 5.7 c -1.9,-1.3 -3,-2.5 -3,-3.7 z m 50,0 c 0,1.2 -1.1,2.5 -3,3.6 v -5.7 c 1.1,-0.5 2.1,-1.2 3,-2 z m -5,4.6 c -1.3,0.6 -2.6,1 -4,1.4 v -5.9 c 1.4,-0.3 2.7,-0.8 4,-1.3 z m -6,1.9 c -1.2,0.3 -2.6,0.5 -4,0.7 v -6 c 1.4,-0.2 2.7,-0.4 4,-0.7 z m -6,1 c -1.3,0.1 -2.6,0.3 -4,0.3 v -6 c 1.3,-0.1 2.7,-0.2 4,-0.3 z m -6,0.4 c -0.7,0 -1.3,0 -2,0 -0.7,0 -1.3,0 -2,0 v -6 c 0.7,0 1.3,0 2,0 0.7,0 1.3,0 2,0 z m -6,0 c -1.4,-0.1 -2.7,-0.2 -4,-0.3 v -6 c 1.3,0.1 2.7,0.3 4,0.3 z m -6,-0.6 c -1.4,-0.2 -2.8,-0.5 -4,-0.7 v -5.9 c 1.3,0.3 2.6,0.5 4,0.7 z m -6,-1.3 c -1.4,-0.4 -2.7,-0.8 -4,-1.4 v -5.8 c 1.3,0.5 2.6,0.9 4,1.3 z m 41,-14 c 0,3.8 -10.3,8 -25,8 -14.7,0 -25,-4.2 -25,-8 0,-3.8 10.3,-8 25,-8 14.7,0 25,4.2 25,8 z m -50,-4 v -1.5 c 0.6,0.1 1.2,0.1 1.8,0.2 -0.6,0.4 -1.2,0.8 -1.8,1.3 z m 31.3,-5.8 c 0.6,-0.4 1.2,-0.8 1.8,-1.3 v 1.5 c -0.7,-0.1 -1.2,-0.1 -1.8,-0.2 z m -1.5,-9 c 2.1,1.2 3.2,2.5 3.2,3.7 0,1.7 -2.2,3.6 -5.9,5 -0.7,0 -1.4,0 -2.1,0 -7,0 -14.3,1 -19.5,3 -10.5,-0.3 -18.3,-2.8 -21.2,-5.6 0,0 0,0 0,0 6.1,1.9 12.4,2.8 18.7,2.7 12.2,0 25.2,-3.1 26.8,-8.8 z m -37.8,11.9 v 5.9 c -1.4,-0.4 -2.7,-0.8 -4,-1.4 v -5.8 c 1.3,0.5 2.7,1 4,1.3 z m -6,-2.2 v 5.7 c -1.9,-1.2 -3,-2.4 -3,-3.6 v -4 c 0.9,0.7 1.9,1.4 3,1.9 z m -3,-6.3 v -5.8 c 1.3,0.5 2.6,0.9 4,1.3 v 5.9 c -1.3,-0.4 -2.7,-0.8 -4,-1.4 z m 6,1.9 v -5.9 c 1.3,0.3 2.6,0.5 4,0.7 v 6 c -1.4,-0.2 -2.7,-0.5 -4,-0.8 z m 6,1 v -6 c 1.3,0.1 2.7,0.3 4,0.3 v 6 c -1.4,0 -2.7,-0.1 -4,-0.3 z m 6,0.4 v -6 c 0.7,0 1.3,0 2,0 0.7,0 1.3,0 2,0 v 6 c -0.7,0 -1.3,0 -2,0 -0.7,0 -1.3,0.1 -2,0 z m 6,0 v -6 c 1.3,-0.1 2.7,-0.2 4,-0.3 v 6 c -1.3,0.1 -2.6,0.2 -4,0.3 z m 6,-0.6 v -6 c 1.4,-0.2 2.7,-0.4 4,-0.7 v 5.9 c -1.2,0.3 -2.6,0.6 -4,0.8 z m 6,-1.3 v -5.9 c 1.4,-0.3 2.7,-0.8 4,-1.3 v 5.8 c -1.3,0.6 -2.6,1 -4,1.4 z m 6,-2.4 v -5.7 c 1.1,-0.5 2.1,-1.2 3,-2 v 4 c 0,1.3 -1,2.5 -3,3.7 z m -44,0 c -1.9,-1.2 -3,-2.4 -3,-3.6 v -4 c 0.9,0.8 1.9,1.5 3,2 z m -3,-11.6 c 0,-3.8 10.3,-8 25,-8 14.7,0 25,4.2 25,8 0,3.8 -10.3,8 -25,8 -14.7,0 -25,-4.3 -25,-8 z m 3.5,23 c 1.8,3.7 8.6,6.1 16.5,7.2 v 4.5 c -12,-0.8 -20,-4.5 -20,-7.8 0,-1.3 1.3,-2.6 3.5,-3.9 z m -0.5,15.6 c -1.9,-1.2 -3,-2.4 -3,-3.6 v -4 c 0.9,0.8 1.9,1.5 3,2 z m 6,2.4 c -1.4,-0.4 -2.7,-0.8 -4,-1.4 v -5.8 c 1.3,0.5 2.6,0.9 4,1.3 z m 6,1.3 c -1.4,-0.2 -2.8,-0.5 -4,-0.7 v -5.9 c 1.3,0.3 2.6,0.5 4,0.7 z m 2,-5.8 c 1,0.1 2,0.2 3.1,0.3 0.1,0.7 0.5,1.4 0.9,2.1 v 4 c -1.4,-0.1 -2.7,-0.2 -4,-0.3 z m 6,4.2 c 0.6,0.4 1.3,0.8 2,1.2 v 1 c -0.7,0 -1.3,0 -2,0 z m 4,8.3 v -4 c 0.9,0.8 1.9,1.5 3,2 v 5.7 c -1.9,-1.3 -3,-2.5 -3,-3.7 z m 23,1.9 c 0.7,0 1.3,0 2,0 0.7,0 1.3,0 2,0 v 6 c -0.7,0 -1.3,0 -2,0 -0.7,0 -1.3,0 -2,0 z m 24,-4 c 1.1,-0.5 2.1,-1.2 3,-2 v 4 c 0,1.2 -1.1,2.5 -3,3.6 z"
+             id="path110" />
+        </g>
+      </g>
+    </g>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(667.373,411)"
+       id="text118">1 toss</text>
+    <path
+       d="m 229,171 h 260.276 v 3 H 229 Z m 1.5,9 -15,-7.5 15,-7.5 z m 257.276,-15 15,7.5 -15,7.5 z"
+       fill="#fbe5d6"
+       id="path120" />
+    <path
+       d="m 1090,201 v 289.729 h -3 V 201 Z m -9,1.5 7.5,-15 7.5,15 z m 15,286.729 -7.5,15 -7.5,-15 z"
+       fill="#fbe5d6"
+       id="path122" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(711.583,555)"
+       id="text184">P<tspan
+   font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+   font-size="25px"
+   x="19.3333"
+   y="8"
+   id="tspan124">𝜋</tspan><tspan
+   font-size="37px"
+   x="34.966702"
+   y="0"
+   id="tspan126">(</tspan><tspan
+   font-size="37px"
+   x="46.299999"
+   y="0"
+   id="tspan128">H</tspan><tspan
+   font-size="25px"
+   x="69.6334"
+   y="8"
+   id="tspan130">1</tspan><tspan
+   font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+   font-size="37px"
+   x="90.800003"
+   y="0"
+   id="tspan132">∩</tspan><tspan
+   font-size="37px"
+   x="124.8"
+   y="0"
+   id="tspan134">H</tspan><tspan
+   font-size="25px"
+   x="148.133"
+   y="8"
+   id="tspan136">2</tspan><tspan
+   font-size="37px"
+   x="160.8"
+   y="0"
+   id="tspan138">)</tspan><tspan
+   font-size="37px"
+   x="180.633"
+   y="0"
+   id="tspan140">= P</tspan><tspan
+   font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+   font-size="25px"
+   x="227.133"
+   y="8"
+   id="tspan142">𝜋</tspan><tspan
+   font-size="37px"
+   x="242.767"
+   y="0"
+   id="tspan144">(</tspan><tspan
+   font-size="37px"
+   x="254.10001"
+   y="0"
+   id="tspan146">H</tspan><tspan
+   font-size="25px"
+   x="277.43301"
+   y="8"
+   id="tspan148">1</tspan><tspan
+   font-size="37px"
+   x="290.10001"
+   y="0"
+   id="tspan150">) x</tspan><tspan
+   font-size="37px"
+   x="334.60001"
+   y="0"
+   id="tspan152">P</tspan><tspan
+   font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+   font-size="25px"
+   x="353.93301"
+   y="8"
+   id="tspan154">𝜋</tspan><tspan
+   font-size="37px"
+   x="369.56699"
+   y="0"
+   id="tspan156">(</tspan><tspan
+   font-size="37px"
+   x="380.89999"
+   y="0"
+   id="tspan158">H</tspan><tspan
+   font-size="25px"
+   x="404.233"
+   y="8"
+   id="tspan160">2</tspan><tspan
+   font-size="37px"
+   x="416.89999"
+   y="0"
+   id="tspan162">)</tspan><tspan
+   font-size="37px"
+   x="0"
+   y="60"
+   id="tspan164">P</tspan><tspan
+   font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+   font-size="25px"
+   x="19.3333"
+   y="68"
+   id="tspan166">𝜋</tspan><tspan
+   font-size="37px"
+   x="34.966702"
+   y="60"
+   id="tspan168">(H</tspan><tspan
+   font-size="25px"
+   x="69.6334"
+   y="68"
+   id="tspan170">1</tspan><tspan
+   font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+   font-size="37px"
+   x="90.800003"
+   y="60"
+   id="tspan172">∩</tspan><tspan
+   font-size="37px"
+   x="124.8"
+   y="60"
+   id="tspan174">H</tspan><tspan
+   font-size="25px"
+   x="148.133"
+   y="68"
+   id="tspan176">2</tspan><tspan
+   font-size="37px"
+   x="160.8"
+   y="60"
+   id="tspan178">) =</tspan><tspan
+   font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+   font-size="27px"
+   x="207.8"
+   y="38"
+   id="tspan180">1</tspan><tspan
+   font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+   font-size="27px"
+   x="207.8"
+   y="79"
+   id="tspan182">2</tspan></text>
+    <path
+       d="m 919.583,603.09 h 16 v 2 h -16 z"
+       fill-rule="evenodd"
+       id="path186" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(943.716,615)"
+       id="text192">x <tspan
+   font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+   font-size="27px"
+   x="24.666599"
+   y="-22"
+   id="tspan188">1</tspan><tspan
+   font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+   font-size="27px"
+   x="24.666599"
+   y="19"
+   id="tspan190">2</tspan></text>
+    <path
+       d="m 968.583,603.09 h 16 v 2 h -16 z"
+       fill-rule="evenodd"
+       id="path194" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(992.716,615)"
+       id="text200">= <tspan
+   font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+   font-size="27px"
+   x="27.166599"
+   y="-22"
+   id="tspan196">1</tspan><tspan
+   font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+   font-size="27px"
+   x="27.166599"
+   y="19"
+   id="tspan198">4</tspan></text>
+    <path
+       d="m 1019.58,603.09 h 16 v 2 h -16 z"
+       fill-rule="evenodd"
+       id="path202" />
+  </g>
+</svg>
