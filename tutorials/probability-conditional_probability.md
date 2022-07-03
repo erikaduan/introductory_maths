@@ -10,23 +10,25 @@ Erika Duan
 # Independent events
 
 We previously learnt that two events can have overlapping elements or be
-mutually exclusive (also known as being disjointed). An example of two
-events being mutually exclusive is the observation that a coin can only
-land on either heads or tails when tossed. Mutual exclusivity therefore
-refers to the observation that only one or another distinct event is
-possible in a single outcome, which is different to the concept of
-independence.
+mutually exclusive (also known as being disjointed).
+
+An example of two events being mutually exclusive is the observation
+that a coin can only land on either heads or tails when tossed. Mutual
+exclusivity therefore refers to the observation that only one or another
+distinct event is possible in a single outcome, which is different to
+the concept of independence.
 
 When events are independent of each other, we refer to the observation
 that two or more events have occurred, where the occurrence of one event
-does not affect the occurrence of another event (also described as where
+does not impact the occurrence of another event (also described as where
 the probability of one event occurring does not change the probability
-of another event occurring). An example of independence is the real
-world knowledge that the outcome of two coin tosses are independent of
-each other. The observation that the first coin lands on heads does not
-increase the probability of the second coin also landing on heads,
-because each coin toss has a set probability of landing on either heads
-or tails.
+of another event occurring).
+
+An example of independence is the real world knowledge that the outcome
+of two coin tosses are independent of each other. The observation that
+the first coin lands on heads does not increase the probability of the
+second coin also landing on heads, because each coin toss has a set
+probability of landing on either heads or tails.
 
 <img src="../figures/probability-conditional_probability-independence.svg" width="70%" style="display: block; margin: auto;" />
 
@@ -38,6 +40,17 @@ denoted as
 ![P(rain\|cloudy)](https://latex.codecogs.com/svg.format?P%28rain%7Ccloudy%29 "P(rain|cloudy)")
 or
 ![P(rain\|sunny)](https://latex.codecogs.com/svg.format?P%28rain%7Csunny%29 "P(rain|sunny)").
+We instinctively understand that we are interested in predicting the
+probability of rain when we have observed that it is either cloudy or
+sunny and that these two probabilities may be very different
+i.e. ![P(rain\|cloudy) \> P(rain\|sunny)](https://latex.codecogs.com/svg.format?P%28rain%7Ccloudy%29%20%3E%20P%28rain%7Csunny%29 "P(rain|cloudy) > P(rain|sunny)").
+
+This example illustrates the two properties of conditional
+probabilities:
+
+-   It describes the probability of event A occurring.  
+-   It is known that event B has occurred and the occurrence of event B
+    impacts the probability of event A occurring.
 
 # Acknowledgements
 
