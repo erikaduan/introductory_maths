@@ -1,17 +1,10 @@
-# Introductory mathematics in R and Python
+# Introductory mathematics in R, Python and Julia
 
-This repository contains tutorials on the introductory mathematical concepts required for studying statistics and machine learning.
-
-## Aim
-
-The **primary aim** of this repository is to help data scientists to revise the mathematical concepts required for understanding machine learning and statistics.
-
-This repository also has a **secondary aim** of promoting code agnostic practices, by highlighting how the same functions can be performed in both R and Python using the R `reticulate` package.
+This repository contains tutorials on the introductory mathematical concepts required for studying statistics and machine learning. Mathematical calculations are demonstrated in R, Python and Julia programming languages. 
 
 ![](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/figures/repo_logo.jpg)
 
 ## Tutorials
-
 
 |Topics|Tutorials|
 |:-----|:--------|
@@ -36,6 +29,13 @@ This repository also has a **secondary aim** of promoting code agnostic practice
 
 + [Erika Duan](https://github.com/erikaduan/)
 + [Chuanxin Liu](https://github.com/codetrainee)
+
+## Project setup   
+This project was created using the following setup:  
++ Visual Studio Code packages extensions for [Quarto](https://marketplace.visualstudio.com/items?itemName=quarto.quarto), (Python)[https://marketplace.visualstudio.com/items?itemName=ms-python.python], [R](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r) and [Julia](https://marketplace.visualstudio.com/items?itemName=julialang.language-julia).    
++ R package dependencies are managed using `renv` for `R version 4.1.2 (2021-11-01)`. To use R in Visual Studio Code, `install.packages("languageserver")` must also be run in R.  
++ Python virtual environment and package dependencies are managed using `poetry` for `Python 3.9.6`.    
++ Julia package dependencies are managed using `Pkg` for `julia version 1.7.3`.    
 
 ## References
 
