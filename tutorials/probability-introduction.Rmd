@@ -4,12 +4,9 @@ author: Erika Duan
 date: "`r Sys.Date()`"
 output:
   github_document:
-    html_preview: FALSE
+    html_preview: TRUE
     toc: true
     toc_depth: 2
-    math_method:
-      engine: webtex
-      url: https://latex.codecogs.com/svg.format?
 ---  
 
 ```{r setup, include=FALSE}
@@ -24,8 +21,7 @@ if (!require("pacman")) install.packages("pacman")
 p_load(reticulate,
        knitr)
 
-# Load Anaconda environment with Python 3.9 ------------------------------------
-use_condaenv("python_3_9")
+reticulate::py_config()
 ```
 
 

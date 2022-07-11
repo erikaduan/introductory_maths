@@ -1,6 +1,7 @@
-# Introductory mathematics in R, Python and Julia
+# Introductory mathematics in R and Python  
 
-This repository contains tutorials on the introductory mathematical concepts required for studying statistics and machine learning. Mathematical calculations are demonstrated in R, Python and Julia programming languages. 
+This repository contains tutorials on the introductory mathematical concepts required for studying statistics and machine learning.  
+Mathematical calculations are executed in both R and Python.   
 
 ![](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/figures/repo_logo.jpg)
 
@@ -8,11 +9,11 @@ This repository contains tutorials on the introductory mathematical concepts req
 
 |Topics|Tutorials|
 |:-----|:--------|
-|:1234:|[Introduction to numbers](https://github.com/erikaduan/maths_in_r_and_python/blob/master/tutorials/numbers-introduction_to_numbers.md)|
+|:1234:|[Introduction to numbers](https://github.com/erikaduan/maths_in_r_and_python/blob/master/tutorials/numbers-introduction.md)|
 |:1234:|Introduction to algebra|
 |:1234:|Exponents and logarithms|
 |:1234:|Logarithms and information theory|
-|:black_joker:|[Introduction to probability theory](https://github.com/erikaduan/maths_in_r_and_python/blob/master/tutorials/probability-introduction_to_probability.md)|
+|:black_joker:|[Introduction to probability theory](https://github.com/erikaduan/maths_in_r_and_python/blob/master/tutorials/probability-introduction.md)|
 |:black_joker:|[Conditional probability](https://github.com/erikaduan/maths_in_r_and_python/blob/master/tutorials/probability-conditional_probability.md)|
 |:black_joker:|Bayes theorem|
 |:cookie:|Introduction to summations|
@@ -31,11 +32,9 @@ This repository contains tutorials on the introductory mathematical concepts req
 + [Chuanxin Liu](https://github.com/codetrainee)
 
 ## Project setup   
-This project was created using the following setup:  
-+ Visual Studio Code packages extensions for [Quarto](https://marketplace.visualstudio.com/items?itemName=quarto.quarto), (Python)[https://marketplace.visualstudio.com/items?itemName=ms-python.python], [R](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r) and [Julia](https://marketplace.visualstudio.com/items?itemName=julialang.language-julia).    
-+ R package dependencies are managed using `renv` for `R version 4.1.2 (2021-11-01)`. To use R in Visual Studio Code, `install.packages("languageserver")` must also be run in R.  
-+ Python virtual environment and package dependencies are managed using `poetry` for `Python 3.9.6`.    
-+ Julia package dependencies are managed using `Pkg` for `julia version 1.7.3`.    
+This project was created using the following setup:    
++ R package dependencies are managed using `renv` for `R version 4.1.2 (2021-11-01)`.    
++ Python virtual environment and package dependencies are managed using `poetry` for `Python 3.9.6`.     
 
 ## References
 
