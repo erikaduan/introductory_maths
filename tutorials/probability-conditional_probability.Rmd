@@ -27,8 +27,8 @@ p_load(tidyverse,
        reticulate,
        knitr)
 
-# Load Anaconda environment with Python 3.9 ------------------------------------
-use_condaenv("python_3_9")
+# Check version of Python used by reticulate -----------------------------------
+reticulate::py_config()
 ```
 
 
