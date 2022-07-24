@@ -11,6 +11,10 @@ Erika Duan
     -   [Complex numbers](#complex-numbers)
 -   [Resources](#resources)
 
+<style>
+div.blue { background-color:#FFFFDC; border-radius: 5px; padding: 20px;}
+</style>
+
 # Numbers
 
 Numbers are used to:  
@@ -42,10 +46,13 @@ i.e. ![n = \\tfrac{n}{1}](https://latex.codecogs.com/svg.format?n%20%3D%20%5Ctf
 All rational numbers are complex numbers
 i.e. ![\\tfrac{n}{1} = \\tfrac{n+1}{1}+i^2](https://latex.codecogs.com/svg.format?%5Ctfrac%7Bn%7D%7B1%7D%20%3D%20%5Ctfrac%7Bn%2B1%7D%7B1%7D%2Bi%5E2 "\tfrac{n}{1} = \tfrac{n+1}{1}+i^2").
 
-> **Note**  
-> Can you think of different ways to describe the number 2 compared to
-> the number
-> ![\\tfrac{3}{2}](https://latex.codecogs.com/svg.format?%5Ctfrac%7B3%7D%7B2%7D "\tfrac{3}{2}")?
+<div class="blue">
+
+:lightbulb: Can you think of different ways to describe the number 2
+compared to the number
+![\\tfrac{3}{2}](https://latex.codecogs.com/svg.format?%5Ctfrac%7B3%7D%7B2%7D "\tfrac{3}{2}")?
+
+</div>
 
 # Natural numbers
 

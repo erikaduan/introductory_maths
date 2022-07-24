@@ -55,9 +55,7 @@ Numbers can be classified into different categories according to their propertie
 
 Number classifications have an elegant hierarchical property. All natural numbers are integers. All integers are rational numbers i.e. $n = \tfrac{n}{1}$. All rational numbers are complex numbers i.e. $\tfrac{n}{1} = \tfrac{n+1}{1}+i^2$.      
 
-
-> **Note**  
-> Can you think of different ways to describe the number 2 compared to the number $\tfrac{3}{2}$?    
+> :lightbulb: Can you think of different ways to describe the number 2 compared to the number 
 
 
 # Natural numbers  
