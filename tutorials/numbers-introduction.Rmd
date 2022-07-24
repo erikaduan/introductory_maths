@@ -13,11 +13,17 @@ output:
 
 ```{r setup, include=FALSE}
 # Set up global environment configuration --------------------------------------
-knitr::opts_chunk$set(echo=TRUE, results='hide', fig.align='center')
+knitr::opts_chunk$set(echo=TRUE,
+                      results='hide',
+                      fig.show='hold',
+                      fig.align='center',
+                      message=FALSE,
+                      warning=FALSE)
+
 knitr::knit_engines$set(python = reticulate::eng_python)
 ```
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
+```{r, echo=FALSE}
 # Install R packages -----------------------------------------------------------
 # The native pipe operator requires R version 4.1+ 
 packages <- c("ggplot2",
@@ -55,18 +61,56 @@ Numbers can be classified into different categories according to their propertie
 
 Number classifications have an elegant hierarchical property. All natural numbers are integers. All integers are rational numbers i.e. $n = \tfrac{n}{1}$. All rational numbers are complex numbers i.e. $\tfrac{n}{1} = \tfrac{n+1}{1}+i^2$.      
 
-> :lightbulb: Can you think of different ways to describe the number 2 compared to the number 
+```{r, echo=FALSE, results='markup', out.width="90%"}
+knitr::include_graphics("../figures/numbers-categories.svg")
+```
+
+> **Note**  
+> Can you think of different ways to classify the number 2 compared to the number $\tfrac{5}{2}$?     
 
 
 # Natural numbers  
 
-Natural numbers   
+Natural numbers ($\mathbb{N}$) are useful for describing the dimensions of a [feature space](https://stats.stackexchange.com/questions/46425/what-is-feature-space). For example, the Cartesian plane is an example of an $\mathbb{R}^2$ feature space where $\mathbb{N} = 2$.          
 
-## Rational versus irrational numbers  
 
-## Real numbers  
+# Real numbers  
 
-## Complex numbers  
+Real numbers are useful for describing the domain of a function, which comprises all possible values of $x$ from $f(x)$. For example, when $f(x) = \sqrt{3-x}$, the domain of $f(x)$ is $D: \; (-\infty, 3]$ or $D: \; \{x| \; x\leq 3\}$.   
+
+```{r, results='hold', out.width="70%"}
+# Plot the domain of f(x) = sqrt(3-x) ------------------------------------------
+set.seed(111)
+
+ggplot(data.frame(x = runif(1000, -3, 3)), aes(x)) +
+  geom_function(fun = ~ sqrt(3-(.x))) +
+  geom_vline(xintercept = 3, colour = "firebrick", linetype = "dotted") + 
+  xlim(-4, 4) + 
+  ylim(-2, 4) + 
+  labs(title = "f(x) = sqrt(3-x)") +  
+  theme_minimal() + 
+  theme(panel.border = element_rect(fill = NA),
+        panel.grid.minor = element_blank(),
+        panel.grid.major = element_line(linetype = "dotted")) +
+  annotate("text", x = 2.2, y = 3.6, label = "D: (-infinity, 3]")
+```
+
+
+# Complex numbers  
+
+Complex numbers ($a+bi$) are represented by two components which cannot be further simplified:   
++ The term $a$ represents a real number.   
++ The term $bi$ represents the product of a real number and an imaginary number, where $i^2=-1$.   
+
+Because the terms $a$ and $bi$ occupy completely different number plans (a real plane versus an imaginary plane), we can think of the combination of $a+bi$ as the sum of two vectors in 2D space.  
+
+Our 2D space is different to the Cartesian plane as the basis for a complex number $\mathbb{C}$ is $\{(1, 0), (0, i)\}$. However, the same principles of vector addition apply.   
+
+Complex numbers therefore allow us to think about the additive and multiplicative properties of vectors in $\mathbb{R}^2$.
+
+```{r, echo=FALSE, results='markup', out.width="90%"}
+knitr::include_graphics("../figures/numbers-complex.svg")
+```
 
 
 # Resources  
