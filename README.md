@@ -20,11 +20,12 @@ Mathematical calculations are executed in both R and Python.
 |:compass:|Introduction to trigonometry|
 |:compass:|Distance metrics|
 |:compass:|Cosine similarity|
+|:chopsticks:|[Introduction to linear systems](https://github.com/erikaduan/maths_in_r_and_python/blob/master/tutorials/linear_algebra-linear_systems.md)|  
 |:chopsticks:|Introduction to vectors|
 |:chopsticks:|Vector transformations|
 |:chopsticks:|Vector embeddings|
-|:department_store:|Introduction to matrices|
-|:roller_coaster:|Introduction to derivatives|
+|:department_store:|Introduction to matrices|  
+|:roller_coaster:|Introduction to derivatives|  
 
 ## Contributors
 

@@ -1,7 +1,7 @@
 Introduction to numbers
 ================
 Erika Duan
-2022-07-25
+2022-07-26
 
 -   [Numbers](#numbers)
 -   [Natural numbers](#natural-numbers)
@@ -59,10 +59,19 @@ feature space where
 
 # Real numbers
 
-Real numbers are sometimes useful for describing the domain or range of
-a function
-![f(x)](https://latex.codecogs.com/svg.format?f%28x%29 "f(x)"). The
-domain (D) represents all possible values that
+Real numbers are used to provide geometric intuition for how we envision
+the vector space.
+
+| Notation                                                                                                                                                                           | Dimension                               | Position in vector space |
+|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------|:-------------------------|
+| ![\\mathbb{R}^0](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5E0 "\mathbb{R}^0") or 1                                                                                   | a single point                          | a fixed number           |
+| ![\\mathbb{R}^1](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5E1 "\mathbb{R}^1") or ![\\mathbb{R}](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D "\mathbb{R}") | number line                             | a position along a line  |
+| ![\\mathbb{R}^2](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5E2 "\mathbb{R}^2")                                                                                        | Euclidean 2D plane i.e. Cartesian plane | 2 coordinates            |
+| ![\\mathbb{R}^3](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5E3 "\mathbb{R}^3")                                                                                        | Euclidean 3D space                      | 3 coordinates            |
+
+Real numbers can also be useful for describing the domain or range of a
+function ![f(x)](https://latex.codecogs.com/svg.format?f%28x%29 "f(x)").
+The domain (D) represents all possible values that
 ![x](https://latex.codecogs.com/svg.format?x "x") can take and the range
 (R) represents all possible values that
 ![f(x)](https://latex.codecogs.com/svg.format?f%28x%29 "f(x)") or
@@ -82,7 +91,7 @@ When
 ![R:\\,\\{y\\in\\mathbb{R}\\,\|\\,y\\geq0\\}](https://latex.codecogs.com/svg.format?R%3A%5C%2C%5C%7By%5Cin%5Cmathbb%7BR%7D%5C%2C%7C%5C%2Cy%5Cgeq0%5C%7D "R:\,\{y\in\mathbb{R}\,|\,y\geq0\}").
 
 ``` r
-# Plot the domain of f(x) = 3x^2 -----------------------------------------------
+# Plot the domain of f(x) = 3x^2 in R ------------------------------------------
 set.seed(111)
 
 ggplot(data.frame(x = runif(1000, -3, 3)), aes(x)) +
@@ -112,7 +121,7 @@ When
 ![R:\\,\\{y\\in\\mathbb{R}\\,\|\\,y\\geq0\\}](https://latex.codecogs.com/svg.format?R%3A%5C%2C%5C%7By%5Cin%5Cmathbb%7BR%7D%5C%2C%7C%5C%2Cy%5Cgeq0%5C%7D "R:\,\{y\in\mathbb{R}\,|\,y\geq0\}").
 
 ``` r
-# Plot the domain of f(x) = sqrt(3-x) ------------------------------------------
+# Plot the domain of f(x) = sqrt(3-x) in R -------------------------------------
 set.seed(111)
 
 ggplot(data.frame(x = runif(1000, -3, 3)), aes(x)) +
@@ -162,6 +171,13 @@ position in space by ![k](https://latex.codecogs.com/svg.format?k "k")
 times.
 
 <img src="../figures/numbers-complex.svg" width="90%" style="display: block; margin: auto;" />
+
+Note that complex number multiplication does not behave like vector
+multiplication as
+![i^2 = -1](https://latex.codecogs.com/svg.format?i%5E2%20%3D%20-1 "i^2 = -1")
+represents an additional relationship between the basis vectors
+![\\{(1, 0), (0, i)\\}](https://latex.codecogs.com/svg.format?%5C%7B%281%2C%200%29%2C%20%280%2C%20i%29%5C%7D "\{(1, 0), (0, i)\}")
+that would not exist for other 2D planes.
 
 # Resources
 

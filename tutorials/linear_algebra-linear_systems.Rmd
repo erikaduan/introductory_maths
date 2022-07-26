@@ -1,0 +1,66 @@
+---
+title: Linear systems     
+author: Erika Duan
+date: "`r Sys.Date()`"
+output:
+  github_document:
+    toc: true
+    toc_depth: 2
+    math_method:
+      engine: webtex
+      url: https://latex.codecogs.com/svg.format?
+---
+
+```{r setup, include=FALSE}
+# Set up global environment configuration --------------------------------------
+knitr::opts_chunk$set(echo=TRUE,
+                      results='hide',
+                      fig.show='hold',
+                      fig.align='center',
+                      message=FALSE,
+                      warning=FALSE)
+
+knitr::knit_engines$set(python = reticulate::eng_python)
+```
+
+```{r, echo=FALSE}
+# Install R packages -----------------------------------------------------------
+# The native pipe operator requires R version 4.1+ 
+packages <- c("ggplot2",
+              "dplyr",
+              "JuliaCall")
+
+installed_packages <- packages %in% rownames(installed.packages())
+
+if (any(installed_packages == FALSE)) {
+  install.packages(packages[!installed_packages])
+}
+
+# Attach R packages to the global environment
+library("dplyr")
+library("ggplot2")
+library("JuliaCall")
+
+# Check version of Python used by reticulate -----------------------------------
+reticulate::py_config()
+
+# Set up Julia for automatic type conversion -----------------------------------
+julia <- julia_setup()
+```
+
+
+# Linear systems    
+
+There is a fundamental relationship between equations and lines. Lines represent the vector subspace of all solutions found for a linear equation.       
+
+Depending on the dimension of the vector space, we can describe linear equations with some geometric intuition. For example, $3x_1 = 9$ is solved as $x_1 = 3$, where $x_1$ describes a point (a copy of $\mathbb{R}^0$ inside $\mathbb{R}^1$).  
+
+```{r, echo=FALSE, results='markup', out.width="90%"}
+knitr::include_graphics("../figures/numbers-categories.svg")
+```
+
+
+
+# Resources  
+
++ A great [Wikipedia](https://en.wikipedia.org/wiki/Number#Main_classification) explanation of the number system.     

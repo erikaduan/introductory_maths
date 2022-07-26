@@ -75,7 +75,16 @@ Natural numbers ($\mathbb{N}$) are useful for describing the dimensions of a [fe
 
 # Real numbers  
 
-Real numbers are sometimes useful for describing the domain or range of a function $f(x)$. The domain (D) represents all possible values that $x$ can take and the range (R) represents all possible values that $f(x)$ or $y$ can take.   
+Real numbers are used to provide geometric intuition for how we envision the vector space.  
+
+| Notation | Dimension | Position in vector space | 
+|:---------|:----------|:-------------------------|
+| $\mathbb{R}^0$ or 1 | a single point | a fixed number |  
+| $\mathbb{R}^1$ or $\mathbb{R}$ | number line | a position along a line |  
+| $\mathbb{R}^2$ | Euclidean 2D plane i.e. Cartesian plane | 2 coordinates |
+| $\mathbb{R}^3$ | Euclidean 3D space | 3 coordinates |   
+
+Real numbers can also be useful for describing the domain or range of a function $f(x)$. The domain (D) represents all possible values that $x$ can take and the range (R) represents all possible values that $f(x)$ or $y$ can take.   
 
 When $f(x)=3x^2$:   
 + The domain of $f(x)$ is $D:\,(-\infty,\infty)$.  
@@ -84,7 +93,7 @@ When $f(x)=3x^2$:
 + This can also be represented as $R:\,\{y\in\mathbb{R}\,|\,y\geq0\}$.     
 
 ```{r, results='hold', out.width="60%"}
-# Plot the domain of f(x) = 3x^2 -----------------------------------------------
+# Plot the domain of f(x) = 3x^2 in R ------------------------------------------
 set.seed(111)
 
 ggplot(data.frame(x = runif(1000, -3, 3)), aes(x)) +
@@ -105,7 +114,7 @@ When $f(x)=\sqrt{3-x}$:
 + This can also be represented as $R:\,\{y\in\mathbb{R}\,|\,y\geq0\}$.  
 
 ```{r, results='hold', out.width="60%"}
-# Plot the domain of f(x) = sqrt(3-x) ------------------------------------------
+# Plot the domain of f(x) = sqrt(3-x) in R -------------------------------------
 set.seed(111)
 
 ggplot(data.frame(x = runif(1000, -3, 3)), aes(x)) +
@@ -137,6 +146,8 @@ Complex numbers therefore allow us to think about the additive and scalar multip
 ```{r, echo=FALSE, results='markup', out.width="90%"}
 knitr::include_graphics("../figures/numbers-complex.svg")
 ```
+
+Note that complex number multiplication does not behave like vector multiplication as $i^2 = -1$ represents an additional relationship between the basis vectors $\{(1, 0), (0, i)\}$ that would not exist for other 2D planes.  
 
 
 # Resources  
