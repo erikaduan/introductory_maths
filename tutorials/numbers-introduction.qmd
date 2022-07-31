@@ -1,0 +1,22 @@
+---
+title: Numbers - introduction
+author: Erika Duan
+date: "`r Sys.Date()`"
+---  
+
+
+```{r}
+1 + 1 
+```
+
+Let's test github maths support via mathsjax $\sqrt{3x-1}+(1+x)^2$
+
+```{python}
+print("hello world")
+```
+
+# Acknowledgements  
+
+The source materials for this tutorial are:   
+
++ https://www.mathsisfun.com/combinatorics/combinations-permutations.html  

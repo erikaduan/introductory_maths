@@ -1,7 +1,7 @@
 Introduction to numbers
 ================
 Erika Duan
-2022-07-26
+2022-07-31
 
 -   [Numbers](#numbers)
 -   [Natural numbers](#natural-numbers)
@@ -62,12 +62,12 @@ feature space where
 Real numbers are used to provide geometric intuition for how we envision
 the vector space.
 
-| Notation                                                                                                                                                                           | Dimension                               | Position in vector space |
-|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------|:-------------------------|
-| ![\\mathbb{R}^0](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5E0 "\mathbb{R}^0") or 1                                                                                   | a single point                          | a fixed number           |
-| ![\\mathbb{R}^1](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5E1 "\mathbb{R}^1") or ![\\mathbb{R}](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D "\mathbb{R}") | number line                             | a position along a line  |
-| ![\\mathbb{R}^2](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5E2 "\mathbb{R}^2")                                                                                        | Euclidean 2D plane i.e. Cartesian plane | 2 coordinates            |
-| ![\\mathbb{R}^3](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5E3 "\mathbb{R}^3")                                                                                        | Euclidean 3D space                      | 3 coordinates            |
+| Notation                                                                                                                                                                           | Dimension                               | Position in vector space         |
+|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------|:---------------------------------|
+| ![\\mathbb{R}^0](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5E0 "\mathbb{R}^0") or 1                                                                                   | a single point                          | a fixed number                   |
+| ![\\mathbb{R}^1](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5E1 "\mathbb{R}^1") or ![\\mathbb{R}](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D "\mathbb{R}") | number line                             | a single coordinate along a line |
+| ![\\mathbb{R}^2](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5E2 "\mathbb{R}^2")                                                                                        | Euclidean 2D plane i.e. Cartesian plane | 2 coordinates                    |
+| ![\\mathbb{R}^3](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5E3 "\mathbb{R}^3")                                                                                        | Euclidean 3D space                      | 3 coordinates                    |
 
 Real numbers can also be useful for describing the domain or range of a
 function ![f(x)](https://latex.codecogs.com/svg.format?f%28x%29 "f(x)").
@@ -175,9 +175,9 @@ times.
 Note that complex number multiplication does not behave like vector
 multiplication as
 ![i^2 = -1](https://latex.codecogs.com/svg.format?i%5E2%20%3D%20-1 "i^2 = -1")
-represents an additional relationship between the basis vectors
+implies that the basis vectors
 ![\\{(1, 0), (0, i)\\}](https://latex.codecogs.com/svg.format?%5C%7B%281%2C%200%29%2C%20%280%2C%20i%29%5C%7D "\{(1, 0), (0, i)\}")
-that would not exist for other 2D planes.
+are not orthogonal with respect to each other.
 
 # Resources
 
