@@ -1,7 +1,6 @@
 # Introductory mathematics in R and Python  
 
-This repository contains tutorials on the introductory mathematical concepts required for studying statistics and machine learning.  
-Mathematical calculations are executed in both R and Python.   
+This repository contains tutorials on the introductory mathematical concepts required for studying statistics and machine learning. Mathematical calculations are executed in both `R` and `Python`.    
 
 ![](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/figures/repo_logo.jpg)
 

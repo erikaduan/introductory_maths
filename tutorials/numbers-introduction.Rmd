@@ -27,8 +27,7 @@ knitr::knit_engines$set(python = reticulate::eng_python)
 # Install R packages -----------------------------------------------------------
 # The native pipe operator requires R version 4.1+ 
 packages <- c("ggplot2",
-              "dplyr",
-              "JuliaCall")
+              "dplyr")
 
 installed_packages <- packages %in% rownames(installed.packages())
 
@@ -39,13 +38,9 @@ if (any(installed_packages == FALSE)) {
 # Attach R packages to the global environment
 library("dplyr")
 library("ggplot2")
-library("JuliaCall")
 
 # Check version of Python used by reticulate -----------------------------------
 reticulate::py_config()
-
-# Set up Julia for automatic type conversion -----------------------------------
-julia <- julia_setup()
 ```
 
 
@@ -80,7 +75,7 @@ Real numbers are used to provide geometric intuition for how we envision the vec
 | Notation | Dimension | Position in vector space | 
 |:---------|:----------|:-------------------------|
 | $\mathbb{R}^0$ or 1 | a single point | a fixed number |  
-| $\mathbb{R}^1$ or $\mathbb{R}$ | number line | a position along a line |  
+| $\mathbb{R}^1$ or $\mathbb{R}$ | number line | a single coordinate along a line |  
 | $\mathbb{R}^2$ | Euclidean 2D plane i.e. Cartesian plane | 2 coordinates |
 | $\mathbb{R}^3$ | Euclidean 3D space | 3 coordinates |   
 
@@ -147,7 +142,7 @@ Complex numbers therefore allow us to think about the additive and scalar multip
 knitr::include_graphics("../figures/numbers-complex.svg")
 ```
 
-Note that complex number multiplication does not behave like vector multiplication as $i^2 = -1$ represents an additional relationship between the basis vectors $\{(1, 0), (0, i)\}$ that would not exist for other 2D planes.  
+Note that complex number multiplication does not behave like vector multiplication as $i^2 = -1$  implies that the basis vectors $\{(1, 0), (0, i)\}$ are not orthogonal with respect to each other.      
 
 
 # Resources  
