@@ -1,7 +1,7 @@
 Introduction to numbers
 ================
 Erika Duan
-2022-07-31
+2022-08-02
 
 -   [Numbers](#numbers)
 -   [Natural numbers](#natural-numbers)

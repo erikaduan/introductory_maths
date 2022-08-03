@@ -36,6 +36,19 @@ This project was created using the following setup:
 + R package dependencies are managed using `renv` for `R version 4.1.2 (2021-11-01)`.    
 + Python virtual environment and package dependencies are managed using `poetry` for `Python 3.9.6`.     
 
+## Guide to writing mathematical proofs   
+**Direct proof**   
++ Occurs when you need to prove that A and B are equivalent.   
++ Start by assuming A is true.   
++ Construction definition statement for A.   
++ Extend and simplify mathematical definitions derived from A to reach B.   
+
+**Induction proof**  
++ Occurs when you need to provde that something is true for all cases.  
++ Start by proving the base case when $n = 1$.  
++ Assume that the case is also true for some integer $k$.  
++ Prove that the case for $k + 1$ also holds i.e. proving the next incremental step up a ladder stretching to infinity.  
+
 ## References
 
 + A guide to [linear algebra](https://pabloinsente.github.io/intro-linear-algebra) for applied machine learning by Pablo Caceres
