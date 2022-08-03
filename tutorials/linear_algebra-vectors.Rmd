@@ -46,7 +46,9 @@ reticulate::py_config()
 
 # Vectors    
 
-
+```{r, echo=FALSE, results='markup', out.width="90%"}
+knitr::include_graphics("../figures/linear_systems-consistent_solutions.svg")
+```
 
 
 # Resources  
