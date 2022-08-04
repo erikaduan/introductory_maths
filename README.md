@@ -8,19 +8,19 @@ This repository contains tutorials on the introductory mathematical concepts req
 
 |Topics|Tutorials|
 |:-----|:--------|
-|:1234:|[Introduction to numbers](https://github.com/erikaduan/maths_in_r_and_python/blob/master/tutorials/numbers-introduction.md)|
+|:1234:|[Introduction to numbers](./tutorials/numbers-introduction.md)|
 |:1234:|Introduction to algebra|
 |:1234:|Exponents and logarithms|
 |:1234:|Logarithms and information theory|
-|:black_joker:|[Introduction to probability theory](https://github.com/erikaduan/maths_in_r_and_python/blob/master/tutorials/probability-introduction.md)|
-|:black_joker:|[Conditional probability](https://github.com/erikaduan/maths_in_r_and_python/blob/master/tutorials/probability-conditional_probability.md)|
+|:black_joker:|[Introduction to probability theory](./tutorials/probability-introduction.md)|
+|:black_joker:|[Conditional probability](./tutorials/probability-conditional_probability.md)|
 |:black_joker:|Bayes theorem|
 |:cookie:|Introduction to summations|
 |:compass:|Introduction to trigonometry|
 |:compass:|Distance metrics|
 |:compass:|Cosine similarity|
-|:chopsticks:|[Introduction to linear systems](https://github.com/erikaduan/maths_in_r_and_python/blob/master/tutorials/linear_algebra-linear_systems.md)|  
-|:chopsticks:|Introduction to vectors|
+|:chopsticks:|[Introduction to linear systems](./tutorials/linear_algebra-linear_systems.md)|  
+|:chopsticks:|[Introduction to vectors](./tutorials/linear_algebra-vectors.md)|
 |:chopsticks:|Vector transformations|
 |:chopsticks:|Vector embeddings|
 |:department_store:|Introduction to matrices|  

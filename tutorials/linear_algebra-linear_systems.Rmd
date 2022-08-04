@@ -180,7 +180,7 @@ knitr::include_graphics("../figures/linear_systems-echelon_forms.svg")
 
 A matrix is an echelon form if:  
 + All non-zero rows are above rows of all zeros. Rows of all zeros are used to represent the presence of **free variables** in a matrix i.e. when $n<p$.      
-+ Each leading entry (or pivot column of a row) is located to the right of the leading entry of the row above it. Each leading entry represents a **basic variable** in the linear system.     
++ Each leading entry (or pivot column of a row) is located to the right of the leading entry of the row above it. Each leading entry in the echelon form represents a **basic variable** in the linear system.     
 + All entries in a column below a leading entry are zeros.    
 
 A matrix is in reduced echelon form if additionally:      
@@ -195,7 +195,7 @@ When a matrix is in the echelon form, we can solve the linear system by either:
 knitr::include_graphics("../figures/linear_systems-echelon_solutions.svg")  
 ```
 
-**Note:** Linear systems with infinite solutions are easily identified in matrix form, by the presence of at least one row which lacks a leading edge. Free variables correspond to variable(s) without a positional leading edge or pivot column in the linear system.  
+**Note:** Linear systems with infinite solutions are easily identified in matrix form, by the presence of at least one row which lacks a leading edge. Free variables correspond to variable(s) without a positional leading edge or pivot column in the echelon form of the augmented matrix.  
 
 
 # Row reduction algorithmn    

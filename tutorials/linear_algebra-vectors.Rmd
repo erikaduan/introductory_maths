@@ -44,11 +44,37 @@ reticulate::py_config()
 ```
 
 
-# Vectors    
+# Vectors   
+
+Vectors are an important form used to convey object position in dimensional space and vector operations enable us to transform vectors in useful ways.    
+A column vector $\vec u$ is an $m\times1$ matrix where $\vec u\in \mathbb{R}^m$. Two vectors are equal if they have the same number of rows and their corresponding entries are equal.  
+
+**Note:** Do not confuse the zero vector $\vec 0$ as a scalar 0 during vector operations.  
 
 ```{r, echo=FALSE, results='markup', out.width="90%"}
-knitr::include_graphics("../figures/linear_systems-consistent_solutions.svg")
+knitr::include_graphics("../figures/linear_systems-vectors.svg")
 ```
+
+Key vector operations are:  
+
++ Scalar multiplication  
++ Vector addition  
++ Vector multiplication  
+
+## Vector scalar multiplication  
+
+Vector scalar multiplication is used to scale the length of the vector and/or change its direction (i.e. vector direction can also be reversed by multiplication of a negative constant).   
+
+Vector scalar multiplication is denoted as $c\vec u$ where $c\in\mathbb{R}$.  
+**Note:** The reverse of $\vec u$ is denoted as $-\vec {u}$.  
+
+```{r, echo=FALSE, results='markup', out.width="90%"}
+knitr::include_graphics("../figures/linear_systems-vector_scalar_multiplication.svg")  
+```
+
+
+## Vector addition   
+
 
 
 # Resources  
