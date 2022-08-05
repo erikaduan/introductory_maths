@@ -46,7 +46,7 @@ In scenarios with infinite solutions, we may want to provide additional
 context to identify an optimal solution out of infinite possible
 solutions. This is the utility of linear algebra.
 
-<img src="../figures/linear_systems-consistent_solutions.svg" width="90%" style="display: block; margin: auto;" />
+<img src="../figures/linear_systems-consistent_solutions.svg" width="80%" style="display: block; margin: auto;" />
 
 **Note:** In linear algebra, it is preferable to write
 ![ax_1+bx_2=c](https://latex.codecogs.com/svg.format?ax_1%2Bbx_2%3Dc "ax_1+bx_2=c")
@@ -102,7 +102,7 @@ p2 <- ggplot(data.frame(x, y), aes(x, y)) +
 p1 + p2
 ```
 
-<img src="linear_algebra-linear_systems_files/figure-gfm/unnamed-chunk-3-1.png" width="90%" style="display: block; margin: auto;" />
+<img src="linear_algebra-linear_systems_files/figure-gfm/unnamed-chunk-3-1.png" width="80%" style="display: block; margin: auto;" />
 
 </p>
 </details>
@@ -133,7 +133,7 @@ The linear system is true when the solution set
 substitutes for
 ![(x_1, x_2, ..., x_n)](https://latex.codecogs.com/svg.format?%28x_1%2C%20x_2%2C%20...%2C%20x_n%29 "(x_1, x_2, ..., x_n)").
 
-<img src="../figures/linear_systems-linear_forms.svg" width="90%" style="display: block; margin: auto;" />
+<img src="../figures/linear_systems-linear_forms.svg" width="80%" style="display: block; margin: auto;" />
 
 For a system of linear equations, we have three possible scenarios:
 
@@ -216,7 +216,7 @@ data.frame(x <- seq(-10, 10, by = 1),
         panel.grid.major = element_line(linetype = "dotted")) 
 ```
 
-<img src="linear_algebra-linear_systems_files/figure-gfm/unnamed-chunk-5-1.png" width="90%" style="display: block; margin: auto;" /><img src="linear_algebra-linear_systems_files/figure-gfm/unnamed-chunk-5-2.png" width="90%" style="display: block; margin: auto;" /><img src="linear_algebra-linear_systems_files/figure-gfm/unnamed-chunk-5-3.png" width="90%" style="display: block; margin: auto;" />
+<img src="linear_algebra-linear_systems_files/figure-gfm/unnamed-chunk-5-1.png" width="80%" style="display: block; margin: auto;" /><img src="linear_algebra-linear_systems_files/figure-gfm/unnamed-chunk-5-2.png" width="80%" style="display: block; margin: auto;" /><img src="linear_algebra-linear_systems_files/figure-gfm/unnamed-chunk-5-3.png" width="80%" style="display: block; margin: auto;" />
 
 </p>
 </details>
@@ -235,7 +235,7 @@ algorithm, we would need to understand the operational constraints for
 maintaining equivalency i.e. identify the set of possible elementary
 equation operations.
 
-<img src="../figures/linear_systems-equivalence.svg" width="90%" style="display: block; margin: auto;" />
+<img src="../figures/linear_systems-equivalence.svg" width="80%" style="display: block; margin: auto;" />
 
 The three elementary equation operations (EEOs) are:  
 + Replacement - replace an equation by the sum of itself and the
@@ -258,7 +258,7 @@ reduced echelon form.
 The matrix equivalent of elementary equation operations are elementary
 row operations (EROs).
 
-<img src="../figures/linear_systems-echelon_forms.svg" width="90%" style="display: block; margin: auto;" />
+<img src="../figures/linear_systems-echelon_forms.svg" width="80%" style="display: block; margin: auto;" />
 
 A matrix is an echelon form if:  
 + All non-zero rows are above rows of all zeros. When rows of all zeros
@@ -282,7 +282,7 @@ constants or free variables only.
 2. Further reducing the matrix to its reduced echelon form (where the
 solution for each variable is obvious).
 
-<img src="../figures/linear_systems-echelon_solutions.svg" width="90%" style="display: block; margin: auto;" />
+<img src="../figures/linear_systems-echelon_solutions.svg" width="80%" style="display: block; margin: auto;" />
 
 **Note:** Linear systems with infinite solutions are easily identified
 in matrix form, by the presence of at least one row which lacks a
@@ -465,7 +465,7 @@ can be presented in the form
 as well as
 ![(s_1, s_2, ..., s_n)](https://latex.codecogs.com/svg.format?%28s_1%2C%20s_2%2C%20...%2C%20s_n%29 "(s_1, s_2, ..., s_n)").
 
-<img src="../figures/linear_systems-infinite_solutions.svg" width="90%" style="display: block; margin: auto;" />
+<img src="../figures/linear_systems-infinite_solutions.svg" width="80%" style="display: block; margin: auto;" />
 
 **Note:** Solving a linear system can be viewed as finding a
 **parametric** description of the solution set or determining that the
@@ -473,7 +473,7 @@ system is inconsistent. Homogenoous linear systems are easier to solve,
 as they can only have one trivial solution or infinite solutions that
 can be written in parametric vector form.
 
-<img src="../figures/linear_systems-parametric_solutions.svg" width="90%" style="display: block; margin: auto;" />
+<img src="../figures/linear_systems-parametric_solutions.svg" width="80%" style="display: block; margin: auto;" />
 
 When the solution is expressed as a parametric vector form, we can form
 some geometric intuition about the vector span of
@@ -483,7 +483,7 @@ For an infinite solution, the solution is an
 object which intersects with the point represented by
 ![\\vec p](https://latex.codecogs.com/svg.format?%5Cvec%20p "\vec p").
 
-<img src="../figures/linear_systems-parametric_solution_example.svg" width="90%" style="display: block; margin: auto;" />
+<img src="../figures/linear_systems-parametric_solution_example.svg" width="80%" style="display: block; margin: auto;" />
 
 **Note:** The solution to a linear system will only contain the origin
 point if and only if the entire linear system is homogeneous i.e. the

@@ -18,7 +18,8 @@ knitr::opts_chunk$set(echo=TRUE,
                       fig.show='hold',
                       fig.align='center',
                       message=FALSE,
-                      warning=FALSE)
+                      warning=FALSE,
+                      out.width='80%')
 
 knitr::knit_engines$set(python = reticulate::eng_python)
 ```
@@ -45,39 +46,51 @@ reticulate::py_config()
 
 
 # Vectors   
-
 Vectors are an important form used to convey object position in dimensional space and vector operations enable us to transform vectors in useful ways.    
+
 A column vector $\vec u$ is an $m\times1$ matrix where $\vec u\in \mathbb{R}^m$. Two vectors are equal if they have the same number of rows and their corresponding entries are equal.  
 
 **Note:** Do not confuse the zero vector $\vec 0$ as a scalar 0 during vector operations.  
 
-```{r, echo=FALSE, results='markup', out.width="90%"}
+```{r, echo=FALSE, results='markup'}
 knitr::include_graphics("../figures/linear_systems-vectors.svg")
 ```
 
 Key vector operations are:  
 
-+ Scalar multiplication  
-+ Vector addition  
-+ Vector multiplication  
++ Scalar multiplication - when a vector is scaled by a constant.   
++ Vector addition - when two vectors of the same dimensions are added to form a new vector (with a new length and direction).   
++ Vector multiplication - used to calculate how far apart two vectors are, with respect to the origin, by superimposing one along the axis of the other.     
 
-## Vector scalar multiplication  
 
-Vector scalar multiplication is used to scale the length of the vector and/or change its direction (i.e. vector direction can also be reversed by multiplication of a negative constant).   
+# Vector scalar multiplication   
+Vector scalar multiplication is used to scale the length of the vector and/or to change its direction (i.e. vector direction can also be reversed by multiplication of a negative constant).   
 
 Vector scalar multiplication is denoted as $c\vec u$ where $c\in\mathbb{R}$.  
-**Note:** The reverse of $\vec u$ is denoted as $-\vec {u}$.  
 
-```{r, echo=FALSE, results='markup', out.width="90%"}
+```{r, echo=FALSE, results='markup'}
 knitr::include_graphics("../figures/linear_systems-vector_scalar_multiplication.svg")  
 ```
 
+**Note:** The reverse of $\vec u$ is denoted as $-\vec {u}$.   
 
-## Vector addition   
+
+# Vector addition   
+
+Two vectors of the same dimension can be added entry-wise. This produces a new vector with a new length and direction in dimensional space.   
+
+Vector addition is denoted as $\vec u + \vec v = \vec{(u+v)}$. Geometrically, in 2D space, vector addition corresponds to the 4th vertex of the parallelogram whose other vertices are $\vec 0, \vec u,$ and $\vec v$.        
+
+```{r, echo=FALSE, results='markup'}
+knitr::include_graphics("../figures/linear_systems-vector_addition.svg")  
+```
+
+**Note:** Vector subtraction is equivalent to the addition of a vector scaled by -1 i.e. $\vec u - \vec v = \vec u + (-1)(\vec v)$.   
+
+
+# Vector span  
 
 
 
 # Resources  
-
-+ A great [YouTube](https://www.youtube.com/watch?v=fNk_zzaMoSs) series on vectors.    
-  
++ A great [YouTube series](https://www.youtube.com/watch?v=fNk_zzaMoSs) on vectors by 3Blue1Brown.      
