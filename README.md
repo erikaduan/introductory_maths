@@ -40,8 +40,9 @@ This project was created using the following setup:
 **Direct proof**   
 + Occurs when you need to prove that A and B are equivalent.   
 + Start by assuming A is true.   
-+ Construction definition statement for A.   
++ Construction definition statement for A (use a fixed but arbitary example of A).   
 + Extend and simplify mathematical definitions derived from A to reach B.   
++ Sometimes you may need to also prove that the reverse case is true i.e. start with B and end with A.  
 
 **Induction proof**  
 + Occurs when you need to provde that something is true for all cases.  

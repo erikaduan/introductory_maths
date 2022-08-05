@@ -1,15 +1,15 @@
 Introduction to linear systems
 ================
 Erika Duan
-2022-08-03
+2022-08-05
 
 -   [A single linear equation](#a-single-linear-equation)
 -   [A system of linear equations](#a-system-of-linear-equations)
 -   [Equivalent systems](#equivalent-systems)
--   [Row reduction algorithm](#row-reduction-algorithm)
+-   [Augmented matrices and matrix echelon
+    forms](#augmented-matrices-and-matrix-echelon-forms)
 -   [Row reduction algorithmn](#row-reduction-algorithmn)
--   [Single versus infinite
-    solutions](#single-versus-infinite-solutions)
+-   [Homogenous linear systems](#homogenous-linear-systems)
 -   [Resources](#resources)
 
 # A single linear equation
@@ -24,10 +24,45 @@ This means that we can describe linear equations with both mathematical
 and geometric intuition (depending on the dimensions of the vector
 space). For example, the solution for
 ![3x+\\tfrac{1}{2}y=2](https://latex.codecogs.com/svg.format?3x%2B%5Ctfrac%7B1%7D%7B2%7Dy%3D2 "3x+\tfrac{1}{2}y=2")
+or
+![3x_1+\\tfrac{1}{2}x_2=2](https://latex.codecogs.com/svg.format?3x_1%2B%5Ctfrac%7B1%7D%7B2%7Dx_2%3D2 "3x_1+\tfrac{1}{2}x_2=2")
 is represented by every point in the line below.
 
+Linear equations with the form
+![c_1x_1+c_2x_2=0](https://latex.codecogs.com/svg.format?c_1x_1%2Bc_2x_2%3D0 "c_1x_1+c_2x_2=0")
+rather than
+![c_1x_1+c_2x_2=k](https://latex.codecogs.com/svg.format?c_1x_1%2Bc_2x_2%3Dk "c_1x_1+c_2x_2=k")
+have an additional property that they also pass the point of origin.
+
+For a single consistent and non-trivial linear equation, the set of
+solutions also has a consistent vector span. For example,
+![3x_1 - 2x_2 = 2](https://latex.codecogs.com/svg.format?3x_1%20-%202x_2%20%3D%202 "3x_1 - 2x_2 = 2")
+describes a line. Any point on this line is a solution and is a copy of
+![\\mathbb{R}^1](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5E1 "\mathbb{R}^1")
+inside
+![\\mathbb{R}^2](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5E2 "\mathbb{R}^2").
+This illustrates that infinite solutions can exist for linear equations.
+In scenarios with infinite solutions, we may want to provide additional
+context to identify an optimal solution out of infinite possible
+solutions. This is the utility of linear algebra.
+
+<img src="../figures/linear_systems-consistent_solutions.svg" width="90%" style="display: block; margin: auto;" />
+
+**Note:** In linear algebra, it is preferable to write
+![ax_1+bx_2=c](https://latex.codecogs.com/svg.format?ax_1%2Bbx_2%3Dc "ax_1+bx_2=c")
+instead of
+![ax+by=c](https://latex.codecogs.com/svg.format?ax%2Bby%3Dc "ax+by=c")
+as we usually deal with dimensions greater than 3 (alternatively
+designated by the x, y, z coordinates).
+
+<details>
+<summary>
+R code
+</summary>
+<p>
+
 ``` r
-# Plot the domain of f(x) = sqrt(3-x) in R -------------------------------------
+# Plot 3x + 0.5y = 2 -----------------------------------------------------------
 a <- 3
 b <- 0.5
 c <- 2
@@ -35,78 +70,103 @@ c <- 2
 x <- seq(-4, 4, by = 1)
 y <- (a*x + c) / b
 
-ggplot(data.frame(x, y), aes(x, y)) +
-  geom_hline(yintercept = 0, colour = "linen", linetype = "dashed") + 
-  geom_vline(xintercept = 0, colour = "linen", linetype = "dashed") + 
+p1 <- ggplot(data.frame(x, y), aes(x, y)) +
+  geom_hline(yintercept = 0, colour = "steelblue", linetype = "dashed") + 
+  geom_vline(xintercept = 0, colour = "steelblue", linetype = "dashed") + 
   geom_line() + 
   labs(title = "3x + y/2 = 2") +  
   theme_minimal() + 
   theme(panel.border = element_rect(fill = NA),
         panel.grid.minor = element_blank(),
         panel.grid.major = element_line(linetype = "dotted"))
+
+# Plot 3x + 0.5y = 0 -----------------------------------------------------------
+a <- 3
+b <- 0.5
+c <- 0
+
+x <- seq(-4, 4, by = 1)
+y <- (a*x + c) / b
+
+p2 <- ggplot(data.frame(x, y), aes(x, y)) +
+  geom_hline(yintercept = 0, colour = "steelblue", linetype = "dashed") + 
+  geom_vline(xintercept = 0, colour = "steelblue", linetype = "dashed") + 
+  geom_line() + 
+  labs(title = "3x + y/2 = 0") +  
+  theme_minimal() + 
+  theme(panel.border = element_rect(fill = NA),
+        panel.grid.minor = element_blank(),
+        panel.grid.major = element_line(linetype = "dotted"))
+
+# Plot ggplot figures side by side --------------------------------------------- 
+p1 + p2
 ```
 
-<img src="linear_algebra-linear_systems_files/figure-gfm/unnamed-chunk-2-1.png" width="60%" style="display: block; margin: auto;" />
+<img src="linear_algebra-linear_systems_files/figure-gfm/unnamed-chunk-3-1.png" width="90%" style="display: block; margin: auto;" />
 
-For a single consistent and non-trivial linear equation, the set of
-solutions also has a consistent vector subspace form.
-
-<img src="../figures/linear_systems-consistent_solutions.svg" width="90%" style="display: block; margin: auto;" />
-
-For example,
-![3x_1 - 2x_2 = 9](https://latex.codecogs.com/svg.format?3x_1%20-%202x_2%20%3D%209 "3x_1 - 2x_2 = 9")
-describes a line. Any point on this line is a single solution and is a
-copy of
-![\\mathbb{R}^1](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5E1 "\mathbb{R}^1")
-inside
-![\\mathbb{R}^2](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5E2 "\mathbb{R}^2").
-This illuminates that infinite solutions can exist for linear equations
-and there is a real life context where we need to determine which
-optimal single solution to choose. This is the essence of why linear
-algebra is important.
+</p>
+</details>
+<p>
 
 # A system of linear equations
 
 What happens when we have a collection of linear equations, or a linear
 system? In statistics, a linear system is used to contain multiple
-observations of a phenomenon i.e. for modelling purposes and we solve
-for the coefficients
+observations of a phenomenon for modelling purposes and we solve for the
+coefficient estimates
 ![\\hat{\\beta}](https://latex.codecogs.com/svg.format?%5Chat%7B%5Cbeta%7D "\hat{\beta}")
 where
-![Y = X\\beta + \\epsilon](https://latex.codecogs.com/svg.format?Y%20%3D%20X%5Cbeta%20%2B%20%5Cepsilon "Y = X\beta + \epsilon").
-In mathematical modelling, we solve for an n-tuple
-![(s_1, s_2, ..., s_n)](https://latex.codecogs.com/svg.format?%28s_1%2C%20s_2%2C%20...%2C%20s_n%29 "(s_1, s_2, ..., s_n)"),
-where the linear system is true when
+![Y = X\\beta + \\epsilon](https://latex.codecogs.com/svg.format?Y%20%3D%20X%5Cbeta%20%2B%20%5Cepsilon "Y = X\beta + \epsilon")
+and ![X](https://latex.codecogs.com/svg.format?X "X") and
+![Y](https://latex.codecogs.com/svg.format?Y "Y") are treated as random
+variables.
+
+In contrast, in mathematical modelling, a linear system is used to
+contain multiple observations which are fixed and we solve for
+![(x_1, x_2, ..., x_n)](https://latex.codecogs.com/svg.format?%28x_1%2C%20x_2%2C%20...%2C%20x_n%29 "(x_1, x_2, ..., x_n)")
+where
+![\\vec a_1x_1 + \\vec a_2x_2 + \\cdots+\\vec a_nx_n=\\vec b](https://latex.codecogs.com/svg.format?%5Cvec%20a_1x_1%20%2B%20%5Cvec%20a_2x_2%20%2B%20%5Ccdots%2B%5Cvec%20a_nx_n%3D%5Cvec%20b "\vec a_1x_1 + \vec a_2x_2 + \cdots+\vec a_nx_n=\vec b")
+and
+![a, b \\in \\mathbb{R}](https://latex.codecogs.com/svg.format?a%2C%20b%20%5Cin%20%5Cmathbb%7BR%7D "a, b \in \mathbb{R}").
+The linear system is true when the solution set
 ![(s_1, s_2, ..., s_n)](https://latex.codecogs.com/svg.format?%28s_1%2C%20s_2%2C%20...%2C%20s_n%29 "(s_1, s_2, ..., s_n)")
 substitutes for
 ![(x_1, x_2, ..., x_n)](https://latex.codecogs.com/svg.format?%28x_1%2C%20x_2%2C%20...%2C%20x_n%29 "(x_1, x_2, ..., x_n)").
 
-<img src="../figures/linear_systems-form.svg" width="90%" style="display: block; margin: auto;" />
+<img src="../figures/linear_systems-linear_forms.svg" width="90%" style="display: block; margin: auto;" />
 
-We have three scenarios:
+For a system of linear equations, we have three possible scenarios:
 
--   The linear system is inconsistent (at least one equation is untrue
-    in relation to all other equations) and we have an **empty** set of
+-   The linear system is inconsistent (at least one equation is false
+    with respect to other equations) and we have an **empty** set of
     solutions.  
 -   The linear system is consistent and has one solution set
-    i.e. ![\\{(a, b, c)\\}](https://latex.codecogs.com/svg.format?%5C%7B%28a%2C%20b%2C%20c%29%5C%7D "\{(a, b, c)\}").  
+    i.e. ![\\{(a, b, c)\\}](https://latex.codecogs.com/svg.format?%5C%7B%28a%2C%20b%2C%20c%29%5C%7D "\{(a, b, c)\}")
+    where a, b and c are constants.  
 -   The linear system is consistent and has infinite solution (or the
     solution set has infinitely many elements)
     i.e. ![\\{(a, b, x_3 - 2) \| x_3 \\in \\mathbb{R}\\}](https://latex.codecogs.com/svg.format?%5C%7B%28a%2C%20b%2C%20x_3%20-%202%29%20%7C%20x_3%20%5Cin%20%5Cmathbb%7BR%7D%5C%7D "\{(a, b, x_3 - 2) | x_3 \in \mathbb{R}\}")
-    where
-    ![a, b \\in \\mathbb{R}](https://latex.codecogs.com/svg.format?a%2C%20b%20%5Cin%20%5Cmathbb%7BR%7D "a, b \in \mathbb{R}").
-    This occurs by default when you have less observations than
+    where a and b are constants and
+    ![x_3 \\in \\mathbb{R}](https://latex.codecogs.com/svg.format?x_3%20%5Cin%20%5Cmathbb%7BR%7D "x_3 \in \mathbb{R}").
+    Infinite solutions always occur when you have less observations than
     variables i.e. the
     ![n\<p](https://latex.codecogs.com/svg.format?n%3Cp "n<p")
     [problem](https://stats.stackexchange.com/questions/385711/what-is-the-problem-with-p-n)
     in statistics.
 
 In 2D, we can see that solutions have two properties:  
-+ Solutions can be solved using a consistent mathematical approach.  
++ Solutions can be solved (through simplification) using a consistent
+mathematical approach.  
 + Solutions have a geometric intuition. For example in 2D, solutions can
 be represented as two lines which never intersect, two lines which
 intersect once, or two lines superimposed on each other i.e. infinite
 intersection points.
+
+<details>
+<summary>
+R code
+</summary>
+<p>
 
 ``` r
 # Plot inconsistent linear system in R -----------------------------------------
@@ -156,11 +216,11 @@ data.frame(x <- seq(-10, 10, by = 1),
         panel.grid.major = element_line(linetype = "dotted")) 
 ```
 
-<img src="linear_algebra-linear_systems_files/figure-gfm/unnamed-chunk-5-1.png" width="60%" style="display: block; margin: auto;" /><img src="linear_algebra-linear_systems_files/figure-gfm/unnamed-chunk-5-2.png" width="60%" style="display: block; margin: auto;" /><img src="linear_algebra-linear_systems_files/figure-gfm/unnamed-chunk-5-3.png" width="60%" style="display: block; margin: auto;" />
+<img src="linear_algebra-linear_systems_files/figure-gfm/unnamed-chunk-5-1.png" width="90%" style="display: block; margin: auto;" /><img src="linear_algebra-linear_systems_files/figure-gfm/unnamed-chunk-5-2.png" width="90%" style="display: block; margin: auto;" /><img src="linear_algebra-linear_systems_files/figure-gfm/unnamed-chunk-5-3.png" width="90%" style="display: block; margin: auto;" />
 
-**Question:** How can you prove that the solution set to a linear system
-is either empty (inconsistent), has one solution or has infinite
-solutions?
+</p>
+</details>
+<p>
 
 # Equivalent systems
 
@@ -189,7 +249,7 @@ the minimal sequence of elementary equation operations to transform A
 into B, where B is the most easily solvable linear system. This is the
 essence of the row reduction (or Gauss Jordan elimination) algorithm.
 
-# Row reduction algorithm
+# Augmented matrices and matrix echelon forms
 
 Linear systems can be represented by matrices (the coefficient matrix or
 the augmented matrix). Matrices can exist in an echelon form and a
@@ -201,12 +261,13 @@ row operations (EROs).
 <img src="../figures/linear_systems-echelon_forms.svg" width="90%" style="display: block; margin: auto;" />
 
 A matrix is an echelon form if:  
-+ All non-zero rows are above rows of all zeros. Rows of all zeros are
-used to represent the presence of **free variables** in a matrix
++ All non-zero rows are above rows of all zeros. When rows of all zeros
+exist, they represent the presence of **free variables** in a solution
 i.e. when ![n\<p](https://latex.codecogs.com/svg.format?n%3Cp "n<p").  
 + Each leading entry (or pivot column of a row) is located to the right
-of the leading entry of the row above it. Each leading entry represents
-a **basic variable** in the linear system.  
+of the leading entry of the row above it. Each leading entry in the
+echelon form represents a fixed or **basic variable** in the linear
+system.  
 + All entries in a column below a leading entry are zeros.
 
 A matrix is in reduced echelon form if additionally:  
@@ -216,7 +277,8 @@ A matrix is in reduced echelon form if additionally:
 When a matrix is in the echelon form, we can solve the linear system by
 either:  
 1. Directly using back substitution to simply the list of equations and
-solve for each variable.  
+solve for each variable. Solutions should be presented in the form of
+constants or free variables only.  
 2. Further reducing the matrix to its reduced echelon form (where the
 solution for each variable is obvious).
 
@@ -225,7 +287,8 @@ solution for each variable is obvious).
 **Note:** Linear systems with infinite solutions are easily identified
 in matrix form, by the presence of at least one row which lacks a
 leading edge. Free variables correspond to variable(s) without a
-positional leading edge or pivot column in the linear system.
+positional leading edge or pivot column in the echelon form of the
+augmented matrix.
 
 # Row reduction algorithmn
 
@@ -246,6 +309,12 @@ Elimination algorithm), we aim to:
 
 **Note:** Each matrix is row equivalent to exactly one matrix in reduced
 echelon form.
+
+<details>
+<summary>
+Python code
+</summary>
+<p>
 
 ``` python
 # To be completed --------------------------------------------------------------
@@ -360,67 +429,56 @@ for i in range(n):
     print('X%d = %0.2f' %(i,x[i]), end = '\t')
 ```
 
-# Single versus infinite solutions
+</p>
+</details>
+<p>
+
+# Homogenous linear systems
 
 How can we easily identify systems with infinite compared to single
-solutions?
+solutions? By presenting the set of solutions
+![(s_1, s_2, ..., s_n)](https://latex.codecogs.com/svg.format?%28s_1%2C%20s_2%2C%20...%2C%20s_n%29 "(s_1, s_2, ..., s_n)")
+in an alternate parametric vector form.
 
-Consider the examples depicted [above](#a-system-of-linear-equations) in
-2D space where:
-
--   A single solution is geometrically equivalent to the intersection of
-    two lines i.e. a point in 2D space or a copy of
-    ![\\mathbb{R}^0](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5E0 "\mathbb{R}^0")
-    in
-    ![\\mathbb{R}^2](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5E2 "\mathbb{R}^2").  
--   An infinite solution is geometrically equivalent to a line in 2D
-    space i.e. a copy of
-    ![\\mathbb{R}^1](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5E1 "\mathbb{R}^1")
-    in
-    ![\\mathbb{R}^2](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5E2 "\mathbb{R}^2").
-
-We first apply the row reduction algorithm to find the reduced echelon
-form of the augmented matrices for both examples.
-
-We can also represent the solution as a parametric vector form where:
-
--   A reduced echelon matrix form with all leading ones will always
-    contain a consistent single solution i.e. the number of leading ones
-    is equal to the number of variables in the linear system. Variables
-    are therefore all **basic variables**.  
--   A reduced echelon matrix form with at least one row of all zeros
-    will always contain a consistent infinite solution. Variables
-    lacking a leading one in their corresponding variable position are
-    **free variables**.
-
-<img src="../figures/linear_systems-infinite_solutions.svg" width="90%" style="display: block; margin: auto;" />
+It is easy to identify the parametric vector form of homogeneous linear
+system, which have the form
+![A\\vec x=\\vec 0](https://latex.codecogs.com/svg.format?A%5Cvec%20x%3D%5Cvec%200 "A\vec x=\vec 0").
+These equations either have a single trivial solution (they only
+intersect at the origin) or infinite solutions (defined in relation to
+its free variables).
 
 If
 ![A\\vec x=\\vec b](https://latex.codecogs.com/svg.format?A%5Cvec%20x%3D%5Cvec%20b "A\vec x=\vec b")
 has infinite solutions:  
-+ One solution is
++ At least one solution is
 ![\\vec p](https://latex.codecogs.com/svg.format?%5Cvec%20p "\vec p")
 i.e. a single vector of real numbers or a point in
 ![\\mathbb{R}^n](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5En "\mathbb{R}^n").  
-+ Other solutions are represented as
-![A\\vec x = \\vec 0](https://latex.codecogs.com/svg.format?A%5Cvec%20x%20%3D%20%5Cvec%200 "A\vec x = \vec 0"),
-where the solution set is the vector span of
++ At least one solution can be represented as
+![A\\vec x=\\vec0](https://latex.codecogs.com/svg.format?A%5Cvec%20x%3D%5Cvec0 "A\vec x=\vec0"),
+where the solution set is also the vector span of
 ![\\{\\vec v_1, ... , \\vec v\_{h} \\}](https://latex.codecogs.com/svg.format?%5C%7B%5Cvec%20v_1%2C%20...%20%2C%20%5Cvec%20v_%7Bh%7D%20%5C%7D "\{\vec v_1, ... , \vec v_{h} \}").  
 + The solution set of
 ![A\\vec x = \\vec b](https://latex.codecogs.com/svg.format?A%5Cvec%20x%20%3D%20%5Cvec%20b "A\vec x = \vec b")
-is
-![\\{\\vec p+c_1\\vec v_1+ ... +c_h\\vec v\_{h}\|c_1, ... ,c_h\\in \\mathbb{R}\\}](https://latex.codecogs.com/svg.format?%5C%7B%5Cvec%20p%2Bc_1%5Cvec%20v_1%2B%20...%20%2Bc_h%5Cvec%20v_%7Bh%7D%7Cc_1%2C%20...%20%2Cc_h%5Cin%20%5Cmathbb%7BR%7D%5C%7D "\{\vec p+c_1\vec v_1+ ... +c_h\vec v_{h}|c_1, ... ,c_h\in \mathbb{R}\}").
+can be presented in the form
+![\\{\\vec p+c_1\\vec v_1+ ... +c_h\\vec v\_{h}\|c_1, ... ,c_h\\in \\mathbb{R}\\}](https://latex.codecogs.com/svg.format?%5C%7B%5Cvec%20p%2Bc_1%5Cvec%20v_1%2B%20...%20%2Bc_h%5Cvec%20v_%7Bh%7D%7Cc_1%2C%20...%20%2Cc_h%5Cin%20%5Cmathbb%7BR%7D%5C%7D "\{\vec p+c_1\vec v_1+ ... +c_h\vec v_{h}|c_1, ... ,c_h\in \mathbb{R}\}")
+as well as
+![(s_1, s_2, ..., s_n)](https://latex.codecogs.com/svg.format?%28s_1%2C%20s_2%2C%20...%2C%20s_n%29 "(s_1, s_2, ..., s_n)").
 
-**Note:** Instead of finding one of three possible solutions, solving a
-linear system can be viewed as either finding a **parametric**
-description of the solution set or determining that the system is
-inconsistent.
+<img src="../figures/linear_systems-infinite_solutions.svg" width="90%" style="display: block; margin: auto;" />
+
+**Note:** Solving a linear system can be viewed as finding a
+**parametric** description of the solution set or determining that the
+system is inconsistent. Homogenoous linear systems are easier to solve,
+as they can only have one trivial solution or infinite solutions that
+can be written in parametric vector form.
 
 <img src="../figures/linear_systems-parametric_solutions.svg" width="90%" style="display: block; margin: auto;" />
 
 When the solution is expressed as a parametric vector form, we can form
-some geometric intuition about the vector span of the solution. For an
-infinite solution, the solution is an
+some geometric intuition about the vector span of
+![\\vec b](https://latex.codecogs.com/svg.format?%5Cvec%20b "\vec b").
+For an infinite solution, the solution is an
 ![\\mathbb{R}^{n-p}](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5E%7Bn-p%7D "\mathbb{R}^{n-p}")
 object which intersects with the point represented by
 ![\\vec p](https://latex.codecogs.com/svg.format?%5Cvec%20p "\vec p").
@@ -428,8 +486,8 @@ object which intersects with the point represented by
 <img src="../figures/linear_systems-parametric_solution_example.svg" width="90%" style="display: block; margin: auto;" />
 
 **Note:** The solution to a linear system will only contain the origin
-point if and only if the linear system is homogeneous i.e. the entire
-linear system has form
+point if and only if the entire linear system is homogeneous i.e. the
+entire linear system has form
 ![A\\vec v=\\vec0](https://latex.codecogs.com/svg.format?A%5Cvec%20v%3D%5Cvec0 "A\vec v=\vec0").
 
 # Resources
@@ -441,4 +499,6 @@ linear system has form
     post](https://bvanderlei.github.io/jupyter-guide-to-linear-algebra/Gaussian_Elimination.html)
     containing Python code to perform elementary row operations.  
 -   [Solutions](https://levelup.gitconnected.com/gaussian-elimination-algorithm-in-python-4e90cb3a0fd9)
-    for the row reduction algorithm in Python.
+    for the row reduction algorithm in Python.  
+-   [YouTube video](https://www.youtube.com/watch?v=4P1YUKPIc4w) on
+    homogeneous linear systems.

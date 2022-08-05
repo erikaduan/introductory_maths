@@ -18,7 +18,8 @@ knitr::opts_chunk$set(echo=TRUE,
                       fig.show='hold',
                       fig.align='center',
                       message=FALSE,
-                      warning=FALSE)
+                      warning=FALSE,
+                      out.width='80%')
 
 knitr::knit_engines$set(python = reticulate::eng_python)
 ```
@@ -28,7 +29,7 @@ knitr::knit_engines$set(python = reticulate::eng_python)
 # The native pipe operator requires R version 4.1+ 
 packages <- c("ggplot2",
               "dplyr",
-              "JuliaCall")
+              "patchwork")
 
 installed_packages <- packages %in% rownames(installed.packages())
 
@@ -39,29 +40,25 @@ if (any(installed_packages == FALSE)) {
 # Attach R packages to the global environment
 library("dplyr")
 library("ggplot2")
-library("JuliaCall")
+library("patchwork")
 
 # Check version of Python used by reticulate -----------------------------------
 reticulate::py_config()
-
-# Set up Julia for automatic type conversion -----------------------------------
-julia <- julia_setup()
 ```
 
 
 # Numbers  
-
 Numbers are used to:  
-+ Count objects. For example, I have 1 :apple:.    
++ Count objects. For example, I have 1 :apple:.      
 + Describe object behaviour. For example, the area of a :white_circle: is $\pi r^2$.     
 + Solve problems, often by introducing simple assumptions. For example, if 5 :bee: can pollinate a 100 $m^2$ field in 10 minutes, how many :bee: are required to pollinate a 350 $m^2$ field? Assume that pollination efficiency scales perfectly and is not impacted by land shape.   
-+ Represent complex abstractions. For example, how can individual words be represented in an n-dimensional feature space?        
++ Represent complex abstractions. For example, how can individual words be represented in an n-dimensional feature space?    
 
 Numbers can be classified into different categories according to their properties. A number can belong to multiple categories. For example, the number 2 is a count (a natural number) and a whole number (an integer), and can also be represented as a fraction i.e. $\tfrac{2}{1}$ (a rational number) and a complex number i.e. $3+i^2$.    
 
 Number classifications have an elegant hierarchical property. All natural numbers are integers. All integers are rational numbers i.e. $n = \tfrac{n}{1}$. All rational numbers are complex numbers i.e. $\tfrac{n}{1} = \tfrac{n+1}{1}+i^2$.      
 
-```{r, echo=FALSE, results='markup', out.width="90%"}
+```{r, echo=FALSE, results='markup'}
 knitr::include_graphics("../figures/numbers-categories.svg")
 ```
 
@@ -69,79 +66,81 @@ knitr::include_graphics("../figures/numbers-categories.svg")
 
 
 # Natural numbers  
-
-Natural numbers ($\mathbb{N}$) are useful for describing the dimensions of a [feature space](https://stats.stackexchange.com/questions/46425/what-is-feature-space). For example, the Cartesian plane is an example of an $\mathbb{R}^2$ feature space where $\mathbb{N} = 2$.          
+Natural numbers ($\mathbb{N}$) are useful for describing the dimensions of a [feature space](https://stats.stackexchange.com/questions/46425/what-is-feature-space). For example, the Cartesian plane is an example of an $\mathbb{R}^2$ feature space where $\mathbb{N} = 2$.  
 
 
 # Real numbers  
-
 Real numbers are sometimes useful for describing the domain or range of a function $f(x)$. The domain (D) represents all possible values that $x$ can take and the range (R) represents all possible values that $f(x)$ or $y$ can take.   
 
-For example, when $f(x)=3x^2$:  
+When $f(x)=3x^2$:  
 + The domain of $f(x)$ is $D:\; (-\infty,\infty)$. 
 + This can also be represented as $D:\; \{x\in\mathbb{R}\}$.   
 + The range of $f(x)$ is $R:\; [0,\infty)$.  
 + This can also be represented as $R:\; \{y\in\mathbb{R}\, |\, y\geq 0\}$.    
 
+When $f(x)=\sqrt{3-x}$:   
++ The domain of $f(x)$ is $D:\; (-\infty,3]$. 
++ This can also be represented as $D:\; \{x| \; x\leq 3\}$.   
++ The range of $f(x)$ is $R:\; [0,\infty)$.  
++ This can also be represented as $R:\; \{y\in \mathbb{R} | y \geq 0\}$.  
+
+<details><summary>R code</summary>  
+<p>   
+
 ```{r}
 # Plot the domain of f(x) = 3x^2 -----------------------------------------------
 set.seed(111)
 
-ggplot(data.frame(x = runif(1000, -20, 20)), aes(x)) +
+p1 <- ggplot(data.frame(x = runif(1000, -20, 20)), aes(x)) +
   geom_function(fun = ~ 3*(.x)^2) +
-  geom_vline(xintercept = 3, colour = "firebrick", linetype = "dotted") + 
   xlim(-4, 4) + 
-  ylim(-2, 4) + 
-  labs(title = "f(x) = sqrt(3-x)") +  
+  ylim(-1, 4) + 
+  labs(title = "f(x) = 3x^2") +  
   theme_minimal() + 
   theme(panel.border = element_rect(fill = NA),
         panel.grid.minor = element_blank(),
         panel.grid.major = element_line(linetype = "dotted")) +
-  annotate("text", x = 2.2, y = 3.6, label = "D: (-infinity, 3]")
-```
+  annotate("text", x = 1.4, y = 4, label = "D: (-infinity, infinity)")
 
-For example, when $f(x)=3x^2$:  
-+ The domain of $f(x)$ is $D:\; (-\infty,\infty)$. 
-+ This can also be represented as $D:\; \{ x\in \mathbb{R}\}$.   
-+ The range of $f(x)$ is $R:\; [0,\infty)$.  
-+ This can also be represented as $R:\; \{y\in \mathbb{R} | y \geq 0\}$.
-
-
-```{r, results='hold', out.width="70%"}
 # Plot the domain of f(x) = sqrt(3-x) ------------------------------------------
 set.seed(111)
 
-ggplot(data.frame(x = runif(1000, -3, 3)), aes(x)) +
+p2 <- ggplot(data.frame(x = runif(1000, -3, 3)), aes(x)) +
   geom_function(fun = ~ sqrt(3-(.x))) +
   geom_vline(xintercept = 3, colour = "firebrick", linetype = "dotted") + 
   xlim(-4, 4) + 
-  ylim(-2, 4) + 
+  ylim(-1, 4) + 
   labs(title = "f(x) = sqrt(3-x)") +  
   theme_minimal() + 
   theme(panel.border = element_rect(fill = NA),
         panel.grid.minor = element_blank(),
         panel.grid.major = element_line(linetype = "dotted")) +
-  annotate("text", x = 2.2, y = 3.6, label = "D: (-infinity, 3]")
+  annotate("text", x = 1.4, y = 4, label = "D: (-infinity, 3]")
+
+# Plot ggplot figures side by side --------------------------------------------- 
+p1 + p2
 ```
 
-which comprises all possible values of $x$ from $f(x)$. For example, when $f(x) = \sqrt{3-x}$, the domain of $f(x)$ is $D: \; (-\infty, 3]$ or $D: \; \{x| \; x\leq 3\}$. 
+</p>  
+</details><p>  
 
 
 # Complex numbers  
-
 Complex numbers ($a+bi$) are represented by two components which cannot be further simplified:   
 + The term $a$ represents a real number.   
 + The term $bi$ represents the product of a real number and an imaginary number, where $i^2=-1$.   
 
 Because the terms $a$ and $bi$ occupy completely different number plans (a real plane versus an imaginary plane), we can think of the combination of $a+bi$ as the sum of two vectors in 2D space.  
 
-Our 2D space is different to the Cartesian plane as the basis for a complex number $\mathbb{C}$ is $\{(1, 0), (0, i)\}$. However, the same principles of vector addition apply.   
+Our 2D space is different to the Cartesian plane as the basis for a complex number $\mathbb{C}$ is $\{(1, 0), (0, i)\}$. However, the same principles of vector scalar multiplication and vector addition apply.   
 
 Complex numbers therefore allow us to think about the additive and multiplicative properties of vectors in $\mathbb{R}^2$.
 
-```{r, echo=FALSE, results='markup', out.width="90%"}
+```{r, echo=FALSE, results='markup'}
 knitr::include_graphics("../figures/numbers-complex.svg")
 ```
+
+**Note:** Complex number multiplication does not behave the same way as vector-vector multiplication, as the basis vectors $\{(1, 0), (0, i)\}$ are not truly orthogonal to each other, as $i^2 = -1$.    
 
 
 # Resources  

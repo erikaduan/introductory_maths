@@ -1,7 +1,7 @@
 Introduction to numbers
 ================
 Erika Duan
-2022-08-03
+2022-08-05
 
 -   [Numbers](#numbers)
 -   [Natural numbers](#natural-numbers)
@@ -40,7 +40,7 @@ i.e. ![n = \\tfrac{n}{1}](https://latex.codecogs.com/svg.format?n%20%3D%20%5Ctf
 All rational numbers are complex numbers
 i.e. ![\\tfrac{n}{1} = \\tfrac{n+1}{1}+i^2](https://latex.codecogs.com/svg.format?%5Ctfrac%7Bn%7D%7B1%7D%20%3D%20%5Ctfrac%7Bn%2B1%7D%7B1%7D%2Bi%5E2 "\tfrac{n}{1} = \tfrac{n+1}{1}+i^2").
 
-<img src="../figures/numbers-categories.svg" width="90%" style="display: block; margin: auto;" />
+<img src="../figures/numbers-categories.svg" width="80%" style="display: block; margin: auto;" />
 
 **Question:** Can you think of different ways to classify the number 2
 compared to the number
@@ -68,7 +68,7 @@ domain (D) represents all possible values that
 ![f(x)](https://latex.codecogs.com/svg.format?f%28x%29 "f(x)") or
 ![y](https://latex.codecogs.com/svg.format?y "y") can take.
 
-For example, when
+When
 ![f(x)=3x^2](https://latex.codecogs.com/svg.format?f%28x%29%3D3x%5E2 "f(x)=3x^2"):  
 + The domain of
 ![f(x)](https://latex.codecogs.com/svg.format?f%28x%29 "f(x)") is
@@ -81,67 +81,64 @@ This can also be represented as
 + This can also be represented as
 ![R:\\; \\{y\\in\\mathbb{R}\\, \|\\, y\\geq 0\\}](https://latex.codecogs.com/svg.format?R%3A%5C%3B%20%5C%7By%5Cin%5Cmathbb%7BR%7D%5C%2C%20%7C%5C%2C%20y%5Cgeq%200%5C%7D "R:\; \{y\in\mathbb{R}\, |\, y\geq 0\}").
 
-``` r
-# Plot the domain of f(x) = 3x^2 -----------------------------------------------
-set.seed(111)
-
-ggplot(data.frame(x = runif(1000, -20, 20)), aes(x)) +
-  geom_function(fun = ~ 3*(.x)^2) +
-  geom_vline(xintercept = 3, colour = "firebrick", linetype = "dotted") + 
-  xlim(-4, 4) + 
-  ylim(-2, 4) + 
-  labs(title = "f(x) = sqrt(3-x)") +  
-  theme_minimal() + 
-  theme(panel.border = element_rect(fill = NA),
-        panel.grid.minor = element_blank(),
-        panel.grid.major = element_line(linetype = "dotted")) +
-  annotate("text", x = 2.2, y = 3.6, label = "D: (-infinity, 3]")
-```
-
-<img src="numbers-introduction_files/figure-gfm/unnamed-chunk-3-1.png" style="display: block; margin: auto;" />
-
-For example, when
-![f(x)=3x^2](https://latex.codecogs.com/svg.format?f%28x%29%3D3x%5E2 "f(x)=3x^2"):  
+When
+![f(x)=\\sqrt{3-x}](https://latex.codecogs.com/svg.format?f%28x%29%3D%5Csqrt%7B3-x%7D "f(x)=\sqrt{3-x}"):  
 + The domain of
 ![f(x)](https://latex.codecogs.com/svg.format?f%28x%29 "f(x)") is
-![D:\\; (-\\infty,\\infty)](https://latex.codecogs.com/svg.format?D%3A%5C%3B%20%28-%5Cinfty%2C%5Cinfty%29 "D:\; (-\infty,\infty)"). +
+![D:\\; (-\\infty,3\]](https://latex.codecogs.com/svg.format?D%3A%5C%3B%20%28-%5Cinfty%2C3%5D "D:\; (-\infty,3]"). +
 This can also be represented as
-![D:\\; \\{ x\\in \\mathbb{R}\\}](https://latex.codecogs.com/svg.format?D%3A%5C%3B%20%5C%7B%20x%5Cin%20%5Cmathbb%7BR%7D%5C%7D "D:\; \{ x\in \mathbb{R}\}").  
+![D:\\; \\{x\| \\; x\\leq 3\\}](https://latex.codecogs.com/svg.format?D%3A%5C%3B%20%5C%7Bx%7C%20%5C%3B%20x%5Cleq%203%5C%7D "D:\; \{x| \; x\leq 3\}").  
 + The range of
 ![f(x)](https://latex.codecogs.com/svg.format?f%28x%29 "f(x)") is
 ![R:\\; \[0,\\infty)](https://latex.codecogs.com/svg.format?R%3A%5C%3B%20%5B0%2C%5Cinfty%29 "R:\; [0,\infty)").  
 + This can also be represented as
 ![R:\\; \\{y\\in \\mathbb{R} \| y \\geq 0\\}](https://latex.codecogs.com/svg.format?R%3A%5C%3B%20%5C%7By%5Cin%20%5Cmathbb%7BR%7D%20%7C%20y%20%5Cgeq%200%5C%7D "R:\; \{y\in \mathbb{R} | y \geq 0\}").
 
+<details>
+<summary>
+R code
+</summary>
+<p>
+
 ``` r
+# Plot the domain of f(x) = 3x^2 -----------------------------------------------
+set.seed(111)
+
+p1 <- ggplot(data.frame(x = runif(1000, -20, 20)), aes(x)) +
+  geom_function(fun = ~ 3*(.x)^2) +
+  xlim(-4, 4) + 
+  ylim(-1, 4) + 
+  labs(title = "f(x) = 3x^2") +  
+  theme_minimal() + 
+  theme(panel.border = element_rect(fill = NA),
+        panel.grid.minor = element_blank(),
+        panel.grid.major = element_line(linetype = "dotted")) +
+  annotate("text", x = 1.4, y = 4, label = "D: (-infinity, infinity)")
+
 # Plot the domain of f(x) = sqrt(3-x) ------------------------------------------
 set.seed(111)
 
-ggplot(data.frame(x = runif(1000, -3, 3)), aes(x)) +
+p2 <- ggplot(data.frame(x = runif(1000, -3, 3)), aes(x)) +
   geom_function(fun = ~ sqrt(3-(.x))) +
   geom_vline(xintercept = 3, colour = "firebrick", linetype = "dotted") + 
   xlim(-4, 4) + 
-  ylim(-2, 4) + 
+  ylim(-1, 4) + 
   labs(title = "f(x) = sqrt(3-x)") +  
   theme_minimal() + 
   theme(panel.border = element_rect(fill = NA),
         panel.grid.minor = element_blank(),
         panel.grid.major = element_line(linetype = "dotted")) +
-  annotate("text", x = 2.2, y = 3.6, label = "D: (-infinity, 3]")
+  annotate("text", x = 1.4, y = 4, label = "D: (-infinity, 3]")
+
+# Plot ggplot figures side by side --------------------------------------------- 
+p1 + p2
 ```
 
-<img src="numbers-introduction_files/figure-gfm/unnamed-chunk-4-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="numbers-introduction_files/figure-gfm/unnamed-chunk-3-1.png" width="80%" style="display: block; margin: auto;" />
 
-which comprises all possible values of
-![x](https://latex.codecogs.com/svg.format?x "x") from
-![f(x)](https://latex.codecogs.com/svg.format?f%28x%29 "f(x)"). For
-example, when
-![f(x) = \\sqrt{3-x}](https://latex.codecogs.com/svg.format?f%28x%29%20%3D%20%5Csqrt%7B3-x%7D "f(x) = \sqrt{3-x}"),
-the domain of
-![f(x)](https://latex.codecogs.com/svg.format?f%28x%29 "f(x)") is
-![D: \\; (-\\infty, 3\]](https://latex.codecogs.com/svg.format?D%3A%20%5C%3B%20%28-%5Cinfty%2C%203%5D "D: \; (-\infty, 3]")
-or
-![D: \\; \\{x\| \\; x\\leq 3\\}](https://latex.codecogs.com/svg.format?D%3A%20%5C%3B%20%5C%7Bx%7C%20%5C%3B%20x%5Cleq%203%5C%7D "D: \; \{x| \; x\leq 3\}").
+</p>
+</details>
+<p>
 
 # Complex numbers
 
@@ -166,13 +163,20 @@ complex number
 ![\\mathbb{C}](https://latex.codecogs.com/svg.format?%5Cmathbb%7BC%7D "\mathbb{C}")
 is
 ![\\{(1, 0), (0, i)\\}](https://latex.codecogs.com/svg.format?%5C%7B%281%2C%200%29%2C%20%280%2C%20i%29%5C%7D "\{(1, 0), (0, i)\}").
-However, the same principles of vector addition apply.
+However, the same principles of vector scalar multiplication and vector
+addition apply.
 
 Complex numbers therefore allow us to think about the additive and
 multiplicative properties of vectors in
 ![\\mathbb{R}^2](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5E2 "\mathbb{R}^2").
 
-<img src="../figures/numbers-complex.svg" width="90%" style="display: block; margin: auto;" />
+<img src="../figures/numbers-complex.svg" width="80%" style="display: block; margin: auto;" />
+
+**Note:** Complex number multiplication does not behave the same way as
+vector-vector multiplication, as the basis vectors
+![\\{(1, 0), (0, i)\\}](https://latex.codecogs.com/svg.format?%5C%7B%281%2C%200%29%2C%20%280%2C%20i%29%5C%7D "\{(1, 0), (0, i)\}")
+are not truly orthogonal to each other, as
+![i^2 = -1](https://latex.codecogs.com/svg.format?i%5E2%20%3D%20-1 "i^2 = -1").
 
 # Resources
 
