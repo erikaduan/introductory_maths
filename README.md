@@ -40,15 +40,21 @@ This project was created using the following setup:
 **Direct proof**   
 + Occurs when you need to prove that A and B are equivalent.   
 + Start by assuming A is true.   
-+ Construction definition statement for A (use a fixed but arbitary example of A).   
++ Construct a definition statement for A (use a fixed but arbitary example of A).   
 + Extend and simplify mathematical definitions derived from A to reach B.   
 + Sometimes you may need to also prove that the reverse case is true i.e. start with B and end with A.  
++ When you are asked if A and only A is true, then B is true, first suppose A to reach B. Then suppose B to reach A.   
 
 **Induction proof**  
-+ Occurs when you need to provde that something is true for all cases.  
++ Occurs when you need to prove that something is true for all cases.  
 + Start by proving the base case when $n = 1$.  
 + Assume that the case is also true for some integer $k$.  
-+ Prove that the case for $k + 1$ also holds i.e. proving the next incremental step up a ladder stretching to infinity.  
++ Prove that the case for $k + 1$ also holds i.e. prove the next incremental step up a ladder stretching to infinity.  
+
+**Uniqueness proof**  
++ Occurs when you need to prove that a solution is unique.  
++ Shown that there is one solution first.  
++ Shown that there is a second solution and that the first and second solutions must be equal.    
 
 ## References
 

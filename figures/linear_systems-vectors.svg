@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="1080"
-   height="510"
+   width="1120"
+   height="520"
    overflow="hidden"
    version="1.1"
-   id="svg109"
+   id="svg127"
    sodipodi:docname="linear_systems-vectors.svg"
    inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -12,7 +12,7 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
-     id="namedview111"
+     id="namedview129"
      pagecolor="#ffffff"
      bordercolor="#000000"
      borderopacity="0.25"
@@ -21,15 +21,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
-     inkscape:zoom="0.32777778"
-     inkscape:cx="385.9322"
-     inkscape:cy="360"
+     inkscape:zoom="0.92709556"
+     inkscape:cx="510.73484"
+     inkscape:cy="225.43523"
      inkscape:window-width="2560"
      inkscape:window-height="1494"
      inkscape:window-x="-11"
      inkscape:window-y="-11"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg109" />
+     inkscape:current-layer="svg127" />
   <defs
      id="defs5">
     <clipPath
@@ -44,8 +44,8 @@
   </defs>
   <g
      clip-path="url(#clip0)"
-     id="g107"
-     transform="translate(-36.61017,-48.81356)">
+     id="g125"
+     transform="translate(-87.369635,-74.425985)">
     <rect
        x="0"
        y="0"
@@ -54,29 +54,29 @@
        fill="#ffffff"
        id="rect7" />
     <rect
-       x="490"
-       y="436"
-       width="76"
-       height="75"
+       x="522"
+       y="458"
+       width="75"
+       height="76"
        stroke="#ededed"
        stroke-width="4"
        stroke-miterlimit="8"
        fill="none"
        id="rect9" />
     <rect
-       x="490"
-       y="360"
-       width="76"
-       height="76"
+       x="522"
+       y="383"
+       width="75"
+       height="75"
        stroke="#ededed"
        stroke-width="4"
        stroke-miterlimit="8"
        fill="none"
        id="rect11" />
     <rect
-       x="490"
-       y="284"
-       width="76"
+       x="522"
+       y="307"
+       width="75"
        height="76"
        stroke="#ededed"
        stroke-width="4"
@@ -88,7 +88,7 @@
        font-family="Calibri, Calibri_MSFontService, sans-serif"
        font-weight="400"
        font-size="24px"
-       transform="translate(511.342,315)"
+       transform="translate(543.112,338)"
        id="text21">(<tspan
    font-size="24px"
    x="7.3333101"
@@ -103,39 +103,39 @@
    y="29"
    id="tspan19">1)</tspan></text>
     <rect
-       x="490"
-       y="209"
-       width="76"
-       height="75"
-       stroke="#ededed"
-       stroke-width="4"
-       stroke-miterlimit="8"
-       fill="none"
-       id="rect23" />
-    <rect
-       x="112"
-       y="436"
-       width="75"
-       height="75"
-       stroke="#ededed"
-       stroke-width="4"
-       stroke-miterlimit="8"
-       fill="none"
-       id="rect25" />
-    <rect
-       x="112"
-       y="360"
+       x="522"
+       y="231"
        width="75"
        height="76"
        stroke="#ededed"
        stroke-width="4"
        stroke-miterlimit="8"
        fill="none"
+       id="rect23" />
+    <rect
+       x="143"
+       y="458"
+       width="76"
+       height="76"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect25" />
+    <rect
+       x="143"
+       y="383"
+       width="76"
+       height="75"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
        id="rect27" />
     <rect
-       x="112"
-       y="209"
-       width="75"
+       x="143"
+       y="232"
+       width="76"
        height="75"
        stroke="#ededed"
        stroke-width="4"
@@ -143,48 +143,48 @@
        fill="none"
        id="rect29" />
     <rect
-       x="187"
-       y="436"
+       x="219"
+       y="458"
        width="75"
-       height="75"
+       height="76"
        stroke="#ededed"
        stroke-width="4"
        stroke-miterlimit="8"
        fill="none"
        id="rect31" />
     <rect
-       x="187"
-       y="360"
+       x="219"
+       y="383"
        width="75"
-       height="76"
+       height="75"
        stroke="#ededed"
        stroke-width="4"
        stroke-miterlimit="8"
        fill="none"
        id="rect33" />
     <rect
-       x="262"
-       y="436"
-       width="76"
-       height="75"
+       x="294"
+       y="458"
+       width="75"
+       height="76"
        stroke="#ededed"
        stroke-width="4"
        stroke-miterlimit="8"
        fill="none"
        id="rect35" />
     <rect
-       x="262"
-       y="360"
-       width="76"
-       height="76"
+       x="294"
+       y="383"
+       width="75"
+       height="75"
        stroke="#ededed"
        stroke-width="4"
        stroke-miterlimit="8"
        fill="none"
        id="rect37" />
     <rect
-       x="262"
-       y="284"
+       x="294"
+       y="307"
        width="75"
        height="76"
        stroke="#ededed"
@@ -193,9 +193,9 @@
        fill="none"
        id="rect39" />
     <rect
-       x="262"
-       y="209"
-       width="76"
+       x="294"
+       y="232"
+       width="75"
        height="75"
        stroke="#ededed"
        stroke-width="4"
@@ -203,8 +203,8 @@
        fill="none"
        id="rect41" />
     <rect
-       x="186"
-       y="209"
+       x="218"
+       y="232"
        width="76"
        height="75"
        stroke="#ededed"
@@ -213,48 +213,48 @@
        fill="none"
        id="rect43" />
     <rect
-       x="339"
-       y="436"
-       width="75"
-       height="75"
+       x="370"
+       y="458"
+       width="76"
+       height="76"
        stroke="#ededed"
        stroke-width="4"
        stroke-miterlimit="8"
        fill="none"
        id="rect45" />
     <rect
-       x="339"
-       y="360"
-       width="75"
-       height="76"
+       x="370"
+       y="383"
+       width="76"
+       height="75"
        stroke="#ededed"
        stroke-width="4"
        stroke-miterlimit="8"
        fill="none"
        id="rect47" />
     <rect
-       x="414"
-       y="436"
-       width="75"
-       height="75"
-       stroke="#ededed"
-       stroke-width="4"
-       stroke-miterlimit="8"
-       fill="none"
-       id="rect49" />
-    <rect
-       x="414"
-       y="360"
+       x="446"
+       y="458"
        width="75"
        height="76"
        stroke="#ededed"
        stroke-width="4"
        stroke-miterlimit="8"
        fill="none"
+       id="rect49" />
+    <rect
+       x="446"
+       y="383"
+       width="75"
+       height="75"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
        id="rect51" />
     <rect
-       x="414"
-       y="284"
+       x="446"
+       y="307"
        width="75"
        height="76"
        stroke="#ededed"
@@ -263,18 +263,18 @@
        fill="none"
        id="rect53" />
     <rect
-       x="414"
-       y="209"
+       x="446"
+       y="231"
        width="75"
-       height="75"
+       height="76"
        stroke="#ededed"
        stroke-width="4"
        stroke-miterlimit="8"
        fill="none"
        id="rect55" />
     <rect
-       x="338"
-       y="284"
+       x="370"
+       y="307"
        width="76"
        height="76"
        stroke="#ededed"
@@ -283,28 +283,29 @@
        fill="none"
        id="rect57" />
     <rect
-       x="338"
-       y="209"
+       x="370"
+       y="231"
        width="76"
-       height="75"
+       height="76"
        stroke="#ededed"
        stroke-width="4"
        stroke-miterlimit="8"
        fill="none"
        id="rect59" />
     <path
-       d="M 337.79,511.362 336,209"
-       stroke="#000000"
+       d="M 0,0 1.04987e-4,302.362"
+       stroke="#bfbfbf"
        stroke-width="4"
        stroke-miterlimit="8"
        stroke-dasharray="12, 4"
        fill="none"
        fill-rule="evenodd"
+       transform="matrix(1,0,0,-1,445,533.362)"
        id="path61" />
     <rect
-       x="112"
-       y="284"
-       width="75"
+       x="143"
+       y="307"
+       width="76"
        height="76"
        stroke="#ededed"
        stroke-width="4"
@@ -312,8 +313,8 @@
        fill="none"
        id="rect63" />
     <rect
-       x="186"
-       y="284"
+       x="218"
+       y="307"
        width="76"
        height="76"
        stroke="#ededed"
@@ -322,8 +323,8 @@
        fill="none"
        id="rect65" />
     <path
-       d="m 112,359 454.032,2.771"
-       stroke="#000000"
+       d="M 143,382 H 597.032"
+       stroke="#bfbfbf"
        stroke-width="4"
        stroke-miterlimit="8"
        stroke-dasharray="12, 4"
@@ -331,7 +332,7 @@
        fill-rule="evenodd"
        id="path67" />
     <path
-       d="m 180.5,284 c 0,-4.142 3.358,-7.5 7.5,-7.5 4.142,0 7.5,3.358 7.5,7.5 0,4.142 -3.358,7.5 -7.5,7.5 -4.142,0 -7.5,-3.358 -7.5,-7.5 z"
+       d="m 212.5,307 c 0,-4.142 3.358,-7.5 7.5,-7.5 4.142,0 7.5,3.358 7.5,7.5 0,4.142 -3.358,7.5 -7.5,7.5 -4.142,0 -7.5,-3.358 -7.5,-7.5 z"
        stroke="#000000"
        stroke-width="3"
        stroke-miterlimit="8"
@@ -341,82 +342,138 @@
     <text
        font-family="Calibri, Calibri_MSFontService, sans-serif"
        font-weight="400"
-       font-size="27px"
-       transform="translate(114.004,128)"
+       font-size="32px"
+       transform="translate(143.477,171)"
        id="text71">The vector</text>
     <path
-       d="m 273.317,98.4993 h 6.276 v 44.2967 h -6.276 v -1.147 h 3.837 V 99.6463 h -3.837 z m -35.507,0 h 6.276 v 1.147 h -3.837 v 42.0027 h 3.837 v 1.147 h -6.276 z"
+       d="m 334.406,135.994 h 7.438 v 52.5 h -7.438 v -1.359 h 4.547 v -49.782 h -4.547 z m -42.509,0 h 7.437 v 1.359 h -4.547 v 49.782 h 4.547 v 1.359 h -7.437 z"
        fill-rule="evenodd"
        id="path73" />
     <text
        font-family="Calibri, Calibri_MSFontService, sans-serif"
        font-weight="400"
-       font-size="27px"
-       transform="translate(244.558,114)"
-       id="text93">−<tspan
+       font-size="32px"
+       transform="translate(300.037,154)"
+       id="text83">−<tspan
    font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
-   font-size="27px"
-   x="13.3333"
+   font-size="32px"
+   x="16"
    y="0"
-   id="tspan75">2</tspan><tspan
+   id="tspan75">3</tspan><tspan
    font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
-   font-size="27px"
-   x="6.6666598"
-   y="31"
+   font-size="32px"
+   x="8"
+   y="38"
    id="tspan77">1</tspan><tspan
-   font-size="27px"
-   x="43.9067"
-   y="14"
-   id="tspan79">describes a point in 2D,</tspan>with respect to the origin. <tspan
-   font-size="27px"
-   x="-130.55299"
-   y="56"
-   id="tspan81">It can be thought of as a position vector for the coordinate (</tspan>-<tspan
-   font-size="27px"
-   x="523.78003"
-   y="56"
-   id="tspan83">2, 1) in 2D.</tspan><tspan
    font-size="32px"
-   x="-98.366302"
-   y="149"
-   id="tspan85">(</tspan><tspan
+   x="52.52"
+   y="17"
+   id="tspan79">acts as a position vector for the coordinate</tspan><tspan
    font-size="32px"
-   x="-88.6996"
-   y="149"
-   id="tspan87">-</tspan><tspan
-   font-size="32px"
-   x="-78.866302"
-   y="149"
-   id="tspan89">2</tspan><tspan
-   font-size="32px"
-   x="-62.6996"
-   y="149"
-   id="tspan91">, 1)</tspan></text>
+   x="-156.56"
+   y="133"
+   id="tspan81">(</tspan>-3, 1)</text>
     <path
-       d="m 336.84,361.387 -141.157,-68.853 1.754,-3.595 141.156,68.853 z m -134.227,-57.988 -9.621,-14.403 17.273,-1.285 c 1.101,-0.082 2.061,0.745 2.143,1.846 0.082,1.102 -0.745,2.061 -1.846,2.143 l -13.854,1.031 1.514,-3.106 7.717,11.553 c 0.613,0.918 0.366,2.16 -0.552,2.774 -0.919,0.613 -2.161,0.366 -2.774,-0.553 z"
+       d="m 442.308,384.492 -214.157,-69.369 1.232,-3.805 214.158,69.369 z m -205.773,-59.582 -11.544,-12.913 16.923,-3.692 c 1.079,-0.236 2.145,0.448 2.38,1.527 0.236,1.08 -0.448,2.145 -1.527,2.381 l -13.573,2.961 1.064,-3.287 9.259,10.358 c 0.736,0.823 0.666,2.087 -0.158,2.824 -0.823,0.736 -2.088,0.665 -2.824,-0.159 z"
        fill="#44546a"
-       id="path95" />
+       id="path85" />
     <text
        font-family="Calibri, Calibri_MSFontService, sans-serif"
        font-weight="400"
-       font-size="24px"
-       transform="translate(597.873,302)"
-       id="text105">A vector can be thought of as an arrow pointing <tspan
-   font-size="24px"
-   x="0"
-   y="29"
-   id="tspan97">to a position in 2D starting from the origin (0, 0).</tspan><tspan
-   font-size="24px"
-   x="0"
-   y="87"
-   id="tspan99">Vectors therefore have a length as well as a</tspan><tspan
-   font-size="24px"
-   x="0"
-   y="116"
-   id="tspan101">position in space (direction).</tspan><tspan
+       font-size="32px"
+       transform="translate(450.597,418)"
+       id="text93">(0, 0) <tspan
    font-size="32px"
-   x="-253.883"
-   y="90"
-   id="tspan103">(0, 0)</tspan></text>
+   x="463.60001"
+   y="-247"
+   id="tspan87">(</tspan><tspan
+   font-size="32px"
+   x="473.26599"
+   y="-247"
+   id="tspan89">-</tspan><tspan
+   font-size="32px"
+   x="483.10001"
+   y="-247"
+   id="tspan91">3, 1) in 2D.</tspan></text>
+    <path
+       d="m 234.059,302.994 c 2.73,-8.061 10.688,-12.65 17.774,-10.25 l 79.12,26.796 c 7.086,2.4 15.044,-2.189 17.774,-10.25 -2.73,8.061 0.802,16.541 7.889,18.941 l 79.119,26.795 c 7.087,2.401 10.618,10.881 7.889,18.941"
+       stroke="#c00000"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path95" />
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(328.388,299)"
+       id="text97">|</text>
+    <path
+       d="m 360.983,281.568 h 1.805 v 21.809 h -1.805 z m -22.033,0 h 1.804 v 21.809 h -1.804 z"
+       fill-rule="evenodd"
+       id="path99" />
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(343.648,299)"
+       id="text101">𝑢</text>
+    <path
+       d="m 354.536,280.434 2.942,2.543 v 0.68 l -2.942,2.543 -0.621,-0.704 1.875,-1.629 h -3.937 -3.211 -3.82 v -1.101 h 3.82 3.211 3.937 l -1.875,-1.629 z"
+       fill-rule="evenodd"
+       id="path103" />
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(365.682,299)"
+       id="text123">|<tspan
+   font-size="24px"
+   x="7.6666899"
+   y="0"
+   id="tspan105" /><tspan
+   font-family="Calibri, Calibri_MSFontService, sans-serif"
+   font-size="27px"
+   x="268.03101"
+   y="63"
+   id="tspan107">Vectors therefore have</tspan><tspan
+   fill="#c00000"
+   font-family="Calibri, Calibri_MSFontService, sans-serif"
+   font-size="27px"
+   x="520.45801"
+   y="63"
+   id="tspan109">length</tspan><tspan
+   font-family="Calibri, Calibri_MSFontService, sans-serif"
+   font-size="27px"
+   x="595.05103"
+   y="63"
+   id="tspan111">and point to a</tspan><tspan
+   font-family="Calibri, Calibri_MSFontService, sans-serif"
+   font-size="27px"
+   x="268.03101"
+   y="95"
+   id="tspan113">position in n</tspan><tspan
+   font-family="Calibri, Calibri_MSFontService, sans-serif"
+   font-size="18px"
+   x="401.785"
+   y="87"
+   id="tspan115">th</tspan><tspan
+   font-family="Calibri, Calibri_MSFontService, sans-serif"
+   font-size="27px"
+   x="423.11801"
+   y="95"
+   id="tspan117">dimensional space (have</tspan><tspan
+   fill="#44546a"
+   font-family="Calibri, Calibri_MSFontService, sans-serif"
+   font-size="27px"
+   x="695.25098"
+   y="95"
+   id="tspan119">direction</tspan><tspan
+   font-family="Calibri, Calibri_MSFontService, sans-serif"
+   font-size="27px"
+   x="792.23102"
+   y="95"
+   id="tspan121">).</tspan></text>
   </g>
 </svg>

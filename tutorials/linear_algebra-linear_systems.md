@@ -1,7 +1,7 @@
 Introduction to linear systems
 ================
 Erika Duan
-2022-08-05
+2022-08-07
 
 -   [A single linear equation](#a-single-linear-equation)
 -   [A system of linear equations](#a-system-of-linear-equations)
@@ -10,6 +10,8 @@ Erika Duan
     forms](#augmented-matrices-and-matrix-echelon-forms)
 -   [Row reduction algorithmn](#row-reduction-algorithmn)
 -   [Homogenous linear systems](#homogenous-linear-systems)
+-   [Linear independence and homogenous linear
+    systems](#linear-independence-and-homogenous-linear-systems)
 -   [Resources](#resources)
 
 # A single linear equation
@@ -286,7 +288,7 @@ solution for each variable is obvious).
 
 **Note:** Linear systems with infinite solutions are easily identified
 in matrix form, by the presence of at least one row which lacks a
-leading edge. Free variables correspond to variable(s) without a
+leading edge. Free variables correspond to variables without a
 positional leading edge or pivot column in the echelon form of the
 augmented matrix.
 
@@ -438,10 +440,10 @@ for i in range(n):
 How can we easily identify systems with infinite compared to single
 solutions? By presenting the set of solutions
 ![(s_1, s_2, ..., s_n)](https://latex.codecogs.com/svg.format?%28s_1%2C%20s_2%2C%20...%2C%20s_n%29 "(s_1, s_2, ..., s_n)")
-in an alternate parametric vector form.
+in a parametric vector form.
 
 It is easy to identify the parametric vector form of homogeneous linear
-system, which have the form
+systems, which have the form
 ![A\\vec x=\\vec 0](https://latex.codecogs.com/svg.format?A%5Cvec%20x%3D%5Cvec%200 "A\vec x=\vec 0").
 These equations either have a single trivial solution (they only
 intersect at the origin) or infinite solutions (defined in relation to
@@ -453,25 +455,24 @@ has infinite solutions:
 + At least one solution is
 ![\\vec p](https://latex.codecogs.com/svg.format?%5Cvec%20p "\vec p")
 i.e. a single vector of real numbers or a point in
-![\\mathbb{R}^n](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5En "\mathbb{R}^n").  
-+ At least one solution can be represented as
-![A\\vec x=\\vec0](https://latex.codecogs.com/svg.format?A%5Cvec%20x%3D%5Cvec0 "A\vec x=\vec0"),
-where the solution set is also the vector span of
-![\\{\\vec v_1, ... , \\vec v\_{h} \\}](https://latex.codecogs.com/svg.format?%5C%7B%5Cvec%20v_1%2C%20...%20%2C%20%5Cvec%20v_%7Bh%7D%20%5C%7D "\{\vec v_1, ... , \vec v_{h} \}").  
+![\\mathbb{R}^m](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5Em "\mathbb{R}^m").  
++ At least one other equation can be represented as a homogeneous linear
+system with form
+![A\\vec v_h=\\vec0](https://latex.codecogs.com/svg.format?A%5Cvec%20v_h%3D%5Cvec0 "A\vec v_h=\vec0"),
+where the solution set is the vector span of
+![\\{\\vec v_1, ... , \\vec v\_{h} \\}](https://latex.codecogs.com/svg.format?%5C%7B%5Cvec%20v_1%2C%20...%20%2C%20%5Cvec%20v_%7Bh%7D%20%5C%7D "\{\vec v_1, ... , \vec v_{h} \}")
+where
+![\\vec v_h = \\vec q - \\vec p](https://latex.codecogs.com/svg.format?%5Cvec%20v_h%20%3D%20%5Cvec%20q%20-%20%5Cvec%20p "\vec v_h = \vec q - \vec p").  
 + The solution set of
-![A\\vec x = \\vec b](https://latex.codecogs.com/svg.format?A%5Cvec%20x%20%3D%20%5Cvec%20b "A\vec x = \vec b")
-can be presented in the form
-![\\{\\vec p+c_1\\vec v_1+ ... +c_h\\vec v\_{h}\|c_1, ... ,c_h\\in \\mathbb{R}\\}](https://latex.codecogs.com/svg.format?%5C%7B%5Cvec%20p%2Bc_1%5Cvec%20v_1%2B%20...%20%2Bc_h%5Cvec%20v_%7Bh%7D%7Cc_1%2C%20...%20%2Cc_h%5Cin%20%5Cmathbb%7BR%7D%5C%7D "\{\vec p+c_1\vec v_1+ ... +c_h\vec v_{h}|c_1, ... ,c_h\in \mathbb{R}\}")
-as well as
-![(s_1, s_2, ..., s_n)](https://latex.codecogs.com/svg.format?%28s_1%2C%20s_2%2C%20...%2C%20s_n%29 "(s_1, s_2, ..., s_n)").
+![A\\vec x=\\vec b](https://latex.codecogs.com/svg.format?A%5Cvec%20x%3D%5Cvec%20b "A\vec x=\vec b")
+can therefore also be presented in the form
+![\\{\\vec p+c_1\\vec v_1+ ... +c_h\\vec v\_{h}\|c_1, ... ,c_h\\in \\mathbb{R}\\}](https://latex.codecogs.com/svg.format?%5C%7B%5Cvec%20p%2Bc_1%5Cvec%20v_1%2B%20...%20%2Bc_h%5Cvec%20v_%7Bh%7D%7Cc_1%2C%20...%20%2Cc_h%5Cin%20%5Cmathbb%7BR%7D%5C%7D "\{\vec p+c_1\vec v_1+ ... +c_h\vec v_{h}|c_1, ... ,c_h\in \mathbb{R}\}").
 
 <img src="../figures/linear_systems-infinite_solutions.svg" width="80%" style="display: block; margin: auto;" />
 
-**Note:** Solving a linear system can be viewed as finding a
-**parametric** description of the solution set or determining that the
-system is inconsistent. Homogenoous linear systems are easier to solve,
-as they can only have one trivial solution or infinite solutions that
-can be written in parametric vector form.
+Solving a linear system can therefore also be viewed as either finding a
+parametric description of the solution set or determining that the
+system is inconsistent.
 
 <img src="../figures/linear_systems-parametric_solutions.svg" width="80%" style="display: block; margin: auto;" />
 
@@ -488,7 +489,35 @@ object which intersects with the point represented by
 **Note:** The solution to a linear system will only contain the origin
 point if and only if the entire linear system is homogeneous i.e. the
 entire linear system has form
-![A\\vec v=\\vec0](https://latex.codecogs.com/svg.format?A%5Cvec%20v%3D%5Cvec0 "A\vec v=\vec0").
+![A\\vec x=\\vec0](https://latex.codecogs.com/svg.format?A%5Cvec%20x%3D%5Cvec0 "A\vec x=\vec0").
+
+# Linear independence and homogenous linear systems
+
+A homogeneous linear system
+![A\\vec v=\\vec0](https://latex.codecogs.com/svg.format?A%5Cvec%20v%3D%5Cvec0 "A\vec v=\vec0")
+is linearly independent if it only has one trivial solution. The set of
+solutions
+![\\{s_1, s_2, \\cdots, s_n\\}](https://latex.codecogs.com/svg.format?%5C%7Bs_1%2C%20s_2%2C%20%5Ccdots%2C%20s_n%5C%7D "\{s_1, s_2, \cdots, s_n\}")
+therefore has linear independence.
+
+If a homogeneous linear system has infinite solutions, at least one
+linear equation is equivalent to another linear equation i.e. at least
+one sub-matrix of form
+![A\\vec v_h=\\vec0](https://latex.codecogs.com/svg.format?A%5Cvec%20v_h%3D%5Cvec0 "A\vec v_h=\vec0")
+exists. The solution set of
+![\\{s_1, s_2, \\cdots, s_n\\}](https://latex.codecogs.com/svg.format?%5C%7Bs_1%2C%20s_2%2C%20%5Ccdots%2C%20s_n%5C%7D "\{s_1, s_2, \cdots, s_n\}")
+therefore has linear dependence.
+
+Linear dependence is therefore represented by the presence of one or
+more free variables in a linear system and its equivalent augmented
+matrix. When the parametric vector form of the solution set
+![\\{s_1, s_2, \\cdots, s_n\\}](https://latex.codecogs.com/svg.format?%5C%7Bs_1%2C%20s_2%2C%20%5Ccdots%2C%20s_n%5C%7D "\{s_1, s_2, \cdots, s_n\}")
+is infinite, at least one
+![x](https://latex.codecogs.com/svg.format?x "x") variable is non-zero
+in the homogenous linear system
+![x_1\\vec a_1+x_2\\vec a_2+\\cdots+x_n\\vec a_n=\\vec 0](https://latex.codecogs.com/svg.format?x_1%5Cvec%20a_1%2Bx_2%5Cvec%20a_2%2B%5Ccdots%2Bx_n%5Cvec%20a_n%3D%5Cvec%200 "x_1\vec a_1+x_2\vec a_2+\cdots+x_n\vec a_n=\vec 0").
+
+<img src="../figures/linear_systems-linear_dependence_a.svg" width="80%" style="display: block; margin: auto;" />
 
 # Resources
 
@@ -498,7 +527,7 @@ entire linear system has form
 -   [Blog
     post](https://bvanderlei.github.io/jupyter-guide-to-linear-algebra/Gaussian_Elimination.html)
     containing Python code to perform elementary row operations.  
--   [Solutions](https://levelup.gitconnected.com/gaussian-elimination-algorithm-in-python-4e90cb3a0fd9)
+-   [Solution](https://levelup.gitconnected.com/gaussian-elimination-algorithm-in-python-4e90cb3a0fd9)
     for the row reduction algorithm in Python.  
--   [YouTube video](https://www.youtube.com/watch?v=4P1YUKPIc4w) on
-    homogeneous linear systems.
+-   [YouTube video](https://www.youtube.com/watch?v=4P1YUKPIc4w) on the
+    properties of homogeneous linear systems.

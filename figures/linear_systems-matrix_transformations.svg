@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1100"
+   height="650"
+   overflow="hidden"
+   version="1.1"
+   id="svg155"
+   sodipodi:docname="linear_systems-matrix_transformations.svg"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview157"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.3111111"
+     inkscape:cx="580.04237"
+     inkscape:cy="392.0339"
+     inkscape:window-width="2560"
+     inkscape:window-height="1494"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg155" />
+  <defs
+     id="defs5">
+    <clipPath
+       id="clip0">
+      <rect
+         x="0"
+         y="0"
+         width="1280"
+         height="720"
+         id="rect2" />
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#clip0)"
+     id="g153"
+     transform="translate(-29.745763,-48.050847)">
+    <rect
+       x="0"
+       y="0"
+       width="1280"
+       height="720"
+       fill="#ffffff"
+       id="rect7" />
+    <path
+       d="M 715.554,587.197 641,511"
+       stroke="#fbe5d6"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 4"
+       fill="none"
+       fill-rule="evenodd"
+       id="path9" />
+    <path
+       d="M 0,0 100.631,48.7929"
+       stroke="#fbe5d6"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 4"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(-1,0,0,1,1040.63,534)"
+       id="path11" />
+    <path
+       d="M 0,0 152.77,74.1699"
+       stroke="#fbe5d6"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 4"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(-1,0,0,1,791.771,209)"
+       id="path13" />
+    <path
+       d="M 0,0 302,147.957"
+       stroke="#fbe5d6"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 4"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(-1,0,0,1,1019,436)"
+       id="path15" />
+    <path
+       d="M 0,0 379.914,188.581"
+       stroke="#fbe5d6"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 4"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(-1,0,0,1,1018.91,322)"
+       id="path17" />
+    <path
+       d="M 0,0 379.914,188.581"
+       stroke="#fbe5d6"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 4"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(-1,0,0,1,1019.91,209)"
+       id="path19" />
+    <path
+       d="M 940.688,584.826 638,283"
+       stroke="#fbe5d6"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 4"
+       fill="none"
+       fill-rule="evenodd"
+       id="path21" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="43px"
+       transform="translate(385.004,118)"
+       id="text23">Matrix transformations</text>
+    <rect
+       x="943"
+       y="360"
+       width="77"
+       height="76"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect25" />
+    <rect
+       x="942"
+       y="284"
+       width="78"
+       height="76"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect27" />
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(952.163,330)"
+       id="text33">(<tspan
+   font-size="24px"
+   x="7.3333702"
+   y="0"
+   id="tspan29">-</tspan><tspan
+   font-size="24px"
+   x="14.6667"
+   y="0"
+   id="tspan31">2, 1)</tspan></text>
+    <rect
+       x="943"
+       y="209"
+       width="77"
+       height="75"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect35" />
+    <rect
+       x="640"
+       y="436"
+       width="76"
+       height="75"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect37" />
+    <rect
+       x="640"
+       y="360"
+       width="76"
+       height="76"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect39" />
+    <rect
+       x="716"
+       y="436"
+       width="75"
+       height="75"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect41" />
+    <rect
+       x="716"
+       y="360"
+       width="75"
+       height="76"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect43" />
+    <rect
+       x="716"
+       y="284"
+       width="75"
+       height="76"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect45" />
+    <rect
+       x="716"
+       y="209"
+       width="75"
+       height="75"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect47" />
+    <rect
+       x="640"
+       y="209"
+       width="76"
+       height="75"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect49" />
+    <rect
+       x="792"
+       y="436"
+       width="76"
+       height="75"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect51" />
+    <rect
+       x="792"
+       y="360"
+       width="76"
+       height="76"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect53" />
+    <rect
+       x="868"
+       y="436"
+       width="75"
+       height="75"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect55" />
+    <rect
+       x="868"
+       y="360"
+       width="75"
+       height="76"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect57" />
+    <rect
+       x="867"
+       y="284"
+       width="76"
+       height="76"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect59" />
+    <rect
+       x="868"
+       y="209"
+       width="75"
+       height="75"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect61" />
+    <rect
+       x="792"
+       y="284"
+       width="75"
+       height="76"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect63" />
+    <rect
+       x="792"
+       y="209"
+       width="76"
+       height="75"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect65" />
+    <rect
+       x="640"
+       y="284"
+       width="76"
+       height="76"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect67" />
+    <rect
+       x="942"
+       y="436"
+       width="78"
+       height="75"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect69" />
+    <rect
+       x="641"
+       y="511"
+       width="76"
+       height="75"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect71" />
+    <rect
+       x="716"
+       y="511"
+       width="76"
+       height="75"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect73" />
+    <rect
+       x="793"
+       y="511"
+       width="75"
+       height="75"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect75" />
+    <rect
+       x="868"
+       y="511"
+       width="76"
+       height="75"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect77" />
+    <rect
+       x="943"
+       y="511"
+       width="77"
+       height="75"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect79" />
+    <path
+       d="M 792.47,586.417 791,209"
+       stroke="#bfbfbf"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="12, 4"
+       fill="none"
+       fill-rule="evenodd"
+       id="path81" />
+    <path
+       d="m 854.242,147.754 h 6.275 v 44.296 h -6.275 v -1.147 h 3.836 v -42.002 h -3.836 z m -77.008,0 h 6.276 v 1.147 h -3.837 v 42.002 h 3.837 v 1.147 h -6.276 z"
+       fill-rule="evenodd"
+       id="path83" />
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="27px"
+       transform="translate(783.982,163)"
+       id="text95">−<tspan
+   font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+   font-size="27px"
+   x="13.3333"
+   y="0"
+   id="tspan85">1</tspan><tspan
+   fill="#4472c4"
+   font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+   font-size="27px"
+   x="54.833302"
+   y="0"
+   id="tspan87">2</tspan><tspan
+   font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+   font-size="27px"
+   x="6.6666298"
+   y="32"
+   id="tspan89">1</tspan><tspan
+   fill="#4472c4"
+   font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+   font-size="27px"
+   x="54.833302"
+   y="32"
+   id="tspan91">1</tspan><tspan
+   fill="#000000"
+   font-size="32px"
+   x="-550.17603"
+   y="168"
+   id="tspan93">A =</tspan></text>
+    <path
+       d="m 365.596,290.073 h 7.859 v 63.656 h -7.859 v -1.438 h 4.796 V 291.51 h -4.796 z m -79.394,0 h 7.859 v 1.437 h -4.797 v 60.781 h 4.797 v 1.438 h -7.859 z"
+       fill-rule="evenodd"
+       id="path97" />
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(294.766,314)"
+       id="text109">𝑎<tspan
+   font-size="32px"
+   x="51.353298"
+   y="0"
+   id="tspan99">𝑏</tspan><tspan
+   font-size="32px"
+   x="1.46667"
+   y="38"
+   id="tspan101">𝑐</tspan><tspan
+   font-size="32px"
+   x="50.6133"
+   y="38"
+   id="tspan103">𝑑</tspan><tspan
+   fill="#385723"
+   font-size="24px"
+   x="-2.1019001"
+   y="-35"
+   id="tspan105">𝑎</tspan><tspan
+   fill="#385723"
+   font-size="16px"
+   x="11.2314"
+   y="-30"
+   id="tspan107">1</tspan></text>
+    <path
+       d="m 311.878,259.707 2.942,2.543 v 0.68 l -2.942,2.543 -0.621,-0.703 1.875,-1.629 h -4.81 -2.338 -1.969 -2.724 -1.589 -2.718 -4.313 v -1.102 h 4.313 2.718 1.589 2.724 1.969 2.338 4.81 l -1.875,-1.629 z"
+       fill="#385723"
+       fill-rule="evenodd"
+       id="path111" />
+    <path
+       d="m 292,293.833 c 0,-2.117 1.716,-3.833 3.833,-3.833 h 15.334 c 2.117,0 3.833,1.716 3.833,3.833 v 57.334 c 0,2.117 -1.716,3.833 -3.833,3.833 H 295.833 C 293.716,355 292,353.284 292,351.167 Z"
+       fill="#385723"
+       fill-rule="evenodd"
+       fill-opacity="0.4"
+       id="path113" />
+    <path
+       d="m 342,294.333 c 0,-2.393 1.94,-4.333 4.333,-4.333 h 17.334 c 2.393,0 4.333,1.94 4.333,4.333 v 56.334 c 0,2.393 -1.94,4.333 -4.333,4.333 H 346.333 C 343.94,355 342,353.06 342,350.667 Z"
+       fill="#385723"
+       fill-rule="evenodd"
+       fill-opacity="0.4"
+       id="path115" />
+    <text
+       fill="#385723"
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(342.305,279)"
+       id="text119">𝑎<tspan
+   font-size="16px"
+   x="13.3333"
+   y="5"
+   id="tspan117">2</tspan></text>
+    <path
+       d="m 361.52,259.707 2.941,2.543 v 0.68 l -2.941,2.543 -0.621,-0.703 1.875,-1.629 h -4.811 -2.338 -1.968 -2.725 -1.589 -2.718 -4.313 v -1.102 h 4.313 2.718 1.589 2.725 1.968 2.338 4.811 l -1.875,-1.629 z"
+       fill="#385723"
+       fill-rule="evenodd"
+       id="path121" />
+    <path
+       d="m 123.548,391.619 h 6.275 v 44.297 h -6.275 v -1.147 h 3.836 v -42.003 h -3.836 z m -22.828,0 h 6.276 v 1.147 h -3.837 v 42.003 h 3.837 v 1.147 h -6.276 z"
+       fill-rule="evenodd"
+       id="path123" />
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="27px"
+       transform="translate(107.468,404)"
+       id="text129">𝑎<tspan
+   font-size="27px"
+   x="1.15333"
+   y="32"
+   id="tspan125">𝑐</tspan><tspan
+   font-family="Calibri, Calibri_MSFontService, sans-serif"
+   font-size="27px"
+   x="31.2267"
+   y="17"
+   id="tspan127">is where the first basis vector lands</tspan></text>
+    <path
+       d="m 124.774,451.391 h 6.632 v 53.71 h -6.632 v -1.212 h 4.048 v -51.285 h -4.048 z m -24.04,0 h 6.631 v 1.213 h -4.047 v 51.285 h 4.047 v 1.212 h -6.631 z"
+       fill-rule="evenodd"
+       id="path131" />
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="27px"
+       transform="translate(108.548,472)"
+       id="text137">𝑏<tspan
+   font-size="27px"
+   x="-0.71333301"
+   y="31"
+   id="tspan133">𝑑</tspan><tspan
+   font-family="Calibri, Calibri_MSFontService, sans-serif"
+   font-size="27px"
+   x="31.74"
+   y="14"
+   id="tspan135">is where the second basis vector lands</tspan></text>
+    <path
+       d="m 719.218,362.374 72.73,72.332 -2.821,2.836 -72.73,-72.332 z m 0.23,15.358 -4.455,-16.739 16.763,4.363 c 1.069,0.278 1.71,1.37 1.432,2.439 -0.278,1.069 -1.37,1.71 -2.439,1.432 l -13.445,-3.499 2.437,-2.45 3.572,13.425 c 0.284,1.068 -0.351,2.163 -1.418,2.447 -1.068,0.285 -2.163,-0.351 -2.447,-1.418 z"
+       fill="#c00000"
+       id="path139" />
+    <path
+       d="M 4.43602,-0.0500714 152.412,72.6026 150.649,76.1932 2.67314,3.5405 Z M 9.57537,14.424 -0.00832062,-0.00408526 17.2682,-1.24444 c 1.1018,-0.0791 2.059,0.749908 2.1381,1.851642 C 19.4854,1.70894 18.6564,2.66619 17.5547,2.74529 L 3.69789,3.74013 5.22063,0.638663 12.9073,12.2108 c 0.6112,0.9201 0.3607,2.1614 -0.5594,2.7726 -0.9201,0.6112 -2.1614,0.3607 -2.77253,-0.5594 z"
+       fill="#4472c4"
+       transform="matrix(-1,0,0,1,943.531,360)"
+       id="path141" />
+    <path
+       d="M 0,0 381.536,0.485669"
+       stroke="#bfbfbf"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="12, 4"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(1,0,0,-1,640,435.486)"
+       id="path143" />
+    <path
+       d="M 1020.15,435.38 793,211"
+       stroke="#fbe5d6"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 4"
+       fill="none"
+       fill-rule="evenodd"
+       id="path145" />
+    <rect
+       x="1022"
+       y="497"
+       width="34"
+       height="61"
+       fill="#ffffff"
+       id="rect147" />
+    <path
+       d="M 905,635.607 C 905,628.644 910.644,623 917.607,623 h 9.786 c 6.963,0 12.607,5.644 12.607,12.607 v 10.786 C 940,653.356 934.356,659 927.393,659 h -9.786 C 910.644,659 905,653.356 905,646.393 Z"
+       fill="#385723"
+       fill-rule="evenodd"
+       fill-opacity="0.4"
+       id="path149" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="27px"
+       transform="translate(949.859,650)"
+       id="text151">Vector</text>
+  </g>
+</svg>

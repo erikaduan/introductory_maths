@@ -227,7 +227,7 @@ When a matrix is in the echelon form, we can solve the linear system by either:
 knitr::include_graphics("../figures/linear_systems-echelon_solutions.svg")  
 ```
 
-**Note:** Linear systems with infinite solutions are easily identified in matrix form, by the presence of at least one row which lacks a leading edge. Free variables correspond to variable(s) without a positional leading edge or pivot column in the echelon form of the augmented matrix.  
+**Note:** Linear systems with infinite solutions are easily identified in matrix form, by the presence of at least one row which lacks a leading edge. Free variables correspond to variables without a positional leading edge or pivot column in the echelon form of the augmented matrix.  
 
 
 # Row reduction algorithmn    
@@ -359,20 +359,20 @@ for i in range(n):
 
 
 # Homogenous linear systems     
-How can we easily identify systems with infinite compared to single solutions? By presenting the set of solutions $(s_1, s_2, ..., s_n)$ in an alternate parametric vector form.  
+How can we easily identify systems with infinite compared to single solutions? By presenting the set of solutions $(s_1, s_2, ..., s_n)$ in a parametric vector form.  
 
-It is easy to identify the parametric vector form of homogeneous linear system, which have the form $A\vec x=\vec 0$. These equations either have a single trivial solution (they only intersect at the origin) or infinite solutions (defined in relation to its free variables).   
+It is easy to identify the parametric vector form of homogeneous linear systems, which have the form $A\vec x=\vec 0$. These equations either have a single trivial solution (they only intersect at the origin) or infinite solutions (defined in relation to its free variables).   
 
 If $A\vec x=\vec b$ has infinite solutions:  
-+ At least one solution is $\vec p$ i.e. a single vector of real numbers or a point in $\mathbb{R}^n$.  
-+ At least one solution can be represented as $A\vec x=\vec0$, where the solution set is also the vector span of $\{\vec v_1, ... , \vec v_{h} \}$.  
-+ The solution set of $A\vec x = \vec b$ can be presented in the form $\{\vec p+c_1\vec v_1+ ... +c_h\vec v_{h}|c_1, ... ,c_h\in  \mathbb{R}\}$ as well as $(s_1, s_2, ..., s_n)$.   
++ At least one solution is $\vec p$ i.e. a single vector of real numbers or a point in $\mathbb{R}^m$.  
++ At least one other equation can be represented as a homogeneous linear system with form $A\vec v_h=\vec0$, where the solution set is the vector span of $\{\vec v_1, ... , \vec v_{h} \}$ where $\vec v_h = \vec q - \vec p$.    
++ The solution set of $A\vec x=\vec b$ can therefore also be presented in the form $\{\vec p+c_1\vec v_1+ ... +c_h\vec v_{h}|c_1, ... ,c_h\in  \mathbb{R}\}$.     
 
 ```{r, echo=FALSE, results='markup'}
 knitr::include_graphics("../figures/linear_systems-infinite_solutions.svg")
 ```
 
-**Note:** Solving a linear system can be viewed as finding a **parametric** description of the solution set or determining that the system is inconsistent. Homogenoous linear systems are easier to solve, as they can only have one trivial solution or infinite solutions that can be written in parametric vector form.    
+Solving a linear system can therefore also be viewed as either finding a parametric description of the solution set or determining that the system is inconsistent.  
 
 ```{r, echo=FALSE, results='markup'}
 knitr::include_graphics("../figures/linear_systems-parametric_solutions.svg")
@@ -384,11 +384,23 @@ When the solution is expressed as a parametric vector form, we can form some geo
 knitr::include_graphics("../figures/linear_systems-parametric_solution_example.svg")
 ```
 
-**Note:** The solution to a linear system will only contain the origin point if and only if the entire linear system is homogeneous i.e. the entire linear system has form $A\vec v=\vec0$.   
+**Note:** The solution to a linear system will only contain the origin point if and only if the entire linear system is homogeneous i.e. the entire linear system has form $A\vec x=\vec0$.   
+
+
+# Linear independence and homogenous linear systems   
+A homogeneous linear system $A\vec v=\vec0$ is linearly independent if it only has one trivial solution. The set of solutions $\{s_1, s_2, \cdots, s_n\}$ therefore has linear independence.       
+
+If a homogeneous linear system has infinite solutions, at least one linear equation is equivalent to another linear equation i.e. at least one sub-matrix of form $A\vec v_h=\vec0$ exists. The solution set of $\{s_1, s_2, \cdots, s_n\}$ therefore has linear dependence.   
+
+Linear dependence is therefore represented by the presence of one or more free variables in a linear system and its equivalent augmented matrix. When the parametric vector form of the solution set $\{s_1, s_2, \cdots, s_n\}$ is infinite, at least one $x$ variable is non-zero in the homogenous linear system $x_1\vec a_1+x_2\vec a_2+\cdots+x_n\vec a_n=\vec 0$.     
+
+```{r, echo=FALSE, results='markup'}
+knitr::include_graphics("../figures/linear_systems-linear_dependence_a.svg")
+```
 
 
 # Resources    
 + [YouTube video series](https://www.youtube.com/watch?v=ZKUqtErZCiU&list=PLHXZ9OQGMqxfUl0tcqPNTJsb7R6BqSLo6) by Dr Trefor Bazett on linear systems.    
 + [Blog post](https://bvanderlei.github.io/jupyter-guide-to-linear-algebra/Gaussian_Elimination.html) containing Python code to perform elementary row operations.  
-+ [Solutions](https://levelup.gitconnected.com/gaussian-elimination-algorithm-in-python-4e90cb3a0fd9) for the row reduction algorithm in Python.  
-+ [YouTube video](https://www.youtube.com/watch?v=4P1YUKPIc4w) on homogeneous linear systems.  
++ [Solution](https://levelup.gitconnected.com/gaussian-elimination-algorithm-in-python-4e90cb3a0fd9) for the row reduction algorithm in Python.  
++ [YouTube video](https://www.youtube.com/watch?v=4P1YUKPIc4w) on the properties of homogeneous linear systems.  
