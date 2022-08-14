@@ -1,11 +1,9 @@
-# Introductory mathematics in R and Python  
-
+# Introductory mathematics in R and Python    
 This repository contains tutorials on the introductory mathematical concepts required for studying statistics and machine learning. Mathematical calculations are executed in both `R` and `Python`.    
 
 ![](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/figures/repo_logo.jpg)
 
-## Tutorials
-
+## Tutorials    
 |Topics|Tutorials|
 |:-----|:--------|
 |:1234:|[Introduction to numbers](./tutorials/numbers-introduction.md)|
@@ -27,7 +25,6 @@ This repository contains tutorials on the introductory mathematical concepts req
 |:roller_coaster:|Introduction to derivatives|  
 
 ## Contributors
-
 + [Erika Duan](https://github.com/erikaduan/)
 + [Chuanxin Liu](https://github.com/codetrainee)
 
@@ -42,8 +39,7 @@ This project was created using the following setup:
 + Start by assuming A is true.   
 + Construct a definition statement for A (use a fixed but arbitary example of A).   
 + Extend and simplify mathematical definitions derived from A to reach B.   
-+ Sometimes you may need to also prove that the reverse case is true i.e. start with B and end with A.  
-+ When you are asked if A and only A is true, then B is true, first suppose A to reach B. Then suppose B to reach A.   
++ When you are asked if A and **only** A is true, then B is true, first suppose A to reach B. Then suppose B to reach A.   
 
 **Induction proof**  
 + Occurs when you need to prove that something is true for all cases.  
@@ -53,11 +49,10 @@ This project was created using the following setup:
 
 **Uniqueness proof**  
 + Occurs when you need to prove that a solution is unique.  
-+ Shown that there is one solution first.  
-+ Shown that there is a second solution and that the first and second solutions must be equal.    
++ Show that there is one solution first.   
++ Show that there is a second solution and that the first and second solutions must be equal.   
 
-## References
-
+## References  
 + A guide to [linear algebra](https://pabloinsente.github.io/intro-linear-algebra) for applied machine learning by Pablo Caceres
 + The [Mathematics for Machine Learning textbook](https://mml-book.github.io/book/mml-book.pdf) by Marc Peter Deisenroth, A Aldo Faisal and Cheng Soon Ong - Cambridge University Press
 + The [Probability for Data Science textbook](https://probability4datascience.com/) by Stanley H Chan - Michigan Publishing
