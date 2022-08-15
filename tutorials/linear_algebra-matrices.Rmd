@@ -46,30 +46,36 @@ reticulate::py_config()
 
 
 # Matrices     
-A matrix with $m$ rows and $n$ columns can be used to contain the coefficients from a linear system $A\vec x = \vec b$. In other words, each vector $\vec a_i$ inside matrix $A$ stores information about where the basis vector for the i-th dimension lands.  
+A matrix with $m$ rows and $n$ columns can be used to hold the coefficients from a linear system $A\vec x = \vec b$. In other words, each vector $\vec a_i$ inside matrix $A$ stores information about where the basis vector for the i-th dimension lands.  
 
 ```{r, echo=FALSE, results='markup'}
 knitr::include_graphics("../figures/linear_systems-matrix_transformations.svg")
 ```
 
 # Matrix column space  
-The column space of matrix A, denoted $ColA$, is therefore the subspace of $\mathbb{R}^m$ spanned by the columns i.e. basis vectors of matrix A.  
+For any $m\times n$ matrix A, the column space of A, denoted $ColA$, is therefore the subspace of $\mathbb{R}^m$ spanned by the columns i.e. basis vectors $\{\vec a_1, \vec a_2, \cdots, \vec a_n\}$ of matrix A.  
 
 If we represent $A = \begin{bmatrix} \vec a_1 & \vec a_2 & \cdots & \vec a_n \end{bmatrix}$, then $ColA=Span\{\vec a_1, \vec a_2, \cdots, \vec a_n\}$.  
 
-Therefore $ColA = \{\vec b \in \mathbb{R}^m | A\vec x = \vec b \,for \,some \, \vec x \in \mathbb{R}^n\}$.   
+Therefore $ColA = \{\vec b \in \mathbb{R}^m | A\vec x = \vec b \,for \,some \, \vec x \in \mathbb{R}^n\}$.    
 
 ```{r, echo=FALSE, results='markup'}
 knitr::include_graphics("../figures/linear_systems-matrix_column_space.svg")
 ```
 
 
-# Matrix null space 
-#TODO finish edits here
-The null space of matrix A is the set of all solutions for the homogeneous equation Ax = 0, where NulA represents the set of x vectors in Rn that represents the set of variables for which the homogeneous equation Ax = 0 is true.  i.e. how much to scale each basis vector by. 
+# Matrix null space   
+For any $m\times n$ matrix A, the null space of A is the set $NulA$ of all solutions to the homogeneous equation $A\vec x=\vec 0$.  
 
-**Note:** ColA -> span of vectors, NullA -> span of all possible solutions.  
+Therefore $NulA = \{\vec x \in \mathbb{R}^n | A\vec x = \vec 0\}$.   
 
+The null space of A is a subspace of $\mathbb{R}^n$ as the solution set of $A\vec x = \vec 0$ can also be expressed in the parametric form $c_1\vec v_1 + c_2\vec v_2 + \cdots + c_n\vec v_h$ i.e. as $Span\{\vec v_1, \vec v_2, \cdots, \vec v_h\}$ and $Span\{\vec v_1, \vec v_2, \cdots, \vec v_h\}$ is a subspace in $\mathbb{R}^n$.  
+
+```{r, echo=FALSE, results='markup'}
+knitr::include_graphics("../figures/linear_systems-matrix_null_space.svg")
+```
+
+**Note:** $ColA$ represents the span of all basis vectors of matrix A whereas $NulA$ represents the set of all possible solutions to form matrix A when $A \vec x = \vec 0$.    
 
 # Resources  
 + A great [YouTube series](https://www.youtube.com/watch?v=kYB8IZa5AuE&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&index=3) on matrices by 3Blue1Brown.     
