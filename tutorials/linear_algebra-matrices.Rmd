@@ -46,27 +46,35 @@ reticulate::py_config()
 
 
 # Matrices     
-A matrix with $m$ rows and $n$ columns can be used to hold the coefficients from a linear system $A\vec x = \vec b$.   
+A matrix with $m$ rows and $n$ columns can be used to hold the coefficients from any linear system $A\vec x = \vec b$.   
 
-For any homogeneous linear system with independent vectors $\vec a_1, \vec a_2, \cdots, \vec a_p$, each vector $\vec a_i$ inside matrix $A$ represents a scalable basis vector and $\{\vec a_1, \vec a_2, \cdots, \vec a_p\}$ spans subspace H, where subspace H has $p$ dimensions.   
+For any homogeneous linear system with linearly independent vectors $\vec a_1, \vec a_2, \cdots, \vec a_p$, each vector represents a scalable basis vector and $\{\vec a_1, \vec a_2, \cdots, \vec a_p\}$ spans subspace H, where subspace H has $p$ dimensions.    
 
 ```{r, echo=FALSE, results='markup'}
 knitr::include_graphics("../figures/linear_systems-matrix_transformations.svg")
 ```
 
-Types of matrices include: 
-+ zero matrix 
-+ symmetrical matrix
-+ identity matrix 
-+ matrix transpose  
+
+# Types of matrices  
+
+Types of matrices include:  
+
++ Transpose matrix: If matrix A has dimensions $m\times n$, then its transpose matrix $A^T$ has dimensions $n \times m$ and every row of A is a column in $A^T$.  
++ Zero matrix: a matrix in which every entry is 0.   
++ Symmetrical matrix: a matrix where values on either side of the diagonal are equal to each other. Symmetrical matrices therefore have the property $A^T = A$.      
++ Identity matrix: a matrix with dimensions $m \times m$ where each diagonal entry is 1 and all other entries are 0.   
+
+```{r, echo=FALSE, results='markup'}
+knitr::include_graphics("../figures/linear_systems-matrix_types.svg")
+```
 
 
-# Matrix column space  
-For any $m\times n$ matrix A, the column space of A, denoted $ColA$, is therefore the subspace of $\mathbb{R}^m$ spanned by the columns i.e. basis vectors $\{\vec a_1, \vec a_2, \cdots, \vec a_n\}$ of matrix A.  
-
-If we represent $A = \begin{bmatrix} \vec a_1 & \vec a_2 & \cdots & \vec a_n \end{bmatrix}$, then $ColA = Span\{\vec a_1, \vec a_2, \cdots, \vec a_n\}$.  
+# Matrix column space   
+For any $m\times n$ matrix A, $A = \begin{bmatrix} \vec a_1 & \vec a_2 & \cdots & \vec a_n \end{bmatrix}$. The column space of A, denoted as $ColA$, is therefore the span of $\{\vec a_1, \vec a_2, \cdots, \vec a_n\}$.     
 
 Therefore $ColA = \{\vec b \in \mathbb{R}^m | A\vec x = \vec b \,for \,some \, \vec x \in \mathbb{R}^n\}$.    
+
+$ColA$ is also the subspace of $\mathbb{R}^m$ which is spanned by the basis vectors $\{\vec a_1, \vec a_2, \cdots, \vec a_p\}$ or pivot columns of matrix A.   
 
 ```{r, echo=FALSE, results='markup'}
 knitr::include_graphics("../figures/linear_systems-matrix_column_space.svg")
@@ -74,35 +82,49 @@ knitr::include_graphics("../figures/linear_systems-matrix_column_space.svg")
 
 
 # Matrix null space   
-For any $m\times n$ matrix A, the null space of A is the set $NulA$ of all solutions to the homogeneous equation $A\vec x=\vec 0$.  
+For any $m\times n$ matrix A, the null space of A, denoted as $NulA$, is the set of all solutions to the homogeneous linear system $A\vec x=\vec 0$.  
 
 Therefore $NulA = \{\vec x \in \mathbb{R}^n | A\vec x = \vec 0\}$.   
 
-The null space of A is either $\vec 0$ or another subspace of $\mathbb{R}^n$.  
+As homogeneous linear systems have either a single trivial solution or infinite solutions, $NulA$ is either $\vec 0$ or a subspace of $\mathbb{R}^n$.   
 
-When $A\vec x=\vec 0$ has infinite solutions, $NulA$ can also be expressed in the parametric form $c_1\vec v_1 + c_2\vec v_2 + \cdots + c_n\vec v_h$ as $Span\{\vec v_1, \vec v_2, \cdots, \vec v_h\}$, where $Span\{\vec v_1, \vec v_2, \cdots, \vec v_h\}$ is a subspace in $\mathbb{R}^n$.  
+When $A\vec x=\vec 0$ has infinite solutions, $NulA$ can also be expressed in the parametric form $c_1\vec v_1 + c_2\vec v_2 + \cdots + c_n\vec v_h$ as $Span\{\vec v_1, \vec v_2, \cdots, \vec v_h\}$.   
 
 ```{r, echo=FALSE, results='markup'}
 knitr::include_graphics("../figures/linear_systems-matrix_null_space.svg")
 ```
 
-**Note:** $ColA$ represents the span of all basis vectors of matrix A whereas $NulA$ represents the set of all possible solutions to form matrix A when $A \vec x = \vec 0$.    
+**Note:** $ColA$ represents the span of the basis vectors of matrix A whereas $NulA$ represents the set of all possible solutions to $A \vec x = \vec 0$ and also has a span when homogeneous linear systems have infinite solutions.      
 
 
-# Matrix addition 
+# Matrix addition  
+
+```{r, echo=FALSE, results='markup'}
+knitr::include_graphics("../figures/linear_systems-matrix_addition.svg")
+```
 
 
-# Matrix scalar multiplication 
+# Matrix scalar multiplication  
+
+```{r, echo=FALSE, results='markup'}
+knitr::include_graphics("../figures/linear_systems-matrix_addition.svg")
+```
 
 
-# Matrix matrix multiplication 
-Definition and example of definition (repeated instances of matrix vector products)
+# Matrix multiplication 
+
+```{r, echo=FALSE, results='markup'}
+knitr::include_graphics("../figures/linear_systems-matrix_addition.svg")
+```
 
 
-# Inverse matrix  
+# Finding the inverse matrix   
+
+```{r, echo=FALSE, results='markup'}
+knitr::include_graphics("../figures/linear_systems-matrix_addition.svg")
+```
 
 
-
-
-# Resources  
-+ A great [YouTube series](https://www.youtube.com/watch?v=kYB8IZa5AuE&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&index=3) on matrices by 3Blue1Brown.     
+# Resources   
++ A great [YouTube video](https://www.youtube.com/watch?v=kYB8IZa5AuE&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&index=3) introducing matrices by 3Blue1Brown.  
++ A great [YouTube video](https://www.youtube.com/watch?v=XkY2DOUCWMU&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&index=4) explaining the purpose of matrix multiplication by 3Blue1Brown.   

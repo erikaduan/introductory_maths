@@ -283,18 +283,22 @@ A set of vectors are the **basis vectors** for a subspace H if:
 -   This means that the number of basis vectors for subspace H also
     determines the dimensions of subspace H.
 
+<img src="../figures/linear_systems-basis_vectors.svg" width="80%" style="display: block; margin: auto;" />
+
 Geometrically, we can think of basis vectors as the unit vectors of the
 coordinate grid of subspace H.
 
-<img src="../figures/linear_systems-regular_basis_vectors.svg" width="80%" style="display: block; margin: auto;" />
+<img src="../figures/linear_systems-basis_vector_examples.svg" width="80%" style="display: block; margin: auto;" />
 
-**Note:** The set
+The set
 ![\\epsilon_n = \\{\\vec e_1, \\vec e_2, \\cdots, \\vec e_n\\}](https://latex.codecogs.com/svg.format?%5Cepsilon_n%20%3D%20%5C%7B%5Cvec%20e_1%2C%20%5Cvec%20e_2%2C%20%5Ccdots%2C%20%5Cvec%20e_n%5C%7D "\epsilon_n = \{\vec e_1, \vec e_2, \cdots, \vec e_n\}")
 is called the standard basis for
-![\\mathbb{R}^{n}](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5E%7Bn%7D "\mathbb{R}^{n}").
+![\\mathbb{R}^{n}](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5E%7Bn%7D "\mathbb{R}^{n}")
+where
+![\\vec e_1 = \\begin{bmatrix}1\\\\0\\\\\\vdots\\\\0\\end{bmatrix}](https://latex.codecogs.com/svg.format?%5Cvec%20e_1%20%3D%20%5Cbegin%7Bbmatrix%7D1%5C%5C0%5C%5C%5Cvdots%5C%5C0%5Cend%7Bbmatrix%7D "\vec e_1 = \begin{bmatrix}1\\0\\\vdots\\0\end{bmatrix}").
 
-As basis vectors are defined as a set of linearly independent vectors,
-they are equivalent to the pivot columns of matrix
+As basis vectors are a set of linearly independent vectors, they are
+equivalent to the pivot columns of a coefficient matrix
 ![A = \\begin{bmatrix} \\vec a_1 & \\vec a_2 & \\cdots & \\vec a_n \\end{bmatrix}](https://latex.codecogs.com/svg.format?A%20%3D%20%5Cbegin%7Bbmatrix%7D%20%5Cvec%20a_1%20%26%20%5Cvec%20a_2%20%26%20%5Ccdots%20%26%20%5Cvec%20a_n%20%5Cend%7Bbmatrix%7D "A = \begin{bmatrix} \vec a_1 & \vec a_2 & \cdots & \vec a_n \end{bmatrix}").
 
 If we reduce matrix A into its echelon form i.e. to matrix B, the
@@ -304,11 +308,39 @@ of matrix A.
 
 <img src="../figures/linear_systems-locating_basis_vectors.svg" width="80%" style="display: block; margin: auto;" />
 
+**Note:** For a linearly dependent linear system with
+![m](https://latex.codecogs.com/svg.format?m "m") observations and
+![n](https://latex.codecogs.com/svg.format?n "n") unknown variables, the
+basis vectors correspond to columns in the coefficient matrix A that
+contain a pivot column. There the number of basis vectors for linearly
+dependent linear systems is less than
+![n](https://latex.codecogs.com/svg.format?n "n").
+
 # Coordinate systems
 
-\#TODO
+Let
+![\\mathcal{B} = \\{\\vec v_1, \\cdots, \\vec v_p \\}](https://latex.codecogs.com/svg.format?%5Cmathcal%7BB%7D%20%3D%20%5C%7B%5Cvec%20v_1%2C%20%5Ccdots%2C%20%5Cvec%20v_p%20%5C%7D "\mathcal{B} = \{\vec v_1, \cdots, \vec v_p \}")
+be a basis for subspace H. This means that every vector
+![\\vec w](https://latex.codecogs.com/svg.format?%5Cvec%20w "\vec w") in
+subspace H can be formed from one unique linear combination of
+![\\{\\vec v_1, \\cdots, \\vec v_p \\}](https://latex.codecogs.com/svg.format?%5C%7B%5Cvec%20v_1%2C%20%5Ccdots%2C%20%5Cvec%20v_p%20%5C%7D "\{\vec v_1, \cdots, \vec v_p \}")
+i.e. ![\\vec w = c_1\\vec v_1 + \\cdots + c_p \\vec v_p](https://latex.codecogs.com/svg.format?%5Cvec%20w%20%3D%20c_1%5Cvec%20v_1%20%2B%20%5Ccdots%20%2B%20c_p%20%5Cvec%20v_p "\vec w = c_1\vec v_1 + \cdots + c_p \vec v_p").
 
-Basis vectors are options for coordinate systems.
+The unique list of scalars
+![\\{c_1, \\cdots, c_p\\}](https://latex.codecogs.com/svg.format?%5C%7Bc_1%2C%20%5Ccdots%2C%20c_p%5C%7D "\{c_1, \cdots, c_p\}")
+therefore acts as the list of coordinates of
+![\\vec w](https://latex.codecogs.com/svg.format?%5Cvec%20w "\vec w")
+with respect to the set of basis vectors
+![\\mathcal{B}](https://latex.codecogs.com/svg.format?%5Cmathcal%7BB%7D "\mathcal{B}").
+
+<img src="../figures/linear_systems-coordinates.svg" width="80%" style="display: block; margin: auto;" />
+
+**Note:** The unique list of coordinates used to generate
+![\\vec w](https://latex.codecogs.com/svg.format?%5Cvec%20w "\vec w")
+with respect to
+![\\mathcal{B}](https://latex.codecogs.com/svg.format?%5Cmathcal%7BB%7D "\mathcal{B}")
+can be written as the coordinate vector
+![\\begin{bmatrix}c_1\\\\\\vdots\\\\c_p\\end{bmatrix}\_\\mathcal{B}](https://latex.codecogs.com/svg.format?%5Cbegin%7Bbmatrix%7Dc_1%5C%5C%5Cvdots%5C%5Cc_p%5Cend%7Bbmatrix%7D_%5Cmathcal%7BB%7D "\begin{bmatrix}c_1\\\vdots\\c_p\end{bmatrix}_\mathcal{B}").
 
 # Resources
 

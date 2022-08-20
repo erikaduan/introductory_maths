@@ -1,0 +1,61 @@
+---
+title: Linear transformations       
+author: Erika Duan
+date: "`r Sys.Date()`"
+output:
+  github_document:
+    toc: true
+    toc_depth: 2
+    math_method:
+      engine: webtex
+      url: https://latex.codecogs.com/svg.format?
+---
+
+```{r setup, include=FALSE}
+# Set up global environment configuration --------------------------------------
+knitr::opts_chunk$set(echo=TRUE,
+                      results='hide',
+                      fig.show='hold',
+                      fig.align='center',
+                      message=FALSE,
+                      warning=FALSE,
+                      out.width='80%')
+
+knitr::knit_engines$set(python = reticulate::eng_python)
+```
+
+```{r, echo=FALSE}
+# Install R packages -----------------------------------------------------------
+# The native pipe operator requires R version 4.1+ 
+packages <- c("ggplot2",
+              "dplyr")
+
+installed_packages <- packages %in% rownames(installed.packages())
+
+if (any(installed_packages == FALSE)) {
+  install.packages(packages[!installed_packages])
+}
+
+# Attach R packages to the global environment
+library("dplyr")
+library("ggplot2")
+
+# Check version of Python used by reticulate -----------------------------------
+reticulate::py_config()
+```
+
+
+# Vector transformation notations       
+Vectors are an important way to represent values as positions within n-th dimensional space. Vector operations and matrix-vector operations enable us to transform values in useful ways.    
+
+A column vector $\vec u$ is an $m \times 1$ matrix where $\vec u \in \mathbb{R}^m$. Two vectors are equal if they have the same number of rows and their corresponding entries are equal.  
+
+**Note:** Do not confuse the zero vector $\vec 0$ with the scalar value of 0 when writing vector operations.   
+
+```{r, echo=FALSE, results='markup'}
+knitr::include_graphics("../figures/linear_systems-vectors.svg")
+```
+
+ 
+# Resources  
++ Great YouTube videos on [2D](https://www.youtube.com/watch?v=kYB8IZa5AuE&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&index=3) and [3D](https://www.youtube.com/watch?v=rHLEWRxRGiM&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&index=5) linear transformations by 3Blue1Brown.      

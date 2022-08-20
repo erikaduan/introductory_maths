@@ -155,15 +155,19 @@ A set of vectors are the **basis vectors** for a subspace H if:
 + The set of vectors $\{\vec v_1, \cdots, \vec v_p \}$ span subspace H.   
 + This means that the number of basis vectors for subspace H also determines the dimensions of subspace H.   
 
+```{r, echo=FALSE, results='markup'}
+knitr::include_graphics("../figures/linear_systems-basis_vectors.svg")   
+```
+
 Geometrically, we can think of basis vectors as the unit vectors of the coordinate grid of subspace H.  
 
 ```{r, echo=FALSE, results='markup'}
-knitr::include_graphics("../figures/linear_systems-regular_basis_vectors.svg")   
+knitr::include_graphics("../figures/linear_systems-basis_vector_examples.svg")   
 ```
 
-**Note:** The set $\epsilon_n = \{\vec e_1, \vec e_2, \cdots, \vec e_n\}$ is called the standard basis for $\mathbb{R}^{n}$.  
+The set $\epsilon_n = \{\vec e_1, \vec e_2, \cdots, \vec e_n\}$ is called the standard basis for $\mathbb{R}^{n}$ where $\vec e_1 = \begin{bmatrix}1\\0\\\vdots\\0\end{bmatrix}$.     
 
-As basis vectors are defined as a set of linearly independent vectors, they are equivalent to the pivot columns of matrix $A = \begin{bmatrix} \vec a_1 & \vec a_2 & \cdots & \vec a_n \end{bmatrix}$.   
+As basis vectors are a set of linearly independent vectors, they are equivalent to the pivot columns of a coefficient matrix $A = \begin{bmatrix} \vec a_1 & \vec a_2 & \cdots & \vec a_n \end{bmatrix}$.   
 
 If we reduce matrix A into its echelon form i.e. to matrix B, the position of the pivot columns in matrix B are equivalent to the position of pivot columns in matrix A and can be used to locate the basis vectors of matrix A.    
 
@@ -171,13 +175,22 @@ If we reduce matrix A into its echelon form i.e. to matrix B, the position of th
 knitr::include_graphics("../figures/linear_systems-locating_basis_vectors.svg")   
 ```
 
+**Note:** For a linearly dependent linear system with $m$ observations and $n$ unknown variables, the basis vectors correspond to columns in the coefficient matrix A that contain a pivot column. There the number of basis vectors for linearly dependent linear systems is less than $n$.  
+
 
 # Coordinate systems  
-#TODO 
 
-Basis vectors are options for coordinate systems.  
+Let $\mathcal{B} = \{\vec v_1, \cdots, \vec v_p \}$ be a basis for subspace H. This means that every vector $\vec w$ in subspace H can be formed from one unique linear combination of $\{\vec v_1, \cdots, \vec v_p \}$ i.e. $\vec w = c_1\vec v_1 + \cdots + c_p \vec v_p$.    
 
+The unique list of scalars $\{c_1, \cdots, c_p\}$ therefore acts as the list of coordinates of $\vec w$ with respect to the set of basis vectors $\mathcal{B}$.  
 
+```{r, echo=FALSE, results='markup'}
+knitr::include_graphics("../figures/linear_systems-coordinates.svg")   
+```
+
+**Note:** The unique list of coordinates used to generate $\vec w$ with respect to $\mathcal{B}$ can be written as the coordinate vector $\begin{bmatrix}c_1\\\vdots\\c_p\end{bmatrix}_\mathcal{B}$.   
+
+ 
 # Resources  
 + A great [YouTube series](https://www.youtube.com/watch?v=fNk_zzaMoSs) on vectors by 3Blue1Brown.    
 + A [YouTube series](https://www.youtube.com/watch?v=tM4TDL9Hj8U) on vectors by Professor Dave Explains.   

@@ -1,7 +1,7 @@
 Introduction to linear systems
 ================
 Erika Duan
-2022-08-19
+2022-08-20
 
 -   [A single linear equation](#a-single-linear-equation)
 -   [A system of linear equations](#a-system-of-linear-equations)
@@ -548,8 +548,7 @@ as these systems can only either have a single trivial solution
 ![\\{x_1, x_2 \\cdots, x_n\\} = \\{0, 0, \\cdots, 0\\}](https://latex.codecogs.com/svg.format?%5C%7Bx_1%2C%20x_2%20%5Ccdots%2C%20x_n%5C%7D%20%3D%20%5C%7B0%2C%200%2C%20%5Ccdots%2C%200%5C%7D "\{x_1, x_2 \cdots, x_n\} = \{0, 0, \cdots, 0\}")
 or infinite solutions (defined in relation to all free variables).
 
-We can therefore re-write infinite solutions to a non-homogeneous linear
-system
+We can therefore re-write infinite solutions to any linear system
 ![A\\vec x=\\vec b](https://latex.codecogs.com/svg.format?A%5Cvec%20x%3D%5Cvec%20b "A\vec x=\vec b")
 as the addition of a positional vector
 ![\\vec p](https://latex.codecogs.com/svg.format?%5Cvec%20p "\vec p") to
@@ -557,22 +556,22 @@ the infinite solution set of a homogeneous linear system
 ![A\\vec x=\\vec 0](https://latex.codecogs.com/svg.format?A%5Cvec%20x%3D%5Cvec%200 "A\vec x=\vec 0").
 
 If
-![A\\vec x=\\vec b](https://latex.codecogs.com/svg.format?A%5Cvec%20x%3D%5Cvec%20b "A\vec x=\vec b")
+![A\\vec x = \\vec b](https://latex.codecogs.com/svg.format?A%5Cvec%20x%20%3D%20%5Cvec%20b "A\vec x = \vec b")
 has infinite solutions:  
 + One solution is
 ![\\vec p](https://latex.codecogs.com/svg.format?%5Cvec%20p "\vec p")
 i.e. a single vector of real numbers or a point in
 ![\\mathbb{R}^m](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5Em "\mathbb{R}^m").  
 + The remaining solutions exist in the vector span of
-![\\{\\vec v_1, ... , \\vec v\_{h} \\}](https://latex.codecogs.com/svg.format?%5C%7B%5Cvec%20v_1%2C%20...%20%2C%20%5Cvec%20v_%7Bh%7D%20%5C%7D "\{\vec v_1, ... , \vec v_{h} \}")
+![\\{\\vec v_1, ... , \\vec v_h\\}](https://latex.codecogs.com/svg.format?%5C%7B%5Cvec%20v_1%2C%20...%20%2C%20%5Cvec%20v_h%5C%7D "\{\vec v_1, ... , \vec v_h\}")
 where
 ![A\\vec v_h = \\vec 0](https://latex.codecogs.com/svg.format?A%5Cvec%20v_h%20%3D%20%5Cvec%200 "A\vec v_h = \vec 0")
 and
 ![\\vec q = \\vec p + \\vec v_h](https://latex.codecogs.com/svg.format?%5Cvec%20q%20%3D%20%5Cvec%20p%20%2B%20%5Cvec%20v_h "\vec q = \vec p + \vec v_h").  
 + The solution set of
-![A\\vec x=\\vec b](https://latex.codecogs.com/svg.format?A%5Cvec%20x%3D%5Cvec%20b "A\vec x=\vec b")
+![A\\vec x = \\vec b](https://latex.codecogs.com/svg.format?A%5Cvec%20x%20%3D%20%5Cvec%20b "A\vec x = \vec b")
 can therefore also be presented in the parametric vector form
-![\\{\\vec p+c_1\\vec v_1+ ... +c_h\\vec v\_{h}\|c_1, ... ,c_h\\in \\mathbb{R}\\}](https://latex.codecogs.com/svg.format?%5C%7B%5Cvec%20p%2Bc_1%5Cvec%20v_1%2B%20...%20%2Bc_h%5Cvec%20v_%7Bh%7D%7Cc_1%2C%20...%20%2Cc_h%5Cin%20%5Cmathbb%7BR%7D%5C%7D "\{\vec p+c_1\vec v_1+ ... +c_h\vec v_{h}|c_1, ... ,c_h\in \mathbb{R}\}").
+![\\{\\vec p + c_1\\vec v_1 + ... + c_h\\vec v\_{h} \| c_1, ... ,c_h \\in \\mathbb{R}\\}](https://latex.codecogs.com/svg.format?%5C%7B%5Cvec%20p%20%2B%20c_1%5Cvec%20v_1%20%2B%20...%20%2B%20c_h%5Cvec%20v_%7Bh%7D%20%7C%20c_1%2C%20...%20%2Cc_h%20%5Cin%20%5Cmathbb%7BR%7D%5C%7D "\{\vec p + c_1\vec v_1 + ... + c_h\vec v_{h} | c_1, ... ,c_h \in \mathbb{R}\}").
 
 <img src="../figures/linear_systems-infinite_solutions.svg" width="80%" style="display: block; margin: auto;" />
 
@@ -584,9 +583,11 @@ system is inconsistent.
 
 When an infinite solution is expressed as a parametric vector form, we
 can form some geometric intuition about the space that it occupies. For
-an infinite solution, the solution is an
-![\\mathbb{R}^{n-m}](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5E%7Bn-m%7D "\mathbb{R}^{n-m}")
-object which intersects with the point represented by
+an infinite solution, the solution is a copy of
+![\\mathbb{R}^h](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5Eh "\mathbb{R}^h")
+in
+![\\mathbb{R}^n](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5En "\mathbb{R}^n")
+that intersects with the point represented by
 ![\\vec p](https://latex.codecogs.com/svg.format?%5Cvec%20p "\vec p").
 
 <img src="../figures/linear_systems-parametric_solution_example.svg" width="80%" style="display: block; margin: auto;" />
@@ -606,21 +607,19 @@ equal to 0 except
 ![x_1 = x_2 = \\cdots = x_n = 0](https://latex.codecogs.com/svg.format?x_1%20%3D%20x_2%20%3D%20%5Ccdots%20%3D%20x_n%20%3D%200 "x_1 = x_2 = \cdots = x_n = 0").
 By definition, a homogeneous linear system with a single trivial
 solution does not contain any free variables. Homogeneous linear systems
-containing free variables are therefore not linearly independent.
+with equivalent augmented matrices containing free variables are
+therefore not linearly independent.
 
-If a homogeneous linear system has infinite solutions, at least one free
-variable is present and the system is therefore linearly dependent.
-Alternatively, you can think of linearly dependent homogeneous linear
-systems as systems where
-![x_1 \\vec v_1 + \\cdots + x_n \\vec v_n = 0](https://latex.codecogs.com/svg.format?x_1%20%5Cvec%20v_1%20%2B%20%5Ccdots%20%2B%20x_n%20%5Cvec%20v_n%20%3D%200 "x_1 \vec v_1 + \cdots + x_n \vec v_n = 0")
-contains a solution with parametric form
-![\\vec 0 + x_i\\vec v_i](https://latex.codecogs.com/svg.format?%5Cvec%200%20%2B%20x_i%5Cvec%20v_i "\vec 0 + x_i\vec v_i").
+If a homogeneous linear system has infinite solutions, its augmented
+matrix form contains at least one free variable and the system is
+therefore linearly dependent.
 
 <img src="../figures/linear_systems-linear_dependence_a.svg" width="80%" style="display: block; margin: auto;" />
 
 Linear independence and linear dependence are easier to conceptualise
-when we view the coefficient matrix A as a row of column vectors
-![A = \\begin{bmatrix} \\vec a_1 & \\vec a_2 & \\cdots & \\vec a_n \\end{bmatrix}](https://latex.codecogs.com/svg.format?A%20%3D%20%5Cbegin%7Bbmatrix%7D%20%5Cvec%20a_1%20%26%20%5Cvec%20a_2%20%26%20%5Ccdots%20%26%20%5Cvec%20a_n%20%5Cend%7Bbmatrix%7D "A = \begin{bmatrix} \vec a_1 & \vec a_2 & \cdots & \vec a_n \end{bmatrix}").
+when we view the coefficient matrix A as a collection of
+![n](https://latex.codecogs.com/svg.format?n "n") column vectors
+i.e. ![A = \\begin{bmatrix} \\vec a_1 & \\vec a_2 & \\cdots & \\vec a_n \\end{bmatrix}](https://latex.codecogs.com/svg.format?A%20%3D%20%5Cbegin%7Bbmatrix%7D%20%5Cvec%20a_1%20%26%20%5Cvec%20a_2%20%26%20%5Ccdots%20%26%20%5Cvec%20a_n%20%5Cend%7Bbmatrix%7D "A = \begin{bmatrix} \vec a_1 & \vec a_2 & \cdots & \vec a_n \end{bmatrix}").
 
 The concept of representing linear systems using vectors is covered in
 the [next

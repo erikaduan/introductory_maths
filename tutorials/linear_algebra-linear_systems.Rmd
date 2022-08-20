@@ -388,12 +388,12 @@ for i in range(n):
 # Homogenous linear systems    
 It is easiest to work with homogeneous linear systems, with the form $A\vec x = \vec 0$, as these systems can only either have a single trivial solution $\{x_1, x_2 \cdots, x_n\} = \{0, 0, \cdots, 0\}$ or infinite solutions (defined in relation to all free variables).   
 
-We can therefore re-write infinite solutions to a non-homogeneous linear system $A\vec x=\vec b$ as the addition of a positional vector $\vec p$ to the infinite solution set of a homogeneous linear system $A\vec x=\vec 0$.    
+We can therefore re-write infinite solutions to any linear system $A\vec x=\vec b$ as the addition of a positional vector $\vec p$ to the infinite solution set of a homogeneous linear system $A\vec x=\vec 0$.    
 
-If $A\vec x=\vec b$ has infinite solutions:  
+If $A\vec x = \vec b$ has infinite solutions:  
 + One solution is $\vec p$ i.e. a single vector of real numbers or a point in $\mathbb{R}^m$.  
-+ The remaining solutions exist in the vector span of $\{\vec v_1, ... , \vec v_{h} \}$ where $A\vec v_h = \vec 0$ and $\vec q = \vec p + \vec v_h$.     
-+ The solution set of $A\vec x=\vec b$ can therefore also be presented in the parametric vector form $\{\vec p+c_1\vec v_1+ ... +c_h\vec v_{h}|c_1, ... ,c_h\in  \mathbb{R}\}$.       
++ The remaining solutions exist in the vector span of $\{\vec v_1, ... , \vec v_h\}$ where $A\vec v_h = \vec 0$ and $\vec q = \vec p + \vec v_h$.     
++ The solution set of $A\vec x = \vec b$ can therefore also be presented in the parametric vector form $\{\vec p + c_1\vec v_1 + ... + c_h\vec v_{h} | c_1, ... ,c_h \in \mathbb{R}\}$.       
 
 ```{r, echo=FALSE, results='markup'}
 knitr::include_graphics("../figures/linear_systems-infinite_solutions.svg")
@@ -405,7 +405,7 @@ Solving a linear system can therefore also be viewed as either finding a paramet
 knitr::include_graphics("../figures/linear_systems-parametric_solutions.svg")
 ```
 
-When an infinite solution is expressed as a parametric vector form, we can form some geometric intuition about the space that it occupies. For an infinite solution, the solution is an $\mathbb{R}^{n-m}$ object which intersects with the point represented by $\vec p$.  
+When an infinite solution is expressed as a parametric vector form, we can form some geometric intuition about the space that it occupies. For an infinite solution, the solution is a copy of $\mathbb{R}^h$ in $\mathbb{R}^n$ that intersects with the point represented by $\vec p$.  
 
 ```{r, echo=FALSE, results='markup'}
 knitr::include_graphics("../figures/linear_systems-parametric_solution_example.svg")
@@ -415,15 +415,15 @@ knitr::include_graphics("../figures/linear_systems-parametric_solution_example.s
 
 
 # Linear independence and homogenous linear systems   
-A homogeneous linear system $A\vec v=\vec0$ is linearly independent if it only has one trivial solution i.e. there is no combination of $x_1 \vec v_1 + \cdots + x_n \vec v_n$ equal to 0 except $x_1 = x_2 = \cdots = x_n = 0$. By definition, a homogeneous linear system with a single trivial solution does not contain any free variables. Homogeneous linear systems containing free variables are therefore not linearly independent.   
+A homogeneous linear system $A\vec v=\vec0$ is linearly independent if it only has one trivial solution i.e. there is no combination of $x_1 \vec v_1 + \cdots + x_n \vec v_n$ equal to 0 except $x_1 = x_2 = \cdots = x_n = 0$. By definition, a homogeneous linear system with a single trivial solution does not contain any free variables. Homogeneous linear systems with equivalent augmented matrices containing free variables are therefore not linearly independent.   
 
-If a homogeneous linear system has infinite solutions, at least one free variable is present and the system is therefore linearly dependent. Alternatively, you can think of linearly dependent homogeneous linear systems as systems where $x_1 \vec v_1 + \cdots + x_n \vec v_n = 0$ contains a solution with parametric form $\vec 0 + x_i\vec v_i$.        
+If a homogeneous linear system has infinite solutions, its augmented matrix form contains at least one free variable and the system is therefore linearly dependent.    
 
 ```{r, echo=FALSE, results='markup'}
 knitr::include_graphics("../figures/linear_systems-linear_dependence_a.svg")
 ```
 
-Linear independence and linear dependence are easier to conceptualise when we view the coefficient matrix A as a row of column vectors $A = \begin{bmatrix} \vec a_1 & \vec a_2 & \cdots & \vec a_n \end{bmatrix}$.    
+Linear independence and linear dependence are easier to conceptualise when we view the coefficient matrix A as a collection of $n$ column vectors i.e. $A = \begin{bmatrix} \vec a_1 & \vec a_2 & \cdots & \vec a_n \end{bmatrix}$.    
 
 The concept of representing linear systems using vectors is covered in the [next tutorial](https://github.com/erikaduan/introductory_maths/blob/master/tutorials/linear_algebra-vectors.md) on vectors.      
 
