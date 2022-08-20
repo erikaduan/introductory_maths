@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="1040"
-   height="720"
+   width="1280"
+   height="680"
    overflow="hidden"
    version="1.1"
    id="svg235"
@@ -21,589 +21,628 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
-     inkscape:zoom="0.92709556"
-     inkscape:cx="547.40851"
-     inkscape:cy="231.90705"
-     inkscape:window-width="2560"
-     inkscape:window-height="1494"
-     inkscape:window-x="-11"
+     inkscape:zoom="1.3111111"
+     inkscape:cx="632.66949"
+     inkscape:cy="423.30509"
+     inkscape:window-width="2880"
+     inkscape:window-height="1514"
+     inkscape:window-x="3829"
      inkscape:window-y="-11"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g233" />
+     inkscape:current-layer="svg235" />
   <defs
      id="defs5">
     <clipPath
-       id="clip0">
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath634">
       <rect
-         x="0"
-         y="0"
+         x="-659.60101"
+         y="-583"
          width="1280"
          height="720"
-         id="rect2" />
+         id="rect636" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath638">
+      <rect
+         x="-791.51703"
+         y="-647"
+         width="1280"
+         height="720"
+         id="rect640" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath642">
+      <rect
+         x="-582.25702"
+         y="-647"
+         width="1280"
+         height="720"
+         id="rect644" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath646">
+      <rect
+         x="-573.60699"
+         y="-92"
+         width="1280"
+         height="720"
+         id="rect648" />
     </clipPath>
   </defs>
-  <g
-     clip-path="url(#clip0)"
-     id="g233"
-     transform="translate(-32.033898,-4.5762712)">
-    <rect
-       x="0"
-       y="0"
-       width="1280"
-       height="720"
-       fill="#ffffff"
-       id="rect7" />
-    <text
-       font-family="Calibri, Calibri_MSFontService, sans-serif"
-       font-weight="400"
-       font-size="32px"
-       transform="translate(87.4341,92)"
-       id="text11">The solution set S can be defined as {<tspan
+  <rect
+     x="68.644066"
+     y="-30.508476"
+     width="1280"
+     height="720"
+     fill="#ffffff"
+     id="rect7" />
+  <text
+     font-family="Calibri, Calibri_MSFontService, sans-serif"
+     font-weight="400"
+     font-size="32px"
+     id="text11"
+     x="156.07817"
+     y="61.491524">The solution set S can be defined as {<tspan
    font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
    font-size="32px"
-   x="480.11301"
-   y="0"
+   x="636.19116"
+   y="61.491524"
    id="tspan9">𝑝</tspan></text>
-    <path
-       d="m 11.7812,-20.8906 -3.92182,3.3906 -0.82813,-0.9375 2.5,-2.1719 H 0 v -1.4687 h 9.53125 l -2.5,-2.1719 0.82813,-0.9375 3.92182,3.3906 z"
-       transform="translate(573.607,92)"
-       id="path13" />
-    <text
-       font-family="Calibri, Calibri_MSFontService, sans-serif"
-       font-weight="400"
-       font-size="32px"
-       transform="translate(592.941,92)"
-       id="text19">+ <tspan
+  <path
+     d="m 11.7812,-20.8906 -3.92182,3.3906 -0.82813,-0.9375 2.5,-2.1719 H 0 v -1.4687 h 9.53125 l -2.5,-2.1719 0.82813,-0.9375 3.92182,3.3906 z"
+     transform="translate(640.25107,61.491525)"
+     id="path13"
+     clip-path="url(#clipPath646)" />
+  <text
+     font-family="Calibri, Calibri_MSFontService, sans-serif"
+     font-weight="400"
+     font-size="32px"
+     id="text19"
+     x="661.58502"
+     y="61.491524">+ <tspan
    font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
    font-size="32px"
-   x="23.1667"
-   y="0"
+   x="684.75171"
+   y="61.491524"
    id="tspan15">𝑣</tspan><tspan
    font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
    font-size="21px"
-   x="40.5"
-   y="7"
+   x="702.08502"
+   y="68.491524"
    id="tspan17">ℎ</tspan></text>
-    <path
-       d="m 641.34,67.2034 3.922,3.3906 v 0.9062 l -3.922,3.3907 -0.828,-0.9375 2.5,-2.1719 h -6.423 -3.108 -2.439 -3.828 -1.718 -3.829 -5.546 v -1.4688 h 5.546 3.829 1.718 3.828 2.439 3.108 6.423 l -2.5,-2.1718 z"
-       fill-rule="evenodd"
-       id="path21" />
-    <text
-       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
-       font-weight="400"
-       font-size="32px"
-       transform="translate(645.821,92)"
-       id="text27">|<tspan
+  <path
+     d="m 707.98407,36.694925 3.922,3.3906 v 0.9062 l -3.922,3.3907 -0.828,-0.9375 2.5,-2.1719 h -6.423 -3.108 -2.439 -3.828 -1.718 -3.829 -5.546 v -1.4688 h 5.546 3.829 1.718 3.828 2.439 3.108 6.423 l -2.5,-2.1718 z"
+     fill-rule="evenodd"
+     id="path21" />
+  <text
+     font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+     font-weight="400"
+     font-size="32px"
+     id="text27"
+     x="714.46503"
+     y="61.491524">|<tspan
    font-size="32px"
-   x="24.3333"
-   y="0"
+   x="738.79834"
+   y="61.491524"
    id="tspan23">𝑣</tspan><tspan
    font-size="21px"
-   x="41.666698"
-   y="7"
+   x="756.13171"
+   y="68.491524"
    id="tspan25">ℎ</tspan></text>
-    <path
-       d="m 695.387,67.2034 3.922,3.3906 v 0.9062 l -3.922,3.3907 -0.828,-0.9375 2.5,-2.1719 h -6.423 -3.109 -2.438 -3.828 -1.719 -3.828 -5.547 v -1.4688 h 5.547 3.828 1.719 3.828 2.438 3.109 6.423 l -2.5,-2.1718 z"
-       fill-rule="evenodd"
-       id="path29" />
-    <text
-       font-family="Calibri, Calibri_MSFontService, sans-serif"
-       font-weight="400"
-       font-size="32px"
-       transform="translate(707.034,92)"
-       id="text35">is a solution to A<tspan
+  <path
+     d="m 760.03107,36.694925 3.922,3.3906 v 0.9062 l -3.922,3.3907 -0.828,-0.9375 2.5,-2.1719 h -6.423 -3.109 -2.438 -3.828 -1.719 -3.828 -5.547 v -1.4688 h 5.547 3.828 1.719 3.828 2.438 3.109 6.423 l -2.5,-2.1718 z"
+     fill-rule="evenodd"
+     id="path29" />
+  <text
+     font-family="Calibri, Calibri_MSFontService, sans-serif"
+     font-weight="400"
+     font-size="32px"
+     id="text35"
+     x="775.67804"
+     y="61.491524">is a solution to A<tspan
    font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
    font-size="32px"
-   x="214.687"
-   y="0"
+   x="990.36499"
+   y="61.491524"
    id="tspan31">𝑣</tspan><tspan
    font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
    font-size="21px"
-   x="232.02"
-   y="7"
+   x="1007.698"
+   y="68.491524"
    id="tspan33">ℎ</tspan></text>
-    <path
-       d="m 946.954,67.2034 3.921,3.3906 v 0.9062 l -3.921,3.3907 -0.829,-0.9375 2.5,-2.1719 h -6.422 -3.109 -2.438 -3.828 -1.719 -3.828 -5.547 v -1.4688 h 5.547 3.828 1.719 3.828 2.438 3.109 6.422 l -2.5,-2.1718 z"
-       fill-rule="evenodd"
-       id="path37" />
-    <text
-       font-family="Calibri, Calibri_MSFontService, sans-serif"
-       font-weight="400"
-       font-size="32px"
-       transform="translate(958.601,92)"
-       id="text39">= 0}.</text>
-    <path
-       d="M 398,181.754 C 398,174.71 403.71,169 410.754,169 h 151.492 c 7.044,0 12.754,5.71 12.754,12.754 v 73.492 C 575,262.29 569.29,268 562.246,268 H 410.754 C 403.71,268 398,262.29 398,255.246 Z"
-       fill="#e2f0d9"
-       fill-rule="evenodd"
-       id="path41" />
-    <path
-       d="m 515,169 v 99.483"
-       stroke="#385723"
-       stroke-width="4"
-       stroke-miterlimit="8"
-       fill="none"
-       fill-rule="evenodd"
-       id="path43" />
-    <path
-       d="m 411,195.5 c 0,-11.322 9.85,-20.5 22,-20.5 12.15,0 22,9.178 22,20.5 0,11.322 -9.85,20.5 -22,20.5 -12.15,0 -22,-9.178 -22,-20.5 z"
-       fill="#bdd7ee"
-       fill-rule="evenodd"
-       fill-opacity="0.501961"
-       id="path45" />
-    <path
-       d="M 398,301.754 C 398,294.71 403.71,289 410.754,289 h 151.492 c 7.044,0 12.754,5.71 12.754,12.754 v 73.492 C 575,382.29 569.29,388 562.246,388 H 410.754 C 403.71,388 398,382.29 398,375.246 Z"
-       fill="#e2f0d9"
-       fill-rule="evenodd"
-       id="path47" />
-    <path
-       d="m 511,289 v 99.483"
-       stroke="#385723"
-       stroke-width="4"
-       stroke-miterlimit="8"
-       fill="none"
-       fill-rule="evenodd"
-       id="path49" />
-    <path
-       d="m 408,316.5 c 0,-11.322 9.85,-20.5 22,-20.5 12.15,0 22,9.178 22,20.5 0,11.322 -9.85,20.5 -22,20.5 -12.15,0 -22,-9.178 -22,-20.5 z"
-       fill="#bdd7ee"
-       fill-rule="evenodd"
-       fill-opacity="0.501961"
-       id="path51" />
-    <path
-       d="m 321.569,327.742 c 3.75,0 8.219,1.64 13.407,4.922 5.187,3.281 9.125,4.921 11.812,4.921 2.656,0 4.875,-0.703 6.656,-2.109 1.782,-1.406 3.578,-3.594 5.391,-6.562 l 3.75,2.531 c -1.344,2.781 -3.469,5.586 -6.375,8.414 -2.906,2.828 -6.438,4.242 -10.594,4.242 -4,0 -8.57,-1.641 -13.711,-4.922 -5.14,-3.281 -9.07,-4.922 -11.789,-4.922 -2.281,0 -4.281,0.719 -6,2.157 -1.719,1.437 -3.234,3.531 -4.547,6.281 l -3.656,-2.063 c 1.594,-3.687 3.703,-6.757 6.328,-9.211 2.625,-2.453 5.735,-3.679 9.328,-3.679 z"
-       fill-rule="evenodd"
-       id="path53" />
-    <text
-       fill="#000000"
-       fill-opacity="0"
-       font-family="Arial, Arial_MSFontService, sans-serif"
-       font-size="16.3594px"
-       x="305.91299"
-       y="342.056"
-       id="text55">~</text>
-    <text
-       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
-       font-weight="400"
-       font-size="32px"
-       transform="translate(428.971,453)"
-       id="text129">𝑥<tspan
+  <path
+     d="m 1013.598,36.694925 3.921,3.3906 v 0.9062 l -3.921,3.3907 -0.829,-0.9375 2.5,-2.1719 h -6.422 -3.109 -2.438 -3.82795 -1.719 -3.828 -5.547 v -1.4688 h 5.547 3.828 1.719 3.82795 2.438 3.109 6.422 l -2.5,-2.1718 z"
+     fill-rule="evenodd"
+     id="path37" />
+  <text
+     font-family="Calibri, Calibri_MSFontService, sans-serif"
+     font-weight="400"
+     font-size="32px"
+     id="text39"
+     x="1027.245"
+     y="61.491524">= 0}.</text>
+  <path
+     d="m 466.64407,151.24552 c 0,-7.044 5.71,-12.754 12.754,-12.754 h 151.492 c 7.044,0 12.754,5.71 12.754,12.754 v 73.492 c 0,7.044 -5.71,12.754 -12.754,12.754 h -151.492 c -7.044,0 -12.754,-5.71 -12.754,-12.754 z"
+     fill="#e2f0d9"
+     fill-rule="evenodd"
+     id="path41" />
+  <path
+     d="m 583.64407,138.49152 v 99.483"
+     stroke="#385723"
+     stroke-width="4"
+     stroke-miterlimit="8"
+     fill="none"
+     fill-rule="evenodd"
+     id="path43" />
+  <path
+     d="m 479.64407,164.99152 c 0,-11.322 9.85,-20.5 22,-20.5 12.15,0 22,9.178 22,20.5 0,11.322 -9.85,20.5 -22,20.5 -12.15,0 -22,-9.178 -22,-20.5 z"
+     fill="#bdd7ee"
+     fill-rule="evenodd"
+     fill-opacity="0.501961"
+     id="path45" />
+  <path
+     d="m 466.64407,271.24552 c 0,-7.044 5.71,-12.754 12.754,-12.754 h 151.492 c 7.044,0 12.754,5.71 12.754,12.754 v 73.492 c 0,7.044 -5.71,12.754 -12.754,12.754 h -151.492 c -7.044,0 -12.754,-5.71 -12.754,-12.754 z"
+     fill="#e2f0d9"
+     fill-rule="evenodd"
+     id="path47" />
+  <path
+     d="m 579.64407,258.49152 v 99.483"
+     stroke="#385723"
+     stroke-width="4"
+     stroke-miterlimit="8"
+     fill="none"
+     fill-rule="evenodd"
+     id="path49" />
+  <path
+     d="m 476.64407,285.99152 c 0,-11.322 9.85,-20.5 22,-20.5 12.15,0 22,9.178 22,20.5 0,11.322 -9.85,20.5 -22,20.5 -12.15,0 -22,-9.178 -22,-20.5 z"
+     fill="#bdd7ee"
+     fill-rule="evenodd"
+     fill-opacity="0.501961"
+     id="path51" />
+  <path
+     d="m 390.21307,297.23352 c 3.75,0 8.219,1.64 13.407,4.922 5.187,3.281 9.125,4.921 11.812,4.921 2.656,0 4.875,-0.703 6.656,-2.109 1.782,-1.406 3.578,-3.594 5.391,-6.562 l 3.75,2.531 c -1.344,2.781 -3.469,5.586 -6.375,8.414 -2.906,2.828 -6.438,4.242 -10.594,4.242 -4,0 -8.57,-1.641 -13.711,-4.922 -5.14,-3.281 -9.07,-4.922 -11.789,-4.922 -2.281,0 -4.281,0.719 -6,2.157 -1.719,1.437 -3.234,3.531 -4.547,6.281 l -3.656,-2.063 c 1.594,-3.687 3.703,-6.757 6.328,-9.211 2.625,-2.453 5.735,-3.679 9.328,-3.679 z"
+     fill-rule="evenodd"
+     id="path53" />
+  <text
+     fill="#000000"
+     fill-opacity="0"
+     font-family="Arial, Arial_MSFontService, sans-serif"
+     font-size="16.3594px"
+     x="374.55707"
+     y="311.54755"
+     id="text55">~</text>
+  <text
+     font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+     font-weight="400"
+     font-size="32px"
+     id="text129"
+     x="497.61508"
+     y="422.49155">𝑥<tspan
    font-size="23px"
-   x="15.9467"
-   y="6"
+   x="513.56171"
+   y="428.49155"
    id="tspan57">1</tspan><tspan
    font-size="32px"
-   x="30.7733"
-   y="0"
+   x="528.38837"
+   y="422.49155"
    id="tspan59" /><tspan
    font-family="Calibri, Calibri_MSFontService, sans-serif"
    font-size="32px"
-   x="37.7733"
-   y="0"
+   x="535.38837"
+   y="422.49155"
    id="tspan61">=</tspan><tspan
    font-family="Calibri, Calibri_MSFontService, sans-serif"
    font-size="32px"
-   x="53.7733"
-   y="0"
+   x="551.38837"
+   y="422.49155"
    id="tspan63" /><tspan
    font-family="Calibri, Calibri_MSFontService, sans-serif"
    font-size="32px"
-   x="60.939999"
-   y="0"
+   x="558.55505"
+   y="422.49155"
    id="tspan65">−</tspan>2<tspan
    font-size="32px"
-   x="94.606697"
-   y="0"
+   x="592.22174"
+   y="422.49155"
    id="tspan67" /><tspan
    font-family="Calibri, Calibri_MSFontService, sans-serif"
    font-size="32px"
-   x="101.607"
-   y="0"
+   x="599.22205"
+   y="422.49155"
    id="tspan69">−</tspan> 4<tspan
    font-size="32px"
-   x="142.27299"
-   y="0"
+   x="639.88806"
+   y="422.49155"
    id="tspan71">𝑥</tspan><tspan
    font-size="23px"
-   x="158.96001"
-   y="6"
+   x="656.57507"
+   y="428.49155"
    id="tspan73">2</tspan><tspan
    font-size="32px"
-   x="-1.13858"
-   y="43"
+   x="496.4765"
+   y="465.49155"
    id="tspan75">𝑥</tspan><tspan
    font-size="23px"
-   x="15.5481"
-   y="50"
+   x="513.16315"
+   y="472.49155"
    id="tspan77">2</tspan><tspan
    font-size="32px"
-   x="30.3748"
-   y="43"
+   x="527.98981"
+   y="465.49155"
    id="tspan79" /><tspan
    font-family="Calibri, Calibri_MSFontService, sans-serif"
    font-size="32px"
-   x="37.374802"
-   y="43"
+   x="534.98987"
+   y="465.49155"
    id="tspan81">is free i.e.</tspan><tspan
    font-size="32px"
-   x="170.621"
-   y="43"
+   x="668.23602"
+   y="465.49155"
    id="tspan83">𝑥</tspan><tspan
    font-size="23px"
-   x="187.308"
-   y="50"
+   x="684.92303"
+   y="472.49155"
    id="tspan85">2</tspan><tspan
    font-size="32px"
-   x="202.13499"
-   y="43"
+   x="699.75006"
+   y="465.49155"
    id="tspan87" /><tspan
    font-family="Calibri, Calibri_MSFontService, sans-serif"
    font-size="32px"
-   x="209.13499"
-   y="43"
+   x="706.75006"
+   y="465.49155"
    id="tspan89">= 0 + 1</tspan><tspan
    font-size="32px"
-   x="294.96799"
-   y="43"
+   x="792.58301"
+   y="465.49155"
    id="tspan91">𝑥</tspan><tspan
    font-size="23px"
-   x="311.655"
-   y="50"
+   x="809.27002"
+   y="472.49155"
    id="tspan93">2</tspan><tspan
    font-family="Calibri, Calibri_MSFontService, sans-serif"
    font-size="32px"
-   x="-209.754"
-   y="140"
+   x="287.86108"
+   y="562.49152"
    id="tspan95">The solution set is:</tspan><tspan
    font-family="Calibri, Calibri_MSFontService, sans-serif"
    font-size="32px"
-   x="-202.58701"
-   y="194"
+   x="295.02808"
+   y="616.49152"
    id="tspan97">{(</tspan><tspan
    font-family="Calibri, Calibri_MSFontService, sans-serif"
    font-size="32px"
-   x="-182.92101"
-   y="194"
+   x="314.69406"
+   y="616.49152"
    id="tspan99">−</tspan><tspan
    font-size="32px"
-   x="-166.92101"
-   y="194"
+   x="330.69406"
+   y="616.49152"
    id="tspan101">2</tspan><tspan
    font-size="32px"
-   x="-149.254"
-   y="194"
+   x="348.36108"
+   y="616.49152"
    id="tspan103" /><tspan
    font-family="Calibri, Calibri_MSFontService, sans-serif"
    font-size="32px"
-   x="-142.254"
-   y="194"
+   x="355.36108"
+   y="616.49152"
    id="tspan105">−</tspan> 4<tspan
    font-size="32px"
-   x="-101.587"
-   y="194"
+   x="396.02808"
+   y="616.49152"
    id="tspan107">𝑥</tspan><tspan
    font-size="23px"
-   x="-84.900703"
-   y="200"
+   x="412.71436"
+   y="622.49152"
    id="tspan109">2</tspan><tspan
    font-family="Calibri, Calibri_MSFontService, sans-serif"
    font-size="32px"
-   x="-70.073997"
-   y="194"
+   x="427.54108"
+   y="616.49152"
    id="tspan111">,</tspan><tspan
    font-size="32px"
-   x="-54.907299"
-   y="194"
+   x="442.70776"
+   y="616.49152"
    id="tspan113">𝑥</tspan><tspan
    font-size="23px"
-   x="-38.220699"
-   y="200"
+   x="459.39438"
+   y="622.49152"
    id="tspan115">2</tspan><tspan
    font-family="Calibri, Calibri_MSFontService, sans-serif"
    font-size="32px"
-   x="-16.227301"
-   y="194"
+   x="481.38776"
+   y="616.49152"
    id="tspan117">|</tspan><tspan
    font-size="32px"
-   x="5.6059899"
-   y="194"
+   x="503.22104"
+   y="616.49152"
    id="tspan119">𝑥</tspan><tspan
    font-size="23px"
-   x="22.2927"
-   y="200"
+   x="519.90771"
+   y="622.49152"
    id="tspan121">2</tspan><tspan
    font-size="32px"
-   x="44.285999"
-   y="194"
+   x="541.90106"
+   y="616.49152"
    id="tspan123">∈</tspan><tspan
    font-family="Cambria, Cambria_MSFontService, sans-serif"
    font-size="32px"
-   x="71.452698"
-   y="194"
+   x="569.06775"
+   y="616.49152"
    id="tspan125">R</tspan><tspan
    font-family="Calibri, Calibri_MSFontService, sans-serif"
    font-size="32px"
-   x="91.286003"
-   y="194"
+   x="588.90106"
+   y="616.49152"
    id="tspan127">)} or</tspan></text>
-    <path
-       d="M 3.8125,-9.28125 V -9 c 1.40625,0.61458 2.40885,1.55729 3.00781,2.82812 0.59896,1.27084 0.89844,2.92188 0.89844,4.95313 0,0.6875 -0.28646,2.52865 -0.85937,5.52344 C 6.28646,7.29948 6,9.52604 6,10.9844 c 0,3.4375 0.55208,5.9844 1.65625,7.6406 1.10417,1.6562 2.36975,2.5833 3.79685,2.7812 V 22.75 C 9.22396,22.5417 7.26562,21.3854 5.57812,19.2812 3.89062,17.1771 3.04687,13.9427 3.04688,9.57812 3.04687,7.94271 3.34896,5.70052 3.95312,2.85156 4.55729,0.00260425 4.85938,-1.94271 4.85938,-2.98438 4.85938,-4.68229 4.51302,-5.99219 3.82031,-6.91406 3.1276,-7.83594 2.24479,-8.33333 1.17188,-8.40625 V -9.875 c 1.07291,-0.07292 1.95572,-0.5703 2.64843,-1.4922 0.69271,-0.9219 1.03907,-2.2318 1.03907,-3.9297 0,-1.0416 -0.30209,-2.987 -0.90626,-5.8359 -0.60416,-2.849 -0.90625,-5.0912 -0.90624,-6.7266 -10e-6,-4.3646 0.84374,-7.5989 2.53124,-9.7031 1.6875,-2.1042 3.64584,-3.2604 5.87498,-3.4687 v 1.3437 c -1.4271,0.1979 -2.69268,1.125 -3.79685,2.7813 C 6.55208,-35.25 6,-32.7031 6,-29.2656 c 0,1.4583 0.28646,3.6849 0.85938,6.6797 0.57291,2.9948 0.85937,4.8359 0.85937,5.5234 0,2.0313 -0.29948,3.6823 -0.89844,4.9531 -0.59896,1.2709 -1.60156,2.21357 -3.00781,2.82815 z"
-       transform="translate(582.257,647)"
-       id="path131" />
-    <path
-       d="m 641.147,605.862 h 7.86 v 63.656 h -7.86 v -1.437 h 4.797 v -60.782 h -4.797 z m -42.934,0 h 7.86 v 1.437 h -4.797 v 60.782 h 4.797 v 1.437 h -7.86 z"
-       fill-rule="evenodd"
-       id="path133" />
-    <text
-       font-family="Calibri, Calibri_MSFontService, sans-serif"
-       font-weight="400"
-       font-size="32px"
-       transform="translate(606.777,630)"
-       id="text147">−<tspan
+  <path
+     d="M 3.8125,-9.28125 V -9 c 1.40625,0.61458 2.40885,1.55729 3.00781,2.82812 0.59896,1.27084 0.89844,2.92188 0.89844,4.95313 0,0.6875 -0.28646,2.52865 -0.85937,5.52344 C 6.28646,7.29948 6,9.52604 6,10.9844 c 0,3.4375 0.55208,5.9844 1.65625,7.6406 1.10417,1.6562 2.36975,2.5833 3.79685,2.7812 V 22.75 C 9.22396,22.5417 7.26562,21.3854 5.57812,19.2812 3.89062,17.1771 3.04687,13.9427 3.04688,9.57812 3.04687,7.94271 3.34896,5.70052 3.95312,2.85156 4.55729,0.00260425 4.85938,-1.94271 4.85938,-2.98438 4.85938,-4.68229 4.51302,-5.99219 3.82031,-6.91406 3.1276,-7.83594 2.24479,-8.33333 1.17188,-8.40625 V -9.875 c 1.07291,-0.07292 1.95572,-0.5703 2.64843,-1.4922 0.69271,-0.9219 1.03907,-2.2318 1.03907,-3.9297 0,-1.0416 -0.30209,-2.987 -0.90626,-5.8359 -0.60416,-2.849 -0.90625,-5.0912 -0.90624,-6.7266 -10e-6,-4.3646 0.84374,-7.5989 2.53124,-9.7031 1.6875,-2.1042 3.64584,-3.2604 5.87498,-3.4687 v 1.3437 c -1.4271,0.1979 -2.69268,1.125 -3.79685,2.7813 C 6.55208,-35.25 6,-32.7031 6,-29.2656 c 0,1.4583 0.28646,3.6849 0.85938,6.6797 0.57291,2.9948 0.85937,4.8359 0.85937,5.5234 0,2.0313 -0.29948,3.6823 -0.89844,4.9531 -0.59896,1.2709 -1.60156,2.21357 -3.00781,2.82815 z"
+     transform="translate(650.90107,616.49152)"
+     id="path131"
+     clip-path="url(#clipPath642)" />
+  <path
+     d="m 709.79107,575.35352 h 7.86 v 63.656 h -7.86 v -1.437 h 4.797 v -60.782 h -4.797 z m -42.934,0 h 7.86 v 1.437 h -4.797 v 60.782 h 4.797 v 1.437 h -7.86 z"
+     fill-rule="evenodd"
+     id="path133" />
+  <text
+     font-family="Calibri, Calibri_MSFontService, sans-serif"
+     font-weight="400"
+     font-size="32px"
+     id="text147"
+     x="675.42102"
+     y="599.49152">−<tspan
    font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
    font-size="32px"
-   x="16"
-   y="0"
+   x="691.42102"
+   y="599.49152"
    id="tspan135">2</tspan><tspan
    font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
    font-size="32px"
-   x="8"
-   y="37"
+   x="683.42102"
+   y="636.49152"
    id="tspan137">0</tspan><tspan
    font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
    font-size="32px"
-   x="52.906601"
-   y="17"
+   x="728.32764"
+   y="616.49152"
    id="tspan139">+</tspan><tspan
    font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
    font-size="32px"
-   x="80.293297"
-   y="17"
+   x="755.71436"
+   y="616.49152"
    id="tspan141" /><tspan
    font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
    font-size="32px"
-   x="90.853302"
-   y="17"
+   x="766.27435"
+   y="616.49152"
    id="tspan143">𝑥</tspan><tspan
    font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
    font-size="23px"
-   x="107.54"
-   y="23"
+   x="782.96106"
+   y="622.49152"
    id="tspan145">2</tspan></text>
-    <path
-       d="m 780.534,611.444 h 7.437 v 52.5 h -7.437 v -1.359 h 4.547 v -49.781 h -4.547 z m -42.51,0 h 7.438 v 1.36 h -4.547 v 49.781 h 4.547 v 1.359 h -7.438 z"
-       fill-rule="evenodd"
-       id="path149" />
-    <text
-       font-family="Calibri, Calibri_MSFontService, sans-serif"
-       font-weight="400"
-       font-size="32px"
-       transform="translate(746.164,630)"
-       id="text155">−<tspan
+  <path
+     d="m 849.17807,580.93552 h 7.437 v 52.5 h -7.437 v -1.359 h 4.547 v -49.781 h -4.547 z m -42.51,0 h 7.438 v 1.36 h -4.547 v 49.781 h 4.547 v 1.359 h -7.438 z"
+     fill-rule="evenodd"
+     id="path149" />
+  <text
+     font-family="Calibri, Calibri_MSFontService, sans-serif"
+     font-weight="400"
+     font-size="32px"
+     id="text155"
+     x="814.80804"
+     y="599.49152">−<tspan
    font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
    font-size="32px"
-   x="16"
-   y="0"
+   x="830.80804"
+   y="599.49152"
    id="tspan151">4</tspan><tspan
    font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
    font-size="32px"
-   x="8"
-   y="37"
+   x="822.80804"
+   y="636.49152"
    id="tspan153">1</tspan></text>
-    <path
-       d="M 12.0469,-8.48438 C 10.8802,-8.45312 9.9974,-8.02344 9.39844,-7.19531 8.79948,-6.36719 8.5,-5.23958 8.5,-3.8125 c 0,0.57292 0.15885,1.99479 0.47656,4.265625 0.31771,2.270835 0.47656,4.005205 0.47656,5.203125 0,3.63542 -0.6875,6.42705 -2.0625,8.37495 -1.375,1.948 -3.51562,2.9636 -6.42187,3.0469 v -1.25 c 0.91667,-0.0625 1.72396,-0.2838 2.42187,-0.664 0.69792,-0.3802 1.30209,-0.9558 1.8125,-1.7266 0.51042,-0.75 0.88542,-1.7187 1.125,-2.9063 C 6.56771,9.34375 6.6875,7.91667 6.6875,6.25 6.6875,5.51042 6.54688,3.94531 6.26562,1.55469 5.98438,-0.835937 5.84375,-2.29167 5.84375,-2.8125 c 0,-1.79167 0.38021,-3.20833 1.14063,-4.25 C 7.74479,-8.10417 8.44271,-8.75 9.07812,-9 V -9.3125 C 8.44271,-9.54167 7.74479,-10.1901 6.98438,-11.2578 6.22396,-12.3255 5.84375,-13.75 5.84375,-15.5312 c 0,-0.7917 0.14063,-2.2214 0.42187,-4.2891 0.28126,-2.0677 0.42188,-3.6797 0.42188,-4.8359 0,-1.6563 -0.13281,-3.0704 -0.39844,-4.2422 -0.26562,-1.1719 -0.64844,-2.1328 -1.14844,-2.8828 -0.5,-0.75 -1.10156,-1.3099 -1.80468,-1.6797 -0.70313,-0.3698 -1.49219,-0.586 -2.36719,-0.6485 v -1.25 c 2.75,0.1354 4.85156,1.1302 6.30469,2.9844 1.45312,1.8542 2.17968,4.724 2.17968,8.6094 0,1.3958 -0.15885,3.1302 -0.47656,5.2031 C 8.65885,-16.4896 8.5,-15.1406 8.5,-14.5156 c 0,1.4583 0.30208,2.5989 0.90625,3.4218 0.60415,0.823 1.48435,1.24484 2.64065,1.26568 z"
-       transform="translate(791.517,647)"
-       id="path157" />
-    <path
-       d="m 321.569,457.593 c 3.75,0 8.219,1.641 13.407,4.922 5.187,3.281 9.125,4.922 11.812,4.922 2.656,0 4.875,-0.703 6.656,-2.11 1.782,-1.406 3.578,-3.593 5.391,-6.562 l 3.75,2.531 c -1.344,2.781 -3.469,5.586 -6.375,8.414 -2.906,2.828 -6.438,4.242 -10.594,4.242 -4,0 -8.57,-1.64 -13.711,-4.922 -5.14,-3.281 -9.07,-4.921 -11.789,-4.921 -2.281,0 -4.281,0.718 -6,2.156 -1.719,1.437 -3.234,3.531 -4.547,6.281 l -3.656,-2.062 c 1.594,-3.688 3.703,-6.758 6.328,-9.211 2.625,-2.453 5.735,-3.68 9.328,-3.68 z"
-       fill-rule="evenodd"
-       id="path159" />
-    <text
-       fill="#000000"
-       fill-opacity="0"
-       font-family="Arial, Arial_MSFontService, sans-serif"
-       font-size="16.3594px"
-       x="305.91299"
-       y="471.90701"
-       id="text161">~</text>
-    <path
-       d="m 419,514 c -8.56,0 -15.5,-6.101 -15.5,-13.627 V 477.627 C 403.5,470.101 396.56,464 388,464 c 8.56,0 15.5,-6.101 15.5,-13.627 V 427.627 C 403.5,420.101 410.44,414 419,414"
-       stroke="#000000"
-       stroke-width="4"
-       stroke-miterlimit="8"
-       fill="none"
-       fill-rule="evenodd"
-       id="path163" />
-    <path
-       d="M 408,352.967 C 408,345.806 413.806,340 420.967,340 h 131.066 c 7.161,0 12.967,5.806 12.967,12.967 v 10.066 C 565,370.194 559.194,376 552.033,376 H 420.967 C 413.806,376 408,370.194 408,363.033 Z"
-       fill="#7030a0"
-       fill-rule="evenodd"
-       fill-opacity="0.301961"
-       id="path165" />
-    <path
-       d="M 411,231.327 C 411,223.967 416.967,218 424.327,218 h 127.346 c 7.36,0 13.327,5.967 13.327,13.327 v 10.346 C 565,249.033 559.033,255 551.673,255 H 424.327 C 416.967,255 411,249.033 411,241.673 Z"
-       fill="#7030a0"
-       fill-rule="evenodd"
-       fill-opacity="0.301961"
-       id="path167" />
-    <text
-       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
-       font-weight="400"
-       font-size="32px"
-       transform="translate(420.772,329)"
-       id="text201">1<tspan
+  <path
+     d="M 12.0469,-8.48438 C 10.8802,-8.45312 9.9974,-8.02344 9.39844,-7.19531 8.79948,-6.36719 8.5,-5.23958 8.5,-3.8125 c 0,0.57292 0.15885,1.99479 0.47656,4.265625 0.31771,2.270835 0.47656,4.005205 0.47656,5.203125 0,3.63542 -0.6875,6.42705 -2.0625,8.37495 -1.375,1.948 -3.51562,2.9636 -6.42187,3.0469 v -1.25 c 0.91667,-0.0625 1.72396,-0.2838 2.42187,-0.664 0.69792,-0.3802 1.30209,-0.9558 1.8125,-1.7266 0.51042,-0.75 0.88542,-1.7187 1.125,-2.9063 C 6.56771,9.34375 6.6875,7.91667 6.6875,6.25 6.6875,5.51042 6.54688,3.94531 6.26562,1.55469 5.98438,-0.835937 5.84375,-2.29167 5.84375,-2.8125 c 0,-1.79167 0.38021,-3.20833 1.14063,-4.25 C 7.74479,-8.10417 8.44271,-8.75 9.07812,-9 V -9.3125 C 8.44271,-9.54167 7.74479,-10.1901 6.98438,-11.2578 6.22396,-12.3255 5.84375,-13.75 5.84375,-15.5312 c 0,-0.7917 0.14063,-2.2214 0.42187,-4.2891 0.28126,-2.0677 0.42188,-3.6797 0.42188,-4.8359 0,-1.6563 -0.13281,-3.0704 -0.39844,-4.2422 -0.26562,-1.1719 -0.64844,-2.1328 -1.14844,-2.8828 -0.5,-0.75 -1.10156,-1.3099 -1.80468,-1.6797 -0.70313,-0.3698 -1.49219,-0.586 -2.36719,-0.6485 v -1.25 c 2.75,0.1354 4.85156,1.1302 6.30469,2.9844 1.45312,1.8542 2.17968,4.724 2.17968,8.6094 0,1.3958 -0.15885,3.1302 -0.47656,5.2031 C 8.65885,-16.4896 8.5,-15.1406 8.5,-14.5156 c 0,1.4583 0.30208,2.5989 0.90625,3.4218 0.60415,0.823 1.48435,1.24484 2.64065,1.26568 z"
+     transform="translate(860.16107,616.49152)"
+     id="path157"
+     clip-path="url(#clipPath638)" />
+  <path
+     d="m 390.21307,427.08452 c 3.75,0 8.219,1.641 13.407,4.922 5.187,3.281 9.125,4.922 11.812,4.922 2.656,0 4.875,-0.703 6.656,-2.11 1.782,-1.406 3.578,-3.593 5.391,-6.562 l 3.75,2.531 c -1.344,2.781 -3.469,5.586 -6.375,8.414 -2.906,2.828 -6.438,4.242 -10.594,4.242 -4,0 -8.57,-1.64 -13.711,-4.922 -5.14,-3.281 -9.07,-4.921 -11.789,-4.921 -2.281,0 -4.281,0.718 -6,2.156 -1.719,1.437 -3.234,3.531 -4.547,6.281 l -3.656,-2.062 c 1.594,-3.688 3.703,-6.758 6.328,-9.211 2.625,-2.453 5.735,-3.68 9.328,-3.68 z"
+     fill-rule="evenodd"
+     id="path159" />
+  <text
+     fill="#000000"
+     fill-opacity="0"
+     font-family="Arial, Arial_MSFontService, sans-serif"
+     font-size="16.3594px"
+     x="374.55707"
+     y="441.39856"
+     id="text161">~</text>
+  <path
+     d="m 487.64407,483.49152 c -8.56,0 -15.5,-6.101 -15.5,-13.627 v -22.746 c 0,-7.526 -6.94,-13.627 -15.5,-13.627 8.56,0 15.5,-6.101 15.5,-13.627 v -22.746 c 0,-7.526 6.94,-13.627 15.5,-13.627"
+     stroke="#000000"
+     stroke-width="4"
+     stroke-miterlimit="8"
+     fill="none"
+     fill-rule="evenodd"
+     id="path163" />
+  <path
+     d="m 476.64407,322.45852 c 0,-7.161 5.806,-12.967 12.967,-12.967 h 131.066 c 7.161,0 12.967,5.806 12.967,12.967 v 10.066 c 0,7.161 -5.806,12.967 -12.967,12.967 h -131.066 c -7.161,0 -12.967,-5.806 -12.967,-12.967 z"
+     fill="#7030a0"
+     fill-rule="evenodd"
+     fill-opacity="0.301961"
+     id="path165" />
+  <path
+     d="m 479.64407,200.81852 c 0,-7.36 5.967,-13.327 13.327,-13.327 h 127.346 c 7.36,0 13.327,5.967 13.327,13.327 v 10.346 c 0,7.36 -5.967,13.327 -13.327,13.327 h -127.346 c -7.36,0 -13.327,-5.967 -13.327,-13.327 z"
+     fill="#7030a0"
+     fill-rule="evenodd"
+     fill-opacity="0.301961"
+     id="path167" />
+  <text
+     font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+     font-weight="400"
+     font-size="32px"
+     id="text201"
+     x="489.41608"
+     y="298.49155">1<tspan
    font-size="32px"
-   x="49.666698"
-   y="0"
+   x="539.08276"
+   y="298.49155"
    id="tspan169">4</tspan><tspan
    font-family="Calibri, Calibri_MSFontService, sans-serif"
    font-size="32px"
-   x="99.333298"
-   y="0"
+   x="588.74933"
+   y="298.49155"
    id="tspan171">−</tspan>2<tspan
    font-size="32px"
-   x="0"
-   y="38"
+   x="489.41608"
+   y="336.49155"
    id="tspan173">0</tspan><tspan
    font-size="32px"
-   x="49.666698"
-   y="38"
+   x="539.08276"
+   y="336.49155"
    id="tspan175">0</tspan><tspan
    font-size="32px"
-   x="107.333"
-   y="38"
+   x="596.74902"
+   y="336.49155"
    id="tspan177">0</tspan><tspan
    font-size="32px"
-   x="3.52859"
-   y="-121"
+   x="492.94467"
+   y="177.49152"
    id="tspan179">1</tspan><tspan
    font-size="32px"
-   x="53.195301"
-   y="-121"
+   x="542.61133"
+   y="177.49152"
    id="tspan181">4</tspan><tspan
    font-family="Calibri, Calibri_MSFontService, sans-serif"
    font-size="32px"
-   x="102.862"
-   y="-121"
+   x="592.27802"
+   y="177.49152"
    id="tspan183">−</tspan>2<tspan
    font-size="32px"
-   x="3.52859"
-   y="-83"
+   x="492.94467"
+   y="215.49152"
    id="tspan185">2</tspan><tspan
    font-size="32px"
-   x="53.195301"
-   y="-83"
+   x="542.61133"
+   y="215.49152"
    id="tspan187">8</tspan><tspan
    font-family="Calibri, Calibri_MSFontService, sans-serif"
    font-size="32px"
-   x="102.862"
-   y="-83"
+   x="592.27802"
+   y="215.49152"
    id="tspan189">−</tspan>4<tspan
    fill="#c00000"
    font-family="Calibri, Calibri_MSFontService, sans-serif"
    font-size="27px"
-   x="174.29201"
-   y="40"
+   x="663.70807"
+   y="338.49155"
    id="tspan191">Sub</tspan><tspan
    fill="#c00000"
    font-family="Calibri, Calibri_MSFontService, sans-serif"
    font-size="27px"
-   x="214.625"
-   y="40"
+   x="704.04102"
+   y="338.49155"
    id="tspan193">-</tspan><tspan
    fill="#c00000"
    font-family="Calibri, Calibri_MSFontService, sans-serif"
    font-size="27px"
-   x="222.79201"
-   y="40"
-   id="tspan195">matrix with form A </tspan><tspan
+   x="712.20807"
+   y="338.49155"
+   id="tspan195">matrix with form A</tspan><tspan
    fill="#c00000"
    font-size="27px"
-   x="426.65201"
-   y="40"
+   x="916.06805"
+   y="338.49155"
    id="tspan197">𝑣</tspan><tspan
    fill="#c00000"
    font-size="18px"
-   x="441.15201"
-   y="46"
+   x="930.56805"
+   y="344.49155"
    id="tspan199">ℎ</tspan></text>
-    <path
-       d="m 868.562,347.603 3.31,2.861 v 0.764 l -3.31,2.861 -0.698,-0.791 2.109,-1.832 h -5.352 -2.69 -1.95 -3.27 -1.37 -3.27 -4.64 v -1.24 h 4.64 3.27 1.37 3.27 1.95 2.69 5.352 l -2.109,-1.832 z"
-       fill="#c00000"
-       fill-rule="evenodd"
-       id="path203" />
-    <text
-       fill="#c00000"
-       font-family="Calibri, Calibri_MSFontService, sans-serif"
-       font-weight="400"
-       font-size="27px"
-       transform="translate(878.211,369)"
-       id="text205">= 0</text>
-    <path
-       d="M 693,622.661 C 693,609.593 703.593,599 716.66,599 h 58.68 c 13.067,0 23.66,10.593 23.66,23.661 v 31.678 C 799,667.407 788.407,678 775.34,678 H 716.66 C 703.593,678 693,667.407 693,654.339 Z"
-       fill="#c00000"
-       fill-rule="evenodd"
-       fill-opacity="0.2"
-       id="path207" />
-    <text
-       font-family="Calibri, Calibri_MSFontService, sans-serif"
-       font-weight="400"
-       font-size="32px"
-       transform="translate(87.4341,136)"
-       id="text217">S <tspan
-   font-size="32px"
-   x="21.8333"
-   y="0"
-   id="tspan209">is represented<tspan
-   style="fill:#ffffff"
-   id="tspan622">i</tspan></tspan>by vector addition instead of as a set expression.<tspan
+  <path
+     d="m 937.20607,317.09452 3.31,2.861 v 0.764 l -3.31,2.861 -0.698,-0.791 2.109,-1.832 h -5.352 -2.69 -1.95 -3.27 -1.37 -3.27 -4.64 v -1.24 h 4.64 3.27 1.37 3.27 1.95 2.69 5.352 l -2.109,-1.832 z"
+     fill="#c00000"
+     fill-rule="evenodd"
+     id="path203" />
+  <text
+     fill="#c00000"
+     font-family="Calibri, Calibri_MSFontService, sans-serif"
+     font-weight="400"
+     font-size="27px"
+     id="text205"
+     x="946.85504"
+     y="338.49155">= 0</text>
+  <path
+     d="m 761.64407,592.15252 c 0,-13.068 10.593,-23.661 23.66,-23.661 h 58.68 c 13.067,0 23.66,10.593 23.66,23.661 v 31.678 c 0,13.068 -10.593,23.661 -23.66,23.661 h -58.68 c -13.067,0 -23.66,-10.593 -23.66,-23.661 z"
+     fill="#c00000"
+     fill-rule="evenodd"
+     fill-opacity="0.2"
+     id="path207" />
+  <text
+     font-family="Calibri, Calibri_MSFontService, sans-serif"
+     font-weight="400"
+     font-size="32px"
+     id="text217"
+     x="156.07817"
+     y="105.49152">S is represented by vector addition instead of set expression.<tspan
    fill="#c00000"
    font-size="27px"
-   x="607.52502"
-   y="447"
-   id="tspan211">Solution 𝑣<tspan
-   style="font-size:14.6667px"
-   id="tspan628">ℎ</tspan></tspan></text>
-    <path
-       d="m 813.764,561.716 3.309,2.86 v 0.765 l -3.309,2.861 -0.699,-0.791 2.11,-1.833 h -5.352 -2.69 -1.95 -3.27 -1.37 -3.27 -4.64 v -1.239 h 4.64 3.27 1.37 3.27 1.95 2.69 5.352 l -2.11,-1.832 z"
-       fill="#c00000"
-       fill-rule="evenodd"
-       id="path219" />
-    <text
-       fill="#c00000"
-       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
-       font-weight="400"
+   x="763.60315"
+   y="552.49152"
+   id="tspan211">Solution<tspan
+   style="fill:#ffffff"
+   id="tspan860">i</tspan>𝑣<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan752">ℎ</tspan></tspan></text>
+  <path
+     d="m 876.40807,531.20752 3.309,2.86 v 0.765 l -3.309,2.861 -0.699,-0.791 2.11,-1.833 h -5.352 -2.69 -1.95 -3.27 -1.37 -3.27 -4.64 v -1.239 h 4.64 3.27 1.37 3.27 1.95 2.69 5.352 l -2.11,-1.832 z"
+     fill="#c00000"
+     fill-rule="evenodd"
+     id="path219" />
+  <text
+     fill="#c00000"
+     font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+     font-weight="400"
+     font-size="27px"
+     id="text225"
+     x="884.05701"
+     y="552.49152"><tspan
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
        font-size="27px"
-       transform="translate(815.413,583)"
-       id="text225"><tspan
-         fill="#44546a"
-         font-family="Calibri, Calibri_MSFontService, sans-serif"
-         font-size="27px"
-         x="-256.53101"
-         y="0"
-         id="tspan221">Solution</tspan><tspan
-         fill="#44546a"
-         font-size="27px"
-         x="-160.86501"
-         y="0"
-         id="tspan223">𝑝</tspan></text>
-    <path
-       d="m 9.94043,-17.6265 -3.30908,2.8609 -0.69873,-0.791 2.10937,-1.8326 H 0 v -1.2392 h 8.04199 l -2.10937,-1.8325 0.69873,-0.7911 3.30908,2.8609 z"
+       x="627.526"
+       y="552.49152"
+       id="tspan221">Solution</tspan><tspan
        fill="#44546a"
-       transform="translate(659.601,583)"
-       id="path227" />
-    <text
-       fill="#44546a"
-       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
-       font-weight="400"
        font-size="27px"
-       transform="translate(669.708,583)"
-       id="text229" />
-    <path
-       d="M 587,619.666 C 587,608.252 596.252,599 607.666,599 h 27.668 c 11.414,0 20.666,9.252 20.666,20.666 v 37.668 C 656,668.748 646.748,678 635.334,678 H 607.666 C 596.252,678 587,668.748 587,657.334 Z"
-       fill="#44546a"
-       fill-rule="evenodd"
-       fill-opacity="0.2"
-       id="path231" />
-  </g>
+       x="723.19202"
+       y="552.49152"
+       id="tspan223">𝑝</tspan></text>
+  <path
+     d="m 9.94043,-17.6265 -3.30908,2.8609 -0.69873,-0.791 2.10937,-1.8326 H 0 v -1.2392 h 8.04199 l -2.10937,-1.8325 0.69873,-0.7911 3.30908,2.8609 z"
+     fill="#44546a"
+     transform="translate(728.24507,552.49152)"
+     id="path227"
+     clip-path="url(#clipPath634)" />
+  <text
+     fill="#44546a"
+     font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+     font-weight="400"
+     font-size="27px"
+     id="text229"
+     x="748.26733"
+     y="566.98303" />
+  <path
+     d="m 655.64407,589.15752 c 0,-11.414 9.252,-20.666 20.666,-20.666 h 27.668 c 11.414,0 20.666,9.252 20.666,20.666 v 37.668 c 0,11.414 -9.252,20.666 -20.666,20.666 h -27.668 c -11.414,0 -20.666,-9.252 -20.666,-20.666 z"
+     fill="#44546a"
+     fill-rule="evenodd"
+     fill-opacity="0.2"
+     id="path231" />
 </svg>

@@ -1,12 +1,14 @@
 # Introductory mathematics in R and Python    
-This repository contains tutorials on the introductory mathematical concepts required for studying statistics and machine learning. Mathematical calculations are executed in both `R` and `Python`.    
+This repository contains tutorials on the introductory mathematical concepts required for studying statistics and machine learning.   
+Extra visualisations are created in `R` and code to solve linear systems are written in both `R` and `Python`.    
 
 ![](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/figures/repo_logo.jpg)
 
 ## Tutorials    
 |Topics|Tutorials|
 |:-----|:--------|
-|:1234:|[Introduction to numbers](./tutorials/numbers-introduction.md)|
+|:1234:|[Introduction to numbers](./tutorials/numbers-introduction.md)|  
+|:1234:|Introduction to functions|
 |:1234:|Introduction to algebra|
 |:1234:|Exponents and logarithms|
 |:1234:|Logarithms and information theory|
@@ -21,7 +23,7 @@ This repository contains tutorials on the introductory mathematical concepts req
 |:chopsticks:|[Introduction to vectors](./tutorials/linear_algebra-vectors.md)|
 |:chopsticks:|Vector transformations|
 |:chopsticks:|Vector embeddings|
-|:department_store:|Introduction to matrices|  
+|:department_store:|[Introduction to matrices](./tutorials/linear_algebra-matrices.md)|    
 |:roller_coaster:|Introduction to derivatives|  
 
 ## Contributors

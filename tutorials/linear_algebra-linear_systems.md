@@ -1,7 +1,7 @@
 Introduction to linear systems
 ================
 Erika Duan
-2022-08-15
+2022-08-19
 
 -   [A single linear equation](#a-single-linear-equation)
 -   [A system of linear equations](#a-system-of-linear-equations)
@@ -18,58 +18,62 @@ Erika Duan
 # A single linear equation
 
 There is a fundamental relationship between the linear equation
-![ax+by=c](https://latex.codecogs.com/svg.format?ax%2Bby%3Dc "ax+by=c"),
+![ax + by = c](https://latex.codecogs.com/svg.format?ax%20%2B%20by%20%3D%20c "ax + by = c"),
 which contains two unknown variables, and lines. A line represents the
 space occupied by all possible solutions to the linear equation
-![ax+by=c](https://latex.codecogs.com/svg.format?ax%2Bby%3Dc "ax+by=c").
+![ax + by = c](https://latex.codecogs.com/svg.format?ax%20%2B%20by%20%3D%20c "ax + by = c").
 
 This means that we can describe linear equations using geometric as well
-as mathematical intuition for up to 3D spaces. For example, the solution
-for
-![3x-2y=2](https://latex.codecogs.com/svg.format?3x-2y%3D2 "3x-2y=2")
+as mathematical intuition for dimensional spaces (realistically up to 3D
+spaces). For example, the solution for
+![3x - 2y = 2](https://latex.codecogs.com/svg.format?3x%20-%202y%20%3D%202 "3x - 2y = 2")
 can be rearranged into the form
-![y=\\tfrac{3}{2}x-1](https://latex.codecogs.com/svg.format?y%3D%5Ctfrac%7B3%7D%7B2%7Dx-1 "y=\tfrac{3}{2}x-1"),
+![y = \\tfrac{3}{2}x - 1](https://latex.codecogs.com/svg.format?y%20%3D%20%5Ctfrac%7B3%7D%7B2%7Dx%20-%201 "y = \tfrac{3}{2}x - 1"),
 which is a line with slope
 ![\\tfrac{3}{2}](https://latex.codecogs.com/svg.format?%5Ctfrac%7B3%7D%7B2%7D "\tfrac{3}{2}")
 and y-intercept ![-1](https://latex.codecogs.com/svg.format?-1 "-1").
 
 A single linear equation can be inconsistent (where no solution exists)
 or consistent (where a single solution or infinite solutions exist). For
-any consistent linear equation with non-trivial (non-zero variable)
-solutions, the solution set also has a geometric form. For example, the
-solutions to
+any consistent linear equation, the solution set also has a geometric
+form. For example, the solutions to
 ![3x-2y=2](https://latex.codecogs.com/svg.format?3x-2y%3D2 "3x-2y=2")
-map to a line in 2D space. Any point on this line is an individual
-solution and a copy of
+map to a single line within a 2D plane. Any point on this line is an
+individual solution and the line of infinite solutions is a copy of
 ![\\mathbb{R}^1](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5E1 "\mathbb{R}^1")
 inside
 ![\\mathbb{R}^2](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5E2 "\mathbb{R}^2").
 
-This geometric intuition also illustrates that infinite solutions exist
-for single linear equations, with the exception of solutions that are a
-copy of
+The geometric intuition that solutions exist as a copy of
+![\\mathbb{R}^{n-1}](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5E%7Bn-1%7D "\mathbb{R}^{n-1}")
+inside
+![\\mathbb{R}^n](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5En "\mathbb{R}^n")
+is true for all linear equations. For example, the solution to the
+linear system
+![3x=2](https://latex.codecogs.com/svg.format?3x%3D2 "3x=2") is a copy
+of
 ![\\mathbb{R}^0](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5E0 "\mathbb{R}^0")
 inside
 ![\\mathbb{R}^1](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5E1 "\mathbb{R}^1")
-i.e. solutions with the form
-![3x=2](https://latex.codecogs.com/svg.format?3x%3D2 "3x=2").
+and maps to a single point along a 1D line.
 
 <img src="../figures/linear_systems-consistent_solutions.svg" width="80%" style="display: block; margin: auto;" />
 
 **Note:** In linear algebra, it is preferable to write linear equations
 in the form
-![ax_1+bx_2=c](https://latex.codecogs.com/svg.format?ax_1%2Bbx_2%3Dc "ax_1+bx_2=c")
+![ax_1 + bx_2 = c](https://latex.codecogs.com/svg.format?ax_1%20%2B%20bx_2%20%3D%20c "ax_1 + bx_2 = c")
 instead of
-![ax+by=c](https://latex.codecogs.com/svg.format?ax%2Bby%3Dc "ax+by=c"),
-as we often deal with dimensions greater than 3 (alternatively
-represented by the x, y, z coordinates).
+![ax + by = c](https://latex.codecogs.com/svg.format?ax%20%2B%20by%20%3D%20c "ax + by = c"),
+as we often deal with dimensions greater than 3 (commonly represented by
+the x, y, z coordinates).
 
 **Note:** Linear equations with the form
-![c_1x_1+c_2x_2=0](https://latex.codecogs.com/svg.format?c_1x_1%2Bc_2x_2%3D0 "c_1x_1+c_2x_2=0")
+![c_1x_1 + c_2x_2 = 0](https://latex.codecogs.com/svg.format?c_1x_1%20%2B%20c_2x_2%20%3D%200 "c_1x_1 + c_2x_2 = 0")
 rather than
-![c_1x_1+c_2x_2=k](https://latex.codecogs.com/svg.format?c_1x_1%2Bc_2x_2%3Dk "c_1x_1+c_2x_2=k")
-have the distinct property that they also pass the point of origin (a
-trivial solution also exists).
+![c_1x_1 + c_2x_2 = k](https://latex.codecogs.com/svg.format?c_1x_1%20%2B%20c_2x_2%20%3D%20k "c_1x_1 + c_2x_2 = k")
+have the distinct property that they also pass the point of origin
+i.e. they also contain a trivial solution
+![c_1 = c_2 = 0](https://latex.codecogs.com/svg.format?c_1%20%3D%20c_2%20%3D%200 "c_1 = c_2 = 0").
 
 <details>
 <summary>
@@ -124,39 +128,45 @@ p1 + p2
 
 In linear algebra, we are often searching for a single solution set
 ![S = \\{s_1, s_2, \\cdots\\, s_n\\}](https://latex.codecogs.com/svg.format?S%20%3D%20%5C%7Bs_1%2C%20s_2%2C%20%5Ccdots%5C%2C%20s_n%5C%7D "S = \{s_1, s_2, \cdots\, s_n\}")
-given that multiple observations or constraints are known. Each
+given that multiple observations or constraints are described. Each
 observation or constraint is incorporated as an additional linear
-equation to be simultaneously solved. A collection of linear equations
-to be simultaneously solved is known as a **linear system**.
+equation containing different constants but the same unknown variables.
+A collection of linear equations that must be simultaneously solved is
+called a **linear system**.
 
-In statistics, a linear system is used to contain multiple observations
+In statistics, a linear system is used to describe multiple observations
 of a phenomenon and ![X](https://latex.codecogs.com/svg.format?X "X")
 and ![Y](https://latex.codecogs.com/svg.format?Y "Y") are treated as
-random variables, we solve for the coefficient estimates
+random variables. Within this linear system, given observed values of
+![X](https://latex.codecogs.com/svg.format?X "X") and
+![Y](https://latex.codecogs.com/svg.format?Y "Y"), we solve for the
+coefficient estimates
 ![\\hat{\\beta}](https://latex.codecogs.com/svg.format?%5Chat%7B%5Cbeta%7D "\hat{\beta}")
 where
-![Y = X\\beta + \\epsilon](https://latex.codecogs.com/svg.format?Y%20%3D%20X%5Cbeta%20%2B%20%5Cepsilon "Y = X\beta + \epsilon").
+![E(X\\beta) = Y](https://latex.codecogs.com/svg.format?E%28X%5Cbeta%29%20%3D%20Y "E(X\beta) = Y").
 ![X](https://latex.codecogs.com/svg.format?X "X") and
-![Y](https://latex.codecogs.com/svg.format?Y "Y") are treated as random
-variables because we expect a degree of randomness to contribute to
-observed ![X](https://latex.codecogs.com/svg.format?X "X") and
-![Y](https://latex.codecogs.com/svg.format?Y "Y") values, so we do not
-expect a single solution i.e. a perfect curve fitting through all points
-of ![X](https://latex.codecogs.com/svg.format?X "X") and
-![Y](https://latex.codecogs.com/svg.format?Y "Y") to be of optimal
-predictive use. In statistics, this concept is known as model
-overfitting.
+![Y](https://latex.codecogs.com/svg.format?Y "Y") are random variables
+because we attribute a component of randomness to our observed
+![X](https://latex.codecogs.com/svg.format?X "X") and
+![Y](https://latex.codecogs.com/svg.format?Y "Y") values. We are
+therefore never interested in modelling a single solution to our linear
+system i.e. to generate a perfect curve which fits through all points of
+![X](https://latex.codecogs.com/svg.format?X "X") and
+![Y](https://latex.codecogs.com/svg.format?Y "Y"). In statistics, the
+latter task is known as model overfitting.
 
-In contrast, in mathematical modelling, a linear system is used to
-contain multiple observations which are fixed (i.e. definitely true) and
-we solve for
+In contrast, in mathematical modelling, a linear system contains
+multiple fixed observations and we solve for
 ![(x_1, x_2, ..., x_n)](https://latex.codecogs.com/svg.format?%28x_1%2C%20x_2%2C%20...%2C%20x_n%29 "(x_1, x_2, ..., x_n)")
+or ![\\vec x](https://latex.codecogs.com/svg.format?%5Cvec%20x "\vec x")
 where
-![\\vec a_1x_1 + \\vec a_2x_2 + \\cdots+\\vec a_nx_n=\\vec b](https://latex.codecogs.com/svg.format?%5Cvec%20a_1x_1%20%2B%20%5Cvec%20a_2x_2%20%2B%20%5Ccdots%2B%5Cvec%20a_nx_n%3D%5Cvec%20b "\vec a_1x_1 + \vec a_2x_2 + \cdots+\vec a_nx_n=\vec b")
+![\\vec a_1x_1 + \\vec a_2x_2 + \\cdots + \\vec a_nx_n = \\vec b](https://latex.codecogs.com/svg.format?%5Cvec%20a_1x_1%20%2B%20%5Cvec%20a_2x_2%20%2B%20%5Ccdots%20%2B%20%5Cvec%20a_nx_n%20%3D%20%5Cvec%20b "\vec a_1x_1 + \vec a_2x_2 + \cdots + \vec a_nx_n = \vec b")
+or
+![A\\vec x = \\vec b](https://latex.codecogs.com/svg.format?A%5Cvec%20x%20%3D%20%5Cvec%20b "A\vec x = \vec b")
 and
 ![a\_{i,j}, b \\in \\mathbb{R}](https://latex.codecogs.com/svg.format?a_%7Bi%2Cj%7D%2C%20b%20%5Cin%20%5Cmathbb%7BR%7D "a_{i,j}, b \in \mathbb{R}").
-The linear system is true when the solution set
-![(s_1, s_2, ..., s_n)](https://latex.codecogs.com/svg.format?%28s_1%2C%20s_2%2C%20...%2C%20s_n%29 "(s_1, s_2, ..., s_n)")
+The linear system is true when a set of fixed values
+![(c_1, c_2, ..., c_n)](https://latex.codecogs.com/svg.format?%28c_1%2C%20c_2%2C%20...%2C%20c_n%29 "(c_1, c_2, ..., c_n)")
 substitutes for
 ![(x_1, x_2, ..., x_n)](https://latex.codecogs.com/svg.format?%28x_1%2C%20x_2%2C%20...%2C%20x_n%29 "(x_1, x_2, ..., x_n)").
 
@@ -166,32 +176,37 @@ For any linear system, we have three possible scenarios:
 
 -   The linear system is inconsistent (at least one equation is
     inconsistent with respect to other equations) and we have an
-    **empty** set of solutions.  
--   The linear system is consistent and has only one solution set i.e. a
-    set of fixed values
-    ![\\{(c_1, c_2, \\cdots, c_n)\\}](https://latex.codecogs.com/svg.format?%5C%7B%28c_1%2C%20c_2%2C%20%5Ccdots%2C%20c_n%29%5C%7D "\{(c_1, c_2, \cdots, c_n)\}").  
+    **empty** set of solutions
+    i.e. ![S = \\{\\}](https://latex.codecogs.com/svg.format?S%20%3D%20%5C%7B%5C%7D "S = \{\}").  
+-   The linear system is consistent and has only one solution set
+    i.e. ![S = \\{(c_1, c_2, \\cdots, c_n)\\}](https://latex.codecogs.com/svg.format?S%20%3D%20%5C%7B%28c_1%2C%20c_2%2C%20%5Ccdots%2C%20c_n%29%5C%7D "S = \{(c_1, c_2, \cdots, c_n)\}")
+    where
+    ![c \\in \\mathbb{R}](https://latex.codecogs.com/svg.format?c%20%5Cin%20%5Cmathbb%7BR%7D "c \in \mathbb{R}").  
 -   The linear system is consistent and has infinite solutions (or the
     solution set has infinitely many elements)
-    i.e. ![\\{(c_1, c_2, x_3 - 2) \| x_3 \\in \\mathbb{R}\\}](https://latex.codecogs.com/svg.format?%5C%7B%28c_1%2C%20c_2%2C%20x_3%20-%202%29%20%7C%20x_3%20%5Cin%20%5Cmathbb%7BR%7D%5C%7D "\{(c_1, c_2, x_3 - 2) | x_3 \in \mathbb{R}\}")
+    i.e. ![S = \\{(c_1, c_2, x_3 - 2) \| x_3 \\in \\mathbb{R}\\}](https://latex.codecogs.com/svg.format?S%20%3D%20%5C%7B%28c_1%2C%20c_2%2C%20x_3%20-%202%29%20%7C%20x_3%20%5Cin%20%5Cmathbb%7BR%7D%5C%7D "S = \{(c_1, c_2, x_3 - 2) | x_3 \in \mathbb{R}\}")
     where
     ![c_1, c_2](https://latex.codecogs.com/svg.format?c_1%2C%20c_2 "c_1, c_2")
     are fixed values and
-    ![x_3 \\in \\mathbb{R}](https://latex.codecogs.com/svg.format?x_3%20%5Cin%20%5Cmathbb%7BR%7D "x_3 \in \mathbb{R}").
+    ![x_3](https://latex.codecogs.com/svg.format?x_3 "x_3") represents
+    any real number.
 
-\*\*Note:\* Infinite solutions always occur when you have less
+**Note:** Infinite solutions always occur when you have less
 observations than variables i.e. the
 ![n\<p](https://latex.codecogs.com/svg.format?n%3Cp "n<p")
-[problem](https://stats.stackexchange.com/questions/385711/what-is-the-problem-with-p-n)
-in statistics where n represents the number of observations recorded and
-p represents the number of variables measured.
+[problem](https://stats.stackexchange.com/questions/385711/what-is-the-problem-with-p-n).
+In a linear system, ![p](https://latex.codecogs.com/svg.format?p "p")
+represents the number of observations and
+![n](https://latex.codecogs.com/svg.format?n "n") represents the number
+of unknown variables present.
 
-Using linear systems with two unknown variables as examples, we can see
-that solutions to linear systems have two properties:  
+Using linear systems with two unknown variables as an example, we can
+see that solutions to linear systems have two properties:  
 + Solutions can be solved through mathematical simplification.  
-+ Solutions have a geometric intuition. For example in 2D, solutions can
-be represented as two lines which never intersect, two lines which only
-intersect once, or two lines superimposed on each other i.e. a single
-line with infinite intersection points.
++ Solutions have a geometric intuition. In 2D, solutions can be
+represented as two lines which never intersect (no solution), two lines
+which only intersect once (single solution), or two lines superimposed
+on each other (infinite solutions).
 
 <details>
 <summary>
@@ -260,15 +275,17 @@ data.frame(x <- seq(-10, 10, by = 1),
 # Equivalent linear systems
 
 Two linear systems are row equivalent if they have the same n-tuple
-solution set. Row equivalence implies that we can convert one linear
-system into an equivalent linear system to find the simplest linear
-system to solve for.
+solution set i.e. if
+![\\{s_1, \\cdots, s_n\\} = \\{t_1, \\cdots, t_n \\}](https://latex.codecogs.com/svg.format?%5C%7Bs_1%2C%20%5Ccdots%2C%20s_n%5C%7D%20%3D%20%5C%7Bt_1%2C%20%5Ccdots%2C%20t_n%20%5C%7D "\{s_1, \cdots, s_n\} = \{t_1, \cdots, t_n \}").
+Row equivalence implies that we can convert one linear system into an
+equivalent linear system to find the simplest linear system to solve
+for.
 
 The process of converting a linear system into an equivalent simpler
 linear system can be considered as an algorithm. To construct this
 algorithm, we need to identify the operations which maintain equivalency
-i.e. prove that all elementary equation operations maintain equivalency
-between linear systems A and B.
+between two linear systems i.e. prove that all elementary equation
+operations (EEOs) maintain equivalency between linear systems A and B.
 
 <img src="../figures/linear_systems-equivalence.svg" width="80%" style="display: block; margin: auto;" />
 
@@ -280,9 +297,9 @@ multiple of another equation.
 
 If we know that there is a finite and reversible sequence of elementary
 equation operations to transform A into B, then the best algorithm will
-select the minimal sequence of elementary equation operations to reach
-B, where B is the simplest equivalent linear system to solve. This is
-how the row reduction (or Gauss Jordan elimination) algorithm works.
+select the minimal sequence of EEOs to reach B, where B is the simplest
+equivalent linear system to solve. This is how the row reduction (or
+Gauss Jordan elimination) algorithm works.
 
 # Equivalence relations
 
@@ -290,9 +307,11 @@ Let A be a set. A relation on A is any subset of
 ![A \\times A](https://latex.codecogs.com/svg.format?A%20%5Ctimes%20A "A \times A")
 (any set of ordered pairs
 ![(a,b)](https://latex.codecogs.com/svg.format?%28a%2Cb%29 "(a,b)")
-where the first and second elements of each pair come from A) which
-satisfies the conditions of a function being mapped from
-![a \\to b](https://latex.codecogs.com/svg.format?a%20%5Cto%20b "a \to b").
+where
+![a,b \\in A](https://latex.codecogs.com/svg.format?a%2Cb%20%5Cin%20A "a,b \in A"))
+which satisfies the conditions of a function being mapped on
+![a](https://latex.codecogs.com/svg.format?a "a") to form
+![b](https://latex.codecogs.com/svg.format?b "b").
 
 <img src="../figures/linear_systems-relations.svg" width="80%" style="display: block; margin: auto;" />
 
@@ -317,27 +336,36 @@ satisfies the conditions of a function being mapped from
     ![a](https://latex.codecogs.com/svg.format?a "a") maps to
     ![c](https://latex.codecogs.com/svg.format?c "c").
 
+For example, suppose that matrix A is equivalent to matrix B and C.
+There exists a finite sequence of EROs which transforms A into B and A
+into C. Because EROs are reversible, the finite sequence of EROs which
+transforms B into A and then A into C yields a finite sequence of EROs
+which transforms B into C. Therefore row equivalence is also transitive.
+
 Row equivalence is therefore an equivalence relation on the set of all
 linear systems in the same set of variables
 i.e. ![\\{x_1, x_2, \\cdots, x_n\\}](https://latex.codecogs.com/svg.format?%5C%7Bx_1%2C%20x_2%2C%20%5Ccdots%2C%20x_n%5C%7D "\{x_1, x_2, \cdots, x_n\}").
-This also means that row equivalence is an equivalence relation on the
-set of all
+This also means that row equivalence is also an equivalence relation on
+the set of all
 ![m \\times n](https://latex.codecogs.com/svg.format?m%20%5Ctimes%20n "m \times n")
 matrices.
 
 # Augmented matrices and matrix echelon forms
 
-Linear systems can be represented by matrices (as the augmented matrix
-or coefficient matrix for linear systems with
-![A\\vec x = \\vec 0](https://latex.codecogs.com/svg.format?A%5Cvec%20x%20%3D%20%5Cvec%200 "A\vec x = \vec 0")
-form). Matrices can exist in an echelon form and a reduced echelon form.
+Linear systems can be represented by matrices, as an augmented matrix
+for linear systems with form
+![A\\vec x = \\vec b](https://latex.codecogs.com/svg.format?A%5Cvec%20x%20%3D%20%5Cvec%20b "A\vec x = \vec b")
+or a coefficient matrix for linear systems with form
+![A\\vec x = \\vec 0](https://latex.codecogs.com/svg.format?A%5Cvec%20x%20%3D%20%5Cvec%200 "A\vec x = \vec 0").
 
-The matrix equivalent of elementary equation operations are elementary
-row operations (EROs).
+Matrices can exist in an echelon form and a reduced echelon form.
+
+The matrix equivalent of elementary equation operations (EEOs) are
+elementary row operations (EROs).
 
 <img src="../figures/linear_systems-echelon_forms.svg" width="80%" style="display: block; margin: auto;" />
 
-A matrix is an echelon form if:  
+A matrix is in an **echelon form** if:  
 + All non-zero rows are above rows of all zeros.  
 + Each leading entry (or pivot column of a row) is located to the left
 of the leading entry of the row below it. Each leading entry in the
@@ -345,25 +373,25 @@ echelon form represents a fixed or **basic variable** in the linear
 system.  
 + All entries in a column below a leading entry are zeros.
 
-A matrix is in reduced echelon form if additionally:  
+A matrix is in its **reduced echelon form** if additionally:  
 + All leading entries are 1.  
 + Each leading 1 is the only non-zero entry in its column.
 
-When a matrix is in echelon form, we can solve the linear system by
+When a matrix is in an echelon form, we can solve the linear system by
 either:  
 1. Directly using back substitution to simplify the list of equations
 and then solve for each variable. Solutions should be presented in the
 form of constants and free variables only.  
-2. Further reducing the matrix to its reduced echelon form (where the
-solution for each variable is obvious).
+2. Further reducing the matrix to its reduced echelon form, where the
+solution for each variable is obvious i.e. fixed or represented in terms
+of free variables.
 
 <img src="../figures/linear_systems-echelon_solutions.svg" width="80%" style="display: block; margin: auto;" />
 
 **Note:** Linear systems with infinite solutions are easily identified
 in matrix form by the presence of at least one row which lacks a pivot
-column. Free variables correspond to variables without a positional
-leading edge or pivot column in the echelon form of the augmented
-matrix.
+column. Free variables correspond to variables without a pivot column in
+the echelon form of the augmented matrix.
 
 # Row reduction algorithmn
 
@@ -372,15 +400,19 @@ Elimination algorithm), we aim to:
 
 1.  Find the matrix **echelon form** by applying replacement elementary
     row operations
-    i.e. ![R_j + kR_i](https://latex.codecogs.com/svg.format?R_j%20%2B%20kR_i "R_j + kR_i"))
+    i.e. ![R_j = R_i](https://latex.codecogs.com/svg.format?R_j%20%3D%20R_i "R_j = R_i")
+    or
+    ![R_j = kR_j](https://latex.codecogs.com/svg.format?R_j%20%3D%20kR_j "R_j = kR_j")
+    or
+    ![R_j = R_j + kR_i](https://latex.codecogs.com/svg.format?R_j%20%3D%20R_j%20%2B%20kR_i "R_j = R_j + kR_i")
     on all columns below the leading edge in a row. Repeat this step for
     each leading edge of each row.  
 2.  Find the matrix **reduced echelon form** by identifying the right
     most leading edge and using a scaling elementary row operation to
     convert it into 1. Apply replacement elementary row operations
-    i.e. ![R_i + kR_j](https://latex.codecogs.com/svg.format?R_i%20%2B%20kR_j "R_i + kR_j"))
+    i.e. ![R_i = R_i + kR_j](https://latex.codecogs.com/svg.format?R_i%20%3D%20R_i%20%2B%20kR_j "R_i = R_i + kR_j")
     on all columns above the leading 1. Repeat this step for each
-    leading 1 of each row.
+    leading edge of each row.
 
 **Note:** Each matrix is row equivalent to exactly one matrix in reduced
 echelon form.
@@ -510,19 +542,18 @@ for i in range(n):
 
 # Homogenous linear systems
 
-It is easier to work with homogeneous linear systems, with the form
+It is easiest to work with homogeneous linear systems, with the form
 ![A\\vec x = \\vec 0](https://latex.codecogs.com/svg.format?A%5Cvec%20x%20%3D%20%5Cvec%200 "A\vec x = \vec 0"),
-as it is immediately obvious that these systems must either have a
-single trivial solution
+as these systems can only either have a single trivial solution
 ![\\{x_1, x_2 \\cdots, x_n\\} = \\{0, 0, \\cdots, 0\\}](https://latex.codecogs.com/svg.format?%5C%7Bx_1%2C%20x_2%20%5Ccdots%2C%20x_n%5C%7D%20%3D%20%5C%7B0%2C%200%2C%20%5Ccdots%2C%200%5C%7D "\{x_1, x_2 \cdots, x_n\} = \{0, 0, \cdots, 0\}")
-or infinite solutions (defined in relation to its free variables).
+or infinite solutions (defined in relation to all free variables).
 
-We can therefore define infinite solutions to a non-homogeneous linear
+We can therefore re-write infinite solutions to a non-homogeneous linear
 system
 ![A\\vec x=\\vec b](https://latex.codecogs.com/svg.format?A%5Cvec%20x%3D%5Cvec%20b "A\vec x=\vec b")
 as the addition of a positional vector
 ![\\vec p](https://latex.codecogs.com/svg.format?%5Cvec%20p "\vec p") to
-the solution set of the homogeneous linear system
+the infinite solution set of a homogeneous linear system
 ![A\\vec x=\\vec 0](https://latex.codecogs.com/svg.format?A%5Cvec%20x%3D%5Cvec%200 "A\vec x=\vec 0").
 
 If
@@ -552,8 +583,8 @@ system is inconsistent.
 <img src="../figures/linear_systems-parametric_solutions.svg" width="80%" style="display: block; margin: auto;" />
 
 When an infinite solution is expressed as a parametric vector form, we
-can form some geometric intuition about its vector span. For an infinite
-solution, the solution is an
+can form some geometric intuition about the space that it occupies. For
+an infinite solution, the solution is an
 ![\\mathbb{R}^{n-m}](https://latex.codecogs.com/svg.format?%5Cmathbb%7BR%7D%5E%7Bn-m%7D "\mathbb{R}^{n-m}")
 object which intersects with the point represented by
 ![\\vec p](https://latex.codecogs.com/svg.format?%5Cvec%20p "\vec p").
@@ -561,34 +592,40 @@ object which intersects with the point represented by
 <img src="../figures/linear_systems-parametric_solution_example.svg" width="80%" style="display: block; margin: auto;" />
 
 **Note:** All solutions to a homogeneous linear system will contain the
-origin point i.e. this is true for linear systems with single trivial
-solutions or infinite solutions.
+origin point. This is true for homogeneous linear systems with a single
+trivial solution or infinite solutions.
 
 # Linear independence and homogenous linear systems
 
 A homogeneous linear system
 ![A\\vec v=\\vec0](https://latex.codecogs.com/svg.format?A%5Cvec%20v%3D%5Cvec0 "A\vec v=\vec0")
-is linearly independent if it only has one trivial solution. The
-homogeneous linear system does not contain any free variables and the
-set of solutions
-![\\{s_1, s_2, \\cdots, s_n\\}](https://latex.codecogs.com/svg.format?%5C%7Bs_1%2C%20s_2%2C%20%5Ccdots%2C%20s_n%5C%7D "\{s_1, s_2, \cdots, s_n\}")
-therefore has linear independence.
+is linearly independent if it only has one trivial solution i.e. there
+is no combination of
+![x_1 \\vec v_1 + \\cdots + x_n \\vec v_n](https://latex.codecogs.com/svg.format?x_1%20%5Cvec%20v_1%20%2B%20%5Ccdots%20%2B%20x_n%20%5Cvec%20v_n "x_1 \vec v_1 + \cdots + x_n \vec v_n")
+equal to 0 except
+![x_1 = x_2 = \\cdots = x_n = 0](https://latex.codecogs.com/svg.format?x_1%20%3D%20x_2%20%3D%20%5Ccdots%20%3D%20x_n%20%3D%200 "x_1 = x_2 = \cdots = x_n = 0").
+By definition, a homogeneous linear system with a single trivial
+solution does not contain any free variables. Homogeneous linear systems
+containing free variables are therefore not linearly independent.
 
 If a homogeneous linear system has infinite solutions, at least one free
-variable is present. The solution set of
-![\\{s_1, s_2, \\cdots, s_n\\}](https://latex.codecogs.com/svg.format?%5C%7Bs_1%2C%20s_2%2C%20%5Ccdots%2C%20s_n%5C%7D "\{s_1, s_2, \cdots, s_n\}")
-therefore has linear dependence.
-
-Linear dependence is therefore represented by the presence of one or
-more free variables in a linear system and its equivalent augmented
-matrix. When the solution set
-![\\{s_1, s_2, \\cdots, s_n\\}](https://latex.codecogs.com/svg.format?%5C%7Bs_1%2C%20s_2%2C%20%5Ccdots%2C%20s_n%5C%7D "\{s_1, s_2, \cdots, s_n\}")
-is infinite, at least one
-![x_i](https://latex.codecogs.com/svg.format?x_i "x_i") variable is
-non-zero in the homogeneous linear system
-![x_1\\vec a_1+x_2\\vec a_2+\\cdots+x_n\\vec a_n=\\vec 0](https://latex.codecogs.com/svg.format?x_1%5Cvec%20a_1%2Bx_2%5Cvec%20a_2%2B%5Ccdots%2Bx_n%5Cvec%20a_n%3D%5Cvec%200 "x_1\vec a_1+x_2\vec a_2+\cdots+x_n\vec a_n=\vec 0").
+variable is present and the system is therefore linearly dependent.
+Alternatively, you can think of linearly dependent homogeneous linear
+systems as systems where
+![x_1 \\vec v_1 + \\cdots + x_n \\vec v_n = 0](https://latex.codecogs.com/svg.format?x_1%20%5Cvec%20v_1%20%2B%20%5Ccdots%20%2B%20x_n%20%5Cvec%20v_n%20%3D%200 "x_1 \vec v_1 + \cdots + x_n \vec v_n = 0")
+contains a solution with parametric form
+![\\vec 0 + x_i\\vec v_i](https://latex.codecogs.com/svg.format?%5Cvec%200%20%2B%20x_i%5Cvec%20v_i "\vec 0 + x_i\vec v_i").
 
 <img src="../figures/linear_systems-linear_dependence_a.svg" width="80%" style="display: block; margin: auto;" />
+
+Linear independence and linear dependence are easier to conceptualise
+when we view the coefficient matrix A as a row of column vectors
+![A = \\begin{bmatrix} \\vec a_1 & \\vec a_2 & \\cdots & \\vec a_n \\end{bmatrix}](https://latex.codecogs.com/svg.format?A%20%3D%20%5Cbegin%7Bbmatrix%7D%20%5Cvec%20a_1%20%26%20%5Cvec%20a_2%20%26%20%5Ccdots%20%26%20%5Cvec%20a_n%20%5Cend%7Bbmatrix%7D "A = \begin{bmatrix} \vec a_1 & \vec a_2 & \cdots & \vec a_n \end{bmatrix}").
+
+The concept of representing linear systems using vectors is covered in
+the [next
+tutorial](https://github.com/erikaduan/introductory_maths/blob/master/tutorials/linear_algebra-vectors.md)
+on vectors.
 
 # Resources
 
