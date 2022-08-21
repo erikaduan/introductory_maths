@@ -45,7 +45,7 @@ reticulate::py_config()
 ```
 
 
-# Matrices     
+# Matrices      
 A matrix with $m$ rows and $n$ columns can be used to hold the coefficients from any linear system $A\vec x = \vec b$.   
 
 For any homogeneous linear system with linearly independent vectors $\vec a_1, \vec a_2, \cdots, \vec a_p$, each vector represents a scalable basis vector and $\{\vec a_1, \vec a_2, \cdots, \vec a_p\}$ spans subspace H, where subspace H has $p$ dimensions.    
@@ -55,8 +55,7 @@ knitr::include_graphics("../figures/linear_systems-matrix_transformations.svg")
 ```
 
 
-# Types of matrices  
-
+# Types of matrices   
 Types of matrices include:  
 
 + Transpose matrix: If matrix A has dimensions $m\times n$, then its transpose matrix $A^T$ has dimensions $n \times m$ and every row of A is a column in $A^T$.  
@@ -94,37 +93,70 @@ When $A\vec x=\vec 0$ has infinite solutions, $NulA$ can also be expressed in th
 knitr::include_graphics("../figures/linear_systems-matrix_null_space.svg")
 ```
 
-**Note:** $ColA$ represents the span of the basis vectors of matrix A whereas $NulA$ represents the set of all possible solutions to $A \vec x = \vec 0$ and also has a span when homogeneous linear systems have infinite solutions.      
+In summary:   
+
++ $ColA$ represents the span of the basis vectors of matrix A.  
++ $NulA$ represents the set of all possible solutions to $A \vec x = \vec 0$. When the solution is presented in parametric form (when there are infinite solutions to $A\vec x = \vec 0$), $NulA$ also has a vector span in relation to its free variables.       
+
+```{r, echo=FALSE, results='markup'}
+knitr::include_graphics("../figures/linear_systems-matrix_rank_and_nullity.svg")
+```
+
+**Note:** Using examples of homogeneous linear systems, we can see that the number of column vectors in matrix A, represented as $n$, is equal to the sum of the dimensions of $ColA$ and the dimensions of $NulA$.   
+
+
+# Matrix scalar multiplication   
+This property is useful for further defining the properties of linear transformations, which is covered in the next tutorial on linear transformations.    
+
+```{r, echo=FALSE, results='markup'}
+knitr::include_graphics("../figures/linear_systems-matrix_scalar_multiplication.svg")
+```
 
 
 # Matrix addition  
+Some of the most useful properties of matrix addition include:    
+
++ That $A + B = B + A$. This shows that the order of matrix addition does not matter.  
++ That $k(A + B) = kA + kB$. This shows that the scalar transformation of the sum of matrices A and B is identical to the sum of the scalar transformation of A and the scalar transformation of B. This is also crucial for defining the properties of linear transformations.     
 
 ```{r, echo=FALSE, results='markup'}
 knitr::include_graphics("../figures/linear_systems-matrix_addition.svg")
 ```
 
 
-# Matrix scalar multiplication  
+# Matrix multiplication   
+Unlike matrix addition, the order of matrix multiplication impacts the matrix multiplication product and $A \times B \neq B \times A$.   
+
+Matrix multiplication has extra special meaning in linear algebra as it represents the sequence of linear transformations applied to any vector $\vec v$, where $\vec v \in \mathbb{R}^n$.   
 
 ```{r, echo=FALSE, results='markup'}
-knitr::include_graphics("../figures/linear_systems-matrix_addition.svg")
+knitr::include_graphics("../figures/linear_systems-matrix_multiplication.svg")
 ```
 
 
-# Matrix multiplication 
+# Finding the inverse matrix     
+A matrix with dimensions $n \times n$ is invertible if it has an inverse form such that $A\times A^{-1} = I$ and $(A^{-1})^{-1} = A$, where $I$ is the identity matrix. Therefore a matrix is invertible if matrix $A$ is row equivalent to its identify matrix $I$ and any finite sequence of elementary row operations that transforms $A$ to $I$ also transforms $I$ to $A^{-1}$.      
+
+The matrix inverse can be thought of as a matrix form of the multiplication inverse $\tfrac{1}{k}$ where $k \times \tfrac{1}{k} = 1$.   
+
+The connection between linear systems and invertible matrices is that the linear system $A\vec x = \vec b$ has a unique solution if matrix A is invertible. This occurs as $A^{-1}A \vec x = \vec b$ can be simplified to $\vec x = A^{-1} \vec b$.    
+
+In the algorithm for finding the inverse matrix $A^{-1}$, we aim to:  
+
+1. Write down the augmented matrix $\left[\begin{array}{c|c}A&I_n\end{array}\right]$.      
+2. Row reduce the augmented matrix until its left-hand side is in reduced echelon form. Let this be the result $\left[\begin{array}{c|c}B&C\end{array}\right]$.    
+3. If $B = I_n$, then the right-hand side of the augmented matrix is the inverse matrix $A^{-1}$ i.e. $C=A^{-1}$. If the left-hand side cannot be simplified to a reduced echelon form, then matrix A is not invertible.   
 
 ```{r, echo=FALSE, results='markup'}
-knitr::include_graphics("../figures/linear_systems-matrix_addition.svg")
+knitr::include_graphics("../figures/linear_systems-inverse_matrix.svg")
 ```
 
+**Note:** If matrix A is row equivalent to the identity matrix $I_n$, then A must have $n$ pivot columns and the equation $A\vec x = \vec 0$  must only contain the trivial solution $x_1 = x_2 = \cdots = x_n = 0$.    
 
-# Finding the inverse matrix   
-
-```{r, echo=FALSE, results='markup'}
-knitr::include_graphics("../figures/linear_systems-matrix_addition.svg")
-```
+**Note:** A matrix that is not invertible is also called a singular matrix. An invertible matrix is also called a non-singular matrix.    
 
 
 # Resources   
 + A great [YouTube video](https://www.youtube.com/watch?v=kYB8IZa5AuE&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&index=3) introducing matrices by 3Blue1Brown.  
 + A great [YouTube video](https://www.youtube.com/watch?v=XkY2DOUCWMU&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&index=4) explaining the purpose of matrix multiplication by 3Blue1Brown.   
++ A [clear explanation](https://math.stackexchange.com/questions/664594/why-mathbf0-has-dimension-zero) of why the set containing only the zero vector has 0 dimensions.   

@@ -1,7 +1,7 @@
 Introduction to linear systems
 ================
 Erika Duan
-2022-08-20
+2022-08-21
 
 -   [A single linear equation](#a-single-linear-equation)
 -   [A system of linear equations](#a-system-of-linear-equations)
