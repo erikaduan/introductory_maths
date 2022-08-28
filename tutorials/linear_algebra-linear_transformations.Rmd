@@ -45,19 +45,76 @@ reticulate::py_config()
 ```
 
 
-# Vector transformation notations       
-Vectors are an important way to represent values as positions within n-th dimensional space. Vector operations and matrix-vector operations enable us to transform values in useful ways.    
+# Vector transformation notation   
+The essence of linear algebra involves the study of linear transformations of vector spaces.   
 
-A column vector $\vec u$ is an $m \times 1$ matrix where $\vec u \in \mathbb{R}^m$. Two vectors are equal if they have the same number of rows and their corresponding entries are equal.  
+A linear transformation can be described as:  
 
-**Note:** Do not confuse the zero vector $\vec 0$ with the scalar value of 0 when writing vector operations.   
++ A function which maps a vector in $\mathbb{R}^n$ to a vector in $\mathbb{R}^m$ or $\mathbb{R}^n$.    
++ This is denoted by $T: \mathbb{R}^n \to \mathbb{R}^m$ or $T: \mathbb{R}^n \to \mathbb{R}^n$ respectively.   
++ Alternatively, we can denote linear transformations with respect to its vector inputs and outputs i.e. $\vec x {\; T \;\atop \mapsto} \vec w$, where $\vec w = T(\vec x)$.    
++ The domain of $T(\vec x)$ is $\mathbb{R}^n$.   
++ The co-domain of $T(\vec x)$ can be $\mathbb{R}^m$ or $\mathbb{R}^n$ respectively.     
++ The image of $vec x$ under T is the set $\{\vec w \in \mathbb{R}^m | \vec w = T(\vec x)\}$ where $\vec x \in \mathbb{R}^n$.  
++ The range of $T(\vec x)$ also describes the set $\{\vec w \in \mathbb{R}^m | \vec w = T(\vec x)\}$ where $\vec x \in \mathbb{R}^n$.    
++ Linear transformations can also be regarded as a transformation by a standard matrix for T (draw this definition too)   
 
 ```{r, echo=FALSE, results='markup'}
-knitr::include_graphics("../figures/linear_systems-vectors.svg")
+knitr::include_graphics("../figures/linear_systems-linear_transformation_notation.svg")  
 ```
+
+
+
+A linear transformation $T: \mathbb{R}^n \to \mathbb{R}^m$ must satisfy the following two properties:  
+
++ 
++ 
+
+
 
 # Dimensionality and linear transformations   
 
+A linear transformation $T: \mathbb{R}^n \to \mathbb{R}^m$ can be described in the following ways:  
+
++ 
++ 
+
+```{r, echo=FALSE, results='markup'}
+knitr::include_graphics("../figures/linear_systems-n_to_m_transformation.svg")
+```
+
+A linear transformation $T: \mathbb{R}^n \to \mathbb{R}^m$ can be described in the following ways:  
+
++ 
++ 
+
+```{r, echo=FALSE, results='markup'}
+# knitr::include_graphics("../figures/linear_systems-n_to_n_transformation.svg")
+```
+
+
+# Injective linear transformations   
+
+A transformation is injective if: 
+
+Every $\vec b \in \mathbb{R}^m$ is the image of at most one $\vec x in \mathbb{R}^n$. 
+I.e. only one solution for $\vec b$ or the linear combination of basis vectors of A and coordinates represented by $\vec x$ only map to one solution.  
+
+T(x) = 0 or A(x) = 0 only has the trivial solution. Therefore NulA only has the trivial subspace.  
+
+A projection transformation is not injective.  
+Different vectors in R^n always have different images in R^m.  
+
+
+# Surjective linear transformations    
+
+Every $\vec b \in \mathbb{R}^m$ is the image of one or more $\vec x in \mathbb{R}^n$. 
+RangeT = Rm.  
+
+
+
+
+# Matrix composition and linear transformations
 
  
 # Resources  

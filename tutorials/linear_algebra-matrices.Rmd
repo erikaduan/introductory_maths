@@ -156,6 +156,11 @@ knitr::include_graphics("../figures/linear_systems-inverse_matrix.svg")
 **Note:** A matrix that is not invertible is also called a singular matrix. An invertible matrix is also called a non-singular matrix.    
 
 
+# Matrix determinant  
+
+# TODO
+
+
 # Resources   
 + A great [YouTube video](https://www.youtube.com/watch?v=kYB8IZa5AuE&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&index=3) introducing matrices by 3Blue1Brown.  
 + A great [YouTube video](https://www.youtube.com/watch?v=XkY2DOUCWMU&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&index=4) explaining the purpose of matrix multiplication by 3Blue1Brown.   

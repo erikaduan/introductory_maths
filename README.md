@@ -21,7 +21,7 @@ Extra visualisations are created in `R` and code to solve linear systems are wri
 |:compass:|Cosine similarity|
 |:chopsticks:|[Introduction to linear systems](./tutorials/linear_algebra-linear_systems.md)|  
 |:chopsticks:|[Introduction to vectors](./tutorials/linear_algebra-vectors.md)|
-|:chopsticks:|[Linear transformations]|  
+|:chopsticks:|[Linear transformations](./tutorials/linear_algebra-linear_transformations.md)|  
 |:chopsticks:|Vector embeddings|
 |:department_store:|[Introduction to matrices](./tutorials/linear_algebra-matrices.md)|    
 |:roller_coaster:|Introduction to derivatives|  
