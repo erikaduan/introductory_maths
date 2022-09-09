@@ -25,29 +25,13 @@ knitr::knit_engines$set(python = reticulate::eng_python)
 ```
 
 ```{r, echo=FALSE}
-# Install R packages -----------------------------------------------------------
-# The native pipe operator requires R version 4.1+ 
-packages <- c("ggplot2",
-              "dplyr",
-              "patchwork")
-
-installed_packages <- packages %in% rownames(installed.packages())
-
-if (any(installed_packages == FALSE)) {
-  install.packages(packages[!installed_packages])
-}
-
-# Attach R packages to the global environment
-library("dplyr")
-library("ggplot2")
-library("patchwork")
-
 # Check version of Python used by reticulate -----------------------------------
 reticulate::py_config()
 ```
 
 
-# A single linear equation    
+# A single linear equation   
+
 There is a fundamental relationship between the linear equation $ax + by = c$, which contains two unknown variables, and lines. A line represents the space occupied by all possible solutions to the linear equation $ax + by = c$.           
 
 This means that linear equations can be described using geometric as well as mathematical intuition, for equations with $\leq$ 3 unknown variables i.e. for scenarios in 1D to 3D space. For example, the solution for $3x - 2y = 2$ can be rearranged into the form $y = \tfrac{3}{2}x - 1$, which is a line with slope $\tfrac{3}{2}$ and y-intercept $-1$.  
@@ -62,59 +46,16 @@ knitr::include_graphics("../figures/linear_systems-consistent_solutions.svg")
 
 **Note:** In linear algebra, it is preferable to write linear equations in the form $ax_1 + bx_2 = c$ instead of $ax + by = c$, as we often deal with dimensions greater than 3 (commonly represented by the x, y, z coordinates).    
 
-**Note:** Linear equations with the form $c_1x_1 + c_2x_2 = 0$ rather than $c_1x_1 + c_2x_2 = k$ have the distinct property that they also pass the point of origin i.e. they also contain a trivial solution $c_1 = c_2 = 0$.              
-
-<details><summary>R code</summary>  
-<p>   
-
-```{r, results='hold'}
-# Plot 3x - 2y = 2 -----------------------------------------------------------
-x <- seq(-4, 4, by = 1)
-y <- 3/2*x - 1
-
-p1 <- ggplot(data.frame(x, y), aes(x, y)) +
-  geom_hline(yintercept = 0, colour = "steelblue", linetype = "dashed") + 
-  geom_vline(xintercept = 0, colour = "steelblue", linetype = "dashed") + 
-  geom_line() + 
-  coord_cartesian(xlim = c(-4, 4), 
-                  ylim = c(-4, 4)) +
-  labs(title = "3x - 2y = 2") +  
-  theme_minimal() + 
-  theme(panel.border = element_rect(fill = NA),
-        panel.grid.minor = element_blank(),
-        panel.grid.major = element_line(linetype = "dotted"))
-
-# Plot 3x - 2y = 0 -----------------------------------------------------------
-x <- seq(-4, 4, by = 1)
-y <- 3/2*x
-
-p2 <- ggplot(data.frame(x, y), aes(x, y)) +
-  geom_hline(yintercept = 0, colour = "steelblue", linetype = "dashed") + 
-  geom_vline(xintercept = 0, colour = "steelblue", linetype = "dashed") + 
-  geom_line() + 
-  coord_cartesian(xlim = c(-4, 4), 
-                  ylim = c(-4, 4)) +
-  labs(title = "3x - 2y = 0") +  
-  theme_minimal() + 
-  theme(panel.border = element_rect(fill = NA),
-        panel.grid.minor = element_blank(),
-        panel.grid.major = element_line(linetype = "dotted"))
-
-# Plot ggplot figures side by side --------------------------------------------- 
-p1 + p2
-```
-
-</p>  
-</details><p>    
+**Note:** Linear equations with the form $c_1x_1 + c_2x_2 = 0$ rather than $c_1x_1 + c_2x_2 = k$ have the distinct property that they also pass the point of origin i.e. they also contain a trivial solution $x_1 = x_2 = 0$.          
 
 
 # A system of linear equations   
 
-In linear algebra, we solve for a solution set $S = \{s_1, s_2, \cdots\, s_n\}$ to unknown variables $\{x_1, x_2, \cdots\, x_n\}$ given that multiple observations or constraints are described. Each observation or constraint is incorporated as an additional linear equation containing different scalars of the same unknown variables. A set of linear equations that must be simultaneously solved is called a **linear system**.      
+In linear algebra, we aim to find a solution set $S = \{s_1, s_2, \cdots\, s_n\}$ to the unknown variables $\{x_1, x_2, \cdots\, x_n\}$ given that multiple observations (or solution constraints) are described. Each observation or solution constraint is incorporated as an additional linear equation containing different scalars of the same unknown variables. A set of linear equations that must be simultaneously solved is called a **linear system**.      
 
-In statistics, a linear system is used to describe multiple observations of a phenomenon and $X$ and $\vec y$ are treated as random variables. Within this linear system, given observed values of $X$ and $\vec y$, we solve for $\vec b$ where $X \vec b + \vec \epsilon = \vec y$. $X$ and $\vec y$ are random variables because we attribute a component of randomness to observed $X$ and $\vec y$ values. We are therefore never interested in modelling a single solution to our linear system i.e. to generate a perfect curve which fits through all points of $X$ and $\vec y$. In statistics, the latter task is known as model overfitting.    
+In statistics, a linear system is used to describe multiple observations of a phenomenon and $X$ and $\vec y$ are treated as random variables. Given observed values of $X$ and $\vec y$, we solve for $\vec b$ where $X \vec b + \vec \epsilon = \vec y$. $X$ and $\vec y$ are random variables because we attribute a component of randomness to the observed $X$ and $\vec y$ values. We are therefore never interested in modelling a single solution to our linear system i.e. we do not want to generate a perfect curve which fits through all points of $X$ and $\vec y$. In statistics, the latter task is known as model overfitting.    
 
-In contrast, in mathematical modelling, a linear system contains multiple fixed observations and we solve for $(x_1, x_2, ..., x_n)$ or $\vec x$ where $\vec a_1x_1  + \vec a_2x_2 + \cdots + \vec a_nx_n = \vec b$ or $A\vec x = \vec b$ and $a_{i,j}, b \in \mathbb{R}$. The linear system is true when a set of values $(c_1, c_2, ..., c_n)$ substitutes for $(x_1, x_2, ..., x_n)$.   
+In contrast, in mathematical modelling, a linear system contains multiple fixed observations and we solve for $\{x_1, x_2, ..., x_n\}$ or $\vec x$ where $\vec a_1x_1  + \vec a_2x_2 + \cdots + \vec a_nx_n = \vec b$ or $A\vec x = \vec b$ where $a_{i,j}, b \in \mathbb{R}$. The linear system is true when a set of values $\{c_1, c_2, ..., c_n\}$ substitutes for $\{x_1, x_2, ..., x_n\}$.     
 
 ```{r, echo=FALSE, results='markup'}
 knitr::include_graphics("../figures/linear_systems-linear_forms.svg")
@@ -124,80 +65,24 @@ For any linear system, we have three possible scenarios:
 
 + The linear system is inconsistent (at least one equation is inconsistent with respect to other equations) and we have an **empty** set of solutions i.e. $S = \{\}$.     
 + The linear system is consistent and has only one solution set i.e. $S = \{(c_1, c_2, \cdots, c_n)\}$ where $c_1, c_2, \cdots, c_n$ are fixed scalars.     
-+ The linear system is consistent and has infinite solutions (or the solution set has infinitely many elements) i.e. $S = \{(c_1, c_2, x_3 - 2) | x_3 \in \mathbb{R}\}$ where $c_1, c_2$ are fixed scalars and $x_3$ represents any real number.    
++ The linear system is consistent and has infinite solutions (or the solution set has infinitely many elements) i.e. $S = \{(c_1, c_2, x_3 + c_3) | x_3 \in \mathbb{R}\}$ where $c_1, c_2, c_3$ are fixed scalars and $x_3$ represents any real number.    
 
-**Note:** Infinite solutions always occur when you have less observations than variables i.e. the $n<p$ [problem](https://stats.stackexchange.com/questions/385711/what-is-the-problem-with-p-n). In a linear system, $p$ represents the number of observations and $n$ represents the number of unknown variables present.            
+**Note:** Infinite solutions always occur when you have less observations than unknown variables i.e. the $n<p$ [problem](https://stats.stackexchange.com/questions/385711/what-is-the-problem-with-p-n) in statistics. In a linear system, $m$ is used to represent the number of observations collected and $n$ is used to represent the number of unknown variables present.       
 
 Using linear systems with two unknown variables as an example, we can see that solutions to linear systems have two properties:  
-+ Solutions can be solved through mathematical simplification.  
++ Solutions can be solved through mathematical simplification.    
 + Solutions have a geometric intuition. In 2D, solutions can be represented as two lines which never intersect (no solution), two lines which only intersect once (single solution), or two lines superimposed on each other (infinite solutions).      
 
-<details><summary>R code</summary>  
-<p> 
-
-```{r, results='hold'}
-# Plot inconsistent linear system in R -----------------------------------------
-p1 <- data.frame(x <- seq(-10, 10, by = 1), 
-                 y1 <- (-2*x - 5) / 3,
-                 y2 <- (-4*x - 2) / 6) %>% 
-  ggplot(aes(x)) +
-  geom_hline(yintercept = 0, colour = "linen", linetype = "dashed") + 
-  geom_vline(xintercept = 0, colour = "linen", linetype = "dashed") + 
-  geom_line(aes(y = y1)) + 
-  geom_line(aes(y = y2)) + 
-  coord_cartesian(xlim = c(-4, 4), 
-                  ylim = c(-4, 4)) +
-  labs(title = "No solution") +  
-  theme_minimal() + 
-  theme(panel.border = element_rect(fill = NA),
-        panel.grid.minor = element_blank(),
-        panel.grid.major = element_line(linetype = "dotted"))
-
-# Plot consistent linear system with single solution in R ----------------------
-p2 <- data.frame(x1 <- 8/4,
-                 y1 <- seq(-10, 10, by = 1),
-                 x2 <- seq(-10, 10, by = 1), 
-                 y2 <- 2/3) %>% 
-  ggplot(aes(x2, y1)) +
-  geom_hline(yintercept = 0, colour = "linen", linetype = "dashed") + 
-  geom_vline(xintercept = 0, colour = "linen", linetype = "dashed") + 
-  geom_line(aes(x = x1)) + 
-  geom_line(aes(y = y2)) + 
-  coord_cartesian(xlim = c(-4, 4), 
-                  ylim = c(-4, 4)) +
-  labs(title = "Single solution") +  
-  theme_minimal() + 
-  theme(panel.border = element_rect(fill = NA),
-        panel.grid.minor = element_blank(),
-        panel.grid.major = element_line(linetype = "dotted"))  
-
-# Plot consistent linear system with infinite solutions in R -------------------
-p3 <- data.frame(x <- seq(-10, 10, by = 1),
-                 y1 <- (-2*x + 5) / 3,
-                 y2 <- (-4*x + 10) / 6) %>% 
-  ggplot(aes(x)) +
-  geom_hline(yintercept = 0, colour = "linen", linetype = "dashed") + 
-  geom_vline(xintercept = 0, colour = "linen", linetype = "dashed") + 
-  geom_line(aes(y = y1), colour = "steelblue", lwd=2) + 
-  geom_line(aes(y = y2)) + 
-  labs(title = "Infinite solutions") +  
-  theme_minimal() + 
-  theme(panel.border = element_rect(fill = NA),
-        panel.grid.minor = element_blank(),
-        panel.grid.major = element_line(linetype = "dotted"))   
-
-# Plot ggplot figures side by side --------------------------------------------- 
-p1 + p2 + p3
+```{r, echo=FALSE, results='markup'}
+knitr::include_graphics("../figures/linear_systems-two_unknown_variables.svg")
 ```
 
-</p>  
-</details><p>
 
+# Equivalent linear systems       
 
-# Equivalent linear systems          
 Two linear systems are row equivalent if they have the same n-tuple solution set i.e. if $\{s_1, \cdots, s_n\} = \{t_1, \cdots, t_n \}$. Row equivalence implies that we can convert one linear system into an equivalent linear system to find the simplest linear system to solve for.    
 
-The process of converting a linear system into an equivalent simpler linear system can be considered as an algorithm. To construct this algorithm, we need to identify the operations which maintain equivalency between two linear systems i.e. prove that all elementary equation operations (EEOs) maintain equivalency between linear systems A and B.  
+The process of converting a linear system into an equivalent simpler linear system can be considered as an algorithm. To construct this algorithm, we need to identify the elementary equation operations which maintain equivalency between two linear systems i.e. prove that all types of EEOs maintain equivalency between linear systems A and B.  
 
 ```{r, echo=FALSE, results='markup'}
 knitr::include_graphics("../figures/linear_systems-equivalence.svg")
@@ -211,7 +96,8 @@ The three elementary equation operations (EEOs) are:
 If we know that there is a finite and reversible sequence of elementary equation operations to transform A into B, then the best algorithm will select the minimal sequence of EEOs to reach B, where B is the simplest equivalent linear system to solve. This is how the row reduction (or Gauss Jordan elimination) algorithm works.    
 
 
-# Equivalence relations  
+# Equivalence relations   
+
 Let A be a set. A relation on A is any subset of $A \times A$, or any set of ordered pairs $(a,b)$ where $a,b \in A$, which satisfies the conditions of a statement or function being applied on $a$ to $b$.   
 
 ```{r, echo=FALSE, results='markup'}
@@ -230,7 +116,8 @@ Row equivalence is therefore an equivalence relation on the set of all linear sy
 
 
 # Augmented matrices and matrix echelon forms      
-A linear system can be represented in matrix form, through an augmented matrix for linear systems with form $A\vec x = \vec b$ and through a coefficient matrix for linear systems with form $A\vec x = \vec 0$.   
+
+A linear system can be represented by an augmented matrix $\left[\begin{array}{cccc|c}\vec v_1 & \vec v_2 & \cdots\ & \vec v_p & \vec b \end{array}\right]$ for linear systems with form $A\vec x = \vec b$ and by a coefficient matrix $\left[\begin{array}{cccc}\vec v_1 & \vec v_2 & \cdots\ & \vec v_p \end{array}\right]$ for linear systems with form $A\vec x = \vec 0$.   
 
 Each matrix can exist in multiple echelon forms and in one unique reduced echelon form.   
 
@@ -250,8 +137,8 @@ A matrix is in its **reduced echelon form** if additionally:
 + Each leading 1 is the only non-zero entry in its column.    
 
 When a matrix is in an echelon form, we can solve the linear system by either:   
-1. Directly using back substitution to simplify the list of equations and then solve for each variable. Solutions should be presented in the form of constants and free variables only.    
-2. Further reducing the matrix to its reduced echelon form, where the solution for each variable is obvious i.e. $x_1 = c_1, x_2 = c_2, \cdots, x_n = c_n$.           
+1. Directly using back substitution to simplify the list of equations and then solve for each variable. Solutions should be presented in terms of free variables only.   
+2. Further reducing the matrix to its reduced echelon form, where the solution for each variable is obvious i.e. $x_1 = b_1, x_2 = b_2, \cdots, x_n = b_n$.           
 
 ```{r, echo=FALSE, results='markup'}
 knitr::include_graphics("../figures/linear_systems-echelon_solutions.svg")  
@@ -263,8 +150,8 @@ knitr::include_graphics("../figures/linear_systems-echelon_solutions.svg")
 # Row reduction algorithmn    
 In the row reduction algorithm (also know as the Gauss Jordan Elimination algorithm), we aim to:   
 
-1. Find the matrix **echelon form** by applying replacement elementary row operations i.e. $R_j = R_i$ or $R_j = kR_j$ or $R_j = R_j + kR_i$ on all columns below the leading edge in a row. Repeat this step for each leading edge of each row.   
-2. Find the matrix **reduced echelon form** by identifying the right most leading edge and using a scaling elementary row operation to convert it into 1. Apply replacement elementary row operations i.e. $R_i = R_i + kR_j$ on all columns above the leading 1. Repeat this step for each leading edge of each row.    
+1. Find the matrix **echelon form** by applying replacement elementary row operations i.e. $R_j = R_i$ or $R_j = kR_j$ or $R_j = R_j + kR_i$ on all columns below the leading edge in a row (to convert those values into zeros). Repeat this step for each leading edge of each row.   
+2. Find the matrix **reduced echelon form** by identifying the right most leading edge and using a scaling elementary row operation to convert it into 1. Apply replacement elementary row operations i.e. $R_i = R_i + kR_j$ on all columns above the leading 1 (to convert those values into zeros). Repeat this step for each leading edge of each row.    
 
 <details><summary>Python code</summary>  
 <p> 
@@ -391,7 +278,7 @@ for i in range(n):
 # Homogenous linear systems and infinite solutions     
 It is easier to work with homogeneous linear systems, with the form $A\vec x = \vec 0$, as these systems can only have either a single trivial solution $\{x_1, x_2 \cdots, x_n\} = \{0, 0, \cdots, 0\}$ or infinite solutions i.e. $\{x_1, x_2 \cdots, x_n\} = \{2x_2, x_2, \cdots, -x_2\}$. This observation is obvious when you consider that the reduced echelon form of A can only equate to $\vec 0$ or a vector containing free variables (as infinite solutions are defined with respect to all free variables only).       
 
-We can therefore re-write infinite solutions to any linear system $A\vec x=\vec b$ as the addition of a positional vector $\vec p$ to the infinite solution set of a homogeneous linear system $A\vec x=\vec 0$.    
+We can re-write infinite solutions to any linear system $A\vec x = \vec b$ as the addition of a positional vector $\vec p$ to the infinite solution set of a homogeneous linear system $A\vec x = \vec 0$.      
 
 If $A\vec x = \vec b$ has infinite solutions:  
 + One solution is $\vec p$ i.e. a single vector of real numbers or a point in $\mathbb{R}^m$.  
@@ -418,15 +305,15 @@ knitr::include_graphics("../figures/linear_systems-parametric_solution_example.s
 
 
 # Homogenous linear systems and linear independence    
-A homogeneous linear system $A\vec x=\vec0$ is linearly independent if it only has one trivial solution i.e. only the solution $x_1 = x_2 = \cdots = x_n = 0$ exists. The reduced echelon form of matrix $A$ posits that a homogeneous linear system with a single trivial solution does not contain any free variables. Homogeneous linear systems containing free variables are therefore not linearly independent.    
+A homogeneous linear system $A\vec x=\vec0$ is linearly independent if it only has one trivial solution i.e. only the solution $x_1 = x_2 = \cdots = x_n = 0$ exists. A linear system with a single solution does not contain any free variables. Therefore, the coefficient matrix corresponding to $A\vec x=\vec0$ must contain only basic variables i.e. contain a pivot column in every row.     
 
-If a homogeneous linear system has infinite solutions, its augmented matrix form contains at least one free variable and the system is linearly dependent.   
+If a homogeneous linear system has infinite solutions, its coefficient matrix must contain at least one free variable and the linear system is therefore linearly dependent.   
 
 ```{r, echo=FALSE, results='markup'}
 knitr::include_graphics("../figures/linear_systems-linear_dependence_a.svg")
 ```
 
-Linear independence and linear dependence are easier to conceptualise when we view the coefficient matrix A as a collection of $n$ column vectors i.e. $A = \begin{bmatrix} \vec a_1 & \vec a_2 & \cdots & \vec a_n \end{bmatrix}$.   
+Linear independence and linear dependence are easier to conceptualise when we view the coefficient matrix A as a collection of $n$ column vectors, each with dimensions $m \times 1$, i.e. $A = \begin{bmatrix} \vec a_1 & \vec a_2 & \cdots & \vec a_n \end{bmatrix}$.   
 
 The concept of representing linear systems using vectors is covered in the [next tutorial](https://github.com/erikaduan/introductory_maths/blob/master/tutorials/linear_algebra-vectors.md) on vectors.   
 

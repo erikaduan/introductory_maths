@@ -1,8 +1,7 @@
 # Introductory mathematics in R and Python    
-This repository contains tutorials on the introductory mathematical concepts required for studying statistics and machine learning.   
-Extra visualisations are created in `R` and code to solve linear systems are written in both `R` and `Python`.    
+This repository contains tutorials on the introductory mathematical concepts required for studying statistics and machine learning. Code to solve mathematical problems is written in `R`, `Python` and `Julia`.      
 
-![](https://github.com/erikaduan/Introductory-maths-in-R-and-Python/blob/master/figures/repo_logo.jpg)
+![](./figures/repo_logo.jpg)
 
 ## Tutorials    
 |Topics|Tutorials|
@@ -53,6 +52,11 @@ This project was created using the following setup:
 + Occurs when you need to prove that a solution is unique.  
 + Show that there is one solution first.   
 + Show that there is a second solution and that the first and second solutions must be equal.   
+
+**Proof by contradiction**   
++ Start by assuming that the incorrect state is true i.e. that eigenvectors are linearly dependent.    
++ Prove that the assumption does not hold and contradicts itself.  
++ Therefore prove that the reverse state is actually true.   
 
 ## References  
 + A guide to [linear algebra](https://pabloinsente.github.io/intro-linear-algebra) for applied machine learning by Pablo Caceres
