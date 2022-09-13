@@ -7,27 +7,27 @@ This repository contains tutorials on the introductory mathematical concepts req
 |Topics|Tutorials|
 |:-----|:--------|
 |:1234:|[Introduction to numbers](./tutorials/numbers-introduction.md)|  
-|:1234:|Introduction to functions|
-|:1234:|Introduction to algebra|
-|:1234:|Exponents and logarithms|
+|:1234:|Introduction to functions|   
+|:1234:|Introduction to algebra|  
+|:1234:|Exponents and logarithms|   
 |:1234:|Logarithms and information theory|
 |:black_joker:|[Introduction to probability theory](./tutorials/probability-introduction.md)|
 |:black_joker:|[Conditional probability](./tutorials/probability-conditional_probability.md)|
-|:black_joker:|Bayes theorem|
-|:cookie:|Introduction to summations|
-|:compass:|Introduction to trigonometry|
-|:compass:|Distance metrics|
-|:compass:|Cosine similarity|
-|:chopsticks:|[Introduction to linear systems](./tutorials/linear_algebra-linear_systems.md)|  
-|:chopsticks:|[Introduction to vectors](./tutorials/linear_algebra-vectors.md)|
-|:chopsticks:|[Linear transformations](./tutorials/linear_algebra-linear_transformations.md)|  
-|:chopsticks:|Vector embeddings|
+|:black_joker:|Bayes theorem|   
+|:cookie:|Introduction to summations|  
+|:compass:|Introduction to trigonometry|  
+|:compass:|Introduction to distance metrics|   
+|:compass:|Cosine similarity applications|   
+|:chopsticks:|[Introduction to linear systems](./tutorials/linear_algebra-linear_systems.md)|   
+|:chopsticks:|[Introduction to vectors](./tutorials/linear_algebra-vectors.md)|   
 |:department_store:|[Introduction to matrices](./tutorials/linear_algebra-matrices.md)|    
+|:chopsticks:|[Linear transformations](./tutorials/linear_algebra-linear_transformations.md)|    
+|:chopsticks:|Vector embedding applications|    
 |:roller_coaster:|Introduction to derivatives|  
 
 ## Contributors
-+ [Erika Duan](https://github.com/erikaduan/)
-+ [Chuanxin Liu](https://github.com/codetrainee)
++ [Erika Duan](https://github.com/erikaduan/)  
++ [Chuanxin Liu](https://github.com/codetrainee)   
 
 ## Project setup   
 This project was created using the following setup:    
