@@ -7,7 +7,7 @@ This repository contains tutorials on the introductory mathematical concepts req
 |Topics|Tutorials|
 |:-----|:--------|
 |:1234:|[Introduction to numbers](./tutorials/numbers-introduction.md)|  
-|:1234:|Introduction to functions|   
+|:1234:|[Introduction to functions](./tutorials/functions-introduction.md)|   
 |:1234:|Introduction to algebra|  
 |:1234:|Exponents and logarithms|   
 |:1234:|Logarithms and information theory|
@@ -20,10 +20,10 @@ This repository contains tutorials on the introductory mathematical concepts req
 |:compass:|Cosine similarity applications|   
 |:chopsticks:|[Introduction to linear systems](./tutorials/linear_algebra-linear_systems.md)|   
 |:chopsticks:|[Introduction to vectors](./tutorials/linear_algebra-vectors.md)|   
+|:chopsticks:|Vector norms and embeddings|    
 |:department_store:|[Introduction to matrices](./tutorials/linear_algebra-matrices.md)|    
 |:chopsticks:|[Linear transformations](./tutorials/linear_algebra-linear_transformations.md)|    
-|:chopsticks:|Vector embedding applications|    
-|:roller_coaster:|Introduction to derivatives|  
+|:roller_coaster:|[Introduction to derivatives](./tutorials/calculus-derivatives.md)|  
 
 ## Contributors
 + [Erika Duan](https://github.com/erikaduan/)  

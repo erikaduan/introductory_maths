@@ -29,10 +29,10 @@ knitr::knit_engines$set(python = reticulate::eng_python)
 reticulate::py_config()
 ```
 
-# Functions   
+# Derivatives   
 
 ```{r, echo=FALSE, results='markup'}
-knitr::include_graphics("../figures/functions-simple_function_example.svg")
+# knitr::include_graphics("../figures/functions-simple_function_example.svg")
 ```
 
 

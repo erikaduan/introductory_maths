@@ -150,6 +150,97 @@ p1 + p2
 
 # The Squeeze theorem   
 
+The **Squeeze theorem** allows us to define the limit of a function based on an understanding of the lower and upper boundaries of a related function.  
+
+Let $f(x)$, $g(x)$ and $h(x)$ exist where $f(x) \leq g(x) \leq h(x)$. For all values of $x$ sufficiently close to $a$, suppose that $lim_{x \to a} f(x) = lim_{x \to a} h(x) = L$, then $lim_{x \to a} g(x) = L$.   
+
+For example, to find $lim_{x \to a} x sin(\tfrac{1}{x})$, we start by knowing that $-1\leq sin(x) \leq1$ and therefore that $-x\leq xsin(x) \leq x$ for all $x \neq 0, x >0$. The right limit of $-x$ as it approaches 0 is 0 and the right limit of $x$ as it approaches 0 is also 0. Therefore $lim_{x \to a} x sin(\tfrac{1}{x}) = 0$ by the Squeeze theorem.   
+
+<details><summary>R code</summary>  
+<p>   
+
+```{r}
+# Plot f(x) = x * sin(x) -------------------------------------------------------
+set.seed(111)
+
+p1 <- ggplot(data.frame(x = runif(1000, -20, 20)), aes(x)) +
+  geom_function(fun = ~ (.x) * sin(.x)) +
+  labs(title = "f(x) = x sin(x)") +  
+  theme_minimal() + 
+  theme(panel.border = element_rect(fill = NA),
+        panel.grid.minor = element_blank(),
+        panel.grid.major = element_line(linetype = "dotted")) +
+  annotate("text", x = 1.4, y = -18, label = "Limit as x approaches 0: 0")  
+
+# Plot f(x) = sin(x)/x ---------------------------------------------------------
+set.seed(111)
+
+p2 <- ggplot(data.frame(x = runif(1000, -20, 20)), aes(x)) +
+  geom_function(fun = ~ sin(.x)/.x) +
+  labs(title = "f(x) = sin(x)/x") +  
+  theme_minimal() + 
+  theme(panel.border = element_rect(fill = NA),
+        panel.grid.minor = element_blank(),
+        panel.grid.major = element_line(linetype = "dotted")) +
+  annotate("text", x = 1.8, y = -0.8, label = "Limit as x approaches 0: 1")
+
+# Plot ggplot figures side by side --------------------------------------------- 
+p1 + p2
+```
+
+</p>  
+</details><p>  
+
+
+# Continuity  
+
+A function is **continuous** at point $a$ if:  
+
++ $f(a)$ is defined i.e. $a \in$ domain of $f(x)$ and $lim_{x \to a} f(x) = f(a)$.      
++ $lim_{x \to a} f(x)$ exists i.e. the right limit and left limit both exist and are equal to each other as $x$ approaches $a$ for $f(x)$.  
++ By geometric intuition, if $f(x)$ is continuous as point $x = a$, the points $(x, f(x))$ continue to approach the point $(a, f(a))$ and there is no gap in the graph.   
+
+If $f(x), g(x)$ are continuous on some domain and $c$ is a constant, then the functions formed from $f(x) \pm g(x)$, $cf(x)$, $(f\circ g)(x)$, and $\tfrac{f(x)}{g(x)}$ are all continuous.   
+
+If $lim_{x \to a} g(x) = b$, then $lim_{x \to a} f(g(x)) = f(lim_{x \to a}g(x)) = f(b)$.  
+
+<details><summary>R code</summary>  
+<p>   
+
+```{r}
+# Plot f(x) = 1/x --------------------------------------------------------------
+set.seed(111)
+
+p1 <- ggplot(data.frame(x = runif(1000, -20, 20)), aes(x)) +
+  geom_function(fun = ~ 1/(.x)) +
+  xlim(-6, 6) + 
+  ylim(-6, 6) + 
+  labs(title = "f(x) = 1/x") +  
+  theme_minimal() + 
+  theme(panel.border = element_rect(fill = NA),
+        panel.grid.minor = element_blank(),
+        panel.grid.major = element_line(linetype = "dotted")) +
+  annotate("text", x = 0, y = -5, label = "f(x) is continuous but undefined at x = 0")  
+
+p1
+```
+
+</p>  
+</details><p>  
+
+**Note:** Rather than saying that $f(x) = 1/x$ is discontinuous because f(0) is undefined, we can say that $f(x) = 1/x$ is continuous for $x \neq 0$.  
+
+
+# Intermediate value theorem  
+
+The intermediate value theorem extends ideas from the Squeeze theorem. It is mainly used to judge whether a solution will exist between a specific interval of values in the domain.  
+
+Let $f(x)$ be continuous along the closed interval $[a, b]$ where $v$ is a number between $f(a)$ and $f(b)$. There exists a number $c \in [a,b]$ such that $f(c) = v$.  
+
+```{r, echo=FALSE, results='markup'}
+knitr::include_graphics("../figures/functions-intermediate_value_theorem.svg")
+```
+
 
 # Resources  
-+ 
++ Lectures and exercises from the Khan academy [functions unit](https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions).    

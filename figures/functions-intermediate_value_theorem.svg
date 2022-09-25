@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1280"
+   height="500"
+   overflow="hidden"
+   version="1.1"
+   id="svg163"
+   sodipodi:docname="functions-intermediate_value_theorem.svg"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview165"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.92709556"
+     inkscape:cx="387.77017"
+     inkscape:cy="360.26491"
+     inkscape:window-width="2880"
+     inkscape:window-height="1514"
+     inkscape:window-x="3829"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg163" />
+  <defs
+     id="defs5">
+    <clipPath
+       id="clip0">
+      <rect
+         x="0"
+         y="0"
+         width="1280"
+         height="720"
+         id="rect2" />
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#clip0)"
+     id="g161"
+     transform="translate(-20.494112,-58.246423)">
+    <rect
+       x="0"
+       y="0"
+       width="1280"
+       height="720"
+       fill="#ffffff"
+       id="rect7" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="43px"
+       transform="translate(392.564,125)"
+       id="text9">Intermediate value theorem</text>
+    <rect
+       x="217"
+       y="429"
+       width="51"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect11" />
+    <rect
+       x="167"
+       y="429"
+       width="50"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect13" />
+    <rect
+       x="268"
+       y="429"
+       width="50"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect15" />
+    <rect
+       x="268"
+       y="384"
+       width="50"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect17" />
+    <rect
+       x="318"
+       y="429"
+       width="50"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect19" />
+    <rect
+       x="318"
+       y="384"
+       width="50"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect21" />
+    <rect
+       x="318"
+       y="339"
+       width="50"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect23" />
+    <rect
+       x="318"
+       y="294"
+       width="50"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect25" />
+    <rect
+       x="267"
+       y="339"
+       width="51"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect27" />
+    <rect
+       x="267"
+       y="294"
+       width="51"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect29" />
+    <rect
+       x="217"
+       y="384"
+       width="51"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect31" />
+    <rect
+       x="218"
+       y="339"
+       width="50"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect33" />
+    <rect
+       x="167"
+       y="384"
+       width="50"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect35" />
+    <rect
+       x="167"
+       y="339"
+       width="51"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect37" />
+    <rect
+       x="218"
+       y="294"
+       width="50"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect39" />
+    <rect
+       x="167"
+       y="294"
+       width="51"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect41" />
+    <rect
+       x="368"
+       y="429"
+       width="50"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect43" />
+    <rect
+       x="368"
+       y="384"
+       width="50"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect45" />
+    <rect
+       x="418"
+       y="429"
+       width="50"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect47" />
+    <rect
+       x="418"
+       y="384"
+       width="50"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect49" />
+    <rect
+       x="418"
+       y="339"
+       width="50"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect51" />
+    <rect
+       x="418"
+       y="294"
+       width="50"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect53" />
+    <rect
+       x="368"
+       y="294"
+       width="50"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect55" />
+    <rect
+       x="217"
+       y="474"
+       width="51"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect57" />
+    <rect
+       x="167"
+       y="474"
+       width="50"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect59" />
+    <rect
+       x="268"
+       y="474"
+       width="50"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect61" />
+    <rect
+       x="318"
+       y="474"
+       width="50"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect63" />
+    <rect
+       x="368"
+       y="474"
+       width="50"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect65" />
+    <rect
+       x="418"
+       y="474"
+       width="50"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect67" />
+    <text
+       fill="#bfbfbf"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(584.809,438)"
+       id="text71">x<tspan
+   font-size="32px"
+   x="-272.15601"
+   y="-251"
+   id="tspan69">y</tspan></text>
+    <rect
+       x="468"
+       y="429"
+       width="50"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect73" />
+    <rect
+       x="468"
+       y="384"
+       width="50"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect75" />
+    <rect
+       x="517"
+       y="429"
+       width="51"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect77" />
+    <rect
+       x="517"
+       y="384"
+       width="51"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect79" />
+    <rect
+       x="518"
+       y="339"
+       width="50"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect81" />
+    <rect
+       x="518"
+       y="294"
+       width="50"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect83" />
+    <rect
+       x="467"
+       y="294"
+       width="51"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect85" />
+    <rect
+       x="467"
+       y="474"
+       width="51"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect87" />
+    <rect
+       x="518"
+       y="474"
+       width="50"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect89" />
+    <rect
+       x="318"
+       y="249"
+       width="50"
+       height="46"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect91" />
+    <rect
+       x="318"
+       y="204"
+       width="50"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect93" />
+    <rect
+       x="267"
+       y="249"
+       width="51"
+       height="46"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect95" />
+    <rect
+       x="267"
+       y="204"
+       width="51"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect97" />
+    <rect
+       x="217"
+       y="249"
+       width="51"
+       height="46"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect99" />
+    <rect
+       x="167"
+       y="249"
+       width="50"
+       height="46"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect101" />
+    <rect
+       x="217"
+       y="204"
+       width="51"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect103" />
+    <rect
+       x="167"
+       y="204"
+       width="50"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect105" />
+    <rect
+       x="418"
+       y="249"
+       width="50"
+       height="46"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect107" />
+    <rect
+       x="418"
+       y="204"
+       width="50"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect109" />
+    <rect
+       x="367"
+       y="204"
+       width="51"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect111" />
+    <rect
+       x="518"
+       y="249"
+       width="50"
+       height="46"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect113" />
+    <rect
+       x="518"
+       y="204"
+       width="50"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect115" />
+    <rect
+       x="467"
+       y="204"
+       width="51"
+       height="45"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect117" />
+    <path
+       d="M 318.116,518.695 318,201"
+       stroke="#bfbfbf"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="12, 4"
+       fill="none"
+       fill-rule="evenodd"
+       id="path119" />
+    <path
+       d="M 0,0 408.112,0.0150131"
+       stroke="#bfbfbf"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="12, 4"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(1,0,0,-1,167,429.015)"
+       id="path121" />
+    <path
+       d="M 368.489,427.103 368,385"
+       stroke="#bfbfbf"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="12, 4"
+       fill="none"
+       fill-rule="evenodd"
+       id="path123" />
+    <path
+       d="m 317,384 h 50.449"
+       stroke="#bfbfbf"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="12, 4"
+       fill="none"
+       fill-rule="evenodd"
+       id="path125" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(277.442,390)"
+       id="text131">f<tspan
+   font-size="24px"
+   x="7.3333402"
+   y="0"
+   id="tspan127">(a)</tspan><tspan
+   font-size="24px"
+   x="84.907097"
+   y="62"
+   id="tspan129">a</tspan></text>
+    <path
+       d="M 0,0 0.00115486,143.77"
+       stroke="#bfbfbf"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="12, 4"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(1,0,0,-1,542,428.771)"
+       id="path133" />
+    <path
+       d="M 317,294 H 543.023"
+       stroke="#bfbfbf"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="12, 4"
+       fill="none"
+       fill-rule="evenodd"
+       id="path135" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(277.725,300)"
+       id="text141">f<tspan
+   font-size="24px"
+   x="7.3333402"
+   y="0"
+   id="tspan137">(b)</tspan><tspan
+   font-size="24px"
+   x="259.89999"
+   y="152"
+   id="tspan139">b</tspan></text>
+    <path
+       d="M 316,339 H 491.968"
+       stroke="#b4c7e7"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="12, 4"
+       fill="none"
+       fill-rule="evenodd"
+       id="path143" />
+    <path
+       d="M 492.63,428.872 492,342"
+       stroke="#b4c7e7"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="12, 4"
+       fill="none"
+       fill-rule="evenodd"
+       id="path145" />
+    <path
+       d="m 208.066,-1.99891 15.196,0.50235 15.073,1.5766863 14.759,2.5228537 14.444,3.53205 14.064,4.41497 13.69,5.3623 13.247,6.2451 12.683,7.0671 12.18,7.9518 11.484,8.7071 10.915,9.4646 10.163,10.1631 9.473,10.925 8.585,11.6153 7.83,12.1856 6.831,12.814 -3.53,1.881 -6.793,-12.741 0.082,0.14 -7.75,-12.0624 0.075,0.1077 -8.5,-11.5 0.097,0.1214 -9.375,-10.8125 0.097,0.104 -10.063,-10.0625 0.104,0.0969 -10.812,-9.375 0.102,0.0826 -11.375,-8.625 0.115,0.081 -12.063,-7.875 0.12,0.0724 -12.563,-7 0.121,0.062 -13.125,-6.1875 0.124,0.0531 -13.563,-5.3125 0.131,0.046 -13.938,-4.375 0.124,0.0346 -14.313,-3.50005 0.138,0.02865 -14.624,-2.5 0.128,0.01775 -14.937,-1.5625 0.142,0.00976 -15.125,-0.5 z m -0.264,7.99563 c -3.312,-0.10948 -5.908,-2.88306 -5.799,-6.194959 0.11,-3.311901 2.883,-5.907971 6.195,-5.798481 3.312,0.10948 5.908,2.88306 5.799,6.194959 -0.11,3.311901 -2.883,5.907971 -6.195,5.798481 z M 402.212,111.169 c 1.559,2.924 0.452,6.558 -2.472,8.117 -2.924,1.559 -6.558,0.452 -8.117,-2.472 -1.559,-2.924 -0.452,-6.558 2.472,-8.117 2.924,-1.559 6.558,-0.452 8.117,2.472 z"
+       fill="#2f5597"
+       transform="matrix(1,0,0,-1,159,382)"
+       id="path147" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(245.424,347)"
+       id="text159">v = f(c)<tspan
+   font-size="24px"
+   x="242.22"
+   y="104"
+   id="tspan149">c</tspan><tspan
+   font-size="27px"
+   x="386.06799"
+   y="-32"
+   id="tspan151">Suppose f(x) is continuous along [a, b].</tspan><tspan
+   font-size="27px"
+   x="386.06799"
+   y="0"
+   id="tspan153">Suppose</tspan><tspan
+   font-size="27px"
+   x="484.23499"
+   y="0"
+   id="tspan155">v is a number between f(a) and f(b).</tspan><tspan
+   font-size="27px"
+   x="386.06799"
+   y="64"
+   id="tspan157">There exists a number c in [a, b] such that f(c) = v.</tspan></text>
+  </g>
+</svg>
