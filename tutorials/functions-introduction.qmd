@@ -1,0 +1,58 @@
+---
+title: "Introduction to functions" 
+author: "Erika Duan"
+date: last-modified
+format: 
+    html:
+        toc: true
+        toc-depth: 2   
+        toc-title: Contents  
+execute:   
+  echo: true     
+  output: true   
+  warning: false  
+---
+
+#
+
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+```{python}
+1 + 1
+```
+
+```{julia}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
+
+::: panel-tabset
+## Plot
+
+```{r}
+1+1
+```
+
+## Data
+
+```{r}
+2+2
+```
+:::
