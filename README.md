@@ -10,21 +10,17 @@ This repository contains tutorials on the introductory mathematical concepts req
 |:1234:|Introduction to algebra|     
 |:compass:|Introduction to trigonometry|    
 |:cookie:|Introduction to summations|    
-
 |:1234:|[Introduction to functions](./tutorials/functions-introduction.md)|   
 |:roller_coaster:|[Introduction to derivatives](./tutorials/calculus-derivatives.md)|    
 |:roller_coaster:| Introduction to integration |    
 |:roller_coaster:| Differential equations |     
 |:roller_coaster:| Multivariable functions  |      
 |:roller_coaster:| Differentiation of multivariable functions  |    
-
 |:1234:|Exponents and logarithms|   
 |:1234:|Logarithms and information theory|  
-
 |:black_joker:|[Introduction to probability theory](./tutorials/probability-introduction.md)|   
 |:black_joker:|[Conditional probability](./tutorials/probability-conditional_probability.md)|   
 |:black_joker:|Bayes theorem|   
-
 |:compass:|Introduction to distance metrics|   
 |:compass:|Cosine similarity applications|   
 |:chopsticks:|[Introduction to linear systems](./tutorials/linear_algebra-linear_systems.md)|   
@@ -45,7 +41,7 @@ This project was created using the following setup:
 + The Julia version used is `julia version 1.7.3`.    
 
 ## Guide to writing mathematical proofs    
-Writing mathematical proofs might feel archaic but they are a great way to help you reason why mathematical concepts should behave consistently (and not just because your textbook says so). There are multiple approaches you can take to proving a mathematical statement or concept.   
+Writing mathematical proofs might feel archaic but they are a great way to help you reason why mathematical concepts should behave consistently (and not just because your textbook says so). There are multiple approaches to proving a mathematical statement or concept. Sadly, there is no magical rule to selecting the correct method for each scenario - mathematicians often have to try multiple approaches before they find the right one.        
 
 **Direct proof**   
 + Occurs when you need to prove that A and B are equivalent.   
