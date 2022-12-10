@@ -1,7 +1,7 @@
 Introduction to numbers
 ================
 Erika Duan
-12/4/22
+12/10/22
 
 -   <a href="#numbers" id="toc-numbers">Numbers</a>
 -   <a href="#natural-numbers" id="toc-natural-numbers">Natural numbers</a>
@@ -74,19 +74,21 @@ underlies its adoption by computer-based systems.
 
 # Integers
 
-Integers are whole numbers that can be either positive or negative.
+Integers
+(![\mathbb{Q}](https://latex.codecogs.com/svg.latex?%5Cmathbb%7BQ%7D "\mathbb{Q}"))
+are whole numbers that can be either positive or negative.
 
 <div class="panel-tabset">
 
 ## R
 
-In R, we assign a whole number as an integer type by either denoting an
-`L` after the number or using `as.integer()`. If we assign a whole
-number without `L`, R assigns the number as a `double` type. Both
-`integer` and `double` data types belong to the `numeric` class.
+In R, we assign a whole number as an `integer` type by either denoting
+an `L` after the number or using `as.integer()`. If we assign a whole
+number without `L`, R assigns the number as a `double` type instead.
+Both `integer` and `double` data types belong to the `numeric` class.
 
 ``` r
-# Check whole number type in R -------------------------------------------------
+# Check integer type in R ------------------------------------------------------
 # Be careful of the difference between class() and typeof()
 # https://adv-r.hadley.nz/base-types.html 
 
@@ -105,11 +107,11 @@ class(3)
 
 ## Python
 
-In Python, we assign a whole number as an integer type by default. There
-is no limit on how long an integer can be in Python.
+In Python, we assign a whole number as an `integer` type by default.
+There is no limit on how long an integer can be in Python.
 
 ``` python
-# Check whole number type in Python --------------------------------------------
+# Check integer type in Python -------------------------------------------------
 type(3)
 #> <class 'int'>  
 ```
@@ -122,7 +124,7 @@ and the default type is `Int64` or `Int32` depending on whether your
 computer system has a 64-bit or 32-bit architecture.
 
 ``` julia
-# Check whole number type in Julia ---------------------------------------------
+# Check integer type in Julia --------------------------------------------------
 typeof(3)
 #> Int64  
 
@@ -138,7 +140,234 @@ typeof(3)
 
 # Real numbers
 
+A real number
+(![\mathbb{R}](https://latex.codecogs.com/svg.latex?%5Cmathbb%7BR%7D "\mathbb{R}"))
+represents any number along the 1D number line, including values such as
+recurring decimals
+i.e. ![\tfrac{1}{3}](https://latex.codecogs.com/svg.latex?%5Ctfrac%7B1%7D%7B3%7D "\tfrac{1}{3}"),
+the natural exponent ![e](https://latex.codecogs.com/svg.latex?e "e")
+and ![\pi](https://latex.codecogs.com/svg.latex?%5Cpi "\pi"). This is
+why the domain and co-domain of functions like
+![y = x^2-1](https://latex.codecogs.com/svg.latex?y%20%3D%20x%5E2-1 "y = x^2-1")
+is defined as
+![\mathbb{R}](https://latex.codecogs.com/svg.latex?%5Cmathbb%7BR%7D "\mathbb{R}").
+We will further explore concepts like domain and co-domain in [another
+tutorial](./tutorials/functions-introduction.md).
+
+<div class="panel-tabset">
+
+## R
+
+In R, we assign decimals as a `double` type. Both `integer` and `double`
+data types belong to the `numeric` class and we can convert integers to
+doubles, but should avoid doing so the other way around.
+
+[To quote from the R
+FAQ](https://cran.r-project.org/doc/FAQ/R-FAQ.html#Why-doesn_0027t-R-think-these-numbers-are-equal_003f),
+only integers and fractions whose denominator is a power of 2 are
+represented accurately. All other numbers are internally rounded to \~53
+binary digits accuracy.
+
+``` r
+# Check double type in R -------------------------------------------------------
+typeof(3.0)
+#> [1] "double"   
+
+typeof(1.23e2)
+#> [1] "double"   
+
+as.double(3L)
+#> [1] 3 
+
+# Do not cast doubles into integers as decimal numbers are floored not rounded   
+c(as.integer(3.4), as.integer(3.8))
+#> [1] 3 3
+
+# R rounds reoccurring decimals   
+c(1/3, 10/3) 
+#> [1] 0.3333333 3.3333333  
+```
+
+## Python
+
+In Python, we assign decimals as a float (or floating point number)
+type. Similar to R, we can convert integers to floats, but should avoid
+doing so the other way around. [As most decimal fractions cannot be
+represented precisely by binary
+fractions](https://docs.python.org/3/tutorial/floatingpoint.html), the
+binary floats stored in Python also only approximate our input decimal
+floats.
+
+``` python
+# Check float type in Python ---------------------------------------------------
+type(3.0)
+#> <class 'float'>  
+```
+
+``` python
+float(3)
+#> 3.0
+
+# Do not cast doubles into integers as decimal numbers are floored not rounded  
+```
+
+``` python
+(int(3.4), int(3.8))
+#> (3, 3)  
+
+# Python also rounds reoccurring decimals  
+```
+
+``` python
+(1/3, 10/3)
+#> (0.3333333333333333, 3.3333333333333335)    
+```
+
+## Julia
+
+In Julia, we also assign decimals as a float type, with the distinctions
+that Julia has `Float16`, `Float32` and `Float62` types. Although Julia
+is considered to be a [dynamically typed
+language](https://stackoverflow.com/questions/28078089/is-julia-dynamically-typed),
+it is stricter than R and Python in that conversion of floats to
+integers is not permitted.
+
+``` julia
+# Check float type in Julia ----------------------------------------------------
+typeof(3.0)
+#> Float64    
+
+typeof(1.23e2)
+#> Float64   
+
+convert(Float64, 3)
+#> 3.0  
+
+# Julia does not permit conversion of a float type into an integer type  
+# convert(Int64, 3.2) produces an inexact error  
+```
+
+</div>
+
 # Complex numbers
+
+Complex numbers
+(![a+bi](https://latex.codecogs.com/svg.latex?a%2Bbi "a+bi")) are
+represented by two components which cannot be further simplified:
+
+-   The term ![a](https://latex.codecogs.com/svg.latex?a "a") represents
+    a real number.  
+-   The term ![bi](https://latex.codecogs.com/svg.latex?bi "bi")
+    represents the product of a real number and an imaginary number,
+    where
+    ![i^2=-1](https://latex.codecogs.com/svg.latex?i%5E2%3D-1 "i^2=-1").
+
+Because the terms ![a](https://latex.codecogs.com/svg.latex?a "a") and
+![bi](https://latex.codecogs.com/svg.latex?bi "bi") occupy completely
+different number plans (a real plane versus an imaginary plane), we can
+think of the combination of
+![a+bi](https://latex.codecogs.com/svg.latex?a%2Bbi "a+bi") as the sum
+of two vectors in 2D space. This 2D space is different to the Cartesian
+plane as its basis vectors are
+![\\{(1, 0), (0, i)\\}](https://latex.codecogs.com/svg.latex?%5C%7B%281%2C%200%29%2C%20%280%2C%20i%29%5C%7D "\{(1, 0), (0, i)\}").
+
+There is therefore duality between complex number addition and scalar
+multiplication and vector addition and scalar multiplication.
+
+![](../figures/numbers-complex.svg)
+
+<div class="panel-tabset">
+
+## R
+
+In R, complex numbers are automatically defined by the presence of the
+![bi](https://latex.codecogs.com/svg.latex?bi "bi") imaginary term and
+assigned as a complex type.
+
+``` r
+# Create complex numbers in R --------------------------------------------------
+typeof(2 + 4i)
+#> [1] "complex"     
+
+as.complex(3)
+#> [1] 3+0i     
+
+(1 + 2i) + (1 - 1i)
+#> [1] 2+1i  
+
+# sqrt() works on complex numbers but not negative integers  
+
+sqrt(-1)
+#> Warning: NaNs produced
+#> [1] NaN   
+
+sqrt(-1+0i)
+#> [1] 0+1i    
+```
+
+## Python
+
+In Python, complex numbers are created using `complex(a, b)` with the
+real term accessed via the `.real` method and the imaginary term
+accessed via `.imag` method. Complex numbers are also assigned as a
+complex type.
+
+``` python
+# Create complex numbers in Python ---------------------------------------------
+import cmath
+import numpy as np
+
+c = complex(-1, 0)   
+
+type(c)
+#> <class 'complex'>  
+```
+
+``` python
+(c.real, c.imag)
+#> (-1.0, 0.0) 
+```
+
+``` python
+c**2 
+#> (1-0j)
+
+# np.sqrt() works on complex numbers but not negative integers  
+```
+
+``` python
+np.sqrt(-1)
+#> Runtime Warning: invalid value encountered in sqrt
+#> nan
+```
+
+``` python
+np.sqrt(c)
+#> 1j  
+```
+
+## Julia
+
+In Julia, complex numbers are automatically defined by the presence of
+the ![bi](https://latex.codecogs.com/svg.latex?bi "bi") imaginary term,
+with `i` denoted by `im` in Julia.
+
+``` julia
+# Create complex numbers in Julia ----------------------------------------------
+typeof(0 + 1im)
+#> Complex{Int64}  
+
+(0 + 1im)^2
+#> -1 + 0im  
+
+# sqrt(-1)
+# sqrt(-1) produces a domain error   
+
+sqrt(-1 + 0im)
+#> 0.0 + 1.0im   
+```
+
+</div>
 
 # Resources
 
