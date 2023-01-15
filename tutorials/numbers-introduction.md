@@ -1,7 +1,7 @@
 Introduction to numbers
 ================
 Erika Duan
-12/10/22
+1/15/23
 
 -   <a href="#numbers" id="toc-numbers">Numbers</a>
 -   <a href="#natural-numbers" id="toc-natural-numbers">Natural numbers</a>
@@ -10,23 +10,41 @@ Erika Duan
 -   <a href="#complex-numbers" id="toc-complex-numbers">Complex numbers</a>
 -   <a href="#resources" id="toc-resources">Resources</a>
 
+<div>
+
+> **Summary**
+>
+> This tutorial describes the properties of each number classes. Number
+> class annotation, such as
+> ![\mathbb{R}](https://latex.codecogs.com/svg.latex?%5Cmathbb%7BR%7D "\mathbb{R}")
+> is used in mathematical formulas to describe the basic behaviour of
+> input or output functions.
+>
+> This tutorial also introduces the concept of the binary number system
+> and illustrates how it differs to the decimal (counting) number
+> system. The binary number system is used by modern computer
+> applications, which describes applications as either 32-bit or 64-bit
+> for example.
+
+</div>
+
 # Numbers
 
 Numbers are used to:
 
--   Count objects. *For example, I have 10 tutorials to read.*  
+-   Count objects. *For example, I have 10 tutorials to read.*
 -   Describe object behaviour. *For example, the area of a unit circle
     is*
     ![\pi r^2](https://latex.codecogs.com/svg.latex?%5Cpi%20r%5E2 "\pi r^2")
     where
-    ![r = 1](https://latex.codecogs.com/svg.latex?r%20%3D%201 "r = 1").  
+    ![r = 1](https://latex.codecogs.com/svg.latex?r%20%3D%201 "r = 1").
 -   Solve problems, often by introducing simple assumptions. *For
     example, if 5 bees can pollinate a*
     ![100 m^2](https://latex.codecogs.com/svg.latex?100%20m%5E2 "100 m^2")
     field in 10 minutes, how many bees are required to pollinate a 350
     ![m^2](https://latex.codecogs.com/svg.latex?m%5E2 "m^2") field?
     Assume that pollination efficiency scales perfectly and is not
-    impacted by land shape.  
+    impacted by land shape.
 -   Represent complex abstractions. *For example, how can individual
     words be represented in an n-dimensional feature space?*
 
@@ -40,9 +58,9 @@ i.e. ![3+i^2](https://latex.codecogs.com/svg.latex?3%2Bi%5E2 "3+i^2").
 
 Number classifications have an elegant hierarchical property:
 
--   All natural numbers are integers.  
+-   All natural numbers are integers.
 -   All integers are rational numbers
-    i.e. ![n = \tfrac{n}{1}](https://latex.codecogs.com/svg.latex?n%20%3D%20%5Ctfrac%7Bn%7D%7B1%7D "n = \tfrac{n}{1}").  
+    i.e. ![n = \tfrac{n}{1}](https://latex.codecogs.com/svg.latex?n%20%3D%20%5Ctfrac%7Bn%7D%7B1%7D "n = \tfrac{n}{1}").
 -   All rational numbers are complex numbers
     i.e. ![\tfrac{n}{1} = \tfrac{n}{1}+0i](https://latex.codecogs.com/svg.latex?%5Ctfrac%7Bn%7D%7B1%7D%20%3D%20%5Ctfrac%7Bn%7D%7B1%7D%2B0i "\tfrac{n}{1} = \tfrac{n}{1}+0i").
 
@@ -252,11 +270,12 @@ convert(Float64, 3)
 # Complex numbers
 
 Complex numbers
-(![a+bi](https://latex.codecogs.com/svg.latex?a%2Bbi "a+bi")) are
+(![\mathbb{C}](https://latex.codecogs.com/svg.latex?%5Cmathbb%7BC%7D "\mathbb{C}");
+![a+bi](https://latex.codecogs.com/svg.latex?a%2Bbi "a+bi")) are
 represented by two components which cannot be further simplified:
 
 -   The term ![a](https://latex.codecogs.com/svg.latex?a "a") represents
-    a real number.  
+    a real number.
 -   The term ![bi](https://latex.codecogs.com/svg.latex?bi "bi")
     represents the product of a real number and an imaginary number,
     where

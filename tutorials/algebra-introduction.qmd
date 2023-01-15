@@ -1,0 +1,15 @@
+---
+title: "Introduction to algebra" 
+author: "Erika Duan"
+date: last-modified
+format: 
+    html:
+        toc: true
+        toc-depth: 2   
+        toc-title: Contents  
+execute:   
+  echo: true     
+  output: false   
+  warning: false  
+---
+

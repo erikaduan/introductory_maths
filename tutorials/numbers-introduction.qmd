@@ -14,6 +14,14 @@ execute:
   warning: false  
 ---
 
+::: {.callout-tip}
+## Summary  
+
+This tutorial describes the properties of each number classes. Number class annotation, such as $\mathbb{R}$ is used in mathematical formulas to describe the basic behaviour of input or output functions.   
+
+This tutorial also introduces the concept of the binary number system and illustrates how it differs to the decimal (counting) number system. The binary number system is used by modern computer applications, which describes applications as either 32-bit or 64-bit for example.    
+:::
+
 ```{r}
 #| echo: false
 #| output: false
@@ -34,24 +42,26 @@ library("dplyr")
 library("ggplot2")
 ```
 
+
 # Numbers
 
 Numbers are used to:
 
--   Count objects. *For example, I have 10 tutorials to read.*  
--   Describe object behaviour. *For example, the area of a unit circle is* $\pi r^2$ where $r = 1$.   
--   Solve problems, often by introducing simple assumptions. *For example, if 5 bees can pollinate a* $100 m^2$ field in 10 minutes, how many bees are required to pollinate a 350 $m^2$ field? Assume that pollination efficiency scales perfectly and is not impacted by land shape.    
+-   Count objects. *For example, I have 10 tutorials to read.*
+-   Describe object behaviour. *For example, the area of a unit circle is* $\pi r^2$ where $r = 1$.
+-   Solve problems, often by introducing simple assumptions. *For example, if 5 bees can pollinate a* $100 m^2$ field in 10 minutes, how many bees are required to pollinate a 350 $m^2$ field? Assume that pollination efficiency scales perfectly and is not impacted by land shape.
 -   Represent complex abstractions. *For example, how can individual words be represented in an n-dimensional feature space?*
 
 Numbers can be classified into different categories according to their properties. A number can belong to multiple categories. For example, the number 2 is a **count** (a natural number) and a **whole number** (an integer), and can be represented as a **fraction** i.e. $\tfrac{2}{1}$ (a rational number) and a **complex number** i.e. $3+i^2$.
 
 Number classifications have an elegant hierarchical property:
 
--   All natural numbers are integers.   
--   All integers are rational numbers i.e. $n = \tfrac{n}{1}$.   
+-   All natural numbers are integers.
+-   All integers are rational numbers i.e. $n = \tfrac{n}{1}$.
 -   All rational numbers are complex numbers i.e. $\tfrac{n}{1} = \tfrac{n}{1}+0i$.
 
 ![](../figures/numbers-categories.svg)
+
 
 # Natural numbers
 
@@ -62,6 +72,7 @@ An extension of natural numbers is the need to partition them into consistent bu
 ![](../figures/numbers-number_system.svg)
 
 The binary number system is a more cumbersome representation, but its binary expression range (as a series of logic gates outputting 0s or 1s) underlies its adoption by computer-based systems.
+
 
 # Integers
 
@@ -117,6 +128,7 @@ typeof(3)
 #> (-9223372036854775808, 9223372036854775807)  
 ```
 :::
+
 
 # Real numbers
 
@@ -190,24 +202,24 @@ convert(Float64, 3)
 ```
 :::
 
+
 # Complex numbers
 
-Complex numbers ($a+bi$) are represented by two components which cannot be further simplified:   
+Complex numbers ($\mathbb{C}$; $a+bi$) are represented by two components which cannot be further simplified:
 
--   The term $a$ represents a real number.    
--   The term $bi$ represents the product of a real number and an imaginary number, where $i^2=-1$.    
+-   The term $a$ represents a real number.
+-   The term $bi$ represents the product of a real number and an imaginary number, where $i^2=-1$.
 
-Because the terms $a$ and $bi$ occupy completely different number plans (a real plane versus an imaginary plane), we can think of the combination of $a+bi$ as the sum of two vectors in 2D space. This 2D space is different to the Cartesian plane as its basis vectors are $\{(1, 0), (0, i)\}$.   
+Because the terms $a$ and $bi$ occupy completely different number plans (a real plane versus an imaginary plane), we can think of the combination of $a+bi$ as the sum of two vectors in 2D space. This 2D space is different to the Cartesian plane as its basis vectors are $\{(1, 0), (0, i)\}$.
 
-There is therefore duality between complex number addition and scalar multiplication and vector addition and scalar multiplication.  
+There is therefore duality between complex number addition and scalar multiplication and vector addition and scalar multiplication.
 
-![](../figures/numbers-complex.svg) 
+![](../figures/numbers-complex.svg)
 
-::: panel-tabset   
+::: panel-tabset
+## R
 
-## R  
-
-In R, complex numbers are automatically defined by the presence of the $bi$ imaginary term and assigned as a complex type.   
+In R, complex numbers are automatically defined by the presence of the $bi$ imaginary term and assigned as a complex type.
 
 ```{r}
 # Create complex numbers in R --------------------------------------------------
@@ -232,7 +244,7 @@ sqrt(-1+0i)
 
 ## Python
 
-In Python, complex numbers are created using `complex(a, b)` with the real term accessed via the `.real` method and the imaginary term accessed via `.imag` method. Complex numbers are also assigned as a complex type.     
+In Python, complex numbers are created using `complex(a, b)` with the real term accessed via the `.real` method and the imaginary term accessed via `.imag` method. Complex numbers are also assigned as a complex type.
 
 ```{python}
 # Create complex numbers in Python ---------------------------------------------
@@ -262,7 +274,7 @@ np.sqrt(c)
 
 ## Julia
 
-In Julia, complex numbers are automatically defined by the presence of the $bi$ imaginary term, with `i` denoted by `im` in Julia.     
+In Julia, complex numbers are automatically defined by the presence of the $bi$ imaginary term, with `i` denoted by `im` in Julia.
 
 ```{julia}
 # Create complex numbers in Julia ----------------------------------------------
@@ -278,8 +290,8 @@ typeof(0 + 1im)
 sqrt(-1 + 0im)
 #> 0.0 + 1.0im   
 ```
-
 :::
+
 
 # Resources
 

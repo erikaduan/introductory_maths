@@ -1,0 +1,35 @@
+---
+title: "Introduction to trigonometry" 
+author: "Erika Duan"
+date: last-modified
+format: 
+    gfm:
+        html-math-method: webtex   
+        toc: true
+        toc-depth: 2   
+        toc-title: Contents  
+execute:   
+  echo: true     
+  output: false   
+  warning: false  
+---
+
+```{r}
+#| echo: false
+#| output: false
+
+# Install R packages -----------------------------------------------------------
+# The native pipe operator requires R version 4.1+ 
+packages <- c("ggplot2",
+              "dplyr")
+
+installed_packages <- packages %in% rownames(installed.packages())
+
+if (any(installed_packages == FALSE)) {
+  install.packages(packages[!installed_packages])
+}
+
+# Attach R packages to the global environment
+library("dplyr")
+library("ggplot2")
+```
