@@ -25,8 +25,8 @@ Erika Duan
 # Elementary algebra
 
 Elementary algebra is commonly associated with questions like *Solve for
-x when*
-![2x + y = 6](https://latex.codecogs.com/svg.latex?2x%20%2B%20y%20%3D%206 "2x + y = 6").
+x when
+![2x + y = 6](https://latex.codecogs.com/svg.latex?2x%20%2B%20y%20%3D%206 "2x + y = 6").*
 It is more useful, however, to think of elementary algebra as a form of
 expression that allows us to represent infinitely possible terms using
 finite ones.
@@ -56,10 +56,10 @@ An algebraic term can therefore be decomposed into three parts:
     ![y](https://latex.codecogs.com/svg.latex?y "y") or
     ![x_i](https://latex.codecogs.com/svg.latex?x_i "x_i") where
     ![i=1, \cdots, n](https://latex.codecogs.com/svg.latex?i%3D1%2C%20%5Ccdots%2C%20n "i=1, \cdots, n").
--   The relative **quantity** of each variable. *For example, let*
+-   The relative **quantity** of each variable. *For example, let
     ![x](https://latex.codecogs.com/svg.latex?x "x") represent the
     number of eggs and ![y](https://latex.codecogs.com/svg.latex?y "y")
-    represent the number of cups of sugar required to make a dessert.
+    represent the number of cups of sugar required to make a dessert.*
     The term
     ![x + y](https://latex.codecogs.com/svg.latex?x%20%2B%20y "x + y")
     describes a 1:1 ratio of eggs to sugar whereas the term
@@ -67,13 +67,13 @@ An algebraic term can therefore be decomposed into three parts:
     describes a 2:1 ratio of eggs to sugar and will result in a very
     different taste.
 -   The arithmetic **operator(s)** applied between variables. *For
-    example, in additive models, the relationship between parameters*
+    example, in additive models, the relationship between parameters
     ![y = b_o+b_1x_1 + \cdots + b_nx_n](https://latex.codecogs.com/svg.latex?y%20%3D%20b_o%2Bb_1x_1%20%2B%20%5Ccdots%20%2B%20b_nx_n "y = b_o+b_1x_1 + \cdots + b_nx_n")
     is additive and the dependent variable
     ![y](https://latex.codecogs.com/svg.latex?y "y") therefore increases
     by ![b_1](https://latex.codecogs.com/svg.latex?b_1 "b_1") amount for
     one unit increase in
-    ![x_1](https://latex.codecogs.com/svg.latex?x_1 "x_1").
+    ![x_1](https://latex.codecogs.com/svg.latex?x_1 "x_1").*
 
 # Manipulating inequalities
 
