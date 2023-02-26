@@ -1,49 +1,45 @@
 ---
-title: Probability theory - introduction
-author: Erika Duan
-date: "`r Sys.Date()`"
-output:
-  github_document:
-    html_preview: TRUE
-    toc: true
-    toc_depth: 2
----  
-
-```{r setup, include=FALSE}
-# Set up global environment configuration --------------------------------------
-knitr::opts_chunk$set(echo=TRUE, results='hide', fig.align='center')
-knitr::knit_engines$set(python = reticulate::eng_python)
-```
-
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
-# Load required R packages -----------------------------------------------------
-if (!require("pacman")) install.packages("pacman")
-p_load(reticulate,
-       knitr)
-
-reticulate::py_config()
-```
+title: "Introduction to probability theory" 
+author: "Erika Duan"
+date: last-modified
+format: 
+    gfm:
+        html-math-method: webtex   
+        toc: true
+        toc-depth: 2   
+        toc-title: Contents  
+execute:   
+  echo: true     
+  output: false   
+  warning: false   
+---
 
 
 # Introduction to probability  
 
-Probability is an abstract concept. The frequentist approach considers probability as the relative frequency of a specific outcome, observed from a sample of the true population. The Bayesian approach considers probability as a subjective possibility space dependent on the prior hypothesis and the observed evidence.  
+Probability is a numerical measure of how likely an event is to occur. The frequentist approach considers probability as the long term outcome of a large sampling experiment.   
+Probability can also be thought of as the size of a mathematical set $S$, which can also be visualised in 2D as the occupation of a rectangle $S$.   
 
-Probability can be best thought of as the size of a mathematical set (which can be represented in 2D as a proportion of the total area).  
+In probability theory:  
+
+-   The **random experiment** is a process that results in several possible outcomes, none of which are certain to occur. *For example, a fair dice is rolled and the number on its top face is observed.*
+-   The **sample point** is one possible distinct outcome of the experiment. *For example, a sample point is 1*.
+-   The **sample space** is the set of all possible outcomes. *For example, $S = \{1, 2, 3, 4, 5, 6 \}$ as the events are mutually exclusive*.     
+-   A **simple event** is a subset which only contains one sample point. *For example, a simple event is A = {1}*.
+-   An **event** is any possible subset of the sample space. *For example, an event is any number greater than 3 i.e. B = {4, 5, 6}*.   
+
+To calculate the probability of an event, we can count all the ways that an event could have occurred out of all possibilities generated.       
 
 ## Scenario 1  
 
 Imagine that we simultaneously rolled two fair dice. What is the probability that the sum of two dice equals 5?   
 
-+ From our understanding of the properties of fair dice, we know that the outcome of one dice throw is independent of another.  
-+ We need to calculate all possible combinations of two independent dice rolls. The total number of possible combinations is the **sample space** i.e. the set of all possible outcomes. As there are 6 faces on one dice and we are rolling two dice, the sample space is $6\times6$ or $6^2$ possible outcomes.    
-+ We would then calculate all possible combinations of dice rolls which sum to 5. This is the **event** ($E$), which is a smaller subset of the sample space.  
-+ The **probability** of the event occurring is therefore the ratio of the event relative to the sample space.  
-+ In this scenario, the probability that the sum of two dice equals 5 is $\frac{4}{36}$ or approximately 0.11.  
++ We know that the outcome of one dice throw is independent of the other.  
++ We need to calculate all possible combinations of two independent dice rolls i.e. the sample space. As there are 6 faces on one dice and we are rolling two dice, the sample space is $6^2$ possible outcomes.      
++ We then calculate all possible dice roll events which sum to 5. This is the total number of times event $E$ could have occurred.    
++ The probability of event $E$ occurring is therefore the proportion of the number of times $E$ could have occurred over the sample space i.e. $P(E) = \frac{4}{36} \approx 0.11$.      
 
-```{r, echo=FALSE, results='markup', out.width="70%"}
-knitr::include_graphics("../figures/probability-introduction_to_probability-scenario_1.svg")
-```
+![](../figures/probability-introduction-scenario_1.svg)
 
 ## Scenario 2  
 
