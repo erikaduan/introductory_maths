@@ -17,30 +17,10 @@ execute:
 ::: {.callout-tip}
 ## Summary  
 
-This tutorial describes the properties of each number classes. Number class annotation, such as $\mathbb{R}$ is used in mathematical formulas to describe the basic behaviour of input or output functions.   
+This tutorial describes the properties of number classes. Number class annotation, such as $\mathbb{R}$, is commonly used in mathematical formulas to describe the properties of functions.    
 
-This tutorial also introduces the concept of the binary number system and illustrates how it differs to the decimal (counting) number system. The binary number system is used by modern computer applications, which describes applications as either 32-bit or 64-bit for example.    
+This tutorial also introduces the concept of the binary number system and illustrates how it differs to the decimal (counting) number system. The binary number system is used by modern computer applications, which describes applications as being either 32-bit or 64-bit.     
 :::
-
-```{r}
-#| echo: false
-#| output: false
-
-# Install R packages -----------------------------------------------------------
-# The native pipe operator requires R version 4.1+ 
-packages <- c("ggplot2",
-              "dplyr")
-
-installed_packages <- packages %in% rownames(installed.packages())
-
-if (any(installed_packages == FALSE)) {
-  install.packages(packages[!installed_packages])
-}
-
-# Attach R packages to the global environment
-library("dplyr")
-library("ggplot2")
-```
 
 
 # Numbers
@@ -65,9 +45,9 @@ Number classifications have an elegant hierarchical property:
 
 # Natural numbers
 
-Natural numbers ($\mathbb{N}$) are useful for describing the dimensions of mathematical space (also known as a [feature space](https://stats.stackexchange.com/questions/46425/what-is-feature-space)). For example, the Cartesian plane is an example of an $\mathbb{R}^2$ feature space.
+Natural numbers ($\mathbb{N}$) are whole positive numbers. They are most commonly used for describing the dimensions of mathematical space (also known as a [feature space](https://stats.stackexchange.com/questions/46425/what-is-feature-space)). For example, the Cartesian plane is an example of an $\mathbb{R}^2$ feature space.
 
-An extension of natural numbers is the need to partition them into consistent bundles, to represent very large natural numbers. For example, the **base 10** or **decimal** system represents 136 as $(1\times10^2) + (3\times 10^1) + (6\times 10^0)$ whereas the **base 2** or **binary** system represents 136 as $(1\times2^7) + (0\times 2^6) + (0\times 2^5) + (0\times 2^4) + (1\times 2^3) + (0\times 2^2) + (0\times 2^1) + (0\times 2^0)$.
+An extension of natural numbers is the need to partition them into consistent bundles, to represent and count very large natural numbers. For example, the **base 10** or **decimal** system represents 136 as $(1\times10^2) + (3\times 10^1) + (6\times 10^0)$ whereas the **base 2** or **binary** system represents 136 as $(1\times2^7) + (0\times 2^6) + (0\times 2^5) + (0\times 2^4) + (1\times 2^3) + (0\times 2^2) + (0\times 2^1) + (0\times 2^0)$.
 
 ![](../figures/numbers-number_system.svg)
 

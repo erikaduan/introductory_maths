@@ -1,7 +1,7 @@
 Introduction to numbers
 ================
 Erika Duan
-1/15/23
+2/26/23
 
 -   <a href="#numbers" id="toc-numbers">Numbers</a>
 -   <a href="#natural-numbers" id="toc-natural-numbers">Natural numbers</a>
@@ -14,17 +14,17 @@ Erika Duan
 
 > **Summary**
 >
-> This tutorial describes the properties of each number classes. Number
-> class annotation, such as
-> ![\mathbb{R}](https://latex.codecogs.com/svg.latex?%5Cmathbb%7BR%7D "\mathbb{R}")
-> is used in mathematical formulas to describe the basic behaviour of
-> input or output functions.
+> This tutorial describes the properties of number classes. Number class
+> annotation, such as
+> ![\mathbb{R}](https://latex.codecogs.com/svg.latex?%5Cmathbb%7BR%7D "\mathbb{R}"),
+> is commonly used in mathematical formulas to describe the properties
+> of functions.
 >
 > This tutorial also introduces the concept of the binary number system
 > and illustrates how it differs to the decimal (counting) number
 > system. The binary number system is used by modern computer
-> applications, which describes applications as either 32-bit or 64-bit
-> for example.
+> applications, which describes applications as being either 32-bit or
+> 64-bit.
 
 </div>
 
@@ -70,16 +70,16 @@ Number classifications have an elegant hierarchical property:
 
 Natural numbers
 (![\mathbb{N}](https://latex.codecogs.com/svg.latex?%5Cmathbb%7BN%7D "\mathbb{N}"))
-are useful for describing the dimensions of mathematical space (also
-known as a [feature
+are whole positive numbers. They are most commonly used for describing
+the dimensions of mathematical space (also known as a [feature
 space](https://stats.stackexchange.com/questions/46425/what-is-feature-space)).
 For example, the Cartesian plane is an example of an
 ![\mathbb{R}^2](https://latex.codecogs.com/svg.latex?%5Cmathbb%7BR%7D%5E2 "\mathbb{R}^2")
 feature space.
 
 An extension of natural numbers is the need to partition them into
-consistent bundles, to represent very large natural numbers. For
-example, the **base 10** or **decimal** system represents 136 as
+consistent bundles, to represent and count very large natural numbers.
+For example, the **base 10** or **decimal** system represents 136 as
 ![(1\times10^2) + (3\times 10^1) + (6\times 10^0)](https://latex.codecogs.com/svg.latex?%281%5Ctimes10%5E2%29%20%2B%20%283%5Ctimes%2010%5E1%29%20%2B%20%286%5Ctimes%2010%5E0%29 "(1\times10^2) + (3\times 10^1) + (6\times 10^0)")
 whereas the **base 2** or **binary** system represents 136 as
 ![(1\times2^7) + (0\times 2^6) + (0\times 2^5) + (0\times 2^4) + (1\times 2^3) + (0\times 2^2) + (0\times 2^1) + (0\times 2^0)](https://latex.codecogs.com/svg.latex?%281%5Ctimes2%5E7%29%20%2B%20%280%5Ctimes%202%5E6%29%20%2B%20%280%5Ctimes%202%5E5%29%20%2B%20%280%5Ctimes%202%5E4%29%20%2B%20%281%5Ctimes%202%5E3%29%20%2B%20%280%5Ctimes%202%5E2%29%20%2B%20%280%5Ctimes%202%5E1%29%20%2B%20%280%5Ctimes%202%5E0%29 "(1\times2^7) + (0\times 2^6) + (0\times 2^5) + (0\times 2^4) + (1\times 2^3) + (0\times 2^2) + (0\times 2^1) + (0\times 2^0)").

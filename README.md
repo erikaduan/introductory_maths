@@ -7,7 +7,7 @@ This repository contains tutorials on the introductory mathematical concepts req
 |Topics|Tutorials|
 |:-----|:--------|
 |:1234:|[Introduction to numbers](./tutorials/numbers-introduction.md)|    
-|:1234:|Introduction to algebra|     
+|:1234:|[Introduction to algebra - work in progress](./tutorials/algebra-introduction.md)|     
 |:compass:|Introduction to trigonometry|    
 |:cookie:|Introduction to summations|    
 |:1234:|[Introduction to functions](./tutorials/functions-introduction.md)|   
@@ -71,4 +71,5 @@ Writing mathematical proofs might feel archaic but they are a great way to help 
 + The [Mathematics for Machine Learning textbook](https://mml-book.github.io/book/mml-book.pdf) by Marc Peter Deisenroth, A Aldo Faisal and Cheng Soon Ong - Cambridge University Press
 + The [Probability for Data Science textbook](https://probability4datascience.com/) by Stanley H Chan - Michigan Publishing
 + The [Probabilistic modelling tutorials](https://betanalpha.github.io/writing/) by Michael Betancourt - GitHub
-+ Writing [mathematical operations in LaTex/R](https://en.wikibooks.org/wiki/LaTeX/Mathematics#Fractions_and_Binomials) - Wikibooks
++ Writing [mathematical operations in LaTex/R](https://en.wikibooks.org/wiki/LaTeX/Mathematics#Fractions_and_Binomials) - Wikibooks  
++ Introduction to university mathematics [YouTube lecture series ]https://www.youtube.com/playlist?list=PL4d5ZtfQonW1xKVEtYJd1iu9m52ATG7SV by the Department of Mathematics - Oxford University.  
