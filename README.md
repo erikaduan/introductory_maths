@@ -6,8 +6,8 @@ This repository contains tutorials on the introductory mathematical concepts req
 ## Tutorials    
 |Topics|Tutorials|
 |:-----|:--------|
-|:1234:|[Introduction to numbers](./tutorials/numbers-introduction.md)|    
-|:1234:|[Introduction to algebra - work in progress](./tutorials/algebra-introduction.md)|     
+|:1234:|[Introduction to numbers](./tutorials/numbers-introduction.md) (Updated)|    
+|:1234:|[Introduction to algebra](./tutorials/algebra-introduction.md)|     
 |:compass:|Introduction to trigonometry|    
 |:cookie:|Introduction to summations|    
 |:1234:|[Introduction to functions](./tutorials/functions-introduction.md)|   

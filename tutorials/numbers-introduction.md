@@ -220,23 +220,17 @@ floats.
 # Check float type in Python ---------------------------------------------------
 type(3.0)
 #> <class 'float'>  
-```
 
-``` python
 float(3)
 #> 3.0
 
 # Do not cast doubles into integers as decimal numbers are floored not rounded  
-```
 
-``` python
 (int(3.4), int(3.8))
 #> (3, 3)  
 
 # Python also rounds reoccurring decimals  
-```
 
-``` python
 (1/3, 10/3)
 #> (0.3333333333333333, 3.3333333333333335)    
 ```
@@ -340,27 +334,19 @@ c = complex(-1, 0)
 
 type(c)
 #> <class 'complex'>  
-```
 
-``` python
 (c.real, c.imag)
 #> (-1.0, 0.0) 
-```
 
-``` python
 c**2 
 #> (1-0j)
 
 # np.sqrt() works on complex numbers but not negative integers  
-```
 
-``` python
 np.sqrt(-1)
 #> Runtime Warning: invalid value encountered in sqrt
 #> nan
-```
 
-``` python
 np.sqrt(c)
 #> 1j  
 ```
