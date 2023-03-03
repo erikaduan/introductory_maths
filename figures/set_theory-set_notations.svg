@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    width="1280"
-   height="490"
+   height="500"
    overflow="hidden"
    version="1.1"
    id="svg219"
@@ -22,8 +22,8 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      inkscape:zoom="0.92709556"
-     inkscape:cx="558.19489"
-     inkscape:cy="147.77333"
+     inkscape:cx="551.72306"
+     inkscape:cy="103.5492"
      inkscape:window-width="2880"
      inkscape:window-height="1514"
      inkscape:window-x="3829"
@@ -45,7 +45,7 @@
   <g
      clip-path="url(#clip0)"
      id="g217"
-     transform="translate(32.359124)">
+     transform="translate(29.123212,8.6290997)">
     <rect
        x="0"
        y="0"
@@ -54,7 +54,7 @@
        fill="#ffffff"
        id="rect7" />
     <text
-       fill="#4472c4"
+       fill="#c00000"
        font-family="Calibri, Calibri_MSFontService, sans-serif"
        font-weight="400"
        font-size="32px"
@@ -73,7 +73,7 @@
        transform="translate(416.838,405)"
        id="text13">S</text>
     <text
-       fill="#4472c4"
+       fill="#c00000"
        font-family="Calibri, Calibri_MSFontService, sans-serif"
        font-weight="400"
        font-size="32px"
@@ -325,7 +325,7 @@
        transform="translate(643.721,152)"
        id="text101">{</text>
     <text
-       fill="#4472c4"
+       fill="#c00000"
        font-family="Calibri, Calibri_MSFontService, sans-serif"
        font-weight="400"
        font-size="59px"
@@ -607,14 +607,14 @@
        id="text201">🦆</text>
     <path
        d="M 120,176.334 C 120,168.417 126.417,162 134.334,162 h 57.332 c 7.917,0 14.334,6.417 14.334,14.334 V 318.666 C 206,326.583 199.583,333 191.666,333 H 134.334 C 126.417,333 120,326.583 120,318.666 Z"
-       stroke="#4472c4"
+       stroke="#c00000"
        stroke-width="4"
        stroke-miterlimit="8"
        fill="none"
        fill-rule="evenodd"
        id="path203" />
     <text
-       fill="#4472c4"
+       fill="#c00000"
        font-family="Calibri, Calibri_MSFontService, sans-serif"
        font-weight="700"
        font-size="59px"
