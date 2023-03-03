@@ -1,0 +1,105 @@
+---
+title: "Introduction to set theory" 
+author: "Erika Duan"
+date: last-modified
+format: 
+    gfm:
+        html-math-method: webtex   
+        toc: true
+        toc-depth: 2   
+        toc-title: Contents  
+execute:   
+  echo: true     
+  output: false   
+  warning: false  
+---
+
+::: callout-tip
+## Summary
+
+This tutorial provides a framework for describing element belonging to a set, where a set is a collection of distinct elements. Working with sets is a prerequisite for understanding the key properties of probability theory.     
+:::
+
+
+# What is a set?  
+
+A set is a collection of distinct objects or elements ($e$). We reference a set by listing all its elements. *For example, $S = \{cat, \;mouse, \;dog \}$ or $S = \{1, 2, 3, 4, 5, 6 \}$ to describe all the possible distinct outcomes when we roll a dice and observe its upper face.*      
+
+Set notation:   
+
+-   An example of a finite set is $A = \{1, 3, 5 \}$. A finite set is countable by definition.   
+-   An example of a countably infinite set is $B = \{1, 2, \cdots \}$. The set consists of integers which extend fro to infinity.    
+-   An example of an uncountably infinite set is $C = (1, 0)$. The set is uncountable as it comprises all real numbers between 0 and 1.  
+-   The **null set** ($\varnothing$) does not contain any elements and is denoted by $\varnothing = \{\}$.   
+-   $S$ is used to denote the universal set, which is the set of all objects under consideration.  
+-   The complement of set $A$ is the set of elements which are in $S$ but not in $A$. This is expressed in mathematical notation as $\bar{A} = \{e : e\in S, e\notin A\}$.   
+-   If all elements of set $A$ are also in set $B$, set $A$ is a subset of set $B$ and this is denoted as $A \subseteq B$. There are only two possibilities when this is true, that the number of elements in set A are fewer than those in set B or that set A and B contain the same elements.   
+-   If $A \subseteq B$ and $B \subseteq A$, then $A = B$.      
+
+![](../figures/set_theory-set_notations.svg)   
+
+
+# Working with two or more sets   
+
+Venn diagrams are useful for conceptually visualising set properties. However, we still want to use rigorous mathematical proofs when asserting set properties.  
+
+
+
+![](../figures/set_theory-set_operations.svg)
+
+::: panel-tabset
+## R
+
+R does not have a set data type.  
+
+```{r}
+# Compute inequality in R ------------------------------------------------------
+4 <= 4
+#> [1] TRUE
+
+4 < 4
+#> [1] FALSE
+
+class(4 < 4)
+#> [1] "logical"
+```
+
+## Python
+
+In Python, inequality statements are also outputted as Boolean values i.e. `True` or `False`.
+
+```{python}
+# Compute inequality in Python -------------------------------------------------
+4 <= 4
+#> True 
+
+type(4 <= 4)
+#> <class 'bool'>  
+```
+
+## Julia
+
+In Julia, inequality statements are also outputted as Boolean values i.e. `true` or `false`.
+
+```{julia}
+# Compute inequality in Julia --------------------------------------------------
+4 <= 4
+#> true 
+
+typeof(4 <= 4) 
+#> true
+#> Bool
+
+a = 1
+b = 2
+c = 3
+
+a < b, a + c < b + c
+#> (true, true) 
+```
+:::
+
+
+# Resources
+
+-   [Wikipedia entry](https://en.wikipedia.org/wiki/Algebra_of_sets) on set algebra.    
