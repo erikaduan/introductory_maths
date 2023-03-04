@@ -188,48 +188,69 @@ The set order has no impact on the union or intersection of two sets. This is in
 
 ## Associative laws   
 
-The set order also has no impact when only either an intersection or union is performed on more than two sets. This is similarly intuitive to the commutative laws, as introducing extra sets does not change contents of each individual set.     
--   $A \cup B \cup C = (A \cup B) \cup C = A \cup (B \cup C)$    
--   $A \cap B \cup C = (A \cap B) \cap C = A \cup (B \cap C)$   
+The set order also has no impact when only either an intersection or union is performed on more than two sets. This is similarly intuitive to the commutative laws, as introducing extra sets does not change contents of each individual set.    
+
+-   $A \cup B \cup C = (A \cup B) \cup C = A \cup (B \cup C)$     
+-   $A \cap B \cup C = (A \cap B) \cap C = A \cup (B \cap C)$    
 
 ![](../figures/set_theory-associative_laws.svg)
 
 ## Distributive laws   
 
-The sequence of first performing the set operation inside the parenthesis matters when both an intersection and union are applied to multiple sets. This is similar to how the sequence of first performing the operation inside the parenthesis matters in elementary algebra. *For example, $2+(3 \times 4) \neq (2 + 3) \times 4$.*      
+The sequence of first performing the set operation inside the parenthesis matters when both an intersection and union are applied to multiple sets. This is similar to how the sequence of first performing the operation inside the parenthesis matters in elementary algebra. *For example, $2+(3 \times 4) \neq (2 + 3) \times 4.$*      
 
 -   $A \cup (B \cap C) \neq (A \cup B) \cap C$   
 -   $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$    
--   $A \cap (B \cup C) \neq (A \cap B) \cup C)$  
--   $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$  
 
 ![](../figures/set_theory-distributive_laws_1.svg)
+-   $A \cap (B \cup C) \neq (A \cap B) \cup C)$  
+-   $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$   
+
 ![](../figures/set_theory-distributive_laws_2.svg)
 
 ## De Morgan's laws   
 
 De Morgan's law is less immediately obvious and can be visualised by Venn diagrams or (more preferably) proven mathematically.   
 
--   $\overline{A\cup B} = \bar A \cap \bar B$  
-
-This is proved by the following argument.  
+-   $\overline{A\cup B} = \bar A \cap \bar B$    
 
 ::: callout-tip
-Proof 1
-Step 1
-Step 2
+## Proof 1  
+
+Suppose that $e \in \overline{A\cup B}$     
+Then $e \notin A \cup B$   
+$\implies e \notin A, \; e \notin B$     
+$\implies e \in \bar A, \; e \in \bar B$     
+$\implies e \in \bar A \cap \bar B$     
+Therefore, $\overline{A\cup B} \subseteq \bar A \cap \bar B$   
+
+Similarly, suppose that $e \in \bar A \cap \bar B$    
+Then $e \in \bar A, \; e \in \bar B$   
+$\implies e \notin A, \; e \notin B$   
+$\implies e \notin A \cup B$   
+$\implies e \in \overline{A\cup B}$    
+Therefore, $\bar A \cap \bar B \subseteq \overline{A\cup B}$    
+
+Therefore, $\overline{A\cup B} = \bar A \cap \bar B$   
 :::
 
-
--   $\overline{A\cap B} = \bar A \cup \bar B$
+-   $\overline{A\cap B} = {\bar A} \cup {\bar B}$    
 
 This is proved by the following argument.    
 
 ::: callout-tip
-Proof 2
-Step 1
-Step 2     
+## Proof 2 
+
+From proof 1, $\overline{A\cup B} \subseteq \bar A \cap \bar B$   
+
+If we substitute A with $\bar A$ and B with $\bar B$  
+$\implies \overline{\bar A \cup \bar B} = \bar {\bar A} \cap \bar {\bar B}$   
+$\implies \overline{\bar A \cup \bar B} = A \cap B$ 
+$\implies {\bar A \cup \bar B} = \overline {A \cap B}$  
+
+Therefore, $\overline{A\cap B} = {\bar A} \cup {\bar B}$    
 :::
+
 
 # Resources
 
