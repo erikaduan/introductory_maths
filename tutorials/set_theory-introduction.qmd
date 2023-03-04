@@ -23,8 +23,9 @@ This tutorial provides a framework for describing element belonging to a set, wh
 
 # What is a set?  
 
-A set is a collection of distinct objects or elements ($e$). We reference a set by listing all its elements.  
-*For example, $S = \{cat, \;mouse, \;dog \}$ or $S = \{1, 2, 3, 4, 5, 6 \}$ to describe all the possible distinct outcomes when we roll a dice and observe its upper face.*     
+A set is a collection of distinct objects or elements ($e$).   
+
+We reference a set by listing all its elements. *For example, $S = \{cat, \;mouse, \;dog \}$ or $S = \{1, 2, 3, 4, 5, 6 \}$ to describe all the possible distinct outcomes when we roll a dice and observe its upper face.*     
 
 Set notation:   
 
@@ -96,7 +97,9 @@ print(set_a)
 #> {1, 2, 3}
 type(set_a)
 #> <class 'set'>  
+```
 
+```{python}
 # Perform set operations in Python ---------------------------------------------
 set_b = {1, 3, 6}
 type(set_b)
@@ -123,14 +126,19 @@ set_a.symmetric_difference(set_b)
 #> {2, 6}  
 set_a.symmetric_difference(set_b) == set_a ^ set_b
 #> True  
+```
 
+```{python}
 # Identify disjoint sets in Python ---------------------------------------------
-set_a.isdisjoint(set_b)
-#> False
+set_c = {8, 9}
+set_a.isdisjoint(set_c)
+#> True
+```
 
+```{python}
 # Identify subsets in Python ---------------------------------------------------
-set_c = {1, 2, 3, 4}  
-set_a.issubset(set_c)
+set_d = {1, 2, 3, 4}  
+set_a.issubset(set_d)
 #> True 
 ```
 
@@ -147,7 +155,9 @@ typeof(a)
 #> Set{Int64}  
 print(a)
 #> Set([2, 3, 1])  
+```
 
+```{julia}
 # Perform set operations in Julia ----------------------------------------------
 print(union(a, b))
 #> Set([6, 2, 3, 1])  
@@ -167,14 +177,59 @@ print(symdiff(a, b))
 
 # Set algebra  
 
-## Commutative laws  
+## Commutative laws   
 
-## Associative laws  
+The set order has no impact on the union or intersection of two sets. This is intuitive as changing the set order does not change contents of each individual set.    
 
-## Distributive laws  
+-   $A \cup B = B \cup A$    
+-   $A \cap B = B \cap A$    
+
+![](../figures/set_theory-commutative_laws.svg)
+
+## Associative laws   
+
+The set order also has no impact when only either an intersection or union is performed on more than two sets. This is similarly intuitive to the commutative laws, as introducing extra sets does not change contents of each individual set.     
+-   $A \cup B \cup C = (A \cup B) \cup C = A \cup (B \cup C)$    
+-   $A \cap B \cup C = (A \cap B) \cap C = A \cup (B \cap C)$   
+
+![](../figures/set_theory-associative_laws.svg)
+
+## Distributive laws   
+
+The sequence of first performing the set operation inside the parenthesis matters when both an intersection and union are applied to multiple sets. This is similar to how the sequence of first performing the operation inside the parenthesis matters in elementary algebra. *For example, $2+(3 \times 4) \neq (2 + 3) \times 4$.*      
+
+-   $A \cup (B \cap C) \neq (A \cup B) \cap C$   
+-   $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$    
+-   $A \cap (B \cup C) \neq (A \cap B) \cup C)$  
+-   $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$  
+
+![](../figures/set_theory-distributive_laws_1.svg)
+![](../figures/set_theory-distributive_laws_2.svg)
 
 ## De Morgan's laws   
 
+De Morgan's law is less immediately obvious and can be visualised by Venn diagrams or (more preferably) proven mathematically.   
+
+-   $\overline{A\cup B} = \bar A \cap \bar B$  
+
+This is proved by the following argument.  
+
+::: callout-tip
+Proof 1
+Step 1
+Step 2
+:::
+
+
+-   $\overline{A\cap B} = \bar A \cup \bar B$
+
+This is proved by the following argument.    
+
+::: callout-tip
+Proof 2
+Step 1
+Step 2     
+:::
 
 # Resources
 

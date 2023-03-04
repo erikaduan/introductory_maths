@@ -1,1 +1,755 @@
-<svg width="1280" height="720" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" overflow="hidden"><defs><clipPath id="clip0"><rect x="0" y="0" width="1280" height="720"/></clipPath></defs><g clip-path="url(#clip0)"><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF"/><rect x="345.5" y="480.5" width="264" height="189" stroke="#000000" stroke-width="3" stroke-miterlimit="8" fill="#C00000" fill-opacity="0.2"/><rect x="400.5" y="503.5" width="111" height="111" stroke="#000000" stroke-width="3" stroke-miterlimit="8" fill="#FFFFFF"/><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="43" transform="translate(521.367 532)">B</text><rect x="59.5001" y="54.5001" width="265" height="189" stroke="#000000" stroke-width="3" stroke-miterlimit="8" fill="#FFFFFF"/><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="700" font-size="37" transform="translate(643.75 352)">Union</text><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="700" font-size="37" transform="translate(642.189 128)">Intersection</text><rect x="59.5001" y="132.5" width="111" height="111" stroke="#000000" stroke-width="3" stroke-miterlimit="8" fill="#B4C7E7" fill-opacity="0.501961"/><rect x="114.5" y="77.5001" width="111" height="111" stroke="#000000" stroke-width="3" stroke-miterlimit="8" fill="#C00000" fill-opacity="0.4"/><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="43" transform="translate(74.5647 227)">A</text><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="43" transform="translate(185.894 116)">B</text><rect x="344.5" y="344.5" width="111" height="111" stroke="#000000" stroke-width="3" stroke-miterlimit="8" fill="#C1A3F1"/><rect x="400.5" y="289.5" width="110" height="111" stroke="#000000" stroke-width="3" stroke-miterlimit="8" fill="#C1A3F1"/><rect x="382" y="346" width="72" height="63" fill="#C1A3F1"/><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="43" transform="translate(382.443 385)">A</text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="43" transform="translate(416.776 385)">∪</text><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="43" transform="translate(455.443 385)">B</text><rect x="396.5" y="134.5" width="55" height="53" stroke="#000000" stroke-width="3" stroke-miterlimit="8" fill="#C1A3F1"/><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="43" transform="translate(374.627 123)">A</text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="43" transform="translate(408.961 123)">∩</text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="43" transform="translate(437.961 123)"></text><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="43" transform="translate(447.294 123)">B</text><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(645.311 390)">A</text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(675.478 390)">∪</text><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(709.478 390)">B = {</text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(777.144 390)">e</text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(795.311 390)">:</text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(811.364 390)">e</text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(839.904 390)">∈</text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(873.611 390)">𝐴</text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(897.278 390)"></text><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(905.444 390)">or</text><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(938.111 390)"></text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(946.611 390)">e</text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(975.151 390)">∈</text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(1008.86 390)">𝐵</text><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(1034.36 390)">}</text><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(643.75 165)">A</text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(665.417 165)"></text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(673.583 165)">∩</text><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(707.583 165)">B = {</text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(775.25 165)">e</text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(793.417 165)">:</text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(809.47 165)">e</text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(838.01 165)">∈</text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(871.717 165)">𝐴</text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(895.75 165)">,</text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(909.637 165)">e</text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(938.177 165)">∈</text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(971.883 165)">𝐵</text><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(997.383 165)">}</text><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="700" font-size="27" transform="translate(642.044 216)">Note:</text><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="27" transform="translate(709.551 216)">the comma represents AND</text><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="700" font-size="37" transform="translate(925.315 543)">A</text><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(956.482 543)">−</text><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="700" font-size="37" transform="translate(983.648 543)">B</text><rect x="630.5" y="558.5" width="110" height="111" stroke="#000000" stroke-width="3" stroke-miterlimit="8" fill="#C1A3F1"/><rect x="668" y="560" width="71" height="63" fill="#C1A3F1"/><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(927.297 581)">A</text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(948.963 581)"></text><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(957.13 581)">−</text><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(984.297 581)">B = A</text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(1061.96 581)"></text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(1070.13 581)">∩</text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(1104.13 581)">𝐵</text><path d="M15.9165-21.6255 0-21.6255 0-23.5405 15.9165-23.5405Z" transform="translate(1110.32 574)"/><text fill="#000000" fill-opacity="0" font-family="Arial,Arial_MSFontService,sans-serif" font-size="1.91504" y="-21.8649">ത</text><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(1138.13 581)">=</text><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(927.297 626)">{</text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(938.963 626)">e</text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(957.13 626)">:</text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(973.183 626)">e</text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(1001.72 626)">∈</text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(1035.43 626)">𝐴</text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(1059.1 626)">,</text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(1066.76 626)"></text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(1074.93 626)">e</text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(1103.47 626)">∉</text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(1137.68 626)">𝐵</text><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="37" transform="translate(1163.18 626)">}</text><rect x="685.5" y="558.5" width="56" height="53" stroke="#000000" stroke-width="3" stroke-miterlimit="8" fill="#FFFFFF"/><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="43" transform="translate(640.151 547)">A</text><text font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="43" transform="translate(664.818 547)"></text><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="43" transform="translate(674.151 547)">−</text><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="43" transform="translate(705.151 547)">B</text><rect x="59.5001" y="267.5" width="265" height="189" stroke="#000000" stroke-width="3" stroke-miterlimit="8" fill="#FFFFFF"/><rect x="59.5001" y="345.5" width="111" height="111" stroke="#000000" stroke-width="3" stroke-miterlimit="8" fill="#B4C7E7" fill-opacity="0.501961"/><rect x="114.5" y="290.5" width="111" height="111" stroke="#000000" stroke-width="3" stroke-miterlimit="8" fill="#C00000" fill-opacity="0.4"/><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="43" transform="translate(74.5646 440)">A</text><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="43" transform="translate(185.894 329)">B</text><rect x="59.5001" y="480.5" width="265" height="189" stroke="#000000" stroke-width="3" stroke-miterlimit="8" fill="#FFFFFF"/><rect x="59.5001" y="558.5" width="111" height="111" stroke="#000000" stroke-width="3" stroke-miterlimit="8" fill="#B4C7E7" fill-opacity="0.501961"/><rect x="115.5" y="503.5" width="111" height="111" stroke="#000000" stroke-width="3" stroke-miterlimit="8" fill="#C00000" fill-opacity="0.4"/><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="43" transform="translate(74.8686 653)">A</text><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="43" transform="translate(186.198 542)">B</text><path d="M525.5 498.5 541.374 498.5" stroke="#000000" stroke-width="3" stroke-miterlimit="8" fill="none" fill-rule="evenodd"/><rect x="344.5" y="558.5" width="111" height="111" stroke="#000000" stroke-width="3" stroke-miterlimit="8" fill="#B4C7E7" fill-opacity="0.501961"/><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="43" transform="translate(359.707 656)">A</text><rect x="687" y="548" width="67" height="61" fill="#FFFFFF"/></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1280"
+   height="700"
+   overflow="hidden"
+   version="1.1"
+   id="svg213"
+   sodipodi:docname="set_theory-set_operations.svg"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview215"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.65555556"
+     inkscape:cx="696.35593"
+     inkscape:cy="414.91525"
+     inkscape:window-width="2880"
+     inkscape:window-height="1514"
+     inkscape:window-x="3829"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg213" />
+  <defs
+     id="defs5">
+    <clipPath
+       id="clip0">
+      <rect
+         x="0"
+         y="0"
+         width="1280"
+         height="720"
+         id="rect2" />
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#clip0)"
+     id="g211"
+     transform="translate(27.457627,-13.728814)">
+    <rect
+       x="0"
+       y="0"
+       width="1280"
+       height="720"
+       fill="#ffffff"
+       id="rect7" />
+    <rect
+       x="346.5"
+       y="268.5"
+       width="265"
+       height="189"
+       stroke="#000000"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="#ffffff"
+       id="rect9" />
+    <rect
+       x="345.5"
+       y="480.5"
+       width="264"
+       height="189"
+       stroke="#000000"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="#c00000"
+       fill-opacity="0.2"
+       id="rect11" />
+    <rect
+       x="400.5"
+       y="503.5"
+       width="111"
+       height="111"
+       stroke="#000000"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="#ffffff"
+       id="rect13" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="43px"
+       transform="translate(521.367,532)"
+       id="text15">B</text>
+    <rect
+       x="59.500099"
+       y="54.500099"
+       width="265"
+       height="189"
+       stroke="#000000"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="#ffffff"
+       id="rect17" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="37px"
+       transform="translate(643.75,352)"
+       id="text19">Union</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="37px"
+       transform="translate(642.189,128)"
+       id="text21">Intersection</text>
+    <rect
+       x="59.500099"
+       y="132.5"
+       width="111"
+       height="111"
+       stroke="#000000"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="#b4c7e7"
+       fill-opacity="0.501961"
+       id="rect23" />
+    <rect
+       x="114.5"
+       y="77.500099"
+       width="111"
+       height="111"
+       stroke="#000000"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="#c00000"
+       fill-opacity="0.4"
+       id="rect25" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="43px"
+       transform="translate(74.5647,227)"
+       id="text27">A</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="43px"
+       transform="translate(185.894,116)"
+       id="text29">B</text>
+    <rect
+       x="346.5"
+       y="346.5"
+       width="111"
+       height="111"
+       stroke="#000000"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="#c1a3f1"
+       id="rect31" />
+    <rect
+       x="402.5"
+       y="291.5"
+       width="110"
+       height="111"
+       stroke="#000000"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="#c1a3f1"
+       id="rect33" />
+    <rect
+       x="384"
+       y="348"
+       width="72"
+       height="63"
+       fill="#c1a3f1"
+       id="rect35" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="43px"
+       transform="translate(384.359,386)"
+       id="text37">A</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="43px"
+       transform="translate(418.692,386)"
+       id="text39">∪</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="43px"
+       transform="translate(457.359,386)"
+       id="text41">B</text>
+    <rect
+       x="346.5"
+       y="55.500099"
+       width="265"
+       height="188"
+       stroke="#000000"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="#ffffff"
+       id="rect43" />
+    <rect
+       x="396.5"
+       y="134.5"
+       width="56"
+       height="53"
+       stroke="#000000"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="#c1a3f1"
+       id="rect45" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="43px"
+       transform="translate(375.086,124)"
+       id="text47">A</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="43px"
+       transform="translate(409.42,124)"
+       id="text49">∩</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="43px"
+       transform="translate(438.42,124)"
+       id="text51" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="43px"
+       transform="translate(447.753,124)"
+       id="text53">B</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(645.311,390)"
+       id="text55">A</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(675.478,390)"
+       id="text57">∪</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(709.478,390)"
+       id="text59">B = {</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(777.144,390)"
+       id="text61">e</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(795.311,390)"
+       id="text63">:</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(811.364,390)"
+       id="text65">e</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(839.904,390)"
+       id="text67">∈</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(873.611,390)"
+       id="text69">𝐴</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(897.278,390)"
+       id="text71" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(905.444,390)"
+       id="text73">or</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(938.111,390)"
+       id="text75" />
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(946.611,390)"
+       id="text77">e</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(975.151,390)"
+       id="text79">∈</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(1008.86,390)"
+       id="text81">𝐵</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(1034.36,390)"
+       id="text83">}</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(643.75,165)"
+       id="text85">A</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(665.417,165)"
+       id="text87" />
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(673.583,165)"
+       id="text89">∩</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(707.583,165)"
+       id="text91">B = {</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(775.25,165)"
+       id="text93">e</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(793.417,165)"
+       id="text95">:</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(809.47,165)"
+       id="text97">e</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(838.01,165)"
+       id="text99">∈</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(871.717,165)"
+       id="text101">𝐴</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(895.75,165)"
+       id="text103">,</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(909.637,165)"
+       id="text105">e</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(938.177,165)"
+       id="text107">∈</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(971.883,165)"
+       id="text109">𝐵</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(997.383,165)"
+       id="text111">}</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="27px"
+       transform="translate(642.044,216)"
+       id="text113">Note:</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="27px"
+       transform="translate(709.551,216)"
+       id="text115">the comma represents AND</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="37px"
+       transform="translate(925.315,543)"
+       id="text117">A</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(956.482,543)"
+       id="text119">−</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="37px"
+       transform="translate(983.648,543)"
+       id="text121">B</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(927.297,581)"
+       id="text123">A</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(948.963,581)"
+       id="text125" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(957.13,581)"
+       id="text127">−</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(984.297,581)"
+       id="text129">B = A</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(1061.96,581)"
+       id="text131" />
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(1070.13,581)"
+       id="text133">∩</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(1104.13,581)"
+       id="text135">𝐵</text>
+    <path
+       d="M 15.9165,-21.6255 H 0 v -1.915 h 15.9165 z"
+       transform="translate(1110.32,574)"
+       id="path137" />
+    <text
+       fill="#000000"
+       fill-opacity="0"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-size="1.91504px"
+       y="-21.864901"
+       id="text139">ത</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(1138.13,581)"
+       id="text141">=</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(927.297,626)"
+       id="text143">{</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(938.963,626)"
+       id="text145">e</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(957.13,626)"
+       id="text147">:</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(973.183,626)"
+       id="text149">e</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(1001.72,626)"
+       id="text151">∈</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(1035.43,626)"
+       id="text153">𝐴</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(1059.1,626)"
+       id="text155">,</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(1066.76,626)"
+       id="text157" />
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(1074.93,626)"
+       id="text159">e</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(1103.47,626)"
+       id="text161">∉</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(1137.68,626)"
+       id="text163">𝐵</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(1163.18,626)"
+       id="text165">}</text>
+    <rect
+       x="59.500099"
+       y="267.5"
+       width="265"
+       height="189"
+       stroke="#000000"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="#ffffff"
+       id="rect167" />
+    <rect
+       x="59.500099"
+       y="345.5"
+       width="111"
+       height="111"
+       stroke="#000000"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="#b4c7e7"
+       fill-opacity="0.501961"
+       id="rect169" />
+    <rect
+       x="114.5"
+       y="290.5"
+       width="111"
+       height="111"
+       stroke="#000000"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="#c00000"
+       fill-opacity="0.4"
+       id="rect171" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="43px"
+       transform="translate(74.5646,440)"
+       id="text173">A</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="43px"
+       transform="translate(185.894,329)"
+       id="text175">B</text>
+    <rect
+       x="59.500099"
+       y="480.5"
+       width="265"
+       height="189"
+       stroke="#000000"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="#ffffff"
+       id="rect177" />
+    <rect
+       x="59.500099"
+       y="558.5"
+       width="111"
+       height="111"
+       stroke="#000000"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="#b4c7e7"
+       fill-opacity="0.501961"
+       id="rect179" />
+    <rect
+       x="115.5"
+       y="503.5"
+       width="111"
+       height="111"
+       stroke="#000000"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="#c00000"
+       fill-opacity="0.4"
+       id="rect181" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="43px"
+       transform="translate(74.8686,653)"
+       id="text183">A</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="43px"
+       transform="translate(186.198,542)"
+       id="text185">B</text>
+    <path
+       d="m 525.5,498.5 h 15.874"
+       stroke="#000000"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path187" />
+    <rect
+       x="344.5"
+       y="558.5"
+       width="111"
+       height="111"
+       stroke="#000000"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="#b4c7e7"
+       fill-opacity="0.501961"
+       id="rect189" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="43px"
+       transform="translate(359.707,656)"
+       id="text191">A</text>
+    <rect
+       x="631.5"
+       y="480.5"
+       width="265"
+       height="189"
+       stroke="#000000"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="#ffffff"
+       id="rect193" />
+    <rect
+       x="631.5"
+       y="558.5"
+       width="111"
+       height="111"
+       stroke="#000000"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="#c1a3f1"
+       id="rect195" />
+    <rect
+       x="669"
+       y="560"
+       width="71"
+       height="63"
+       fill="#c1a3f1"
+       id="rect197" />
+    <rect
+       x="687.5"
+       y="558.5"
+       width="55"
+       height="53"
+       stroke="#000000"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="#ffffff"
+       id="rect199" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="43px"
+       transform="translate(641.733,548)"
+       id="text201">A</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="43px"
+       transform="translate(666.4,548)"
+       id="text203" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="43px"
+       transform="translate(675.733,548)"
+       id="text205">−</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="43px"
+       transform="translate(706.733,548)"
+       id="text207">B</text>
+    <rect
+       x="689"
+       y="549"
+       width="67"
+       height="60"
+       fill="#ffffff"
+       id="rect209" />
+  </g>
+</svg>

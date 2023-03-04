@@ -1,7 +1,7 @@
 Introduction to set theory
 ================
 Erika Duan
-3/3/23
+3/4/23
 
 -   <a href="#what-is-a-set" id="toc-what-is-a-set">What is a set?</a>
 -   <a href="#working-with-two-or-more-sets"
@@ -29,9 +29,9 @@ Erika Duan
 # What is a set?
 
 A set is a collection of distinct objects or elements
-(![e](https://latex.codecogs.com/svg.latex?e "e")). We reference a set
-by listing all its elements.  
-*For example,
+(![e](https://latex.codecogs.com/svg.latex?e "e")).
+
+We reference a set by listing all its elements. *For example,
 ![S = \\{cat, \\;mouse, \\;dog \\}](https://latex.codecogs.com/svg.latex?S%20%3D%20%5C%7Bcat%2C%20%5C%3Bmouse%2C%20%5C%3Bdog%20%5C%7D "S = \{cat, \;mouse, \;dog \}")
 or
 ![S = \\{1, 2, 3, 4, 5, 6 \\}](https://latex.codecogs.com/svg.latex?S%20%3D%20%5C%7B1%2C%202%2C%203%2C%204%2C%205%2C%206%20%5C%7D "S = \{1, 2, 3, 4, 5, 6 \}")
@@ -176,48 +176,75 @@ set_a = set(list_a)
 
 print(set_a)
 #> {1, 2, 3}
+```
 
+``` python
 type(set_a)
 #> <class 'set'>  
+```
 
+``` python
 # Perform set operations in Python ---------------------------------------------
 set_b = {1, 3, 6}
 type(set_b)
 #> <class 'set'>  
+```
 
+``` python
 set_a.union(set_b)
 #> {1, 2, 3, 6}  
+```
 
+``` python
 set_a.union(set_b) == set_a | set_b
 #> True  
+```
 
+``` python
 set_a.intersection(set_b)
 #> {1, 3}  
+```
 
+``` python
 set_a.intersection(set_b) == set_a & set_b
 #> True  
 
 # a.difference(b) is equivalent to a - b  
+```
+
+``` python
 set_a.difference(set_b)
 #> {2}   
+```
 
+``` python
 set_a - set_b
 #> {2}   
 
 # Python also has an ^ operator which returns all elements in A or B but not AB 
+```
+
+``` python
 set_a.symmetric_difference(set_b)
 #> {2, 6}  
+```
 
+``` python
 set_a.symmetric_difference(set_b) == set_a ^ set_b
 #> True  
+```
 
+``` python
 # Identify disjoint sets in Python ---------------------------------------------
-set_a.isdisjoint(set_b)
-#> False
+set_c = {8, 9}
+set_a.isdisjoint(set_c)
+#> True
+```
 
+``` python
 # Identify subsets in Python ---------------------------------------------------
-set_c = {1, 2, 3, 4}  
-set_a.issubset(set_c)
+set_d = {1, 2, 3, 4}  
+set_a.issubset(set_d)
 #> True 
 ```
 
@@ -235,7 +262,9 @@ typeof(a)
 #> Set{Int64}  
 print(a)
 #> Set([2, 3, 1])  
+```
 
+``` julia
 # Perform set operations in Julia ----------------------------------------------
 print(union(a, b))
 #> Set([6, 2, 3, 1])  
@@ -257,11 +286,73 @@ print(symdiff(a, b))
 
 ## Commutative laws
 
+The set order has no impact on the union or intersection of two sets.
+This is intuitive as changing the set order does not change contents of
+each individual set.
+
+-   ![A \cup B = B \cup A](https://latex.codecogs.com/svg.latex?A%20%5Ccup%20B%20%3D%20B%20%5Ccup%20A "A \cup B = B \cup A")  
+-   ![A \cap B = B \cap A](https://latex.codecogs.com/svg.latex?A%20%5Ccap%20B%20%3D%20B%20%5Ccap%20A "A \cap B = B \cap A")
+
+![](../figures/set_theory-commutative_laws.svg)
+
 ## Associative laws
+
+The set order also has no impact when only either an intersection or
+union is performed on more than two sets. This is similarly intuitive to
+the commutative laws, as introducing extra sets does not change contents
+of each individual set.  
+-
+![A \cup B \cup C = (A \cup B) \cup C = A \cup (B \cup C)](https://latex.codecogs.com/svg.latex?A%20%5Ccup%20B%20%5Ccup%20C%20%3D%20%28A%20%5Ccup%20B%29%20%5Ccup%20C%20%3D%20A%20%5Ccup%20%28B%20%5Ccup%20C%29 "A \cup B \cup C = (A \cup B) \cup C = A \cup (B \cup C)")  
+-
+![A \cap B \cup C = (A \cap B) \cap C = A \cup (B \cap C)](https://latex.codecogs.com/svg.latex?A%20%5Ccap%20B%20%5Ccup%20C%20%3D%20%28A%20%5Ccap%20B%29%20%5Ccap%20C%20%3D%20A%20%5Ccup%20%28B%20%5Ccap%20C%29 "A \cap B \cup C = (A \cap B) \cap C = A \cup (B \cap C)")
+
+![](../figures/set_theory-associative_laws.svg)
 
 ## Distributive laws
 
+The sequence of first performing the set operation inside the
+parenthesis matters when both an intersection and union are applied to
+multiple sets. This is similar to how the sequence of first performing
+the operation inside the parenthesis matters in elementary algebra. *For
+example,
+![2+(3 \times 4) \neq (2 + 3) \times 4](https://latex.codecogs.com/svg.latex?2%2B%283%20%5Ctimes%204%29%20%5Cneq%20%282%20%2B%203%29%20%5Ctimes%204 "2+(3 \times 4) \neq (2 + 3) \times 4").*
+
+-   ![A \cup (B \cap C) \neq (A \cup B) \cap C](https://latex.codecogs.com/svg.latex?A%20%5Ccup%20%28B%20%5Ccap%20C%29%20%5Cneq%20%28A%20%5Ccup%20B%29%20%5Ccap%20C "A \cup (B \cap C) \neq (A \cup B) \cap C")  
+-   ![A \cup (B \cap C) = (A \cup B) \cap (A \cup C)](https://latex.codecogs.com/svg.latex?A%20%5Ccup%20%28B%20%5Ccap%20C%29%20%3D%20%28A%20%5Ccup%20B%29%20%5Ccap%20%28A%20%5Ccup%20C%29 "A \cup (B \cap C) = (A \cup B) \cap (A \cup C)")  
+-   ![A \cap (B \cup C) \neq (A \cap B) \cup C)](https://latex.codecogs.com/svg.latex?A%20%5Ccap%20%28B%20%5Ccup%20C%29%20%5Cneq%20%28A%20%5Ccap%20B%29%20%5Ccup%20C%29 "A \cap (B \cup C) \neq (A \cap B) \cup C)")  
+-   ![A \cap (B \cup C) = (A \cap B) \cup (A \cap C)](https://latex.codecogs.com/svg.latex?A%20%5Ccap%20%28B%20%5Ccup%20C%29%20%3D%20%28A%20%5Ccap%20B%29%20%5Ccup%20%28A%20%5Ccap%20C%29 "A \cap (B \cup C) = (A \cap B) \cup (A \cap C)")
+
+![](../figures/set_theory-distributive_laws_1.svg)
+![](../figures/set_theory-distributive_laws_2.svg)
+
 ## De Morgan’s laws
+
+De Morgan’s law is less immediately obvious and can be visualised by
+Venn diagrams or (more preferably) proven mathematically.
+
+-   ![\overline{A\cup B} = \bar A \cap \bar B](https://latex.codecogs.com/svg.latex?%5Coverline%7BA%5Ccup%20B%7D%20%3D%20%5Cbar%20A%20%5Ccap%20%5Cbar%20B "\overline{A\cup B} = \bar A \cap \bar B")
+
+This is proved by the following argument.
+
+<div>
+
+> **Tip**
+>
+> Proof 1 Step 1 Step 2
+
+</div>
+
+-   ![\overline{A\cap B} = \bar A \cup \bar B](https://latex.codecogs.com/svg.latex?%5Coverline%7BA%5Ccap%20B%7D%20%3D%20%5Cbar%20A%20%5Ccup%20%5Cbar%20B "\overline{A\cap B} = \bar A \cup \bar B")
+
+This is proved by the following argument.
+
+<div>
+
+> **Tip**
+>
+> Proof 2 Step 1 Step 2
+
+</div>
 
 # Resources
 
