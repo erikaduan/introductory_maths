@@ -300,11 +300,10 @@ each individual set.
 The set order also has no impact when only either an intersection or
 union is performed on more than two sets. This is similarly intuitive to
 the commutative laws, as introducing extra sets does not change contents
-of each individual set.  
--
-![A \cup B \cup C = (A \cup B) \cup C = A \cup (B \cup C)](https://latex.codecogs.com/svg.latex?A%20%5Ccup%20B%20%5Ccup%20C%20%3D%20%28A%20%5Ccup%20B%29%20%5Ccup%20C%20%3D%20A%20%5Ccup%20%28B%20%5Ccup%20C%29 "A \cup B \cup C = (A \cup B) \cup C = A \cup (B \cup C)")  
--
-![A \cap B \cup C = (A \cap B) \cap C = A \cup (B \cap C)](https://latex.codecogs.com/svg.latex?A%20%5Ccap%20B%20%5Ccup%20C%20%3D%20%28A%20%5Ccap%20B%29%20%5Ccap%20C%20%3D%20A%20%5Ccup%20%28B%20%5Ccap%20C%29 "A \cap B \cup C = (A \cap B) \cap C = A \cup (B \cap C)")
+of each individual set.
+
+-   ![A \cup B \cup C = (A \cup B) \cup C = A \cup (B \cup C)](https://latex.codecogs.com/svg.latex?A%20%5Ccup%20B%20%5Ccup%20C%20%3D%20%28A%20%5Ccup%20B%29%20%5Ccup%20C%20%3D%20A%20%5Ccup%20%28B%20%5Ccup%20C%29 "A \cup B \cup C = (A \cup B) \cup C = A \cup (B \cup C)")  
+-   ![A \cap B \cup C = (A \cap B) \cap C = A \cup (B \cap C)](https://latex.codecogs.com/svg.latex?A%20%5Ccap%20B%20%5Ccup%20C%20%3D%20%28A%20%5Ccap%20B%29%20%5Ccap%20C%20%3D%20A%20%5Ccup%20%28B%20%5Ccap%20C%29 "A \cap B \cup C = (A \cap B) \cap C = A \cup (B \cap C)")
 
 ![](../figures/set_theory-associative_laws.svg)
 
@@ -315,14 +314,16 @@ parenthesis matters when both an intersection and union are applied to
 multiple sets. This is similar to how the sequence of first performing
 the operation inside the parenthesis matters in elementary algebra. *For
 example,
-![2+(3 \times 4) \neq (2 + 3) \times 4](https://latex.codecogs.com/svg.latex?2%2B%283%20%5Ctimes%204%29%20%5Cneq%20%282%20%2B%203%29%20%5Ctimes%204 "2+(3 \times 4) \neq (2 + 3) \times 4").*
+![2+(3 \times 4) \neq (2 + 3) \times 4.](https://latex.codecogs.com/svg.latex?2%2B%283%20%5Ctimes%204%29%20%5Cneq%20%282%20%2B%203%29%20%5Ctimes%204. "2+(3 \times 4) \neq (2 + 3) \times 4.")*
 
 -   ![A \cup (B \cap C) \neq (A \cup B) \cap C](https://latex.codecogs.com/svg.latex?A%20%5Ccup%20%28B%20%5Ccap%20C%29%20%5Cneq%20%28A%20%5Ccup%20B%29%20%5Ccap%20C "A \cup (B \cap C) \neq (A \cup B) \cap C")  
--   ![A \cup (B \cap C) = (A \cup B) \cap (A \cup C)](https://latex.codecogs.com/svg.latex?A%20%5Ccup%20%28B%20%5Ccap%20C%29%20%3D%20%28A%20%5Ccup%20B%29%20%5Ccap%20%28A%20%5Ccup%20C%29 "A \cup (B \cap C) = (A \cup B) \cap (A \cup C)")  
--   ![A \cap (B \cup C) \neq (A \cap B) \cup C)](https://latex.codecogs.com/svg.latex?A%20%5Ccap%20%28B%20%5Ccup%20C%29%20%5Cneq%20%28A%20%5Ccap%20B%29%20%5Ccup%20C%29 "A \cap (B \cup C) \neq (A \cap B) \cup C)")  
--   ![A \cap (B \cup C) = (A \cap B) \cup (A \cap C)](https://latex.codecogs.com/svg.latex?A%20%5Ccap%20%28B%20%5Ccup%20C%29%20%3D%20%28A%20%5Ccap%20B%29%20%5Ccup%20%28A%20%5Ccap%20C%29 "A \cap (B \cup C) = (A \cap B) \cup (A \cap C)")
+-   ![A \cup (B \cap C) = (A \cup B) \cap (A \cup C)](https://latex.codecogs.com/svg.latex?A%20%5Ccup%20%28B%20%5Ccap%20C%29%20%3D%20%28A%20%5Ccup%20B%29%20%5Ccap%20%28A%20%5Ccup%20C%29 "A \cup (B \cap C) = (A \cup B) \cap (A \cup C)")
 
-![](../figures/set_theory-distributive_laws_1.svg)
+![](../figures/set_theory-distributive_laws_1.svg) -
+![A \cap (B \cup C) \neq (A \cap B) \cup C)](https://latex.codecogs.com/svg.latex?A%20%5Ccap%20%28B%20%5Ccup%20C%29%20%5Cneq%20%28A%20%5Ccap%20B%29%20%5Ccup%20C%29 "A \cap (B \cup C) \neq (A \cap B) \cup C)")  
+-
+![A \cap (B \cup C) = (A \cap B) \cup (A \cap C)](https://latex.codecogs.com/svg.latex?A%20%5Ccap%20%28B%20%5Ccup%20C%29%20%3D%20%28A%20%5Ccap%20B%29%20%5Ccup%20%28A%20%5Ccap%20C%29 "A \cap (B \cup C) = (A \cap B) \cup (A \cap C)")
+
 ![](../figures/set_theory-distributive_laws_2.svg)
 
 ## De Morgan’s laws
@@ -332,25 +333,56 @@ Venn diagrams or (more preferably) proven mathematically.
 
 -   ![\overline{A\cup B} = \bar A \cap \bar B](https://latex.codecogs.com/svg.latex?%5Coverline%7BA%5Ccup%20B%7D%20%3D%20%5Cbar%20A%20%5Ccap%20%5Cbar%20B "\overline{A\cup B} = \bar A \cap \bar B")
 
-This is proved by the following argument.
-
 <div>
 
-> **Tip**
+> **Proof 1**
 >
-> Proof 1 Step 1 Step 2
+> Suppose that
+> ![e \in \overline{A\cup B}](https://latex.codecogs.com/svg.latex?e%20%5Cin%20%5Coverline%7BA%5Ccup%20B%7D "e \in \overline{A\cup B}")  
+> Then
+> ![e \notin A \cup B](https://latex.codecogs.com/svg.latex?e%20%5Cnotin%20A%20%5Ccup%20B "e \notin A \cup B")  
+> ![\implies e \notin A, \\; e \notin B](https://latex.codecogs.com/svg.latex?%5Cimplies%20e%20%5Cnotin%20A%2C%20%5C%3B%20e%20%5Cnotin%20B "\implies e \notin A, \; e \notin B")  
+> ![\implies e \in \bar A, \\; e \in \bar B](https://latex.codecogs.com/svg.latex?%5Cimplies%20e%20%5Cin%20%5Cbar%20A%2C%20%5C%3B%20e%20%5Cin%20%5Cbar%20B "\implies e \in \bar A, \; e \in \bar B")  
+> ![\implies e \in \bar A \cap \bar B](https://latex.codecogs.com/svg.latex?%5Cimplies%20e%20%5Cin%20%5Cbar%20A%20%5Ccap%20%5Cbar%20B "\implies e \in \bar A \cap \bar B")  
+> Therefore,
+> ![\overline{A\cup B} \subseteq \bar A \cap \bar B](https://latex.codecogs.com/svg.latex?%5Coverline%7BA%5Ccup%20B%7D%20%5Csubseteq%20%5Cbar%20A%20%5Ccap%20%5Cbar%20B "\overline{A\cup B} \subseteq \bar A \cap \bar B")
+>
+> Similarly, suppose that
+> ![e \in \bar A \cap \bar B](https://latex.codecogs.com/svg.latex?e%20%5Cin%20%5Cbar%20A%20%5Ccap%20%5Cbar%20B "e \in \bar A \cap \bar B")  
+> Then
+> ![e \in \bar A, \\; e \in \bar B](https://latex.codecogs.com/svg.latex?e%20%5Cin%20%5Cbar%20A%2C%20%5C%3B%20e%20%5Cin%20%5Cbar%20B "e \in \bar A, \; e \in \bar B")  
+> ![\implies e \notin A, \\; e \notin B](https://latex.codecogs.com/svg.latex?%5Cimplies%20e%20%5Cnotin%20A%2C%20%5C%3B%20e%20%5Cnotin%20B "\implies e \notin A, \; e \notin B")  
+> ![\implies e \notin A \cup B](https://latex.codecogs.com/svg.latex?%5Cimplies%20e%20%5Cnotin%20A%20%5Ccup%20B "\implies e \notin A \cup B")  
+> ![\implies e \in \overline{A\cup B}](https://latex.codecogs.com/svg.latex?%5Cimplies%20e%20%5Cin%20%5Coverline%7BA%5Ccup%20B%7D "\implies e \in \overline{A\cup B}")  
+> Therefore,
+> ![\bar A \cap \bar B \subseteq \overline{A\cup B}](https://latex.codecogs.com/svg.latex?%5Cbar%20A%20%5Ccap%20%5Cbar%20B%20%5Csubseteq%20%5Coverline%7BA%5Ccup%20B%7D "\bar A \cap \bar B \subseteq \overline{A\cup B}")
+>
+> Therefore,
+> ![\overline{A\cup B} = \bar A \cap \bar B](https://latex.codecogs.com/svg.latex?%5Coverline%7BA%5Ccup%20B%7D%20%3D%20%5Cbar%20A%20%5Ccap%20%5Cbar%20B "\overline{A\cup B} = \bar A \cap \bar B")
 
 </div>
 
--   ![\overline{A\cap B} = \bar A \cup \bar B](https://latex.codecogs.com/svg.latex?%5Coverline%7BA%5Ccap%20B%7D%20%3D%20%5Cbar%20A%20%5Ccup%20%5Cbar%20B "\overline{A\cap B} = \bar A \cup \bar B")
+-   ![\overline{A\cap B} = {\bar A} \cup {\bar B}](https://latex.codecogs.com/svg.latex?%5Coverline%7BA%5Ccap%20B%7D%20%3D%20%7B%5Cbar%20A%7D%20%5Ccup%20%7B%5Cbar%20B%7D "\overline{A\cap B} = {\bar A} \cup {\bar B}")
 
 This is proved by the following argument.
 
 <div>
 
-> **Tip**
+> **Proof 2**
 >
-> Proof 2 Step 1 Step 2
+> From proof 1,
+> ![\overline{A\cup B} \subseteq \bar A \cap \bar B](https://latex.codecogs.com/svg.latex?%5Coverline%7BA%5Ccup%20B%7D%20%5Csubseteq%20%5Cbar%20A%20%5Ccap%20%5Cbar%20B "\overline{A\cup B} \subseteq \bar A \cap \bar B")
+>
+> If we substitute A with
+> ![\bar A](https://latex.codecogs.com/svg.latex?%5Cbar%20A "\bar A")
+> and B with
+> ![\bar B](https://latex.codecogs.com/svg.latex?%5Cbar%20B "\bar B")  
+> ![\implies \overline{\bar A \cup \bar B} = \bar {\bar A} \cap \bar {\bar B}](https://latex.codecogs.com/svg.latex?%5Cimplies%20%5Coverline%7B%5Cbar%20A%20%5Ccup%20%5Cbar%20B%7D%20%3D%20%5Cbar%20%7B%5Cbar%20A%7D%20%5Ccap%20%5Cbar%20%7B%5Cbar%20B%7D "\implies \overline{\bar A \cup \bar B} = \bar {\bar A} \cap \bar {\bar B}")  
+> ![\implies \overline{\bar A \cup \bar B} = A \cap B](https://latex.codecogs.com/svg.latex?%5Cimplies%20%5Coverline%7B%5Cbar%20A%20%5Ccup%20%5Cbar%20B%7D%20%3D%20A%20%5Ccap%20B "\implies \overline{\bar A \cup \bar B} = A \cap B")
+> ![\implies {\bar A \cup \bar B} = \overline {A \cap B}](https://latex.codecogs.com/svg.latex?%5Cimplies%20%7B%5Cbar%20A%20%5Ccup%20%5Cbar%20B%7D%20%3D%20%5Coverline%20%7BA%20%5Ccap%20B%7D "\implies {\bar A \cup \bar B} = \overline {A \cap B}")
+>
+> Therefore,
+> ![\overline{A\cap B} = {\bar A} \cup {\bar B}](https://latex.codecogs.com/svg.latex?%5Coverline%7BA%5Ccap%20B%7D%20%3D%20%7B%5Cbar%20A%7D%20%5Ccup%20%7B%5Cbar%20B%7D "\overline{A\cap B} = {\bar A} \cup {\bar B}")
 
 </div>
 
