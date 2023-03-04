@@ -176,9 +176,7 @@ set_a = set(list_a)
 
 print(set_a)
 #> {1, 2, 3}
-```
 
-``` python
 type(set_a)
 #> <class 'set'>  
 ```
@@ -188,48 +186,32 @@ type(set_a)
 set_b = {1, 3, 6}
 type(set_b)
 #> <class 'set'>  
-```
 
-``` python
 set_a.union(set_b)
 #> {1, 2, 3, 6}  
-```
 
-``` python
 set_a.union(set_b) == set_a | set_b
 #> True  
-```
 
-``` python
 set_a.intersection(set_b)
 #> {1, 3}  
-```
 
-``` python
 set_a.intersection(set_b) == set_a & set_b
 #> True  
 
 # a.difference(b) is equivalent to a - b  
-```
 
-``` python
 set_a.difference(set_b)
 #> {2}   
-```
 
-``` python
 set_a - set_b
 #> {2}   
 
 # Python also has an ^ operator which returns all elements in A or B but not AB 
-```
 
-``` python
 set_a.symmetric_difference(set_b)
 #> {2, 6}  
-```
 
-``` python
 set_a.symmetric_difference(set_b) == set_a ^ set_b
 #> True  
 ```
@@ -319,17 +301,17 @@ example,
 -   ![A \cup (B \cap C) \neq (A \cup B) \cap C](https://latex.codecogs.com/svg.latex?A%20%5Ccup%20%28B%20%5Ccap%20C%29%20%5Cneq%20%28A%20%5Ccup%20B%29%20%5Ccap%20C "A \cup (B \cap C) \neq (A \cup B) \cap C")  
 -   ![A \cup (B \cap C) = (A \cup B) \cap (A \cup C)](https://latex.codecogs.com/svg.latex?A%20%5Ccup%20%28B%20%5Ccap%20C%29%20%3D%20%28A%20%5Ccup%20B%29%20%5Ccap%20%28A%20%5Ccup%20C%29 "A \cup (B \cap C) = (A \cup B) \cap (A \cup C)")
 
-![](../figures/set_theory-distributive_laws_1.svg) -
-![A \cap (B \cup C) \neq (A \cap B) \cup C)](https://latex.codecogs.com/svg.latex?A%20%5Ccap%20%28B%20%5Ccup%20C%29%20%5Cneq%20%28A%20%5Ccap%20B%29%20%5Ccup%20C%29 "A \cap (B \cup C) \neq (A \cap B) \cup C)")  
--
-![A \cap (B \cup C) = (A \cap B) \cup (A \cap C)](https://latex.codecogs.com/svg.latex?A%20%5Ccap%20%28B%20%5Ccup%20C%29%20%3D%20%28A%20%5Ccap%20B%29%20%5Ccup%20%28A%20%5Ccap%20C%29 "A \cap (B \cup C) = (A \cap B) \cup (A \cap C)")
+![](../figures/set_theory-distributive_laws_1.svg)
+
+-   ![A \cap (B \cup C) \neq (A \cap B) \cup C)](https://latex.codecogs.com/svg.latex?A%20%5Ccap%20%28B%20%5Ccup%20C%29%20%5Cneq%20%28A%20%5Ccap%20B%29%20%5Ccup%20C%29 "A \cap (B \cup C) \neq (A \cap B) \cup C)")  
+-   ![A \cap (B \cup C) = (A \cap B) \cup (A \cap C)](https://latex.codecogs.com/svg.latex?A%20%5Ccap%20%28B%20%5Ccup%20C%29%20%3D%20%28A%20%5Ccap%20B%29%20%5Ccup%20%28A%20%5Ccap%20C%29 "A \cap (B \cup C) = (A \cap B) \cup (A \cap C)")
 
 ![](../figures/set_theory-distributive_laws_2.svg)
 
 ## De Morgan’s laws
 
-De Morgan’s law is less immediately obvious and can be visualised by
-Venn diagrams or (more preferably) proven mathematically.
+De Morgan’s law is less intuitive and can be visualised by Venn diagrams
+or (more preferably) proven mathematically.
 
 -   ![\overline{A\cup B} = \bar A \cap \bar B](https://latex.codecogs.com/svg.latex?%5Coverline%7BA%5Ccup%20B%7D%20%3D%20%5Cbar%20A%20%5Ccap%20%5Cbar%20B "\overline{A\cup B} = \bar A \cap \bar B")
 
@@ -362,29 +344,31 @@ Venn diagrams or (more preferably) proven mathematically.
 
 </div>
 
--   ![\overline{A\cap B} = {\bar A} \cup {\bar B}](https://latex.codecogs.com/svg.latex?%5Coverline%7BA%5Ccap%20B%7D%20%3D%20%7B%5Cbar%20A%7D%20%5Ccup%20%7B%5Cbar%20B%7D "\overline{A\cap B} = {\bar A} \cup {\bar B}")
+![](../figures/set_theory-de_morgans_law_1.svg)
 
-This is proved by the following argument.
+-   ![\overline{A\cap B} = {\bar A} \cup {\bar B}](https://latex.codecogs.com/svg.latex?%5Coverline%7BA%5Ccap%20B%7D%20%3D%20%7B%5Cbar%20A%7D%20%5Ccup%20%7B%5Cbar%20B%7D "\overline{A\cap B} = {\bar A} \cup {\bar B}")
 
 <div>
 
 > **Proof 2**
 >
 > From proof 1,
-> ![\overline{A\cup B} \subseteq \bar A \cap \bar B](https://latex.codecogs.com/svg.latex?%5Coverline%7BA%5Ccup%20B%7D%20%5Csubseteq%20%5Cbar%20A%20%5Ccap%20%5Cbar%20B "\overline{A\cup B} \subseteq \bar A \cap \bar B")
+> ![\overline{A\cup B} = \bar A \cap \bar B](https://latex.codecogs.com/svg.latex?%5Coverline%7BA%5Ccup%20B%7D%20%3D%20%5Cbar%20A%20%5Ccap%20%5Cbar%20B "\overline{A\cup B} = \bar A \cap \bar B")
 >
 > If we substitute A with
 > ![\bar A](https://latex.codecogs.com/svg.latex?%5Cbar%20A "\bar A")
 > and B with
 > ![\bar B](https://latex.codecogs.com/svg.latex?%5Cbar%20B "\bar B")  
 > ![\implies \overline{\bar A \cup \bar B} = \bar {\bar A} \cap \bar {\bar B}](https://latex.codecogs.com/svg.latex?%5Cimplies%20%5Coverline%7B%5Cbar%20A%20%5Ccup%20%5Cbar%20B%7D%20%3D%20%5Cbar%20%7B%5Cbar%20A%7D%20%5Ccap%20%5Cbar%20%7B%5Cbar%20B%7D "\implies \overline{\bar A \cup \bar B} = \bar {\bar A} \cap \bar {\bar B}")  
-> ![\implies \overline{\bar A \cup \bar B} = A \cap B](https://latex.codecogs.com/svg.latex?%5Cimplies%20%5Coverline%7B%5Cbar%20A%20%5Ccup%20%5Cbar%20B%7D%20%3D%20A%20%5Ccap%20B "\implies \overline{\bar A \cup \bar B} = A \cap B")
+> ![\implies \overline{\bar A \cup \bar B} = A \cap B](https://latex.codecogs.com/svg.latex?%5Cimplies%20%5Coverline%7B%5Cbar%20A%20%5Ccup%20%5Cbar%20B%7D%20%3D%20A%20%5Ccap%20B "\implies \overline{\bar A \cup \bar B} = A \cap B")  
 > ![\implies {\bar A \cup \bar B} = \overline {A \cap B}](https://latex.codecogs.com/svg.latex?%5Cimplies%20%7B%5Cbar%20A%20%5Ccup%20%5Cbar%20B%7D%20%3D%20%5Coverline%20%7BA%20%5Ccap%20B%7D "\implies {\bar A \cup \bar B} = \overline {A \cap B}")
 >
 > Therefore,
 > ![\overline{A\cap B} = {\bar A} \cup {\bar B}](https://latex.codecogs.com/svg.latex?%5Coverline%7BA%5Ccap%20B%7D%20%3D%20%7B%5Cbar%20A%7D%20%5Ccup%20%7B%5Cbar%20B%7D "\overline{A\cap B} = {\bar A} \cup {\bar B}")
 
 </div>
+
+![](../figures/set_theory-de_morgans_law_2.svg)
 
 # Resources
 
