@@ -22,11 +22,11 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      inkscape:zoom="0.65555556"
-     inkscape:cx="591.1017"
-     inkscape:cy="201.35593"
-     inkscape:window-width="2560"
-     inkscape:window-height="1494"
-     inkscape:window-x="-11"
+     inkscape:cx="623.13559"
+     inkscape:cy="463.72881"
+     inkscape:window-width="2880"
+     inkscape:window-height="1514"
+     inkscape:window-x="3829"
      inkscape:window-y="-11"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg39" />
@@ -45,7 +45,7 @@
   <g
      clip-path="url(#clip0)"
      id="g37"
-     transform="translate(10.677967,-144.91525)">
+     transform="translate(1.5254236,-144.91525)">
     <rect
        x="0"
        y="0"
@@ -66,35 +66,35 @@
        transform="translate(521.082,236)"
        id="text11">Fixed term (always equal to 3)</text>
     <text
-       fill="#00b050"
+       fill="#c00000"
        font-family="Calibri, Calibri_MSFontService, sans-serif"
        font-weight="400"
        font-size="88px"
        transform="translate(218.686,424)"
        id="text13">2</text>
     <text
-       fill="#4472c4"
+       fill="#7030a0"
        font-family="Calibri, Calibri_MSFontService, sans-serif"
        font-weight="400"
        font-size="88px"
        transform="translate(263.353,424)"
        id="text15">x</text>
     <text
-       fill="#ed7d31"
+       fill="#4472c4"
        font-family="Calibri, Calibri_MSFontService, sans-serif"
        font-weight="400"
        font-size="88px"
        transform="translate(321.353,424)"
        id="text17">+</text>
     <text
-       fill="#00b050"
+       fill="#c00000"
        font-family="Calibri, Calibri_MSFontService, sans-serif"
        font-weight="400"
        font-size="88px"
        transform="translate(385.019,424)"
        id="text19">1</text>
     <text
-       fill="#4472c4"
+       fill="#7030a0"
        font-family="Calibri, Calibri_MSFontService, sans-serif"
        font-weight="400"
        font-size="88px"
@@ -107,7 +107,7 @@
        transform="translate(522.585,352)"
        id="text23">Infinite representations (x + 0.5y, 4x + 2y, etc.)</text>
     <text
-       fill="#4472c4"
+       fill="#7030a0"
        font-family="Calibri, Calibri_MSFontService, sans-serif"
        font-weight="700"
        font-size="32px"
@@ -120,7 +120,7 @@
        transform="translate(660.652,393)"
        id="text27">x, y</text>
     <text
-       fill="#00b050"
+       fill="#c00000"
        font-family="Calibri, Calibri_MSFontService, sans-serif"
        font-weight="700"
        font-size="32px"
@@ -133,7 +133,7 @@
        transform="translate(765.219,432)"
        id="text31">2 parts x to 1 part y</text>
     <text
-       fill="#ed7d31"
+       fill="#4472c4"
        font-family="Calibri, Calibri_MSFontService, sans-serif"
        font-weight="700"
        font-size="32px"

@@ -237,7 +237,6 @@ Therefore, $\overline{A\cup B} = \bar A \cap \bar B$
 
 ![](../figures/set_theory-de_morgans_law_1.svg)   
 
-
 -   $\overline{A\cap B} = {\bar A} \cup {\bar B}$    
 
 ::: callout-tip
@@ -246,14 +245,14 @@ Therefore, $\overline{A\cup B} = \bar A \cap \bar B$
 From proof 1, $\overline{A\cup B} = \bar A \cap \bar B$   
 
 If we substitute A with $\bar A$ and B with $\bar B$    
-$\implies \overline{\bar A \cup \bar B} = \bar {\bar A} \cap \bar {\bar B}$     
+$\implies \overline{\bar A \cup \bar B} = \bar {\bar A} \cap \bar {\bar B}$   
 $\implies \overline{\bar A \cup \bar B} = A \cap B$   
 $\implies {\bar A \cup \bar B} = \overline {A \cap B}$    
 
 Therefore, $\overline{A\cap B} = {\bar A} \cup {\bar B}$    
 :::
 
-![](../figures/set_theory-de_morgans_law_2.svg) 
+![](../figures/set_theory-de_morgans_law_2.svg)  
 
 
 # Resources

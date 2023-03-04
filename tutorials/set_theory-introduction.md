@@ -1,7 +1,7 @@
 Introduction to set theory
 ================
 Erika Duan
-3/4/23
+3/5/23
 
 -   <a href="#what-is-a-set" id="toc-what-is-a-set">What is a set?</a>
 -   <a href="#working-with-two-or-more-sets"
