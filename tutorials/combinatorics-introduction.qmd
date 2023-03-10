@@ -1,0 +1,32 @@
+---
+title: "Introduction to combinatorial analysis" 
+author: "Erika Duan"
+date: last-modified
+format: 
+    gfm:
+        html-math-method: webtex   
+        toc: true
+        toc-depth: 2   
+        toc-title: Contents  
+execute:   
+  echo: true     
+  output: false   
+  warning: false  
+---
+
+::: callout-tip
+## Summary
+
+This tutorial explains how to use factorials, permutations and combinations to count object combination possibilities. It also covers more advanced scenarios involving distinct object partitioning, non-distinct object combinations, lattice path applications and Pascal's identity applications. Combinatorial analysis is a prerequisite for calculating event probabilities using the sample-point method.      
+:::
+
+
+# The $m\times n$ rule
+
+Finding the total number of possible ordered pairs   
+
+
+
+# Resources
+
+-     
