@@ -1,0 +1,1128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1280"
+   height="560"
+   overflow="hidden"
+   version="1.1"
+   id="svg367"
+   sodipodi:docname="combinatorics-bijection_principle.svg"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview369"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.3111111"
+     inkscape:cx="620.84746"
+     inkscape:cy="279.91525"
+     inkscape:window-width="2560"
+     inkscape:window-height="1494"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g365" />
+  <defs
+     id="defs113">
+    <clipPath
+       id="clip0">
+      <rect
+         x="0"
+         y="0"
+         width="1280"
+         height="720"
+         id="rect2" />
+    </clipPath>
+    <clipPath
+       id="clip1">
+      <rect
+         x="164"
+         y="278"
+         width="96"
+         height="96"
+         id="rect5" />
+    </clipPath>
+    <clipPath
+       id="clip2">
+      <rect
+         x="164"
+         y="278"
+         width="96"
+         height="96"
+         id="rect8" />
+    </clipPath>
+    <clipPath
+       id="clip3">
+      <rect
+         x="164"
+         y="278"
+         width="96"
+         height="96"
+         id="rect11" />
+    </clipPath>
+    <clipPath
+       id="clip4">
+      <rect
+         x="261"
+         y="278"
+         width="96"
+         height="96"
+         id="rect14" />
+    </clipPath>
+    <clipPath
+       id="clip5">
+      <rect
+         x="261"
+         y="278"
+         width="96"
+         height="96"
+         id="rect17" />
+    </clipPath>
+    <clipPath
+       id="clip6">
+      <rect
+         x="261"
+         y="278"
+         width="96"
+         height="96"
+         id="rect20" />
+    </clipPath>
+    <clipPath
+       id="clip7">
+      <rect
+         x="164"
+         y="241"
+         width="96"
+         height="96"
+         id="rect23" />
+    </clipPath>
+    <clipPath
+       id="clip8">
+      <rect
+         x="164"
+         y="241"
+         width="96"
+         height="96"
+         id="rect26" />
+    </clipPath>
+    <clipPath
+       id="clip9">
+      <rect
+         x="164"
+         y="241"
+         width="96"
+         height="96"
+         id="rect29" />
+    </clipPath>
+    <clipPath
+       id="clip10">
+      <rect
+         x="164"
+         y="163"
+         width="96"
+         height="96"
+         id="rect32" />
+    </clipPath>
+    <clipPath
+       id="clip11">
+      <rect
+         x="164"
+         y="163"
+         width="96"
+         height="96"
+         id="rect35" />
+    </clipPath>
+    <clipPath
+       id="clip12">
+      <rect
+         x="164"
+         y="163"
+         width="96"
+         height="96"
+         id="rect38" />
+    </clipPath>
+    <clipPath
+       id="clip13">
+      <rect
+         x="513"
+         y="278"
+         width="96"
+         height="96"
+         id="rect41" />
+    </clipPath>
+    <clipPath
+       id="clip14">
+      <rect
+         x="513"
+         y="278"
+         width="96"
+         height="96"
+         id="rect44" />
+    </clipPath>
+    <clipPath
+       id="clip15">
+      <rect
+         x="513"
+         y="278"
+         width="96"
+         height="96"
+         id="rect47" />
+    </clipPath>
+    <clipPath
+       id="clip16">
+      <rect
+         x="610"
+         y="278"
+         width="96"
+         height="96"
+         id="rect50" />
+    </clipPath>
+    <clipPath
+       id="clip17">
+      <rect
+         x="610"
+         y="278"
+         width="96"
+         height="96"
+         id="rect53" />
+    </clipPath>
+    <clipPath
+       id="clip18">
+      <rect
+         x="610"
+         y="278"
+         width="96"
+         height="96"
+         id="rect56" />
+    </clipPath>
+    <clipPath
+       id="clip19">
+      <rect
+         x="513"
+         y="241"
+         width="96"
+         height="96"
+         id="rect59" />
+    </clipPath>
+    <clipPath
+       id="clip20">
+      <rect
+         x="513"
+         y="241"
+         width="96"
+         height="96"
+         id="rect62" />
+    </clipPath>
+    <clipPath
+       id="clip21">
+      <rect
+         x="513"
+         y="241"
+         width="96"
+         height="96"
+         id="rect65" />
+    </clipPath>
+    <clipPath
+       id="clip22">
+      <rect
+         x="611"
+         y="241"
+         width="96"
+         height="96"
+         id="rect68" />
+    </clipPath>
+    <clipPath
+       id="clip23">
+      <rect
+         x="611"
+         y="241"
+         width="96"
+         height="96"
+         id="rect71" />
+    </clipPath>
+    <clipPath
+       id="clip24">
+      <rect
+         x="611"
+         y="241"
+         width="96"
+         height="96"
+         id="rect74" />
+    </clipPath>
+    <clipPath
+       id="clip25">
+      <rect
+         x="960"
+         y="278"
+         width="96"
+         height="96"
+         id="rect77" />
+    </clipPath>
+    <clipPath
+       id="clip26">
+      <rect
+         x="960"
+         y="278"
+         width="96"
+         height="96"
+         id="rect80" />
+    </clipPath>
+    <clipPath
+       id="clip27">
+      <rect
+         x="960"
+         y="278"
+         width="96"
+         height="96"
+         id="rect83" />
+    </clipPath>
+    <clipPath
+       id="clip28">
+      <rect
+         x="864"
+         y="278"
+         width="96"
+         height="96"
+         id="rect86" />
+    </clipPath>
+    <clipPath
+       id="clip29">
+      <rect
+         x="864"
+         y="278"
+         width="96"
+         height="96"
+         id="rect89" />
+    </clipPath>
+    <clipPath
+       id="clip30">
+      <rect
+         x="864"
+         y="278"
+         width="96"
+         height="96"
+         id="rect92" />
+    </clipPath>
+    <clipPath
+       id="clip31">
+      <rect
+         x="960"
+         y="241"
+         width="96"
+         height="96"
+         id="rect95" />
+    </clipPath>
+    <clipPath
+       id="clip32">
+      <rect
+         x="960"
+         y="241"
+         width="96"
+         height="96"
+         id="rect98" />
+    </clipPath>
+    <clipPath
+       id="clip33">
+      <rect
+         x="960"
+         y="241"
+         width="96"
+         height="96"
+         id="rect101" />
+    </clipPath>
+    <clipPath
+       id="clip34">
+      <rect
+         x="960"
+         y="163"
+         width="96"
+         height="96"
+         id="rect104" />
+    </clipPath>
+    <clipPath
+       id="clip35">
+      <rect
+         x="960"
+         y="163"
+         width="96"
+         height="96"
+         id="rect107" />
+    </clipPath>
+    <clipPath
+       id="clip36">
+      <rect
+         x="960"
+         y="163"
+         width="96"
+         height="96"
+         id="rect110" />
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#clip0)"
+     id="g365">
+    <rect
+       x="0"
+       y="0"
+       width="1280"
+       height="720"
+       fill="#ffffff"
+       id="rect115" />
+    <g
+       clip-path="url(#clip1)"
+       id="g123"
+       transform="translate(32.79661,-43.474577)">
+      <g
+         clip-path="url(#clip2)"
+         id="g121">
+        <g
+           clip-path="url(#clip3)"
+           id="g119">
+          <path
+             d="m 231,363 h -0.259 C 229.7,356.49 225.36,350.984 219.273,348.452 V 346 c -0.003,-1.926 -1.379,-3.577 -3.273,-3.927 V 287 c 0,-2.209 -1.791,-4 -4,-4 -2.209,0 -4,1.791 -4,4 v 55.073 c -1.894,0.35 -3.27,2.001 -3.273,3.927 v 2.452 C 198.64,350.984 194.3,356.49 193.259,363 H 193 c -1.657,0 -3,1.343 -3,3 0,1.657 1.343,3 3,3 h 38 c 1.657,0 3,-1.343 3,-3 0,-1.657 -1.343,-3 -3,-3 z m -21,-76 c 0,-1.105 0.895,-2 2,-2 1.105,0 2,0.895 2,2 v 55 h -4 z m 21,80 h -38 c -0.552,0 -1,-0.448 -1,-1 0,-0.552 0.448,-1 1,-1 h 1.965 l 0.269,-1.684 c 0.913,-5.834 4.805,-10.769 10.266,-13.016 l 1.232,-0.512 V 346 c 0,-1.105 0.895,-2 2,-2 h 6.546 c 1.105,0 2,0.895 2,2 v 3.786 l 1.232,0.512 c 5.458,2.25 9.346,7.185 10.256,13.018 L 229.035,365 H 231 c 0.552,0 1,0.448 1,1 0,0.552 -0.448,1 -1,1 z"
+             id="path117" />
+        </g>
+      </g>
+    </g>
+    <g
+       clip-path="url(#clip4)"
+       id="g131"
+       transform="translate(32.79661,-43.474577)">
+      <g
+         clip-path="url(#clip5)"
+         id="g129">
+        <g
+           clip-path="url(#clip6)"
+           id="g127">
+          <path
+             d="m 328,363 h -0.259 C 326.7,356.49 322.36,350.984 316.273,348.452 V 346 c -0.003,-1.926 -1.379,-3.577 -3.273,-3.927 V 287 c 0,-2.209 -1.791,-4 -4,-4 -2.209,0 -4,1.791 -4,4 v 55.073 c -1.894,0.35 -3.27,2.001 -3.273,3.927 v 2.452 C 295.64,350.984 291.3,356.49 290.259,363 H 290 c -1.657,0 -3,1.343 -3,3 0,1.657 1.343,3 3,3 h 38 c 1.657,0 3,-1.343 3,-3 0,-1.657 -1.343,-3 -3,-3 z m -21,-76 c 0,-1.105 0.895,-2 2,-2 1.105,0 2,0.895 2,2 v 55 h -4 z m 21,80 h -38 c -0.552,0 -1,-0.448 -1,-1 0,-0.552 0.448,-1 1,-1 h 1.965 l 0.269,-1.684 c 0.913,-5.834 4.805,-10.769 10.266,-13.016 l 1.232,-0.512 V 346 c 0,-1.105 0.895,-2 2,-2 h 6.546 c 1.105,0 2,0.895 2,2 v 3.786 l 1.232,0.512 c 5.458,2.25 9.346,7.185 10.256,13.018 L 326.035,365 H 328 c 0.552,0 1,0.448 1,1 0,0.552 -0.448,1 -1,1 z"
+             id="path125" />
+        </g>
+      </g>
+    </g>
+    <g
+       clip-path="url(#clip7)"
+       id="g139"
+       transform="translate(32.79661,-43.474577)">
+      <g
+         clip-path="url(#clip8)"
+         id="g137">
+        <g
+           clip-path="url(#clip9)"
+           id="g135">
+          <path
+             d="m 212,254 c -19.33,0 -35,15.67 -35,35 0,19.33 15.67,35 35,35 19.33,0 35,-15.67 35,-35 -0.022,-19.321 -15.679,-34.978 -35,-35 z m 32.014,27 h -17.022 c -1.592,-2.968 -4.024,-5.4 -6.992,-6.992 v -17.022 c 11.813,2.978 21.036,12.201 24.014,24.014 z M 212,304 c -8.284,0 -15,-6.716 -15,-15 0,-8.284 6.716,-15 15,-15 8.284,0 15,6.716 15,15 -0.009,8.28 -6.72,14.991 -15,15 z m 6,-47.443 v 16.557 c -3.862,-1.485 -8.138,-1.485 -12,0 v -16.557 c 3.965,-0.743 8.035,-0.743 12,0 z m -14,0.429 v 17.022 c -2.968,1.592 -5.4,4.024 -6.992,6.992 H 179.986 C 182.964,269.187 192.187,259.964 204,256.986 Z M 179.557,283 h 16.557 c -1.485,3.862 -1.485,8.138 0,12 h -16.557 c -0.743,-3.966 -0.743,-8.034 0,-12 z m 0.429,14 h 17.022 c 1.592,2.968 4.024,5.4 6.992,6.992 v 17.022 C 192.187,318.036 182.964,308.813 179.986,297 Z M 206,321.443 v -16.557 c 3.862,1.485 8.138,1.485 12,0 v 16.557 c -3.965,0.743 -8.035,0.743 -12,0 z m 14,-0.429 v -17.022 c 2.968,-1.592 5.4,-4.024 6.992,-6.992 h 17.022 C 241.036,308.813 231.813,318.036 220,321.014 Z M 244.443,295 h -16.557 c 1.485,-3.862 1.485,-8.138 0,-12 h 16.557 c 0.743,3.966 0.743,8.034 0,12 z"
+             fill="#c00000"
+             id="path133" />
+        </g>
+      </g>
+    </g>
+    <g
+       clip-path="url(#clip10)"
+       id="g147"
+       transform="translate(32.79661,-43.474577)">
+      <g
+         clip-path="url(#clip11)"
+         id="g145">
+        <g
+           clip-path="url(#clip12)"
+           id="g143">
+          <path
+             d="m 212,176 c -19.33,0 -35,15.67 -35,35 0,19.33 15.67,35 35,35 19.33,0 35,-15.67 35,-35 -0.022,-19.321 -15.679,-34.978 -35,-35 z m 32.014,27 h -17.022 c -1.592,-2.968 -4.024,-5.4 -6.992,-6.992 v -17.022 c 11.813,2.978 21.036,12.201 24.014,24.014 z M 212,226 c -8.284,0 -15,-6.716 -15,-15 0,-8.284 6.716,-15 15,-15 8.284,0 15,6.716 15,15 -0.009,8.28 -6.72,14.991 -15,15 z m 6,-47.443 v 16.557 c -3.862,-1.485 -8.138,-1.485 -12,0 v -16.557 c 3.965,-0.743 8.035,-0.743 12,0 z m -14,0.429 v 17.022 c -2.968,1.592 -5.4,4.024 -6.992,6.992 H 179.986 C 182.964,191.187 192.187,181.964 204,178.986 Z M 179.557,205 h 16.557 c -1.485,3.862 -1.485,8.138 0,12 h -16.557 c -0.743,-3.965 -0.743,-8.035 0,-12 z m 0.429,14 h 17.022 c 1.592,2.968 4.024,5.4 6.992,6.992 v 17.022 C 192.187,240.036 182.964,230.813 179.986,219 Z M 206,243.443 v -16.557 c 3.862,1.485 8.138,1.485 12,0 v 16.557 c -3.965,0.743 -8.035,0.743 -12,0 z m 14,-0.429 v -17.022 c 2.968,-1.592 5.4,-4.024 6.992,-6.992 h 17.022 C 241.036,230.813 231.813,240.036 220,243.014 Z M 244.443,217 h -16.557 c 1.485,-3.862 1.485,-8.138 0,-12 h 16.557 c 0.743,3.965 0.743,8.035 0,12 z"
+             fill="#c00000"
+             id="path141" />
+        </g>
+      </g>
+    </g>
+    <g
+       clip-path="url(#clip13)"
+       id="g155"
+       transform="translate(32.79661,-43.474577)">
+      <g
+         clip-path="url(#clip14)"
+         id="g153">
+        <g
+           clip-path="url(#clip15)"
+           id="g151">
+          <path
+             d="m 580,363 h -0.259 C 578.7,356.49 574.36,350.984 568.273,348.452 V 346 c -0.003,-1.926 -1.379,-3.577 -3.273,-3.927 V 287 c 0,-2.209 -1.791,-4 -4,-4 -2.209,0 -4,1.791 -4,4 v 55.073 c -1.894,0.35 -3.27,2.001 -3.273,3.927 v 2.452 C 547.64,350.984 543.3,356.49 542.259,363 H 542 c -1.657,0 -3,1.343 -3,3 0,1.657 1.343,3 3,3 h 38 c 1.657,0 3,-1.343 3,-3 0,-1.657 -1.343,-3 -3,-3 z m -21,-76 c 0,-1.105 0.895,-2 2,-2 1.105,0 2,0.895 2,2 v 55 h -4 z m 21,80 h -38 c -0.552,0 -1,-0.448 -1,-1 0,-0.552 0.448,-1 1,-1 h 1.965 l 0.269,-1.684 c 0.913,-5.834 4.805,-10.769 10.266,-13.016 l 1.232,-0.512 V 346 c 0,-1.105 0.895,-2 2,-2 h 6.546 c 1.105,0 2,0.895 2,2 v 3.786 l 1.232,0.512 c 5.458,2.25 9.346,7.185 10.256,13.018 L 578.035,365 H 580 c 0.552,0 1,0.448 1,1 0,0.552 -0.448,1 -1,1 z"
+             id="path149" />
+        </g>
+      </g>
+    </g>
+    <g
+       clip-path="url(#clip16)"
+       id="g163"
+       transform="translate(32.79661,-43.474577)">
+      <g
+         clip-path="url(#clip17)"
+         id="g161">
+        <g
+           clip-path="url(#clip18)"
+           id="g159">
+          <path
+             d="m 677,363 h -0.259 C 675.7,356.49 671.36,350.984 665.273,348.452 V 346 c -0.003,-1.926 -1.379,-3.577 -3.273,-3.927 V 287 c 0,-2.209 -1.791,-4 -4,-4 -2.209,0 -4,1.791 -4,4 v 55.073 c -1.894,0.35 -3.27,2.001 -3.273,3.927 v 2.452 C 644.64,350.984 640.3,356.49 639.259,363 H 639 c -1.657,0 -3,1.343 -3,3 0,1.657 1.343,3 3,3 h 38 c 1.657,0 3,-1.343 3,-3 0,-1.657 -1.343,-3 -3,-3 z m -21,-76 c 0,-1.105 0.895,-2 2,-2 1.105,0 2,0.895 2,2 v 55 h -4 z m 21,80 h -38 c -0.552,0 -1,-0.448 -1,-1 0,-0.552 0.448,-1 1,-1 h 1.965 l 0.269,-1.684 c 0.913,-5.834 4.805,-10.769 10.266,-13.016 l 1.232,-0.512 V 346 c 0,-1.105 0.895,-2 2,-2 h 6.546 c 1.105,0 2,0.895 2,2 v 3.786 l 1.232,0.512 c 5.458,2.25 9.346,7.185 10.256,13.018 L 675.035,365 H 677 c 0.552,0 1,0.448 1,1 0,0.552 -0.448,1 -1,1 z"
+             id="path157" />
+        </g>
+      </g>
+    </g>
+    <g
+       clip-path="url(#clip19)"
+       id="g171"
+       transform="translate(32.79661,-43.474577)">
+      <g
+         clip-path="url(#clip20)"
+         id="g169">
+        <g
+           clip-path="url(#clip21)"
+           id="g167">
+          <path
+             d="m 561,254 c -19.33,0 -35,15.67 -35,35 0,19.33 15.67,35 35,35 19.33,0 35,-15.67 35,-35 -0.022,-19.321 -15.679,-34.978 -35,-35 z m 32.014,27 h -17.022 c -1.592,-2.968 -4.024,-5.4 -6.992,-6.992 v -17.022 c 11.813,2.978 21.036,12.201 24.014,24.014 z M 561,304 c -8.284,0 -15,-6.716 -15,-15 0,-8.284 6.716,-15 15,-15 8.284,0 15,6.716 15,15 -0.009,8.28 -6.72,14.991 -15,15 z m 6,-47.443 v 16.557 c -3.862,-1.485 -8.138,-1.485 -12,0 v -16.557 c 3.966,-0.743 8.034,-0.743 12,0 z m -14,0.429 v 17.022 c -2.968,1.592 -5.4,4.024 -6.992,6.992 H 528.986 C 531.964,269.187 541.187,259.964 553,256.986 Z M 528.557,283 h 16.557 c -1.485,3.862 -1.485,8.138 0,12 h -16.557 c -0.743,-3.966 -0.743,-8.034 0,-12 z m 0.429,14 h 17.022 c 1.592,2.968 4.024,5.4 6.992,6.992 v 17.022 C 541.187,318.036 531.964,308.813 528.986,297 Z M 555,321.443 v -16.557 c 3.862,1.485 8.138,1.485 12,0 v 16.557 c -3.966,0.743 -8.034,0.743 -12,0 z m 14,-0.429 v -17.022 c 2.968,-1.592 5.4,-4.024 6.992,-6.992 h 17.022 C 590.036,308.813 580.813,318.036 569,321.014 Z M 593.443,295 h -16.557 c 1.485,-3.862 1.485,-8.138 0,-12 h 16.557 c 0.743,3.966 0.743,8.034 0,12 z"
+             fill="#c00000"
+             id="path165" />
+        </g>
+      </g>
+    </g>
+    <g
+       clip-path="url(#clip22)"
+       id="g179"
+       transform="translate(32.79661,-43.474577)">
+      <g
+         clip-path="url(#clip23)"
+         id="g177">
+        <g
+           clip-path="url(#clip24)"
+           id="g175">
+          <path
+             d="m 659,254 c -19.33,0 -35,15.67 -35,35 0,19.33 15.67,35 35,35 19.33,0 35,-15.67 35,-35 -0.022,-19.321 -15.679,-34.978 -35,-35 z m 32.014,27 h -17.022 c -1.592,-2.968 -4.024,-5.4 -6.992,-6.992 v -17.022 c 11.813,2.978 21.036,12.201 24.014,24.014 z M 659,304 c -8.284,0 -15,-6.716 -15,-15 0,-8.284 6.716,-15 15,-15 8.284,0 15,6.716 15,15 -0.009,8.28 -6.72,14.991 -15,15 z m 6,-47.443 v 16.557 c -3.862,-1.485 -8.138,-1.485 -12,0 v -16.557 c 3.966,-0.743 8.034,-0.743 12,0 z m -14,0.429 v 17.022 c -2.968,1.592 -5.4,4.024 -6.992,6.992 H 626.986 C 629.964,269.187 639.187,259.964 651,256.986 Z M 626.557,283 h 16.557 c -1.485,3.862 -1.485,8.138 0,12 h -16.557 c -0.743,-3.966 -0.743,-8.034 0,-12 z m 0.429,14 h 17.022 c 1.592,2.968 4.024,5.4 6.992,6.992 v 17.022 C 639.187,318.036 629.964,308.813 626.986,297 Z M 653,321.443 v -16.557 c 3.862,1.485 8.138,1.485 12,0 v 16.557 c -3.966,0.743 -8.034,0.743 -12,0 z m 14,-0.429 v -17.022 c 2.968,-1.592 5.4,-4.024 6.992,-6.992 h 17.022 C 688.036,308.813 678.813,318.036 667,321.014 Z M 691.443,295 h -16.557 c 1.485,-3.862 1.485,-8.138 0,-12 h 16.557 c 0.743,3.966 0.743,8.034 0,12 z"
+             fill="#c00000"
+             id="path173" />
+        </g>
+      </g>
+    </g>
+    <g
+       clip-path="url(#clip25)"
+       id="g187"
+       transform="translate(32.79661,-43.474577)">
+      <g
+         clip-path="url(#clip26)"
+         id="g185">
+        <g
+           clip-path="url(#clip27)"
+           id="g183">
+          <path
+             d="m 1027,363 h -0.26 c -1.04,-6.51 -5.38,-12.016 -11.47,-14.548 V 346 c 0,-1.926 -1.38,-3.577 -3.27,-3.927 V 287 c 0,-2.209 -1.79,-4 -4,-4 -2.21,0 -4,1.791 -4,4 v 55.073 c -1.89,0.35 -3.27,2.001 -3.27,3.927 v 2.452 C 994.64,350.984 990.3,356.49 989.259,363 H 989 c -1.657,0 -3,1.343 -3,3 0,1.657 1.343,3 3,3 h 38 c 1.66,0 3,-1.343 3,-3 0,-1.657 -1.34,-3 -3,-3 z m -21,-76 c 0,-1.105 0.9,-2 2,-2 1.1,0 2,0.895 2,2 v 55 h -4 z m 21,80 h -38 c -0.552,0 -1,-0.448 -1,-1 0,-0.552 0.448,-1 1,-1 h 1.965 l 0.269,-1.684 c 0.913,-5.834 4.805,-10.769 10.266,-13.016 l 1.23,-0.512 V 346 c 0,-1.105 0.9,-2 2,-2 h 6.55 c 1.1,0 2,0.895 2,2 v 3.786 l 1.23,0.512 c 5.46,2.25 9.35,7.185 10.26,13.018 l 0.27,1.684 h 1.96 c 0.55,0 1,0.448 1,1 0,0.552 -0.45,1 -1,1 z"
+             id="path181" />
+        </g>
+      </g>
+    </g>
+    <g
+       clip-path="url(#clip28)"
+       id="g195"
+       transform="translate(32.79661,-43.474577)">
+      <g
+         clip-path="url(#clip29)"
+         id="g193">
+        <g
+           clip-path="url(#clip30)"
+           id="g191">
+          <path
+             d="m 931,363 h -0.259 C 929.7,356.49 925.36,350.984 919.273,348.452 V 346 c -0.003,-1.926 -1.379,-3.577 -3.273,-3.927 V 287 c 0,-2.209 -1.791,-4 -4,-4 -2.209,0 -4,1.791 -4,4 v 55.073 c -1.894,0.35 -3.27,2.001 -3.273,3.927 v 2.452 C 898.64,350.984 894.3,356.49 893.259,363 H 893 c -1.657,0 -3,1.343 -3,3 0,1.657 1.343,3 3,3 h 38 c 1.657,0 3,-1.343 3,-3 0,-1.657 -1.343,-3 -3,-3 z m -21,-76 c 0,-1.105 0.895,-2 2,-2 1.105,0 2,0.895 2,2 v 55 h -4 z m 21,80 h -38 c -0.552,0 -1,-0.448 -1,-1 0,-0.552 0.448,-1 1,-1 h 1.965 l 0.269,-1.684 c 0.913,-5.834 4.805,-10.769 10.266,-13.016 l 1.232,-0.512 V 346 c 0,-1.105 0.895,-2 2,-2 h 6.546 c 1.105,0 2,0.895 2,2 v 3.786 l 1.232,0.512 c 5.458,2.25 9.346,7.185 10.256,13.018 L 929.035,365 H 931 c 0.552,0 1,0.448 1,1 0,0.552 -0.448,1 -1,1 z"
+             id="path189" />
+        </g>
+      </g>
+    </g>
+    <g
+       clip-path="url(#clip31)"
+       id="g203"
+       transform="translate(32.79661,-43.474577)">
+      <g
+         clip-path="url(#clip32)"
+         id="g201">
+        <g
+           clip-path="url(#clip33)"
+           id="g199">
+          <path
+             d="m 1008,254 c -19.33,0 -35,15.67 -35,35 0,19.33 15.67,35 35,35 19.33,0 35,-15.67 35,-35 -0.02,-19.321 -15.68,-34.978 -35,-35 z m 32.01,27 h -17.02 c -1.59,-2.968 -4.02,-5.4 -6.99,-6.992 v -17.022 c 11.81,2.978 21.04,12.201 24.01,24.014 z M 1008,304 c -8.284,0 -15,-6.716 -15,-15 0,-8.284 6.716,-15 15,-15 8.28,0 15,6.716 15,15 -0.01,8.28 -6.72,14.991 -15,15 z m 6,-47.443 v 16.557 c -3.86,-1.485 -8.14,-1.485 -12,0 v -16.557 c 3.97,-0.743 8.03,-0.743 12,0 z m -14,0.429 v 17.022 c -2.968,1.592 -5.4,4.024 -6.992,6.992 h -17.022 c 2.978,-11.813 12.201,-21.036 24.014,-24.014 z M 975.557,283 h 16.557 c -1.485,3.862 -1.485,8.138 0,12 h -16.557 c -0.743,-3.966 -0.743,-8.034 0,-12 z m 0.429,14 h 17.022 c 1.592,2.968 4.024,5.4 6.992,6.992 v 17.022 C 988.187,318.036 978.964,308.813 975.986,297 Z M 1002,321.443 v -16.557 c 3.86,1.485 8.14,1.485 12,0 v 16.557 c -3.97,0.743 -8.03,0.743 -12,0 z m 14,-0.429 v -17.022 c 2.97,-1.592 5.4,-4.024 6.99,-6.992 h 17.02 c -2.97,11.813 -12.2,21.036 -24.01,24.014 z M 1040.44,295 h -16.55 c 1.48,-3.862 1.48,-8.138 0,-12 h 16.55 c 0.75,3.966 0.75,8.034 0,12 z"
+             fill="#c00000"
+             id="path197" />
+        </g>
+      </g>
+    </g>
+    <g
+       clip-path="url(#clip34)"
+       id="g211"
+       transform="translate(32.79661,-43.474577)">
+      <g
+         clip-path="url(#clip35)"
+         id="g209">
+        <g
+           clip-path="url(#clip36)"
+           id="g207">
+          <path
+             d="m 1008,176 c -19.33,0 -35,15.67 -35,35 0,19.33 15.67,35 35,35 19.33,0 35,-15.67 35,-35 -0.02,-19.321 -15.68,-34.978 -35,-35 z m 32.01,27 h -17.02 c -1.59,-2.968 -4.02,-5.4 -6.99,-6.992 v -17.022 c 11.81,2.978 21.04,12.201 24.01,24.014 z M 1008,226 c -8.284,0 -15,-6.716 -15,-15 0,-8.284 6.716,-15 15,-15 8.28,0 15,6.716 15,15 -0.01,8.28 -6.72,14.991 -15,15 z m 6,-47.443 v 16.557 c -3.86,-1.485 -8.14,-1.485 -12,0 v -16.557 c 3.97,-0.743 8.03,-0.743 12,0 z m -14,0.429 v 17.022 c -2.968,1.592 -5.4,4.024 -6.992,6.992 h -17.022 c 2.978,-11.813 12.201,-21.036 24.014,-24.014 z M 975.557,205 h 16.557 c -1.485,3.862 -1.485,8.138 0,12 h -16.557 c -0.743,-3.965 -0.743,-8.035 0,-12 z m 0.429,14 h 17.022 c 1.592,2.968 4.024,5.4 6.992,6.992 v 17.022 C 988.187,240.036 978.964,230.813 975.986,219 Z M 1002,243.443 v -16.557 c 3.86,1.485 8.14,1.485 12,0 v 16.557 c -3.97,0.743 -8.03,0.743 -12,0 z m 14,-0.429 v -17.022 c 2.97,-1.592 5.4,-4.024 6.99,-6.992 h 17.02 c -2.97,11.813 -12.2,21.036 -24.01,24.014 z M 1040.44,217 h -16.55 c 1.48,-3.862 1.48,-8.138 0,-12 h 16.55 c 0.75,3.965 0.75,8.035 0,12 z"
+             fill="#c00000"
+             id="path205" />
+        </g>
+      </g>
+    </g>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       id="text213"
+       x="193.44962"
+       y="372.52542">Represented</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       id="text215"
+       x="322.40363"
+       y="372.52542">as</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       id="text217"
+       x="348.7366"
+       y="372.52542">oo</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       id="text219"
+       x="373.60361"
+       y="372.52542">x</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       id="text221"
+       x="220.94962"
+       y="401.52542">o</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="16px"
+       id="text223"
+       x="233.61661"
+       y="406.52542">1</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       id="text225"
+       x="241.78362"
+       y="401.52542">o</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="16px"
+       id="text227"
+       x="254.44962"
+       y="406.52542">2</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       id="text229"
+       x="262.61661"
+       y="401.52542">x =</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       id="text231"
+       x="295.94962"
+       y="401.52542">o</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="16px"
+       id="text233"
+       x="308.61661"
+       y="406.52542">2</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       id="text235"
+       x="316.7836"
+       y="401.52542">o</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="16px"
+       id="text237"
+       x="329.44962"
+       y="406.52542">1</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       id="text239"
+       x="337.61661"
+       y="401.52542">x</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       id="text241"
+       x="546.3186"
+       y="372.52542">Represented</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       id="text243"
+       x="675.27161"
+       y="372.52542">as</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       id="text245"
+       x="701.60559"
+       y="372.52542">o</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       id="text247"
+       x="713.8056"
+       y="372.52542">x</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       id="text249"
+       x="723.49158"
+       y="372.52542">o</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       id="text251"
+       x="579.3186"
+       y="401.52542">o</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="16px"
+       id="text253"
+       x="591.9856"
+       y="406.52542">1</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       id="text255"
+       x="600.15161"
+       y="401.52542">x</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       id="text257"
+       x="609.83856"
+       y="401.52542">o</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="16px"
+       id="text259"
+       x="622.50555"
+       y="406.52542">2</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       id="text261"
+       x="636.17157"
+       y="401.52542">=</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       id="text263"
+       x="653.67157"
+       y="401.52542">o</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="16px"
+       id="text265"
+       x="666.33856"
+       y="406.52542">2</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       id="text267"
+       x="674.50555"
+       y="401.52542">x</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       id="text269"
+       x="684.19159"
+       y="401.52542">o</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="16px"
+       id="text271"
+       x="696.85858"
+       y="406.52542">1</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       id="text273"
+       x="892.57257"
+       y="372.52542">Represented</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       id="text275"
+       x="1021.5256"
+       y="372.52542">as</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       id="text277"
+       x="1047.8566"
+       y="372.52542">x</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       id="text279"
+       x="1057.5466"
+       y="372.52542">oo</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       id="text281"
+       x="931.07257"
+       y="401.52542">x</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       id="text283"
+       x="940.75861"
+       y="401.52542">o</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="16px"
+       id="text285"
+       x="953.4256"
+       y="406.52542">1</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       id="text287"
+       x="961.59259"
+       y="401.52542">o</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="16px"
+       id="text289"
+       x="974.25861"
+       y="406.52542">2</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       id="text291"
+       x="987.9256"
+       y="401.52542">= x</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       id="text293"
+       x="1015.1126"
+       y="401.52542">o</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="16px"
+       id="text295"
+       x="1027.7786"
+       y="406.52542">2</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       id="text297"
+       x="1035.9465"
+       y="401.52542">o</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="16px"
+       id="text299"
+       x="1048.6166"
+       y="406.52542">1</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="37px"
+       id="text301"
+       x="456.36234"
+       y="78.677971">The bijection principle</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="27px"
+       id="text303"
+       x="144.24062"
+       y="508.52542">The total number of ways 2 identical hoops can be placed on 2 posts is</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="27px"
+       id="text305"
+       x="919.66058"
+       y="508.52542">𝐶</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="20px"
+       id="text307"
+       x="933.93359"
+       y="514.52539">2</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="20px"
+       id="text309"
+       x="937.06061"
+       y="498.52542">3</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="27px"
+       id="text311"
+       x="955.50061"
+       y="508.52542">=</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="16px"
+       id="text313"
+       x="1004.9736"
+       y="497.52542">3</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="16px"
+       id="text315"
+       x="1014.4736"
+       y="497.52542">!</text>
+    <path
+       d="m 1012.9816,506.31243 c 1.521,0.401 2.689,1.267 3.504,2.598 0.815,1.331 1.222,2.936 1.222,4.816 0,1.886 -0.406,3.491 -1.218,4.817 -0.813,1.325 -1.982,2.188 -3.508,2.589 l -0.188,-0.601 c 1.203,-0.401 2.098,-1.193 2.684,-2.375 0.586,-1.182 0.879,-2.685 0.879,-4.508 0,-1.76 -0.292,-3.223 -0.875,-4.387 -0.584,-1.164 -1.487,-1.946 -2.711,-2.347 z m -32.01499,0 0.211,0.602 c -1.219,0.401 -2.121,1.183 -2.707,2.347 -0.586,1.164 -0.879,2.627 -0.879,4.387 0,1.823 0.293,3.326 0.879,4.508 0.586,1.182 1.48,1.974 2.683,2.375 l -0.187,0.601 c -1.526,-0.401 -2.696,-1.264 -3.508,-2.589 -0.813,-1.326 -1.219,-2.931 -1.219,-4.817 0,-1.88 0.408,-3.485 1.223,-4.816 0.815,-1.331 1.983,-2.197 3.504,-2.598 z"
+       fill-rule="evenodd"
+       id="path317" />
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="16px"
+       id="text319"
+       x="981.47357"
+       y="518.52539">3</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="16px"
+       id="text321"
+       x="990.97357"
+       y="518.52539">−</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="16px"
+       id="text323"
+       x="1002.9736"
+       y="518.52539">2</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="16px"
+       id="text325"
+       x="1019.1136"
+       y="518.52539">!</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="16px"
+       id="text327"
+       x="1023.6136"
+       y="518.52539">×</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="16px"
+       id="text329"
+       x="1035.1166"
+       y="518.52539">2</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="16px"
+       id="text331"
+       x="1044.6166"
+       y="518.52539">!</text>
+    <path
+       d="m 975.09361,502.50143 h 74.00299 v 1 h -74.00299 z"
+       fill-rule="evenodd"
+       id="path333" />
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="20px"
+       transform="translate(1016.32,552)"
+       id="text335" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="27px"
+       id="text337"
+       x="1053.4465"
+       y="508.52542">=</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="16px"
+       id="text339"
+       x="1072.7766"
+       y="497.52542">3</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="16px"
+       id="text341"
+       x="1082.2766"
+       y="497.52542">×</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="16px"
+       id="text343"
+       x="1093.7766"
+       y="497.52542">2</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="16px"
+       id="text345"
+       x="1103.2766"
+       y="497.52542">×</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="16px"
+       id="text347"
+       x="1114.7766"
+       y="497.52542">1</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="16px"
+       id="text349"
+       x="1072.7766"
+       y="518.52539">1</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="16px"
+       id="text351"
+       x="1082.2766"
+       y="518.52539">×</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="16px"
+       id="text353"
+       x="1093.7766"
+       y="518.52539">2</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="16px"
+       id="text355"
+       x="1103.2766"
+       y="518.52539">×</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="16px"
+       id="text357"
+       x="1114.7766"
+       y="518.52539">1</text>
+    <path
+       d="m 1073.0966,502.50143 h 52 v 1 h -52 z"
+       fill-rule="evenodd"
+       id="path359" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="27px"
+       id="text361"
+       x="1130.2766"
+       y="508.52542">=</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="27px"
+       id="text363"
+       x="1149.6166"
+       y="508.52542">3</text>
+  </g>
+</svg>

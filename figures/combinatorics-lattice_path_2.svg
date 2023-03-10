@@ -1,0 +1,1052 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1280"
+   height="570"
+   overflow="hidden"
+   version="1.1"
+   id="svg261"
+   sodipodi:docname="combinatorics-lattice_path_2.svg"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview263"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.3111111"
+     inkscape:cx="704.74576"
+     inkscape:cy="389.74576"
+     inkscape:window-width="2560"
+     inkscape:window-height="1494"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg261" />
+  <defs
+     id="defs5">
+    <clipPath
+       id="clip0">
+      <rect
+         x="0"
+         y="0"
+         width="1280"
+         height="720"
+         id="rect2" />
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#clip0)"
+     id="g259"
+     transform="translate(36.61017,-54.915254)">
+    <rect
+       x="0"
+       y="0"
+       width="1280"
+       height="720"
+       fill="#ffffff"
+       id="rect7" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(474.35,116)"
+       id="text9">The lattice</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="37px"
+       transform="translate(640.977,116)"
+       id="text11">path</text>
+    <rect
+       x="68"
+       y="336"
+       width="76"
+       height="75"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect13" />
+    <rect
+       x="144"
+       y="336"
+       width="75"
+       height="75"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect15" />
+    <rect
+       x="144"
+       y="260"
+       width="75"
+       height="76"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect17" />
+    <rect
+       x="144"
+       y="184"
+       width="75"
+       height="76"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect19" />
+    <rect
+       x="68"
+       y="260"
+       width="76"
+       height="76"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect21" />
+    <rect
+       x="68"
+       y="184"
+       width="76"
+       height="76"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect23" />
+    <rect
+       x="219"
+       y="336"
+       width="75"
+       height="75"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect25" />
+    <rect
+       x="294"
+       y="336"
+       width="76"
+       height="75"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect27" />
+    <rect
+       x="294"
+       y="260"
+       width="76"
+       height="76"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect29" />
+    <rect
+       x="294"
+       y="184"
+       width="76"
+       height="76"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect31" />
+    <rect
+       x="218"
+       y="260"
+       width="76"
+       height="76"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect33" />
+    <rect
+       x="218"
+       y="184"
+       width="76"
+       height="76"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect35" />
+    <rect
+       x="458"
+       y="336"
+       width="75"
+       height="75"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect37" />
+    <rect
+       x="533"
+       y="336"
+       width="76"
+       height="75"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect39" />
+    <rect
+       x="533"
+       y="260"
+       width="76"
+       height="76"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect41" />
+    <rect
+       x="533"
+       y="184"
+       width="76"
+       height="76"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect43" />
+    <rect
+       x="457"
+       y="260"
+       width="76"
+       height="76"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect45" />
+    <rect
+       x="457"
+       y="184"
+       width="76"
+       height="76"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect47" />
+    <rect
+       x="608"
+       y="336"
+       width="76"
+       height="75"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect49" />
+    <rect
+       x="683"
+       y="336"
+       width="76"
+       height="75"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect51" />
+    <rect
+       x="683"
+       y="260"
+       width="76"
+       height="76"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect53" />
+    <rect
+       x="683"
+       y="184"
+       width="76"
+       height="76"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect55" />
+    <rect
+       x="608"
+       y="260"
+       width="75"
+       height="76"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect57" />
+    <rect
+       x="608"
+       y="184"
+       width="75"
+       height="76"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect59" />
+    <rect
+       x="836"
+       y="336"
+       width="75"
+       height="75"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect61" />
+    <rect
+       x="911"
+       y="336"
+       width="76"
+       height="75"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect63" />
+    <rect
+       x="911"
+       y="260"
+       width="75"
+       height="76"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect65" />
+    <rect
+       x="911"
+       y="184"
+       width="76"
+       height="76"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect67" />
+    <rect
+       x="835"
+       y="260"
+       width="76"
+       height="76"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect69" />
+    <rect
+       x="835"
+       y="184"
+       width="76"
+       height="76"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect71" />
+    <rect
+       x="986"
+       y="336"
+       width="76"
+       height="75"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect73" />
+    <rect
+       x="1061"
+       y="336"
+       width="76"
+       height="75"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect75" />
+    <rect
+       x="1061"
+       y="260"
+       width="76"
+       height="76"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect77" />
+    <rect
+       x="1061"
+       y="184"
+       width="76"
+       height="76"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect79" />
+    <rect
+       x="986"
+       y="260"
+       width="75"
+       height="76"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect81" />
+    <rect
+       x="986"
+       y="184"
+       width="75"
+       height="76"
+       stroke="#ededed"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect83" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="27px"
+       transform="translate(314.204,529)"
+       id="text85">From the lattice path analogy</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="27px"
+       transform="translate(638.237,529)"
+       id="text87">𝐶</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="20px"
+       transform="translate(652.51,535)"
+       id="text89">3</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="20px"
+       transform="translate(655.637,519)"
+       id="text91">4</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="20px"
+       transform="translate(666.97,519)"
+       id="text93">+</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="20px"
+       transform="translate(681.137,519)"
+       id="text95">3</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="27px"
+       transform="translate(699.577,529)"
+       id="text97">=</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="27px"
+       transform="translate(718.91,529)"
+       id="text99">𝐶</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="20px"
+       transform="translate(733.184,535)"
+       id="text101">3</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="20px"
+       transform="translate(736.31,519)"
+       id="text103">3</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="20px"
+       transform="translate(747.644,519)"
+       id="text105">+</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="20px"
+       transform="translate(761.81,519)"
+       id="text107">3</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="27px"
+       transform="translate(780.25,529)"
+       id="text109">+</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="27px"
+       transform="translate(799.584,529)"
+       id="text111">𝐶</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="20px"
+       transform="translate(813.857,535)"
+       id="text113">2</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="20px"
+       transform="translate(816.984,519)"
+       id="text115">4</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="20px"
+       transform="translate(828.317,519)"
+       id="text117">+</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="20px"
+       transform="translate(842.484,519)"
+       id="text119">2</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="27px"
+       transform="translate(41.0857,440)"
+       id="text121">Start</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="27px"
+       transform="translate(349.333,173)"
+       id="text123">End</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="24px"
+       transform="translate(169.123,461)"
+       id="text125">4R and</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="24px"
+       transform="translate(243.29,461)"
+       id="text127">3U</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="24px"
+       transform="translate(559.268,460)"
+       id="text129">3R and 3U</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="24px"
+       transform="translate(929.177,461)"
+       id="text131">4R and 2U</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="27px"
+       transform="translate(671.703,172)"
+       id="text133">End</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="27px"
+       transform="translate(430.363,442)"
+       id="text135">Start</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="48px"
+       transform="translate(401.988,310)"
+       id="text137">=</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="48px"
+       transform="translate(784.885,313)"
+       id="text139">+</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="27px"
+       transform="translate(1150.26,269)"
+       id="text141">End</text>
+    <path
+       d="M 67,411 H 369.086"
+       stroke="#4472c4"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 4"
+       fill="none"
+       fill-rule="evenodd"
+       id="path143" />
+    <path
+       d="M 0,0 1.04987e-4,225.062"
+       stroke="#c00000"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 4"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(1,0,0,-1,369,412.062)"
+       id="path145" />
+    <path
+       d="M 0,0 1.04987e-4,225.062"
+       stroke="#c00000"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 4"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(1,0,0,-1,683,412.062)"
+       id="path147" />
+    <path
+       d="M 0,0 1.04987e-4,144.416"
+       stroke="#c00000"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 4"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(1,0,0,-1,1137,412.416)"
+       id="path149" />
+    <path
+       d="M 457,412 H 684.06"
+       stroke="#4472c4"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 4"
+       fill="none"
+       fill-rule="evenodd"
+       id="path151" />
+    <path
+       d="m 836,412 h 302.09"
+       stroke="#4472c4"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 4"
+       fill="none"
+       fill-rule="evenodd"
+       id="path153" />
+    <path
+       d="M 67,184 H 369.086"
+       stroke="#4472c4"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 4"
+       fill="none"
+       fill-rule="evenodd"
+       id="path155" />
+    <path
+       d="M 0,0 1.04987e-4,225.062"
+       stroke="#c00000"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 4"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(1,0,0,-1,68,409.062)"
+       id="path157" />
+    <path
+       d="M 0,0 1.04987e-4,225.062"
+       stroke="#c00000"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 4"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(1,0,0,-1,219,409.062)"
+       id="path159" />
+    <path
+       d="M 0,0 1.04987e-4,225.062"
+       stroke="#c00000"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 4"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(1,0,0,-1,144,411.062)"
+       id="path161" />
+    <path
+       d="M 0,0 1.04987e-4,225.062"
+       stroke="#c00000"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 4"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(1,0,0,-1,294,409.062)"
+       id="path163" />
+    <path
+       d="M 0,0 1.04987e-4,225.062"
+       stroke="#c00000"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 4"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(1,0,0,-1,608,412.062)"
+       id="path165" />
+    <path
+       d="M 0,0 1.04987e-4,225.062"
+       stroke="#c00000"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 4"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(1,0,0,-1,457,411.062)"
+       id="path167" />
+    <path
+       d="M 0,0 1.04987e-4,225.062"
+       stroke="#c00000"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 4"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(1,0,0,-1,532,412.062)"
+       id="path169" />
+    <path
+       d="M 72,336 H 374.086"
+       stroke="#4472c4"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 4"
+       fill="none"
+       fill-rule="evenodd"
+       id="path171" />
+    <path
+       d="M 69,260 H 371.086"
+       stroke="#4472c4"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 4"
+       fill="none"
+       fill-rule="evenodd"
+       id="path173" />
+    <path
+       d="m 835,336 h 302.09"
+       stroke="#4472c4"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 4"
+       fill="none"
+       fill-rule="evenodd"
+       id="path175" />
+    <path
+       d="m 835,260 h 302.09"
+       stroke="#4472c4"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 4"
+       fill="none"
+       fill-rule="evenodd"
+       id="path177" />
+    <path
+       d="m 361.5,186 c 0,-4.142 3.358,-7.5 7.5,-7.5 4.142,0 7.5,3.358 7.5,7.5 0,4.142 -3.358,7.5 -7.5,7.5 -4.142,0 -7.5,-3.358 -7.5,-7.5 z"
+       stroke="#000000"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="#c00000"
+       fill-rule="evenodd"
+       id="path179" />
+    <path
+       d="m 61.5001,411 c 0,-4.142 3.3578,-7.5 7.5,-7.5 4.1421,0 7.5,3.358 7.5,7.5 0,4.142 -3.3579,7.5 -7.5,7.5 -4.1422,0 -7.5,-3.358 -7.5,-7.5 z"
+       stroke="#000000"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="#4472c4"
+       fill-rule="evenodd"
+       id="path181" />
+    <path
+       d="M 456,185 H 683.06"
+       stroke="#4472c4"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 4"
+       fill="none"
+       fill-rule="evenodd"
+       id="path183" />
+    <path
+       d="M 457,260 H 684.06"
+       stroke="#4472c4"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 4"
+       fill="none"
+       fill-rule="evenodd"
+       id="path185" />
+    <path
+       d="M 457,336 H 684.06"
+       stroke="#4472c4"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 4"
+       fill="none"
+       fill-rule="evenodd"
+       id="path187" />
+    <path
+       d="m 675.5,186 c 0,-4.142 3.582,-7.5 8,-7.5 4.418,0 8,3.358 8,7.5 0,4.142 -3.582,7.5 -8,7.5 -4.418,0 -8,-3.358 -8,-7.5 z"
+       stroke="#000000"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="#c00000"
+       fill-rule="evenodd"
+       id="path189" />
+    <path
+       d="m 450.5,411 c 0,-4.142 3.358,-7.5 7.5,-7.5 4.142,0 7.5,3.358 7.5,7.5 0,4.142 -3.358,7.5 -7.5,7.5 -4.142,0 -7.5,-3.358 -7.5,-7.5 z"
+       stroke="#000000"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="#4472c4"
+       fill-rule="evenodd"
+       id="path191" />
+    <path
+       d="M 0,0 1.04987e-4,144.416"
+       stroke="#c00000"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 4"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(1,0,0,-1,836,407.416)"
+       id="path193" />
+    <path
+       d="M 0,0 1.04987e-4,144.416"
+       stroke="#c00000"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 4"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(1,0,0,-1,910,406.416)"
+       id="path195" />
+    <path
+       d="M 0,0 1.04987e-4,144.416"
+       stroke="#c00000"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 4"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(1,0,0,-1,986,406.416)"
+       id="path197" />
+    <path
+       d="M 0,0 1.04987e-4,144.416"
+       stroke="#c00000"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 4"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(1,0,0,-1,1061,406.416)"
+       id="path199" />
+    <path
+       d="m 829.5,410.5 c 0,-4.418 3.358,-8 7.5,-8 4.142,0 7.5,3.582 7.5,8 0,4.418 -3.358,8 -7.5,8 -4.142,0 -7.5,-3.582 -7.5,-8 z"
+       stroke="#000000"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="#4472c4"
+       fill-rule="evenodd"
+       id="path201" />
+    <path
+       d="m 1129.5,260.5 c 0,-4.418 3.58,-8 8,-8 4.42,0 8,3.582 8,8 0,4.418 -3.58,8 -8,8 -4.42,0 -8,-3.582 -8,-8 z"
+       stroke="#000000"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="#c00000"
+       fill-rule="evenodd"
+       id="path203" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="27px"
+       transform="translate(372.73,586)"
+       id="text205">In</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="27px"
+       transform="translate(393.397,586)"
+       id="text207" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="27px"
+       transform="translate(399.397,586)"
+       id="text209">general</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="27px"
+       transform="translate(480.897,586)"
+       id="text211" />
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="27px"
+       transform="translate(486.897,586)"
+       id="text213">𝐶</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="20px"
+       transform="translate(501.171,592)"
+       id="text215">𝑏</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="20px"
+       transform="translate(504.297,575)"
+       id="text217">𝑎</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="20px"
+       transform="translate(516.937,575)"
+       id="text219">+</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="20px"
+       transform="translate(531.104,575)"
+       id="text221">𝑏</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="27px"
+       transform="translate(550.397,586)"
+       id="text223">=</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="27px"
+       transform="translate(569.731,586)"
+       id="text225">𝐶</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="20px"
+       transform="translate(584.004,592)"
+       id="text227">𝑏</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="20px"
+       transform="translate(587.13,575)"
+       id="text229">𝑎</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="20px"
+       transform="translate(599.771,575)"
+       id="text231">+</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="20px"
+       transform="translate(613.937,575)"
+       id="text233">𝑏</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="20px"
+       transform="translate(626.124,575)"
+       id="text235">−</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="20px"
+       transform="translate(640.291,575)"
+       id="text237">1</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="27px"
+       transform="translate(658.731,586)"
+       id="text239">+</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="27px"
+       transform="translate(678.064,586)"
+       id="text241">𝐶</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="20px"
+       transform="translate(692.337,592)"
+       id="text243">𝑏</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="20px"
+       transform="translate(704.524,592)"
+       id="text245">−</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="20px"
+       transform="translate(718.69,592)"
+       id="text247">1</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="20px"
+       transform="translate(695.464,575)"
+       id="text249">𝑎</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="20px"
+       transform="translate(708.104,575)"
+       id="text251">+</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="20px"
+       transform="translate(722.271,575)"
+       id="text253">𝑏</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="20px"
+       transform="translate(734.457,575)"
+       id="text255">−</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="20px"
+       transform="translate(748.624,575)"
+       id="text257">1</text>
+  </g>
+</svg>
