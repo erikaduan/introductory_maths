@@ -1,0 +1,1594 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1280"
+   height="580"
+   overflow="hidden"
+   version="1.1"
+   id="svg505"
+   sodipodi:docname="combinatorics-mn_rule.svg"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview507"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.92709556"
+     inkscape:cx="517.74598"
+     inkscape:cy="108.94238"
+     inkscape:window-width="2560"
+     inkscape:window-height="1494"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg505" />
+  <defs
+     id="defs23">
+    <clipPath
+       id="clip0">
+      <rect
+         x="0"
+         y="0"
+         width="1280"
+         height="720"
+         id="rect2" />
+    </clipPath>
+    <clipPath
+       id="clip1">
+      <rect
+         x="589"
+         y="199"
+         width="85"
+         height="74"
+         id="rect5" />
+    </clipPath>
+    <clipPath
+       id="clip2">
+      <rect
+         x="589"
+         y="199"
+         width="85"
+         height="74"
+         id="rect8" />
+    </clipPath>
+    <clipPath
+       id="clip3">
+      <rect
+         x="589"
+         y="199"
+         width="144"
+         height="145"
+         id="rect11" />
+    </clipPath>
+    <clipPath
+       id="clip4">
+      <rect
+         x="589"
+         y="276"
+         width="85"
+         height="74"
+         id="rect14" />
+    </clipPath>
+    <clipPath
+       id="clip5">
+      <rect
+         x="589"
+         y="276"
+         width="85"
+         height="74"
+         id="rect17" />
+    </clipPath>
+    <clipPath
+       id="clip6">
+      <rect
+         x="589"
+         y="276"
+         width="144"
+         height="145"
+         id="rect20" />
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#clip0)"
+     id="g503"
+     transform="translate(-2.1572749,-79.819176)">
+    <rect
+       x="0"
+       y="0"
+       width="1280"
+       height="720"
+       fill="#ffffff"
+       id="rect25" />
+    <rect
+       x="119"
+       y="165"
+       width="454"
+       height="453"
+       stroke="#000000"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="#d6dce5"
+       fill-opacity="0.501961"
+       id="rect27" />
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="59px"
+       transform="translate(143.24,156)"
+       id="text29">1</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="59px"
+       transform="translate(218.588,156)"
+       id="text31">2</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="59px"
+       transform="translate(296.023,156)"
+       id="text33">3</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="59px"
+       transform="translate(368.983,156)"
+       id="text35">4</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="59px"
+       transform="translate(442.897,156)"
+       id="text37">5</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="59px"
+       transform="translate(512.979,156)"
+       id="text39">6</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="59px"
+       transform="translate(78.893,220)"
+       id="text41">1</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="59px"
+       transform="translate(78.893,295)"
+       id="text43">2</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="59px"
+       transform="translate(78.7232,371)"
+       id="text45">3</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="59px"
+       transform="translate(78.7232,448)"
+       id="text47">4</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="59px"
+       transform="translate(78.7232,524)"
+       id="text49">5</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="59px"
+       transform="translate(78.7232,599)"
+       id="text51">6</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(127.264,212)"
+       id="text53">[</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(137.097,212)"
+       id="text55">1</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(153.264,212)"
+       id="text57">,</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(161.264,212)"
+       id="text59">1</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(177.43,212)"
+       id="text61">]</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(202.854,212)"
+       id="text63">[</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(212.688,212)"
+       id="text65">1</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(228.854,212)"
+       id="text67">,</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(236.854,212)"
+       id="text69">2</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(253.021,212)"
+       id="text71">]</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(278.445,212)"
+       id="text73">[</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(288.278,212)"
+       id="text75">1</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(304.445,212)"
+       id="text77">,</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(312.445,212)"
+       id="text79">3</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(328.612,212)"
+       id="text81">]</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(354.035,212)"
+       id="text83">[</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(363.869,212)"
+       id="text85">1</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(380.035,212)"
+       id="text87">,</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(388.035,212)"
+       id="text89">4</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(404.202,212)"
+       id="text91">]</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(425.846,212)"
+       id="text93">[</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(435.68,212)"
+       id="text95">1</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(451.846,212)"
+       id="text97">,</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(459.846,212)"
+       id="text99">5</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(476.013,212)"
+       id="text101">]</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(499.547,212)"
+       id="text103">[</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(509.381,212)"
+       id="text105">1</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(525.547,212)"
+       id="text107">,</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(533.547,212)"
+       id="text109">6</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(549.714,212)"
+       id="text111">]</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(127.264,285)"
+       id="text113">[</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(137.097,285)"
+       id="text115">2</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(153.264,285)"
+       id="text117">,</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(161.264,285)"
+       id="text119">1</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(177.43,285)"
+       id="text121">]</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(202.854,285)"
+       id="text123">[</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(212.688,285)"
+       id="text125">2</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(228.854,285)"
+       id="text127">,</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(236.854,285)"
+       id="text129">2</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(253.021,285)"
+       id="text131">]</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(278.445,285)"
+       id="text133">[</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(288.278,285)"
+       id="text135">2</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(304.445,285)"
+       id="text137">,</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(312.445,285)"
+       id="text139">3</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(328.612,285)"
+       id="text141">]</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(354.035,285)"
+       id="text143">[</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(363.869,285)"
+       id="text145">2</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(380.035,285)"
+       id="text147">,</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(388.035,285)"
+       id="text149">4</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(404.202,285)"
+       id="text151">]</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(425.846,285)"
+       id="text153">[</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(435.68,285)"
+       id="text155">2</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(451.846,285)"
+       id="text157">,</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(459.846,285)"
+       id="text159">5</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(476.013,285)"
+       id="text161">]</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(499.547,285)"
+       id="text163">[</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(509.381,285)"
+       id="text165">2</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(525.547,285)"
+       id="text167">,</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(533.547,285)"
+       id="text169">6</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(549.714,285)"
+       id="text171">]</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(127.264,361)"
+       id="text173">[</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(137.097,361)"
+       id="text175">3</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(153.264,361)"
+       id="text177">,</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(161.264,361)"
+       id="text179">1</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(177.43,361)"
+       id="text181">]</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(202.854,361)"
+       id="text183">[</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(212.688,361)"
+       id="text185">3</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(228.854,361)"
+       id="text187">,</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(236.854,361)"
+       id="text189">2</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(253.021,361)"
+       id="text191">]</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(278.445,361)"
+       id="text193">[</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(288.278,361)"
+       id="text195">3</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(304.445,361)"
+       id="text197">,</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(312.445,361)"
+       id="text199">3</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(328.612,361)"
+       id="text201">]</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(354.035,361)"
+       id="text203">[</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(363.869,361)"
+       id="text205">3</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(380.035,361)"
+       id="text207">,</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(388.035,361)"
+       id="text209">4</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(404.202,361)"
+       id="text211">]</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(425.846,361)"
+       id="text213">[</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(435.68,361)"
+       id="text215">3</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(451.846,361)"
+       id="text217">,</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(459.846,361)"
+       id="text219">5</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(476.013,361)"
+       id="text221">]</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(499.547,361)"
+       id="text223">[</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(509.381,361)"
+       id="text225">3</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(525.547,361)"
+       id="text227">,</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(533.547,361)"
+       id="text229">6</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(549.714,361)"
+       id="text231">]</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(127.264,438)"
+       id="text233">[</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(137.097,438)"
+       id="text235">4</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(153.264,438)"
+       id="text237">,</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(161.264,438)"
+       id="text239">1</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(177.43,438)"
+       id="text241">]</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(202.854,438)"
+       id="text243">[</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(212.688,438)"
+       id="text245">4</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(228.854,438)"
+       id="text247">,</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(236.854,438)"
+       id="text249">2</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(253.021,438)"
+       id="text251">]</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(278.445,438)"
+       id="text253">[</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(288.278,438)"
+       id="text255">4</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(304.445,438)"
+       id="text257">,</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(312.445,438)"
+       id="text259">3</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(328.612,438)"
+       id="text261">]</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(354.035,438)"
+       id="text263">[</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(363.869,438)"
+       id="text265">4</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(380.035,438)"
+       id="text267">,</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(388.035,438)"
+       id="text269">4</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(404.202,438)"
+       id="text271">]</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(425.846,438)"
+       id="text273">[</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(435.68,438)"
+       id="text275">4</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(451.846,438)"
+       id="text277">,</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(459.846,438)"
+       id="text279">5</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(476.013,438)"
+       id="text281">]</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(499.547,438)"
+       id="text283">[</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(509.381,438)"
+       id="text285">4</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(525.547,438)"
+       id="text287">,</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(533.547,438)"
+       id="text289">6</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(549.714,438)"
+       id="text291">]</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(127.264,590)"
+       id="text293">[</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(137.097,590)"
+       id="text295">6</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(153.264,590)"
+       id="text297">,</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(161.264,590)"
+       id="text299">1</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(177.43,590)"
+       id="text301">]</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(202.854,590)"
+       id="text303">[</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(212.688,590)"
+       id="text305">6</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(228.854,590)"
+       id="text307">,</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(236.854,590)"
+       id="text309">2</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(253.021,590)"
+       id="text311">]</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(278.445,590)"
+       id="text313">[</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(288.278,590)"
+       id="text315">6</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(304.445,590)"
+       id="text317">,</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(312.445,590)"
+       id="text319">3</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(328.612,590)"
+       id="text321">]</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(354.035,590)"
+       id="text323">[</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(363.869,590)"
+       id="text325">6</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(380.035,590)"
+       id="text327">,</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(388.035,590)"
+       id="text329">4</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(404.202,590)"
+       id="text331">]</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(425.846,590)"
+       id="text333">[</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(435.68,590)"
+       id="text335">6</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(451.846,590)"
+       id="text337">,</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(459.846,590)"
+       id="text339">5</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(476.013,590)"
+       id="text341">]</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(499.547,590)"
+       id="text343">[</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(509.381,590)"
+       id="text345">6</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(525.547,590)"
+       id="text347">,</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(533.547,590)"
+       id="text349">6</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(549.714,590)"
+       id="text351">]</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(127.264,517)"
+       id="text353">[</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(137.097,517)"
+       id="text355">5</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(153.264,517)"
+       id="text357">,</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(161.264,517)"
+       id="text359">1</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(177.43,517)"
+       id="text361">]</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(202.854,517)"
+       id="text363">[</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(212.688,517)"
+       id="text365">5</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(228.854,517)"
+       id="text367">,</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(236.854,517)"
+       id="text369">2</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(253.021,517)"
+       id="text371">]</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(278.445,517)"
+       id="text373">[</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(288.278,517)"
+       id="text375">5</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(304.445,517)"
+       id="text377">,</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(312.445,517)"
+       id="text379">3</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(328.612,517)"
+       id="text381">]</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(354.035,517)"
+       id="text383">[</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(363.869,517)"
+       id="text385">5</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(380.035,517)"
+       id="text387">,</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(388.035,517)"
+       id="text389">4</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(404.202,517)"
+       id="text391">]</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(425.846,517)"
+       id="text393">[</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(435.68,517)"
+       id="text395">5</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(451.846,517)"
+       id="text397">,</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(459.846,517)"
+       id="text399">5</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(476.013,517)"
+       id="text401">]</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(499.547,517)"
+       id="text403">[</text>
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(509.381,517)"
+       id="text405">5</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(525.547,517)"
+       id="text407">,</text>
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(533.547,517)"
+       id="text409">6</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(549.714,517)"
+       id="text411">]</text>
+    <g
+       clip-path="url(#clip1)"
+       id="g445">
+      <g
+         clip-path="url(#clip2)"
+         id="g443">
+        <g
+           clip-path="url(#clip3)"
+           id="g441">
+          <path
+             d="M 64.4703,70.487 H 22.4896 C 18.3518,70.4811 14.9989,67.1282 14.9931,62.9905 V 20.9903 c 0.0058,-4.1378 3.3587,-7.4907 7.4965,-7.4965 h 41.9807 c 4.1378,0.0058 7.4907,3.3587 7.4965,7.4965 V 62.989 c -0.0049,4.1383 -3.3581,7.4921 -7.4965,7.498 z M 22.4896,16.4924 c -2.4842,0 -4.4979,2.0137 -4.4979,4.4979 V 62.989 c 0,2.4842 2.0137,4.4979 4.4979,4.4979 h 41.9807 c 2.4842,0 4.4979,-2.0137 4.4979,-4.4979 V 20.9903 c 0,-2.4842 -2.0137,-4.4979 -4.4979,-4.4979 z"
+             fill="#c00000"
+             transform="matrix(1,0,0,1.00452,589,199)"
+             id="path413" />
+          <path
+             d="m 92.9571,131.68 v 0 c -1.9897,0.005 -3.8988,-0.787 -5.3,-2.2 L 57.9708,99.782 c -2.9237,-2.9303 -2.9237,-7.6744 0,-10.6046 L 87.6571,59.4911 c 1.4009,-1.4139 3.3096,-2.2082 5.3,-2.2055 v 0 c 1.9895,-0.0054 3.8982,0.7862 5.3001,2.198 l 29.6858,29.6983 c 2.924,2.9308 2.924,7.6752 0,10.6061 l -29.6783,29.694 c -1.4043,1.412 -3.3157,2.204 -5.3076,2.198 z m -32.9158,-34.0645 0.0495,0.051 29.6863,29.6955 c 0.841,0.847 1.9863,1.322 3.18,1.319 v 0 c 1.1933,0.004 2.3385,-0.47 3.1801,-1.316 L 125.823,97.6665 c 1.758,-1.7556 1.76,-4.6035 0.004,-6.361 -0.001,-0.0012 -0.002,-0.0024 -0.004,-0.0036 L 96.1372,61.6036 c -0.8413,-0.8468 -1.9863,-1.3219 -3.1801,-1.3194 v 0 c -1.193,-0.0034 -2.3378,0.4699 -3.18,1.3149 L 60.0908,91.2989 c -1.7409,1.7378 -1.763,4.5517 -0.0495,6.3166 z"
+             fill="#c00000"
+             transform="matrix(1,0,0,1.00452,589,199)"
+             id="path415" />
+          <path
+             d="m 53.9751,60.7385 c -2.0701,0 -3.7483,-1.6782 -3.7483,-3.7483 0,-2.0701 1.6782,-3.7482 3.7483,-3.7482 2.0701,0 3.7483,1.6781 3.7483,3.7482 0,2.0701 -1.6782,3.7483 -3.7483,3.7483 z"
+             fill="#c00000"
+             transform="matrix(1,0,0,1.00452,589,199)"
+             id="path417" />
+          <path
+             d="m 32.9848,60.7385 c -2.0701,0 -3.7483,-1.6782 -3.7483,-3.7483 0,-2.0701 1.6782,-3.7482 3.7483,-3.7482 2.0701,0 3.7483,1.6781 3.7483,3.7482 0,2.0701 -1.6782,3.7483 -3.7483,3.7483 z"
+             fill="#c00000"
+             transform="matrix(1,0,0,1.00452,589,199)"
+             id="path419" />
+          <path
+             d="m 57.7264,41.9926 c 0,2.0701 -1.6782,3.7483 -3.7483,3.7483 -2.0701,0 -3.7483,-1.6782 -3.7483,-3.7483 0,-2.0701 1.6782,-3.7482 3.7483,-3.7482 2.0701,0 3.7483,1.6781 3.7483,3.7482 z"
+             fill="#c00000"
+             transform="matrix(1,0,0,1.00452,589,199)"
+             id="path421" />
+          <path
+             d="m 36.7346,41.9926 c 0,2.0701 -1.6782,3.7483 -3.7483,3.7483 -2.0701,0 -3.7483,-1.6782 -3.7483,-3.7483 0,-2.0701 1.6782,-3.7482 3.7483,-3.7482 2.0701,0 3.7483,1.6781 3.7483,3.7482 z"
+             fill="#c00000"
+             transform="matrix(1,0,0,1.00452,589,199)"
+             id="path423" />
+          <path
+             d="m 53.9751,30.7448 c -2.0701,0 -3.7483,-1.6782 -3.7483,-3.7482 0,-2.0701 1.6782,-3.7483 3.7483,-3.7483 2.0701,0 3.7483,1.6782 3.7483,3.7483 0,2.07 -1.6782,3.7482 -3.7483,3.7482 z"
+             fill="#c00000"
+             transform="matrix(1,0,0,1.00452,589,199)"
+             id="path425" />
+          <path
+             d="m 32.9848,30.7448 c -2.0701,0 -3.7483,-1.6782 -3.7483,-3.7482 0,-2.0701 1.6782,-3.7483 3.7483,-3.7483 2.0701,0 3.7483,1.6782 3.7483,3.7483 0,2.07 -1.6782,3.7482 -3.7483,3.7482 z"
+             fill="#c00000"
+             transform="matrix(1,0,0,1.00452,589,199)"
+             id="path427" />
+          <path
+             d="m 89.7786,116.259 c -2.0701,0.001 -3.7486,-1.677 -3.749,-3.747 -5e-4,-2.07 1.6773,-3.749 3.7473,-3.749 2.0701,-0.001 3.7488,1.677 3.7492,3.747 2e-4,0.993 -0.3937,1.946 -1.0952,2.649 -0.7014,0.707 -1.6566,1.103 -2.6523,1.1 z"
+             fill="#c00000"
+             transform="matrix(1,0,0,1.00452,589,199)"
+             id="path429" />
+          <path
+             d="m 100.379,105.655 c -2.0704,-0.001 -3.7483,-1.679 -3.7478,-3.749 3e-4,-2.0703 1.6788,-3.7482 3.7488,-3.7478 2.07,5e-4 3.748,1.679 3.748,3.7488 -0.001,0.994 -0.395,1.946 -1.097,2.649 -0.702,0.706 -1.657,1.102 -2.652,1.099 z"
+             fill="#c00000"
+             transform="matrix(1,0,0,1.00452,589,199)"
+             id="path431" />
+          <path
+             d="m 74.9339,101.412 c -2.07,-0.002 -3.7466,-1.6822 -3.7445,-3.7523 0.002,-2.0701 1.6818,-3.7466 3.7519,-3.7445 0.9904,0.001 1.9402,0.3939 2.6419,1.093 1.4665,1.4611 1.4708,3.8343 0.0098,5.3008 -0.7043,0.707 -1.6613,1.104 -2.6591,1.103 z"
+             fill="#c00000"
+             transform="matrix(1,0,0,1.00452,589,199)"
+             id="path433" />
+          <path
+             d="m 110.979,95.0562 c -2.07,-0.0021 -3.747,-1.682 -3.745,-3.7521 0.002,-2.0701 1.682,-3.7466 3.752,-3.7445 0.991,0.0011 1.94,0.3939 2.642,1.093 1.467,1.4611 1.471,3.8344 0.01,5.3008 -0.704,0.7069 -1.661,1.1038 -2.659,1.1028 z"
+             fill="#c00000"
+             transform="matrix(1,0,0,1.00452,589,199)"
+             id="path435" />
+          <path
+             d="m 85.5415,90.8086 c -0.9934,0.0029 -1.9464,-0.3925 -2.6462,-1.0975 -1.464,-1.4636 -1.4643,-3.8368 -8e-4,-5.3008 1.4637,-1.464 3.8369,-1.4644 5.301,-7e-4 1.4639,1.4636 1.4642,3.8369 6e-4,5.3008 -0.7038,0.7041 -1.659,1.0993 -2.6546,1.0982 z"
+             fill="#c00000"
+             transform="matrix(1,0,0,1.00452,589,199)"
+             id="path437" />
+          <path
+             d="m 96.1432,80.213 c -2.0701,5e-4 -3.7486,-1.6774 -3.7491,-3.7475 -4e-4,-2.0701 1.6773,-3.7486 3.7474,-3.749 2.0703,-5e-4 3.7487,1.6774 3.7492,3.7475 1e-4,0.993 -0.3937,1.9456 -1.0953,2.6485 -0.7012,0.7071 -1.6565,1.1035 -2.6522,1.1005 z"
+             fill="#c00000"
+             transform="matrix(1,0,0,1.00452,589,199)"
+             id="path439" />
+        </g>
+      </g>
+    </g>
+    <path
+       d="m 687.336,251.995 c -1.096,-1.108 -7.124,-3.262 -10.227,-2.216 -1.346,0.454 -1.439,2.476 -2.191,3.693 -2.292,3.708 -0.543,1.034 -4.383,4.431 -1.036,0.917 -1.948,1.97 -2.922,2.955 -0.243,1.477 -0.129,3.063 -0.73,4.431 -0.42,0.955 -1.572,1.38 -2.192,2.216 -0.851,1.148 -1.46,2.462 -2.191,3.693 0.487,3.693 0.296,7.544 1.461,11.079 1.615,4.899 7.287,0.329 8.766,-0.739 3.376,-2.439 5.632,-5.845 7.304,-9.601 3.541,-7.956 3.192,-7.271 4.383,-13.295 -0.243,-0.739 -0.73,-1.437 -0.73,-2.216 0,-2.722 4.748,-3.323 3.652,-4.431 z"
+       stroke="#ffffff"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       id="path447" />
+    <text
+       fill="#c00000"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(672.28,251)"
+       id="text449">Possible outcomes from first dice roll</text>
+    <g
+       clip-path="url(#clip4)"
+       id="g483">
+      <g
+         clip-path="url(#clip5)"
+         id="g481">
+        <g
+           clip-path="url(#clip6)"
+           id="g479">
+          <path
+             d="M 64.4703,70.487 H 22.4896 C 18.3518,70.4811 14.9989,67.1282 14.9931,62.9905 V 20.9903 c 0.0058,-4.1378 3.3587,-7.4907 7.4965,-7.4965 h 41.9807 c 4.1378,0.0058 7.4907,3.3587 7.4965,7.4965 V 62.989 c -0.0049,4.1383 -3.3581,7.4921 -7.4965,7.498 z M 22.4896,16.4924 c -2.4842,0 -4.4979,2.0137 -4.4979,4.4979 V 62.989 c 0,2.4842 2.0137,4.4979 4.4979,4.4979 h 41.9807 c 2.4842,0 4.4979,-2.0137 4.4979,-4.4979 V 20.9903 c 0,-2.4842 -2.0137,-4.4979 -4.4979,-4.4979 z"
+             fill="#44546a"
+             transform="matrix(1,0,0,1.00452,589,276)"
+             id="path451" />
+          <path
+             d="m 92.9571,131.68 v 0 c -1.9897,0.005 -3.8988,-0.787 -5.3,-2.2 L 57.9708,99.782 c -2.9237,-2.9303 -2.9237,-7.6744 0,-10.6046 L 87.6571,59.4911 c 1.4009,-1.4139 3.3096,-2.2082 5.3,-2.2055 v 0 c 1.9895,-0.0054 3.8982,0.7862 5.3001,2.198 l 29.6858,29.6983 c 2.924,2.9308 2.924,7.6752 0,10.6061 l -29.6783,29.694 c -1.4043,1.412 -3.3157,2.204 -5.3076,2.198 z m -32.9158,-34.0645 0.0495,0.051 29.6863,29.6955 c 0.841,0.847 1.9863,1.322 3.18,1.319 v 0 c 1.1933,0.004 2.3385,-0.47 3.1801,-1.316 L 125.823,97.6665 c 1.758,-1.7556 1.76,-4.6035 0.004,-6.361 -0.001,-0.0012 -0.002,-0.0024 -0.004,-0.0036 L 96.1372,61.6036 c -0.8413,-0.8468 -1.9863,-1.3219 -3.1801,-1.3194 v 0 c -1.193,-0.0034 -2.3378,0.4699 -3.18,1.3149 L 60.0908,91.2989 c -1.7409,1.7378 -1.763,4.5517 -0.0495,6.3166 z"
+             fill="#44546a"
+             transform="matrix(1,0,0,1.00452,589,276)"
+             id="path453" />
+          <path
+             d="m 53.9751,60.7385 c -2.0701,0 -3.7483,-1.6782 -3.7483,-3.7483 0,-2.0701 1.6782,-3.7482 3.7483,-3.7482 2.0701,0 3.7483,1.6781 3.7483,3.7482 0,2.0701 -1.6782,3.7483 -3.7483,3.7483 z"
+             fill="#44546a"
+             transform="matrix(1,0,0,1.00452,589,276)"
+             id="path455" />
+          <path
+             d="m 32.9848,60.7385 c -2.0701,0 -3.7483,-1.6782 -3.7483,-3.7483 0,-2.0701 1.6782,-3.7482 3.7483,-3.7482 2.0701,0 3.7483,1.6781 3.7483,3.7482 0,2.0701 -1.6782,3.7483 -3.7483,3.7483 z"
+             fill="#44546a"
+             transform="matrix(1,0,0,1.00452,589,276)"
+             id="path457" />
+          <path
+             d="m 57.7264,41.9926 c 0,2.0701 -1.6782,3.7483 -3.7483,3.7483 -2.0701,0 -3.7483,-1.6782 -3.7483,-3.7483 0,-2.0701 1.6782,-3.7482 3.7483,-3.7482 2.0701,0 3.7483,1.6781 3.7483,3.7482 z"
+             fill="#44546a"
+             transform="matrix(1,0,0,1.00452,589,276)"
+             id="path459" />
+          <path
+             d="m 36.7346,41.9926 c 0,2.0701 -1.6782,3.7483 -3.7483,3.7483 -2.0701,0 -3.7483,-1.6782 -3.7483,-3.7483 0,-2.0701 1.6782,-3.7482 3.7483,-3.7482 2.0701,0 3.7483,1.6781 3.7483,3.7482 z"
+             fill="#44546a"
+             transform="matrix(1,0,0,1.00452,589,276)"
+             id="path461" />
+          <path
+             d="m 53.9751,30.7448 c -2.0701,0 -3.7483,-1.6782 -3.7483,-3.7482 0,-2.0701 1.6782,-3.7483 3.7483,-3.7483 2.0701,0 3.7483,1.6782 3.7483,3.7483 0,2.07 -1.6782,3.7482 -3.7483,3.7482 z"
+             fill="#44546a"
+             transform="matrix(1,0,0,1.00452,589,276)"
+             id="path463" />
+          <path
+             d="m 32.9848,30.7448 c -2.0701,0 -3.7483,-1.6782 -3.7483,-3.7482 0,-2.0701 1.6782,-3.7483 3.7483,-3.7483 2.0701,0 3.7483,1.6782 3.7483,3.7483 0,2.07 -1.6782,3.7482 -3.7483,3.7482 z"
+             fill="#44546a"
+             transform="matrix(1,0,0,1.00452,589,276)"
+             id="path465" />
+          <path
+             d="m 89.7786,116.259 c -2.0701,0.001 -3.7486,-1.677 -3.749,-3.747 -5e-4,-2.07 1.6773,-3.749 3.7473,-3.749 2.0701,-0.001 3.7488,1.677 3.7492,3.747 2e-4,0.993 -0.3937,1.946 -1.0952,2.649 -0.7014,0.707 -1.6566,1.103 -2.6523,1.1 z"
+             fill="#44546a"
+             transform="matrix(1,0,0,1.00452,589,276)"
+             id="path467" />
+          <path
+             d="m 100.379,105.655 c -2.0704,-0.001 -3.7483,-1.679 -3.7478,-3.749 3e-4,-2.0703 1.6788,-3.7482 3.7488,-3.7478 2.07,5e-4 3.748,1.679 3.748,3.7488 -0.001,0.994 -0.395,1.946 -1.097,2.649 -0.702,0.706 -1.657,1.102 -2.652,1.099 z"
+             fill="#44546a"
+             transform="matrix(1,0,0,1.00452,589,276)"
+             id="path469" />
+          <path
+             d="m 74.9339,101.412 c -2.07,-0.002 -3.7466,-1.6822 -3.7445,-3.7523 0.002,-2.0701 1.6818,-3.7466 3.7519,-3.7445 0.9904,0.001 1.9402,0.3939 2.6419,1.093 1.4665,1.4611 1.4708,3.8343 0.0098,5.3008 -0.7043,0.707 -1.6613,1.104 -2.6591,1.103 z"
+             fill="#44546a"
+             transform="matrix(1,0,0,1.00452,589,276)"
+             id="path471" />
+          <path
+             d="m 110.979,95.0562 c -2.07,-0.0021 -3.747,-1.682 -3.745,-3.7521 0.002,-2.0701 1.682,-3.7466 3.752,-3.7445 0.991,0.0011 1.94,0.3939 2.642,1.093 1.467,1.4611 1.471,3.8344 0.01,5.3008 -0.704,0.7069 -1.661,1.1038 -2.659,1.1028 z"
+             fill="#44546a"
+             transform="matrix(1,0,0,1.00452,589,276)"
+             id="path473" />
+          <path
+             d="m 85.5415,90.8086 c -0.9934,0.0029 -1.9464,-0.3925 -2.6462,-1.0975 -1.464,-1.4636 -1.4643,-3.8368 -8e-4,-5.3008 1.4637,-1.464 3.8369,-1.4644 5.301,-7e-4 1.4639,1.4636 1.4642,3.8369 6e-4,5.3008 -0.7038,0.7041 -1.659,1.0993 -2.6546,1.0982 z"
+             fill="#44546a"
+             transform="matrix(1,0,0,1.00452,589,276)"
+             id="path475" />
+          <path
+             d="m 96.1432,80.213 c -2.0701,5e-4 -3.7486,-1.6774 -3.7491,-3.7475 -4e-4,-2.0701 1.6773,-3.7486 3.7474,-3.749 2.0703,-5e-4 3.7487,1.6774 3.7492,3.7475 1e-4,0.993 -0.3937,1.9456 -1.0953,2.6485 -0.7012,0.7071 -1.6565,1.1035 -2.6522,1.1005 z"
+             fill="#44546a"
+             transform="matrix(1,0,0,1.00452,589,276)"
+             id="path477" />
+        </g>
+      </g>
+    </g>
+    <path
+       d="m 687.336,328.995 c -1.096,-1.108 -7.124,-3.262 -10.227,-2.216 -1.346,0.454 -1.439,2.476 -2.191,3.693 -2.292,3.708 -0.543,1.034 -4.383,4.431 -1.036,0.917 -1.948,1.97 -2.922,2.955 -0.243,1.477 -0.129,3.063 -0.73,4.431 -0.42,0.955 -1.572,1.38 -2.192,2.216 -0.851,1.148 -1.46,2.462 -2.191,3.693 0.487,3.693 0.296,7.544 1.461,11.079 1.615,4.899 7.287,0.329 8.766,-0.739 3.376,-2.438 5.632,-5.845 7.304,-9.601 3.541,-7.956 3.192,-7.271 4.383,-13.295 -0.243,-0.739 -0.73,-1.437 -0.73,-2.216 0,-2.722 4.748,-3.323 3.652,-4.431 z"
+       stroke="#ffffff"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       id="path485" />
+    <text
+       fill="#44546a"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(672.28,328)"
+       id="text487">Possible outcomes from second dice roll</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="32px"
+       transform="translate(682.76,487)"
+       id="text489">Total</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="32px"
+       transform="translate(754.68,487)"
+       id="text491">possible</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="32px"
+       transform="translate(870.847,487)"
+       id="text493">ordered</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="32px"
+       transform="translate(983.76,487)"
+       id="text495">pairs:</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(1064.37,487)"
+       id="text497">6</text>
+    <text
+       font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(1087.7,487)"
+       id="text499">×</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="32px"
+       transform="translate(1117.7,487)"
+       id="text501">6</text>
+  </g>
+</svg>

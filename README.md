@@ -8,10 +8,10 @@ This repository contains tutorials on the introductory mathematical concepts req
 |:-----|:--------|
 |:1234:|[Introduction to numbers](./tutorials/numbers-introduction.md) (Updated)|    
 |:1234:|[Introduction to algebra](./tutorials/algebra-introduction.md)|    
-|:last_quarter_moon:| [Introduction to set theory](./tutorials/set_theory-introduction.md) (Updated) |  
+|:last_quarter_moon:|[Introduction to set theory](./tutorials/set_theory-introduction.md) (Updated)|  
 |:compass:|Introduction to trigonometry|    
 |:cookie:|Introduction to summations|  
-|:cookie:|Introduction to combinatorics|    
+|:cookie:|[Introduction to combinatorics](./tutorials/combinatorics-introduction.md) (Updated)|    
 |:1234:|[Introduction to functions](./tutorials/functions-introduction.md)|   
 |:roller_coaster:|[Introduction to derivatives](./tutorials/calculus-derivatives.md)|    
 |:roller_coaster:| Introduction to integration |    

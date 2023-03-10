@@ -21,9 +21,25 @@ This tutorial explains how to use factorials, permutations and combinations to c
 :::
 
 
-# The $m\times n$ rule
+# The mn rule
 
-Finding the total number of possible ordered pairs   
+The $m\times n$ rule is a simple rule for finding the total number of possible ordered pairs $(a_i, b_j)$ from two different sets $A$ and $B$.     
+
+When you have one scenario containing $m$ possible elements i.e. $A = \{a_1, a_2, \cdots, a_m\}$ and one scenario containing with $n$ possible elements i.e. $B = {b_1, b_2, \cdots, b_n}$, the total number of possible joint scenarios is the total number of ordered pairs $(a_i, b_j)$ where $1 \leq i \leq m$ and $1 \leq j \leq n$.  
+
+This is equal to $m\times n = mn$.  
+
+![](../figures/combinatorics-mn_rule.svg)
+
+This rule is best illustrated by the scenario of rolling two dice. The total number of possible ordered pairs of two dice rolls is $6 \times 6 = 36$, as each dice roll generates 6 possible simple events i.e. $A = \{1, 2, 3, 4, 5, 6\}$ and $B = \{1, 2, 3, 4, 5, 6\}$.   
+
+This can also be denoted by $S = \{(a, b) : a \in \{1, \cdots, 6\}, b \in \{1, \cdots, 6\}\}$ where $n_S = 6\times6 = 36$.   
+
+# Factorials  
+
+
+
+
 
 
 
