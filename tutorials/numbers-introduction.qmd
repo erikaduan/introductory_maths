@@ -40,7 +40,7 @@ Number classifications have an elegant hierarchical property:
 -   All integers are rational numbers i.e. $n = \tfrac{n}{1}$.
 -   All rational numbers are complex numbers i.e. $\tfrac{n}{1} = \tfrac{n}{1}+0i$.
 
-![](../figures/numbers-categories.svg)
+![](../figures/numbers-categories.gif)
 
 
 # Natural numbers
@@ -49,7 +49,7 @@ Natural numbers ($\mathbb{N}$) are whole positive numbers. They are most commonl
 
 An extension of natural numbers is the need to partition them into consistent bundles, to represent and count very large natural numbers. For example, the **base 10** or **decimal** system represents 136 as $(1\times10^2) + (3\times 10^1) + (6\times 10^0)$ whereas the **base 2** or **binary** system represents 136 as $(1\times2^7) + (0\times 2^6) + (0\times 2^5) + (0\times 2^4) + (1\times 2^3) + (0\times 2^2) + (0\times 2^1) + (0\times 2^0)$.
 
-![](../figures/numbers-number_system.svg)
+![](../figures/numbers-number_system.gif)
 
 The binary number system is a more cumbersome representation, but its binary expression range (as a series of logic gates outputting 0s or 1s) underlies its adoption by computer-based systems.
 
@@ -194,7 +194,7 @@ Because the terms $a$ and $bi$ occupy completely different number plans (a real 
 
 There is therefore duality between complex number addition and scalar multiplication and vector addition and scalar multiplication.
 
-![](../figures/numbers-complex.svg)
+![](../figures/numbers-complex.gif)
 
 ::: panel-tabset
 ## R

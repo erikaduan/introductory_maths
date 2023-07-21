@@ -1,14 +1,13 @@
-Introduction to numbers
-================
+# Introduction to numbers
 Erika Duan
-2/26/23
+2023-07-21
 
--   <a href="#numbers" id="toc-numbers">Numbers</a>
--   <a href="#natural-numbers" id="toc-natural-numbers">Natural numbers</a>
--   <a href="#integers" id="toc-integers">Integers</a>
--   <a href="#real-numbers" id="toc-real-numbers">Real numbers</a>
--   <a href="#complex-numbers" id="toc-complex-numbers">Complex numbers</a>
--   <a href="#resources" id="toc-resources">Resources</a>
+- [Numbers](#numbers)
+- [Natural numbers](#natural-numbers)
+- [Integers](#integers)
+- [Real numbers](#real-numbers)
+- [Complex numbers](#complex-numbers)
+- [Resources](#resources)
 
 <div>
 
@@ -32,21 +31,20 @@ Erika Duan
 
 Numbers are used to:
 
--   Count objects. *For example, I have 10 tutorials to read.*
--   Describe object behaviour. *For example, the area of a unit circle
-    is*
-    ![\pi r^2](https://latex.codecogs.com/svg.latex?%5Cpi%20r%5E2 "\pi r^2")
-    where
-    ![r = 1](https://latex.codecogs.com/svg.latex?r%20%3D%201 "r = 1").
--   Solve problems, often by introducing simple assumptions. *For
-    example, if 5 bees can pollinate a*
-    ![100 m^2](https://latex.codecogs.com/svg.latex?100%20m%5E2 "100 m^2")
-    field in 10 minutes, how many bees are required to pollinate a 350
-    ![m^2](https://latex.codecogs.com/svg.latex?m%5E2 "m^2") field?
-    Assume that pollination efficiency scales perfectly and is not
-    impacted by land shape.
--   Represent complex abstractions. *For example, how can individual
-    words be represented in an n-dimensional feature space?*
+- Count objects. *For example, I have 10 tutorials to read.*
+- Describe object behaviour. *For example, the area of a unit circle is*
+  ![\pi r^2](https://latex.codecogs.com/svg.latex?%5Cpi%20r%5E2 "\pi r^2")
+  where
+  ![r = 1](https://latex.codecogs.com/svg.latex?r%20%3D%201 "r = 1").
+- Solve problems, often by introducing simple assumptions. *For example,
+  if 5 bees can pollinate a*
+  ![100 m^2](https://latex.codecogs.com/svg.latex?100%20m%5E2 "100 m^2")
+  field in 10 minutes, how many bees are required to pollinate a 350
+  ![m^2](https://latex.codecogs.com/svg.latex?m%5E2 "m^2") field? Assume
+  that pollination efficiency scales perfectly and is not impacted by
+  land shape.
+- Represent complex abstractions. *For example, how can individual words
+  be represented in an n-dimensional feature space?*
 
 Numbers can be classified into different categories according to their
 properties. A number can belong to multiple categories. For example, the
@@ -58,13 +56,13 @@ i.e. ![3+i^2](https://latex.codecogs.com/svg.latex?3%2Bi%5E2 "3+i^2").
 
 Number classifications have an elegant hierarchical property:
 
--   All natural numbers are integers.
--   All integers are rational numbers
-    i.e. ![n = \tfrac{n}{1}](https://latex.codecogs.com/svg.latex?n%20%3D%20%5Ctfrac%7Bn%7D%7B1%7D "n = \tfrac{n}{1}").
--   All rational numbers are complex numbers
-    i.e. ![\tfrac{n}{1} = \tfrac{n}{1}+0i](https://latex.codecogs.com/svg.latex?%5Ctfrac%7Bn%7D%7B1%7D%20%3D%20%5Ctfrac%7Bn%7D%7B1%7D%2B0i "\tfrac{n}{1} = \tfrac{n}{1}+0i").
+- All natural numbers are integers.
+- All integers are rational numbers
+  i.e. ![n = \tfrac{n}{1}](https://latex.codecogs.com/svg.latex?n%20%3D%20%5Ctfrac%7Bn%7D%7B1%7D "n = \tfrac{n}{1}").
+- All rational numbers are complex numbers
+  i.e. ![\tfrac{n}{1} = \tfrac{n}{1}+0i](https://latex.codecogs.com/svg.latex?%5Ctfrac%7Bn%7D%7B1%7D%20%3D%20%5Ctfrac%7Bn%7D%7B1%7D%2B0i "\tfrac{n}{1} = \tfrac{n}{1}+0i").
 
-![](../figures/numbers-categories.svg)
+![](../figures/numbers-categories.gif)
 
 # Natural numbers
 
@@ -84,7 +82,7 @@ For example, the **base 10** or **decimal** system represents 136 as
 whereas the **base 2** or **binary** system represents 136 as
 ![(1\times2^7) + (0\times 2^6) + (0\times 2^5) + (0\times 2^4) + (1\times 2^3) + (0\times 2^2) + (0\times 2^1) + (0\times 2^0)](https://latex.codecogs.com/svg.latex?%281%5Ctimes2%5E7%29%20%2B%20%280%5Ctimes%202%5E6%29%20%2B%20%280%5Ctimes%202%5E5%29%20%2B%20%280%5Ctimes%202%5E4%29%20%2B%20%281%5Ctimes%202%5E3%29%20%2B%20%280%5Ctimes%202%5E2%29%20%2B%20%280%5Ctimes%202%5E1%29%20%2B%20%280%5Ctimes%202%5E0%29 "(1\times2^7) + (0\times 2^6) + (0\times 2^5) + (0\times 2^4) + (1\times 2^3) + (0\times 2^2) + (0\times 2^1) + (0\times 2^0)").
 
-![](../figures/numbers-number_system.svg)
+![](../figures/numbers-number_system.gif)
 
 The binary number system is a more cumbersome representation, but its
 binary expression range (as a series of logic gates outputting 0s or 1s)
@@ -183,7 +181,7 @@ doubles, but should avoid doing so the other way around.
 [To quote from the R
 FAQ](https://cran.r-project.org/doc/FAQ/R-FAQ.html#Why-doesn_0027t-R-think-these-numbers-are-equal_003f),
 only integers and fractions whose denominator is a power of 2 are
-represented accurately. All other numbers are internally rounded to \~53
+represented accurately. All other numbers are internally rounded to ~53
 binary digits accuracy.
 
 ``` r
@@ -220,17 +218,23 @@ floats.
 # Check float type in Python ---------------------------------------------------
 type(3.0)
 #> <class 'float'>  
+```
 
+``` python
 float(3)
 #> 3.0
 
 # Do not cast doubles into integers as decimal numbers are floored not rounded  
+```
 
+``` python
 (int(3.4), int(3.8))
 #> (3, 3)  
 
 # Python also rounds reoccurring decimals  
+```
 
+``` python
 (1/3, 10/3)
 #> (0.3333333333333333, 3.3333333333333335)    
 ```
@@ -268,12 +272,11 @@ Complex numbers
 ![a+bi](https://latex.codecogs.com/svg.latex?a%2Bbi "a+bi")) are
 represented by two components which cannot be further simplified:
 
--   The term ![a](https://latex.codecogs.com/svg.latex?a "a") represents
-    a real number.
--   The term ![bi](https://latex.codecogs.com/svg.latex?bi "bi")
-    represents the product of a real number and an imaginary number,
-    where
-    ![i^2=-1](https://latex.codecogs.com/svg.latex?i%5E2%3D-1 "i^2=-1").
+- The term ![a](https://latex.codecogs.com/svg.latex?a "a") represents a
+  real number.
+- The term ![bi](https://latex.codecogs.com/svg.latex?bi "bi")
+  represents the product of a real number and an imaginary number, where
+  ![i^2=-1](https://latex.codecogs.com/svg.latex?i%5E2%3D-1 "i^2=-1").
 
 Because the terms ![a](https://latex.codecogs.com/svg.latex?a "a") and
 ![bi](https://latex.codecogs.com/svg.latex?bi "bi") occupy completely
@@ -282,12 +285,12 @@ think of the combination of
 ![a+bi](https://latex.codecogs.com/svg.latex?a%2Bbi "a+bi") as the sum
 of two vectors in 2D space. This 2D space is different to the Cartesian
 plane as its basis vectors are
-![\\{(1, 0), (0, i)\\}](https://latex.codecogs.com/svg.latex?%5C%7B%281%2C%200%29%2C%20%280%2C%20i%29%5C%7D "\{(1, 0), (0, i)\}").
+![\\(1, 0), (0, i)\\](https://latex.codecogs.com/svg.latex?%5C%7B%281%2C%200%29%2C%20%280%2C%20i%29%5C%7D "\{(1, 0), (0, i)\}").
 
 There is therefore duality between complex number addition and scalar
 multiplication and vector addition and scalar multiplication.
 
-![](../figures/numbers-complex.svg)
+![](../figures/numbers-complex.gif)
 
 <div class="panel-tabset">
 
@@ -334,19 +337,27 @@ c = complex(-1, 0)
 
 type(c)
 #> <class 'complex'>  
+```
 
+``` python
 (c.real, c.imag)
 #> (-1.0, 0.0) 
+```
 
+``` python
 c**2 
 #> (1-0j)
 
 # np.sqrt() works on complex numbers but not negative integers  
+```
 
+``` python
 np.sqrt(-1)
 #> Runtime Warning: invalid value encountered in sqrt
 #> nan
+```
 
+``` python
 np.sqrt(c)
 #> 1j  
 ```
@@ -376,12 +387,12 @@ sqrt(-1 + 0im)
 
 # Resources
 
--   The [Wikipedia
-    article](https://en.wikipedia.org/wiki/Number#Main_classification)
-    on the number system.  
--   The [Numberphile YouTube
-    video](https://www.youtube.com/watch?v=NHZt8eBKcRA) on numbers.  
--   Introduction to number systems and binary numbers from [Khan
-    Academy](https://www.youtube.com/watch?v=ku4KOFQ-bB4).  
--   Introduction to rational and irrational numbers from [Khan
-    Academy](https://www.youtube.com/watch?v=cLP7INqs3JM).
+- The [Wikipedia
+  article](https://en.wikipedia.org/wiki/Number#Main_classification) on
+  the number system.  
+- The [Numberphile YouTube
+  video](https://www.youtube.com/watch?v=NHZt8eBKcRA) on numbers.  
+- Introduction to number systems and binary numbers from [Khan
+  Academy](https://www.youtube.com/watch?v=ku4KOFQ-bB4).  
+- Introduction to rational and irrational numbers from [Khan
+  Academy](https://www.youtube.com/watch?v=cLP7INqs3JM).
