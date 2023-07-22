@@ -17,7 +17,7 @@ execute:
 ::: callout-tip
 ## Summary
 
-This tutorial lists some common algebraic tricks, such as factorisation and working with inequalities, which are useful for solving mathematical problems in later tutorials.
+This tutorial revises basic algebra concepts and illustrates some algebraic tricks, such as factorisation and working with inequalities, that are useful for solving mathematical problems related to calculus and statistical mathematics.  
 :::
 
 ```{r}
@@ -43,17 +43,33 @@ library("ggplot2")
 
 # Elementary algebra
 
-Elementary algebra is commonly associated with questions like *Solve for x when $2x + y = 6$.* It is more useful, however, to think of elementary algebra as a form of expression that allows us to represent infinitely possible terms using finite ones.
+Elementary algebra, also referred to as just algebra, is commonly associated with tasks like *Find x if $2x = 6$.* However, it is more useful to think of algebra as a form of expression that allows us to represent infinitely possible terms using a finite one.  
 
-For example, the terms $6x + 3y$, $4x + 2y$ and $2x + y$ are equivalent and there are theoretically infinite variations of this expression, with the simplest being $2x + y$. When we read the term $2x + y$, we can intuit that 2 parts of $x$ and 1 part of $y$ are always required to make up a final quantity.
+For example, the terms $2x + y$, $4x + 2y$ and $6x + 3y$ are equivalent and infinite variations of this expression exist, with the simplest being $2x + y$. When we read the term $2x + y$, we can intuit that 2 parts of $x$ and 1 part of $y$ are always required (usually to make up another quantity).   
 
-![](../figures/algebra-representation.svg)
+Maths involves being precise with descriptions, and it is much easier to write $2x + y$ than to write 'all possible values where we have 2 parts of one component and one part of a different component'.    
 
-An algebraic term can therefore be decomposed into three parts:
+![](../figures/algebra-representation.gif)
 
--   A single **variable** or multiple variables. A variable is a varying quantity of an entity, usually represented by concise symbols $x$, $y$ or $x_i$ where $i=1, \cdots, n$.
--   The relative **quantity** of each variable. *For example, let $x$ represent the number of eggs and $y$ represent the number of cups of sugar required to make a dessert.* The term $x + y$ describes a 1:1 ratio of eggs to sugar whereas the term $2x + y$ describes a 2:1 ratio of eggs to sugar and will result in a very different taste.
--   The arithmetic **operator(s)** applied between variables. *For example, in additive models, the relationship between parameters $y = b_o+b_1x_1 + \cdots + b_nx_n$ is additive and the dependent variable $y$ therefore increases by $b_1$ amount for one unit increase in $x_1$.*
+Any algebraic term can therefore be decomposed into three components:     
+
+-   Variable(s): a variable is a varying quantity of an entity, usually represented by concise symbols $x$, $y$ or $x_i$ where $i=1, \cdots, n$.     
+-   Operator(s): the arithmetic operation applied to variables. *For example, in additive models, the relationship between parameters $y = b_o+b_1x_1 + \cdots + b_nx_n$ is additive and the dependent variable $y$ therefore increases by $b_1$ amount for one unit increase in $x_1$.*     
+-   Relative quantity of variable(s): *For example, let $x$ represent the number of eggs and $y$ represent the number of cups of sugar required to make a dessert. The term $x + y$ describes a 1:1 ratio of eggs to sugar whereas the term $2x + y$ describes a 2:1 ratio of eggs to sugar and will result in a very different taste.*    
+
+
+# Simplifying algebraic terms  
+
+A few rules of algebraic manipulation are:   
+
+-   We can simplify product terms. *For example, $4(x + 2.5y) = 6z \equiv 4x + 10y = 6z$ and $4x + 10y = 6z \equiv 2x + 5y = 3z$.*
+-   We cannot further simplify a term if it is the input of another mathematical operator. *For example, (4x + 10y)^2 = 6z 	\not\equiv$ (2x + 5y)^2 = 3z*.  
+-   We can add or subtract fractions by multiplying the fractions to form a common denominator. For example, $\tfrac{3y}{x} + \tfrac{4x}{y} = \tfrac{3y^2 + 4x^2}{xy}$.       
+
+
+# Factorisation
+
+
 
 
 # Manipulating inequalities
@@ -121,12 +137,12 @@ a < b, a + c < b + c
 :::
 
 
-# Simplifying fractions
 
-# Factorisation
+
+
 
 # Resources
 
--   [Entry](https://plato.stanford.edu/entries/algebra/) on algebra from the Stanford Encyclopedia of Philosophy.\
--   Khan academy [YouTube series](https://www.khanacademy.org/math/algebra-basics/alg-basics-algebraic-expressions#alg-basics-intro-to-variables) on algebra basics.\
--   A [factsheet](https://www.mathcentre.ac.uk/resources/uploaded/mc-bus-manipinequ-2009-1.pdf) on manipulating inequalities from the Uk Maths Centre.
+-   [Entry](https://plato.stanford.edu/entries/algebra/) on algebra from the Stanford Encyclopedia of Philosophy.    
+-   Khan academy [YouTube series](https://www.khanacademy.org/math/algebra-basics/alg-basics-algebraic-expressions#alg-basics-intro-to-variables) on algebra basics.    
+-   A [factsheet](https://www.mathcentre.ac.uk/resources/uploaded/mc-bus-manipinequ-2009-1.pdf) on manipulating inequalities from the Uk Maths Centre.   
