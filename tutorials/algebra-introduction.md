@@ -12,10 +12,10 @@ Erika Duan
 
 > **Summary**
 >
-> This tutorial revises basic algebra concepts and illustrates some
+> This tutorial introduces basic algebra concepts and illustrates some
 > algebraic tricks, such as factorisation and working with inequalities,
 > that are useful for solving mathematical problems related to calculus
-> and statistical mathematics.
+> and statistical mathematics in later tutorials.
 
 </div>
 
@@ -43,20 +43,21 @@ we can intuit that 2 parts of
 ![y](https://latex.codecogs.com/svg.latex?y "y") are always required
 (usually to make up another quantity).
 
-Maths involves being precise with descriptions, and it is much easier to
-write
+Mathematics involves being precise with descriptions, and it is much
+easier to write
 ![2x + y](https://latex.codecogs.com/svg.latex?2x%20%2B%20y "2x + y")
-than to write ‘all possible values where we have 2 parts of one
-component and one part of a different component’.
+than to write ‘*all possible values where we have 2 parts of one
+component and one part of a different component*’.
 
 ![](../figures/algebra-representation.gif)
 
-Any algebraic term can therefore be decomposed into three components:
+An algebraic term can therefore be decomposed into three components:
 
 - Variable(s): a variable is a varying quantity of an entity, usually
-  represented by concise symbols
+  represented by concise symbols such as
   ![x](https://latex.codecogs.com/svg.latex?x "x"),
-  ![y](https://latex.codecogs.com/svg.latex?y "y") or
+  ![y](https://latex.codecogs.com/svg.latex?y "y"),
+  ![z](https://latex.codecogs.com/svg.latex?z "z") or
   ![x_i](https://latex.codecogs.com/svg.latex?x_i "x_i") where
   ![i=1, \cdots, n](https://latex.codecogs.com/svg.latex?i%3D1%2C%20%5Ccdots%2C%20n "i=1, \cdots, n").  
 - Operator(s): the arithmetic operation applied to variables. *For
@@ -64,8 +65,8 @@ Any algebraic term can therefore be decomposed into three components:
   ![y = b_o+b_1x_1 + \cdots + b_nx_n](https://latex.codecogs.com/svg.latex?y%20%3D%20b_o%2Bb_1x_1%20%2B%20%5Ccdots%20%2B%20b_nx_n "y = b_o+b_1x_1 + \cdots + b_nx_n")
   is additive and the dependent variable
   ![y](https://latex.codecogs.com/svg.latex?y "y") therefore increases
-  by ![b_1](https://latex.codecogs.com/svg.latex?b_1 "b_1") amount for
-  one unit increase in
+  by ![+b_1](https://latex.codecogs.com/svg.latex?%2Bb_1 "+b_1") for per
+  unit increase in
   ![x_1](https://latex.codecogs.com/svg.latex?x_1 "x_1").*  
 - Relative quantity of variable(s): *For example, let
   ![x](https://latex.codecogs.com/svg.latex?x "x") represent the number
@@ -81,18 +82,50 @@ Any algebraic term can therefore be decomposed into three components:
 
 A few rules of algebraic manipulation are:
 
-- We can simplify product terms. *For example,
-  ![4(x + 2.5y) = 6z \equiv 4x + 10y = 6z](https://latex.codecogs.com/svg.latex?4%28x%20%2B%202.5y%29%20%3D%206z%20%5Cequiv%204x%20%2B%2010y%20%3D%206z "4(x + 2.5y) = 6z \equiv 4x + 10y = 6z")
-  and
-  ![4x + 10y = 6z \equiv 2x + 5y = 3z](https://latex.codecogs.com/svg.latex?4x%20%2B%2010y%20%3D%206z%20%5Cequiv%202x%20%2B%205y%20%3D%203z "4x + 10y = 6z \equiv 2x + 5y = 3z").*
+- We can simplify product terms using product expansion. *For example,
+  ![4(x + 2.5y) = 4x + 10y](https://latex.codecogs.com/svg.latex?4%28x%20%2B%202.5y%29%20%3D%204x%20%2B%2010y "4(x + 2.5y) = 4x + 10y").*  
 - We cannot further simplify a term if it is the input of another
-  mathematical operator. *For example, (4x + 10y)^2 = 6z \$ (2x + 5y)^2
-  = 3z*.  
+  mathematical operator. *For example,
+  ![(4x + 10y)^2 = 6z \not\equiv](https://latex.codecogs.com/svg.latex?%284x%20%2B%2010y%29%5E2%20%3D%206z%20%5Cnot%5Cequiv "(4x + 10y)^2 = 6z \not\equiv")
+  (2x + 5y)^2 = 3z\$.*  
 - We can add or subtract fractions by multiplying the fractions to form
   a common denominator. For example,
   ![\tfrac{3y}{x} + \tfrac{4x}{y} = \tfrac{3y^2 + 4x^2}{xy}](https://latex.codecogs.com/svg.latex?%5Ctfrac%7B3y%7D%7Bx%7D%20%2B%20%5Ctfrac%7B4x%7D%7By%7D%20%3D%20%5Ctfrac%7B3y%5E2%20%2B%204x%5E2%7D%7Bxy%7D "\tfrac{3y}{x} + \tfrac{4x}{y} = \tfrac{3y^2 + 4x^2}{xy}").
 
+::: panel-tabset \## R
+
+``` r
+# Solve algebraic term in R ----------------------------------------------------
+4 <= 4
+#> [1] TRUE
+
+4 < 4
+#> [1] FALSE
+
+class(4 < 4)
+#> [1] "logical"
+```
+
 # Factorisation
+
+Factorisation is the reverse process to product expansion and can be
+thought of as breaking down a fully expanded algebraic term into the
+product of its factors. *For example, the factors of
+![10x + 2y](https://latex.codecogs.com/svg.latex?10x%20%2B%202y "10x + 2y")
+are ![2](https://latex.codecogs.com/svg.latex?2 "2") and
+![5x + y](https://latex.codecogs.com/svg.latex?5x%20%2B%20y "5x + y") as
+![10x + 2y = 2(5x + y)](https://latex.codecogs.com/svg.latex?10x%20%2B%202y%20%3D%202%285x%20%2B%20y%29 "10x + 2y = 2(5x + y)").*
+
+The reason why factorisation is useful is that it allows us to solve for
+special function properties, for example to identify whether a quadratic
+function intersects the x-axis.
+
+Quadratic equations with the form
+![ax^2 + bx + c](https://latex.codecogs.com/svg.latex?ax%5E2%20%2B%20bx%20%2B%20c "ax^2 + bx + c")
+can be simplified through factorisation using:
+
+- 
+- 
 
 # Manipulating inequalities
 

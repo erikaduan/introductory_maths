@@ -4,15 +4,17 @@ This repository contains tutorials on the introductory mathematical concepts req
 ![](./figures/repo_logo.jpg)
 
 ## Tutorials    
-|Topics|Tutorials|
-|:-----|:--------|
+|Topics|Tutorials|  
+|:-----|:--------|  
 |:1234:|[Introduction to numbers](./tutorials/numbers-introduction.md) (Updated)|    
-|:1234:|[Introduction to algebra](./tutorials/algebra-introduction.md)|    
-|:last_quarter_moon:|[Introduction to set theory](./tutorials/set_theory-introduction.md) (Updated)|  
-|:compass:|Introduction to trigonometry|    
-|:cookie:|Introduction to summations|  
-|:cookie:|[Introduction to combinatorics](./tutorials/combinatorics-introduction.md) (Updated)|    
-|:1234:|[Introduction to functions](./tutorials/functions-introduction.md)|   
+|:1234:|[Introduction to algebra](./tutorials/algebra-introduction.md) (Updated)|   
+|:1234:|[Introduction to functions](./tutorials/functions-introduction.md)|      
+|:1234:|Introduction to summations|   
+|:cookie:|[Introduction to set theory](./tutorials/set_theory-introduction.md)|  
+|:cookie:|[Introduction to combinatorics](./tutorials/combinatorics-introduction.md)|   
+|:black_joker:|[Introduction to probability theory](./tutorials/probability-introduction.md)|   
+|:black_joker:|[Conditional probability](./tutorials/probability-conditional_probability.md)|   
+|:black_joker:|Bayes theorem|   
 |:roller_coaster:|[Introduction to derivatives](./tutorials/calculus-derivatives.md)|    
 |:roller_coaster:| Introduction to integration |    
 |:roller_coaster:| Differential equations |     
@@ -20,9 +22,7 @@ This repository contains tutorials on the introductory mathematical concepts req
 |:roller_coaster:| Differentiation of multivariable functions  |    
 |:1234:|Exponents and logarithms|   
 |:1234:|Logarithms and information theory|  
-|:black_joker:|[Introduction to probability theory](./tutorials/probability-introduction.md)|   
-|:black_joker:|[Conditional probability](./tutorials/probability-conditional_probability.md)|   
-|:black_joker:|Bayes theorem|   
+|:compass:|Introduction to trigonometry|  
 |:compass:|Introduction to distance metrics|   
 |:compass:|Cosine similarity applications|   
 |:chopsticks:|[Introduction to linear systems](./tutorials/linear_algebra-linear_systems.md)|   
