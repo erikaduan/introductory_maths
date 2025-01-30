@@ -4,34 +4,40 @@ This repository contains tutorials on the introductory mathematical concepts req
 ![](./figures/repo_logo.jpg)
 
 ## Tutorials    
-|Topics|Tutorials|  
-|:-----|:--------|  
-|:1234:|[Introduction to numbers](./tutorials/numbers-introduction.md) (Updated)|    
-|:1234:|[Introduction to algebra](./tutorials/algebra-introduction.md) (Updated)|   
-|:1234:|[Introduction to functions](./tutorials/functions-introduction.md)|      
-|:1234:|Introduction to summations|   
-|:cookie:|[Introduction to set theory](./tutorials/set_theory-introduction.md)|  
-|:cookie:|[Introduction to combinatorics](./tutorials/combinatorics-introduction.md)|   
-|:black_joker:|[Introduction to probability theory](./tutorials/probability-introduction.md)|   
-|:black_joker:|[Conditional probability](./tutorials/probability-conditional_probability.md)|   
-|:black_joker:|Bayes theorem|   
-|:roller_coaster:|[Introduction to derivatives](./tutorials/calculus-derivatives.md)|    
-|:roller_coaster:| Introduction to integration |    
-|:roller_coaster:| Differential equations |     
-|:roller_coaster:| Multivariable functions  |      
-|:roller_coaster:| Differentiation of multivariable functions  |    
-|:1234:|Exponents and logarithms|   
-|:1234:|Logarithms and information theory|  
-|:compass:|Introduction to trigonometry|  
-|:compass:|Introduction to distance metrics|   
-|:compass:|Cosine similarity applications|   
-|:chopsticks:|[Introduction to linear systems](./tutorials/linear_algebra-linear_systems.md)|   
-|:chopsticks:|[Introduction to vectors](./tutorials/linear_algebra-vectors.md)|   
-|:chopsticks:|Vector norms and embeddings|    
-|:department_store:|[Introduction to matrices](./tutorials/linear_algebra-matrices.md)|    
-|:chopsticks:|[Linear transformations](./tutorials/linear_algebra-linear_transformations.md)|    
-|:chopsticks:|Applications of eigenvalues and eigenvectors|      
 
+### General concepts  
++ [Numbers](./tutorials/numbers-introduction.md) (Updated)   
++ Exponents and logarithms  
++ Logarithms and information theory   
++ Geometry      
++ Cosine similarity applications   
++ Distance metrics    
++ Summations   
++ Functions   
++ [Algebra](./tutorials/algebra-introduction.md) (Updated)    
+
+### Linear algebra   
++ [Linear systems](./tutorials/linear_algebra-linear_systems.md)   
++ [Introduction to vectors](./tutorials/linear_algebra-vectors.md)    
++ Vector norms and embeddings       
++ [Introduction to matrices](./tutorials/linear_algebra-matrices.md)      
++ [Linear transformations](./tutorials/linear_algebra-linear_transformations.md)      
++ Applications of eigenvalues and eigenvectors        
+
+### Calculus   
++ [Derivatives](./tutorials/calculus-derivatives.md)   
++ Integration     
++ Differential equations      
++ Multivariable functions       
++ Differentiation of multivariable functions     
+  
+### Statistical mathematics    
++ [Set theory](./tutorials/set_theory-introduction.md)   
++ [Combinatorics](./tutorials/combinatorics-introduction.md)   
++ [Probability theory](./tutorials/probability-introduction.md)   
++ [Conditional probability](./tutorials/probability-conditional_probability.md)   
++ Bayes theorem    
+ 
 ## Contributors
 + [Erika Duan](https://github.com/erikaduan/)  
 + [Chuanxin Liu](https://github.com/codetrainee)   
@@ -43,7 +49,7 @@ This project was created using the following setup:
 + The Julia version used is `julia version 1.7.3`.    
 
 ## Guide to writing mathematical proofs    
-Writing mathematical proofs might feel archaic but they are a great way to help you reason why mathematical concepts should behave consistently (and not just because your textbook says so). There are multiple approaches to proving a mathematical statement or concept. Sadly, there is no magical rule to selecting the correct method for each scenario - mathematicians often have to try multiple approaches before they find the right one.        
+Writing mathematical proofs are a great way to help you reason why mathematical concepts should behave consistently (and not just because your textbook says so). There are multiple approaches to proving a mathematical statement or concept. Sadly, there is no magical rule to selecting the correct method for each scenario - mathematicians often have to try multiple approaches before they find the right one.        
 
 **Direct proof**   
 + Occurs when you need to prove that A and B are equivalent.   
